@@ -461,6 +461,22 @@ Conclusion:
 * Merged
 
 
+### [[Feature #8661]](https://bugs.ruby-lang.org/issues/8661) Add option to print backtrace in reverse order (stack frames first and error last) (mame)
+
+* matz, could you check the spec of `--suppress-backtrace`?  And should we change the name to `--backtrace-limit` or something?
+
+Preliminary discussion:
+
+* 
+
+Discussion:
+
+* 
+
+Conclusion:
+
+* matz: change the name.  The behavior is good.  Go ahead
+
 
 
 timeout: We'll hold an extra meeting to discuss remaining topics: 5/26 (Tue) 13:00-
@@ -482,9 +498,18 @@ Discussion:
 
 * nobu: kwargs is still under discussion
 
+```ruby
+S = Struct.new(:x)
+s = S.new(x: 42)   # warning on 3.0, received as 3.1
+s = S.new({x: 42}) # no warning
+
+S = Struct.new(:a, :b)
+s = S[a: 1, b: 2]
+```
+
 Conclusion:
 
-* 
+* matz: Pending.
 
 
 ### [[Feature #15771]](https://bugs.ruby-lang.org/issues/15771) Add `String#split` option to set `split_type string` with a single space separator (sawa)
@@ -497,11 +522,74 @@ Preliminary discussion:
 
 Discussion:
 
-* nobu: have wanted to deprecate that behavior for years, and made non-nil `$/` warned.
+* nobu: have wanted to deprecate that behavior for years, and made non-nil `$;` warned.
+
+
+#### current
+```ruby
+str = "a    b    c"
+str.split(" ") #=> ["a", "b", "c"]
+$ ruby2.7 -e 'p "a  b  c".split(/ /){p $~}'
+#<MatchData " ">
+#<MatchData " ">
+#<MatchData " ">
+nil
+nil
+"a  b  c"
+$ ruby2.7 -e '"a b c".split(/ /){p $`}'
+"a"
+"a b"
+nil
+```
+
+#### proposal
+```ruby
+str = "a    b    c"
+str.split(" ", literal: true) #=> ["a", "", "", "", "b", "", "", "", "c"]
+```
+
+#### nobu's incompatbile idea
+```ruby
+str = "a    b    c"
+str.split(nil) #=> ["a", "b", "c"]
+str.split(" ") #=> ["a", "", "", "", "b", "", "", "", "c"]
+```
+
+1. accept `str.split(nil)` and set `$;` as `nil`
+2. warn `str.split(" ")` and let people rewrite it to `str.split(nil)`
+3. then a user can write `split(" ")` instead of `split(/ /)`
+
+matz: I don't feel it is worth
+
+
+`csearch "split \' \'" | grep '.rb'`
+https://gist.github.com/aa6cbbd81a2f030caeab7570f2e8d966
+
+
+#### nobu's merged patch
+```ruby
+str = "a    b    c"
+str.split(/ /) #=> ["a", "", "", "", "b", "", "", "", "c"]
+# as fast as ' '
+$ ruby -e 'p "a  b  c".split(/ /){p $~}'
+nil
+nil
+nil
+nil
+nil
+"a  b  c"
+$ ruby -e '"a b c".split(/ /){p $`}'
+nil
+nil
+nil
+```
+
+akr: The optimization has an unintentional side-affect of `$~`
+The optimization changes `/a/ =~ "a"; "abc".split(/ /); p $~` to non-nil. Because `split(/ /)` doesn't use regexp and doesn't touch `$~`.
 
 Conclusion:
 
-* 
+* matz: will reject
 
 
 ### [[Feature #16832]](https://bugs.ruby-lang.org/issues/16832) Use `#name` rather than `#inspect` to build "uninitialized constant" error messages (byroot)
@@ -528,24 +616,8 @@ Discussion:
 
 Conclusion:
 
-* 
+* matz: already accepted.  Go ahead.
 
-
-### [[Feature #8661]](https://bugs.ruby-lang.org/issues/8661) Add option to print backtrace in reverse order (stack frames first and error last) (mame)
-
-* matz, could you check the spec of `--suppress-backtrace`?  And should we change the name to `--backtrace-limit` or something?
-
-Preliminary discussion:
-
-* 
-
-Discussion:
-
-* 
-
-Conclusion:
-
-* matz: change the name.  The behavior is good.  Go ahead
 
 
 ### [[Feature #16827]](https://bugs.ruby-lang.org/issues/16827) C API for writing custom random number generator that can be used as Random objects (mrkn)
@@ -559,7 +631,7 @@ Discussion:
 
 Conclusion:
 
-* matz: Looks like it does not rqeuire my approval, but I approve.  `Random::ChaCha` should not be added.
+* matz: Looks like it does not require my approval, but I approve.  `Random::ChaCha` should not be added.
 
 
 ### [[Feature #16254]](https://bugs.ruby-lang.org/issues/16254) MRI internal: Define built-in classes in Ruby with `__intrinsic__` syntax (eregon)
@@ -567,18 +639,20 @@ Conclusion:
 * Thoughts on using `Primitive.name(a, b)` instead of `__builtin_name(a, b)`?
 * I think this is an important opportunity to share more code between implementations.
 
-Preliminary discussion:
-
-* 
-
 Discussion:
 
-* 
+* call native function
+  * `Primitive.name(a, b)`
+* other extension
+  * `Primitive.cexpr! %{ a + b }`
+  * `Primitive.attribute! :pure`
+  * `Primitive.overload`
+* In future, we may allow the notation for extension libraries
 
 Conclusion:
 
-* 
-
+* matz: I like `__builtin_foo()` because it is clear to be an internal feature. But I don't care to use `Primitive`.
+* ko1: Will use `Primitive`
 
 ### [[Feature #15921]](https://bugs.ruby-lang.org/issues/15921) R-assign (rightward-assignment) operator (eregon)
 
@@ -612,16 +686,21 @@ def foo(x)= x => @x
   def initialize(screen) = screen => @screen
 
   def initialize(screen) = (@screen = screen)
-  
+
 def inc(n) = n + 1
 
 def foo() = 1 => @x
 p @x #=> :foo ((def foo() = 1) => @x)
 
 private def foo(n) = 1 => @x
-# private((def foo(n) = 1) => @x)
+# current: private((def foo(n) = 1) => @x)
+# expected??: private(def foo(n) = (1 => @x))
 
 until eof?(getc => c) # oh it's kwarg
+  # ...
+end
+
+until eof?((getc => c)) # R-assign
   # ...
 end
 ```
@@ -631,28 +710,104 @@ end
 
 Discussion:
 
-* 
+#### massign
+```ruby
+$ ruby -e '[1,2] => (a,b); p a, b'
+1
+2
+```
+
+akr: It seems multiple block arguments for tap method is rare: such as `exp.tap {|a, b| ... }`
+
+```ruby
+S = Struct.new(:x)
+s = S.new
+1 => s.x # s.x = 1
+```
+
+```ruby
+foo().
+bar().
+baz()
+
+#=>
+foo().
+bar().tap{|e| p e; binding.irb}.
+baz()
+
+#=>
+foo().
+bar() => tmp
+p tmp
+binding.irb
+tmp.baz()
+
+
+def initialize a, b
+  a => @a
+  b => @b
+end
+```
 
 Conclusion:
 
-* 
+* matz: The motivation is still valid even after pipeline operator is gave up.  It is still useful for a long method chain.
+* matz: I think an experiment with commit is needed and works.  I will explain.
 
 
 ### [[Feature #16828]](https://bugs.ruby-lang.org/issues/16828) Introduce find patterns (ktsj)
 
 * I implemented it as matz wanted it.  Please discuss it on the dev-meeting.
 
-Preliminary discussion:
-
-* 
-
 Discussion:
 
-* 
+* matz: use case:
+```ruby
+# usage
+json = {name: "Mom",
+        children: [{name: "alice", age: 8}, 
+                   {name: "bob",   age: 6}, 
+                   {name: "carol", age: 4},
+                   {name: "daisy", age: 2},
+        ]}
+
+# This works only if the length of children is one
+case json
+in { name: "Mom", children: [{ name: "bob", age: }]}
+  p age
+end
+
+# This code shows bob's age, bob is one of children
+case json
+in { name: "Mom", children: [*, { name: "bob", age: }, *]}
+  p age
+end
+```
+* akr: The issue has a sentence "Note that it doesn't support backtracking to avoid complexity.". But I think a backtracking is occur at the first example `match ["a", 1, "b", "c", 2, "d", "e", "f", 3] in [*pre, String => x, String => y, *post]`. (At first, `String => x` is matched to "a" and `String => y` is failed for `1`. Then the match success for`String => x` is reverted.  I think it is a backtrack.) I feel that a better explanation is "Note that it doesn't support backtracking at guard failure at avoid complexity."
+
+
+```ruby
+in [*, x, *, y, *] # No support
+
+case json
+in { name: "Mom", children: [*, { name: "bob" }, *, { name: "daisy" }, *]}
+end
+
+# Matz's idea
+case json
+in { name: "Mom", children: [*{ name: "bob",   age: => bob_age}, 
+                             *{ name: "daisy", age: => daisy_age}]
+   }
+end
+
+case json
+in {name: "Mom", children: [{name: "bob", age:=>bob_age}] |
+                           [{name: "daisy", age: => daisy_age}]}
+```
 
 Conclusion:
 
-* 
+* matz: Accept as-is.
 
 ### [[Feature #16847]](https://bugs.ruby-lang.org/issues/16847) Cache instruction sequences by default (byroot)
 
@@ -663,13 +818,9 @@ Preliminary discussion:
 
 * How about to change rubygems mechanism at first?(hsbt)
 
-Discussion:
-
-* 
-
 Conclusion:
 
-* 
+* matz: Want to leave it to bootsnap 
 
 
 ### [[Feature #16848]](https://bugs.ruby-lang.org/issues/16848) Allow callables in $LOAD_PATH (byroot)
@@ -781,11 +932,180 @@ end
       end
       nil
     end
+
+# /home/gem-codesearch/gem-codesearch/latest-gem/hedgelog-0.2.0/lib/hedgelog.rb
+  private def debugharder(callinfo)
+    m = BACKTRACE_RE.match(callinfo)
+    return unless m
+
+    path, line, method = m[1..3]
+    whence = $LOAD_PATH.find { |p| path.start_with?(p) }
+    file = if whence
+             # Remove the RUBYLIB path portion of the full file name
+             path[whence.length + 1..-1]
+           else
+             # We get here if the path is not in $:
+             path
+           end
+
+    {
+      file: file,
+      line: line,
+      method: method
+    }
+  end
+
+# /home/gem-codesearch/gem-codesearch/latest-gem/gem-path-0.6.2/lib/rubygems/commands/path_command.rb
+  def find_gem_path name
+    gem_path = Gem.path.find do |base|
+      gem_path = $LOAD_PATH.find do |path|
+        platforms = Gem.platforms.
+          map(&:to_s).map(&Regexp.method(:escape)).join('|')
+        gem_path = path[
+          %r{\A#{base}/
+             (?:bundler/)?
+             gems/
+             #{name}\-[^/-]+(?:\-(?:#{platforms}))?/
+          }x
+        ]
+        break gem_path if gem_path
+      end
+      break gem_path if gem_path
+    end
+    gem_path.chop if gem_path
+  end
 ```
 Discussion:
 
-* 
+* ko1: I'm afraid about its incompatibility
+
+`$LOAD_PATH` observing code:
+https://github.com/Shopify/bootsnap/blob/master/lib/bootsnap/load_path_cache/change_observer.rb
+
+https://docs.python.org/ja/3/library/imp.html
+https://docs.python.org/ja/3/library/importlib.html
+
+https://www.python.org/dev/peps/pep-0302/
 
 Conclusion:
 
-* 
+* ko1: will reply
+
+
+---------------------------------------------------------------------------------------------
+
+# keyword argument discussion
+
+* just memo
+
+```ruby
+def proxy(*args, **kwargs)
+  target(*args, **kwargs)
+end
+
+def method_missing(name, ...)
+  case name
+  when :target
+    target(...)
+  else
+    ...
+  end
+end
+
+
+def memoized_target(*args)
+  @cache[args] ||= target(*args)
+end
+
+ruby2_keywords def memoized_target(*args)
+  @cache[args] ||= target(*args)
+end
+
+def memoized_target(*args, **kwargs)
+  @cache[[args, kwargs]] ||= target(*args, **kwargs)
+end
+
+def memoized_target(***args, &blk)
+  # args = [positional_args_array, keywords_hash, block_proc]
+  #        { positionals: array, keywords: hash, block: proc }
+  @cache[args] ||= target(***args, &blk)
+end
+
+def proxy(obj, ...)
+  target(obj2, ...)
+end
+
+def proxy(***args)
+  # args = { positionals: array, keywords: hash, block: proc }
+  args[:positionals][0] = obj2 # obj -> obj2
+  target(***args)
+end
+
+def proxy(...)
+  @args = (...)
+end
+def proxy2(...)
+  target(***@args)
+end
+
+# problem 1: tedious to rewrite. simple notation please!
+
+def proxy(*args, **kwargs)
+  @args = [args, kwargs]
+end
+def proxy2
+  target(*@args[0], **@args[1])
+end
+
+def proxy(***args, &)
+  # args = [positionals, keywords]
+  @args = args
+end
+def proxy2
+  target(***@args)
+end
+
+def proxy(***args_with_block)
+  # args_with_block = [positionals, keywords, block]
+  @args = args_with_block
+end
+def proxy2
+  target(***@args)
+end
+
+def proxy(***args)
+  new_args = Argument.new(args, block: nil)
+  Marshal.dump(new_args) #=> error
+end
+
+proxy{}
+
+# problem 2: performance problem.
+def memoized_target(*args, **kwargs)
+  @cache[[args, kwargs]] ||= target(*args, **kwargs)
+end
+
+# problem 3: can't rewrite
+ary = [{a:1}, {a:2}, {a:3}]
+ary.each do |a:|
+  p a
+end
+
+# current Ruby 3
+ary = [{a:1}, {a:2}, {a:3}]
+ary.each do |h|
+  p h[:a]
+end
+
+ary.each do |(a:)|
+end
+```
+
+```ruby
+def proxy(...data)
+  @args = args
+end
+def proxy2
+  target(...data)
+end
+```
