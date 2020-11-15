@@ -3,7 +3,7 @@ lang: en
 tags: Ruby, ruby-dev-meeting
 ---
 
-# DevelopersMeeting2021026Japan
+# DevelopersMeeting20201026Japan
 
 https://bugs.ruby-lang.org/issues/17200
 
@@ -721,6 +721,92 @@ end.take
 * shyouhei: Agreed, but the pragma looks too easy to shoot the foot.
 * shyouhei: `Ractor.make_shareable` may have to "deep-copy" the argument and then deep-freeze it.
 
+```ruby
+# other lib
+OtherLib::Arary = [[], [], []]
+
+# shareable_constant_value: true
+
+A = [1, 2] # no problem
+B = [1, OtherLib::Array] # can be a problem
+C = [1, OtherLib::Array[0]]
+D = [1, $gv]
+
+A = [1, 2] # no problem
+A = [1, [2, 3]] # no problem
+A = [1, [2, X]] # ng because it contains ...
+
+# frozen_constant_literal: 
+# frozen_string_literal: 
+# shareable_constant_value: <- accepted
+# shareable_constants: 
+
+# shareable_constant_value: 
+#   none    # same as 2.x
+#   literal # literal only
+#           # C = lits
+#           # => 
+#           # C = Ractor.make_shareable(lits)
+#           #
+#           # lits contains any combination of Array, Hash, String, ...
+#           # String interpolation is also accepted.
+#           # if lits contains Ruby expression, SyntaxError
+#   experimental_everything
+#           # C = expr
+#           # =>
+#           # C = Ractor.make_shareable(expr)
+```
+
+```ruby
+A = [] # shareable_constant_value: literal
+# SyntaxError
+
+B = []
+# shareable_constant_value: literal
+.itself(C = [])
+# SyntaxError
+
+C = # shareable_constant_value: literal
+  []
+# SyntaxError
+
+<<END + <<END.lines.length # shareable_constant_value: literal
+foo
+END
+#{<<END}
+bar
+END
+END
+# SyntaxError
+```
+
+```ruby
+    module PATTERN
+      # :stopdoc:
+
+      # RFC 2396 (URI Generic Syntax)
+      # RFC 2732 (IPv6 Literal Addresses in URL's)
+      # RFC 2373 (IPv6 Addressing Architecture)
+
+      # alpha         = lowalpha | upalpha
+      ALPHA = "a-zA-Z"
+      # alphanum      = alpha | digit
+      ALNUM = "#{ALPHA}\\d"
+
+      # hex           = digit | "A" | "B" | "C" | "D" | "E" | "F" |
+      #                         "a" | "b" | "c" | "d" | "e" | "f"
+      HEX     = "a-fA-F\\d"
+      # escaped       = "%" hex hex
+      ESCAPED = "%[#{HEX}]{2}"
+```
+
+```ruby
+A = Ractor.make_shareable [1, 2] # no problem
+B = Ractor.make_shareable [1, OtherLib::Array] # can be a problem
+C = Ractor.make_shareable [1, OtherLib::Array[0]]
+D = Ractor.make_shareable [1, $gv]
+```
+
 Conclusion:
 
 * ko1: I will discuss on another day with matz and shyouhei
@@ -756,10 +842,8 @@ pr = Proc.new{
 a[0] = 0 #=> frozen error
 ```
 
-```ruby=
-# literal only
-
-# OK
+```ruby
+# literal only# OK
 a = 'foo'
 pr = Proc.shareable! do 
   p a
@@ -836,3 +920,47 @@ end
 
 
 ```
+
+```ruby
+i = j = k = 0
+Ractor.new i, j, k do |i, j, k|
+  p [i, j, k]
+end
+i = 10
+
+i = 10
+define_method name, Ractor.make_sharable(proc{
+  p 10
+})
+
+define_method name, shareable: true do
+  ...
+end
+  
+  
+pr = proc{
+  p 10
+} 
+define_method name, pr, shareable: true
+
+
+define_method name, Ractor.sharable {
+  p 10
+}
+
+define_method name do
+  
+end
+```
+
+----
+
+Object#send
+
+
+> Invokes the method identified by _symbol_, passing it any
+> arguments specified. You can use `__send__` if the name
+> `send` clashes with an existing method in _obj_.
+> When the method is identified by a string, the string is converted
+> to a symbol.
+
