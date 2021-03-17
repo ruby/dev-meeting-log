@@ -3,7 +3,7 @@ lang: en
 tags: Ruby, ruby-dev-meeting
 ---
 
-# DevelopersMeeting20200216Japan
+# DevelopersMeeting20210216Japan
 
 https://bugs.ruby-lang.org/issues/17535
 
