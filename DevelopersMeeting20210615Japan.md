@@ -416,7 +416,7 @@ Discussion:
 * usa: How fast is it?
 * mame: It gets more and more faster when there are more and more modules.
 * ko1: Rails uses cvars very much.
-* ko1: I assumed that CVars is I don't want to encourage users to use class variables.
+* ko1: I assumed that CVars is not recommended now a day. Can we encourage to use it by improving the performance?
     * matz: I'm against complaining optimisations "encourage bad things".
     * usa: I like class variables.
     * mame: They are complex when inherited.
@@ -427,7 +427,7 @@ Discussion:
 
 Conclusion:
 
-* ko1: I got persuaded.
+* matz; go ahead.
 
 ## Other topics
 
