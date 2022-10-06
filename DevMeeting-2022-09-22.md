@@ -19,10 +19,6 @@ https://bugs.ruby-lang.org/issues/18977
 
 ## About release timeframe
 
-## AWS Cost check
-
-https://us-east-1.console.aws.amazon.com/cost-management/home?region=ap-northeast-1#/custom?groupBy=UsageType&forecastTimeRangeOption=None&hasBlended=false&hasAmortized=false&excludeDiscounts=true&excludeTaggedResources=false&excludeCategorizedResources=false&chartStyle=Stack&timeRangeOption=Last12Months&granularity=Monthly&reportName=For%20dev-meeting&reportType=CostUsage&isTemplate=false&usageAs=usageQuantity&filter=%5B%7B%22dimension%22:%22RecordType%22,%22values%22:%5B%22SavingsPlanNegation%22,%22Credit%22%5D,%22include%22:false,%22children%22:null%7D%5D&subscriptionIds=%5B%5D&reportId=198dedc9-fa9b-4746-9dfc-0818c16b7528&excludeForecast=false&startDate=2021-07-01&endDate=2022-06-30
-
 ## Check security tickets
 
 [secret]
