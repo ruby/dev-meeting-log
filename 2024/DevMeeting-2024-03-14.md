@@ -628,7 +628,7 @@ end
 ```
 Conclusion:
 
-* Nobody is against suppressing the warning, at the very least.
+* Nobody is for suppressing the warning, at the very least.
 * It's up to each parsers whether a parser issue a warning or not for each situations.
 * matz's mood is it'd be  nice if a parser does very simple comparison like strcmp.
 
