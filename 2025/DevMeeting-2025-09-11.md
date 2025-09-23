@@ -200,6 +200,8 @@ ary.sort {|a, b| (a.field1 <=> b.field1).nonzero? || (a.field2 <=> b.field2) }
 
 ---
 
+### [[Feature #21557]](https://bugs.ruby-lang.org/issues/21557) Ractor.shareable_proc to make sharable Proc objects, safely and flexibly
+
 https://bugs.ruby-lang.org/issues/21039
 https://bugs.ruby-lang.org/issues/21557
 
