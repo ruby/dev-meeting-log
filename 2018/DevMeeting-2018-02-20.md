@@ -151,24 +151,24 @@ Next Developper Meetings
 
 ## Revisions r61785, r61786, r61787 were introduced by the request from @naruse. However [shyouhei](https://www.google.com/url?q=https://bugs.ruby-lang.org/users/10&sa=D&source=editors&ust=1686087534729949&usg=AOvVaw0zCOxnLHfD-SAJpu3U4FWv) thinks the request was somewhat vague.
 
-- ## Do we have to support such old toolchains? (shyouhei)
+- Do we have to support such old toolchains? (shyouhei)
 
-- ## Things we discussed:
+- Things we discussed:
 
 
-- ## Let’s make configure show the version of BASERUBY
+- Let’s make configure show the version of BASERUBY
 
-- ## That way we can detect failures on the CI matrix.
+- That way we can detect failures on the CI matrix.
 
 
 ## From attendees
 
-- ## \[Feature [#14223](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14223&sa=D&source=editors&ust=1686087534730902&usg=AOvVaw0hKDkPhy2smcNbHV7h3t95)\] Enable #to\_proc by Refinements at &hoge (nobu)
+## \[Feature [#14223](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14223&sa=D&source=editors&ust=1686087534730902&usg=AOvVaw0hKDkPhy2smcNbHV7h3t95)\] Enable #to\_proc by Refinements at &hoge (nobu)
 
 
 - Matz: LGTM.
 
-- ## \[Feature [#14371](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14371&sa=D&source=editors&ust=1686087534731456&usg=AOvVaw0138Z7WbBbP8sVNjKJtboU)\] New option "recursive: true" for Hash#transform\_keys! (nobu)
+## \[Feature [#14371](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14371&sa=D&source=editors&ust=1686087534731456&usg=AOvVaw0138Z7WbBbP8sVNjKJtboU)\] New option "recursive: true" for Hash#transform\_keys! (nobu)
 
 
 - Mrkn: This is deep\_stringify\_keys!
@@ -178,43 +178,43 @@ Next Developper Meetings
 - Knu: This method changes values as well as keys, which seems wrong.
 - Matz: This particular API seems NG to me.
 
-- ## \[Bug #14380\] Expected transform\_keys! to work just as transform\_keys, but it doesn't (mame)
+## \[Bug #14380\] Expected transform\_keys! to work just as transform\_keys, but it doesn't (mame)
 
 
 - Shyouhei: This behaviour was inherited from ActiveSupport.
 - Mrkn: we can fix it by preserving entries that conflict.
 - Matz: I have strong opinion on this.  Isn’t the current behaviour acceptable in sake of space efficiency?
 
-- ## \[Bug [#14374](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14374&sa=D&source=editors&ust=1686087534732782&usg=AOvVaw23Evsh07gKVvWVGJqwzzPf)\] for does not splat elements (nobu)
+## \[Bug [#14374](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14374&sa=D&source=editors&ust=1686087534732782&usg=AOvVaw23Evsh07gKVvWVGJqwzzPf)\] for does not splat elements (nobu)
 
 
 - Ko1: is it me?
 - Nobu: because it’s since 1.9
 - Matz: please fix.
 
-- ## \[Feature [#14313](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14313&sa=D&source=editors&ust=1686087534733360&usg=AOvVaw01wZt0etef0uPW3YdiOET2)\] Support creating KeyError with receiver and key from Ruby (mrkn/kou)
+## \[Feature [#14313](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14313&sa=D&source=editors&ust=1686087534733360&usg=AOvVaw01wZt0etef0uPW3YdiOET2)\] Support creating KeyError with receiver and key from Ruby (mrkn/kou)
 
 
 - Mrkn: I was asked to bring this.
 - Matz: Understand the needs.
 - Shyouhei: Should it be keyword arguments?
 
-- ## Maintainers of csv (mrkn/kou)
+- Maintainers of csv (mrkn/kou)
 
 
 - Mame: JEG2.
 - Mrkn: But he doesn’t have the repo access bit, nor gem release right.
 - Mame: He’s active on twitter etc.  You should ask his current status.
 
-- ## \[Feature [#4831](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/4831&sa=D&source=editors&ust=1686087534734216&usg=AOvVaw000s7NUFCbXTK8QZm0leib)\] Integer#prime\_factors (mrkn)
+## \[Feature [#4831](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/4831&sa=D&source=editors&ust=1686087534734216&usg=AOvVaw000s7NUFCbXTK8QZm0leib)\] Integer#prime\_factors (mrkn)
 
 
 - Mrkn: name?
 - Shyouhei: yugui is on the ticket.
 
-- ## \[Feature [#14235](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14235&sa=D&source=editors&ust=1686087534734701&usg=AOvVaw3sHZaMuYBRg9KZEliD_l-L)\] Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
+## \[Feature [#14235](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14235&sa=D&source=editors&ust=1686087534734701&usg=AOvVaw3sHZaMuYBRg9KZEliD_l-L)\] Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
 
-- ## \[Feature [#14386](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14386&sa=D&source=editors&ust=1686087534735005&usg=AOvVaw0rq2r3IXro64FgAE0y6TSU)\] Add option to let Kernel.#system raise error instead of returning false (k0kubun)
+## \[Feature [#14386](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14386&sa=D&source=editors&ust=1686087534735005&usg=AOvVaw0rq2r3IXro64FgAE0y6TSU)\] Add option to let Kernel.#system raise error instead of returning false (k0kubun)
 
 
 - Nobu: is this request to raise error when spawn fails, or when the spawned process fails?
@@ -223,7 +223,7 @@ Next Developper Meetings
 - Mrkn: I see similarity for discussion on Integer(). \[ruby-core:77171\] \[Feature#12732\]
 - Akr: There are \`exception: true\`
 
-- ## \[Bug [#14353](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14353&sa=D&source=editors&ust=1686087534735695&usg=AOvVaw3VLRR_Wp944LrfkBaowubO)\] $SAFE should stay at least thread-local for compatibility (ko1)
+## \[Bug [#14353](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14353&sa=D&source=editors&ust=1686087534735695&usg=AOvVaw3VLRR_Wp944LrfkBaowubO)\] $SAFE should stay at least thread-local for compatibility (ko1)
 
 
 - Matz: This feature is something to extinct in future.
@@ -249,7 +249,7 @@ Next Developper Meetings
 
 ## From non-attendees
 
-- ## \[Feature [#14382](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14382&sa=D&source=editors&ust=1686087534736923&usg=AOvVaw1k6X3Y-H2yxkyqjbUiHTjO)\] Make public access of a private constant call const\_missing (jeremyevans0)
+## \[Feature [#14382](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14382&sa=D&source=editors&ust=1686087534736923&usg=AOvVaw1k6X3Y-H2yxkyqjbUiHTjO)\] Make public access of a private constant call const\_missing (jeremyevans0)
 
 
 - Nobu: sounds like a bug to me
@@ -257,7 +257,7 @@ Next Developper Meetings
 - Matz: Let’s try.
 - Nobu: I’d like to review the patch.
 
-- ## \[Feature [#14385](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14385&sa=D&source=editors&ust=1686087534737578&usg=AOvVaw1e4UbeKafR4WFVvojciJ0F)\] Deprecate back-tick for Ruby 3 (hsbt)
+## \[Feature [#14385](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14385&sa=D&source=editors&ust=1686087534737578&usg=AOvVaw1e4UbeKafR4WFVvojciJ0F)\] Deprecate back-tick for Ruby 3 (hsbt)
 
 
 - Matz: I see several objections are there.
@@ -269,7 +269,7 @@ Next Developper Meetings
 - Mame: should we also deprecate def \`; end; self.\` ? If so, warning on parsing is dangerous.
 - Matz: I think we don’t necessarily warn this as soon as 2.6.
 
-- ## \[Feature [#13969](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13969&sa=D&source=editors&ust=1686087534738407&usg=AOvVaw08WBvi8j7alCbpQ1j1kSuU)\] Dir#each\_child (znz)
+## \[Feature [#13969](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13969&sa=D&source=editors&ust=1686087534738407&usg=AOvVaw08WBvi8j7alCbpQ1j1kSuU)\] Dir#each\_child (znz)
 
 
 - Matz: OK.
