@@ -135,7 +135,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 ## About 2.5 timeframe
 
-- ## [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25&sa=D&source=editors&ust=1686087044831669&usg=AOvVaw30sTnRuPz45NYawvPNCGNa)
+## [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25&sa=D&source=editors&ust=1686087044831669&usg=AOvVaw30sTnRuPz45NYawvPNCGNa)
 
 - 合宿
 
@@ -154,7 +154,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 ## Carry-over from previous meeting(s)
 
-- ## \[Feature [#12180](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12180&sa=D&source=editors&ust=1686087044832934&usg=AOvVaw2M0hU6Px9QdrZEATwOmvrL)\] switch id\_table.c variant (shyouhei)
+## \[Feature [#12180](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12180&sa=D&source=editors&ust=1686087044832934&usg=AOvVaw2M0hU6Px9QdrZEATwOmvrL)\] switch id\_table.c variant (shyouhei)
 
 
 - ko1: funny-falcon’s open addressing hash is beating mine.
@@ -163,7 +163,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - akr: isn’t it too big for a new comer?
 - ko1: I see. I’ll do.
 
-- ## \[Feature [#12944](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12944&sa=D&source=editors&ust=1686087044833660&usg=AOvVaw3HKVzTUjTWaORCM9KWWa8r)\] Change Kernel#warn to call Warning.warn (shyouhei)
+## \[Feature [#12944](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12944&sa=D&source=editors&ust=1686087044833660&usg=AOvVaw3HKVzTUjTWaORCM9KWWa8r)\] Change Kernel#warn to call Warning.warn (shyouhei)
 
 
 - nobu: what spec?
@@ -171,7 +171,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - akr: compatibility concern?
 - matz: why not just try it.
 
-- ## \[Feature [#13124](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13124&sa=D&source=editors&ust=1686087044834227&usg=AOvVaw3Egmi16N6KEpmfjjVqbPM8)\] Should #puts convert to external encoding? (shyouhei)
+## \[Feature [#13124](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13124&sa=D&source=editors&ust=1686087044834227&usg=AOvVaw3Egmi16N6KEpmfjjVqbPM8)\] Should #puts convert to external encoding? (shyouhei)
 
 
 - shyouhei: what’s this?
@@ -182,7 +182,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - akr: I think it’s OK for particular IO that needs encoding, it’s convenient to have such feature.
 - naruse: OK, I’ll respond.
 
-- ## \[Feature [#13017](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13017&sa=D&source=editors&ust=1686087044835003&usg=AOvVaw2yCBZNtgVUPqe80GD_ojHN)\] Switch SipHash from SipHash24 to SipHash13 (shyouhei)
+## \[Feature [#13017](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13017&sa=D&source=editors&ust=1686087044835003&usg=AOvVaw2yCBZNtgVUPqe80GD_ojHN)\] Switch SipHash from SipHash24 to SipHash13 (shyouhei)
 
 
 - shyouhei: I'm confident it's OK to go to 2.5.
@@ -191,7 +191,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - shyouhei: I will
 - matz: go ahead.
 
-- ## \[Bug [#12998](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12998&sa=D&source=editors&ust=1686087044835786&usg=AOvVaw3tDHLY2fuUMM2uyCv557po)\] paragraph mode inconsistency between IO#each\_line and String#each\_line(nobu)
+## \[Bug [#12998](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12998&sa=D&source=editors&ust=1686087044835786&usg=AOvVaw3tDHLY2fuUMM2uyCv557po)\] paragraph mode inconsistency between IO#each\_line and String#each\_line(nobu)
 
 
 - ko1: ideal behaviour?
@@ -199,7 +199,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - matz: (nod)
 - nobu: I already merged this.
 
-- ## \[Feature [#8158](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8158&sa=D&source=editors&ust=1686087044836528&usg=AOvVaw3nDaN7kMfCgJujkMQhipau)\] lightweight structure for loaded features index (shyouhei)
+## \[Feature [#8158](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8158&sa=D&source=editors&ust=1686087044836528&usg=AOvVaw3nDaN7kMfCgJujkMQhipau)\] lightweight structure for loaded features index (shyouhei)
 
 
 - ko1: nobody but nobu can say if it’s OK.
@@ -207,7 +207,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - hsbt: why not let funny-falcon merge this?
 - matz: I take the idea.
 
-- ## \[Feature [#12854](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12854&sa=D&source=editors&ust=1686087044837109&usg=AOvVaw2jaCwfSENi9_-M71iAcw9c)\] Proc#curry should return an instance of the class, not Proc (shyouhei)
+## \[Feature [#12854](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12854&sa=D&source=editors&ust=1686087044837109&usg=AOvVaw2jaCwfSENi9_-M71iAcw9c)\] Proc#curry should return an instance of the class, not Proc (shyouhei)
 
 
 - ko1: general idea?
@@ -216,7 +216,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - matz: seems they are different proposals than applications of #curry.
 - matz: I’ll ask for use cases.
 
-- ## \[Feature [#5481](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/5481&sa=D&source=editors&ust=1686087044837835&usg=AOvVaw3a8LfDLz3x0H0X8zavV596)\] Gemifying Ruby standard library (hsbt)
+## \[Feature [#5481](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/5481&sa=D&source=editors&ust=1686087044837835&usg=AOvVaw3a8LfDLz3x0H0X8zavV596)\] Gemifying Ruby standard library (hsbt)
 
 
 - hsbt: Waiting approval of Matz
@@ -234,7 +234,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - akr: I see concerns of dependency hell.
 - hsbt: it’s OK we create separate ML threads for each library to discuss.
 
-- ## \[Feature [#12901](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12901&sa=D&source=editors&ust=1686087044838946&usg=AOvVaw2kwRfNIyCYGSXlD-tc0Sil)\] Anonymous functions without scope lookup overhead (shyouhei)
+## \[Feature [#12901](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12901&sa=D&source=editors&ust=1686087044838946&usg=AOvVaw2kwRfNIyCYGSXlD-tc0Sil)\] Anonymous functions without scope lookup overhead (shyouhei)
 
 
 - ko1: matz said we should automatically optimize procs when possible, not explicitly stating like this.
@@ -250,7 +250,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 - matz will respond, ko1 to create a new ticket that refer this one.
 
-- ## \[Feature [#12906](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12906&sa=D&source=editors&ust=1686087044839948&usg=AOvVaw2YI7HFfXjQwSY_DmThuuQy)\] do/end blocks work with ensure/rescue/else (shyouhei)
+## \[Feature [#12906](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12906&sa=D&source=editors&ust=1686087044839948&usg=AOvVaw2YI7HFfXjQwSY_DmThuuQy)\] do/end blocks work with ensure/rescue/else (shyouhei)
 
 
 - shyouhei: OP is wise because he do not talk about { … }
@@ -261,7 +261,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - akr: generally speaking it is good to reduce indent.
 - matz: Let me think about it. -> OK
 
-- ## \[Feature [#12926](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12926&sa=D&source=editors&ust=1686087044840939&usg=AOvVaw3tvJjHLJu4c926W41uXycr)\] -l flag for line end processing should use chomp! instead of chop! (shyouhei)
+## \[Feature [#12926](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12926&sa=D&source=editors&ust=1686087044840939&usg=AOvVaw3tvJjHLJu4c926W41uXycr)\] -l flag for line end processing should use chomp! instead of chop! (shyouhei)
 
 
 - nobu: perl behaves like chomp.
@@ -270,7 +270,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - akr: chomp is ruby1.1+, \-l already exists in ruby 0.95
 - matz: OK.
 
-- ## \[Feature [#12912](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12912&sa=D&source=editors&ust=1686087044841795&usg=AOvVaw12psrHLdrkKGFtjvYZhNGE)\] An endless range (1..) (shyouhei)
+## \[Feature [#12912](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12912&sa=D&source=editors&ust=1686087044841795&usg=AOvVaw12psrHLdrkKGFtjvYZhNGE)\] An endless range (1..) (shyouhei)
 
 
 - shyouhei: what about opossite side ...1?
@@ -285,13 +285,13 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - nobu: (1..) seems visually odd.
 - akr: for now, use step and drop.
 
-- ## \[Feature [#12933](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12933&sa=D&source=editors&ust=1686087044843060&usg=AOvVaw0keM6i4xTY8lmU5azdAraJ)\] Add Some and Optional (shyouhei)
+## \[Feature [#12933](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12933&sa=D&source=editors&ust=1686087044843060&usg=AOvVaw0keM6i4xTY8lmU5azdAraJ)\] Add Some and Optional (shyouhei)
 
 
 - nobu: start as a gem.
 - matz: agree.
 
-- ## \[Feature [#12931](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12931&sa=D&source=editors&ust=1686087044843720&usg=AOvVaw1TRT60YZv5rwfwj4QCqZlk)\] Add support for Binding#instance\_eval (shyouhei)
+## \[Feature [#12931](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12931&sa=D&source=editors&ust=1686087044843720&usg=AOvVaw1TRT60YZv5rwfwj4QCqZlk)\] Add support for Binding#instance\_eval (shyouhei)
 
 
 - shyouhei: what is needed ultimately is to pass a block to Binding#eval
@@ -299,7 +299,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - nobu: I think it’s not faster, if not impossible.
 - nobu will reject.
 
-- ## \[Feature [#12929](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12929&sa=D&source=editors&ust=1686087044844592&usg=AOvVaw0-MTVCgzZMqz0MjyNEWQmL)\] ternary should look ahead w/in a block (and not care about newlines) (shyouhei)
+## \[Feature [#12929](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12929&sa=D&source=editors&ust=1686087044844592&usg=AOvVaw0-MTVCgzZMqz0MjyNEWQmL)\] ternary should look ahead w/in a block (and not care about newlines) (shyouhei)
 
 
 - naruse: perl people tends to write it.
@@ -307,14 +307,14 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - shyouhei: Martin says we already look-ahead for periods.
 - matz: Python ignores newlines inside of parens.
 
-- ## \[Misc [#12935](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12935&sa=D&source=editors&ust=1686087044845395&usg=AOvVaw1n_0zBk9KpmPISUdRLC2Jv)\] Webrick: Update HTTP Status codes, share them (shyouhei)
+## \[Misc [#12935](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12935&sa=D&source=editors&ust=1686087044845395&usg=AOvVaw1n_0zBk9KpmPISUdRLC2Jv)\] Webrick: Update HTTP Status codes, share them (shyouhei)
 
 
 - nobu: is it Webrick?
 - akr: Webrick has this code but no one wants to require the whole.
 - akira: nobody looks at anywhere but Rack.
 
-- ## \[Feature [#12962](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12962&sa=D&source=editors&ust=1686087044846104&usg=AOvVaw38o3XVryvBzaqbBXuxxujV)\] Feature Proposal: Extend 'protected' to support module friendship (shyouhei)
+## \[Feature [#12962](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12962&sa=D&source=editors&ust=1686087044846104&usg=AOvVaw38o3XVryvBzaqbBXuxxujV)\] Feature Proposal: Extend 'protected' to support module friendship (shyouhei)
 
 
 - akr: use of protected is discouraged.
@@ -323,31 +323,31 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - naruse: I think it’s RuboCop’s duty to warn such thing.
 - akr: it’s a good thing anyway to update rdoc to discourage usages.
 
-- ## \[Feature [#12957](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12957&sa=D&source=editors&ust=1686087044846988&usg=AOvVaw0w142OIQA-do77B8UGCdRy)\] A more OO way to create lambda Procs (shyouhei)
+## \[Feature [#12957](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12957&sa=D&source=editors&ust=1686087044846988&usg=AOvVaw0w142OIQA-do77B8UGCdRy)\] A more OO way to create lambda Procs (shyouhei)
 
 
 - akr: I don’t understand the OP’s intension.
 - shyouhei: I think they want a subclass of lambda.  that’s not possible today.
 - akr: it is possible. complicated though. ->  commented.
 
-- ## \[Feature [#12966](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12966&sa=D&source=editors&ust=1686087044847638&usg=AOvVaw0TeErYg--zJl6KLHKHHhoD)\] net/ftp to include fxp support? (shyouhei) who's going to handle this?
+## \[Feature [#12966](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12966&sa=D&source=editors&ust=1686087044847638&usg=AOvVaw0TeErYg--zJl6KLHKHHhoD)\] net/ftp to include fxp support? (shyouhei) who's going to handle this?
 
 
 - shugo is handling.
 
-- ## \[Feature [#12967](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12967&sa=D&source=editors&ust=1686087044848140&usg=AOvVaw04PGoz0T9D1OHWYq27P9Vn)\] Add a default for RUBY\_GC\_HEAP\_GROWTH\_MAX\_SLOTS out-of-the-box (shyouhei)
+## \[Feature [#12967](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12967&sa=D&source=editors&ust=1686087044848140&usg=AOvVaw04PGoz0T9D1OHWYq27P9Vn)\] Add a default for RUBY\_GC\_HEAP\_GROWTH\_MAX\_SLOTS out-of-the-box (shyouhei)
 
 
 - ko1: I’m not sure if this parameter is a sane default.
 - ko1: also, I think there should be a comprehensive approach to parameterize GC, not individually like this.
 
-- ## \[Feature [#12969](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12969&sa=D&source=editors&ust=1686087044848725&usg=AOvVaw1Tr_Bmpl_tsm9mZnfc5PfV)\] Allow optional parameter in String#strip and related (shyouhei)
+## \[Feature [#12969](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12969&sa=D&source=editors&ust=1686087044848725&usg=AOvVaw1Tr_Bmpl_tsm9mZnfc5PfV)\] Allow optional parameter in String#strip and related (shyouhei)
 
 
 - naruse: I think regexp is the best for this purpose.
 - naruse: I don’t like the tr-like argument string.
 
-- ## \[Feature [#13016](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13016&sa=D&source=editors&ust=1686087044849359&usg=AOvVaw3ofGy1w8lZq-Kbh8QeoM6G)\] String#gsub(hash) (shyouhei)
+## \[Feature [#13016](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13016&sa=D&source=editors&ust=1686087044849359&usg=AOvVaw3ofGy1w8lZq-Kbh8QeoM6G)\] String#gsub(hash) (shyouhei)
 
 
 - akr: what’s wrong with union?
@@ -357,49 +357,49 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - shyouhei: understand that point.
 - naruse: you have to sort by length before union. Otherwise カ can match before ガ.
 
-- ## \[Bug [#8241](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8241&sa=D&source=editors&ust=1686087044850256&usg=AOvVaw3maXB-A1V_oKnE2iCJyQ8o)\] If uri host-part has underscore ( '\_' ), 'URI#parse' raise 'URI::InvalidURIError' (shyouhei)
+## \[Bug [#8241](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8241&sa=D&source=editors&ust=1686087044850256&usg=AOvVaw3maXB-A1V_oKnE2iCJyQ8o)\] If uri host-part has underscore ( '\_' ), 'URI#parse' raise 'URI::InvalidURIError' (shyouhei)
 
 
 - naruse: I think this is done.
 
-- ## \[Bug [#8826](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8826&sa=D&source=editors&ust=1686087044850670&usg=AOvVaw2XNggg9fOKI6Umf6b27sJN)\] BigDecimal#div and #quo different behavior and inconsistencies (shyouhei) status?>mrkn
+## \[Bug [#8826](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8826&sa=D&source=editors&ust=1686087044850670&usg=AOvVaw2XNggg9fOKI6Umf6b27sJN)\] BigDecimal#div and #quo different behavior and inconsistencies (shyouhei) status?>mrkn
 
 
 - mkrn: I'll start to fix it as soon as possible.
 
-- ## \[Feature [#13048](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13048&sa=D&source=editors&ust=1686087044851085&usg=AOvVaw3SSTmLdydOmQFj75lPqiFO)\] Better way to do Regexp.new(Regexp.escape("some string")) (shyouhei)
+## \[Feature [#13048](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13048&sa=D&source=editors&ust=1686087044851085&usg=AOvVaw3SSTmLdydOmQFj75lPqiFO)\] Better way to do Regexp.new(Regexp.escape("some string")) (shyouhei)
 
 
 - naruse: quick look at the github result seems every usage of Regexp.new(Regexp.escape()) are bad.
 - akr: Regexp.exact() ?
 
-- ## \[Bug [#13111](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13111&sa=D&source=editors&ust=1686087044851579&usg=AOvVaw3hk7M3LSn1Ia1G6YYdWTDA)\] Degraded performance for delegated methods through Forwardable module (shyouhei) assign who?
+## \[Bug [#13111](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13111&sa=D&source=editors&ust=1686087044851579&usg=AOvVaw3hk7M3LSn1Ia1G6YYdWTDA)\] Degraded performance for delegated methods through Forwardable module (shyouhei) assign who?
 
 
 - nobu: I did this already I think.
 
-- ## \[Bug [#13098](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13098&sa=D&source=editors&ust=1686087044851959&usg=AOvVaw2PVcqG3dkj4MmA3qVFZhIE)\] miniruby fails with SEGV on NetBSD/powerpc (shyouhei) look at the backtarce (shyouhei)
+## \[Bug [#13098](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13098&sa=D&source=editors&ust=1686087044851959&usg=AOvVaw2PVcqG3dkj4MmA3qVFZhIE)\] miniruby fails with SEGV on NetBSD/powerpc (shyouhei) look at the backtarce (shyouhei)
 
 
 - nobu: will take a look.
 
-- ## \[Bug [#13125](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13125&sa=D&source=editors&ust=1686087044852369&usg=AOvVaw2gujwfPf71ta-jbKElTVRp)\] MRI has too much Qtrue : Qfalse; (shyouhei)
+## \[Bug [#13125](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13125&sa=D&source=editors&ust=1686087044852369&usg=AOvVaw2gujwfPf71ta-jbKElTVRp)\] MRI has too much Qtrue : Qfalse; (shyouhei)
 
 
 - nobu: nobody is against the needs of macro but the name?
 - shyouhei: will update the ticket.
 
-- ## \[Bug [#13127](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13127&sa=D&source=editors&ust=1686087044852919&usg=AOvVaw1LLHgzk8OKi1d_2sVVZ7gr)\] DRb \`load': connection closed (DRb::DRbConnError) when client exit's from within a loop iterating over remote objects (shyouhei)
+## \[Bug [#13127](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13127&sa=D&source=editors&ust=1686087044852919&usg=AOvVaw1LLHgzk8OKi1d_2sVVZ7gr)\] DRb \`load': connection closed (DRb::DRbConnError) when client exit's from within a loop iterating over remote objects (shyouhei)
 
 
 - assign seki
 
-- ## \[Feature [#13067](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13067&sa=D&source=editors&ust=1686087044853423&usg=AOvVaw1iqYejPjiQA7MoCw1gFevk)\] TrueClass,FalseClass to provide \=== to match truthy/falsy values. (shyouhei)
+## \[Feature [#13067](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13067&sa=D&source=editors&ust=1686087044853423&usg=AOvVaw1iqYejPjiQA7MoCw1gFevk)\] TrueClass,FalseClass to provide \=== to match truthy/falsy values. (shyouhei)
 
 
 - matz: I give up.
 
-- ## \[Bug [#13064](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13064&sa=D&source=editors&ust=1686087044853890&usg=AOvVaw3-c0qgyUEi8ZRBoniVnAbn)\] Inconsistent behavior with next inside begin/end across different implementations. (shyouhei) spec or...?
+## \[Bug [#13064](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13064&sa=D&source=editors&ust=1686087044853890&usg=AOvVaw3-c0qgyUEi8ZRBoniVnAbn)\] Inconsistent behavior with next inside begin/end across different implementations. (shyouhei) spec or...?
 
 
 - ko1: it’s 1 to me.
@@ -407,12 +407,12 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - ko1:  it is.  Because you can’t place next here statically.
 - akr: should the JIS/ISO specify as such?
 
-- ## \[Bug [#13104](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13104&sa=D&source=editors&ust=1686087044854726&usg=AOvVaw2eEiMm67gOw-jGbIVhc4Wj)\] math.rb affects Rational literals (nobu)
+## \[Bug [#13104](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13104&sa=D&source=editors&ust=1686087044854726&usg=AOvVaw2eEiMm67gOw-jGbIVhc4Wj)\] math.rb affects Rational literals (nobu)
 
 
 - matz: it’s ugly, but mathn is ugly by nature.
 
-- ## \[Bug [#9569](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/9569&sa=D&source=editors&ust=1686087044855248&usg=AOvVaw33OUNjR8XTKHqw5QZE4B7O)\] SecureRandom should try /dev/urandom first (shyouhei) I now think it's OK
+## \[Bug [#9569](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/9569&sa=D&source=editors&ust=1686087044855248&usg=AOvVaw33OUNjR8XTKHqw5QZE4B7O)\] SecureRandom should try /dev/urandom first (shyouhei) I now think it's OK
 
 
 - shyouhei: I will

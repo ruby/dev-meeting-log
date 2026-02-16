@@ -123,7 +123,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 ## About 2.5 timeframe
 
-- ## [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25&sa=D&source=editors&ust=1686087099213820&usg=AOvVaw3vacAuKsyIn9qLjxob6FaO)
+## [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25&sa=D&source=editors&ust=1686087099213820&usg=AOvVaw3vacAuKsyIn9qLjxob6FaO)
 
 - 合宿
 
