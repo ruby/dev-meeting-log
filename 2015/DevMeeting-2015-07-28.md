@@ -65,7 +65,7 @@ matz: ok
 
 matz: ok
 
-# [https://bugs.ruby-lang.org/issues/11339](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11339&sa=D&source=editors&ust=1686086447558338&usg=AOvVaw2vgkHD9pqJjDzGHhqvEaG1)
+## [https://bugs.ruby-lang.org/issues/11339](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11339&sa=D&source=editors&ust=1686086447558338&usg=AOvVaw2vgkHD9pqJjDzGHhqvEaG1)
 
 Introducing IDL will
 
@@ -97,11 +97,11 @@ Also, additional TracePoint will be introduced.
 - we will replace following azure backends to s3.
 - [https://github.com/akr/chkbuild/blob/master/chkbuild/upload.rb#L75](https://www.google.com/url?q=https://github.com/akr/chkbuild/blob/master/chkbuild/upload.rb%23L75&sa=D&source=editors&ust=1686086447560583&usg=AOvVaw1Y-fiqFqbpP-ZlbBuzn_Uu)
 
-# about the necessity of r51384 (it takes toooooo looooong time to run test-all) (usa)
+## about the necessity of r51384 (it takes toooooo looooong time to run test-all) (usa)
 
 Resolved.
 
-# \[Feature [#8919](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8919&sa=D&source=editors&ust=1686086447561376&usg=AOvVaw1GpriQ8IBecqjlUXWryVI9)\] Queue as embedded class: please determine whether or not it should be introduced. (glass\_saga)
+## \[Feature [#8919](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8919&sa=D&source=editors&ust=1686086447561376&usg=AOvVaw1GpriQ8IBecqjlUXWryVI9)\] Queue as embedded class: please determine whether or not it should be introduced. (glass\_saga)
 
 Matz: seems good.
 
@@ -117,6 +117,6 @@ akr: What happens on pushing/popping closed Queue?
 
 ko1: there are discussions on ticket. I’ll take it.
 
-# \[Feature [#11297](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11297&sa=D&source=editors&ust=1686086447562734&usg=AOvVaw2n78P0SgnFCpyVhlq5wN_v)\] Allow private method of self to be called (a\_matsuda)
+## \[Feature [#11297](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11297&sa=D&source=editors&ust=1686086447562734&usg=AOvVaw2n78P0SgnFCpyVhlq5wN_v)\] Allow private method of self to be called (a\_matsuda)
 
 Matz: seems good

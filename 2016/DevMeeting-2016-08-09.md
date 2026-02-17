@@ -95,7 +95,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 * [Feature #10594] `Comparable#clamp` (nerdinand)
 
 # Log
-# Next meeting:
+## Next meeting:
 
 - when 7 Sept., 14:00 〜
 - At @tagomoris house?
