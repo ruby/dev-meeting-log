@@ -68,7 +68,7 @@ Attendees: unak, mrkn, naruse, ayumin, ko1, sorah, zack, martin
 - Shibata-san
 - Usa-san
 
-# \[Feature [#11949](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11949&sa=D&source=editors&ust=1686086669304153&usg=AOvVaw2yGAdfbMDsH3mYZjJlB9mt)\] Allow @/$ prefix in Regexp's named captures (naruse)
+## \[Feature [#11949](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11949&sa=D&source=editors&ust=1686086669304153&usg=AOvVaw2yGAdfbMDsH3mYZjJlB9mt)\] Allow @/$ prefix in Regexp's named captures (naruse)
 
 /(?<[@timestamp](https://www.google.com/url?q=https://github.com/timestamp&sa=D&source=editors&ust=1686086669304610&usg=AOvVaw28N6Kq4TmNVpiRZst-nyet)\>\[^ \]\*): / =~
 
@@ -114,7 +114,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
 
 Conclusion: acceptable confusion or not. Matz is positive to accept this feature
 
-# \[Feature [#11987](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11987&sa=D&source=editors&ust=1686086669307460&usg=AOvVaw2PuKCWfc_szpekM7TIHEK1)\] daemons can't show the backtrace of rb\_bug
+## \[Feature [#11987](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11987&sa=D&source=editors&ust=1686086669307460&usg=AOvVaw2PuKCWfc_szpekM7TIHEK1)\] daemons can't show the backtrace of rb\_bug
 
 Process.daemon closes STDERR (or redirect to /dev/null).
 
@@ -189,7 +189,7 @@ Conclusion: Use wrapper process to intercept stderr.
 
 [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/CallForFeatureProposalTemplate](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/CallForFeatureProposalTemplate&sa=D&source=editors&ust=1686086669314387&usg=AOvVaw2_xKpFGpK5ToUyH3Mk1bHJ)
 
-# Announcement channel
+## Announcement channel
 
 We have only mailing lists and [www.ruby-lang.org](https://www.google.com/url?q=http://www.ruby-lang.org&sa=D&source=editors&ust=1686086669314808&usg=AOvVaw2jIwC6FxxSu2ArZR9sN6NM) to annouce news. However, it is difficult to catch up latest news by such channels. Any other ideas?
 

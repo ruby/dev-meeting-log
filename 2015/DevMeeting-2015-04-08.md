@@ -166,4 +166,4 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 (matz) reject.
 
-# Next meeting -> 2015/05/14 (Thu) 14:00- (JST)
+## Next meeting -> 2015/05/14 (Thu) 14:00- (JST)

@@ -89,7 +89,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20160907Japan](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20160907Japan&sa=D&source=editors&ust=1686086903371750&usg=AOvVaw3h-Ezlz0Vufuf0h-KtQA84)
 
-# Next meeting:
+## Next meeting:
 
 - when: Oct 11th, 14:00-
 - venue: TBA
