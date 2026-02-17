@@ -132,17 +132,17 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 # Log
 
-## Date: 2017/05/19 (Mon)
+Date: 2017/05/19 (Mon)
 
-## Time: 14:00- 19:00 (JST)
+Time: 14:00- 19:00 (JST)
 
-## Place: Speee Inc. Headquarter
+Place: Speee Inc. Headquarter
 
-## Sign-up: https://ruby.connpass.com/event/55487/
+Sign-up: https://ruby.connpass.com/event/55487/
 
-## log edit: [https://docs.google.com/document/d/1XolSYFFvBOj\_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1XolSYFFvBOj_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit&sa=D&source=editors&ust=1686087156478680&usg=AOvVaw3OMGEHJuo3NAojETLp_5NU)
+log edit: [https://docs.google.com/document/d/1XolSYFFvBOj\_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1XolSYFFvBOj_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit&sa=D&source=editors&ust=1686087156478680&usg=AOvVaw3OMGEHJuo3NAojETLp_5NU)
 
-## log: TBD
+log: TBD
 
 ## Next meeting
 

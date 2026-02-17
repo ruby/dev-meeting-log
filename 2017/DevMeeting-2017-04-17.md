@@ -122,17 +122,17 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 # Log
 
-## Date: 2017/04/17 (Mon)
+Date: 2017/04/17 (Mon)
 
-## Time: 14:00- 19:00 (JST)
+Time: 14:00- 19:00 (JST)
 
-## Place: Cookpad Inc. Headquarter
+Place: Cookpad Inc. Headquarter
 
-## Sign-up: [https://ruby.connpass.com/event/53124/](https://www.google.com/url?q=https://ruby.connpass.com/event/53124/&sa=D&source=editors&ust=1686087122714817&usg=AOvVaw3a19jCb1ija_qokyu5Q5Tj)
+Sign-up: [https://ruby.connpass.com/event/53124/](https://www.google.com/url?q=https://ruby.connpass.com/event/53124/&sa=D&source=editors&ust=1686087122714817&usg=AOvVaw3a19jCb1ija_qokyu5Q5Tj)
 
-## log edit: [https://docs.google.com/document/d/1\_tWfg7\_t-JRXgGlMaOGnpyipGP7P-lKQ18NtciWhKIY/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1_tWfg7_t-JRXgGlMaOGnpyipGP7P-lKQ18NtciWhKIY/edit&sa=D&source=editors&ust=1686087122715256&usg=AOvVaw3HWhoiEjigR-s344HlZvby)
+log edit: [https://docs.google.com/document/d/1\_tWfg7\_t-JRXgGlMaOGnpyipGP7P-lKQ18NtciWhKIY/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1_tWfg7_t-JRXgGlMaOGnpyipGP7P-lKQ18NtciWhKIY/edit&sa=D&source=editors&ust=1686087122715256&usg=AOvVaw3HWhoiEjigR-s344HlZvby)
 
-## log: TBD
+log: TBD
 
 ## Next meeting
 

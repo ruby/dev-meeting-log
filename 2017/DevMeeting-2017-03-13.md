@@ -103,17 +103,17 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 # Log
 
-## Date: 2017/03/13 (Mon)
+Date: 2017/03/13 (Mon)
 
-## Time: 14:00- 19:00 (JST)
+Time: 14:00- 19:00 (JST)
 
-## Place: Money Forward inc. Headquarter
+Place: Money Forward inc. Headquarter
 
-## Sign-up: [https://ruby.connpass.com/event/47745/](https://www.google.com/url?q=https://ruby.connpass.com/event/47745/&sa=D&source=editors&ust=1686087099212572&usg=AOvVaw2H69ZGcgNYVH87pcL_SNae)
+Sign-up: [https://ruby.connpass.com/event/47745/](https://www.google.com/url?q=https://ruby.connpass.com/event/47745/&sa=D&source=editors&ust=1686087099212572&usg=AOvVaw2H69ZGcgNYVH87pcL_SNae)
 
-## log edit: [https://docs.google.com/document/d/1fZPbRMn2zjVAflvLz1IFWs3Kdijnm2Um4uNLammqURE/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1fZPbRMn2zjVAflvLz1IFWs3Kdijnm2Um4uNLammqURE/edit&sa=D&source=editors&ust=1686087099212956&usg=AOvVaw252KatT_TiaZG1EV8OMs74)
+log edit: [https://docs.google.com/document/d/1fZPbRMn2zjVAflvLz1IFWs3Kdijnm2Um4uNLammqURE/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1fZPbRMn2zjVAflvLz1IFWs3Kdijnm2Um4uNLammqURE/edit&sa=D&source=editors&ust=1686087099212956&usg=AOvVaw252KatT_TiaZG1EV8OMs74)
 
-## log: TBD
+log: TBD
 
 ## Next meeting
 
