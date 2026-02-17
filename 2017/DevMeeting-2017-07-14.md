@@ -58,75 +58,75 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 ## From attendees
 
-- [Feature #13618]&nbsp;[PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (shyouhei)
-- [Feature #13581]&nbsp;Syntax sugar for method reference (shyouhei)
-- [Feature #13583]&nbsp;Adding `Hash#transform_keys` method (shyouhei)
-- [Feature #13396]&nbsp;Net::HTTP has no write timeout (shyouhei)
-- [Feature #13587]&nbsp;Improve performance of string interpolation (shyouhei)
-- [Bug #13438]&nbsp;Fix heap overflow due to configure.in not being updated for HEAP_* -> HEAP_PAGE_* variable renaming (shyouhei)
-- [Misc #12529]&nbsp;LEGAL file covering all the license information within Ruby (shyouhei)
-- [Feature #13600]&nbsp;yield_self should be chainable/composable (shyouhei)
-- [Misc #13597]&nbsp;Does read_nonblock call remalloc for the buffer if does it just set the size attribute (shyouhei)
-- [Feature #13606]&nbsp;Enumerator equality and comparison (shyouhei)
-- [Feature #13604]&nbsp;Exposing alternative interface of readline (shyouhei)
-- [Feature #13608]&nbsp;Add TracePoint#thread (shyouhei)
-- [Feature #13602]&nbsp;Optimize instance variable access if $VERBOSE is not true when compiling (shyouhei)
-- [Feature #13613]&nbsp;Prefer that require/require_relative/load to tell us permission error if the target file is unreadable (shyouhei)
-- [Feature #13620]&nbsp;Simplifying MRI's build system: always install (shyouhei)
-- [Feature #13630]&nbsp;:[] method should accept block in nice syntax (shyouhei)
-- [Feature #13639]&nbsp;Add "RTMIN" and "RTMAX" to Signal.list (shyouhei)
-- [Feature #11484]&nbsp;add output offset for readpartial/read_nonblock/etc (shyouhei)
-- [Feature #9001]&nbsp;Please package better standard library (shyouhei)
-- [Feature #13563]&nbsp;Implement Hash#choice method. (shyouhei)
-- [Feature #12533]&nbsp;Refinements: allow modules inclusion, in which the module can call internal methods which it defines.  (shyouhei)
-- [Feature #13653]&nbsp;Bundled zlib helper (shyouhei)
-- [Feature #12589]&nbsp;VM performance improvement proposal (shyouhei)
-- [Feature #13626]&nbsp;Add String#byteslice! (shyouhei)
-- [Feature #13551]&nbsp;Add a method to alias class methods (shyouhei)
-- [Feature #13332]&nbsp;Forwardable#def_instance_delegator nil (shyouhei)
-- [Feature #13378]&nbsp;Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
-- [Feature #13381]&nbsp;[PATCH] Expose rb_fstring and its family to C extensions (shyouhei)
-- [Feature #13676]&nbsp;to_s method is not overriden for Set (shyouhei)
-- [Feature #13677]&nbsp;Add more details to error "Name or service not known (SocketError)" (shyouhei)
-- [Feature #10771]&nbsp;An easy way to get the source location of a constant (shyouhei)
-- [Feature #13665]&nbsp;String#delete_suffix (shyouhei)
-- [Feature #9323]&nbsp;IO#writev (shyouhei)
-- [Feature #13686]&nbsp;Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_* (shyouhei)
-- [Feature #13693]&nbsp;Allow String#to_i and / or Kernel::Integer to parse e-notation (shyouhei)
-- [Feature #13434]&nbsp;better method definition in C API (shyouhei)
-- [Feature #13696]&nbsp;Add exchange and noreplace options to File.rename (shyouhei)
-- [Feature #13683]&nbsp;Add strict Enumerable#single (shyouhei)
-- [Misc #13704]&nbsp;Exclude Changelog files from documentation. (shyouhei)
-- [Feature #13666]&nbsp;Development: Writing test code for new features/bug fixes can be done as specs under spec/rubyspec instead of tests under test/ (shyouhei)
-- [Feature #13713]&nbsp;socketの便利メソッドのdatagramのUNIXSocket用対応 (shyouhei)
-- [Feature #13715]&nbsp;[PATCH] avoid garbage from Symbol#to_s in interpolation (shyouhei)
-- [Feature #13719]&nbsp;[PATCH] net/http: allow existing socket arg for Net::HTTP.start (shyouhei)
-- [Feature #13721]&nbsp;[PATCH] net/imap: dedupe attr keys in Net::IMAP::FetchData (shyouhei)
-- [Feature #13732]&nbsp;Precise Time.now on Windows (shyouhei)
-- [Feature #13733]&nbsp;Dump the delegator instead of the delegated object (shyouhei)
-- [Feature #13625]&nbsp;BigDecimal short form / shorthand (shyouhei)
-- [Feature #13712]&nbsp;String#start_with? with regexp (shyouhei)
+- [Feature #13618] [PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (shyouhei)
+- [Feature #13581] Syntax sugar for method reference (shyouhei)
+- [Feature #13583] Adding `Hash#transform_keys` method (shyouhei)
+- [Feature #13396] Net::HTTP has no write timeout (shyouhei)
+- [Feature #13587] Improve performance of string interpolation (shyouhei)
+- [Bug #13438] Fix heap overflow due to configure.in not being updated for HEAP_* -> HEAP_PAGE_* variable renaming (shyouhei)
+- [Misc #12529] LEGAL file covering all the license information within Ruby (shyouhei)
+- [Feature #13600] yield_self should be chainable/composable (shyouhei)
+- [Misc #13597] Does read_nonblock call remalloc for the buffer if does it just set the size attribute (shyouhei)
+- [Feature #13606] Enumerator equality and comparison (shyouhei)
+- [Feature #13604] Exposing alternative interface of readline (shyouhei)
+- [Feature #13608] Add TracePoint#thread (shyouhei)
+- [Feature #13602] Optimize instance variable access if $VERBOSE is not true when compiling (shyouhei)
+- [Feature #13613] Prefer that require/require_relative/load to tell us permission error if the target file is unreadable (shyouhei)
+- [Feature #13620] Simplifying MRI's build system: always install (shyouhei)
+- [Feature #13630] :[] method should accept block in nice syntax (shyouhei)
+- [Feature #13639] Add "RTMIN" and "RTMAX" to Signal.list (shyouhei)
+- [Feature #11484] add output offset for readpartial/read_nonblock/etc (shyouhei)
+- [Feature #9001] Please package better standard library (shyouhei)
+- [Feature #13563] Implement Hash#choice method. (shyouhei)
+- [Feature #12533] Refinements: allow modules inclusion, in which the module can call internal methods which it defines.  (shyouhei)
+- [Feature #13653] Bundled zlib helper (shyouhei)
+- [Feature #12589] VM performance improvement proposal (shyouhei)
+- [Feature #13626] Add String#byteslice! (shyouhei)
+- [Feature #13551] Add a method to alias class methods (shyouhei)
+- [Feature #13332] Forwardable#def_instance_delegator nil (shyouhei)
+- [Feature #13378] Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
+- [Feature #13381] [PATCH] Expose rb_fstring and its family to C extensions (shyouhei)
+- [Feature #13676] to_s method is not overriden for Set (shyouhei)
+- [Feature #13677] Add more details to error "Name or service not known (SocketError)" (shyouhei)
+- [Feature #10771] An easy way to get the source location of a constant (shyouhei)
+- [Feature #13665] String#delete_suffix (shyouhei)
+- [Feature #9323] IO#writev (shyouhei)
+- [Feature #13686] Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_* (shyouhei)
+- [Feature #13693] Allow String#to_i and / or Kernel::Integer to parse e-notation (shyouhei)
+- [Feature #13434] better method definition in C API (shyouhei)
+- [Feature #13696] Add exchange and noreplace options to File.rename (shyouhei)
+- [Feature #13683] Add strict Enumerable#single (shyouhei)
+- [Misc #13704] Exclude Changelog files from documentation. (shyouhei)
+- [Feature #13666] Development: Writing test code for new features/bug fixes can be done as specs under spec/rubyspec instead of tests under test/ (shyouhei)
+- [Feature #13713] socketの便利メソッドのdatagramのUNIXSocket用対応 (shyouhei)
+- [Feature #13715] [PATCH] avoid garbage from Symbol#to_s in interpolation (shyouhei)
+- [Feature #13719] [PATCH] net/http: allow existing socket arg for Net::HTTP.start (shyouhei)
+- [Feature #13721] [PATCH] net/imap: dedupe attr keys in Net::IMAP::FetchData (shyouhei)
+- [Feature #13732] Precise Time.now on Windows (shyouhei)
+- [Feature #13733] Dump the delegator instead of the delegated object (shyouhei)
+- [Feature #13625] BigDecimal short form / shorthand (shyouhei)
+- [Feature #13712] String#start_with? with regexp (shyouhei)
 - bugs that are not assigned (shyouhei)
-    * [Bug #13586]&nbsp;Ruby hangs when accessing array which is modified in instance_eval after Coverage.start
-    * [Bug #13574]&nbsp;Method redefinition warning
-    * [Bug #13616]&nbsp;Zlib::GzipReader#pos underflows after calling #ungetbyte or #ungetc at start of file
-    * [Bug #13593]&nbsp;Addrinfo#== behaves oddly
-    * [Bug #13631]&nbsp;Cannot disable site and vendor directories
-    * [Bug #13647]&nbsp;Some weird behaviour with keyword arguments
-    * [Bug #13649]&nbsp;Net::IMAP doesn't support response from a Microsoft Exchange server (which is not compliant with RFC standards)
-    * [Bug #13654]&nbsp;irb save-history extension is not concurrency-safe
-    * [Bug #13655]&nbsp;external encoding named "-" (doc issue or…?)
-    * [Bug #13660]&nbsp;rb_str_hash_m discards bits from the hash
-    * [Bug #13671]&nbsp;Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
-    * [Bug #13674]&nbsp;BigDecimal comparison with Float::INFINITY is erroneous in 2.2.x and 2.3.x
-    * [Bug #13675]&nbsp;Should Zlib::GzipReader#ungetc accept nil?
-    * [Bug #13700]&nbsp;Enumerable#sum may not work for Ranges subclasses due to optimization
-    * [Bug #13350]&nbsp;File.read :newline option not respected on Linux
-    * [Bug #13705]&nbsp;[PATCH] `cfp consistency error' occurs when raising exception in bmethod call event
-    * [Bug #13716]&nbsp;Unexpected or undocumented (or maybe both) behaviour when mixing String#scan with named captures
-    * [Bug #13670]&nbsp;[BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
-    * [Bug #13731]&nbsp;inode for Windows on ReFS
-    * [Bug #13735]&nbsp;Initialization-error of sortedset
+    * [Bug #13586] Ruby hangs when accessing array which is modified in instance_eval after Coverage.start
+    * [Bug #13574] Method redefinition warning
+    * [Bug #13616] Zlib::GzipReader#pos underflows after calling #ungetbyte or #ungetc at start of file
+    * [Bug #13593] Addrinfo#== behaves oddly
+    * [Bug #13631] Cannot disable site and vendor directories
+    * [Bug #13647] Some weird behaviour with keyword arguments
+    * [Bug #13649] Net::IMAP doesn't support response from a Microsoft Exchange server (which is not compliant with RFC standards)
+    * [Bug #13654] irb save-history extension is not concurrency-safe
+    * [Bug #13655] external encoding named "-" (doc issue or…?)
+    * [Bug #13660] rb_str_hash_m discards bits from the hash
+    * [Bug #13671] Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
+    * [Bug #13674] BigDecimal comparison with Float::INFINITY is erroneous in 2.2.x and 2.3.x
+    * [Bug #13675] Should Zlib::GzipReader#ungetc accept nil?
+    * [Bug #13700] Enumerable#sum may not work for Ranges subclasses due to optimization
+    * [Bug #13350] File.read :newline option not respected on Linux
+    * [Bug #13705] [PATCH] `cfp consistency error' occurs when raising exception in bmethod call event
+    * [Bug #13716] Unexpected or undocumented (or maybe both) behaviour when mixing String#scan with named captures
+    * [Bug #13670] [BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
+    * [Bug #13731] inode for Windows on ReFS
+    * [Bug #13735] Initialization-error of sortedset
 
 ## From non-attendees
 
