@@ -48,53 +48,53 @@ Please add your favorite ticket numbers you want to ask to discuss.
 ## Carry-over from previous meeting(s)
 
 - matz
-  * [Feature #4514]&nbsp;#deep_clone and #deep_dup for Objects
-  * [Feature #4521]&nbsp;NoMethodError#message may take very long to execute
-  * [Feature #4539]&nbsp;Array#zip_with
-  * [Feature #4592]&nbsp;Tempfileを直接保存したい
-  * [Feature #4780]&nbsp;String#split with a block
-  * [Feature #4818]&nbsp;Add method marshalable?
-  * [Feature #4824]&nbsp;Provide method Kernel#executed?
-  * [Feature #4907]&nbsp;enumerable#permutation and combination
-  * [Feature #4910]&nbsp;Classes as factories
-  * [Feature #5007]&nbsp;Proc#call_under: Unifying instance_eval and instance_exec
-  * [Feature #5064]&nbsp;HTTP user-agent class
-  * [Feature #5129]&nbsp;Create a core class "FileArray" and make "ARGF" its instance
-  * [Feature #5133]&nbsp;Array#unzip as an alias of Array#transpose
-  * [Bug #5179]&nbsp;Complex#rationalize and to_r with approximate zeros
+  * [Feature #4514] #deep_clone and #deep_dup for Objects
+  * [Feature #4521] NoMethodError#message may take very long to execute
+  * [Feature #4539] Array#zip_with
+  * [Feature #4592] Tempfileを直接保存したい
+  * [Feature #4780] String#split with a block
+  * [Feature #4818] Add method marshalable?
+  * [Feature #4824] Provide method Kernel#executed?
+  * [Feature #4907] enumerable#permutation and combination
+  * [Feature #4910] Classes as factories
+  * [Feature #5007] Proc#call_under: Unifying instance_eval and instance_exec
+  * [Feature #5064] HTTP user-agent class
+  * [Feature #5129] Create a core class "FileArray" and make "ARGF" its instance
+  * [Feature #5133] Array#unzip as an alias of Array#transpose
+  * [Bug #5179] Complex#rationalize and to_r with approximate zeros
 - nobu
-  * [Feature #2324]&nbsp;Dir instance methods for relative path
-  * [Bug #3618]&nbsp;inf-ruby prompt and tab completion
-  * [Feature #4924]&nbsp;mkmf have_header fails with C++ headers
+  * [Feature #2324] Dir instance methods for relative path
+  * [Bug #3618] inf-ruby prompt and tab completion
+  * [Feature #4924] mkmf have_header fails with C++ headers
 - ko1
-  * [Feature #2447]&nbsp;reduce GC pressure by symbol table without String instance
-  * [Feature #3187]&nbsp;Allow dynamic Fiber stack size
-  * [Feature #3731]&nbsp;Easier Embedding API for Ruby
-  * [Bug #4040]&nbsp;SystemStackError with Hash[*a] for Large _a_
+  * [Feature #2447] reduce GC pressure by symbol table without String instance
+  * [Feature #3187] Allow dynamic Fiber stack size
+  * [Feature #3731] Easier Embedding API for Ruby
+  * [Bug #4040] SystemStackError with Hash[*a] for Large _a_
 - naruse
-  * [Feature #2567]&nbsp;Net::HTTP does not handle encoding correctly
-  * [Feature #2631]&nbsp;Allow IO#reopen to take a block
-  * [Bug #4173]&nbsp;TestProcess#test_wait_and_sigchild が、たまに失敗する
+  * [Feature #2567] Net::HTTP does not handle encoding correctly
+  * [Feature #2631] Allow IO#reopen to take a block
+  * [Bug #4173] TestProcess#test_wait_and_sigchild が、たまに失敗する
 - akr
-  * [Feature #3608]&nbsp;Enhancing Pathname#each_child to be lazy
-  * [Feature #3848]&nbsp;Using http basic authentication for FTP with Open URI
-  * [Feature #4560]&nbsp;[PATCH] lib/net/protocol.rb: avoid exceptions in rbuf_fill
+  * [Feature #3608] Enhancing Pathname#each_child to be lazy
+  * [Feature #3848] Using http basic authentication for FTP with Open URI
+  * [Feature #4560] [PATCH] lib/net/protocol.rb: avoid exceptions in rbuf_fill
 - knu
-  * [Feature #3953]&nbsp;TCPSocket / UDPSocket do not accept IPAddr objects.
+  * [Feature #3953] TCPSocket / UDPSocket do not accept IPAddr objects.
 - mame
-  * [Feature #4247]&nbsp;New features for Array#sample, Array#choice
+  * [Feature #4247] New features for Array#sample, Array#choice
 - suke
-  * [Bug #4405]&nbsp;WIN32OLE & Threads incompatible
+  * [Bug #4405] WIN32OLE & Threads incompatible
 - kosaki
-  * [Feature #4464]&nbsp;[PATCH] add Fcntl::Flock object for easier use of POSIX file locks
+  * [Feature #4464] [PATCH] add Fcntl::Flock object for easier use of POSIX file locks
 - yugui
-  * [Feature #4831]&nbsp;Integer#prime_factors
+  * [Feature #4831] Integer#prime_factors
 - hsbt
-  * [Bug #5060]&nbsp;Executables in bin folder conflict with their gem versions.
+  * [Bug #5060] Executables in bin folder conflict with their gem versions.
 - anyone
-  * [Feature #4017]&nbsp;[PATCH] CSV parsing speedup
-  * [Bug #4157]&nbsp;test_pty で、たまに出る Failure
-  * [Feature #4483]&nbsp;PStoreをデフォルトで複数のスレッドから扱えるようにしたい
+  * [Feature #4017] [PATCH] CSV parsing speedup
+  * [Bug #4157] test_pty で、たまに出る Failure
+  * [Feature #4483] PStoreをデフォルトで複数のスレッドから扱えるようにしたい
 
 # Log
 

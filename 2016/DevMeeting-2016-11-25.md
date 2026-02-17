@@ -72,7 +72,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 * [Feature #12802] Add BLAKE2 support to Digest (nobu)
 * [Feature #12861] Lexically scoped super (nobu)
 * [Bug #12952] Incompatibility of a method signature between `Float#round` and `BigDecimal#round` (yui-knk)
-* [Feature #12953]&nbsp;(Float, Integer, Rational)#round(half: :down) (shyouhei)
+* [Feature #12953] (Float, Integer, Rational)#round(half: :down) (shyouhei)
 * [Bug #12666] Fatal error: glibc detected an invalid stdio handle (shyouhei)
 * [Bug #12945] Use-after-free in vm_trace.c (shyouhei)
 * [Bug #12961] Bad value for range using infinity for Date or Time (shyouhei)
