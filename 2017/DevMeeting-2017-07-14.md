@@ -241,7 +241,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## \[Bug [#13569](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13569&sa=D&source=editors&ust=1686087205340978&usg=AOvVaw1ePy4_g8xpOQ77PtddT4ht)\] Windows - TestRubyOptions#test\_search - append to paths instead of replacing
 
-- \-----
+---
 - nobu: I cannot reproduce these problems.
 - shyouhei: It seems the reporter is not eligible to fix them.
 - hsbt: I made an environment so I’ll see if they reproduce.

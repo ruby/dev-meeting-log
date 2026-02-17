@@ -229,7 +229,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## \[Feature [#13604](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13604&sa=D&source=editors&ust=1686087248446747&usg=AOvVaw0orG4YS8WpJkN7Q0SL2gXJ)\] Exposing alternative interface of readline (shyouhei)
 
-- \-----
+---
 ## \[Feature [#13608](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13608&sa=D&source=editors&ust=1686087248447468&usg=AOvVaw2jNbM2WcIRAe9NpU71Fryy)\] Add TracePoint#thread (shyouhei)
 
 ## \[Feature [#13602](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13602&sa=D&source=editors&ust=1686087248448071&usg=AOvVaw1ZOTzKNoPx16A5oh3aefn-)\] Optimize instance variable access if $VERBOSE is not true when compiling (shyouhei)
