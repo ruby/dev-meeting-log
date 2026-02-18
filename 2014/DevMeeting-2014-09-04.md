@@ -45,7 +45,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/13742
 - attendee: ko1, sora\_h, akr, naruse, ayumin, a\_matsuda
 - on-line: matz, nobu
 
-## \[Feature [#10199](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10199&sa=D&source=editors&ust=1686086152310501&usg=AOvVaw2a92QzUZbS3-ZF81AAZ1-Q)\] Drop to support Symbian (hsbt)
+## \[Feature [#10199](https://bugs.ruby-lang.org/issues/10199)\] Drop to support Symbian (hsbt)
 
 Matz: agreed.
 
@@ -55,7 +55,7 @@ akr: no need to think about it now.
 
 hsbt: I will remove.
 
-## \[Feature [#10200](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10200&sa=D&source=editors&ust=1686086152311601&usg=AOvVaw1apUWwf8TufTYw_P-41jEV)\] Symbol API (static count, dynamic count, all\_symbols and so on) (ko1)
+## \[Feature [#10200](https://bugs.ruby-lang.org/issues/10200)\] Symbol API (static count, dynamic count, all\_symbols and so on) (ko1)
 
 Symbol.all\_symbols:
 
@@ -73,7 +73,7 @@ matz: remove it and ask people
 
 Couting immortal symbols is not solved. ko1 will make prototype of such methods.
 
-## \[Feature [#9880](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/9880&sa=D&source=editors&ust=1686086152313162&usg=AOvVaw2-YU_uS-VvFQLEwSZRk8eo)\] Dir#fileno (akr)
+## \[Feature [#9880](https://bugs.ruby-lang.org/issues/9880)\] Dir#fileno (akr)
 
 matz: portability?
 
@@ -83,7 +83,7 @@ akr: For windows and so on, not implemented error can be acceptable.
 
 matz: ok. write document for compatibility.
 
-## \[Feature [#10201](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10201&sa=D&source=editors&ust=1686086152314712&usg=AOvVaw25yl5wfR-E5NvYjfJkBOTe)\] Dynamically changing GC tuning parameters (ko1)
+## \[Feature [#10201](https://bugs.ruby-lang.org/issues/10201)\] Dynamically changing GC tuning parameters (ko1)
 
 ko1 will try.
 
@@ -111,6 +111,6 @@ RC2 (if needed)
 
 Release 2.2.0 (12/25)
 
-[https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering22](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering22&sa=D&source=editors&ust=1686086152316831&usg=AOvVaw1m06gcrxWhkJAQR4rXQl-N)
+[https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering22](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering22)
 
 ## Next meeting 10/29

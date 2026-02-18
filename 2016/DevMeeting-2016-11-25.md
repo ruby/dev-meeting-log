@@ -149,14 +149,14 @@ RC1? at 12/1
 
 Issues
 
-- \[Bug [#12958](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12958&sa=D&source=editors&ust=1686086982357143&usg=AOvVaw0NDpSqKnj-yfX0tPogEifH)\] Breaking change in how #round works (yui-knk listed on this agenda) Is there any migration path for changing behavior of round? For example only warning on Ruby 2.4 and chnage behavior on Ruby 2.5.
+- \[Bug [#12958](https://bugs.ruby-lang.org/issues/12958)\] Breaking change in how #round works (yui-knk listed on this agenda) Is there any migration path for changing behavior of round? For example only warning on Ruby 2.4 and chnage behavior on Ruby 2.5.
 
 - mrkn: what problem are there?
 - yui-knk(behind shyouhei): want to know how ruby-core thinks abot the incompatibility.
 - shyouhei: it seems the rails breakage is about ActionView
 - naruse: it’s better for rails to have a dedicated method to round a float.
 
-- \[Feature [#12963](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12963&sa=D&source=editors&ust=1686086982358050&usg=AOvVaw3cwEmrnvvy00w3HPtYY8l6)\] ?string longer than one char
+- \[Feature [#12963](https://bugs.ruby-lang.org/issues/12963)\] ?string longer than one char
 
 - matz: I feel not confident with : :
 - shyouhei: “::” vs “: :” are different in meaning.
@@ -173,19 +173,19 @@ Issues
 - mrkn: x.round(half::"up") -> x.round(half: :"up")
 - nobu: x.round(half:: "up") -> NG
 
-- \[Feature [#12953](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12953&sa=D&source=editors&ust=1686086982359288&usg=AOvVaw3V9ygz-hsVvt_swmL2zw5y)\] (Float, Integer, Rational)#round(half: :down)
+- \[Feature [#12953](https://bugs.ruby-lang.org/issues/12953)\] (Float, Integer, Rational)#round(half: :down)
 
 - mrkn: I think it’s OK
 - matz: seems nobody is against it.
 
-- \[Feature [#12063](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12063&sa=D&source=editors&ust=1686086982359763&usg=AOvVaw1yJrkhp1xX6JkDo-FW0cUT)\] KeyError#receiver and KeyError#name
+- \[Feature [#12063](https://bugs.ruby-lang.org/issues/12063)\] KeyError#receiver and KeyError#name
 
 - shyouhei: I’m not sure about the patch but the feature itself seems OK
 - nobu: I see no problem on the patch.
 - ko1: it’s not a child of ArgumentError.
 - matz: Ruby’s exceptions classes are not well considered… Anyway Python used KeyError.
 
-- \[Bug [#11929](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11929&sa=D&source=editors&ust=1686086982360357&usg=AOvVaw09ORi3MJDKhyp-t7eNo4Is)\] No programatic way to check ability to dup/clone an object (duerst)
+- \[Bug [#11929](https://bugs.ruby-lang.org/issues/11929)\] No programatic way to check ability to dup/clone an object (duerst)
 
 - matz: respond\_to? is insufficient to check if it can be dup’ed, because it could raise exceptions.
 - matz: There is no way to change identity of a fixnum.
@@ -193,46 +193,46 @@ Issues
 - duerst: I’d prefer failing silently.
 - matz: I want a separate proposal for that.
 
-- \[Bug [#12831](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12831&sa=D&source=editors&ust=1686086982361004&usg=AOvVaw3wxnsNV7JXzrEAU2jh6bKs)\] /\\X/ (extended grapheme cluster) can't pass unicode.org's GraphemeBreakTest
+- \[Bug [#12831](https://bugs.ruby-lang.org/issues/12831)\] /\\X/ (extended grapheme cluster) can't pass unicode.org's GraphemeBreakTest
 
 - duerst: not currently implemented.
 - naruse: I’ll take a look.
 
-- \[Feature [#12695](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12695&sa=D&source=editors&ust=1686086982361455&usg=AOvVaw333VB1MV_A4CvVMy91FLww)\] File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set
+- \[Feature [#12695](https://bugs.ruby-lang.org/issues/12695)\] File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set
 
 - matz: OK
 
-- \[Feature [#4897](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/4897&sa=D&source=editors&ust=1686086982361810&usg=AOvVaw3Wf38x3K9dIZPW0PyAj2aD)\] Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2\*Pi. See [http://tauday.com/](https://www.google.com/url?q=http://tauday.com/&sa=D&source=editors&ust=1686086982362018&usg=AOvVaw07n4iBP3yKDVQR7gDx-cLf)
+- \[Feature [#4897](https://bugs.ruby-lang.org/issues/4897)\] Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2\*Pi. See [http://tauday.com/](http://tauday.com/)
 
 - mrkn: last time I suggested TWO\_PI.
 - matz: I don’t think TWO\_PI satisfies TAU fans.
 - matz: I want to leave it rejected.
 
-- \[Feature [#12721](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12721&sa=D&source=editors&ust=1686086982362503&usg=AOvVaw1odhJ7Cmx7SbV7S8HsHV4W)\] public\_module\_function
+- \[Feature [#12721](https://bugs.ruby-lang.org/issues/12721)\] public\_module\_function
 
 - nurse: わかる
 - matz: I’m not sure what benefits are there.
 
-- \[Feature [#12732](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12732&sa=D&source=editors&ust=1686086982362909&usg=AOvVaw1mh-_HNvXSsZG5HaAIkDg5)\] An option to pass to Integer, Float, to return nil instead of raise an exception
+- \[Feature [#12732](https://bugs.ruby-lang.org/issues/12732)\] An option to pass to Integer, Float, to return nil instead of raise an exception
 
-- also: \[Feature [#12968](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12968&sa=D&source=editors&ust=1686086982363374&usg=AOvVaw3h8J-mCeo6Ex66gNqQTde5)\] Allow default value via block for Integer(), Float() and Rational()
+- also: \[Feature [#12968](https://bugs.ruby-lang.org/issues/12968)\] Allow default value via block for Integer(), Float() and Rational()
 
 - naruse: what’s wrong with rescue?
 - shyouhei: raising exception then rescueing is too big compared to what’s needed here; we only need to convert a string to an integer.
 
-- \[Feature [#12745](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12745&sa=D&source=editors&ust=1686086982363808&usg=AOvVaw3jAV6P5jU9u5OWGashJ7YI)\] String#(g)sub(!) should pass a MatchData to the block, not a String
+- \[Feature [#12745](https://bugs.ruby-lang.org/issues/12745)\] String#(g)sub(!) should pass a MatchData to the block, not a String
 
 - matz: 1 is NG. I prefer 4 -> 2 -> 3
 - ko1: I fear there should be considerable amount of overheads in 3.
 - naruse: scan should also be handled. 4 and 2 are  not applicablte.
 
-- \[Feature [#12753](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12753&sa=D&source=editors&ust=1686086982364280&usg=AOvVaw0ZgRlBJB9A0DQLR22QUtIG)\] Useful operator to check bit-flag is true or false
+- \[Feature [#12753](https://bugs.ruby-lang.org/issues/12753)\] Useful operator to check bit-flag is true or false
 
 - shyouhei: what is wanted is to check if certain bit is set or not.  &==0 is a bit too operational.
 - matz: name? “and?” seems wrong.
 - naruse: what about “bittest?”
 
-- \[Feature [#12979](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12979&sa=D&source=editors&ust=1686086982364759&usg=AOvVaw339X5hZEVqiBmZJatKc-Xf)\] Avoid exception for #dup on Integer (and similar cases)
+- \[Feature [#12979](https://bugs.ruby-lang.org/issues/12979)\] Avoid exception for #dup on Integer (and similar cases)
 
 - matz: OK.
 
@@ -240,11 +240,11 @@ Issues
 
 - assign mrkn
 
-- \[Feature [#12754](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12754&sa=D&source=editors&ust=1686086982365227&usg=AOvVaw3KjK8rg1wT0zr4ilOUaz3M)\] Want to use prepared buffer with Array#pack
+- \[Feature [#12754](https://bugs.ruby-lang.org/issues/12754)\] Want to use prepared buffer with Array#pack
 
 - matz: sounds reasonable.
 
-- \[Feature [#12752](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12752&sa=D&source=editors&ust=1686086982365649&usg=AOvVaw0ruGcRHSrgB5Zy4CKMKKpr)\] Unpacking a value from a binary requires additional '.first'
+- \[Feature [#12752](https://bugs.ruby-lang.org/issues/12752)\] Unpacking a value from a binary requires additional '.first'
 
 - matz: I would prefer keyword arguments but index:0 doesn’t much differ from .first
 - naruse: write”(‘C’)\[0\]” and let the interpreter optimize.
@@ -254,44 +254,44 @@ Issues
 - extra argument
 - .first
 
-- \[Feature [#12746](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12746&sa=D&source=editors&ust=1686086982366330&usg=AOvVaw33nDawYeIELvxVxVyMscpu)\] class Array: alias .prepend to .unshift ?
+- \[Feature [#12746](https://bugs.ruby-lang.org/issues/12746)\] class Array: alias .prepend to .unshift ?
 
 - mrkn: is “prepend” a valid english word?
 - shyouhei: they say it’s more natural
 - matz: OK
 
-- \[Feature [#11815](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11815&sa=D&source=editors&ust=1686086982366807&usg=AOvVaw3B4a-E_npjc6Xa0QVGdKiE)\] Proposal for method Array#difference
+- \[Feature [#11815](https://bugs.ruby-lang.org/issues/11815)\] Proposal for method Array#difference
 
 - shyouhei: real-world example is shown (poker bot)
 
-- \[Feature [#12978](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12978&sa=D&source=editors&ust=1686086982367200&usg=AOvVaw2PQtd3fWx38Z2qvD28OvpL)\] Symbol after keyword
+- \[Feature [#12978](https://bugs.ruby-lang.org/issues/12978)\] Symbol after keyword
 
 - matz: reject. I can’t but read this being a String, not Symbol.
 
-- \[Feature [#12770](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12770&sa=D&source=editors&ust=1686086982367570&usg=AOvVaw2LXlj5eXh9xPsU6SDmPoI5)\] Hash#left\_merge
+- \[Feature [#12770](https://bugs.ruby-lang.org/issues/12770)\] Hash#left\_merge
 
 - akira: Rails has reverse\_merge.
 - naruse: the proposed functionality is not the identical to reverse\_merge.
 - ko1: chechk if hash entry is nil, is something new (not orignal behaviour of merge)
 
-- \[Feature [#12760](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12760&sa=D&source=editors&ust=1686086982368038&usg=AOvVaw17Kpd7_0cotPmd5XdqZywX)\] Optional block argument for itself
+- \[Feature [#12760](https://bugs.ruby-lang.org/issues/12760)\] Optional block argument for itself
 
 - matz: object.{|x|...} is NG.
 
-- \[Feature [#12775](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12775&sa=D&source=editors&ust=1686086982368441&usg=AOvVaw14Fvb6nvjcltuy9qWxJ22m)\] Random subset of array
+- \[Feature [#12775](https://bugs.ruby-lang.org/issues/12775)\] Random subset of array
 
 - mrkn: random length array does not make sense to me.
 - shyouhei: it seems the OP uses this for test.
 
-- \[Bug [#10290](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10290&sa=D&source=editors&ust=1686086982368872&usg=AOvVaw2imE3M1XBhmWGzOwUgi2mi)\] segfault when calling a lambda recursively after rescuing SystemStackError
+- \[Bug [#10290](https://bugs.ruby-lang.org/issues/10290)\] segfault when calling a lambda recursively after rescuing SystemStackError
 
 - nudge nobu
 
-- \[Bug [#12688](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12688&sa=D&source=editors&ust=1686086982369228&usg=AOvVaw2NVTNMkIgJk1UGSg-BXRbq)\] Thread unsafety in autoload
+- \[Bug [#12688](https://bugs.ruby-lang.org/issues/12688)\] Thread unsafety in autoload
 
 - assign ko1
 
-- \[Feature [#12786](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12786&sa=D&source=editors&ust=1686086982369570&usg=AOvVaw32s4bddE8q0B53POLPDuTa)\] String#casecmp?
+- \[Feature [#12786](https://bugs.ruby-lang.org/issues/12786)\] String#casecmp?
 
 - naruse: There could be cases where downcase strings are equal, while upcase strings arent.
 - duerst: This feature might be implemented similarily like //i, or upcase(downcase()) == upcase(downcase()); string.downcase(:fold) is (almost?) completely identical to string.upcase.downcase
@@ -299,38 +299,38 @@ Issues
 - matz: is “casecmp?” OK?
 - shyouhei: to me yes.
 
-- \[Feature [#12612](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12612&sa=D&source=editors&ust=1686086982370168&usg=AOvVaw0wuKzX3vReQbShIonFL-le)\] Switch Range#=== to use cover? instead of include?
+- \[Feature [#12612](https://bugs.ruby-lang.org/issues/12612)\] Switch Range#=== to use cover? instead of include?
 
 - naruse: instead of cover?, we should define dedicated Range#===, with optimization for integer (&co.) cases. It can keep compatibility.
 - ko1: maybe akr is interested in it.
 - shyouhei: introducing incompatibility only because it is inefficient is kind of weak.
 
-- \[Bug [#9244](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/9244&sa=D&source=editors&ust=1686086982370660&usg=AOvVaw2rVxUdqnDG76EduDEHeGJH)\] unexpected behaviour of 'require' when $LOAD\_PATH gets changed
+- \[Bug [#9244](https://bugs.ruby-lang.org/issues/9244)\] unexpected behaviour of 'require' when $LOAD\_PATH gets changed
 
 - matz: I don’t immediately think it’s a bug.
 
-- \[Feature [#12719](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12719&sa=D&source=editors&ust=1686086982371037&usg=AOvVaw1EJfRZWAhZoGksKipFYnjn)\] Struct#merge for partial updates
+- \[Feature [#12719](https://bugs.ruby-lang.org/issues/12719)\] Struct#merge for partial updates
 
 - matz: “merge” sounds wrong.
 - akira: “assign”?
 - shyouhei: what about the feature itself, apart from the naming thing?
 - matz: use case not clear to me.
 
-- \[Feature [#12715](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12715&sa=D&source=editors&ust=1686086982371642&usg=AOvVaw1gC8BUWQE1yLs-vVN31XED)\] Allow ruby hackers to omit having to specify class or module mandatory, if they know exactly what they want to do
+- \[Feature [#12715](https://bugs.ruby-lang.org/issues/12715)\] Allow ruby hackers to omit having to specify class or module mandatory, if they know exactly what they want to do
 
 - matz wants feedback from OP.
 
-- \[Feature [#12698](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12698&sa=D&source=editors&ust=1686086982372057&usg=AOvVaw1aCJ-80xOQKNbBSMks9OUy)\] Method to delete a substring by regex match
+- \[Feature [#12698](https://bugs.ruby-lang.org/issues/12698)\] Method to delete a substring by regex match
 
 - duerst: what about allowing String#delete to accept regexps? (this would be instead of gremove)
 - mrkn: the OP does not tell us what is wrong with gsub.
 
-- \[Feature [#12697](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12697&sa=D&source=editors&ust=1686086982372498&usg=AOvVaw13frj5syIrtTMiq0OQbafi)\] Why shouldn't Module meta programming methods be public?
+- \[Feature [#12697](https://bugs.ruby-lang.org/issues/12697)\] Why shouldn't Module meta programming methods be public?
 
-- \[Feature [#12780](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12780&sa=D&source=editors&ust=1686086982372792&usg=AOvVaw2sYLrGMHy3xse0fAsBcU3R)\] BigDecimal#round returns different types depending on argument
+- \[Feature [#12780](https://bugs.ruby-lang.org/issues/12780)\] BigDecimal#round returns different types depending on argument
 
-- \[Feature [#12813](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12813&sa=D&source=editors&ust=1686086982373088&usg=AOvVaw1kM8Xujo60PJPyfkxA0q52)\] Calling chunk\_while, slice\_after, slice\_before, slice\_when with no block
+- \[Feature [#12813](https://bugs.ruby-lang.org/issues/12813)\] Calling chunk\_while, slice\_after, slice\_before, slice\_when with no block
 
 - matz will think about it.
 
-- \[Feature [#12882](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12882&sa=D&source=editors&ust=1686086982373487&usg=AOvVaw2q87y_tcLG47HqB4YgZNPX)\] Add caller/file/line information to internal Kernel#warn calls
+- \[Feature [#12882](https://bugs.ruby-lang.org/issues/12882)\] Add caller/file/line information to internal Kernel#warn calls

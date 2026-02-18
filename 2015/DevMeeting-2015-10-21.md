@@ -41,9 +41,9 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 # Log
 
-# Decide whether -\*- should be required for frozen\_string\_literal magic comments \[Feature [#8976](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8976&sa=D&source=editors&ust=1686086593905098&usg=AOvVaw0PwQESLP4h-eULUVbRLbQv)\]
+# Decide whether -\*- should be required for frozen\_string\_literal magic comments \[Feature [#8976](https://bugs.ruby-lang.org/issues/8976)\]
 
-naruse: vim’s indicator is “vim: …” [http://vim.wikia.com/wiki/Modeline\_magic](https://www.google.com/url?q=http://vim.wikia.com/wiki/Modeline_magic&sa=D&source=editors&ust=1686086593905604&usg=AOvVaw3YVUpvRDjdZaL7rn27xQ7T)
+naruse: vim’s indicator is “vim: …” [http://vim.wikia.com/wiki/Modeline\_magic](http://vim.wikia.com/wiki/Modeline_magic)
 
 nobu: should be have an indicator of pragrma.
 
@@ -165,7 +165,7 @@ matz: i can accept original proposal.
 
 C# Design Notes for Sep 8, 2015
 
-[https://github.com/dotnet/roslyn/issues/5383](https://www.google.com/url?q=https://github.com/dotnet/roslyn/issues/5383&sa=D&source=editors&ust=1686086593910852&usg=AOvVaw0VPTlIBXZymQ3Wo5ldpUym)
+[https://github.com/dotnet/roslyn/issues/5383](https://github.com/dotnet/roslyn/issues/5383)
 
 ?a syntax
 
@@ -248,7 +248,7 @@ str = ?’foo’
 
 str = !’foo’ -> bad idea (ex: str = !’foo’.start\_with(‘f’))
 
-# [https://twitter.com/sferik/status/642063693304451072](https://www.google.com/url?q=https://twitter.com/sferik/status/642063693304451072&sa=D&source=editors&ust=1686086593915082&usg=AOvVaw2Y2K9qgCFN4c_YBAvMSouS)
+# [https://twitter.com/sferik/status/642063693304451072](https://twitter.com/sferik/status/642063693304451072)
 
 matz; how about to warn for “initialise”?
 

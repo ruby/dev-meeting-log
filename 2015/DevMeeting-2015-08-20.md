@@ -129,7 +129,7 @@ empty line is not needed because lines of display is essential resource. indent 
 
 # Release Schedule
 
-[https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23&sa=D&source=editors&ust=1686086477052466&usg=AOvVaw3hwP5YZeC2T7g7wUaS3P6l)
+[https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23)
 
 # Subversion Repository Migration
 
@@ -162,7 +162,7 @@ Default of the status of String Literal will be frozen from Ruby 3.0.
 - it has been rejected before 2.2 by matz
 - it has been rejected again early 2.3 development by matz
 - amatsuda: tired of seeing pull requests adding “..”.freeze here and there. This is ugly.
-- amatsuda: please reconsider akr’s magic comment solution \[[https://bugs.ruby-lang.org/issues/8976](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8976&sa=D&source=editors&ust=1686086477055496&usg=AOvVaw3BxWR-US2T9liIUms8wscS)\]
+- amatsuda: please reconsider akr’s magic comment solution \[[https://bugs.ruby-lang.org/issues/8976](https://bugs.ruby-lang.org/issues/8976)\]
 - matz: accepted. As a migration path, magic comment is reasonable. naming is still problem.
 
 - command line option to frozen string literal by default
@@ -171,16 +171,16 @@ Default of the status of String Literal will be frozen from Ruby 3.0.
 
 - Ruby 3.0 will interpret string literal frozen by default.
 
-- akr’s challenge. [https://github.com/akr/ruby/tree/frozen-string](https://www.google.com/url?q=https://github.com/akr/ruby/tree/frozen-string&sa=D&source=editors&ust=1686086477056841&usg=AOvVaw1Q5t0Y08z5plqxrl9Xz1Gp)
+- akr’s challenge. [https://github.com/akr/ruby/tree/frozen-string](https://github.com/akr/ruby/tree/frozen-string)
 - String.new(“...”) is preferred over “...”.dup.
 - magic comment candidates
 
-- freeze\_string: true \[[https://bugs.ruby-lang.org/issues/8976](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8976&sa=D&source=editors&ust=1686086477057913&usg=AOvVaw2YbhybS8bzSzr5GzgB04_3)\]
+- freeze\_string: true \[[https://bugs.ruby-lang.org/issues/8976](https://bugs.ruby-lang.org/issues/8976)\]
 - freeze\_string\_literal: true
 - frozen\_string\_literal: true \[prefered by matz\]
 - freezing\_string\_literal: true
 - mutable\_string\_literal: false
-- immutable: string \[[https://github.com/ruby/ruby/pull/487](https://www.google.com/url?q=https://github.com/ruby/ruby/pull/487&sa=D&source=editors&ust=1686086477058941&usg=AOvVaw0QyJjUIm_f3W7OZaq0CN_X)\]
+- immutable: string \[[https://github.com/ruby/ruby/pull/487](https://github.com/ruby/ruby/pull/487)\]
 
 - command line option candidates
 

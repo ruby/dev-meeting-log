@@ -41,7 +41,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 # Log
 
-[https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20150408Japan](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20150408Japan&sa=D&source=editors&ust=1686086236508564&usg=AOvVaw02-lq8-NB_HSkyB1wv47zS)
+[https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20150408Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20150408Japan)
 
 Attendee:
 
@@ -51,14 +51,14 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - Schedule: similar to Ruby 2.2 (nurse)
 
-- [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23&sa=D&source=editors&ust=1686086236509384&usg=AOvVaw16bhHguN3ku5a0MIfsqRHt)
+- [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23)
 
 - Favorite feature
 
 - did you mean gem (matz) -> better exception message mechanism
 
 - Ruby should improve exception message mechanism (ko1, nobu)
-- Related: [https://bugs.ruby-lang.org/issues/10982](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10982&sa=D&source=editors&ust=1686086236509817&usg=AOvVaw1SXhuhOMutkVOcwBYm-w85)
+- Related: [https://bugs.ruby-lang.org/issues/10982](https://bugs.ruby-lang.org/issues/10982)
 - Reverse backtrace outout
 - Internationalization (nobu)
 
@@ -102,7 +102,7 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - Frozen literal string
 
-- [https://bugs.ruby-lang.org/issues/8579](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8579&sa=D&source=editors&ust=1686086236511553&usg=AOvVaw2GYAdI6b3XQu_YauGaQhcJ)
+- [https://bugs.ruby-lang.org/issues/8579](https://bugs.ruby-lang.org/issues/8579)
 - https://bugs.ruby-lang.org/issues/8976
 - rdoc uses force\_encoding where the string is not created
 - matz don’t like pragma
@@ -150,19 +150,19 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - Methods to certify packages (chatting)
 
-## \[Feature [#8259](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8259&sa=D&source=editors&ust=1686086236515493&usg=AOvVaw3YHInHxjFIfNmsVbHclSjf)\] atomic attribute accessors (tenderlove)
+## \[Feature [#8259](https://bugs.ruby-lang.org/issues/8259)\] atomic attribute accessors (tenderlove)
 
 (matz) Let me survy more about it.
 
-## \[Feature [#10932](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10932&sa=D&source=editors&ust=1686086236515913&usg=AOvVaw3D8SgoQ1NEF9XHDb02rmVM)\] Enable allocation tracing ASAP (tenderlove)
+## \[Feature [#10932](https://bugs.ruby-lang.org/issues/10932)\] Enable allocation tracing ASAP (tenderlove)
 
 (ko1) no problem except the name and “include ObjectSpace”.
 
-## [GitHub #858](https://www.google.com/url?q=https://github.com/ruby/ruby/pull/858&sa=D&source=editors&ust=1686086236516318&usg=AOvVaw1J_iisyTLLojiimXBtU09v) Add a RUBY\_ENGINE\_VERSION constant (tenderlove)
+## [GitHub #858](https://github.com/ruby/ruby/pull/858) Add a RUBY\_ENGINE\_VERSION constant (tenderlove)
 
 (matz) approved.
 
-## \[Feature [#10728](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10728&sa=D&source=editors&ust=1686086236516734&usg=AOvVaw2-zWcHI-Dgg_YES1xppmLK)\] Warning for Fixnum#size to use RbConfig::SIZEOF 'long' (akr)
+## \[Feature [#10728](https://bugs.ruby-lang.org/issues/10728)\] Warning for Fixnum#size to use RbConfig::SIZEOF 'long' (akr)
 
 (matz) reject.
 

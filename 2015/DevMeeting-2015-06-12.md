@@ -55,7 +55,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 Attendee: akr, hsbt, ko1, matz, naruse, nobu
 
-## \[Feature [#7148](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/7148&sa=D&source=editors&ust=1686086420316632&usg=AOvVaw04IpXnttiOw_m9h0ZX0k21)\] Improved Tempfile w/o DelegateClass (glass\_saga)
+## \[Feature [#7148](https://bugs.ruby-lang.org/issues/7148)\] Improved Tempfile w/o DelegateClass (glass\_saga)
 
 matz: I have some issue on this proposal. Tempfile should not be a subclass of File. It is different concept from File. I’m okay to implement Tempfile without delegator. However, I’m not sure it implemeted with subclass of File.
 
@@ -63,7 +63,7 @@ File is a wrapper of fd. Tempfile is not only a wrapper but handle other informa
 
 Action: Matz will reply this issue.
 
-## \[Feature [#11218](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11218&sa=D&source=editors&ust=1686086420317787&usg=AOvVaw0KSke3_MK8esxsZUYJqlZy)\] File.open FILE\_SHARE\_DELETE (naruse)
+## \[Feature [#11218](https://bugs.ruby-lang.org/issues/11218)\] File.open FILE\_SHARE\_DELETE (naruse)
 
 naruse: (explain about this proposal). This proposal is only for Windows.
 
@@ -85,7 +85,7 @@ naruse: I need modestr2modeint for add the new integer flag (rb\_io\_modestr\_of
 
 Action: Discuss on ticket
 
-## \[Feature [#11251](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11251&sa=D&source=editors&ust=1686086420320036&usg=AOvVaw2BT9ptJ9dw8OOgeTtfybkc)\] pthread\_set\_name\_np (naruse)
+## \[Feature [#11251](https://bugs.ruby-lang.org/issues/11251)\] pthread\_set\_name\_np (naruse)
 
 ko1: Interface?
 
@@ -103,19 +103,19 @@ Action: naruse will implement it
 
 Action: reply on issue.
 
-## \[Feature [#5455](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/5455&sa=D&source=editors&ust=1686086420322762&usg=AOvVaw39dNDxfnYfswP6nGQe0Ebv)\] $SAFE should be removed(hsbt)
+## \[Feature [#5455](https://bugs.ruby-lang.org/issues/5455)\] $SAFE should be removed(hsbt)
 
 matz: $2 and $3 can be removed.
 
 Action: Matz will reply on ticket. hsbt-san will try implent.
 
-## \[Feature [#10730](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10730&sa=D&source=editors&ust=1686086420324242&usg=AOvVaw31hryX1D9DbpuqAsLl_eN1)\] Implement Array#bsearch\_index(hsbt)
+## \[Feature [#10730](https://bugs.ruby-lang.org/issues/10730)\] Implement Array#bsearch\_index(hsbt)
 
 matz: go ahead.
 
 Action: Matz will reply. nobu will merge.
 
-## \[Feature [#10017](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10017&sa=D&source=editors&ust=1686086420325348&usg=AOvVaw1yJRgzUVP2Sj7Vqk0jO5tq)\] Add Hash#values\_at!(hsbt)
+## \[Feature [#10017](https://bugs.ruby-lang.org/issues/10017)\] Add Hash#values\_at!(hsbt)
 
 matz: approved (Hash#fetch\_values).
 
