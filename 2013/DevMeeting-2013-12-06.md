@@ -58,15 +58,15 @@ Please follow the [[DevelopersMeetingIRCGuidelines]] for irc
 
 On Friday, several committers met to discuss the events that took place duringthe previous meeting. We made important decisions on the maintenance policy forbackport versions and commercial support.
 
-### Branch Schema for Semantic Versioning \`ruby\_MAJOR\_MINOR\`[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Branch-Schema-for-Semantic-Versioning-ruby_MAJOR_MINOR)
+### Branch Schema for Semantic Versioning `ruby_MAJOR_MINOR`[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Branch-Schema-for-Semantic-Versioning-ruby_MAJOR_MINOR)
 
 [misc. #8835](http://bugs.ruby-lang.org/issues/8835)
 
 We discussed a concern with handling security releases given the proposed branching schema.
 
-During the 1.8 series we had a dedicated ruby\_1\_8 branch with no \`TEENY\`version in the name. In this time we had to release a security fix from thisbranch, however there were existing unreleased bug fix patches on this branchcausing a regression.
+During the 1.8 series we had a dedicated ruby_1_8 branch with no `TEENY`version in the name. In this time we had to release a security fix from thisbranch, however there were existing unreleased bug fix patches on this branchcausing a regression.
 
-The previous solution was to create a new branch (\`ruby\_1\_8\_6\`) and beginmaintaining two branches for the 1.8 series.
+The previous solution was to create a new branch (`ruby_1_8_6`) and beginmaintaining two branches for the 1.8 series.
 
 - Additional branches may be added to support cherry-picking of security fixes.
 
@@ -74,9 +74,9 @@ We are concerned because security versions may occur more frequently betweenMINO
 
 #### SemVer[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#SemVer)
 
-After reviewing the discussion from the previous meeting we discussed theconcern of \`TEENY >= 10\`.
+After reviewing the discussion from the previous meeting we discussed theconcern of `TEENY >= 10`.
 
-- String comparison bugs exist, such as: \`"2.2.2" <= "2.2.10" #=> false\`
+- String comparison bugs exist, such as: `"2.2.2" <= "2.2.10" #=> false`
 - We can fix this by abandoning strings
 - The version number can be anything that acts like String
 - We will postpone this situation
@@ -157,7 +157,7 @@ That about wraps up the summary of both meetings, thank you to everyone who coul
 Thanks for everyone who helped make this meeting possible, especially:
 
 - Cookpad for hosting both meetings on short notice
-- [@sora\_h](https://twitter.com/sora_h) for moderating irc, skype, and creating the audio recordings
+- [@sora_h](https://twitter.com/sora_h) for moderating irc, skype, and creating the audio recordings
 - [@mrkn](https://twitter.com/mrkn) for the video recording on Thursday
 - [@lchin](https://twitter.com/lchin) for translation support on Friday
 - Everyone who attended and helped discuss the future of Ruby

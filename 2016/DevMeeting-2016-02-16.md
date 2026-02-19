@@ -65,7 +65,7 @@ Members: hsbt, akr, mrkn, shyouhei, naruse, nobu, ko1, sorah, matz (skype)
 - [https://github.com/etsy/hound](https://github.com/etsy/hound) is webapp which uses the algorithm same as [https://github.com/google/codesearch](https://github.com/google/codesearch).
 - What we need is a server with big (such as 1Tbytes) storage.
 
-## \[[Misc #12004](https://bugs.ruby-lang.org/issues/12004)\] CoC
+## [[Misc #12004](https://bugs.ruby-lang.org/issues/12004)] CoC
 
 - Matz does not want to include CoC in repository nor release tarball
 - Based on PostgreSQL’s CoC v2
@@ -101,7 +101,7 @@ Members: hsbt, akr, mrkn, shyouhei, naruse, nobu, ko1, sorah, matz (skype)
 
 GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://github.com/ruby/www.ruby-lang.org/issues)
 
-## [[Feature #11666]](https://bugs.ruby-lang.org/issues/11666) IPAddr#private? (glass\_saga)
+## [[Feature #11666]](https://bugs.ruby-lang.org/issues/11666) IPAddr#private? (glass_saga)
 
 - feature issues
 
@@ -116,9 +116,9 @@ GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://github.co
 
 - Naming differencies with Addrinfo
 
-- The name “ipv4\_private?” is clear that the method returns false on IPv6 addresses.
+- The name “ipv4_private?” is clear that the method returns false on IPv6 addresses.
 
-## [[Feature #12046]](https://bugs.ruby-lang.org/issues/12046) Allow attr\_reader :foo? to define instance method foo? for accessing @foo (mrkn)
+## [[Feature #12046]](https://bugs.ruby-lang.org/issues/12046) Allow attr_reader :foo? to define instance method foo? for accessing @foo (mrkn)
 
 - matz: Still negative; I’m not good to have difference in ivar name and method name
 - behavior issues:
@@ -133,12 +133,12 @@ Reported by ko1.
 
 ---
 
-## [[Feature #11999]](https://bugs.ruby-lang.org/issues/11999) MatchData#to\_h to get a Hash from named captures (sorah)
+## [[Feature #11999]](https://bugs.ruby-lang.org/issues/11999) MatchData#to_h to get a Hash from named captures (sorah)
 
-- #to\_h is inappropriate name while non-named capture exists
+- #to_h is inappropriate name while non-named capture exists
 
 - Return Hash with integer keys? ( {0 => "a", 1 => "b"} )
-- #named\_captures
+- #named_captures
 
 - matz: acceptable
 
@@ -147,7 +147,7 @@ Reported by ko1.
 - Return last matched value
 
 - reg = /(?<a>b)|(?<a>x)/ \# => /(?<a>b)|(?<a>x)/
-    reg.match("abc").to\_h #=> {"a" => "b"}
+    reg.match("abc").to_h #=> {"a" => "b"}
 
 - Behavior when named captures didn’t match anything
 
@@ -155,7 +155,7 @@ Reported by ko1.
 
 - Behavior when no named captures
 
-- #captures return \[\] when no capture, so #named\_captures returns {} when no named capture
+- #captures return [] when no capture, so #named_captures returns {} when no named capture
 
 ## [[Bug #9810]](https://bugs.ruby-lang.org/issues/9810) Numeric#step behavior with mixed Float, String arguments inconsistent with documentation
 
@@ -175,7 +175,7 @@ $ ruby -e 'def foo;return :a=>1; end'
 
 $ ruby -e 'def foo;return a: 1; end'
 
-\-e:1: syntax error, unexpected ':', expecting keyword\_end
+\-e:1: syntax error, unexpected ':', expecting keyword_end
 
 def foo;return a: 1; end
 
@@ -185,14 +185,14 @@ matz rejected it because return is not a method call.  Matz wants to split kwar
 
 ## [[Feature #10121]](https://bugs.ruby-lang.org/issues/10121) Dir.empty?
 
-- \`Dir.entries(dir).size == 2\` is not efficient.  Also not platform-agnostic.
+- `Dir.entries(dir).size == 2` is not efficient.  Also not platform-agnostic.
 - It is useful to write spec which checkes test files are crrectly cleaned.
 - matz: accepted.
 
 ## [[Feature #12075]](https://bugs.ruby-lang.org/issues/12075) some container#nonempty?
 
-- nobu: you can write \`ary&.empty?.!\`.
-- mrkn: How about \`ary.include\_something?\` ?
+- nobu: you can write `ary&.empty?.!`.
+- mrkn: How about `ary.include_something?` ?
 
 ## [[Feature #12024]](https://bugs.ruby-lang.org/issues/12024) Add String.buffer, for creating strings with large capacities
 
@@ -204,12 +204,12 @@ matz: accepted.
 
 ## [[Bug #11991]](https://bugs.ruby-lang.org/issues/11991) Symbol#match
 
-## [[Feature #12043]](https://bugs.ruby-lang.org/issues/12043) NoMethodError#private\_call?
+## [[Feature #12043]](https://bugs.ruby-lang.org/issues/12043) NoMethodError#private_call?
 
 bikeshed problem (naming issue).
 
-- private\_call?
-- private\_callable?
-- were\_you\_private?
-- funcall\_style\_call?
+- private_call?
+- private_callable?
+- were_you_private?
+- funcall_style_call?
 - …

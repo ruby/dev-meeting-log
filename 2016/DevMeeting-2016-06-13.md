@@ -135,10 +135,10 @@ matz: acceptable
 
 nobu: this patch requires some tests, and fixes.
 
-- ar = \[1\]; ar.concat(ar, ar) #=> \[1,1,1\]? or \[1,1,1,1\]?
+- ar = [1]; ar.concat(ar, ar) #=> [1,1,1]? or [1,1,1,1]?
 
-- mrkn: we can make \[1, 1, 1, 1\] with a.concat(ar).concat(ar)
-- Matz: Maybe programer may get \[1, 1, 1\]. So use it.
+- mrkn: we can make [1, 1, 1, 1] with a.concat(ar).concat(ar)
+- Matz: Maybe programer may get [1, 1, 1]. So use it.
 
 - see https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowto
 
@@ -146,21 +146,21 @@ nobu: this patch requires some tests, and fixes.
 
 What’s happen?
 
-ary = \[:a, :b, :c, :d, :e\]
+ary = [:a, :b, :c, :d, :e]
 
 ary.delete(:a, :f, :c) #=> ???
 
-\# (1) \[:a, :c\]
+\# (1) [:a, :c]
 
-\# (2) \[:a, nil, :c\]
+\# (2) [:a, nil, :c]
 
 - ko1: who requires return value (array)?
-- sora\_h: With (2), we can use a return value with multiple assignment
+- sora_h: With (2), we can use a return value with multiple assignment
 
 - x, y, z = ary.delete(:a, :f, :c)
 - Especially for Hash#delete (this is out of scope, but we should consier consistency)
 
-## [[Bug #12295]](https://bugs.ruby-lang.org/issues/12295) Ripper not emitting on\_parse\_error for global variable name syntax errors (shyouhei) is this the right design?
+## [[Bug #12295]](https://bugs.ruby-lang.org/issues/12295) Ripper not emitting on_parse_error for global variable name syntax errors (shyouhei) is this the right design?
 
 Assigned to Minero Aoki.
 
@@ -173,7 +173,7 @@ Assigned to Minero Aoki.
 
 Assigned to shugo.
 
-## \[Feature #12086\] using: option for instance\_eval etc.
+## \[Feature #12086\] using: option for instance_eval etc.
 
 Motivation is replace self and using context.
 
@@ -185,13 +185,13 @@ Matz will comment it.
 
 - Q. Endian? #=> Little endian
 - Q. how about negative integers? #=> Math::DomainError
-- Q. how about 0? #=> \[0\] or \[\] #=> \[0\]
+- Q. how about 0? #=> [0] or [] #=> [0]
 
 matz: i’m not sure how it is convinience. but ok.
 
 ## [[Feature #12299]](https://bugs.ruby-lang.org/issues/12299) Add Warning module for customized warning handling (jeremyevans)
 
-naruse: it sounds useful with Gem.loaded\_specs\[ gem\_name \].full\_gem\_path.
+naruse: it sounds useful with Gem.loaded_specs[ gem_name ].full_gem_path.
 
 matz: ok (except naming).
 
@@ -201,7 +201,7 @@ h[ttps://bugs.ruby-lang.org/projects/ruby-trunk/wiki/SupportedPlatforms](https:/
 
 ## [[Feature #12460]](https://bugs.ruby-lang.org/issues/12460) Make Unicode Version directly available in Ruby (duerst)
 
-Approved; name as proposed by Nobu: RbConfig::CONFIG\['UNICODE\_VERSION'\]; implementation: Nobu or Martin.
+Approved; name as proposed by Nobu: RbConfig::CONFIG['UNICODE_VERSION']; implementation: Nobu or Martin.
 
 # Non-ASCII in rdoc comments in C source (duerst)
 
@@ -209,8 +209,8 @@ See [https://github.com/rdoc/rdoc/issues/409](https://github.com/rdoc/rdoc/issue
 
 ## [[Bug #12427]](https://bugs.ruby-lang.org/issues/12427) the way that extension libraries know if Integer is integrated (nobu)
 
-Nobu prepared a patch to show warning for rb\_cFixnum and rb\_cBignum, so developers can recognize this change. However, there are risks to compile broken code (assume passed parameters are Fixnum, but passed BIgnums. In this case, it is difficult to check Fixnum asusmed methods because Bignum may be rare to use, in general).
+Nobu prepared a patch to show warning for rb_cFixnum and rb_cBignum, so developers can recognize this change. However, there are risks to compile broken code (assume passed parameters are Fixnum, but passed BIgnums. In this case, it is difficult to check Fixnum asusmed methods because Bignum may be rare to use, in general).
 
-We can recognize this change with removing rb\_cFixnum and rb\_cBignum, but there are several gems causing compile errors.
+We can recognize this change with removing rb_cFixnum and rb_cBignum, but there are several gems causing compile errors.
 
-→ try to remove rb\_cFixnum, rb\_cBignum at Ruby 2.4  preview 1 to check people’s responses
+→ try to remove rb_cFixnum, rb_cBignum at Ruby 2.4  preview 1 to check people’s responses

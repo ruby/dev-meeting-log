@@ -101,26 +101,26 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 ## Carry-over from previous meeting(s)
 
-- [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete\_if does not use #delete (shyouhei)
+- [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete_if does not use #delete (shyouhei)
 
 - Is it by design, or a bug?
 - Matz: delete is memory inefficient.
-- Mame: if you can override #delete, why not also #delete\_if.
+- Mame: if you can override #delete, why not also #delete_if.
 
-- [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl\_completion\_quote\_character variable (nobu)
+- [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl_completion_quote_character variable (nobu)
 
 - Go!!!
 
 ## From Attendees
 
-- [[Feature #5446]](https://bugs.ruby-lang.org/issues/5446) at\_fork callback API (eregon) Can we get approval for introducing this? It is solving a real-world issue, in a more reliable way than the various hacks in most Ruby servers.
+- [[Feature #5446]](https://bugs.ruby-lang.org/issues/5446) at_fork callback API (eregon) Can we get approval for introducing this? It is solving a real-world issue, in a more reliable way than the various hacks in most Ruby servers.
 
-- Mrkn: I wanted to use this in pycall to call PyOS\_AfterFork\_Child, and so on from C-layer, but I noticed that I can use pthread\_atfork directly.
+- Mrkn: I wanted to use this in pycall to call PyOS_AfterFork_Child, and so on from C-layer, but I noticed that I can use pthread_atfork directly.
 - Naruse: Ruby’s fork is unsafe operation. Application programmers should understand the fact and carefully handle related operations (for example freeing resources).
-- Akr: I guess at\_fork hook would be problematic with multi-thread and/or multi-guild.  But making it Ruby’s standard feature impress this feature usable universally including multi-thread/guild. So, I’m negative for this proposal.
+- Akr: I guess at_fork hook would be problematic with multi-thread and/or multi-guild.  But making it Ruby’s standard feature impress this feature usable universally including multi-thread/guild. So, I’m negative for this proposal.
 - usa: Furthermore, I consider that fork must be destroyed.
 
-- [[Feature #11258]](https://bugs.ruby-lang.org/issues/11258) add 'x' mode character for O\_EXCL (kazu)
+- [[Feature #11258]](https://bugs.ruby-lang.org/issues/11258) add 'x' mode character for O_EXCL (kazu)
 
 - Matz accepted already.
 
@@ -139,7 +139,7 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 - [[Feature #14869]](https://bugs.ruby-lang.org/issues/14869) Proposal to add Hash#=== (nobu)
 
-- After \[Feature #14912\]
+- After [Feature #14912]
 
 - [[Feature #14877]](https://bugs.ruby-lang.org/issues/14877) Calculate age in Date class (nobu)
 
@@ -149,7 +149,7 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 - Matz: percent literal...
 
-- [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (ko1)
+- [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) [PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (ko1)
 
 - Naming.
 
@@ -174,12 +174,12 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 - Closed already
 
-- [[Feature #11076]](https://bugs.ruby-lang.org/issues/11076) Enumerable method count\_by (baweaver)
-    As mentioned in the discussion, Nobu was kind enough to update this to work with current master for Ruby: [https://github.com/ruby/ruby/compare/trunk...nobu:feature/11076-Enumerable%23count\_by](https://github.com/ruby/ruby/compare/trunk...nobu:feature/11076-Enumerable%23count_by)
+- [[Feature #11076]](https://bugs.ruby-lang.org/issues/11076) Enumerable method count_by (baweaver)
+    As mentioned in the discussion, Nobu was kind enough to update this to work with current master for Ruby: [https://github.com/ruby/ruby/compare/trunk...nobu:feature/11076-Enumerable%23count_by](https://github.com/ruby/ruby/compare/trunk...nobu:feature/11076-Enumerable%23count_by)
     As the code is already written I believe it would be an ideal target for 2.6 as a quick win on an often requested feature.
 
-- Matz: I thought #count\_by would be something different.
-- Mame: There is #count. #count\_by is very different from that.
+- Matz: I thought #count_by would be something different.
+- Mame: There is #count. #count_by is very different from that.
 - K-tsj: Also, #count takes a block.
 - Matz: I’m not against the feature itself.  Also, do we need a block-less counterpart?
 - Naruse: It looks similar to [Presto’s histogram function](https://prestodb.io/docs/current/functions/aggregate.html#histogram)
@@ -202,14 +202,14 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
     This to say I would second the inclusion of the first two items as they relate to the third and fourth. It would give Ruby an exceptional amount of power.
 - Matz: we should discuss these after pattern match is introduced.
 
-- [[Feature #14759]](https://bugs.ruby-lang.org/issues/14759) \[PATCH\] set M\_ARENA\_MAX for glibc malloc (sam.saffron)
+- [[Feature #14759]](https://bugs.ruby-lang.org/issues/14759) [PATCH] set M_ARENA_MAX for glibc malloc (sam.saffron)
     I would also very much like to see it backported 2.4 and 2.5. It is of enormous value to the ecosystem
 
 - Usa: The decision should be made by Linux port maintainer
 - Naruse: up to kosaki.
 - Mame: Once kosaki said “If we merge this, we should decide when we remove this”.
 
-- [[Feature #14944]](https://bugs.ruby-lang.org/issues/14944) Support optional inherit argument for Module#method\_defined? (jeremyevans0)
+- [[Feature #14944]](https://bugs.ruby-lang.org/issues/14944) Support optional inherit argument for Module#method_defined? (jeremyevans0)
 
 - Usa: I want this too.
 - Mame: why?

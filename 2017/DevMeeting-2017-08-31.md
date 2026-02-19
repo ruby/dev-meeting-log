@@ -184,7 +184,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - [https://chouseisan.com/s?h=cbab178ad925432ca81f9a64b2563b95](https://chouseisan.com/s?h=cbab178ad925432ca81f9a64b2563b95)
 
-## Invitation to "mini RubyKaigi" (a\_matsuda)
+## Invitation to "mini RubyKaigi" (a_matsuda)
 
 - 3-6 committers
 
@@ -192,7 +192,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #13396]](https://bugs.ruby-lang.org/issues/13396) Net::HTTP has no write timeout (shyouhei)
 
-## [[Bug #13407]](https://bugs.ruby-lang.org/issues/13407) We have recv\_nonblock but not send\_nonblock... can we add it? (shyouhei)
+## [[Bug #13407]](https://bugs.ruby-lang.org/issues/13407) We have recv_nonblock but not send_nonblock... can we add it? (shyouhei)
 
 ## [[Feature #13395]](https://bugs.ruby-lang.org/issues/13395) Add a method to check for not nil (shyouhei)
 
@@ -202,7 +202,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Bug #13535]](https://bugs.ruby-lang.org/issues/13535) Installing Ruby2.4.1 on Solaris 10 (shyouhei) response?
 
-## [[Feature #13568]](https://bugs.ruby-lang.org/issues/13568) File#path for O\_TMPFILE fds are unmeaning (sorah)
+## [[Feature #13568]](https://bugs.ruby-lang.org/issues/13568) File#path for O_TMPFILE fds are unmeaning (sorah)
 
 
 - raising exception
@@ -217,13 +217,13 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - naming issue.
 
-## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP\_\* -> HEAP\_PAGE\_\* variable renaming (shyouhei)
+## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP_\* -> HEAP_PAGE_\* variable renaming (shyouhei)
 
 ## [[Misc #12529]](https://bugs.ruby-lang.org/issues/12529) LEGAL file covering all the license information within Ruby (shyouhei)
 
-## [[Feature #13600]](https://bugs.ruby-lang.org/issues/13600) yield\_self should be chainable/composable (shyouhei)
+## [[Feature #13600]](https://bugs.ruby-lang.org/issues/13600) yield_self should be chainable/composable (shyouhei)
 
-## [[Misc #13597]](https://bugs.ruby-lang.org/issues/13597) Does read\_nonblock call remalloc for the buffer if does it just set the size attribute (shyouhei)
+## [[Misc #13597]](https://bugs.ruby-lang.org/issues/13597) Does read_nonblock call remalloc for the buffer if does it just set the size attribute (shyouhei)
 
 ## [[Feature #13606]](https://bugs.ruby-lang.org/issues/13606) Enumerator equality and comparison (shyouhei)
 
@@ -234,15 +234,15 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #13602]](https://bugs.ruby-lang.org/issues/13602) Optimize instance variable access if $VERBOSE is not true when compiling (shyouhei)
 
-## [[Feature #13613]](https://bugs.ruby-lang.org/issues/13613) Prefer that require/require\_relative/load to tell us permission error if the target file is unreadable (shyouhei)
+## [[Feature #13613]](https://bugs.ruby-lang.org/issues/13613) Prefer that require/require_relative/load to tell us permission error if the target file is unreadable (shyouhei)
 
 ## [[Feature #13620]](https://bugs.ruby-lang.org/issues/13620) Simplifying MRI's build system: always install (shyouhei)
 
-## [[Feature #13630]](https://bugs.ruby-lang.org/issues/13630) :\[\] method should accept block in nice syntax (shyouhei)
+## [[Feature #13630]](https://bugs.ruby-lang.org/issues/13630) :[] method should accept block in nice syntax (shyouhei)
 
 ## [[Feature #13639]](https://bugs.ruby-lang.org/issues/13639) Add "RTMIN" and "RTMAX" to Signal.list (shyouhei)
 
-## [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read\_nonblock/etc (shyouhei)
+## [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read_nonblock/etc (shyouhei)
 
 ## [[Feature #9001]](https://bugs.ruby-lang.org/issues/9001) Please package better standard library (shyouhei)
 
@@ -256,19 +256,19 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #13551]](https://bugs.ruby-lang.org/issues/13551) Add a method to alias class methods (shyouhei)
 
-## [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def\_instance\_delegator nil (shyouhei)
+## [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def_instance_delegator nil (shyouhei)
 
 ## [[Feature #13378]](https://bugs.ruby-lang.org/issues/13378) Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
 
-## [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) \[PATCH\] Expose rb\_fstring and its family to C extensions (shyouhei)
+## [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) [PATCH] Expose rb_fstring and its family to C extensions (shyouhei)
 
 ## [[Feature #13677]](https://bugs.ruby-lang.org/issues/13677) Add more details to error "Name or service not known (SocketError)" (shyouhei)
 
 ## [[Feature #9323]](https://bugs.ruby-lang.org/issues/9323) IO#writev (shyouhei)
 
-## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on\_\* (shyouhei)
+## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_\* (shyouhei)
 
-## [[Feature #13693]](https://bugs.ruby-lang.org/issues/13693) Allow String#to\_i and / or Kernel::Integer to parse e-notation (shyouhei)
+## [[Feature #13693]](https://bugs.ruby-lang.org/issues/13693) Allow String#to_i and / or Kernel::Integer to parse e-notation (shyouhei)
 
 ## [[Feature #13434]](https://bugs.ruby-lang.org/issues/13434) better method definition in C API (shyouhei)
 
@@ -280,9 +280,9 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #13713]](https://bugs.ruby-lang.org/issues/13713) socketの便利メソッドのdatagramのUNIXSocket用対応 (shyouhei)
 
-## [[Feature #13715]](https://bugs.ruby-lang.org/issues/13715) \[PATCH\] avoid garbage from Symbol#to\_s in interpolation (shyouhei)
+## [[Feature #13715]](https://bugs.ruby-lang.org/issues/13715) [PATCH] avoid garbage from Symbol#to_s in interpolation (shyouhei)
 
-## [[Feature #13719]](https://bugs.ruby-lang.org/issues/13719) \[PATCH\] net/http: allow existing socket arg for Net::HTTP.start (shyouhei)
+## [[Feature #13719]](https://bugs.ruby-lang.org/issues/13719) [PATCH] net/http: allow existing socket arg for Net::HTTP.start (shyouhei)
 
 ## [[Feature #13732]](https://bugs.ruby-lang.org/issues/13732) Precise Time.now on Windows (shyouhei)
 
@@ -290,7 +290,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #13625]](https://bugs.ruby-lang.org/issues/13625) BigDecimal short form / shorthand (shyouhei)
 
-## [[Feature #13712]](https://bugs.ruby-lang.org/issues/13712) String#start\_with? with regexp (shyouhei)
+## [[Feature #13712]](https://bugs.ruby-lang.org/issues/13712) String#start_with? with regexp (shyouhei)
 
 - bugs that are not assigned (shyouhei)
 
@@ -301,22 +301,22 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Bug #13700]](https://bugs.ruby-lang.org/issues/13700) Enumerable#sum may not work for Ranges subclasses due to optimization (mrkn)
 
-## [[Bug #13705]](https://bugs.ruby-lang.org/issues/13705) \[PATCH\] \`cfp consistency error' occurs when raising exception in bmethod call event
+## [[Bug #13705]](https://bugs.ruby-lang.org/issues/13705) [PATCH] `cfp consistency error' occurs when raising exception in bmethod call event
 
 ## [[Bug #13716]](https://bugs.ruby-lang.org/issues/13716) Unexpected or undocumented (or maybe both) behaviour when mixing String#scan with named captures
 
-## [[Bug #13670]](https://bugs.ruby-lang.org/issues/13670) \[BUG\] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
+## [[Bug #13670]](https://bugs.ruby-lang.org/issues/13670) [BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
 
 
 ## From attendees
 
-## [[Feature #13780]](https://bugs.ruby-lang.org/issues/13780) String#each\_grapheme (naruse)
+## [[Feature #13780]](https://bugs.ruby-lang.org/issues/13780) String#each_grapheme (naruse)
 
 
-- matz: the unit is grapheme cluster. so the name should be each\_grapheme\_cluster.
+- matz: the unit is grapheme cluster. so the name should be each_grapheme_cluster.
 
 
-## [[Misc #13704]](https://bugs.ruby-lang.org/issues/13704) \[PATCH\] Exclude Changelog files from documentation. (hsbt)
+## [[Misc #13704]](https://bugs.ruby-lang.org/issues/13704) [PATCH] Exclude Changelog files from documentation. (hsbt)
 
 ## [[Feature #12733]](https://bugs.ruby-lang.org/issues/12733) Bundle bundler to ruby core (hsbt)
 
@@ -342,9 +342,9 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #13767]](https://bugs.ruby-lang.org/issues/13767) add something like python's buffer protocol to share memory between different narray like classes (shyouhei)
 
-## [[Feature #13777]](https://bugs.ruby-lang.org/issues/13777) Array#delete\_all (shyouhei)
+## [[Feature #13777]](https://bugs.ruby-lang.org/issues/13777) Array#delete_all (shyouhei)
 
-## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
+## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) [PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (shyouhei)
 
 ## [[Feature #13784]](https://bugs.ruby-lang.org/issues/13784) Add Enumerable#filter as an alias of Enumerable#select (shyouhei)
 
@@ -384,13 +384,13 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Bug #13746]](https://bugs.ruby-lang.org/issues/13746) windows-pr gemのRuby 2.4 32bit版でのSEGV
 
-## [[Bug #13758]](https://bugs.ruby-lang.org/issues/13758) TestRubyOptions#test\_segv\_setproctitle segfaults on AARCH64
+## [[Bug #13758]](https://bugs.ruby-lang.org/issues/13758) TestRubyOptions#test_segv_setproctitle segfaults on AARCH64
 
 ## [[Bug #13716]](https://bugs.ruby-lang.org/issues/13716) Unexpected or undocumented (or maybe both) behaviour when mixing String#scan with named captures
 
 ## [[Bug #13691]](https://bugs.ruby-lang.org/issues/13691) Word- and symbol array literals not valid where regular array is
 
-## [[Bug #13769]](https://bugs.ruby-lang.org/issues/13769) IPAddr#ipv4\_compat incorrect behavior
+## [[Bug #13769]](https://bugs.ruby-lang.org/issues/13769) IPAddr#ipv4_compat incorrect behavior
 
 ## [[Bug #13768]](https://bugs.ruby-lang.org/issues/13768) SIGCHLD and Thread dead-lock problem
 
@@ -398,11 +398,11 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Bug #13774]](https://bugs.ruby-lang.org/issues/13774) for methods defined from procs, the binding of the resulting bound method proc does not have access to the original proc's closure environment
 
-## [[Bug #13748]](https://bugs.ruby-lang.org/issues/13748) \[PATCH\] Fix mul overflow detection for LLP64 arch.
+## [[Bug #13748]](https://bugs.ruby-lang.org/issues/13748) [PATCH] Fix mul overflow detection for LLP64 arch.
 
 ## [[Bug #13781]](https://bugs.ruby-lang.org/issues/13781) Should the safe navigation operator invoke nil?
 
-## [[Bug #13795]](https://bugs.ruby-lang.org/issues/13795) Hash#select return type does not match Hash#find\_all
+## [[Bug #13795]](https://bugs.ruby-lang.org/issues/13795) Hash#select return type does not match Hash#find_all
 
 ## [[Bug #13811]](https://bugs.ruby-lang.org/issues/13811) Ruby 2.4.1 fails to compile inside qemu armhf - signal 11 (Segmentation fault)
 
@@ -411,7 +411,7 @@ We couldn’t investigate it because there is not enough reproduction instructio
 
 ## [[Bug #13818]](https://bugs.ruby-lang.org/issues/13818) Licence issue with use of Onigmo rather than Oniguruma library files
 
-## [[Bug #13827]](https://bugs.ruby-lang.org/issues/13827) Improve performance of Base64.urlsafe\_encode64
+## [[Bug #13827]](https://bugs.ruby-lang.org/issues/13827) Improve performance of Base64.urlsafe_encode64
 
 ## [[Bug #13829]](https://bugs.ruby-lang.org/issues/13829) NUL char in $0
 
@@ -419,7 +419,7 @@ We couldn’t investigate it because there is not enough reproduction instructio
 
 ## [[Bug #13835]](https://bugs.ruby-lang.org/issues/13835) Using 'open-uri' with 'tempfile' causes an exception
 
-## [[Bug #13757]](https://bugs.ruby-lang.org/issues/13757) TestBacktrace#test\_caller\_lev segaults on PPC
+## [[Bug #13757]](https://bugs.ruby-lang.org/issues/13757) TestBacktrace#test_caller_lev segaults on PPC
 
 ## [[Bug #13167]](https://bugs.ruby-lang.org/issues/13167) Dir.glob is 25x slower since Ruby 2.2
 
@@ -428,7 +428,7 @@ We couldn’t investigate it because there is not enough reproduction instructio
 
 ## From non-attendees
 
-## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on\_\* (aycabta)
+## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_\* (aycabta)
 
 
 ## Write your name and your interest (what do you want to ask and to whom?) please.

@@ -56,7 +56,7 @@ martin: latestの方が好み（だが、ここではおいておく）
 
 martin: 7.0.0を8.0.0に変えた時、うまく（改めて）ダウンロードしてビルドして欲しい
 
-naruse: unicode\_normalizeだけでなくOnigmo等、それぞれ個別に新バージョンに対応する必要がある
+naruse: unicode_normalizeだけでなくOnigmo等、それぞれ個別に新バージョンに対応する必要がある
 
 martin: 個々のファイルには、バージョン番号が入っていないものもある（過去との互換性）
 
@@ -72,7 +72,7 @@ knu: libyamlも同様の理由で同梱している
 
 naruse: libffiはpermissiveなライセンスだったはず（※MIT License）
 
-knu: 余談だけど1.9, 2.0, 2.1のDL/Fiddleの差異や、ffi gemともまた違うという件についてkakasi gemというのを作ったのでご覧ください [https://github.com/knu/kakasi\_ffi](https://github.com/knu/kakasi_ffi) （どのバージョンのrubyでも使えるdl gemを作る場合の非互換性について参考になるかも）
+knu: 余談だけど1.9, 2.0, 2.1のDL/Fiddleの差異や、ffi gemともまた違うという件についてkakasi gemというのを作ったのでご覧ください [https://github.com/knu/kakasi_ffi](https://github.com/knu/kakasi_ffi) （どのバージョンのrubyでも使えるdl gemを作る場合の非互換性について参考になるかも）
 
 akr: すぐDLを消すとWindowsで困る（usaさんが怒る）のでは？
 
@@ -90,7 +90,7 @@ matzがこれに関しては一貫性を取る（このリグレッションは�
 
 # [[Feature #9612]](https://bugs.ruby-lang.org/issues/9612) Gemify OpenSSL(hsbt)
 
-akr: experimental 実装について gemのバージョンは、OpenSSL (OpenSSL::OPENSSL\_VERSION)そのものではなく、OpenSSL拡張ライブラリのバージョン (OpenSSL::VERSION) にするべき（※libsslランタイムのバージョンはOpenSSL::OPENSSL\_LIBRARY\_VERSION）
+akr: experimental 実装について gemのバージョンは、OpenSSL (OpenSSL::OPENSSL_VERSION)そのものではなく、OpenSSL拡張ライブラリのバージョン (OpenSSL::VERSION) にするべき（※libsslランタイムのバージョンはOpenSSL::OPENSSL_LIBRARY_VERSION）
 
 akr: ext/openssl に脆弱性があったら、ruby 本体をリリースせざるを得ないのでrubyリリースエンジニア側には gem 化のメリットはなさそう
 
@@ -100,7 +100,7 @@ matz: 異議はありません
 
 naruse さんが issue にコメントする
 
-# \[misc [#10287](https://bugs.ruby-lang.org/issues/10287)\] rename COLON3 to COLON2\_HEAD. (hsbt)
+# \[misc [#10287](https://bugs.ruby-lang.org/issues/10287)\] rename COLON3 to COLON2_HEAD. (hsbt)
 
 \*: COLON3がおかしいのはおっしゃる通りだが、名前が「HEAD」はちょっと違う気がするので「TOP」?
 
@@ -108,7 +108,7 @@ akr: 「議論はしましたがいい名前が浮かばない」
 
 ko1: matz にふっておきましょう
 
-# [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze\_string directive (akr)
+# [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze_string directive (akr)
 
 matz: 遠い未来には賛成
 
@@ -141,7 +141,7 @@ matz: 嫌な予感がするので2.2では（実験的実装も含めて）や�
 
 2.3（以降）に照準を合わせる
 
-# [[Feature #10344]](https://bugs.ruby-lang.org/issues/10344) \[PATCH\] Implement Fiber#raise (ko1)
+# [[Feature #10344]](https://bugs.ruby-lang.org/issues/10344) [PATCH] Implement Fiber#raise (ko1)
 
 ko1: Thread#raiseは危険なのでなくした経緯
 

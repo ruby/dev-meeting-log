@@ -42,7 +42,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/13742
 
 # Log
 
-- attendee: ko1, sora\_h, akr, naruse, ayumin, a\_matsuda
+- attendee: ko1, sora_h, akr, naruse, ayumin, a_matsuda
 - on-line: matz, nobu
 
 ## [[Feature #10199]](https://bugs.ruby-lang.org/issues/10199) Drop to support Symbian (hsbt)
@@ -55,13 +55,13 @@ akr: no need to think about it now.
 
 hsbt: I will remove.
 
-## [[Feature #10200]](https://bugs.ruby-lang.org/issues/10200) Symbol API (static count, dynamic count, all\_symbols and so on) (ko1)
+## [[Feature #10200]](https://bugs.ruby-lang.org/issues/10200) Symbol API (static count, dynamic count, all_symbols and so on) (ko1)
 
-Symbol.all\_symbols:
+Symbol.all_symbols:
 
-matsuda: Symbol.all\_symbols is used by pry to make completion.
+matsuda: Symbol.all_symbols is used by pry to make completion.
 
-matz: leave Symbol.all\_symbols as current behavior
+matz: leave Symbol.all_symbols as current behavior
 
 Symbol.find():
 

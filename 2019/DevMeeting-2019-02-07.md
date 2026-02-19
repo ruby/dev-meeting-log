@@ -96,10 +96,10 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 
 ## Non-attendees
 
-- [[Feature #6470]](https://bugs.ruby-lang.org/issues/6470) Make attr\_accessor return the list of generated method (eregon)
+- [[Feature #6470]](https://bugs.ruby-lang.org/issues/6470) Make attr_accessor return the list of generated method (eregon)
 
 - What’s volatile?  No one understand.
-- Matz: if volatile is needed, it would be better to define volatile\_attr\_reader etc.
+- Matz: if volatile is needed, it would be better to define volatile_attr_reader etc.
 
 - [[Bug #14353]](https://bugs.ruby-lang.org/issues/14353) $SAFE should stay at least thread-local for compatibility (eregon)
 
@@ -115,7 +115,7 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 
 - [[Feature #14344]](https://bugs.ruby-lang.org/issues/14344) refine at class level (kddeisz)
 
-- Shorter refinement syntax proposed based on common use cases. Proposed either refine\_class or using blocks for shorthand. What do you think?
+- Shorter refinement syntax proposed based on common use cases. Proposed either refine_class or using blocks for shorthand. What do you think?
 - Matz: I understand the needs, but I don’t like the style.  Please propose other styles.
 
 - [[Feature #14680]](https://bugs.ruby-lang.org/issues/14680) Adding +@ and -@ to hash and array (kddeisz)
@@ -143,13 +143,13 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 - The feature is done (the title is old, it will be implemented in String) but blocked on picking a method name. I would like to ask for opinions so this can move forward.
 -  ???
 
-- [[Feature #15331]](https://bugs.ruby-lang.org/issues/15331) \[PATCH\] Faster hashing for short string literals
+- [[Feature #15331]](https://bugs.ruby-lang.org/issues/15331) [PATCH] Faster hashing for short string literals
 
 - Looking for feedback on this patch.
 - Nobu: I tested, but cannot confirm the speed up
 - Matz: Umm.
 
-- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method\_missing
+- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method_missing
 
 - waited one month.
 - Matz: will reject.
@@ -159,7 +159,7 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 - I feel this feature is very useful and some people say :+1: so let discuss about this feature.
 - Need to discuss when we have ko1.  He left, so discuss it at the next meeting.
 
-- [[Feature #15588]](https://bugs.ruby-lang.org/issues/15588) String#each\_chunk and #chunks
+- [[Feature #15588]](https://bugs.ruby-lang.org/issues/15588) String#each_chunk and #chunks
 
 - Looking for feedback on this patch.
 - Matz: use case.
@@ -184,21 +184,21 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 
 -  [[Feature #4475]](https://bugs.ruby-lang.org/issues/4475) default variable name for parameter (aycabta)
 
-- In [#15483](https://bugs.ruby-lang.org/issues/15483), matz said "I feel the expression ary.map(&(:to\_i << :chr)) is far less readable than ary.map{|x|x.to\_i.chr}.", and "And this can lead to the default block parameter like it."
-- nobu is wriing a patch for \`@1\`. so, let’s try it.
+- In [#15483](https://bugs.ruby-lang.org/issues/15483), matz said "I feel the expression ary.map(&(:to_i << :chr)) is far less readable than ary.map{|x|x.to_i.chr}.", and "And this can lead to the default block parameter like it."
+- nobu is wriing a patch for `@1`. so, let’s try it.
 
 - [[Feature #5632]](https://bugs.ruby-lang.org/issues/5632) Attempt to open included class shades it instead. (mame)
 
 - Matz: sorry, it was not mame’s task. reject it.
 
-- [[Feature #11076]](https://bugs.ruby-lang.org/issues/11076) Enumerable method count\_by
+- [[Feature #11076]](https://bugs.ruby-lang.org/issues/11076) Enumerable method count_by
 
-- Matz: ok, introduce \`tally\`.
+- Matz: ok, introduce `tally`.
 
 - [[Feature #15573]](https://bugs.ruby-lang.org/issues/15573) Permit zero step in Numeric#step and Range#step
 
-\>> (10 .. 0).step(-1).to\_a
+\>> (10 .. 0).step(-1).to_a
 
-\=> \[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0\]
+\=> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
- (0 .. 0).step(0).to\_a loops infinitely
+ (0 .. 0).step(0).to_a loops infinitely

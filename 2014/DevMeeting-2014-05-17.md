@@ -31,7 +31,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/10778
 
 # Log
 
-attendee: sora\_h, shyouhei, akr, naruse, ko1, hsbt, tarui
+attendee: sora_h, shyouhei, akr, naruse, ko1, hsbt, tarui
 
 online: matz, n0kada,
 
@@ -109,7 +109,7 @@ bundle gem にして、time が依存する箇所だけ ext に持っていく. 
 
 →matzがOKと返信する
 
-## [[Feature #9826]](https://bugs.ruby-lang.org/issues/9826) Enumerable#slice\_between (akr)
+## [[Feature #9826]](https://bugs.ruby-lang.org/issues/9826) Enumerable#slice_between (akr)
 
 ニーズはある
 
@@ -117,7 +117,7 @@ matz: 機能としては採用してあげたいけど、この名前では採�
 
 #slice? → Array#slice があるのでNG
 
-## [[Feature #9071]](https://bugs.ruby-lang.org/issues/9071) Enumerable#slice\_after (akr)
+## [[Feature #9071]](https://bugs.ruby-lang.org/issues/9071) Enumerable#slice_after (akr)
 
 対称性
 
@@ -145,11 +145,11 @@ Matz: sysconf と confstr で同じ機能だけど、数値と文字列を返す
 
 Windows でどうしよう →NotImplementedError
 
-## [[Feature #9834]](https://bugs.ruby-lang.org/issues/9834) Float#{next\_float,prev\_float} (akr)
+## [[Feature #9834]](https://bugs.ruby-lang.org/issues/9834) Float#{next_float,prev_float} (akr)
 
 これは用途があまり明らかでない→テストで便利(printfのテストとか)。
 
-## [[Feature #9632]](https://bugs.ruby-lang.org/issues/9632) \[offtopic\] remove doxygen?
+## [[Feature #9632]](https://bugs.ruby-lang.org/issues/9632) [offtopic] remove doxygen?
 
 ccan フォルダの追加に伴って doxygen の警告が凄いでてきた、そもそも使ってないなら消したい
 
@@ -157,7 +157,7 @@ ko1: 消すのではなくて、デフォルトで動くのはやめて make dox
 
 Matz: デフォルトでは動かさないようにして、何かレポートきたら誰か頑張る.
 
-## [[Feature #9711]](https://bugs.ruby-lang.org/issues/9711) Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora\_h (hsbt)
+## [[Feature #9711]](https://bugs.ruby-lang.org/issues/9711) Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)
 
 lib/test, lib/minitest を使うのはもうやめている.
 
@@ -199,7 +199,7 @@ ko1: gem にしてメンテナンスサイクルを分けよう
 
 Matz: 名前がイマイチ
 
-## \[ANN\] chkbuildXXX.hsbt.org
+## [ANN] chkbuildXXX.hsbt.org
 
 Ruby Association の資金で4台マシンを用意しました. 必要に応じてアカウント作るのでご連絡ください.
 
@@ -226,7 +226,7 @@ pLinux が何なのかよくわからないので RubyCI のサーバー名を�
 
 ## Attendance[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Attendance)
 
-- in person: sora\_h, shyouhei, akr, naruse, ko1, hsbt, tarui
+- in person: sora_h, shyouhei, akr, naruse, ko1, hsbt, tarui
 - online: matz, n0kada
 
 ## \[Feature [#9772](https://bugs.ruby-lang.org/issues/9772 "Feature: IO#statfs and File::Statfs (Rejected)")\] IO#statfs and File::Statfs[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9772-IOstatfs-and-FileStatfs)
@@ -252,11 +252,11 @@ going separate it into a bundled gem
 
 accepted
 
-## \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826 "Feature: Enumerable#slice_between (Closed)")\] Enumerable#slice\_between (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9826-Enumerableslice_between-akr)
+## \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826 "Feature: Enumerable#slice_between (Closed)")\] Enumerable#slice_between (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9826-Enumerableslice_between-akr)
 
 Matz likes the idea, but it needs a better name. There is already Array#slice.
 
-## \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071 "Feature: Enumerable#slice_after (Closed)")\] Enumerable#slice\_after (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9071-Enumerableslice_after-akr)
+## \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071 "Feature: Enumerable#slice_after (Closed)")\] Enumerable#slice_after (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9071-Enumerableslice_after-akr)
 
 accepted
 
@@ -268,15 +268,15 @@ accepted
 
 accepted
 
-## \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834 "Feature: Float#{next_float,prev_float} (Closed)")\] Float#{next\_float,prev\_float} (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9834-Floatnext_floatprev_float-akr)
+## \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834 "Feature: Float#{next_float,prev_float} (Closed)")\] Float#{next_float,prev_float} (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9834-Floatnext_floatprev_float-akr)
 
 accepted
 
-## \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632 "Feature: [PATCH 0/2] speedup IO#close with linked-list from ccan (Closed)")\] \[offtopic\] remove doxygen?[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9632-offtopic-remove-doxygen)
+## \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632 "Feature: [PATCH 0/2] speedup IO#close with linked-list from ccan (Closed)")\] [offtopic] remove doxygen?[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9632-offtopic-remove-doxygen)
 
 dropping support for doxygen
 
-## \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora\_h (hsbt)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9711-Remove-test-unit-and-minitest-from-stdlib-Can-I-remove-test-unit-cc-sora_h-hsbt)
+## \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9711-Remove-test-unit-and-minitest-from-stdlib-Can-I-remove-test-unit-cc-sora_h-hsbt)
 
 continuing to discuss about bundling test libraries test-unit/minitest.
 
@@ -296,11 +296,11 @@ accepted: going to fade out callcc support
 - unclear what the usecase is
 - continue to discuss on redmine
 
-## \[ANN\] chkbuildXXX.hsbt.org[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#ANN-chkbuildXXXhsbtorg)
+## [ANN] chkbuildXXX.hsbt.org[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#ANN-chkbuildXXXhsbtorg)
 
 Using Ruby Association's funds, 4 machines have been prepared for chkbuild. chkbuild is the Ruby CI platform powering [http://rubyci.org](http://rubyci.org/). We also want something besides Intel like running ARM on top of QEMU.
 
 ## Next Meetings[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Next-Meetings)
 
-- 6/18, 18:30 JST: discussing \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\], [doorkeeper](http://cruby.doorkeeper.jp/events/11795?utm_campaign=event_11795_7773&utm_medium=email&utm_source=not_replied_message)
+- 6/18, 18:30 JST: discussing [Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")], [doorkeeper](http://cruby.doorkeeper.jp/events/11795?utm_campaign=event_11795_7773&utm_medium=email&utm_source=not_replied_message)
 - 7/26: big features for 2.2

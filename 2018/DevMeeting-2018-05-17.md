@@ -147,7 +147,7 @@ logs
 
 - [[Feature #14724]](https://bugs.ruby-lang.org/issues/14724) chains of inequations (mrkn)
 
-- This new syntax can also reduce the duplicated evaluations of common terms, such as timeval.tv\_sec in the descriptiohn of the proposal.
+- This new syntax can also reduce the duplicated evaluations of common terms, such as timeval.tv_sec in the descriptiohn of the proposal.
 - Same issue as above. See above.
 
 - Object#then (Usa)
@@ -185,7 +185,7 @@ Functional programming: (zverok)
 - 1-year-old proposal. Matz: "I am for adding syntax sugar for method reference. But I don't like proposed syntax (e.g. \->). Any other idea?"
 - (reviewed comment #21)
 - Preference by the attendees is .:
-- Matz: \`.:\` is better than \`->\`
+- Matz: `.:` is better than `->`
 - Mame: there is a patch cf #12125 [https://bugs.ruby-lang.org/issues/12125](https://bugs.ruby-lang.org/issues/12125)
 
 - [[Feature #11161]](https://bugs.ruby-lang.org/issues/11161) Proc/Method#rcurry working like curry but in reverse order
@@ -194,7 +194,7 @@ Functional programming: (zverok)
 - Mame: I don’t think reverse currying works for variadic methods
 - Akr: the “real-life” example is adding keyword arguments, which is not what currying is talking about
 
-- [[Feature #14390]](https://bugs.ruby-lang.org/issues/14390) UnboundMethod#to\_proc
+- [[Feature #14390]](https://bugs.ruby-lang.org/issues/14390) UnboundMethod#to_proc
 
 - What is the expected behaviour here?
 
@@ -218,7 +218,7 @@ Docs (probably not to discuss on development meeting, but I am not sure where I 
 - Method: [https://bugs.ruby-lang.org/issues/14483](https://bugs.ruby-lang.org/issues/14483)
 - Proc: [https://bugs.ruby-lang.org/issues/14610](https://bugs.ruby-lang.org/issues/14610)
 - MatchData: [https://bugs.ruby-lang.org/issues/14450](https://bugs.ruby-lang.org/issues/14450)
-- yield\_self: [https://bugs.ruby-lang.org/issues/14436](https://bugs.ruby-lang.org/issues/14436)
+- yield_self: [https://bugs.ruby-lang.org/issues/14436](https://bugs.ruby-lang.org/issues/14436)
 
 - Naruse: This meeting is not for documents. Just assign to docs member group.
 
@@ -226,7 +226,7 @@ Docs (probably not to discuss on development meeting, but I am not sure where I 
 
 - Shyouhei: what to do with String this case?
 - Akr: the simplest is to only concern the both ends.
-- Usa: Hash has \`>\` and \`<\`
+- Usa: Hash has `>` and `<`
 - Mame: use case not clear.
 
 - [[Feature #14097]](https://bugs.ruby-lang.org/issues/14097) Add union and difference to Array ( ana06)
@@ -243,4 +243,4 @@ Docs (probably not to discuss on development meeting, but I am not sure where I 
 
 - [[Misc #14760]](https://bugs.ruby-lang.org/issues/14760) cross-thread IO#close semantics (normal)
 
-- Ko1: I made it theoretically possible to unblock IO#select. However there is a difficult problem for  IO#copy\_stream.
+- Ko1: I made it theoretically possible to unblock IO#select. However there is a difficult problem for  IO#copy_stream.

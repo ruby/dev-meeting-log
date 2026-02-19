@@ -96,7 +96,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 ## About 2.6 timeframe
 
 - Nobu’s task (show causes in backtrace) is blocker of preview3.
-- mswin with MSVC14+ (only 14?) doesn’t work with Windows 10 October 2018 Update (version 1809) because of ucrtbase.dll’s internal \_\_pioinfo structure.
+- mswin with MSVC14+ (only 14?) doesn’t work with Windows 10 October 2018 Update (version 1809) because of ucrtbase.dll’s internal __pioinfo structure.
 
 ## Carry-over from previous meeting(s)
 
@@ -132,7 +132,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - hsbt: Efforts ongoing.
 - (details omitted from the log)
 
-- [[Misc #14632]](https://bugs.ruby-lang.org/issues/14632) \[ANN\] git.ruby-lang.org (hsbt)
+- [[Misc #14632]](https://bugs.ruby-lang.org/issues/14632) [ANN] git.ruby-lang.org (hsbt)
 
 - hsbt: I want to switch to git in 20 Oct.
 - usa: what happens?
@@ -141,7 +141,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - mame: Any restriction on git?
 - hsbt: push --force shall be forbidden.
 
-- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) \`Kernel#p\` without args shows the receiver (ko1)
+- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) `Kernel#p` without args shows the receiver (ko1)
 
 - It will be useful.
 
@@ -159,7 +159,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - What happen? on: obj.send(:p, \*args)
 
-- It feels strange: p(\*\[\]) #=> nil
+- It feels strange: p(\*[]) #=> nil
 - It should be fancy to detect by eyes (.p is easy to hide) -> different name
 
 - knu: What if Object#display returned self? It does not emit a trailing LF.
@@ -192,19 +192,19 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - shyouhei: This one conflicts with [#14609](https://bugs.ruby-lang.org/issues/14609)
 - mame: Does it really conflict with that? Does anyone bother inspecting STDERR?
 - taru: Matz wants tapp for the other ticket.
-- duerst: I propose #warn\_p.
+- duerst: I propose #warn_p.
 - matz: I understand the needs for this one, but…
 - usa: Honestly I want to have #p for all IOs
 - naruse: Yes, like for logging.
 - mame: Doesn’t it make people leave such debug outputs here and there?
 - akr: What about introducing it with a longer name than #p
-- usa: like #putp (\`p\` means %p)
+- usa: like #putp (`p` means %p)
 - matz: OK, feature-wise I accept. For name…?
-- ko1: “IO#puts\_inspect” ?
+- ko1: “IO#puts_inspect” ?
 - akr: I think STDERR.p is acceptable but IO#p is too short.
 - mame: same feeling.
 
-## [[Feature #11505]](https://bugs.ruby-lang.org/issues/11505) Module#=== should call #kind\_of? on the object rather than rb\_obj\_is\_kind\_of which only searches the ancestor hierarchy (rafaelfranca)
+## [[Feature #11505]](https://bugs.ruby-lang.org/issues/11505) Module#=== should call #kind_of? on the object rather than rb_obj_is_kind_of which only searches the ancestor hierarchy (rafaelfranca)
 
 
 - This would allow patterns as Decorator and Proxy to work with case statements.
@@ -218,7 +218,7 @@ class Module
 
  def === other
 
- other.kind\_of?(self)
+ other.kind_of?(self)
 
  end
 
@@ -226,7 +226,7 @@ end
 
 class ArrayLike
 
- def kind\_of? other
+ def kind_of? other
 
  if other == Array
 
@@ -267,7 +267,7 @@ end
 - matz: I don’t like Enumerable#chain naming.
 - ko1: Is this method destructive?
 - akr: How can it be destructive?
-- ko1: \`Enumerator.chain( e1, e2, ... )\` is considerable, but should be discussed in the different ticket.
+- ko1: `Enumerator.chain( e1, e2, ... )` is considerable, but should be discussed in the different ticket.
 - matz: + is acceptable but maybe difficult to method chain.
 - usa: e0.+(e1, e2, ...).bar.baz.. might suffice.
 - matz: maybe.
