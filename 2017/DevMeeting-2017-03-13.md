@@ -152,7 +152,7 @@ log: TBD
 
 ## Carry-over from previous meeting(s)
 
-- \[Feature [#13110](https://bugs.ruby-lang.org/issues/13110)\] Byte-based operations for String (shugo)
+- [[Feature #13110]](https://bugs.ruby-lang.org/issues/13110) Byte-based operations for String (shugo)
 
 - matz: OK for byteoffset.
 - akr: destructive modification using bytesplice may cause string rescan because it can break validity of the string.
@@ -160,7 +160,7 @@ log: TBD
 - naruse: that is byteoffset here.
 - akr: byteindex may have problem for inter-codepoint index.
 
-- \[Bug [#13105](https://bugs.ruby-lang.org/issues/13105)\] String#to\_f and String#to\_r don't stop successive underscores (nobu)
+- [[Bug #13105]](https://bugs.ruby-lang.org/issues/13105) String#to\_f and String#to\_r don't stop successive underscores (nobu)
 
 - nobu: is this intentional?
 - ko1: ignore all underscores?
@@ -175,17 +175,17 @@ log: TBD
 
 - matz: OK, lets make it as we do as literals.
 
-- \[Feature [#13109](https://bugs.ruby-lang.org/issues/13109)\] using in refinements is required to be physically placed before the refined method call (shyouhei)
+- [[Feature #13109]](https://bugs.ruby-lang.org/issues/13109) using in refinements is required to be physically placed before the refined method call (shyouhei)
 
 - matz: I don’t think it’s a bug. It’s intentional.  But we may allow this as an extension.
 
-- \[Bug [#12705](https://bugs.ruby-lang.org/issues/12705)\] yielding args to a lambda uses block/proc rather than lambda/method semantics (shyouhei) status?
+- [[Bug #12705]](https://bugs.ruby-lang.org/issues/12705) yielding args to a lambda uses block/proc rather than lambda/method semantics (shyouhei) status?
 
 - ko1: we should fix the interpreter
 - ko1: we introduced ad-hoc change to lambda creation but that turned out to be a mistake, and observed here.
 - ko1: to be fixed in 2.5.
 
-- \[Feature [#13095](https://bugs.ruby-lang.org/issues/13095)\] \[PATCH\] io.c (rb\_f\_syscall): remove deprecation notice (shyouhei)
+- [[Feature #13095]](https://bugs.ruby-lang.org/issues/13095) \[PATCH\] io.c (rb\_f\_syscall): remove deprecation notice (shyouhei)
 
 - shyouhei: do we want to remove system calls?
 - akr: yes.
@@ -195,12 +195,12 @@ log: TBD
 - akr: current situation is too difficult to use properly, too easy to get used.
 - akr: my suggestion is to move it to ext/syscall.
 
-- \[Feature [#13122](https://bugs.ruby-lang.org/issues/13122)\] Special syntax for Hash#default\_proc (shyouhei)
+- [[Feature #13122]](https://bugs.ruby-lang.org/issues/13122) Special syntax for Hash#default\_proc (shyouhei)
 
 - tal: not only default proc, but also there are default values.
 - matz: reject
 
-- \[Feature [#12650](https://bugs.ruby-lang.org/issues/12650)\] Use UTF-8 encoding for ENV on Windows (duerst)
+- [[Feature #12650]](https://bugs.ruby-lang.org/issues/12650) Use UTF-8 encoding for ENV on Windows (duerst)
 
 - nobu: ENV is about inter-process, we cannot change alone.
 - shyouhei: seems they need something like “UTF-8 mode”
@@ -214,7 +214,7 @@ log: TBD
 - duerst: when a PC is used by only one person ENV tends to remain single encoding but when people share a PC, ENV is shared across users. (cp437?)
 - nobu: system-wide.
 
-- \[Feature [#6284](https://bugs.ruby-lang.org/issues/6284)\] Add composition for procs (shyouhei)
+- [[Feature #6284]](https://bugs.ruby-lang.org/issues/6284) Add composition for procs (shyouhei)
 
 - ko1: is it a matter of speed?
 - shyouhei: it seems composition is faster now
@@ -223,36 +223,36 @@ log: TBD
 - matz: I have no strong opinion on it.
 - matz: I’ll respond.
 
-- \[Feature [#13137](https://bugs.ruby-lang.org/issues/13137)\] Hash Shorthand (shyouhei)
+- [[Feature #13137]](https://bugs.ruby-lang.org/issues/13137) Hash Shorthand (shyouhei)
 
 - matz: reject
 
-- \[Feature [#13166](https://bugs.ruby-lang.org/issues/13166)\] Feature Request: Byte Arrays for Ruby 3 (shyouhei)
+- [[Feature #13166]](https://bugs.ruby-lang.org/issues/13166) Feature Request: Byte Arrays for Ruby 3 (shyouhei)
 
 - akr: I’m for this but I don’t think I can persuade matz.
 - matz: exactly.
 - akr: so I proposed setbit/getbit, in order for the OP to create a dedicated class on top of it.
 
-- \[Feature [#9116](https://bugs.ruby-lang.org/issues/9116)\] String#rsplit missing (shyouhei)
+- [[Feature #9116]](https://bugs.ruby-lang.org/issues/9116) String#rsplit missing (shyouhei)
 
 - akr: what’s this?
 - shyouhei: they say python’s
 - naruse: use case?
 - tal: rsplit(...,2) can be generally written using regexp. ohter cases when we cant do this using regexp?
 
-- \[Feature [#4532](https://bugs.ruby-lang.org/issues/4532)\] \[PATCH\] add IO#pread and IO#pwrite methods (shyouhei)
+- [[Feature #4532]](https://bugs.ruby-lang.org/issues/4532) \[PATCH\] add IO#pread and IO#pwrite methods (shyouhei)
 
 - akr: portability concern? This is POSIX but added recently.
 - shyouhei: POSIX issue 5
 - akr: at least 2001 version has this.
 - matz: OK.
 
-- \[Bug [#13146](https://bugs.ruby-lang.org/issues/13146)\] Float::NANs in Hashes are confusing (more than usual). (mrkn)
+- [[Bug #13146]](https://bugs.ruby-lang.org/issues/13146) Float::NANs in Hashes are confusing (more than usual). (mrkn)
 
 - nobu: prohibit inserting NaNs into hashs?
 - naruse: that’s nonsense.
 
-- \[Bug [#13134](https://bugs.ruby-lang.org/issues/13134)\] Rational() inconsistency (nobu)
+- [[Bug #13134]](https://bugs.ruby-lang.org/issues/13134) Rational() inconsistency (nobu)
 
 - matz: OK.
 
@@ -273,39 +273,39 @@ log: TBD
 - naruse: should we backport this?
 - matz: I don’t think so.
 
-- \[Bug [#13181](https://bugs.ruby-lang.org/issues/13181)\] Unexpected line in rescue backtrace (shyouhei) what's this?
+- [[Bug #13181]](https://bugs.ruby-lang.org/issues/13181) Unexpected line in rescue backtrace (shyouhei) what's this?
 - this week's "assign whom?" section (shyouhei)
 
-- \[Bug [#13271](https://bugs.ruby-lang.org/issues/13271)\] Clarifications on refinement spec
-- \[Bug [#13269](https://bugs.ruby-lang.org/issues/13269)\] test/readline/test\_readline.rb and mingw
-- \[Bug [#13298](https://bugs.ruby-lang.org/issues/13298)\] mingw SEGV TestEnumerable#test\_callcc
-- \[Bug [#13280](https://bugs.ruby-lang.org/issues/13280)\] net/ftp: Putbinaryfile (on Windows) requires blocksize equal to file size
-- \[Bug [#13276](https://bugs.ruby-lang.org/issues/13276)\] Dir.glob returns empty array when OS has no more file handles (expected exception)
+- [[Bug #13271]](https://bugs.ruby-lang.org/issues/13271) Clarifications on refinement spec
+- [[Bug #13269]](https://bugs.ruby-lang.org/issues/13269) test/readline/test\_readline.rb and mingw
+- [[Bug #13298]](https://bugs.ruby-lang.org/issues/13298) mingw SEGV TestEnumerable#test\_callcc
+- [[Bug #13280]](https://bugs.ruby-lang.org/issues/13280) net/ftp: Putbinaryfile (on Windows) requires blocksize equal to file size
+- [[Bug #13276]](https://bugs.ruby-lang.org/issues/13276) Dir.glob returns empty array when OS has no more file handles (expected exception)
 
 - nobu: this one predates 1.0. should we backport?
 - matz: I don’t think so.
 
-- \[Bug [#13284](https://bugs.ruby-lang.org/issues/13284)\] IA64 ruby 2.4 miniruby segfault
-- \[Bug [#13286](https://bugs.ruby-lang.org/issues/13286)\] Segfault when using rb\_debug\_inspector\_open / rb\_debug\_inspector\_frame\_binding\_get with Fiddle, but not when directly from C extension
-- \[Bug [#13305](https://bugs.ruby-lang.org/issues/13305)\] Occasional segfaults after defining methods while running coverage
-- \[Bug [#13307](https://bugs.ruby-lang.org/issues/13307)\] Changing scheme from http to https for the URI does not change the port number
+- [[Bug #13284]](https://bugs.ruby-lang.org/issues/13284) IA64 ruby 2.4 miniruby segfault
+- [[Bug #13286]](https://bugs.ruby-lang.org/issues/13286) Segfault when using rb\_debug\_inspector\_open / rb\_debug\_inspector\_frame\_binding\_get with Fiddle, but not when directly from C extension
+- [[Bug #13305]](https://bugs.ruby-lang.org/issues/13305) Occasional segfaults after defining methods while running coverage
+- [[Bug #13307]](https://bugs.ruby-lang.org/issues/13307) Changing scheme from http to https for the URI does not change the port number
 
-- \[Bug [#13282](https://bugs.ruby-lang.org/issues/13282)\] opt\_str\_freeze does not always dedupe (shyouhei)
+- [[Bug #13282]](https://bugs.ruby-lang.org/issues/13282) opt\_str\_freeze does not always dedupe (shyouhei)
 
 - shyouhei: this is about power\_assert
 - akr: what’s wrong with it?
 - shyouhei: seems tracepoint?
 - ko1: don’t know the exact reason.
 
-- \[Feature [#13295](https://bugs.ruby-lang.org/issues/13295)\] \[PATCH\] compile.c: apply opt\_str\_freeze to String#-@ (uminus) (shyohei) seems OK to me as well
+- [[Feature #13295]](https://bugs.ruby-lang.org/issues/13295) \[PATCH\] compile.c: apply opt\_str\_freeze to String#-@ (uminus) (shyohei) seems OK to me as well
 
 - ko1: this is buggy.  Can’t redefine \-@ in this patch.
 
-- \[Feature [#13179](https://bugs.ruby-lang.org/issues/13179)\] Deep Hash Update Method (shyouhei)
+- [[Feature #13179]](https://bugs.ruby-lang.org/issues/13179) Deep Hash Update Method (shyouhei)
 
 - nobu: #bury has already been rejected, no update since then.
 
-- \[Misc [#13283](https://bugs.ruby-lang.org/issues/13283)\] Disable \`&' interpreted as argument prefix warning when passing symbol to Enumerable#map (duerst)
+- [[Misc #13283]](https://bugs.ruby-lang.org/issues/13283) Disable \`&' interpreted as argument prefix warning when passing symbol to Enumerable#map (duerst)
 
 - duerst: the warning is older than Symbol#to\_proc
 - shyouhei: why not suppress the warning for symbol literals, not for variables
@@ -314,18 +314,18 @@ log: TBD
 - matz: mruby won’t warn this case?
 - nobu: it does.
 
-- \[Feature [#13290](https://bugs.ruby-lang.org/issues/13290)\] A method to use a hash like in a case construction (duerst)
+- [[Feature #13290]](https://bugs.ruby-lang.org/issues/13290) A method to use a hash like in a case construction (duerst)
 
 - matz: I don’t understand the usage.  Let me ask the OP.
 
-- \[Feature [#13077](https://bugs.ruby-lang.org/issues/13077)\] \[PATCH\] introduce String#fstring method (ko1) some discussions on twitter they don't like \-'str' notation.
+- [[Feature #13077]](https://bugs.ruby-lang.org/issues/13077) \[PATCH\] introduce String#fstring method (ko1) some discussions on twitter they don't like \-'str' notation.
 
 - shyouhei: we can add other stylish names later. \-@ is “for the time being”.
 - matz: if you have opinions, have a separate issue.
 
 ## From non-attendees
 
-- \[Bug [#13223](https://bugs.ruby-lang.org/issues/13223)\] What should the behavior of File.join be when File::SEPARATOR is set? Can I apply this patch? (tenderlove)
+- [[Bug #13223]](https://bugs.ruby-lang.org/issues/13223) What should the behavior of File.join be when File::SEPARATOR is set? Can I apply this patch? (tenderlove)
 
 - ko1: this is a bug.
 - nobu: this is either we fix the document to allow other separators or not.

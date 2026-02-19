@@ -37,7 +37,7 @@ online: matz, n0kada,
 
 [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20140517Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20140517Japan)
 
-## \[Feature [#9772](https://bugs.ruby-lang.org/issues/9772)\] IO#statfs and File::Statfs
+## [[Feature #9772]](https://bugs.ruby-lang.org/issues/9772) IO#statfs and File::Statfs
 
 本当に必要なのか？(rubygem でいいんでないのという議論)
 
@@ -49,7 +49,7 @@ statvfsという名前で入れる
 
 Matz: 色々込み入ってるので core には入れないで test 配下へ. 欲しいということがあったら gem にしてください.
 
-## \[Feature [#9647](https://bugs.ruby-lang.org/issues/9647)\] File::Stat#birthtime
+## [[Feature #9647]](https://bugs.ruby-lang.org/issues/9647) File::Stat#birthtime
 
 何に使うのこれ
 
@@ -75,7 +75,7 @@ python にもあるが、stat() を直接返すらしく、対応していない
 
 ないときはNotImplementedError
 
-## \[Feature [#9816](https://bugs.ruby-lang.org/issues/9816)\] 文字列内の数字を数値として比較するメソッド
+## [[Feature #9816]](https://bugs.ruby-lang.org/issues/9816) 文字列内の数字を数値として比較するメソッド
 
 numericcmpという名前はない
 
@@ -103,13 +103,13 @@ numericcmpとかではなくバージョンを比較するものであるとわ�
 
 bundle gem にして、time が依存する箇所だけ ext に持っていく. 切り離す準備だけしておくのはどうか. いつやるかは未定.
 
-## \[Feature [#9513](https://bugs.ruby-lang.org/issues/9513)\] Hide Rational internal (akr)
+## [[Feature #9513]](https://bugs.ruby-lang.org/issues/9513) Hide Rational internal (akr)
 
 これはOKなのでは
 
 →matzがOKと返信する
 
-## \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826)\] Enumerable#slice\_between (akr)
+## [[Feature #9826]](https://bugs.ruby-lang.org/issues/9826) Enumerable#slice\_between (akr)
 
 ニーズはある
 
@@ -117,7 +117,7 @@ matz: 機能としては採用してあげたいけど、この名前では採�
 
 #slice? → Array#slice があるのでNG
 
-## \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071)\] Enumerable#slice\_after (akr)
+## [[Feature #9071]](https://bugs.ruby-lang.org/issues/9071) Enumerable#slice\_after (akr)
 
 対称性
 
@@ -125,7 +125,7 @@ matz: 機能としては採用してあげたいけど、この名前では採�
 
 →accept
 
-## \[Feature [#9770](https://bugs.ruby-lang.org/issues/9770)\] Etc.uname (akr)
+## [[Feature #9770]](https://bugs.ruby-lang.org/issues/9770) Etc.uname (akr)
 
 test の中で uname -r を叩いているのを見かけるので組み込みで用意してもよさそう.
 
@@ -139,17 +139,17 @@ test の中で uname -r を叩いているのを見かけるので組み込み�
 
 →accept
 
-## \[Feature [#9842](https://bugs.ruby-lang.org/issues/9842)\] system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
+## [[Feature #9842]](https://bugs.ruby-lang.org/issues/9842) system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
 
 Matz: sysconf と confstr で同じ機能だけど、数値と文字列を返すかで違う、何とかマージできないかなあ
 
 Windows でどうしよう →NotImplementedError
 
-## \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834)\] Float#{next\_float,prev\_float} (akr)
+## [[Feature #9834]](https://bugs.ruby-lang.org/issues/9834) Float#{next\_float,prev\_float} (akr)
 
 これは用途があまり明らかでない→テストで便利(printfのテストとか)。
 
-## \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632)\] \[offtopic\] remove doxygen?
+## [[Feature #9632]](https://bugs.ruby-lang.org/issues/9632) \[offtopic\] remove doxygen?
 
 ccan フォルダの追加に伴って doxygen の警告が凄いでてきた、そもそも使ってないなら消したい
 
@@ -157,7 +157,7 @@ ko1: 消すのではなくて、デフォルトで動くのはやめて make dox
 
 Matz: デフォルトでは動かさないようにして、何かレポートきたら誰か頑張る.
 
-## \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711)\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora\_h (hsbt)
+## [[Feature #9711]](https://bugs.ruby-lang.org/issues/9711) Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora\_h (hsbt)
 
 lib/test, lib/minitest を使うのはもうやめている.
 

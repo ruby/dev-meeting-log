@@ -101,7 +101,7 @@ Members: hsbt, akr, mrkn, shyouhei, naruse, nobu, ko1, sorah, matz (skype)
 
 GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://github.com/ruby/www.ruby-lang.org/issues)
 
-## \[Feature [#11666](https://bugs.ruby-lang.org/issues/11666)\] IPAddr#private? (glass\_saga)
+## [[Feature #11666]](https://bugs.ruby-lang.org/issues/11666) IPAddr#private? (glass\_saga)
 
 - feature issues
 
@@ -118,7 +118,7 @@ GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://github.co
 
 - The name “ipv4\_private?” is clear that the method returns false on IPv6 addresses.
 
-## \[Feature [#12046](https://bugs.ruby-lang.org/issues/12046)\] Allow attr\_reader :foo? to define instance method foo? for accessing @foo (mrkn)
+## [[Feature #12046]](https://bugs.ruby-lang.org/issues/12046) Allow attr\_reader :foo? to define instance method foo? for accessing @foo (mrkn)
 
 - matz: Still negative; I’m not good to have difference in ivar name and method name
 - behavior issues:
@@ -133,7 +133,7 @@ Reported by ko1.
 
 ---
 
-## \[Feature [#11999](https://bugs.ruby-lang.org/issues/11999)\] MatchData#to\_h to get a Hash from named captures (sorah)
+## [[Feature #11999]](https://bugs.ruby-lang.org/issues/11999) MatchData#to\_h to get a Hash from named captures (sorah)
 
 - #to\_h is inappropriate name while non-named capture exists
 
@@ -157,7 +157,7 @@ Reported by ko1.
 
 - #captures return \[\] when no capture, so #named\_captures returns {} when no named capture
 
-## \[Bug [#9810](https://bugs.ruby-lang.org/issues/9810)\] Numeric#step behavior with mixed Float, String arguments inconsistent with documentation
+## [[Bug #9810]](https://bugs.ruby-lang.org/issues/9810) Numeric#step behavior with mixed Float, String arguments inconsistent with documentation
 
 This issue is because of invalid type, not mismatch the number of arguments.
 
@@ -183,18 +183,18 @@ def foo;return a: 1; end
 
 matz rejected it because return is not a method call.  Matz wants to split kwargs versus trailing-hash-arg in a long term.  He wants to distinguish them mentally.  Rocket notation is not always related to kwargs while colon notation is tightly-connected, even though it is also used in hash literals.  When it comes to a method, calling a method with keyword-argument does not always create hashes.
 
-## \[Feature [#10121](https://bugs.ruby-lang.org/issues/10121)\] Dir.empty?
+## [[Feature #10121]](https://bugs.ruby-lang.org/issues/10121) Dir.empty?
 
 - \`Dir.entries(dir).size == 2\` is not efficient.  Also not platform-agnostic.
 - It is useful to write spec which checkes test files are crrectly cleaned.
 - matz: accepted.
 
-## \[Feature [#12075](https://bugs.ruby-lang.org/issues/12075)\] some container#nonempty?
+## [[Feature #12075]](https://bugs.ruby-lang.org/issues/12075) some container#nonempty?
 
 - nobu: you can write \`ary&.empty?.!\`.
 - mrkn: How about \`ary.include\_something?\` ?
 
-## \[Feature [#12024](https://bugs.ruby-lang.org/issues/12024)\] Add String.buffer, for creating strings with large capacities
+## [[Feature #12024]](https://bugs.ruby-lang.org/issues/12024) Add String.buffer, for creating strings with large capacities
 
 akr: Once matz rejected String.new(size) proposed on [#905](https://bugs.ruby-lang.org/issues/905), but now we have kwargs. given that there already is String.new with encoding argument, isn’t it OK to add kwargs to that method?
 
@@ -202,9 +202,9 @@ matz: accepted.
 
 ---
 
-## \[Bug [#11991](https://bugs.ruby-lang.org/issues/11991)\] Symbol#match
+## [[Bug #11991]](https://bugs.ruby-lang.org/issues/11991) Symbol#match
 
-## \[Feature [#12043](https://bugs.ruby-lang.org/issues/12043)\] NoMethodError#private\_call?
+## [[Feature #12043]](https://bugs.ruby-lang.org/issues/12043) NoMethodError#private\_call?
 
 bikeshed problem (naming issue).
 

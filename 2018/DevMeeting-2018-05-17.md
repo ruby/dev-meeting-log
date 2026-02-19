@@ -110,7 +110,7 @@ logs
 
 ## From Attendees
 
-- \[Bug [#14699](https://bugs.ruby-lang.org/issues/14699)\] Subtle behaviors with endless range (mame)
+- [[Bug #14699]](https://bugs.ruby-lang.org/issues/14699) Subtle behaviors with endless range (mame)
 
 - Mame: what to do with #max for endless ones?
 - Usa:
@@ -123,7 +123,7 @@ logs
 - Mrkn: I like nil. (by text chat)
 - Ko1: let’s discuss this issue with mrkn.
 
-- \[Feature [#14724](https://bugs.ruby-lang.org/issues/14724)\] chains of inequalities (Martin)
+- [[Feature #14724]](https://bugs.ruby-lang.org/issues/14724) chains of inequalities (Martin)
 
 - Proposal by gotoken (Kentaro Goto) to allow 0 <= a < 10 as a shortcut of 0<=a && a<10, and so on; patch by Nobu avaliable
 - Ko1: what do you think matz?
@@ -139,13 +139,13 @@ logs
 
 ## From non-attendees
 
-- \[Feature [#14697](https://bugs.ruby-lang.org/issues/14697)\] Introducing Range#% as an alias to Range#step (mrkn)
+- [[Feature #14697]](https://bugs.ruby-lang.org/issues/14697) Introducing Range#% as an alias to Range#step (mrkn)
 
 - Matz already commented LGTM. Please judge whether this is acceptable.
 - Akr: I think this should go.
 - (nobody at the meeting had any objections)
 
-- \[Feature [#14724](https://bugs.ruby-lang.org/issues/14724)\] chains of inequations (mrkn)
+- [[Feature #14724]](https://bugs.ruby-lang.org/issues/14724) chains of inequations (mrkn)
 
 - This new syntax can also reduce the duplicated evaluations of common terms, such as timeval.tv\_sec in the descriptiohn of the proposal.
 - Same issue as above. See above.
@@ -168,7 +168,7 @@ logs
 
 Functional programming: (zverok)
 
-- \[Feature [#6284](https://bugs.ruby-lang.org/issues/6284)\] Add composition for procs
+- [[Feature #6284]](https://bugs.ruby-lang.org/issues/6284) Add composition for procs
 
 - 6-year-old proposal. Matz: "Positive about adding function composition. But we need method name consensus before adding it? Is #\* OK for everyone?"
 - (ko1 is describing the Ruby Hack Challenge results)
@@ -180,7 +180,7 @@ Functional programming: (zverok)
 - Matz: shouldn’t we start with Proc…
 - Matz: and I think we need both OOP-ish / FP-ish way.
 
-- \[Feature [#13581](https://bugs.ruby-lang.org/issues/13581)\] Syntax sugar for method reference
+- [[Feature #13581]](https://bugs.ruby-lang.org/issues/13581) Syntax sugar for method reference
 
 - 1-year-old proposal. Matz: "I am for adding syntax sugar for method reference. But I don't like proposed syntax (e.g. \->). Any other idea?"
 - (reviewed comment #21)
@@ -188,17 +188,17 @@ Functional programming: (zverok)
 - Matz: \`.:\` is better than \`->\`
 - Mame: there is a patch cf #12125 [https://bugs.ruby-lang.org/issues/12125](https://bugs.ruby-lang.org/issues/12125)
 
-- \[Feature [#11161](https://bugs.ruby-lang.org/issues/11161)\] Proc/Method#rcurry working like curry but in reverse order
+- [[Feature #11161]](https://bugs.ruby-lang.org/issues/11161) Proc/Method#rcurry working like curry but in reverse order
 
 - 3-year-old proposal with absolutely no reaction. I've added real-life examples there several months ago.
 - Mame: I don’t think reverse currying works for variadic methods
 - Akr: the “real-life” example is adding keyword arguments, which is not what currying is talking about
 
-- \[Feature [#14390](https://bugs.ruby-lang.org/issues/14390)\] UnboundMethod#to\_proc
+- [[Feature #14390]](https://bugs.ruby-lang.org/issues/14390) UnboundMethod#to\_proc
 
 - What is the expected behaviour here?
 
-- \[Feature [#14423](https://bugs.ruby-lang.org/issues/14423)\] Enumerator from single object (Object#enumerate)
+- [[Feature #14423]](https://bugs.ruby-lang.org/issues/14423) Enumerator from single object (Object#enumerate)
 
 - Naruse: interesting proposal
 - Akr: adding method to Object sounds too radical to me.
@@ -207,7 +207,7 @@ Functional programming: (zverok)
 
 Misc:
 
-- \[Bug [#14575](https://bugs.ruby-lang.org/issues/14575)\] Switch Range#=== to use cover? instead of include? (zverok)
+- [[Bug #14575]](https://bugs.ruby-lang.org/issues/14575) Switch Range#=== to use cover? instead of include? (zverok)
 
 - Seems there is a compatibility issue.
 - Usa: does it matter? No one actually expects Range#=== to behave as #cover?
@@ -222,14 +222,14 @@ Docs (probably not to discuss on development meeting, but I am not sure where I 
 
 - Naruse: This meeting is not for documents. Just assign to docs member group.
 
-- \[Feature [#14473](https://bugs.ruby-lang.org/issues/14473)\] Add Range#subrange? ( greggzst )
+- [[Feature #14473]](https://bugs.ruby-lang.org/issues/14473) Add Range#subrange? ( greggzst )
 
 - Shyouhei: what to do with String this case?
 - Akr: the simplest is to only concern the both ends.
 - Usa: Hash has \`>\` and \`<\`
 - Mame: use case not clear.
 
-- \[Feature [#14097](https://bugs.ruby-lang.org/issues/14097)\] Add union and difference to Array ( ana06)
+- [[Feature #14097]](https://bugs.ruby-lang.org/issues/14097) Add union and difference to Array ( ana06)
 
 - Matz: create #union and #union!, or create mutating #union ?
 - Matz: I want to add mutating method but #union does not sound mutating.
@@ -237,10 +237,10 @@ Docs (probably not to discuss on development meeting, but I am not sure where I 
 - Akr: to me it seems mutating or not is not the key point of this proposal.
     The key point is provide a (readable) name addition to an operator, I guess.
 
-- \[Feature [#14105](https://bugs.ruby-lang.org/issues/14105)\] Introduce xor as alias for Set#^ ( ana06)
+- [[Feature #14105]](https://bugs.ruby-lang.org/issues/14105) Introduce xor as alias for Set#^ ( ana06)
 
 - Assign to knu
 
-- \[Misc [#14760](https://bugs.ruby-lang.org/issues/14760)\] cross-thread IO#close semantics (normal)
+- [[Misc #14760]](https://bugs.ruby-lang.org/issues/14760) cross-thread IO#close semantics (normal)
 
 - Ko1: I made it theoretically possible to unblock IO#select. However there is a difficult problem for  IO#copy\_stream.

@@ -150,11 +150,11 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - Methods to certify packages (chatting)
 
-## \[Feature [#8259](https://bugs.ruby-lang.org/issues/8259)\] atomic attribute accessors (tenderlove)
+## [[Feature #8259]](https://bugs.ruby-lang.org/issues/8259) atomic attribute accessors (tenderlove)
 
 (matz) Let me survy more about it.
 
-## \[Feature [#10932](https://bugs.ruby-lang.org/issues/10932)\] Enable allocation tracing ASAP (tenderlove)
+## [[Feature #10932]](https://bugs.ruby-lang.org/issues/10932) Enable allocation tracing ASAP (tenderlove)
 
 (ko1) no problem except the name and “include ObjectSpace”.
 
@@ -162,7 +162,7 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 (matz) approved.
 
-## \[Feature [#10728](https://bugs.ruby-lang.org/issues/10728)\] Warning for Fixnum#size to use RbConfig::SIZEOF 'long' (akr)
+## [[Feature #10728]](https://bugs.ruby-lang.org/issues/10728) Warning for Fixnum#size to use RbConfig::SIZEOF 'long' (akr)
 
 (matz) reject.
 

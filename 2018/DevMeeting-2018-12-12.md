@@ -89,7 +89,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 ## From Attendees
 
-- \[Bug [#15303](https://bugs.ruby-lang.org/issues/15303)\] Return tracepoint doesn't fire when tailcall optimization is applied (ko1)
+- [[Bug #15303]](https://bugs.ruby-lang.org/issues/15303) Return tracepoint doesn't fire when tailcall optimization is applied (ko1)
 
 - tailcall skips return event and it breaks a debugger's logic. there are several ideas, and we need to introduce a solution for ruby 2.6.
 
@@ -101,7 +101,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - \-> (4)
 
-- \[Feature [#15287](https://bugs.ruby-lang.org/issues/15287)\] New TracePoint events to support loading features (ko1)
+- [[Feature #15287]](https://bugs.ruby-lang.org/issues/15287) New TracePoint events to support loading features (ko1)
 
 - Ruby 2.6
 - I already introduced script\_compiled TracePoint event. We need to decide related methods.
@@ -135,40 +135,40 @@ foo("str" => 1, :sym => 2)
 
 ## Non-attendees
 
-- \[Feature [#15230](https://bugs.ruby-lang.org/issues/15230)\] RubyVM.resolve\_feature\_path
+- [[Feature #15230]](https://bugs.ruby-lang.org/issues/15230) RubyVM.resolve\_feature\_path
 
 - 2.6 issue
 - Mame: no fix on 2.6. Consider on next version.
 
-- \[Feature [#13581](https://bugs.ruby-lang.org/issues/13581)\] Syntax sugar for method reference
+- [[Feature #13581]](https://bugs.ruby-lang.org/issues/13581) Syntax sugar for method reference
 
 - 2.7 or later
 - knu: Introducing “…” (as in Lua) would allow for writing this way: ary.each { puts(...) }
 - Matz: Allowing omission of “self” sounds like a bad idea because that makes each(&:puts) and each(&.:puts) look very similar but act so differently.
 
-- \[Feature [#10771](https://bugs.ruby-lang.org/issues/10771)\] An easy way to get the source location of a constant
+- [[Feature #10771]](https://bugs.ruby-lang.org/issues/10771) An easy way to get the source location of a constant
 
 - 2.7 or later
 - Matz: OK, but wait for 2.7.
 
-- \[Feature [#15373](https://bugs.ruby-lang.org/issues/15373)\] Proposal: Enable refinements to #method and #instance\_method
+- [[Feature #15373]](https://bugs.ruby-lang.org/issues/15373) Proposal: Enable refinements to #method and #instance\_method
 
 - 2.7 or later
 - Matz: ok to introduce.
 
-- \[Feature [#15374](https://bugs.ruby-lang.org/issues/15374)\] Proposal: Enable refinements to #method\_missing
+- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method\_missing
 
 - 2.7 or later
 - Matz: let me think about it for a while.
 
-- \[Feature [#15007](https://bugs.ruby-lang.org/issues/15007)\] Proposal: Introduce support for cold function attributes (clang and GCC)
+- [[Feature #15007]](https://bugs.ruby-lang.org/issues/15007) Proposal: Introduce support for cold function attributes (clang and GCC)
 
 - reduced scope PR [https://github.com/ruby/ruby/pull/2005](https://github.com/ruby/ruby/pull/2005) (rb\_memerror, rb\_bug, rb\_warn)
 - Already  merged.
 
-- \[Bug [#15394](https://bugs.ruby-lang.org/issues/15394)\] Ruby adds unexpected HTTP header value when using symbol key
+- [[Bug #15394]](https://bugs.ruby-lang.org/issues/15394) Ruby adds unexpected HTTP header value when using symbol key
 
 - This is a small change I think, but could make codes less buggy
 - Already solved.
 
-- \[Feature [#15066](https://bugs.ruby-lang.org/issues/15066)\] Documentation and providing better API for accessing Complex numbers functions in C extensions
+- [[Feature #15066]](https://bugs.ruby-lang.org/issues/15066) Documentation and providing better API for accessing Complex numbers functions in C extensions

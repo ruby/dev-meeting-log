@@ -171,7 +171,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## Carry-over from previous meeting(s)
 
-## \[Feature [#13512](https://bugs.ruby-lang.org/issues/13512)\] System Threads (shyouhei)
+## [[Feature #13512]](https://bugs.ruby-lang.org/issues/13512) System Threads (shyouhei)
 
 
 - ko1: I don’t like this idea.  I don’t want more states over a Thread.
@@ -180,7 +180,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - Previous bugs that were not assigned (shyouhei)
 
 
-## \[Bug [#13350](https://bugs.ruby-lang.org/issues/13350)\] File.read :newline option not respected on Linux
+## [[Bug #13350]](https://bugs.ruby-lang.org/issues/13350) File.read :newline option not respected on Linux
 
 
 - nobu: on Linux we have to explicitly set text mode.
@@ -188,65 +188,65 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - nobu: then we should automatically assume text mode when newline: is specified.
 - matz: make it so,
 
-## \[Feature [#13389](https://bugs.ruby-lang.org/issues/13389)\] \[PATCH\] POP3 support timeout for TLS handshake
+## [[Feature #13389]](https://bugs.ruby-lang.org/issues/13389) \[PATCH\] POP3 support timeout for TLS handshake
 
 
 - hsbt: pop3 has no maintainer.
 - naruse: maybe shugo can review the patch?
 
-## \[Bug [#13404](https://bugs.ruby-lang.org/issues/13404)\] Hash#any? yields arguments to lambdas with proc semantics
+## [[Bug #13404]](https://bugs.ruby-lang.org/issues/13404) Hash#any? yields arguments to lambdas with proc semantics
 
 
 - assign ko1
 - cf: #13391
 
-## \[Bug [#13429](https://bugs.ruby-lang.org/issues/13429)\] Net::SMTP has no read timeout when connexion over TLS
+## [[Bug #13429]](https://bugs.ruby-lang.org/issues/13429) Net::SMTP has no read timeout when connexion over TLS
 
 
 - should be closed so that usa can be aware of it.
 
-## \[Bug [#13513](https://bugs.ruby-lang.org/issues/13513)\] Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
+## [[Bug #13513]](https://bugs.ruby-lang.org/issues/13513) Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
 
 
 - assign akr
 
-## \[Bug [#13501](https://bugs.ruby-lang.org/issues/13501)\] Process.kill behaviour for negative pid is not documented and may be wrong
+## [[Bug #13501]](https://bugs.ruby-lang.org/issues/13501) Process.kill behaviour for negative pid is not documented and may be wrong
 
 
 - shyouhei: doc issue?
 - akr: we take negative signal or negative pids.  signal.c:rb\_f\_kill() has special codes for negative signals but not for negative pids.
 - akr: what happens both signal and pid are negative?
 
-## \[Bug [#13521](https://bugs.ruby-lang.org/issues/13521)\] \[PATCH\] Add fallback for DNS resolver registry key on Wine
+## [[Bug #13521]](https://bugs.ruby-lang.org/issues/13521) \[PATCH\] Add fallback for DNS resolver registry key on Wine
 
 
 - nobu: 3rd party issue?
 
-## \[Bug [#13557](https://bugs.ruby-lang.org/issues/13557)\] there's no way to pass backtrace locations as a massaged backtrace
+## [[Bug #13557]](https://bugs.ruby-lang.org/issues/13557) there's no way to pass backtrace locations as a massaged backtrace
 
 
 - nobu: I have to discuss this with ko1.
 
-## \[Feature [#10674](https://bugs.ruby-lang.org/issues/10674)\] Net::HTTP retries idempotent requests once after a timeout, but its not configurable
+## [[Feature #10674]](https://bugs.ruby-lang.org/issues/10674) Net::HTTP retries idempotent requests once after a timeout, but its not configurable
 
 
 - assign naruse
 
-## \[Bug [#13542](https://bugs.ruby-lang.org/issues/13542)\] MinGW trunk Builds - Summary of Issues
+## [[Bug #13542]](https://bugs.ruby-lang.org/issues/13542) MinGW trunk Builds - Summary of Issues
 
 
-## \[Bug [#13549](https://bugs.ruby-lang.org/issues/13549)\] MinGW / Windows encoding - Two issues
+## [[Bug #13549]](https://bugs.ruby-lang.org/issues/13549) MinGW / Windows encoding - Two issues
 
-## \[Bug [#13556](https://bugs.ruby-lang.org/issues/13556)\] MinGW readline Alt / Meta keys
+## [[Bug #13556]](https://bugs.ruby-lang.org/issues/13556) MinGW readline Alt / Meta keys
 
-## \[Bug [#13569](https://bugs.ruby-lang.org/issues/13569)\] Windows - TestRubyOptions#test\_search - append to paths instead of replacing
+## [[Bug #13569]](https://bugs.ruby-lang.org/issues/13569) Windows - TestRubyOptions#test\_search - append to paths instead of replacing
 
 ---
 - nobu: I cannot reproduce these problems.
 - shyouhei: It seems the reporter is not eligible to fix them.
 - hsbt: I made an environment so I’ll see if they reproduce.
 
-## \[Bug [#13564](https://bugs.ruby-lang.org/issues/13564)\] Exception message management
+## [[Bug #13564]](https://bugs.ruby-lang.org/issues/13564) Exception message management
 
 
 - matz I understand that it breaks encapsulation \_by theory\_, but in practice is it worth, for instance, duplicate every time?
@@ -259,17 +259,17 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - should what happen for tainted string?
 - ko1: it seems there is string.c:fstring\_cmp.  Can’t we change this function?
 
-## \[Feature [#13618](https://bugs.ruby-lang.org/issues/13618)\] \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
+## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
 
 
 - akr: Socket to DB would normally be pooled / shared among threads in normal web applications.  There shall be some locking mechanism to do so.
 
-## \[Feature [#13583](https://bugs.ruby-lang.org/issues/13583)\] Adding Hash#transform\_keys method (shyouhei)
+## [[Feature #13583]](https://bugs.ruby-lang.org/issues/13583) Adding Hash#transform\_keys method (shyouhei)
 
 
 - matz: seems OK.
 
-## \[Feature [#12589](https://bugs.ruby-lang.org/issues/12589)\] VM performance improvement proposal (shyouhei)
+## [[Feature #12589]](https://bugs.ruby-lang.org/issues/12589) VM performance improvement proposal (shyouhei)
 
 
 - akr: is it OK for people to have C compilers in their production environment?
@@ -277,7 +277,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - ko1: I think scheme compilers tends to transpile into C.
 - matz: I like this idea itself.
 
-## \[Feature [#13676](https://bugs.ruby-lang.org/issues/13676)\] to\_s method is not overriden for Set (shyouhei)
+## [[Feature #13676]](https://bugs.ruby-lang.org/issues/13676) to\_s method is not overriden for Set (shyouhei)
 
 
 - assign knu
@@ -286,12 +286,12 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - knu: is it OK to call inspect?
 - matz: OK.
 
-## \[Feature [#10771](https://bugs.ruby-lang.org/issues/10771)\] An easy way to get the source location of a constant (shyouhei)
+## [[Feature #10771]](https://bugs.ruby-lang.org/issues/10771) An easy way to get the source location of a constant (shyouhei)
 
 
 - nobu: we already maintain constant source locations for redefinition warnings.
 
-## \[Feature [#13434](https://bugs.ruby-lang.org/issues/13434)\] better method definition in C API (shyouhei)
+## [[Feature #13434]](https://bugs.ruby-lang.org/issues/13434) better method definition in C API (shyouhei)
 
 
 - ko1: is it convenient for you to show backtrace of C methods?
@@ -301,60 +301,60 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - bugs that are not assigned (shyouhei)
 
 
-## \[Bug [#13586](https://bugs.ruby-lang.org/issues/13586)\] Ruby hangs when accessing array which is modified in instance\_eval after Coverage.start
+## [[Bug #13586]](https://bugs.ruby-lang.org/issues/13586) Ruby hangs when accessing array which is modified in instance\_eval after Coverage.start
 
 
 - assign nobu
 - nobu: seems 2.5 is not affected.
 
-## \[Bug [#13574](https://bugs.ruby-lang.org/issues/13574)\] Method redefinition warning
+## [[Bug #13574]](https://bugs.ruby-lang.org/issues/13574) Method redefinition warning
 
 
 - akira: is it OK that we say this is the right way to suppress warning?
 - matz: reject.
 
-## \[Bug [#13616](https://bugs.ruby-lang.org/issues/13616)\] Zlib::GzipReader#pos underflows after calling #ungetbyte or #ungetc at start of file
+## [[Bug #13616]](https://bugs.ruby-lang.org/issues/13616) Zlib::GzipReader#pos underflows after calling #ungetbyte or #ungetc at start of file
 
 
 - naruse: I’ll merge this.
 
-## \[Bug [#13593](https://bugs.ruby-lang.org/issues/13593)\] Addrinfo#== behaves oddly
+## [[Bug #13593]](https://bugs.ruby-lang.org/issues/13593) Addrinfo#== behaves oddly
 
 
 - akr: it’s difficult by theory.
 
-## \[Bug [#13631](https://bugs.ruby-lang.org/issues/13631)\] Cannot disable site and vendor directories
+## [[Bug #13631]](https://bugs.ruby-lang.org/issues/13631) Cannot disable site and vendor directories
 
 
 - assign nobu
 
-## \[Bug [#13647](https://bugs.ruby-lang.org/issues/13647)\] Some weird behaviour with keyword arguments
+## [[Bug #13647]](https://bugs.ruby-lang.org/issues/13647) Some weird behaviour with keyword arguments
 
 
 - nobu: we can explain this behaviour.
 
-## \[Bug [#13649](https://bugs.ruby-lang.org/issues/13649)\] Net::IMAP doesn't support response from a Microsoft Exchange server (which is not compliant with RFC standards)
+## [[Bug #13649]](https://bugs.ruby-lang.org/issues/13649) Net::IMAP doesn't support response from a Microsoft Exchange server (which is not compliant with RFC standards)
 
 
 - assign shugo
 
-## \[Bug [#13654](https://bugs.ruby-lang.org/issues/13654)\] irb save-history extension is not concurrency-safe
+## [[Bug #13654]](https://bugs.ruby-lang.org/issues/13654) irb save-history extension is not concurrency-safe
 
 
 - akr: it’s same as shells.
 - assign keiju
 
-## \[Bug [#13655](https://bugs.ruby-lang.org/issues/13655)\] external encoding named "-" (doc issue or…?)
+## [[Bug #13655]](https://bugs.ruby-lang.org/issues/13655) external encoding named "-" (doc issue or…?)
 
 
 - naruse: doc issue.
 
-## \[Bug [#13660](https://bugs.ruby-lang.org/issues/13660)\] rb\_str\_hash\_m discards bits from the hash
+## [[Bug #13660]](https://bugs.ruby-lang.org/issues/13660) rb\_str\_hash\_m discards bits from the hash
 
 
 - akr: it’s intentional.
 
-## \[Bug [#13671](https://bugs.ruby-lang.org/issues/13671)\] Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
+## [[Bug #13671]](https://bugs.ruby-lang.org/issues/13671) Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 
 
 - naruse: /(?<!ass)/iu is suffient to reproduce
@@ -366,7 +366,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - \=> nil
 - But I don't know the expected behavior.
 
-## \[Bug [#13735](https://bugs.ruby-lang.org/issues/13735)\] Initialization-error of sortedset
+## [[Bug #13735]](https://bugs.ruby-lang.org/issues/13735) Initialization-error of sortedset
 
 
 - assign knu
@@ -375,19 +375,19 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## Write your name and your interest (what do you want to ask and to whom?) please.
 
-## \[Feature [#13666](https://bugs.ruby-lang.org/issues/13666)\] Allow to write specs instead of tests (nobody wants to write test code twice). (eregon)
+## [[Feature #13666]](https://bugs.ruby-lang.org/issues/13666) Allow to write specs instead of tests (nobody wants to write test code twice). (eregon)
 
 
 - Martin: Okay to me.
 - nobu: nobody disallows to write specs at the first place, do they?
 
-## \[Feature [#13665](https://bugs.ruby-lang.org/issues/13665)\] Before I added String#delete\_prefix. For symmetry, is it okay to commit String#delete\_suffix? (sonots)
+## [[Feature #13665]](https://bugs.ruby-lang.org/issues/13665) Before I added String#delete\_prefix. For symmetry, is it okay to commit String#delete\_suffix? (sonots)
 
 
 - shyouhei: should we add it?
 - matz: no objection.
 
-## \[Feature [#13743](https://bugs.ruby-lang.org/issues/13743)\] Support linking of files opened with O\_TMPFILE (mmasaki)
+## [[Feature #13743]](https://bugs.ruby-lang.org/issues/13743) Support linking of files opened with O\_TMPFILE (mmasaki)
 
 
 - nobu: File.link or File#link?

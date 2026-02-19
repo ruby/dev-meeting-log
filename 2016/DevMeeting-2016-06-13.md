@@ -106,7 +106,7 @@ This release doesn’t prevent further big changes for Ruby 2.4.
 
 (This release is different from an usual preview1 (even more ‘previewy’))
 
-## \[Misc [#12283](https://bugs.ruby-lang.org/issues/12283)\] Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
+## [[Misc #12283]](https://bugs.ruby-lang.org/issues/12283) Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
 
 Any progress? → Nothing
 
@@ -129,7 +129,7 @@ A: Use empty commit.
 - Try this service.
 - Should we decide whether reports are eligible for bounty?
 
-## \[Feature [#12333](https://bugs.ruby-lang.org/issues/12333)\] String#concat, Array#concat, String#prepend to take multiple arguments (shyouhei)
+## [[Feature #12333]](https://bugs.ruby-lang.org/issues/12333) String#concat, Array#concat, String#prepend to take multiple arguments (shyouhei)
 
 matz: acceptable
 
@@ -160,16 +160,16 @@ ary.delete(:a, :f, :c) #=> ???
 - x, y, z = ary.delete(:a, :f, :c)
 - Especially for Hash#delete (this is out of scope, but we should consier consistency)
 
-## \[Bug [#12295](https://bugs.ruby-lang.org/issues/12295)\] Ripper not emitting on\_parse\_error for global variable name syntax errors (shyouhei) is this the right design?
+## [[Bug #12295]](https://bugs.ruby-lang.org/issues/12295) Ripper not emitting on\_parse\_error for global variable name syntax errors (shyouhei) is this the right design?
 
 Assigned to Minero Aoki.
 
-## \[Feature [#12484](https://bugs.ruby-lang.org/issues/12484)\] Optimizing Rational (hsbt, mrkn)
+## [[Feature #12484]](https://bugs.ruby-lang.org/issues/12484) Optimizing Rational (hsbt, mrkn)
 
 - matz approved to add commit permission to Tadashi-san.
 - mrkn will reivew the proposed patch
 
-## \[Feature [#12281](https://bugs.ruby-lang.org/issues/12281)\] Allow lexically scoped use of refinements with using {} block syntax (shyouhei)
+## [[Feature #12281]](https://bugs.ruby-lang.org/issues/12281) Allow lexically scoped use of refinements with using {} block syntax (shyouhei)
 
 Assigned to shugo.
 
@@ -181,7 +181,7 @@ Motivation is replace self and using context.
 
 Matz will comment it.
 
-## \[Feature [#12447](https://bugs.ruby-lang.org/issues/12447)\] Integer#digits for extracting digits of place-value notation in any base (mrkn)
+## [[Feature #12447]](https://bugs.ruby-lang.org/issues/12447) Integer#digits for extracting digits of place-value notation in any base (mrkn)
 
 - Q. Endian? #=> Little endian
 - Q. how about negative integers? #=> Math::DomainError
@@ -189,7 +189,7 @@ Matz will comment it.
 
 matz: i’m not sure how it is convinience. but ok.
 
-## \[Feature [#12299](https://bugs.ruby-lang.org/issues/12299)\] Add Warning module for customized warning handling (jeremyevans)
+## [[Feature #12299]](https://bugs.ruby-lang.org/issues/12299) Add Warning module for customized warning handling (jeremyevans)
 
 naruse: it sounds useful with Gem.loaded\_specs\[ gem\_name \].full\_gem\_path.
 
@@ -199,7 +199,7 @@ matz: ok (except naming).
 
 h[ttps://bugs.ruby-lang.org/projects/ruby-trunk/wiki/SupportedPlatforms](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/SupportedPlatforms) says it’s for Ruby 1.9; needs some updating.
 
-## \[Feature [#12460](https://bugs.ruby-lang.org/issues/12460)\] Make Unicode Version directly available in Ruby (duerst)
+## [[Feature #12460]](https://bugs.ruby-lang.org/issues/12460) Make Unicode Version directly available in Ruby (duerst)
 
 Approved; name as proposed by Nobu: RbConfig::CONFIG\['UNICODE\_VERSION'\]; implementation: Nobu or Martin.
 
@@ -207,7 +207,7 @@ Approved; name as proposed by Nobu: RbConfig::CONFIG\['UNICODE\_VERSION'\]; impl
 
 See [https://github.com/rdoc/rdoc/issues/409](https://github.com/rdoc/rdoc/issues/409). Intent is understandable. May work by just using &#(x)... HTML/XML convention; needs to be checked further.
 
-## \[Bug [#12427](https://bugs.ruby-lang.org/issues/12427)\] the way that extension libraries know if Integer is integrated (nobu)
+## [[Bug #12427]](https://bugs.ruby-lang.org/issues/12427) the way that extension libraries know if Integer is integrated (nobu)
 
 Nobu prepared a patch to show warning for rb\_cFixnum and rb\_cBignum, so developers can recognize this change. However, there are risks to compile broken code (assume passed parameters are Fixnum, but passed BIgnums. In this case, it is difficult to check Fixnum asusmed methods because Bignum may be rare to use, in general).
 

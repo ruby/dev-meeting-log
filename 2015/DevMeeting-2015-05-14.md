@@ -49,7 +49,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 Attendee: ko1,ayumin,akr,hsbt,naruse; matz,sora\_h
 
-## \[Feature [#11084](https://bugs.ruby-lang.org/issues/11084)\] Use rb-readline instead of ext/readline
+## [[Feature #11084]](https://bugs.ruby-lang.org/issues/11084) Use rb-readline instead of ext/readline
 
 hsbt: Ruby needs readline. openssl, zlib to build. rb-readline is a pure Ruby library. Replacing current readline with rb-readline (as a bundled gem) helps build problems. Current readline will be a gem. Now windows ruby installer already use rb-readline.
 
@@ -87,7 +87,7 @@ Next action:
 
 hsbt: I continue to use rb-readline and try it.
 
-## \[Feature [#11083](https://bugs.ruby-lang.org/issues/11083)\] Gemify net-telnet
+## [[Feature #11083]](https://bugs.ruby-lang.org/issues/11083) Gemify net-telnet
 
 hsbt: no maintainer so it should be gemify.
 
@@ -97,7 +97,7 @@ hsbt: Not sure.
 
 Matz: I accept bundled gem.
 
-## \[Feature [#11082](https://bugs.ruby-lang.org/issues/11082)\] Remove condition of RUBY\_VERSION < 1.9 (hsbt)
+## [[Feature #11082]](https://bugs.ruby-lang.org/issues/11082) Remove condition of RUBY\_VERSION < 1.9 (hsbt)
 
 hsbt: Title is wrong. Not < 1.9, but <= 1.9.
 
@@ -123,7 +123,7 @@ ayumin: Positive because using newer features helps to evaluate such features.
 
 ko1: Use newer features with keeping compatibility.
 
-## \[Feature [#11049](https://bugs.ruby-lang.org/issues/11049)\] Enumerable#grep\_v (inversed grep) (sorah)
+## [[Feature #11049]](https://bugs.ruby-lang.org/issues/11049) Enumerable#grep\_v (inversed grep) (sorah)
 
 matz: are you okay to use the name “grep\_v”
 
@@ -141,7 +141,7 @@ matz: but grep\_v() is okay. -> accept on ticket.
 
 naruse: How about reject(pattern) ?
 
-## \[Bug [#10967](https://bugs.ruby-lang.org/issues/10967)\] Remove "private attribute?" warning (zzak)
+## [[Bug #10967]](https://bugs.ruby-lang.org/issues/10967) Remove "private attribute?" warning (zzak)
 
 akr: self.private\_something\_method is accepted recently.
 
@@ -149,7 +149,7 @@ naruse: test can find problem, so warning is not needed.
 
 matz: accept .
 
-## \[Feature [#10984](https://bugs.ruby-lang.org/issues/10984)\] Hash#contain? (zzak)
+## [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? (zzak)
 
 akr: “contain” is too general. “subhash”?
 
@@ -157,7 +157,7 @@ n0kada: “contain?” seems similiar to “include?”
 
 akr: do we really use? we need concrete examples.
 
-## \[Bug [#10856](https://bugs.ruby-lang.org/issues/10856)\] Splat with empty keyword args
+## [[Bug #10856]](https://bugs.ruby-lang.org/issues/10856) Splat with empty keyword args
 
 def foo
 
@@ -185,13 +185,13 @@ foo(\*\*{}) #=> okay
 
 The first one seems wrong code, so an error is reasonable.
 
-## \[Feature [#11140](https://bugs.ruby-lang.org/issues/11140)\] autoload should call Kernel.require to give rubygems a chance to handle loading (tenderlove)
+## [[Feature #11140]](https://bugs.ruby-lang.org/issues/11140) autoload should call Kernel.require to give rubygems a chance to handle loading (tenderlove)
 
 nobu: no problem. -r already calls replaced require().
 
 matz: accept.
 
-## \[Feature [#11151](https://bugs.ruby-lang.org/issues/11151)\] Numeric#positive? and Numeric#negative?
+## [[Feature #11151]](https://bugs.ruby-lang.org/issues/11151) Numeric#positive? and Numeric#negative?
 
 akr: well usecase.
 

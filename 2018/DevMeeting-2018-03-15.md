@@ -133,12 +133,12 @@ Maintainers starting Apr 2018:
 
 ### From attendees
 
-- \[Feature [#12732](https://bugs.ruby-lang.org/issues/12732)\] An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
+- [[Feature #12732]](https://bugs.ruby-lang.org/issues/12732) An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
 
 - Resolved
 - Mrkn will file the conclusion.
 
-- \[Feature [#14476](https://bugs.ruby-lang.org/issues/14476)\] Adding same\_all? for checking whether all items in an Array are same (mrkn)
+- [[Feature #14476]](https://bugs.ruby-lang.org/issues/14476) Adding same\_all? for checking whether all items in an Array are same (mrkn)
 
 - Definition of “same”? -> \`\==\`, for mrkn’s case
 - Empty array? -> true, \[\].all?{} #=> true
@@ -158,12 +158,12 @@ Maintainers starting Apr 2018:
 - ary.uniform\_values?
 - ary.uniform\_values?{|e| e.foo}
 
-- \[Feature [#14362](https://bugs.ruby-lang.org/issues/14362)\] use BigDecimal instead of Float by default (mrkn)
+- [[Feature #14362]](https://bugs.ruby-lang.org/issues/14362) use BigDecimal instead of Float by default (mrkn)
 
 - Reject; Unacceptable performance & too incompatible
 - Matz will respond.
 
-- \[Feature [#14044](https://bugs.ruby-lang.org/issues/14044)\] Introduce a new attribute step in Range (mrkn)
+- [[Feature #14044]](https://bugs.ruby-lang.org/issues/14044) Introduce a new attribute step in Range (mrkn)
 
 \# current
 
@@ -205,36 +205,36 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 - Will be SyntaxError in 2.6-preview2
 - All of begin/do/def (experimental)
 
-- \[Feature [#14594](https://bugs.ruby-lang.org/issues/14594)\] Rethink yield\_self's name
+- [[Feature #14594]](https://bugs.ruby-lang.org/issues/14594) Rethink yield\_self's name
 
 - “then”?
 - (1) Possible to use this method name by other libraries (like promise)
 - (2) No built-in methods like this …
 - Comitters objected the suggestion but matz accepted it
 
-- \[Feature [#14324](https://bugs.ruby-lang.org/issues/14324)\] Should Exception#full\_message include escape sequences?
+- [[Feature #14324]](https://bugs.ruby-lang.org/issues/14324) Should Exception#full\_message include escape sequences?
 
 - Keyword arguments
 
 - order: :top/:bottom
 - highlight: true/false
 
-- \[Feature [#12745](https://bugs.ruby-lang.org/issues/12745)\] String#(g)sub(!) should pass a MatchData to the block, not a String
+- [[Feature #12745]](https://bugs.ruby-lang.org/issues/12745) String#(g)sub(!) should pass a MatchData to the block, not a String
 
 - akr: how about gsubm, \`m\` means MatchData
 
 ### From non-attendees
 
-- \[Feature [#14245](https://bugs.ruby-lang.org/issues/14245)\] Add File.read etc. (shugo)
+- [[Feature #14245]](https://bugs.ruby-lang.org/issues/14245) Add File.read etc. (shugo)
 
 - Accepted
 - FYI: On 2.5, deprecation warning is added for this feature. We’ll remove this feature on 2.6.
 
-- \[Feature [#14579](https://bugs.ruby-lang.org/issues/14579)\] Hash value omission (shugo)
+- [[Feature #14579]](https://bugs.ruby-lang.org/issues/14579) Hash value omission (shugo)
 
 - Reject because matz doesn’t like it.
 
-- \[Bug [#14541](https://bugs.ruby-lang.org/issues/14541)\] Class variables have broken semantics, let's fix them (eregon). I'd like more opinions and thoughts on whether we can change them.
+- [[Bug #14541]](https://bugs.ruby-lang.org/issues/14541) Class variables have broken semantics, let's fix them (eregon). I'd like more opinions and thoughts on whether we can change them.
 
 - usa: I use class variables in a correct way when I love class variables
 - ideas:
@@ -294,4 +294,4 @@ B.show
 
 - It’s considered bug. amatsuda says ActiveSupport will follow Ruby 2.6.
 
-- \[Feature [#11473](https://bugs.ruby-lang.org/issues/11473)\] Immutable String literal in Ruby 3 (hsbt): Do you really want to change it at Ruby 3? If It's yes, We should add a warning with destructive action on Ruby 2.6.
+- [[Feature #11473]](https://bugs.ruby-lang.org/issues/11473) Immutable String literal in Ruby 3 (hsbt): Do you really want to change it at Ruby 3? If It's yes, We should add a warning with destructive action on Ruby 2.6.
