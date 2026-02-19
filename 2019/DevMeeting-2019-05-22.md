@@ -62,7 +62,7 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 
 # Log
 
-[https://bugs.ruby-lang.org/issues/15782](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15782&sa=D&source=editors&ust=1686088829068902&usg=AOvVaw2lvoSocyt9eVFzKGi-1P5J)
+[https://bugs.ruby-lang.org/issues/15782](https://bugs.ruby-lang.org/issues/15782)
 
 ## Next Date
 
@@ -70,7 +70,7 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 
 ## Ann
 
-- 7/14, 15 Ruby Development camp @ [https://marumo.net/gasshuku-plan001/](https://www.google.com/url?q=https://marumo.net/gasshuku-plan001/&sa=D&source=editors&ust=1686088829069631&usg=AOvVaw1vQovSxi2MlSlc1sH5dyJ5)
+- 7/14, 15 Ruby Development camp @ [https://marumo.net/gasshuku-plan001/](https://marumo.net/gasshuku-plan001/)
 
 ## About 2.7 timeframe
 
@@ -88,83 +88,83 @@ Nothing.
 
 ## Topics
 
-- [\[Misc #14632\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14632&sa=D&source=editors&ust=1686088829070677&usg=AOvVaw2MOmyhtFrdaZtYi9we0R-i) [git.ruby-lang.org](https://www.google.com/url?q=http://git.ruby-lang.org/&sa=D&source=editors&ust=1686088829070849&usg=AOvVaw3CMIaDTPqLLlZ0yDtY8mPp) (k0kubun)
+- [\[Misc #14632\]](https://bugs.ruby-lang.org/issues/14632) [git.ruby-lang.org](http://git.ruby-lang.org/) (k0kubun)
 
 - RUBY\_REVISION should be full-length hash value
 
-- [\[Bug #15745\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15745&sa=D&source=editors&ust=1686088829071202&usg=AOvVaw2KZfJ56SugMvxuOObPmGuv) There is no symmetry in the beginless range and the endless range using Range#inspect (koic)(1..).inspect      #=> "1.."
+- [\[Bug #15745\]](https://bugs.ruby-lang.org/issues/15745) There is no symmetry in the beginless range and the endless range using Range#inspect (koic)(1..).inspect      #=> "1.."
 - (..5).inspect      #=> "..5"
 - (nil..nil).inspect #=> "nil..nil"
 
-- [\[Feature #14915\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14915&sa=D&source=editors&ust=1686088829071759&usg=AOvVaw1IAFGrBYtrB492ZyTh6t00) Deprecate String#crypt (jeremyevans0)
+- [\[Feature #14915\]](https://bugs.ruby-lang.org/issues/14915) Deprecate String#crypt (jeremyevans0)
 
 - There are a few committers against the removal. They will reply into the ticket.
-- Jeremy Evans committer? -> “Go ahead” by matz ([https://bugs.ruby-lang.org/issues/15853#change-78060](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15853%23change-78060&sa=D&source=editors&ust=1686088829072214&usg=AOvVaw3SLlgoL9nFTQBT14EAtoDc), [https://bugs.ruby-lang.org/issues/15839#change-78087](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15839%23change-78087&sa=D&source=editors&ust=1686088829072421&usg=AOvVaw1Ck6TK557TLQCVUaFmTVik))
+- Jeremy Evans committer? -> “Go ahead” by matz ([https://bugs.ruby-lang.org/issues/15853#change-78060](https://bugs.ruby-lang.org/issues/15853#change-78060), [https://bugs.ruby-lang.org/issues/15839#change-78087](https://bugs.ruby-lang.org/issues/15839#change-78087))
 
-- [\[Feature #15765\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15765&sa=D&source=editors&ust=1686088829072708&usg=AOvVaw3-AOZNlScJjLpo4-0oJEmX) \[PATCH\] Module#name without global constant search (alanwu)
+- [\[Feature #15765\]](https://bugs.ruby-lang.org/issues/15765) \[PATCH\] Module#name without global constant search (alanwu)
 
 - Matz: leaf to nobu.
 - Nobu: Will check and merge.
 
-- [\[Feature #15772\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15772&sa=D&source=editors&ust=1686088829073142&usg=AOvVaw1iy8TSQH65ZmGbJvgI2_G5) Proposal: Add Time#ceil (osyo)
+- [\[Feature #15772\]](https://bugs.ruby-lang.org/issues/15772) Proposal: Add Time#ceil (osyo)
 
 - Shyouhei: Use case?
 - Matz: Okay!
 
-- [\[Feature #13645\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13645&sa=D&source=editors&ust=1686088829073566&usg=AOvVaw3GIBKneMrbgGB5S0dVo0Yz) Syntactic sugar for indexing when using the safe navigation operator (osyo)
+- [\[Feature #13645\]](https://bugs.ruby-lang.org/issues/13645) Syntactic sugar for indexing when using the safe navigation operator (osyo)
 
 - Matz: the use case looks artificial. Reject once.
 
-- [\[Misc #15802\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15802&sa=D&source=editors&ust=1686088829073884&usg=AOvVaw1WO3Szw3TZQE-Ode5mu9Sv) \[PATCH\] Reduce the minimum string buffer size from 127 to 63 bytes (methodmissing)
+- [\[Misc #15802\]](https://bugs.ruby-lang.org/issues/15802) \[PATCH\] Reduce the minimum string buffer size from 127 to 63 bytes (methodmissing)
 
 - ko1 will check.
 
-- [\[Feature #14736\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14736&sa=D&source=editors&ust=1686088829074211&usg=AOvVaw1LY62uznmL7v4NN5-RM4tf) Thread selector for flexible cooperative fiber based concurrency (ioquatix)
+- [\[Feature #14736\]](https://bugs.ruby-lang.org/issues/14736) Thread selector for flexible cooperative fiber based concurrency (ioquatix)
 
 - (ko1, nobu, and matz talks)
 - Matz: I’m worry about the performance, it would be difficult to accept the patch as is. I’m not positive to add a hook to IO because it will bring a big overhead when buffered. I prefer auto-fiber to using traditional IOs with a hook.
 - Nobu: I’m negative to passing a FD. I agree with eregon.
 - Matz: Will reject.
-- Ko1: I’m unsure what design is best, but I think eregon wrote [a good comment](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14736%23change-77879&sa=D&source=editors&ust=1686088829074789&usg=AOvVaw3ebK71VLlVj-kdjSNIgOpI). It would be good that the proposal is much simpler than autofiber.
+- Ko1: I’m unsure what design is best, but I think eregon wrote [a good comment](https://bugs.ruby-lang.org/issues/14736#change-77879). It would be good that the proposal is much simpler than autofiber.
 
-- [\[Feature #15323\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15323&sa=D&source=editors&ust=1686088829075042&usg=AOvVaw12jzyQ-4JxlKhN5Mt8wWlx) \[PATCH\] Proposal: Add Enumerable#filter\_map (greggzst)
+- [\[Feature #15323\]](https://bugs.ruby-lang.org/issues/15323) \[PATCH\] Proposal: Add Enumerable#filter\_map (greggzst)
 
 - Matz will reply.
 
-- [\[Misc #15843\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15843&sa=D&source=editors&ust=1686088829075413&usg=AOvVaw3wFHl7RYSEDjFNDLCUpu_8) Make “trunk” a symbolic-ref of “master” on [git.ruby-lang.org](https://www.google.com/url?q=http://git.ruby-lang.org/&sa=D&source=editors&ust=1686088829075617&usg=AOvVaw0thzU36T3m9jqdz2Lhwb2M) (k0kubun)
+- [\[Misc #15843\]](https://bugs.ruby-lang.org/issues/15843) Make “trunk” a symbolic-ref of “master” on [git.ruby-lang.org](http://git.ruby-lang.org/) (k0kubun)
 
 - Go ahead?
 - Nobu: Why “master” is primary and “trunk” is secondary.
 - Akr: “Out of scope (for a short term)” is a trap! “accept” may mean accept for long term?
 
-- [\[Feature #15778\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15778&sa=D&source=editors&ust=1686088829076136&usg=AOvVaw37J8gLZH-TwPTSoIZHZ7d_) Expose an API to pry-open the stack frames in Ruby (eregon)
+- [\[Feature #15778\]](https://bugs.ruby-lang.org/issues/15778) Expose an API to pry-open the stack frames in Ruby (eregon)
 
 - Ko1: I hate Binding.of\_caller.
 - Shyouhei: How about requiring require "something" to communicate “should only be used for debugging”?
 
-- [\[Bug #7300\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/7300&sa=D&source=editors&ust=1686088829076697&usg=AOvVaw0-4My0xywohL8QXLUUbhKj) Hash#\[\] の挙動が 1.9.3 と異なっている (hsbt)
+- [\[Bug #7300\]](https://bugs.ruby-lang.org/issues/7300) Hash#\[\] の挙動が 1.9.3 と異なっている (hsbt)
 
 - Mame: I’d like to merge it.
 
-- [\[Feature #14844\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14844&sa=D&source=editors&ust=1686088829077078&usg=AOvVaw2tPsGcvMik_gOXnCBYKoN1) Future of RubyVM::AST?
+- [\[Feature #14844\]](https://bugs.ruby-lang.org/issues/14844) Future of RubyVM::AST?
 
 - What can we do about this? The current situation is confusing for everyone, the API sounds “blessed” by being in core but it’s actually experimental and unstable. Can we document it as clearly as possible when this API should be used? Could we improve the API so it’s less fragile to parser changes and could be reasonably implemented on other Ruby implementations?
 - “Add a document to warn the result of this API may (easily) change in future”
 
-- [\[Feature #15863\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15863&sa=D&source=editors&ust=1686088829077592&usg=AOvVaw12CadwHth6JWaCZOJ8Hb25) Add Hash#slice! and ENV.slice!(bogdanvlviv)
-- [\[Feature #15831\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15831&sa=D&source=editors&ust=1686088829077983&usg=AOvVaw2eVfg0ts-1ouKsFURw3k4d) Add Array#extract, Hash#extract, and ENV.extract (bogdanvlviv)
+- [\[Feature #15863\]](https://bugs.ruby-lang.org/issues/15863) Add Hash#slice! and ENV.slice!(bogdanvlviv)
+- [\[Feature #15831\]](https://bugs.ruby-lang.org/issues/15831) Add Array#extract, Hash#extract, and ENV.extract (bogdanvlviv)
 
 - Matz: negative. (Sorry I missed to log)
 
-- [\[Feature #15864\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15864&sa=D&source=editors&ust=1686088829078493&usg=AOvVaw3xS7e62FVsmR3zW7jBZDgc) Proposal: Add methods to determine if it is an infinite range
+- [\[Feature #15864\]](https://bugs.ruby-lang.org/issues/15864) Proposal: Add methods to determine if it is an infinite range
     (osyo)
 
 - Matz: negative.
 
-- [\[Feature #15865\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15865&sa=D&source=editors&ust=1686088829078804&usg=AOvVaw3p_Fs5ZfWJtuYB6E7HiNvu) <expr> in <pattern> expression (mame)
+- [\[Feature #15865\]](https://bugs.ruby-lang.org/issues/15865) <expr> in <pattern> expression (mame)
 
 - Matz: positive.
 
-- [\[Feature #15281\]](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15281&sa=D&source=editors&ust=1686088829079237&usg=AOvVaw1bKEfmLlIRc8wm5D6vZopG) Speed up Set#intersect with size check. (tenderlove)
+- [\[Feature #15281\]](https://bugs.ruby-lang.org/issues/15281) Speed up Set#intersect with size check. (tenderlove)
 
 - Knu will check.

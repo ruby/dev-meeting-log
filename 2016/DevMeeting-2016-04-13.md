@@ -74,7 +74,7 @@ Attendees: matz, sorah, naruse, ko1, mame, kosaki, hsbt, nobu, tarui, akr, shyou
 
 venue: TBD
 
-## \[Feature [#9969](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/9969&sa=D&source=editors&ust=1686086778188607&usg=AOvVaw1r1Ex8lWi1rHAWqywICQXs)\] Add File.empty? as alias to File.zero? (shyouhei)
+## \[Feature [#9969](https://bugs.ruby-lang.org/issues/9969)\] Add File.empty? as alias to File.zero? (shyouhei)
 
 (discussing about current behavior of related methods)
 
@@ -83,11 +83,11 @@ venue: TBD
 - matz: ok
 - kosaki: do you say “zero sized file”?
 
-## \[Feature [#10617](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10617&sa=D&source=editors&ust=1686086778189557&usg=AOvVaw3n9pUWMsFxA5DDKNUZfPip)\] Change multiple assignment in conditional from parse error to warning (shyouhei)
+## \[Feature [#10617](https://bugs.ruby-lang.org/issues/10617)\] Change multiple assignment in conditional from parse error to warning (shyouhei)
 
 - ko1: counter proposal. returning array can affect performance. how about to make mltiple assignment as a void expression?
 
-- example: [http://www.atdot.net/~ko1/diary/201502.html#d16](https://www.google.com/url?q=http://www.atdot.net/~ko1/diary/201502.html%23d16&sa=D&source=editors&ust=1686086778190126&usg=AOvVaw19YZbfs8LPRC7b-VT8S2vA)
+- example: [http://www.atdot.net/~ko1/diary/201502.html#d16](http://www.atdot.net/~ko1/diary/201502.html#d16)
 
 - naruse: I doubt the reporter’s true working code is
     a, b = some\_method\_returning\_array\_or\_nil
@@ -103,70 +103,70 @@ venue: TBD
 - ko1: i can’t understand what happen on it.
 - matz: I want to use it. accept.
 
-## \[Feature [#11547](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11547&sa=D&source=editors&ust=1686086778190922&usg=AOvVaw23JOvjx6EpwV97PrLIDc_j)\] remove top-level constant lookup (shyouhei)
+## \[Feature [#11547](https://bugs.ruby-lang.org/issues/11547)\] remove top-level constant lookup (shyouhei)
 
 - matz: lets try this to see how much codes break with it.
 
-## \[Feature [#12020](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12020&sa=D&source=editors&ust=1686086778191350&usg=AOvVaw3sgp2Ic24E2wWTSRAkYH5E)\] Documenting Ruby memory model (shyouhei)
+## \[Feature [#12020](https://bugs.ruby-lang.org/issues/12020)\] Documenting Ruby memory model (shyouhei)
 
-## \[Feature [#11210](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11210&sa=D&source=editors&ust=1686086778191764&usg=AOvVaw0PZ2mNK6EHchSdiUrieGvj)\] IPAddr has no public method to get the current subnet mask (eregon) Who can review this?
+## \[Feature [#11210](https://bugs.ruby-lang.org/issues/11210)\] IPAddr has no public method to get the current subnet mask (eregon) Who can review this?
 
 - assign to knu-san
 - naruse: mentioned to knu
 
-## \[Feature [#6647](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/6647&sa=D&source=editors&ust=1686086778192280&usg=AOvVaw2LyPWo0K3jf04EyBzOokuo)\] Exceptions raised in threads should be logged, Thread#report\_on\_exception= (eregon) Can we agree on the feature?
+## \[Feature [#6647](https://bugs.ruby-lang.org/issues/6647)\] Exceptions raised in threads should be logged, Thread#report\_on\_exception= (eregon) Can we agree on the feature?
 
 Matz is positive to provide Thread#report\_on\_exception, but negative to turning it on by default.
 
-## \[Feature [#12026](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12026&sa=D&source=editors&ust=1686086778192918&usg=AOvVaw3YACU_CmKEFp9xMz9UatbE)\] Support warning processor
+## \[Feature [#12026](https://bugs.ruby-lang.org/issues/12026)\] Support warning processor
 
 - matz: agree with customizable warning
 
 - should not use global variables
 - there are many design choise. continue to discuss
 
-## \[Feature [#12092](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12092&sa=D&source=editors&ust=1686086778193591&usg=AOvVaw362zFI9yX5FLMBV39DlGEa)\] Allow Object#clone to yield cloned object before freezing (jeremyevans0)
+## \[Feature [#12092](https://bugs.ruby-lang.org/issues/12092)\] Allow Object#clone to yield cloned object before freezing (jeremyevans0)
 
-## \[Feature #[12217](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12217&sa=D&source=editors&ust=1686086778193978&usg=AOvVaw3vSDoLPRbhD2p4nLs74xyZ)\] Introducing Enumerable#sum for precision compensated summation and revert r54237 (mrkn)
+## \[Feature #[12217](https://bugs.ruby-lang.org/issues/12217)\] Introducing Enumerable#sum for precision compensated summation and revert r54237 (mrkn)
 
 - matz: Adding Array#sum is ok
 - Revert r54237 and optimization for Float
 
-## \[Bug [#12271](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12271&sa=D&source=editors&ust=1686086778194538&usg=AOvVaw14yLnN2YsYcx4sZVUj1FC2)\] Time#to\_time removes timezone information
+## \[Bug [#12271](https://bugs.ruby-lang.org/issues/12271)\] Time#to\_time removes timezone information
 
 - nobu: It is a bug, so I commited
 - yui\_knk: ActiveSupport was testing this behavior (FYI)
 
-## \[Feature [#12157](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12157&sa=D&source=editors&ust=1686086778195148&usg=AOvVaw1dkXIbSX_4tem_kgHpAXSQ)\] Is the option hash necessary for future Rubys?
+## \[Feature [#12157](https://bugs.ruby-lang.org/issues/12157)\] Is the option hash necessary for future Rubys?
 
 - We have no matz for time when discussed this issue, so pend until next meeting.
 
-## \[Bug [#12181](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12181&sa=D&source=editors&ust=1686086778195586&usg=AOvVaw1BeuIWyT45sBg25ws4uD3S)\] ブロックがたくさんあるファイルを編集するとruby-modeが重い
+## \[Bug [#12181](https://bugs.ruby-lang.org/issues/12181)\] ブロックがたくさんあるファイルを編集するとruby-modeが重い
 
 - Who can look this issue? Nobu?
 - nobu will investigate and make some action.
 
-## \[Bug [#12179](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12179&sa=D&source=editors&ust=1686086778196151&usg=AOvVaw08pK7nXdMKrpaJuSTVU5AL)\] Build failure due to VPATH expansion
+## \[Bug [#12179](https://bugs.ruby-lang.org/issues/12179)\] Build failure due to VPATH expansion
 
 - Weird. Nobu will investigate.
 
-## \[Bug [#12183](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12183&sa=D&source=editors&ust=1686086778196632&usg=AOvVaw1ZRuU3ajsZH3ZM6ge0ztga)\] require "win32ole" すると終了ステータスが必ず 0 になる
+## \[Bug [#12183](https://bugs.ruby-lang.org/issues/12183)\] require "win32ole" すると終了ステータスが必ず 0 になる
 
 - Assigned to appropriate maintainer.
 
-## \[Bug [#12184](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12184&sa=D&source=editors&ust=1686086778197108&usg=AOvVaw2ki9AJmCdWLvAWlPcQIXih)\] Cygwin LANG=ja\_JP.SJIS 環境でコマンドライン引数に日本語が渡せない
+## \[Bug [#12184](https://bugs.ruby-lang.org/issues/12184)\] Cygwin LANG=ja\_JP.SJIS 環境でコマンドライン引数に日本語が渡せない
 
 - nobu: Cygwin only supports UTF-8
 - nobu(?) will reply something
 
-## \[Feature [#7361](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/7361&sa=D&source=editors&ust=1686086778197739&usg=AOvVaw1lOc3i9xapIXK_UJqVFcTX)\] Adding Pathname#touch
+## \[Feature [#7361](https://bugs.ruby-lang.org/issues/7361)\] Adding Pathname#touch
 
 - actually touch(1) does lot of thing. What ticket author wanted?
 - Encourage author to make feature request more solid.
 
-## \[Feature [#12236](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12236&sa=D&source=editors&ust=1686086778198454&usg=AOvVaw2_LsdmZvTnMTxkHk7wry8o)\] Introduce mmap managed heap (ko1)
+## \[Feature [#12236](https://bugs.ruby-lang.org/issues/12236)\] Introduce mmap managed heap (ko1)
 
-## \[Feature [#11925](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11925&sa=D&source=editors&ust=1686086778199160&usg=AOvVaw1AZQHGNpNQdwtjEo11lP0o)\] Struct construction with kwargs (ko1)
+## \[Feature [#11925](https://bugs.ruby-lang.org/issues/11925)\] Struct construction with kwargs (ko1)
 
 - Understood and +1 for this feature, but maybe naming is a problem
 - We also have to wait a Matz.
@@ -183,4 +183,4 @@ Matz is positive to provide Thread#report\_on\_exception, but negative to turnin
 
 \[FYI\] Cookpad’s styleguide of the number of characters in a line:
 
-[https://github.com/cookpad/styleguide/blob/master/ruby.ja.md#line-columns](https://www.google.com/url?q=https://github.com/cookpad/styleguide/blob/master/ruby.ja.md%23line-columns&sa=D&source=editors&ust=1686086778200683&usg=AOvVaw2sHrDB0U7tanU_UU1HpRMh)
+[https://github.com/cookpad/styleguide/blob/master/ruby.ja.md#line-columns](https://github.com/cookpad/styleguide/blob/master/ruby.ja.md#line-columns)

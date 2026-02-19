@@ -62,17 +62,17 @@ Members: hsbt, akr, mrkn, shyouhei, naruse, nobu, ko1, sorah, matz (skype)
 - gem-codesearch
 
 - We want to share gem-codesearch as a service.
-- [https://github.com/etsy/hound](https://www.google.com/url?q=https://github.com/etsy/hound&sa=D&source=editors&ust=1686086705503465&usg=AOvVaw2cwzpJ_gQkqZYCFtJDw1ye) is webapp which uses the algorithm same as [https://github.com/google/codesearch](https://www.google.com/url?q=https://github.com/google/codesearch&sa=D&source=editors&ust=1686086705503747&usg=AOvVaw0KL6Jghj1uoWe0NYHZZHRy).
+- [https://github.com/etsy/hound](https://github.com/etsy/hound) is webapp which uses the algorithm same as [https://github.com/google/codesearch](https://github.com/google/codesearch).
 - What we need is a server with big (such as 1Tbytes) storage.
 
-## \[[Misc #12004](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12004&sa=D&source=editors&ust=1686086705504112&usg=AOvVaw1mrw7kuUGCmHp6dnG9TsXw)\] CoC
+## \[[Misc #12004](https://bugs.ruby-lang.org/issues/12004)\] CoC
 
 - Matz does not want to include CoC in repository nor release tarball
 - Based on PostgreSQL’s CoC v2
 
-- [http://www.postgresql.org/message-id/56A2E9C5.2040707@commandprompt.com](https://www.google.com/url?q=http://www.postgresql.org/message-id/56A2E9C5.2040707@commandprompt.com&sa=D&source=editors&ust=1686086705504596&usg=AOvVaw0uD3vSBEhOtnAv1GdP2Aty)
+- [http://www.postgresql.org/message-id/56A2E9C5.2040707@commandprompt.com](http://www.postgresql.org/message-id/56A2E9C5.2040707@commandprompt.com)
 
-- Create post on [www.ruby-lang.org](https://www.google.com/url?q=http://www.ruby-lang.org&sa=D&source=editors&ust=1686086705504849&usg=AOvVaw0eozBRj2xbUIoJdNFUIj_5)
+- Create post on [www.ruby-lang.org](http://www.ruby-lang.org)
 
 - Link on bugs.ruby-lang.org new account page and w.r-l.o ML list?
 
@@ -95,13 +95,13 @@ Members: hsbt, akr, mrkn, shyouhei, naruse, nobu, ko1, sorah, matz (skype)
 - Applied area: (“collaborative space”)
 
 - A. bugs.ruby-lang.org, commit comments + etc?
-- Include MLs? [http://lists.ruby-lang.org/cgi-bin/mailman/listinfo](https://www.google.com/url?q=http://lists.ruby-lang.org/cgi-bin/mailman/listinfo&sa=D&source=editors&ust=1686086705505903&usg=AOvVaw0Mz1q6tejNm86H3hetgOIv)
+- Include MLs? [http://lists.ruby-lang.org/cgi-bin/mailman/listinfo](http://lists.ruby-lang.org/cgi-bin/mailman/listinfo)
 
 - A. No
 
-GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://www.google.com/url?q=https://github.com/ruby/www.ruby-lang.org/issues&sa=D&source=editors&ust=1686086705506300&usg=AOvVaw13XtU-mNJtbddkPPPLRqv8)
+GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://github.com/ruby/www.ruby-lang.org/issues)
 
-## \[Feature [#11666](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11666&sa=D&source=editors&ust=1686086705506587&usg=AOvVaw1tjbrvJPZVY9Z8kEFT1DG2)\] IPAddr#private? (glass\_saga)
+## \[Feature [#11666](https://bugs.ruby-lang.org/issues/11666)\] IPAddr#private? (glass\_saga)
 
 - feature issues
 
@@ -118,7 +118,7 @@ GitHub: web [https://github.com/ruby/www.ruby-lang.org/issues](https://www.googl
 
 - The name “ipv4\_private?” is clear that the method returns false on IPv6 addresses.
 
-## \[Feature [#12046](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12046&sa=D&source=editors&ust=1686086705507489&usg=AOvVaw0v4FJMcLH3kWGTpDAbazSr)\] Allow attr\_reader :foo? to define instance method foo? for accessing @foo (mrkn)
+## \[Feature [#12046](https://bugs.ruby-lang.org/issues/12046)\] Allow attr\_reader :foo? to define instance method foo? for accessing @foo (mrkn)
 
 - matz: Still negative; I’m not good to have difference in ivar name and method name
 - behavior issues:
@@ -133,7 +133,7 @@ Reported by ko1.
 
 ---
 
-## \[Feature [#11999](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11999&sa=D&source=editors&ust=1686086705508376&usg=AOvVaw38SL--MaFWupV1gU_VMhHn)\] MatchData#to\_h to get a Hash from named captures (sorah)
+## \[Feature [#11999](https://bugs.ruby-lang.org/issues/11999)\] MatchData#to\_h to get a Hash from named captures (sorah)
 
 - #to\_h is inappropriate name while non-named capture exists
 
@@ -157,7 +157,7 @@ Reported by ko1.
 
 - #captures return \[\] when no capture, so #named\_captures returns {} when no named capture
 
-## \[Bug [#9810](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/9810&sa=D&source=editors&ust=1686086705509739&usg=AOvVaw0UkOaTFUpD2EUE_5UefBkg)\] Numeric#step behavior with mixed Float, String arguments inconsistent with documentation
+## \[Bug [#9810](https://bugs.ruby-lang.org/issues/9810)\] Numeric#step behavior with mixed Float, String arguments inconsistent with documentation
 
 This issue is because of invalid type, not mismatch the number of arguments.
 
@@ -183,28 +183,28 @@ def foo;return a: 1; end
 
 matz rejected it because return is not a method call.  Matz wants to split kwargs versus trailing-hash-arg in a long term.  He wants to distinguish them mentally.  Rocket notation is not always related to kwargs while colon notation is tightly-connected, even though it is also used in hash literals.  When it comes to a method, calling a method with keyword-argument does not always create hashes.
 
-## \[Feature [#10121](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10121&sa=D&source=editors&ust=1686086705511783&usg=AOvVaw2CWloEnTUW57rX3YiKEMYU)\] Dir.empty?
+## \[Feature [#10121](https://bugs.ruby-lang.org/issues/10121)\] Dir.empty?
 
 - \`Dir.entries(dir).size == 2\` is not efficient.  Also not platform-agnostic.
 - It is useful to write spec which checkes test files are crrectly cleaned.
 - matz: accepted.
 
-## \[Feature [#12075](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12075&sa=D&source=editors&ust=1686086705512484&usg=AOvVaw25iObBfr2sd7KifOf3bhmz)\] some container#nonempty?
+## \[Feature [#12075](https://bugs.ruby-lang.org/issues/12075)\] some container#nonempty?
 
 - nobu: you can write \`ary&.empty?.!\`.
 - mrkn: How about \`ary.include\_something?\` ?
 
-## \[Feature [#12024](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12024&sa=D&source=editors&ust=1686086705513120&usg=AOvVaw1Zo9sI8prFc5nGZjFuy-s_)\] Add String.buffer, for creating strings with large capacities
+## \[Feature [#12024](https://bugs.ruby-lang.org/issues/12024)\] Add String.buffer, for creating strings with large capacities
 
-akr: Once matz rejected String.new(size) proposed on [#905](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/905&sa=D&source=editors&ust=1686086705513502&usg=AOvVaw3RgjT6X-ECMXTNHik4siRm), but now we have kwargs. given that there already is String.new with encoding argument, isn’t it OK to add kwargs to that method?
+akr: Once matz rejected String.new(size) proposed on [#905](https://bugs.ruby-lang.org/issues/905), but now we have kwargs. given that there already is String.new with encoding argument, isn’t it OK to add kwargs to that method?
 
 matz: accepted.
 
 ---
 
-## \[Bug [#11991](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11991&sa=D&source=editors&ust=1686086705514275&usg=AOvVaw08t6DX5V_-2CyuQP4Iqbaj)\] Symbol#match
+## \[Bug [#11991](https://bugs.ruby-lang.org/issues/11991)\] Symbol#match
 
-## \[Feature [#12043](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12043&sa=D&source=editors&ust=1686086705514677&usg=AOvVaw0GbqUB5qb_PISOcoNAxc57)\] NoMethodError#private\_call?
+## \[Feature [#12043](https://bugs.ruby-lang.org/issues/12043)\] NoMethodError#private\_call?
 
 bikeshed problem (naming issue).
 

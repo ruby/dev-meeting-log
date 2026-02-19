@@ -105,17 +105,17 @@ Milestones
 - previrew 1 maybe?  Then we can call for slides.
 - conclusion: Next meeting will confirm to release preview1
 
-## \[Feature [#12324](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12324&sa=D&source=editors&ust=1686086801763960&usg=AOvVaw2GnnN2YH_EDRwNAaeZh_vJ)\] Support OpenSSL 1.1.0 (and drop support for 0.9.6/0.9.7) (hsbt) We need to get aproval of Matz
+## \[Feature [#12324](https://bugs.ruby-lang.org/issues/12324)\] Support OpenSSL 1.1.0 (and drop support for 0.9.6/0.9.7) (hsbt) We need to get aproval of Matz
 
 - matz: OK to give him a commit grant.
 - compatibility? is it OK to drop OpenSSL < 1.0?
 - hsbt: we need to describe maintainer policy:
 
-[https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowtoJa](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowtoJa&sa=D&source=editors&ust=1686086801764565&usg=AOvVaw1QgCVlxhODutt2HAXy0fFK)
+[https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowtoJa](https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowtoJa)
 
 - introduce ruby/openssl subproject goal and status.
 
-## \[Misc [#12283](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12283&sa=D&source=editors&ust=1686086801764860&usg=AOvVaw08c2xBuImeNrckn5RGNWIv)\] Obsolete ChangeLog and commit message in Git-style (shyouhei)
+## \[Misc [#12283](https://bugs.ruby-lang.org/issues/12283)\] Obsolete ChangeLog and commit message in Git-style (shyouhei)
 
 - (shyouhei) seems nobody is against.
 - (Martin) I support it.
@@ -126,11 +126,11 @@ Milestones
 - (conclusion) lets auto-generate ChangeLog, like we do in version.h.
 - nobu and naruse will look at it.
 
-## \[Feature [#12352](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12352&sa=D&source=editors&ust=1686086801765554&usg=AOvVaw3L6-4ykRB0bozIpq8wLeJg)\] New hash syntax broken for numeric keys (shyouhei)
+## \[Feature [#12352](https://bugs.ruby-lang.org/issues/12352)\] New hash syntax broken for numeric keys (shyouhei)
 
 - matz: reject.  If this syntax is allowed { 1: 2 } should be considered { :’1’ => 2 }.
 
-## \[Feature [#6647](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/6647&sa=D&source=editors&ust=1686086801765965&usg=AOvVaw1CN_huQqOaw5vopE51EFrh)\] Exceptions raised in threads should be logged (shyouhei) what was the reason against defaulting true?
+## \[Feature [#6647](https://bugs.ruby-lang.org/issues/6647)\] Exceptions raised in threads should be logged (shyouhei) what was the reason against defaulting true?
 
 - Thread\[.#\]report\_on\_exception= is accepted
 - Matz does not want this default true, because it breaks current situations where programmer expects dead threads to silently exit.
@@ -138,7 +138,7 @@ Milestones
 
 - Threads dead before join shall report exceptions.  If that is not a desired behaviour, explicitly set false.
 
-## \[Feature [#12244](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12244&sa=D&source=editors&ust=1686086801766558&usg=AOvVaw1rDtSCTYABrkgKHoUXAtcr)\] Add a way to integer - integer % num (shyouhei)
+## \[Feature [#12244](https://bugs.ruby-lang.org/issues/12244)\] Add a way to integer - integer % num (shyouhei)
 
 - shyouhei: it’s slow.
 - ko1: you can speed this up by dispatch in Ruby, say, in prelude.
@@ -146,7 +146,7 @@ Milestones
 - matz: API OK, speed concern.
 - ko1: @naruse please show us speed comparison.
 
-## \[Feature [#12005](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12005&sa=D&source=editors&ust=1686086801767324&usg=AOvVaw3On1tXiL_wjCfgud-opkUk)\] Unify Fixnum and Bignum into Integer (naruse,mrkn,akr)
+## \[Feature [#12005](https://bugs.ruby-lang.org/issues/12005)\] Unify Fixnum and Bignum into Integer (naruse,mrkn,akr)
 
 - akr: there is only one problem for this: do this now, or don’t.
 - pros/cons:
@@ -156,12 +156,12 @@ Milestones
 
 - matz: let’s try.
 
-## \[Bug [#12337](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12337&sa=D&source=editors&ust=1686086801768213&usg=AOvVaw03qVnOzwZVbJ7emnr4c4Rb)\] inconsistency between Fixnum#coerce and Bignum#coerce (akr)
+## \[Bug [#12337](https://bugs.ruby-lang.org/issues/12337)\] inconsistency between Fixnum#coerce and Bignum#coerce (akr)
 
 - Matz: TypeError was an intended behavior, to prevent data loss.  So no need to backport this behaviour to previous releases.
 - But as we try Fixnunm/Bignum unification, things gets much simpler.
 
-## \[Feature [#10548](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10548&sa=D&source=editors&ust=1686086801768965&usg=AOvVaw3Z0Ltp8x0wC8MOUw5MPaEg)\] remove callcc (hsbt)
+## \[Feature [#10548](https://bugs.ruby-lang.org/issues/10548)\] remove callcc (hsbt)
 
 - hsbt: current status?
 - ko1: we historically tried callcc but was not successful.  The intension of this issue is we wish to treat callcc-related issues to be 3rd-party issue.
@@ -176,16 +176,16 @@ Milestones
 - hsbt: will look for a way to prevent assignment.
 - Yui changed all “Assignee: ruby-core” to “Assignee: nobody” with a global operation. Thanks! But this doesn’t yet prevent future assignments.
 
-## \[Feature [#12263](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12263&sa=D&source=editors&ust=1686086801769875&usg=AOvVaw1sYflZ4K1B3A8hoMaCIJsi)\] Feature request: &&. operator (shorthand for foo && foo.method) (shyouhei)
+## \[Feature [#12263](https://bugs.ruby-lang.org/issues/12263)\] Feature request: &&. operator (shorthand for foo && foo.method) (shyouhei)
 
 - matz: example seems illustrative.  any real-world use-case?
 
-## \[Bug [#4388](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/4388&sa=D&source=editors&ust=1686086801770265&usg=AOvVaw2QwktX9Z-wvZxMCfb60ktg)\] open-uriで環境変数http\_proxyを使うときに認証付きのProxyが使えません
+## \[Bug [#4388](https://bugs.ruby-lang.org/issues/4388)\] open-uriで環境変数http\_proxyを使うときに認証付きのProxyが使えません
 
 - akr: hsbt already introduced this at r54432.
 - lets ask if trunk is ok.
 
-## \[Feature [#5899](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/5899&sa=D&source=editors&ust=1686086801770708&usg=AOvVaw2bCofo1kjPawWj7mpoSQWA)\] chaining comparisons
+## \[Feature [#5899](https://bugs.ruby-lang.org/issues/5899)\] chaining comparisons
 
 - Hmm.
 - This is about language design.  Matz should decide.
@@ -196,21 +196,21 @@ Milestones
 
 - Matz: doesn’t sould yummy.
 
-## \[Feature [#12157](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12157&sa=D&source=editors&ust=1686086801771599&usg=AOvVaw2RmEWhMPoPgdg9K1CCTa8y)\] Is the option hash necessary for future Rubys? (shyouhei)
+## \[Feature [#12157](https://bugs.ruby-lang.org/issues/12157)\] Is the option hash necessary for future Rubys? (shyouhei)
 
 - Matz: positive.  It is good in long term
 - akr: migration path?
 
 - warning when a kwargs-called method receives that in option hash.
 
-## \[Feature [#11925](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11925&sa=D&source=editors&ust=1686086801772138&usg=AOvVaw21m6Sazf1G-4L5R5WzUrBz)\] Struct construction with kwargs (ko1)
+## \[Feature [#11925](https://bugs.ruby-lang.org/issues/11925)\] Struct construction with kwargs (ko1)
 
 - convenient, but is #create an appropriate name?
 - no one is against? (except naming)
 - nobu: Hash#to\_struct(klass)
 - create! doesnt follow naming convention.
 
-## \[Feature [#6739](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/6739&sa=D&source=editors&ust=1686086801772792&usg=AOvVaw26uC9J02HloGnXbYoPWIVh)\] One-line rescue statement should support specifying an exception class
+## \[Feature [#6739](https://bugs.ruby-lang.org/issues/6739)\] One-line rescue statement should support specifying an exception class
 
 - no good syntax so far.
 - nobu: all the proposed syntax, except for rescue when, generated syntx conflicts.
@@ -218,18 +218,18 @@ Milestones
 - naruse: practical use case is io.close rescue nil
 - mrkn: another real world application is if expr resuce false
 
-## \[Feature [#7314](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/7314&sa=D&source=editors&ust=1686086801773502&usg=AOvVaw3GjaEkAYxJ1bO_4XzCBw33)\] Convert Proc to Lambda doesn't work in MRI
+## \[Feature [#7314](https://bugs.ruby-lang.org/issues/7314)\] Convert Proc to Lambda doesn't work in MRI
 
 - The current behaviour is not “unpredictable” in a sense.
 
-## \[Feature [#8895](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8895&sa=D&source=editors&ust=1686086801773816&usg=AOvVaw3JW7_-mcdV6FMhJ5oHSZr4)\] Destructuring Assignment for Hash
+## \[Feature [#8895](https://bugs.ruby-lang.org/issues/8895)\] Destructuring Assignment for Hash
 
 - ko1: elixir does this.
 - shyouhei: maybe 99% use case of hash destruction was already solved by kwargs?
 - akr: the OP propses use case with MatchData.
 - matz: reject this specific one
 
-## \[Bug [#10708](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/10708&sa=D&source=editors&ust=1686086801774320&usg=AOvVaw2VPl0imIfs46oRebR7XEwG)\] In a function call, double splat of an empty hash still calls the function with an argument
+## \[Bug [#10708](https://bugs.ruby-lang.org/issues/10708)\] In a function call, double splat of an empty hash still calls the function with an argument
 
 - This is a side-effect of optional hash argument treatment.
 - akr: this should be fixed by abondoning optional hash.
@@ -239,7 +239,7 @@ Milestones
 ## Oniguruma and/or Onigumo situations? (duerst)
 
 - Duerst: oniguruma has updates.
-- naruse: I hadn’t know Oniguruma is on GitHub now [https://github.com/kkos/oniguruma](https://www.google.com/url?q=https://github.com/kkos/oniguruma&sa=D&source=editors&ust=1686086801774940&usg=AOvVaw2hC4rXiREAKvSrZHfL_4Rv). I’ll check it.
+- naruse: I hadn’t know Oniguruma is on GitHub now [https://github.com/kkos/oniguruma](https://github.com/kkos/oniguruma). I’ll check it.
 
 ## \[Bug #12368\] default encoding of Integer#chr
 
@@ -248,21 +248,21 @@ Milestones
 - naruse: script encoding doesn’t work well if the code uses variables.
 - naruse will think about it a bit more.
 
-## \[Feature [#12306](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12306&sa=D&source=editors&ust=1686086801775501&usg=AOvVaw2wiXXqfWSOkhF25_4jVrof)\] Object/String#blank (duerst)
+## \[Feature [#12306](https://bugs.ruby-lang.org/issues/12306)\] Object/String#blank (duerst)
 
-- akr: regexp match without object allocation can be an alternative. (see #[8110](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8110&sa=D&source=editors&ust=1686086801775748&usg=AOvVaw35IGX11fZf_5r8SoTc1NHi))
+- akr: regexp match without object allocation can be an alternative. (see #[8110](https://bugs.ruby-lang.org/issues/8110))
 - akr: How about the name Regexp#match?(str)
 - naruse: blank can be special-cased to be even faster.
 - naruse will write an implementation
 - matz isn’t very positive, but may be okay for String only (for other classes, this will remain the responsibility of Rails)
 
-## \[Feature [#8110](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/8110&sa=D&source=editors&ust=1686086801776426&usg=AOvVaw1_dlp4bXoHfJA-j9GCzhNk)\] Regex methods not changing global variables (akr)
+## \[Feature [#8110](https://bugs.ruby-lang.org/issues/8110)\] Regex methods not changing global variables (akr)
 
 - matz: approved.
 - implementation is very easy
 - name: “match?” ?
 
-## \[Feature [#12075](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12075&sa=D&source=editors&ust=1686086801777056&usg=AOvVaw1GBR4zE1XPKwCN-wIbhCo6)\] some container#nonempty? (naruse)
+## \[Feature [#12075](https://bugs.ruby-lang.org/issues/12075)\] some container#nonempty? (naruse)
 
 - matz: I want this in ActiveSupport.
 - matz: Enumerable#any? seems useful.
@@ -278,7 +278,7 @@ Milestones
 
 - matz: OK.
 
-## \[Feature [#12357](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12357&sa=D&source=editors&ust=1686086801778120&usg=AOvVaw1jtU57mVVgA9cbF7G606Rx)\] Random#initialize with a String (nobu)
+## \[Feature [#12357](https://bugs.ruby-lang.org/issues/12357)\] Random#initialize with a String (nobu)
 
 - akr: you can pass bignum to Random.new\_seed
 - naruse: bignum is not useful when people port code from different languages e.g. python
@@ -294,7 +294,7 @@ Milestones
 - nobu: I intend MT and
 - akr: how about split utility methods into a module
 
-## \[Feature [#11735](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11735&sa=D&source=editors&ust=1686086801779323&usg=AOvVaw0Cx7bjFPyikO53rk2nUATy)\] String#squish and String#squish!
+## \[Feature [#11735](https://bugs.ruby-lang.org/issues/11735)\] String#squish and String#squish!
 
 - shyouhei: useful when writing a long SQL
 - nobu: is this unicode aware?

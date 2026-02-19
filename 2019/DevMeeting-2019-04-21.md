@@ -63,7 +63,7 @@ Time: 13:00-18:30 (JST)
 
 Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
-[https://bugs.ruby-lang.org/issues/15459](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15459&sa=D&source=editors&ust=1686240817765394&usg=AOvVaw2bDQg-MqdwWc5T0JpFv2_u)
+[https://bugs.ruby-lang.org/issues/15459](https://bugs.ruby-lang.org/issues/15459)
 
 # Logs
 
@@ -73,7 +73,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 ### Agenda
 
-- 13:30-14:00 (1) keyword arguments progress report \[[#14183](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14183&sa=D&source=editors&ust=1686240817766844&usg=AOvVaw2o_l_d5hi28iEIYSgdLw0h)\] (mame)
+- 13:30-14:00 (1) keyword arguments progress report \[[#14183](https://bugs.ruby-lang.org/issues/14183)\] (mame)
 
 - Mame: Presentation of problems and issues. Testing of strict implementation shows many incompatibilities.
 - Jeremy Evans: More compatible proposal, same as mame, but backwards compatible for methods that don’t accept keyword arguments.
@@ -128,7 +128,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 - What about anonymous classes and e.g., Struct subclasses? (eregon)
 
-- 14:30-15:00 (3) pattern matching \[[#14912](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14912&sa=D&source=editors&ust=1686240817769933&usg=AOvVaw2evXKFgAhPdjbKYcvBRHcL)\] (k\_tsj)
+- 14:30-15:00 (3) pattern matching \[[#14912](https://bugs.ruby-lang.org/issues/14912)\] (k\_tsj)
 
 - Kazuki: Presentation of general idea and implementation.
 
@@ -178,7 +178,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 - Matz: It is not for the VM implementation but for the users.
 
 - 16:30-17:00 break
-- 17:00-18:00 (6) RubyVM \[[#15752](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15752&sa=D&source=editors&ust=1686240817772871&usg=AOvVaw2RW2ZCBx4aAAJAxUXfShJO)\] + numbered parameters \[[#15708](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15708&sa=D&source=editors&ust=1686240817773193&usg=AOvVaw3S5K6h1oH6TlBJjl89uqYs)\] (eregon)
+- 17:00-18:00 (6) RubyVM \[[#15752](https://bugs.ruby-lang.org/issues/15752)\] + numbered parameters \[[#15708](https://bugs.ruby-lang.org/issues/15708)\] (eregon)
 
 - Presentation about RubyVM namespace issues. How to handle experimental features.
 - Many new methods are implemented directly. What should go under proposed “ExperimentalFeatures”?

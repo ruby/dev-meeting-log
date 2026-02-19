@@ -65,7 +65,7 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 ## Next dev-meeting
 
 - 4/17 (Wed) 12:00~ @ Fukuoka (before RubyKaigi)
-- [https://bugs.ruby-lang.org/issues/15459](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15459&sa=D&source=editors&ust=1686088807813014&usg=AOvVaw33GYZsSI8JRkgjBmvEg_J6)
+- [https://bugs.ruby-lang.org/issues/15459](https://bugs.ruby-lang.org/issues/15459)
 
 ## About 2.7 timeframe
 
@@ -75,11 +75,11 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 
 - waiting introducing \`@1\`. maybe at RubyKaigi
 
-- [https://bugs.ruby-lang.org/issues/4475](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/4475&sa=D&source=editors&ust=1686088807814126&usg=AOvVaw0o9b28jc1FMBO7H_M80jNn)
+- [https://bugs.ruby-lang.org/issues/4475](https://bugs.ruby-lang.org/issues/4475)
 - matz: I deny \`@0\`, and also deny assignment to \`@1\`
 
 - \[\[1,2,3\]\].each {|a,| p a }
-- →→ [https://hackmd.io/eb38KJgKQEeGEgsbSACUWg](https://www.google.com/url?q=https://hackmd.io/eb38KJgKQEeGEgsbSACUWg&sa=D&source=editors&ust=1686088807815060&usg=AOvVaw3sox1EoIqNiSX51QJ2IIGo)
+- →→ [https://hackmd.io/eb38KJgKQEeGEgsbSACUWg](https://hackmd.io/eb38KJgKQEeGEgsbSACUWg)
 
 ## Check security tickets (confidencial)
 
@@ -87,7 +87,7 @@ done
 
 ## Carry-over from previous meeting(s)
 
-- \[Feature [#14609](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14609&sa=D&source=editors&ust=1686088807816269&usg=AOvVaw1Lso0aFxPXY6p2PFqchgG0)\] Kernel#p without args shows the receiver (aycabta)
+- \[Feature [#14609](https://bugs.ruby-lang.org/issues/14609)\] Kernel#p without args shows the receiver (aycabta)
 
 - the name of the method is not determined yet.
 
@@ -97,19 +97,19 @@ done
 
 ## Non-attendees
 
-- \[Feature [#14799](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14799&sa=D&source=editors&ust=1686088807817656&usg=AOvVaw0eJLK1wzZe4nKEvT5wc7V9)\] Startless range
+- \[Feature [#14799](https://bugs.ruby-lang.org/issues/14799)\] Startless range
 
 - mame: I’ve forgotten to commit.  just a moment.
 
-- \[Bug [#15620](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15620&sa=D&source=editors&ust=1686088807818306&usg=AOvVaw1kG5EHCt9IcOrWGVl10V1x)\] Block argument usage affects lambda semantic
+- \[Bug [#15620](https://bugs.ruby-lang.org/issues/15620)\] Block argument usage affects lambda semantic
 
 - nobu: yes, it’s a bug.
 
-- \[Misc [#15617](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15617&sa=D&source=editors&ust=1686088807818847&usg=AOvVaw1ZOXNQuyq4m-K4TPc-5Lkb)\] Release 2.5.4? (blowmage)
+- \[Misc [#15617](https://bugs.ruby-lang.org/issues/15617)\] Release 2.5.4? (blowmage)
 
 - usa: nagachika-san is planning to release in this month.
 
-- \[Feature [#15323](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15323&sa=D&source=editors&ust=1686088807819427&usg=AOvVaw3Ffx7IeBOdb-IYLB1S1lTG)\] Proposal: Add Enumerable#filter\_map
+- \[Feature [#15323](https://bugs.ruby-lang.org/issues/15323)\] Proposal: Add Enumerable#filter\_map
 
 - naruse: Sequel uses \`select\_filter\` as another meaning
 - usa: also need \`select\_map\` as alias?
@@ -119,7 +119,7 @@ done
 - matz: filter\_map is not simply combination of filter and map.  so mame’s concern is needless fears.
 - matz: ok, accepted \`filter\_map\`.
 
-- \[Feature [#14145](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14145&sa=D&source=editors&ust=1686088807821271&usg=AOvVaw19TZLc6Un_f7wkINwVEvBj)\] Proposal: Better Method#inspect
+- \[Feature [#14145](https://bugs.ruby-lang.org/issues/14145)\] Proposal: Better Method#inspect
 
 - ko1: I’m against to show the name of parameters.  we only need line no.  doesn’t it?
 - matz: ask the original author.
@@ -131,7 +131,7 @@ done
 - naruse: path name is already long.
 - ko1: ah, may be so.  but source location is useful than parameters.
 
-- \[Feature [#15653](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15653&sa=D&source=editors&ust=1686088807822552&usg=AOvVaw1lFzrLjvR7z8WZaj8HaRbI)\] Proposal: Add Time#floor
+- \[Feature [#15653](https://bugs.ruby-lang.org/issues/15653)\] Proposal: Add Time#floor
 
 - naruse: isn’t it \`trunc\`?  see SQL.
 - akr: truncate means rounding to zero.  conceptually, zero is the first time, but we often assume the zero time as UNIX epoch.
@@ -141,43 +141,43 @@ done
 
 ## From Attendees
 
-- \[Misc [#15615](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15615&sa=D&source=editors&ust=1686088807823855&usg=AOvVaw3L0yJFGl4vvgDCDBK_4SP5)\] File.birthtimeがLinux環境で有効なファイル作成時刻を得られなかった場合の挙動について
+- \[Misc [#15615](https://bugs.ruby-lang.org/issues/15615)\] File.birthtimeがLinux環境で有効なファイル作成時刻を得られなかった場合の挙動について
 
 - should raises \`NotImplementedError\` both \`File.birthtime\` and \`File::Stat#birthtime\` if birthtime is not available.
 - akr: \`respond\_to?\` should always return \`true\`.
 - akr: we also have to implement \`birthtime\` to \`Pathname\`, don’t it?
 - usa: yes
 
-- \[Feature [#15195](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15195&sa=D&source=editors&ust=1686088807825181&usg=AOvVaw18hIx4cQMyqIFeAcjqeQ9j)\] How to deal with new Japanese era
+- \[Feature [#15195](https://bugs.ruby-lang.org/issues/15195)\] How to deal with new Japanese era
 
 - martin: just a reminder.
 - naruse: I’m planning to release 2.6.2 sooner.  and 2.6.3 will be released at Apr.
 - martin: ok
 
-- \[Bug [#15598](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15598&sa=D&source=editors&ust=1686088807825845&usg=AOvVaw3HxZNx9mrlaizCXJ9OsDXz)\] Deadlock on mutual reference of autoloaded constants
+- \[Bug [#15598](https://bugs.ruby-lang.org/issues/15598)\] Deadlock on mutual reference of autoloaded constants
 
 - (see next)
 
-- \[Bug [#15599](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15599&sa=D&source=editors&ust=1686088807826382&usg=AOvVaw0FC4M1IbKveX8VLd-OJICo)\] Mixing autoload and require causes deadlock and incomplete definition.
+- \[Bug [#15599](https://bugs.ruby-lang.org/issues/15599)\] Mixing autoload and require causes deadlock and incomplete definition.
 
 - akr: IMO, these are bugs.  I propose that autoload should use one global lock instead of locks per constants.
 
-- \[Feature [#15618](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15618&sa=D&source=editors&ust=1686088807827068&usg=AOvVaw1YxYIUKCrY0nOrtjUlAsM_)\] Implement Enumerator::Yielder#to\_proc
+- \[Feature [#15618](https://bugs.ruby-lang.org/issues/15618)\] Implement Enumerator::Yielder#to\_proc
 
 - matz: ok, accepted.
 
-- \[Feature [#15553](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15553&sa=D&source=editors&ust=1686088807827592&usg=AOvVaw09m8pL3nElUSPkY8PmJSjE)\] Addrinfo.getaddrinfo supports timeout
+- \[Feature [#15553](https://bugs.ruby-lang.org/issues/15553)\] Addrinfo.getaddrinfo supports timeout
 
 - akr: this implementation is not acceptable, but the feature is ok.
 - glass\_saga: I see.  BTW, is using Resolv acceptable?
 - akr: yes.
 - Even if it doesn’t support getaddrinfo with timeout (non glibc), it should ignore because we want to use the same code on macOS and Linux.
 
-- \[Bug [#15652](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15652&sa=D&source=editors&ust=1686088807828439&usg=AOvVaw0jqIkEMEGjBnSaD0J0gL3v)\] Profiler\_\_ is not working correctly (ruby 2.6)
+- \[Bug [#15652](https://bugs.ruby-lang.org/issues/15652)\] Profiler\_\_ is not working correctly (ruby 2.6)
 
 - usa, naruse: kill it
 
-- \[Feature [#15626](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/15626&sa=D&source=editors&ust=1686088807828930&usg=AOvVaw0CjjyDjrMBPfxpPr2TXR48)\] Manual Compaction for MRI’s GC (\`GC.compact\`)
+- \[Feature [#15626](https://bugs.ruby-lang.org/issues/15626)\] Manual Compaction for MRI’s GC (\`GC.compact\`)
 
 - matz: current status?
 - ko1: I think this is mergeable.  But one incompatibility exists.   if an C extension keeps pointers without mark (expecting to mark via Ruby code), GC cannot change the pointers.

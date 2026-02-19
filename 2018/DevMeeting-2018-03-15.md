@@ -104,7 +104,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 ## Place: Cookpad Inc.
 
-## Sign-up: [https://ruby.connpass.com/event/73509/](https://www.google.com/url?q=https://ruby.connpass.com/event/73509/&sa=D&source=editors&ust=1686087561414743&usg=AOvVaw0MvDKXts21YuDXj-jK4dBx)
+## Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
 
 ## log edit: https://docs.google.com/document/d/1RT0ijSo8uJ4Awn3CEvuYkjH0TVeXSYgeAFNmVGYC3ak/edit#
 
@@ -133,12 +133,12 @@ Maintainers starting Apr 2018:
 
 ### From attendees
 
-- \[Feature [#12732](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12732&sa=D&source=editors&ust=1686087561417823&usg=AOvVaw2TnZIF1U2DQv_gdsTY_QRI)\] An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
+- \[Feature [#12732](https://bugs.ruby-lang.org/issues/12732)\] An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
 
 - Resolved
 - Mrkn will file the conclusion.
 
-- \[Feature [#14476](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14476&sa=D&source=editors&ust=1686087561419003&usg=AOvVaw1nMdUcpLTgTebmSY6mx8m5)\] Adding same\_all? for checking whether all items in an Array are same (mrkn)
+- \[Feature [#14476](https://bugs.ruby-lang.org/issues/14476)\] Adding same\_all? for checking whether all items in an Array are same (mrkn)
 
 - Definition of “same”? -> \`\==\`, for mrkn’s case
 - Empty array? -> true, \[\].all?{} #=> true
@@ -158,12 +158,12 @@ Maintainers starting Apr 2018:
 - ary.uniform\_values?
 - ary.uniform\_values?{|e| e.foo}
 
-- \[Feature [#14362](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14362&sa=D&source=editors&ust=1686087561422488&usg=AOvVaw2_hvsNqgrOfzLr6297Pr0O)\] use BigDecimal instead of Float by default (mrkn)
+- \[Feature [#14362](https://bugs.ruby-lang.org/issues/14362)\] use BigDecimal instead of Float by default (mrkn)
 
 - Reject; Unacceptable performance & too incompatible
 - Matz will respond.
 
-- \[Feature [#14044](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14044&sa=D&source=editors&ust=1686087561423466&usg=AOvVaw0GwSuqgDrE8GunO-JRw_zE)\] Introduce a new attribute step in Range (mrkn)
+- \[Feature [#14044](https://bugs.ruby-lang.org/issues/14044)\] Introduce a new attribute step in Range (mrkn)
 
 \# current
 
@@ -199,42 +199,42 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 
 - do-else-end
 
-- [https://twitter.com/joker1007/status/974173396006129664](https://www.google.com/url?q=https://twitter.com/joker1007/status/974173396006129664&sa=D&source=editors&ust=1686087561426418&usg=AOvVaw2q8_CQZXSdPalY8l51qnYe)
-- [https://twitter.com/joker1007/status/974173641347756032](https://www.google.com/url?q=https://twitter.com/joker1007/status/974173641347756032&sa=D&source=editors&ust=1686087561426964&usg=AOvVaw3BcH-hjx7hhdeoEw8zk755)
-- [https://twitter.com/joker1007/status/974176512554369027](https://www.google.com/url?q=https://twitter.com/joker1007/status/974176512554369027&sa=D&source=editors&ust=1686087561427354&usg=AOvVaw3V1Mly5xFZ0U-J2GAlK3zD)
+- [https://twitter.com/joker1007/status/974173396006129664](https://twitter.com/joker1007/status/974173396006129664)
+- [https://twitter.com/joker1007/status/974173641347756032](https://twitter.com/joker1007/status/974173641347756032)
+- [https://twitter.com/joker1007/status/974176512554369027](https://twitter.com/joker1007/status/974176512554369027)
 - Will be SyntaxError in 2.6-preview2
 - All of begin/do/def (experimental)
 
-- \[Feature [#14594](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14594&sa=D&source=editors&ust=1686087561428206&usg=AOvVaw0_3PqMYBkujy7MvDqZ4PgH)\] Rethink yield\_self's name
+- \[Feature [#14594](https://bugs.ruby-lang.org/issues/14594)\] Rethink yield\_self's name
 
 - “then”?
 - (1) Possible to use this method name by other libraries (like promise)
 - (2) No built-in methods like this …
 - Comitters objected the suggestion but matz accepted it
 
-- \[Feature [#14324](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14324&sa=D&source=editors&ust=1686087561429118&usg=AOvVaw1c6q2vp2QY4pVrVrVu8RVg)\] Should Exception#full\_message include escape sequences?
+- \[Feature [#14324](https://bugs.ruby-lang.org/issues/14324)\] Should Exception#full\_message include escape sequences?
 
 - Keyword arguments
 
 - order: :top/:bottom
 - highlight: true/false
 
-- \[Feature [#12745](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12745&sa=D&source=editors&ust=1686087561430363&usg=AOvVaw1tDFqKwKQnlGDs3x0HfNHu)\] String#(g)sub(!) should pass a MatchData to the block, not a String
+- \[Feature [#12745](https://bugs.ruby-lang.org/issues/12745)\] String#(g)sub(!) should pass a MatchData to the block, not a String
 
 - akr: how about gsubm, \`m\` means MatchData
 
 ### From non-attendees
 
-- \[Feature [#14245](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14245&sa=D&source=editors&ust=1686087561432012&usg=AOvVaw0jvA6MnYelIK_DHGCz5QmG)\] Add File.read etc. (shugo)
+- \[Feature [#14245](https://bugs.ruby-lang.org/issues/14245)\] Add File.read etc. (shugo)
 
 - Accepted
 - FYI: On 2.5, deprecation warning is added for this feature. We’ll remove this feature on 2.6.
 
-- \[Feature [#14579](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14579&sa=D&source=editors&ust=1686087561432998&usg=AOvVaw0C65RhU4bMUl22QlfZ1Vjm)\] Hash value omission (shugo)
+- \[Feature [#14579](https://bugs.ruby-lang.org/issues/14579)\] Hash value omission (shugo)
 
 - Reject because matz doesn’t like it.
 
-- \[Bug [#14541](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14541&sa=D&source=editors&ust=1686087561433611&usg=AOvVaw2Tb7I-ab-vMNeUgBB4NrHV)\] Class variables have broken semantics, let's fix them (eregon). I'd like more opinions and thoughts on whether we can change them.
+- \[Bug [#14541](https://bugs.ruby-lang.org/issues/14541)\] Class variables have broken semantics, let's fix them (eregon). I'd like more opinions and thoughts on whether we can change them.
 
 - usa: I use class variables in a correct way when I love class variables
 - ideas:
@@ -290,8 +290,8 @@ B.show
 
 - Matz approved NameError
 
-- \[Bugs [#14380](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14380&sa=D&source=editors&ust=1686087561437379&usg=AOvVaw0pk0MwFPDwO3j1ab2-XQaL)\] Change Hash#transform\_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
+- \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform\_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
 
 - It’s considered bug. amatsuda says ActiveSupport will follow Ruby 2.6.
 
-- \[Feature [#11473](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/11473&sa=D&source=editors&ust=1686087561438106&usg=AOvVaw0y-nrmEQkQhCvcuDlyIR8Z)\] Immutable String literal in Ruby 3 (hsbt): Do you really want to change it at Ruby 3? If It's yes, We should add a warning with destructive action on Ruby 2.6.
+- \[Feature [#11473](https://bugs.ruby-lang.org/issues/11473)\] Immutable String literal in Ruby 3 (hsbt): Do you really want to change it at Ruby 3? If It's yes, We should add a warning with destructive action on Ruby 2.6.

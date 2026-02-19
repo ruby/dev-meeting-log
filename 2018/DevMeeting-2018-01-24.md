@@ -125,9 +125,9 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 
 ## Place: Speee Inc.
 
-## Sign-up: [https://ruby.connpass.com/event/73509/](https://www.google.com/url?q=https://ruby.connpass.com/event/73509/&sa=D&source=editors&ust=1686087512359141&usg=AOvVaw1XFgDP9uD_HSpBxDUm2Es_)
+## Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
 
-## log edit: [https://docs.google.com/document/d/1XbUbch8\_eTqh21FOwj9a\_X-ZyJyCBjxkq8rWwfpf5BM/edit](https://www.google.com/url?q=https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit&sa=D&source=editors&ust=1686087512359522&usg=AOvVaw2oNKMsU2OdAKI5aMhLpGWY)
+## log edit: [https://docs.google.com/document/d/1XbUbch8\_eTqh21FOwj9a\_X-ZyJyCBjxkq8rWwfpf5BM/edit](https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit)
 
 ## log: TBD
 
@@ -148,7 +148,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 
 ## toolchain versioning
 
-## Revisions r61785, r61786, r61787 were introduced by the request from @naruse. However [shyouhei](https://www.google.com/url?q=https://bugs.ruby-lang.org/users/10&sa=D&source=editors&ust=1686087512360881&usg=AOvVaw0ePcJzCf5XdJSgCLsuD24q) thinks the request was somewhat vague.
+## Revisions r61785, r61786, r61787 were introduced by the request from @naruse. However [shyouhei](https://bugs.ruby-lang.org/users/10) thinks the request was somewhat vague.
 
 - Do we have to support such old toolchains? (shyouhei)
 
@@ -162,12 +162,12 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 
 ## From attendees
 
-## \[Feature [#14223](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14223&sa=D&source=editors&ust=1686087512361697&usg=AOvVaw2qoIVwRQ21jZGfCNmt4Avp)\] Enable #to\_proc by Refinements at &hoge (nobu)
+## \[Feature [#14223](https://bugs.ruby-lang.org/issues/14223)\] Enable #to\_proc by Refinements at &hoge (nobu)
 
 
 - Matz: LGTM.
 
-## \[Feature [#14371](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14371&sa=D&source=editors&ust=1686087512362186&usg=AOvVaw3C2jlghrPiW2dGUkolCj4y)\] New option "recursive: true" for Hash#transform\_keys! (nobu)
+## \[Feature [#14371](https://bugs.ruby-lang.org/issues/14371)\] New option "recursive: true" for Hash#transform\_keys! (nobu)
 
 
 - Mrkn: This is deep\_stringify\_keys!
@@ -184,14 +184,14 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Mrkn: we can fix it by preserving entries that conflict.
 - Matz: I have strong opinion on this.  Isn’t the current behaviour acceptable in sake of space efficiency?
 
-## \[Bug [#14374](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14374&sa=D&source=editors&ust=1686087512363214&usg=AOvVaw2B1puv_rNMyUOXl6K4ljSU)\] for does not splat elements (nobu)
+## \[Bug [#14374](https://bugs.ruby-lang.org/issues/14374)\] for does not splat elements (nobu)
 
 
 - Ko1: is it me?
 - Nobu: because it’s since 1.9
 - Matz: please fix.
 
-## \[Feature [#14313](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14313&sa=D&source=editors&ust=1686087512363750&usg=AOvVaw2KpS-czrNodNpwLcBg2XDl)\] Support creating KeyError with receiver and key from Ruby (mrkn/kou)
+## \[Feature [#14313](https://bugs.ruby-lang.org/issues/14313)\] Support creating KeyError with receiver and key from Ruby (mrkn/kou)
 
 
 - Mrkn: I was asked to bring this.
@@ -205,15 +205,15 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Mrkn: But he doesn’t have the repo access bit, nor gem release right.
 - Mame: He’s active on twitter etc.  You should ask his current status.
 
-## \[Feature [#4831](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/4831&sa=D&source=editors&ust=1686087512364553&usg=AOvVaw2NGtLMxfwqnTu1GnsVIkwn)\] Integer#prime\_factors (mrkn)
+## \[Feature [#4831](https://bugs.ruby-lang.org/issues/4831)\] Integer#prime\_factors (mrkn)
 
 
 - Mrkn: name?
 - Shyouhei: yugui is on the ticket.
 
-## \[Feature [#14235](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14235&sa=D&source=editors&ust=1686087512365105&usg=AOvVaw3eDxHEK0-D0acn16JHMRMx)\] Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
+## \[Feature [#14235](https://bugs.ruby-lang.org/issues/14235)\] Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
 
-## \[Feature [#14386](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14386&sa=D&source=editors&ust=1686087512365387&usg=AOvVaw2AN5f2c2f_uvaRIS83hIRi)\] Add option to let Kernel.#system raise error instead of returning false (k0kubun)
+## \[Feature [#14386](https://bugs.ruby-lang.org/issues/14386)\] Add option to let Kernel.#system raise error instead of returning false (k0kubun)
 
 
 - Nobu: is this request to raise error when spawn fails, or when the spawned process fails?
@@ -222,7 +222,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Mrkn: I see similarity for discussion on Integer(). \[ruby-core:77171\] \[Feature#12732\]
 - Akr: There are \`exception: true\`
 
-## \[Bug [#14353](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14353&sa=D&source=editors&ust=1686087512365973&usg=AOvVaw1oixIdf58UwAT9WWQAxiYg)\] $SAFE should stay at least thread-local for compatibility (ko1)
+## \[Bug [#14353](https://bugs.ruby-lang.org/issues/14353)\] $SAFE should stay at least thread-local for compatibility (ko1)
 
 
 - Matz: This feature is something to extinct in future.
@@ -248,7 +248,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 
 ## From non-attendees
 
-## \[Feature [#14382](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14382&sa=D&source=editors&ust=1686087512367039&usg=AOvVaw3gFB_Lay0sGojfbewW7Sa7)\] Make public access of a private constant call const\_missing (jeremyevans0)
+## \[Feature [#14382](https://bugs.ruby-lang.org/issues/14382)\] Make public access of a private constant call const\_missing (jeremyevans0)
 
 
 - Nobu: sounds like a bug to me
@@ -256,7 +256,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Matz: Let’s try.
 - Nobu: I’d like to review the patch.
 
-## \[Feature [#14385](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14385&sa=D&source=editors&ust=1686087512367688&usg=AOvVaw0eQ3yNpD38-9kMww4Bo970)\] Deprecate back-tick for Ruby 3 (hsbt)
+## \[Feature [#14385](https://bugs.ruby-lang.org/issues/14385)\] Deprecate back-tick for Ruby 3 (hsbt)
 
 
 - Matz: I see several objections are there.
@@ -268,7 +268,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Mame: should we also deprecate def \`; end; self.\` ? If so, warning on parsing is dangerous.
 - Matz: I think we don’t necessarily warn this as soon as 2.6.
 
-## \[Feature [#13969](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/13969&sa=D&source=editors&ust=1686087512368511&usg=AOvVaw3WyXrLdBrk8ACvBw3WmPmA)\] Dir#each\_child (znz)
+## \[Feature [#13969](https://bugs.ruby-lang.org/issues/13969)\] Dir#each\_child (znz)
 
 
 - Matz: OK.

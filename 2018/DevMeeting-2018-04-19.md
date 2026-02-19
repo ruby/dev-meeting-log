@@ -68,7 +68,7 @@ Please add your favorite ticket numbers you want to ask to discuss.  If you have
 
 ## log: TBD
 
-wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Japan](https://www.google.com/url?q=https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Japan&sa=D&source=editors&ust=1686087582530503&usg=AOvVaw07TB6EghePHnY3Frquk78e)
+wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Japan)
 
 ## Agenda
 
@@ -85,18 +85,18 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 
 ### From attendees
 
-\[Bug [#14345](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14345&sa=D&source=editors&ust=1686087582532185&usg=AOvVaw3IWZKfF7_hWm-nwgtUzLTY)\] http\_proxy setting should respect both parent domain and subdomain (hsbt)
+\[Bug [#14345](https://bugs.ruby-lang.org/issues/14345)\] http\_proxy setting should respect both parent domain and subdomain (hsbt)
 
-\[Feature [#14559](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14559&sa=D&source=editors&ust=1686087582532577&usg=AOvVaw29ARuGoj689fSVf2Qv97VX)\] ENV.slice (hsbt)
+\[Feature [#14559](https://bugs.ruby-lang.org/issues/14559)\] ENV.slice (hsbt)
 
 - Matz: OK.
 
-\[Feature [#14643](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14643&sa=D&source=editors&ust=1686087582533063&usg=AOvVaw0dcV1X2EpkkLPz8iXjniUL)\] Remove problematic separator '\\0' of Dir.glob and Dir.\[\] (usa)
+\[Feature [#14643](https://bugs.ruby-lang.org/issues/14643)\] Remove problematic separator '\\0' of Dir.glob and Dir.\[\] (usa)
 
 - Usa: we can pass arrays to the pattern.  No need to use \\0.
 - Matz: makes sense.
 
-\[Feature [#14111](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14111&sa=D&source=editors&ust=1686087582533687&usg=AOvVaw3-M7sQsq-tX6nPxfPxNs6x)\] ArgumentErrorが発生した時メソッドのプロトタイプをメッセージに含む (nobu)
+\[Feature [#14111](https://bugs.ruby-lang.org/issues/14111)\] ArgumentErrorが発生した時メソッドのプロトタイプをメッセージに含む (nobu)
 
 - nobu : seems OK to me.
 - Mame: is the “prototype” the actual string in the source code, or reconstructed?
@@ -110,30 +110,30 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 - Nobu: would like to review the patch again.
 - Ko1: what to show for singleton methods? Might be difficult.
 
-\[Bug [#14688](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14688&sa=D&source=editors&ust=1686087582534910&usg=AOvVaw2Rta1gG7nfEHqxQmIRNJh3)\] Net::HTTPResponse#value raises "Net::HTTPServerException" in 4xx response (usa)
+\[Bug [#14688](https://bugs.ruby-lang.org/issues/14688)\] Net::HTTPResponse#value raises "Net::HTTPServerException" in 4xx response (usa)
 
-\[Feature [#14683](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14683&sa=D&source=editors&ust=1686087582535339&usg=AOvVaw19eQM71AjD0zeJgJPTYSK1)\] IRB with Ripper (aycabta)
+\[Feature [#14683](https://bugs.ruby-lang.org/issues/14683)\] IRB with Ripper (aycabta)
 
 - Ask keiju to look at it.
 - Akr: do the OP want to maintain this?  Or make it a gem to delete from the repo?
 
-\[Feature [#14694](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14694&sa=D&source=editors&ust=1686087582535827&usg=AOvVaw3AFwkFldUCAVrDfvfRhpIX)\] TracePoint#parameters (mame)
+\[Feature [#14694](https://bugs.ruby-lang.org/issues/14694)\] TracePoint#parameters (mame)
 
 - Matz: I see no problem?
 - Ko1: TracePoint#parameters sounds like it expects the parameter values, not the names.
 
-\[Feature [#14624](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14624&sa=D&source=editors&ust=1686087582536343&usg=AOvVaw3VJYGH4HbLgombVfk0xXky)\] #{nil} allocates a fresh empty string each time (nobu)
+\[Feature [#14624](https://bugs.ruby-lang.org/issues/14624)\] #{nil} allocates a fresh empty string each time (nobu)
 
 - Matz: sounds like an implementation detail.
 - Ko1: it’s too large a patch to implement this as a new VM instruction.
 - Naruse: when I tested opt\_to\_s with @k0kubun the speedup was marginal/not that much.
 
-\[Feature [#6670](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/6670&sa=D&source=editors&ust=1686087582536919&usg=AOvVaw2IAX5fob7lHbyXTGjER27Y)\] str.chars.last should be possible (mame)
+\[Feature [#6670](https://bugs.ruby-lang.org/issues/6670)\] str.chars.last should be possible (mame)
 
 - Mame: I’d like to give up deprecation of this block-giving behaviour.
 - Matz: OK.
 
-\[Feature [#12912](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/12912&sa=D&source=editors&ust=1686087582537436&usg=AOvVaw0n54gDht5IREMiCynjPwTW)\] An endless range (1..) (mame)
+\[Feature [#12912](https://bugs.ruby-lang.org/issues/12912)\] An endless range (1..) (mame)
 
 - Mame: I’d like to consult matz.
 - Matz: I honestly feel there should be a fluent way to do 0..Float::INFINITY.
@@ -142,7 +142,7 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 - Akr: when this is done, needs of step should reduce very much.
 - Matz: accepted.
 
-\[Feature [#14352](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14352&sa=D&source=editors&ust=1686087582538295&usg=AOvVaw3-yqykiIw3ke_ARM6v5zZU)\] Array#pack("M") Quoted-printable (matz)
+\[Feature [#14352](https://bugs.ruby-lang.org/issues/14352)\] Array#pack("M") Quoted-printable (matz)
 
 - Naruse: I’ll take care.  Let me make this a doc issue.
 
@@ -150,7 +150,7 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 
 - Matz: I can live with #then.
 
-\[Feature [#14697](https://www.google.com/url?q=https://bugs.ruby-lang.org/issues/14697&sa=D&source=editors&ust=1686087582538990&usg=AOvVaw06Lv7bq1IFY7Q388WdmB8V)\] Introducing Range#% as an alias to Range#step (mrkn)
+\[Feature [#14697](https://bugs.ruby-lang.org/issues/14697)\] Introducing Range#% as an alias to Range#step (mrkn)
 
 - Matz: I have no objection.
-- Mrkn: Numo’s Range#% is here [https://github.com/ruby-numo/numo-narray/blob/master/ext/numo/narray/step.c#L464](https://www.google.com/url?q=https://github.com/ruby-numo/numo-narray/blob/master/ext/numo/narray/step.c%23L464&sa=D&source=editors&ust=1686087582539415&usg=AOvVaw2Hpfbz2TYQRfNSIoYuj2cV)
+- Mrkn: Numo’s Range#% is here [https://github.com/ruby-numo/numo-narray/blob/master/ext/numo/narray/step.c#L464](https://github.com/ruby-numo/numo-narray/blob/master/ext/numo/narray/step.c#L464)
