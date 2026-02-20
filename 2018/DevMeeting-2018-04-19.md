@@ -85,13 +85,13 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 
 ### From attendees
 
-[[Bug #14345]](https://bugs.ruby-lang.org/issues/14345) http\_proxy setting should respect both parent domain and subdomain (hsbt)
+[[Bug #14345]](https://bugs.ruby-lang.org/issues/14345) http_proxy setting should respect both parent domain and subdomain (hsbt)
 
 [[Feature #14559]](https://bugs.ruby-lang.org/issues/14559) ENV.slice (hsbt)
 
 - Matz: OK.
 
-[[Feature #14643]](https://bugs.ruby-lang.org/issues/14643) Remove problematic separator '\\0' of Dir.glob and Dir.\[\] (usa)
+[[Feature #14643]](https://bugs.ruby-lang.org/issues/14643) Remove problematic separator '\\0' of Dir.glob and Dir.[] (usa)
 
 - Usa: we can pass arrays to the pattern.  No need to use \\0.
 - Matz: makes sense.
@@ -126,7 +126,7 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 
 - Matz: sounds like an implementation detail.
 - Ko1: it’s too large a patch to implement this as a new VM instruction.
-- Naruse: when I tested opt\_to\_s with @k0kubun the speedup was marginal/not that much.
+- Naruse: when I tested opt_to_s with @k0kubun the speedup was marginal/not that much.
 
 [[Feature #6670]](https://bugs.ruby-lang.org/issues/6670) str.chars.last should be possible (mame)
 
@@ -146,7 +146,7 @@ wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Ja
 
 - Naruse: I’ll take care.  Let me make this a doc issue.
 
-\[Feature #14594\] Rethink yield\_self's name (matz)
+\[Feature #14594\] Rethink yield_self's name (matz)
 
 - Matz: I can live with #then.
 

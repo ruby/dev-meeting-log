@@ -176,7 +176,7 @@ Issues
 
 - akr: why not use ldd(1)?
 
-- [[Bug #12945]](https://bugs.ruby-lang.org/issues/12945) Use-after-free in vm\_trace.c
+- [[Bug #12945]](https://bugs.ruby-lang.org/issues/12945) Use-after-free in vm_trace.c
 
 - nobu: I think I fixed this
 
@@ -193,7 +193,7 @@ Issues
 
 - nobu it’s already assigned.
 
-- [[Bug #12907]](https://bugs.ruby-lang.org/issues/12907) rb\_respond\_to() return value is incorrect
+- [[Bug #12907]](https://bugs.ruby-lang.org/issues/12907) rb_respond_to() return value is incorrect
 
 - matz: this is a bug.
 - assign nagachika
@@ -206,7 +206,7 @@ Issues
 
 - assign shugo
 
-- [[Bug #13030]](https://bugs.ruby-lang.org/issues/13030) Unexpected T\_IMEMO object when building with VMDEBUG
+- [[Bug #13030]](https://bugs.ruby-lang.org/issues/13030) Unexpected T_IMEMO object when building with VMDEBUG
 
 - assign ko1
 
@@ -232,7 +232,7 @@ Issues
 
 - mrkn: what about Array#delete with multiple arguments?
 
-- [[Feature #2074]](https://bugs.ruby-lang.org/issues/2074) json の j や jj は module\_function にするべき？
+- [[Feature #2074]](https://bugs.ruby-lang.org/issues/2074) json の j や jj は module_function にするべき？
 
 - akr: This is a 3PI
 
@@ -248,14 +248,14 @@ Issues
 
 - [[Feature #12861]](https://bugs.ruby-lang.org/issues/12861) Lexically scoped super (nobu)
 
-- nobu: define\_method is the cause of evil
+- nobu: define_method is the cause of evil
 - matz: I’m not sure if lexically-scoped super would actually get used or not.
 
 - [[Bug #12812]](https://bugs.ruby-lang.org/issues/12812) Added Coverage#result= (shyuohei)
 
 - mame is assigned, let him handle this
 
-- [[Feature #12180]](https://bugs.ruby-lang.org/issues/12180) switch id\_table.c variant (shyouhei) ko1?
+- [[Feature #12180]](https://bugs.ruby-lang.org/issues/12180) switch id_table.c variant (shyouhei) ko1?
 
 - is it OK?
 
@@ -271,7 +271,7 @@ Issues
 
 - akr: we are not sure if it is safe, because curry is something very conceptual.
 
-- [[Bug #12855]](https://bugs.ruby-lang.org/issues/12855) Inconsistent keys identity in compare\_by\_identity Hash when using literals (shyouhei) bug or...?
+- [[Bug #12855]](https://bugs.ruby-lang.org/issues/12855) Inconsistent keys identity in compare_by_identity Hash when using literals (shyouhei) bug or...?
 
 - akr: this is an over-optimization.
 
@@ -287,22 +287,22 @@ Issues
 2. then implement.
 3. then this ticket should use that.
 
-- [[Feature #11286]](https://bugs.ruby-lang.org/issues/11286) \[PATCH\] Add case equality arity to Enumerable's sequence predicates. (shyouhei)
+- [[Feature #11286]](https://bugs.ruby-lang.org/issues/11286) [PATCH] Add case equality arity to Enumerable's sequence predicates. (shyouhei)
 
 - shyouhei: seems the OP wants some variant of grep
 - akr: regexp might be straight-forward to read but?
 - matz: positive, but might be better in another name?
 
-- [[Feature #5446]](https://bugs.ruby-lang.org/issues/5446) at\_fork callback API (shyouhei)
+- [[Feature #5446]](https://bugs.ruby-lang.org/issues/5446) at_fork callback API (shyouhei)
 
 - what about make it as a pure-ruby gem?
 
 - [[Feature #12780]](https://bugs.ruby-lang.org/issues/12780) BigDecimal#round returns different types depending on argument (shyouhei)
-- [[Feature #11428]](https://bugs.ruby-lang.org/issues/11428) system/exec/etc. should to\_s their argument to restore Pathname functionality as it was in 1.8 (shyouhei)
-- [[Feature #12180]](https://bugs.ruby-lang.org/issues/12180) switch id\_table.c variant (shyouhei)
+- [[Feature #11428]](https://bugs.ruby-lang.org/issues/11428) system/exec/etc. should to_s their argument to restore Pathname functionality as it was in 1.8 (shyouhei)
+- [[Feature #12180]](https://bugs.ruby-lang.org/issues/12180) switch id_table.c variant (shyouhei)
 
 - [[Feature #5481]](https://bugs.ruby-lang.org/issues/5481) [https://bugs.ruby-lang.org/issues/5481](https://bugs.ruby-lang.org/issues/5481)
 
-- \[Bug [#12998](https://bugs.ruby-lang.org/issues/12998)[\] paragraph mode inconsistency between](https://bugs.ruby-lang.org/issues/5481) [IO#each\_line](https://bugs.ruby-lang.org/issues/5481) [and](https://bugs.ruby-lang.org/issues/5481) [String#each\_line](https://bugs.ruby-lang.org/issues/5481)[(nobu)](https://bugs.ruby-lang.org/issues/5481)
+- \[Bug [#12998](https://bugs.ruby-lang.org/issues/12998)[\] paragraph mode inconsistency between](https://bugs.ruby-lang.org/issues/5481) [IO#each_line](https://bugs.ruby-lang.org/issues/5481) [and](https://bugs.ruby-lang.org/issues/5481) [String#each_line](https://bugs.ruby-lang.org/issues/5481)[(nobu)](https://bugs.ruby-lang.org/issues/5481)
 
-- akr: String#each\_line should be fixed in 2.5.
+- akr: String#each_line should be fixed in 2.5.

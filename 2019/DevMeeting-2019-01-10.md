@@ -80,12 +80,12 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 ## From Attendees
 
-- [[Feature #6012]](https://bugs.ruby-lang.org/issues/6012) Proc#source\_location (ko1)
+- [[Feature #6012]](https://bugs.ruby-lang.org/issues/6012) Proc#source_location (ko1)
 
 - nobu: this breaks compatibility
 - ko1: how about specifying the new behaviour by some optional parameter?
 - matz: we don’t have to take care of old behavior in this case
-- mame: pry is using source\_location#last
+- mame: pry is using source_location#last
 - naruse: pry will be pleasured in this change, I guess :)
 - ko1: I’m against to break compatibility
 - usa: if you really concern to keep compatibility, you should propose this feature as new method.
@@ -98,23 +98,23 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - Special variable for block parameter
 
-- $\_
+- $_
 - @1, @2, @3
-- Ko1: Which \`@1\` mean \`{|x|\` or \`{|x, |\`
-- Znz: \`@0\` means \`{|x|\`
-- Akr: ary.map { .to\_i }
+- Ko1: Which `@1` mean `{|x|` or `{|x, |`
+- Znz: `@0` means `{|x|`
+- Akr: ary.map { .to_i }
 - Knu: … as in Lua
 
 - Mark for a method which doesn’t receive a proc
 
 - matz: I’m planning to introduce a new syntax to specify that the method does not accept any blocks.  proposals?
-- \`&nil\`
-- \`&!\`
-- \`!&\`
-- \`&void\`
-- Matz: Ok, \`&nil\`.
+- `&nil`
+- `&!`
+- `!&`
+- `&void`
+- Matz: Ok, `&nil`.
 - Ko1: Objection.  Many pull-reqs “added &nil” will be opened
-- Ko1: I have been thinking of making Ruby automatically detect if a method actually takes a block even by checking if it uses a block argument or it has a \`yield\` keyword in it.  To achieve this, I want to ban \`yield\` from within \`eval\`, and blockless call of proc/lambda/Proc.new etc.  I believe that is the way to go.  Please warn for “proc” and “Proc.new” without block as obsolete.
+- Ko1: I have been thinking of making Ruby automatically detect if a method actually takes a block even by checking if it uses a block argument or it has a `yield` keyword in it.  To achieve this, I want to ban `yield` from within `eval`, and blockless call of proc/lambda/Proc.new etc.  I believe that is the way to go.  Please warn for “proc” and “Proc.new” without block as obsolete.
 - Matz: accepted.
 - Akr: “lambda without block” has been already warned since 2003 (ruby-1.8.0), How about changing it to an exception?
 - Matz: accepted.
@@ -123,7 +123,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - Can we prohibit (1.. ..1) and (1..1)..1 as a SyntaxError?
 - matz: ok, prohibit
-- usa: please add test cases into test\_syntax.rb
+- usa: please add test cases into test_syntax.rb
 
 - [[Feature #14799]](https://bugs.ruby-lang.org/issues/14799) Startless range (aycabta)
 
@@ -133,9 +133,9 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - What is the expected / desired way to fix this?
 
-- [[Bug #7300]](https://bugs.ruby-lang.org/issues/7300) Hash#\[\] の挙動が 1.9.3 と異なっている (mame)
+- [[Bug #7300]](https://bugs.ruby-lang.org/issues/7300) Hash#[] の挙動が 1.9.3 と異なっている (mame)
 
-- I think we can remove the compatibility layer for 1.9: Hash\[\[nil\]\] #=> {}
+- I think we can remove the compatibility layer for 1.9: Hash[[nil]] #=> {}
 
 - [[Misc #15347]](https://bugs.ruby-lang.org/issues/15347) Require C99 (k0kubun)
 - [[Feature #15445]](https://bugs.ruby-lang.org/issues/15445) Reject '.123' in Float() method (mrkn)
@@ -152,9 +152,9 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 ## Non-attendees
 
-- [[Feature #14444]](https://bugs.ruby-lang.org/issues/14444) MatchData: alias for #\[\]
+- [[Feature #14444]](https://bugs.ruby-lang.org/issues/14444) MatchData: alias for #[]
 
-- Naruse: \`next\_page = response.dig('meta', 'pagination', 'next')&.slice(/&page=(\\d+)/, 1)\` is better
+- Naruse: `next_page = response.dig('meta', 'pagination', 'next')&.slice(/&page=(\\d+)/, 1)` is better
 
 - [[Feature #14784]](https://bugs.ruby-lang.org/issues/14784) Comparable#clamp with a range
 
@@ -170,17 +170,17 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - [[Bug #15428]](https://bugs.ruby-lang.org/issues/15428) Refactor Proc#>> and #<< (it regards the same problem as [#15483](https://bugs.ruby-lang.org/issues/15483) above, but approaches it from a different point of view)
 
 - Mame: Use a block.  You then want syntactic sugar for passing an argument, and then for partial application, blah blah blah.
-- knu: We should not add fancy new features around procs and symbols if the real problem is that block syntax is not good enough, like \`|x|\` is always necessary. (See above for the default block parameter syntax)
+- knu: We should not add fancy new features around procs and symbols if the real problem is that block syntax is not good enough, like `|x|` is always necessary. (See above for the default block parameter syntax)
 - Matz: raise an error when the argument does not respond to :call
 
 - [[Misc #15486]](https://bugs.ruby-lang.org/issues/15486) Default gems README.md
 
 - [[Misc #15487]](https://bugs.ruby-lang.org/issues/15487) Clarify default gems maintenance policy
-- [[Feature #15373]](https://bugs.ruby-lang.org/issues/15373) Proposal: Enable refinements to #method and #instance\_method
+- [[Feature #15373]](https://bugs.ruby-lang.org/issues/15373) Proposal: Enable refinements to #method and #instance_method
 
 - matz: go ahead
 
-- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method\_missing
+- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method_missing
 
 - matz: wait a month
 
@@ -188,21 +188,21 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - History:
 
-- 2006: r10235 removes command from aref\_args.
-- 2007: r13821 removes warning from call\_args.
+- 2006: r10235 removes command from aref_args.
+- 2007: r13821 removes warning from call_args.
 
 - \*: Should we emit a warning against both cases?
 - knu: There's so much existing code out there written as follows:
 
 - expect(command arg).to eq(value)
 - f.(Math.sqrt 2)
-- f\[Math.sqrt 2\]
+- f[Math.sqrt 2]
 
-- [[Bug #2250]](https://bugs.ruby-lang.org/issues/2250) IO::for\_fd() objects' finalization dangerously closes underlying fds (eregon)
+- [[Bug #2250]](https://bugs.ruby-lang.org/issues/2250) IO::for_fd() objects' finalization dangerously closes underlying fds (eregon)
 
 - The current behavior is dangerous and has caused many spurious test/spec failures which are hard to find and debug. I plan to submit a patch, but I'd like opinions regarding compatibility.
 
-- [[Bug #15488]](https://bugs.ruby-lang.org/issues/15488) const\_defined?("File::NULL") の挙動
+- [[Bug #15488]](https://bugs.ruby-lang.org/issues/15488) const_defined?("File::NULL") の挙動
 
 - What is the expected behavior?
 - matz: ok, try to return “true” in this case. if we find something wrong, will give up.

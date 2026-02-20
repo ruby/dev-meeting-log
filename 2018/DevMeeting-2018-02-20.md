@@ -124,7 +124,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 ## Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
 
-## log edit: [https://docs.google.com/document/d/1XbUbch8\_eTqh21FOwj9a\_X-ZyJyCBjxkq8rWwfpf5BM/edit](https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit)
+## log edit: [https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit](https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit)
 
 ## log: TBD
 
@@ -163,22 +163,22 @@ Next Developper Meetings
 
 ## From attendees
 
-## [[Feature #14223]](https://bugs.ruby-lang.org/issues/14223) Enable #to\_proc by Refinements at &hoge (nobu)
+## [[Feature #14223]](https://bugs.ruby-lang.org/issues/14223) Enable #to_proc by Refinements at &hoge (nobu)
 
 
 - Matz: LGTM.
 
-## [[Feature #14371]](https://bugs.ruby-lang.org/issues/14371) New option "recursive: true" for Hash#transform\_keys! (nobu)
+## [[Feature #14371]](https://bugs.ruby-lang.org/issues/14371) New option "recursive: true" for Hash#transform_keys! (nobu)
 
 
-- Mrkn: This is deep\_stringify\_keys!
+- Mrkn: This is deep_stringify_keys!
 - Shyouhei: Understand the needs.
 - Mame: Should this be called recursive: true ?
 - Mrkn: This method has some assumption on the receiver’s structure. E.g. JSON
 - Knu: This method changes values as well as keys, which seems wrong.
 - Matz: This particular API seems NG to me.
 
-## \[Bug #14380\] Expected transform\_keys! to work just as transform\_keys, but it doesn't (mame)
+## \[Bug #14380\] Expected transform_keys! to work just as transform_keys, but it doesn't (mame)
 
 
 - Shyouhei: This behaviour was inherited from ActiveSupport.
@@ -206,7 +206,7 @@ Next Developper Meetings
 - Mrkn: But he doesn’t have the repo access bit, nor gem release right.
 - Mame: He’s active on twitter etc.  You should ask his current status.
 
-## [[Feature #4831]](https://bugs.ruby-lang.org/issues/4831) Integer#prime\_factors (mrkn)
+## [[Feature #4831]](https://bugs.ruby-lang.org/issues/4831) Integer#prime_factors (mrkn)
 
 
 - Mrkn: name?
@@ -220,8 +220,8 @@ Next Developper Meetings
 - Nobu: is this request to raise error when spawn fails, or when the spawned process fails?
 - Mrkn: I don’t like the RuntimeError.
 - K0kubun: RuntimeError is from Rake.
-- Mrkn: I see similarity for discussion on Integer(). \[ruby-core:77171\] \[Feature#12732\]
-- Akr: There are \`exception: true\`
+- Mrkn: I see similarity for discussion on Integer(). [ruby-core:77171] [Feature#12732]
+- Akr: There are `exception: true`
 
 ## [[Bug #14353]](https://bugs.ruby-lang.org/issues/14353) $SAFE should stay at least thread-local for compatibility (ko1)
 
@@ -249,7 +249,7 @@ Next Developper Meetings
 
 ## From non-attendees
 
-## [[Feature #14382]](https://bugs.ruby-lang.org/issues/14382) Make public access of a private constant call const\_missing (jeremyevans0)
+## [[Feature #14382]](https://bugs.ruby-lang.org/issues/14382) Make public access of a private constant call const_missing (jeremyevans0)
 
 
 - Nobu: sounds like a bug to me
@@ -266,10 +266,10 @@ Next Developper Meetings
 - Naruse: as a release management, 2.6 is good timing to warn because it has good benefit for paying compatibility cost.
 - Mame: warn this?
 - Akr: warning, if any, should not be annoying this case because it should / would happen on parsing.
-- Mame: should we also deprecate def \`; end; self.\` ? If so, warning on parsing is dangerous.
+- Mame: should we also deprecate def `; end; self.` ? If so, warning on parsing is dangerous.
 - Matz: I think we don’t necessarily warn this as soon as 2.6.
 
-## [[Feature #13969]](https://bugs.ruby-lang.org/issues/13969) Dir#each\_child (znz)
+## [[Feature #13969]](https://bugs.ruby-lang.org/issues/13969) Dir#each_child (znz)
 
 
 - Matz: OK.

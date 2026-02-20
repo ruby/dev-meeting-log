@@ -154,7 +154,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 
 ## Carry-over from previous meeting(s)
 
-## [[Feature #12180]](https://bugs.ruby-lang.org/issues/12180) switch id\_table.c variant (shyouhei)
+## [[Feature #12180]](https://bugs.ruby-lang.org/issues/12180) switch id_table.c variant (shyouhei)
 
 
 - ko1: funny-falcon’s open addressing hash is beating mine.
@@ -191,7 +191,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 - shyouhei: I will
 - matz: go ahead.
 
-## [[Bug #12998]](https://bugs.ruby-lang.org/issues/12998) paragraph mode inconsistency between IO#each\_line and String#each\_line(nobu)
+## [[Bug #12998]](https://bugs.ruby-lang.org/issues/12998) paragraph mode inconsistency between IO#each_line and String#each_line(nobu)
 
 
 - ko1: ideal behaviour?
@@ -291,7 +291,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 - nobu: start as a gem.
 - matz: agree.
 
-## [[Feature #12931]](https://bugs.ruby-lang.org/issues/12931) Add support for Binding#instance\_eval (shyouhei)
+## [[Feature #12931]](https://bugs.ruby-lang.org/issues/12931) Add support for Binding#instance_eval (shyouhei)
 
 
 - shyouhei: what is needed ultimately is to pass a block to Binding#eval
@@ -335,7 +335,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 
 - shugo is handling.
 
-## [[Feature #12967]](https://bugs.ruby-lang.org/issues/12967) Add a default for RUBY\_GC\_HEAP\_GROWTH\_MAX\_SLOTS out-of-the-box (shyouhei)
+## [[Feature #12967]](https://bugs.ruby-lang.org/issues/12967) Add a default for RUBY_GC_HEAP_GROWTH_MAX_SLOTS out-of-the-box (shyouhei)
 
 
 - ko1: I’m not sure if this parameter is a sane default.
@@ -357,7 +357,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 - shyouhei: understand that point.
 - naruse: you have to sort by length before union. Otherwise カ can match before ガ.
 
-## [[Bug #8241]](https://bugs.ruby-lang.org/issues/8241) If uri host-part has underscore ( '\_' ), 'URI#parse' raise 'URI::InvalidURIError' (shyouhei)
+## [[Bug #8241]](https://bugs.ruby-lang.org/issues/8241) If uri host-part has underscore ( '_' ), 'URI#parse' raise 'URI::InvalidURIError' (shyouhei)
 
 
 - naruse: I think this is done.
@@ -389,7 +389,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 - nobu: nobody is against the needs of macro but the name?
 - shyouhei: will update the ticket.
 
-## [[Bug #13127]](https://bugs.ruby-lang.org/issues/13127) DRb \`load': connection closed (DRb::DRbConnError) when client exit's from within a loop iterating over remote objects (shyouhei)
+## [[Bug #13127]](https://bugs.ruby-lang.org/issues/13127) DRb `load': connection closed (DRb::DRbConnError) when client exit's from within a loop iterating over remote objects (shyouhei)
 
 
 - assign seki
@@ -417,11 +417,11 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 
 - shyouhei: I will
 
-- rename Random.raw\_seed to Random.urandom
+- rename Random.raw_seed to Random.urandom
 - try to use that from SecureRandom
 - if it fails, fallback to OpenSSL.
 
-- \[Bug #13135\] Regexp.last\_match returns nil with s.rindex(//)
+- \[Bug #13135\] Regexp.last_match returns nil with s.rindex(//)
 
 - everyone: isn’t it a bug?
 - ko1: assign shugo.

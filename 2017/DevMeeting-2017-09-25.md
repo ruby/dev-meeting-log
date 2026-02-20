@@ -162,8 +162,8 @@ Date: 2017/09/25 (Mon)
 Time: 14:00- 18:00 (JST)
 Place: Speee, Inc.
 Sign-up: [https://ruby.connpass.com/event/67822/](https://ruby.connpass.com/event/67822/)
-log edit: [https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9\_TkMayQ6\_s/edit](https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9_TkMayQ6_s/edit)
-log: [https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9\_TkMayQ6\_s/pub](https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9_TkMayQ6_s/pub)
+log edit: [https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9_TkMayQ6_s/edit](https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9_TkMayQ6_s/edit)
+log: [https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9_TkMayQ6_s/pub](https://docs.google.com/document/d/1lkipHlUzcSSse01EFGvlABuCmY7WwXun9_TkMayQ6_s/pub)
 Attendees: matz (Yukihiro Matsumoto), nobu (Nobuyoshi Nakada), ko1 (Koichi Sasada, partially), naruse (Yui Naruse), akr (Akira Tanaka), shyouhei (Shyouhei Urabe), mrkn (Kenta Murata), mame (Yusuke Endoh), knu (Akinori MUSHA), duerst (Martin Dürst), yuki (Yuki Nishijima) (add your name here if you would like to appear)
 Language: mostly Japanese (sorry for non native Japanese speakers)
 
@@ -196,7 +196,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - naruse: I’ll implement this.
 
-## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP\_\* -> HEAP\_PAGE\_\* variable renaming (shyouhei) Sorry, what was the conclusion of it?
+## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP_\* -> HEAP_PAGE_\* variable renaming (shyouhei) Sorry, what was the conclusion of it?
 
 
 - mrkn: I remember we should not support old OpenBSD.
@@ -217,11 +217,11 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - ko1: is it worth for a 5-6% speedup?
 - mame: this should affect optcarrot...
 
-## [[Feature #13613]](https://bugs.ruby-lang.org/issues/13613) Prefer that require/require\_relative/load to tell us permission error if the target file is unreadable (shyouhei)
+## [[Feature #13613]](https://bugs.ruby-lang.org/issues/13613) Prefer that require/require_relative/load to tell us permission error if the target file is unreadable (shyouhei)
 
 
 - akr: we should define errors that are “fatal” and those aren’t.  For instance, ENOENT is not fatal but EPERM is.
-- shyouhei: it sounds reasonable for someone want to know when there \_are\_ some nasty files.
+- shyouhei: it sounds reasonable for someone want to know when there _are_ some nasty files.
 - mame: should we raise exceptions for errors other than ENOENT? or to warn only?
 
 ## [[Feature #13620]](https://bugs.ruby-lang.org/issues/13620) Simplifying MRI's build system: always install (shyouhei)
@@ -229,20 +229,20 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - the thread is going on.
 
-## [[Feature #13630]](https://bugs.ruby-lang.org/issues/13630) :\[\] method should accept block in nice syntax (shyouhei) OK to close?
+## [[Feature #13630]](https://bugs.ruby-lang.org/issues/13630) :[] method should accept block in nice syntax (shyouhei) OK to close?
 
 
 - matz: I think it should be accepted.
 - nobu: mruby doesn’t work this way, BTW.
 - shyouhei: OK, lets close.
 
-- [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read\_nonblock/etc (shyouhei)
+- [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read_nonblock/etc (shyouhei)
 
 - akr: sounds OK to me.
 - shyouhei: seems nobody is against the feature itself but the API?
 - akr: keyword argument sounds reasobable.
-- matz: off\_out doesn’t charm me.
-- nobu: what about buffer\_offset?
+- matz: off_out doesn’t charm me.
+- nobu: what about buffer_offset?
 - knu: seems IO.write has optional 3rd argument, offset, which is used to seek the file.
 
 ## [[Feature #9001]](https://bugs.ruby-lang.org/issues/9001) Please package better standard library (shyouhe)
@@ -306,12 +306,12 @@ puts "tomatoe".vegetables
 - shyouhei: ah, I want this feature.
 - matz: I prefer opening singleton class.
 
-## [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def\_instance\_delegator nil (shyouhei)
+## [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def_instance_delegator nil (shyouhei)
 
 
 - nobu: I don’t think this is much meaningful.
 - matz: I fell it’s over-engineering.
-- knu: ActiveSupport::Delegate also doesn’t support this comples feature (but only allow\_nil)
+- knu: ActiveSupport::Delegate also doesn’t support this comples feature (but only allow_nil)
 - matz: I’d like to hear use cases.
 
 ## [[Feature #13378]](https://bugs.ruby-lang.org/issues/13378) Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
@@ -319,7 +319,7 @@ puts "tomatoe".vegetables
 
 - nobu: I’m handlig this. WIP.
 
-## [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) \[PATCH\] Expose rb\_fstring and its family to C extensions (shyouhei)
+## [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) [PATCH] Expose rb_fstring and its family to C extensions (shyouhei)
 
 
 - matz: postpone because ko1 is absent.
@@ -327,7 +327,7 @@ puts "tomatoe".vegetables
 ## [[Feature #13677]](https://bugs.ruby-lang.org/issues/13677) Add more details to error "Name or service not known (SocketError)" (shyouhei)
 
 
-- akr: we currenly only show the return value of gai\_strerror(). Seems OK to extend though.
+- akr: we currenly only show the return value of gai_strerror(). Seems OK to extend though.
 - akr: patch is welcomed.
 
 ## [[Feature #9323]](https://bugs.ruby-lang.org/issues/9323) IO#writev (shyouhei)
@@ -337,17 +337,17 @@ puts "tomatoe".vegetables
 - mame: I want to know how this speeds things up.
 - knu: maybe atomic write is the point.
 
-## [[Feature #13693]](https://bugs.ruby-lang.org/issues/13693) Allow String#to\_i and / or Kernel::Integer to parse e-notation (shyouhei)
+## [[Feature #13693]](https://bugs.ruby-lang.org/issues/13693) Allow String#to_i and / or Kernel::Integer to parse e-notation (shyouhei)
 
 
 - mame: haha
 - duerst: 1e+3 doesn’t sound like a integer.
 - nobu: should we accept minus?
 - akr: yes because 10e-1 shall be OK according to this request.
-- mrkn: backwards compatibility is to huge in #to\_i
-- shyouhei: so should we recommend using #to\_r, then round?
+- mrkn: backwards compatibility is to huge in #to_i
+- shyouhei: so should we recommend using #to_r, then round?
 - mrkn: yes.
-- mrkn: it seems the behaviour of #to\_i comes with atoi().
+- mrkn: it seems the behaviour of #to_i comes with atoi().
 
 ## [[Feature #13434]](https://bugs.ruby-lang.org/issues/13434) better method definition in C API (shyouhei)
 
@@ -371,7 +371,7 @@ puts "tomatoe".vegetables
 - mame: what about the feature itself?
 - matz: think we need more use case.
 
-## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
+## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) [PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (shyouhei)
 
 
 - matz: async { File.read }
@@ -385,7 +385,7 @@ puts "tomatoe".vegetables
 
 - ko1: it’s technically impossible.
 
-## [[Bug #13931]](https://bugs.ruby-lang.org/issues/13931) correct install\_name of libruby on macOS (libruby.2.5.0.dylib -> libruby.2.5.dylib) (naruse)
+## [[Bug #13931]](https://bugs.ruby-lang.org/issues/13931) correct install_name of libruby on macOS (libruby.2.5.0.dylib -> libruby.2.5.dylib) (naruse)
 
 
 - nobu: compatibility version shall be, and is, “2.4.0” ATM.  But we had bugs before.  I don’t want to change the AS-IS behaviour.
@@ -399,12 +399,12 @@ puts "tomatoe".vegetables
 - mame: we don’t optimize Comparable#clamp for literals, because no practical usage can be thought for such thing. NEWS shall be consulted.
 - naruse: I’ll respond as such. nobu will merge the pull request.
 
-## [[Feature #13893]](https://bugs.ruby-lang.org/issues/13893) Add Fiber#\[\] and Fiber#\[\]= and restore Thread#\[\] and Thread#\[\]= to their original behavior (shyouhei)
+## [[Feature #13893]](https://bugs.ruby-lang.org/issues/13893) Add Fiber#[] and Fiber#[]= and restore Thread#[] and Thread#[]= to their original behavior (shyouhei)
 
 
 - akr: This is clear, but too late.
 
-## [[Feature #10344]](https://bugs.ruby-lang.org/issues/10344) \[PATCH\] Implement Fiber#raise (shyouhei)
+## [[Feature #10344]](https://bugs.ruby-lang.org/issues/10344) [PATCH] Implement Fiber#raise (shyouhei)
 
 
 - ko1: if we allow Fiber#raise, auto fiber shall introduce weired behaviour.
@@ -419,7 +419,7 @@ puts "tomatoe".vegetables
 - matz: or with in Python
 - matz: I don’t want to add new keywords.
 - nobu: I now think it should be done using a library, not by the language.
-- matz: what about introducing ensure\_mod, just like rescue\_mod?
+- matz: what about introducing ensure_mod, just like rescue_mod?
 - nobu: should that expose ensure’s scope?
 - knu: foo rescue bar ensure baz sounds like baz would be executed immediately at the line.
 - akr: I’d like to propose non-nesting block:
@@ -452,14 +452,14 @@ puts "tomatoe".vegetables
 - knu: .of sounds NG…
 - akr: what about optional argument that describes the unit of second argument?
     Time.at(123, 456, :nanosecond)
-- matz: \`Time.at(100000, 123, :nsec)\`? \`Time.at(100000, 123,:msec)\`? \`Time.at(100000, nsec: 123)\`?
+- matz: `Time.at(100000, 123, :nsec)`? `Time.at(100000, 123,:msec)`? `Time.at(100000, nsec: 123)`?
 - ko1: This seems to be the first kind of API
-- akr: No, we already have CLOCK\_GETTIME
+- akr: No, we already have CLOCK_GETTIME
 - ko1: what to do about Time.at(1, msec: 234, nsec: 567)
 - naruse: I think no practical usage are there for specifying both msec and nsec.
 - matz: OK, accepted.  But specifying nil shall raise exceptions.
 
-## [[Bug #13887]](https://bugs.ruby-lang.org/issues/13887) test/ruby/test\_io.rb may get stuck with FIBER\_USE\_NATIVE=0 on Linux
+## [[Bug #13887]](https://bugs.ruby-lang.org/issues/13887) test/ruby/test_io.rb may get stuck with FIBER_USE_NATIVE=0 on Linux
 
 
 - ko1: this is a bug that should be fixed. I’ll do.

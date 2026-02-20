@@ -76,7 +76,7 @@ Season's greetings everyone!
 
 You can watch the recording from Thursday's meeting on[ustream](http://www.ustream.tv/recorded/41393753), thanks to[@mrkn](https://twitter.com/mrkn) for the recording!
 
-Although we didn't have a video recording from the meeting on Friday, werecorded our skype conference and is available on[soundcloud](https://soundcloud.com/zzak-2/ruby-core-developer-meeting). Thanksto [@sora\_h](https://twitter.com/sora_h) for the recording and moderating skype!
+Although we didn't have a video recording from the meeting on Friday, werecorded our skype conference and is available on[soundcloud](https://soundcloud.com/zzak-2/ruby-core-developer-meeting). Thanksto [@sora_h](https://twitter.com/sora_h) for the recording and moderating skype!
 
 Below I have summarized the meetings for each day and organized them intoagenda items. Each agenda item should have an associated ticket on our [bugtracker](http://bugs.ruby-lang.org/) that you can follow for more information.I will be updating these tickets with our conclusion shortly!
 
@@ -115,38 +115,38 @@ To summarize:
 - We accept proposal of [@hsbt](https://twitter.com/hsbt)
 - The following proposal will begin with 2.1.0
 
-#### Version Schema \`ruby-{MAJOR}.{MINOR}.{TEENY}\`[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Version-Schema-ruby-MAJORMINORTEENY)
+#### Version Schema `ruby-{MAJOR}.{MINOR}.{TEENY}`[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Version-Schema-ruby-MAJORMINORTEENY)
 
-- \`MAJOR\`: increased when incompatible change which can't be released in MINOR
+- `MAJOR`: increased when incompatible change which can't be released in MINOR
 - "MAJOR is for party", reserved for special events
-- \`MINOR\`: increased every christmas, may be API incompatible
-- \`TEENY\`: security or bug fix which maintains API compatibility
-- \`PATCH\`: number of commits since last MINOR release (will be reset at 0 when releasing MINOR)
+- `MINOR`: increased every christmas, may be API incompatible
+- `TEENY`: security or bug fix which maintains API compatibility
+- `PATCH`: number of commits since last MINOR release (will be reset at 0 when releasing MINOR)
 
-\`TEENY\` may be increased more than 10 (such as \`2.1.11\`), and will be releasedevery 2-3 months.
+`TEENY` may be increased more than 10 (such as `2.1.11`), and will be releasedevery 2-3 months.
 
-Matz and other attendees were concerned about \`TEENY >= 10\`.
+Matz and other attendees were concerned about `TEENY >= 10`.
 
 #### Branches[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Branches)
 
 We will maintain the following branches:
 
 - trunk
-- \`ruby\_{MAJOR}\_{MINOR}\`
-- \`ruby\_{MAJOR}\_{MINOR}\` across \`TEENY\` releases
+- `ruby_{MAJOR}_{MINOR}`
+- `ruby_{MAJOR}_{MINOR}` across `TEENY` releases
 - tags will be used for each release
 
 #### API Compatibility[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#API-Compatibility)
 
 - Removing API is an incompatible change
-- such as (\`STDIO\_READ\_DATA\_PENDING\`, etc.) must wait for 2.2.0
-- an incompatible change must increase \`MINOR\`
+- such as (`STDIO_READ_DATA_PENDING`, etc.) must wait for 2.2.0
+- an incompatible change must increase `MINOR`
 
 #### ABI Compatibility[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#ABI-Compatibility)
 
-- Scheme of \`{MAJOR}.{MINOR}.0\`
-- Keep ABI compatibility with same \`MINOR\` release, so \`TEENY\` is fixed at 0
-- Retain compatibility across \`TEENY\` releases
+- Scheme of `{MAJOR}.{MINOR}.0`
+- Keep ABI compatibility with same `MINOR` release, so `TEENY` is fixed at 0
+- Retain compatibility across `TEENY` releases
 
 We are concerned with changes required for existing tools, such as:
 
@@ -155,7 +155,7 @@ We are concerned with changes required for existing tools, such as:
 
 #### Documentation[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Documentation)
 
-We need to announce our plans for removing patch level semantics, in order touse \`{MAJOR}.{MINOR}.{TEENY}\`.
+We need to announce our plans for removing patch level semantics, in order touse `{MAJOR}.{MINOR}.{TEENY}`.
 
 ### Maintenance Policy for 1.8.7 and 1.9.2[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-187-and-192)
 
@@ -163,10 +163,10 @@ We need to announce our plans for removing patch level semantics, in order touse
 
 1.8.7 and 1.9.2 will be supported for security fixes until June 2014.
 
-- [@hone02](https://twitter.com/hone02) and [@\_zzak](https://twitter.com/_zzak) will assume maintainership
+- [@hone02](https://twitter.com/hone02) and [@_zzak](https://twitter.com/_zzak) will assume maintainership
 - After the 6 month maintenance period, we can add more committers to extend another 6 months.
 
-In the past we have supported vendors who wish to maintain legacy versions. In2009 the maintenance of Ruby \`1.8.6\` was transferred to Engine Yard when theyreleased \`1.8.6-p369\`.
+In the past we have supported vendors who wish to maintain legacy versions. In2009 the maintenance of Ruby `1.8.6` was transferred to Engine Yard when theyreleased `1.8.6-p369`.
 
 We were given permission from Matz to release backport versions of Ruby forsecurity fixes.
 
@@ -222,7 +222,7 @@ Every issue can escalate to Matz, should he become inactive maybe we need torepl
 
 Asking to declare an expected maintenance period during appointment was rejected, see below:
 
-[@nagachika](https://twitter.com/nagachika), current maintainer of \`2.0.0\` madethe following comment:
+[@nagachika](https://twitter.com/nagachika), current maintainer of `2.0.0` madethe following comment:
 
 I never publish maintenance period for 2.0.0. I thought I can maintain it
 for 2 years in "normal maintenance mode" and then turn into "security only
@@ -264,8 +264,8 @@ We discussed this ticket, and concluded the following statements:
 
 After watching the video I wrote a [roughsummary](https://gist.github.com/zzak/7821769), since most of thediscussion was in English. The following other events took place during themeeting:
 
-- [@a\_matsuda](https://twitter.com/a_matsuda) commits typo patches, he is the typo monster!
+- [@a_matsuda](https://twitter.com/a_matsuda) commits typo patches, he is the typo monster!
 - [Martin Duerst commits too!](https://github.com/ruby/ruby/commit/737c7d8)
 - [@hone02](https://twitter.com/hone02) joined the skype call to discuss his feedback on maintainer appointment and discharge
-- [@a\_matsuda](https://twitter.com/a_matsuda) will propose gemifying the stdlib at the next meeting
+- [@a_matsuda](https://twitter.com/a_matsuda) will propose gemifying the stdlib at the next meeting
 

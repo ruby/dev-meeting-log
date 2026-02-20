@@ -131,23 +131,23 @@ Place: MoneyForward HQ (Tokyo, Japan)
 
 - pattern matching
 - Matz: positive for the proposal itself, though we need to discuss many details
-- Matz: Pin var\_ should be changed
+- Matz: Pin var_ should be changed
 - Matz: one-liner is slightly negative
 - Matz: guard must be able to write in pattern
-- Akr: & pattern is needed: \[self\] + values can be avoided by a pattern: \[A, 1, 1\] => A & \[1, 1\]
-- ko1:  want to write \[\] in pattern instead of ()
+- Akr: & pattern is needed: [self] + values can be avoided by a pattern: [A, 1, 1] => A & [1, 1]
+- ko1:  want to write [] in pattern instead of ()
 - Mame: NoMatchingError is needed?
 - Usa: is it a good idea to call deconstruct implicitly? is it better to write deconstruct explicitly?
 - Mame: the result of deconstruct must be cached
 - Tarui: cant distinguish between Array and Struct
 
-case \[1, 2, 3\]
+case [1, 2, 3]
 in a, 2 => b, c
  p a, b, cl
 end
 
-case \[1, 2, 3\]
-in \[a, 2 => b, c\]
+case [1, 2, 3]
+in [a, 2 => b, c]
  p a, b, c
 end
 
@@ -167,7 +167,7 @@ In Maybe(nil)
 In Maybe(foo)
 End
 
-- opt\_to\_s (nobu)
+- opt_to_s (nobu)
 
 - Naruse: Is it fast?
 - Nobu: not measured yet.
@@ -178,7 +178,7 @@ End
 - [[Feature #14111]](https://bugs.ruby-lang.org/issues/14111) ArgumentErrorが発生した時メソッドのプロトタイプをメッセージに含む (esjee)
 
 - Suggestion: include method parameters when generating an ArgumentError message. Nobu's patch in the issue provides functionality to make writing a ruby gem to provide this functionality possible.
-- \`method\_name\` is true method name, not \`callee\`.
+- `method_name` is true method name, not `callee`.
 - current implementation by nobu returns callee, so, change the implement to return true name.  after then, discuss about the necessity of callee.
 
 - [[Bug #14878]](https://bugs.ruby-lang.org/issues/14878) Add command line argument to deactivate JIT (k0kubun)
@@ -188,7 +188,7 @@ End
 
 - [[Feature #12306]](https://bugs.ruby-lang.org/issues/12306) Implement String #blank? #present? and improve #strip and family to handle unicode (sam.saffron)
 
-- blank? Is not the best name, but acceptable (space\_only? or something might be better)
+- blank? Is not the best name, but acceptable (space_only? or something might be better)
 - present? Is not acceptable at all
 - matz will accept the feature itself of blank?, but hope another good name
 - TBW
@@ -197,7 +197,7 @@ End
 
 - some steps towards better pattern matching
 
-- [[Feature #14914]](https://bugs.ruby-lang.org/issues/14914) Add BasicObject#instance\_exec\_with\_block (jeremyevans0)
+- [[Feature #14914]](https://bugs.ruby-lang.org/issues/14914) Add BasicObject#instance_exec_with_block (jeremyevans0)
 
 - Real use case, please
 
@@ -211,11 +211,11 @@ End
 
 Carry over:
 
-- [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete\_if does not use #delete (shyouhei)
+- [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete_if does not use #delete (shyouhei)
 
 - Is it by design, or a bug?
 
-- [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl\_completion\_quote\_character variable (nobu)
+- [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl_completion_quote_character variable (nobu)
 - [[Feature #14850]](https://bugs.ruby-lang.org/issues/14850) Add official API for setting timezone on Time (nobu)
 - [[Feature #14869]](https://bugs.ruby-lang.org/issues/14869) Proposal to add Hash#=== (nobu)
 - [[Feature #14877]](https://bugs.ruby-lang.org/issues/14877) Calculate age in Date class (nobu)

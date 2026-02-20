@@ -87,7 +87,7 @@ akr pointed out that it will introduce incompatibility compare with C implemente
 
  …
 
-this code can leak \`fd’ if some exception is occur before making IO object (IO object will free fd). In this case, we need to make C functions to make IO objects.
+this code can leak `fd’ if some exception is occur before making IO object (IO object will free fd). In this case, we need to make C functions to make IO objects.
 
 Also, additional TracePoint will be introduced.
 
@@ -101,7 +101,7 @@ Also, additional TracePoint will be introduced.
 
 Resolved.
 
-## [[Feature #8919]](https://bugs.ruby-lang.org/issues/8919) Queue as embedded class: please determine whether or not it should be introduced. (glass\_saga)
+## [[Feature #8919]](https://bugs.ruby-lang.org/issues/8919) Queue as embedded class: please determine whether or not it should be introduced. (glass_saga)
 
 Matz: seems good.
 
@@ -109,7 +109,7 @@ Nobu: how is SizedQueue? They share same codes.
 
 … no conclusion. Koichi will try.
 
-# Feature #10600: \[PATCH\] Queue#close [https://bugs.ruby-lang.org/issues/10600](https://bugs.ruby-lang.org/issues/10600)
+# Feature #10600: [PATCH] Queue#close [https://bugs.ruby-lang.org/issues/10600](https://bugs.ruby-lang.org/issues/10600)
 
 Matz: seems good.
 
@@ -117,6 +117,6 @@ akr: What happens on pushing/popping closed Queue?
 
 ko1: there are discussions on ticket. I’ll take it.
 
-## [[Feature #11297]](https://bugs.ruby-lang.org/issues/11297) Allow private method of self to be called (a\_matsuda)
+## [[Feature #11297]](https://bugs.ruby-lang.org/issues/11297) Allow private method of self to be called (a_matsuda)
 
 Matz: seems good

@@ -41,9 +41,9 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 # Log
 
-# Decide whether -\*- should be required for frozen\_string\_literal magic comments [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976)
+# Decide whether -\*- should be required for frozen_string_literal magic comments [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976)
 
-naruse: vim’s indicator is “vim: …” [http://vim.wikia.com/wiki/Modeline\_magic](http://vim.wikia.com/wiki/Modeline_magic)
+naruse: vim’s indicator is “vim: …” [http://vim.wikia.com/wiki/Modeline_magic](http://vim.wikia.com/wiki/Modeline_magic)
 
 nobu: should be have an indicator of pragrma.
 
@@ -109,7 +109,7 @@ akr: …
 
 matz: I don’t like magic comment, so that I hesitate to introduce it.
 
-a\_matsuda: + and - seems string operation.  << -”foo” can be seen as a here document.
+a_matsuda: + and - seems string operation.  << -”foo” can be seen as a here document.
 
 matz: I understand.  + and - is not good idea.
 
@@ -129,7 +129,7 @@ ko1: this pragma is for experimental feature. if we decide to reject default fro
 
 matz: i will remain it.
 
-deep\_freeze
+deep_freeze
 
 → traversal framework?
 
@@ -137,7 +137,7 @@ inspect に引数を渡したい
 
 → inspect2? not clean.
 
-naruse: On 1.9 I tried to implement such logic, but I gave  up and use Encoding.default\_internal/Encoding.default\_external
+naruse: On 1.9 I tried to implement such logic, but I gave  up and use Encoding.default_internal/Encoding.default_external
 
 # .?
 
@@ -146,8 +146,8 @@ nobu: syntax fixed? there are 3 possibilities.
 obj.?foo =>
 
 1. obj != nil ? obj.foo : nil
-2. obj.respond\_to?(:foo) ? obj.foo : obj
-3. obj.respond\_to?(:foo) ? obj.foo : nil
+2. obj.respond_to?(:foo) ? obj.foo : obj
+3. obj.respond_to?(:foo) ? obj.foo : nil
 
 matz: 1.
 
@@ -159,7 +159,7 @@ akr: obj.&foo, obj.&&foo is proposed. how about it?
 
 matz: i can accept original proposal.
 
-\[ruby-core:70854\] \[Ruby trunk - Feature #11537\]
+[ruby-core:70854] [Ruby trunk - Feature #11537]
 
 # Misc
 
@@ -246,7 +246,7 @@ other ideas:
 
 str = ?’foo’
 
-str = !’foo’ -> bad idea (ex: str = !’foo’.start\_with(‘f’))
+str = !’foo’ -> bad idea (ex: str = !’foo’.start_with(‘f’))
 
 # [https://twitter.com/sferik/status/642063693304451072](https://twitter.com/sferik/status/642063693304451072)
 

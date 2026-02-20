@@ -167,7 +167,7 @@ Issues
 - duest: I don’t think ? has any connection with symols or strings, it feels unnatural for this purpose
 - naruse: what about $foo?
 
-- matz: or \`foo (like lisp)
+- matz: or `foo (like lisp)
 
 - continue discussing.
 - mrkn: x.round(half::"up") -> x.round(half: :"up")
@@ -187,7 +187,7 @@ Issues
 
 - [[Bug #11929]](https://bugs.ruby-lang.org/issues/11929) No programatic way to check ability to dup/clone an object (duerst)
 
-- matz: respond\_to? is insufficient to check if it can be dup’ed, because it could raise exceptions.
+- matz: respond_to? is insufficient to check if it can be dup’ed, because it could raise exceptions.
 - matz: There is no way to change identity of a fixnum.
 - naruse: I’m not sure what OP wants to do.
 - duerst: I’d prefer failing silently.
@@ -198,17 +198,17 @@ Issues
 - duerst: not currently implemented.
 - naruse: I’ll take a look.
 
-- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set
+- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand_path should resolve ~/ using /etc/passwd when HOME is not set
 
 - matz: OK
 
 - [[Feature #4897]](https://bugs.ruby-lang.org/issues/4897) Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2\*Pi. See [http://tauday.com/](http://tauday.com/)
 
-- mrkn: last time I suggested TWO\_PI.
-- matz: I don’t think TWO\_PI satisfies TAU fans.
+- mrkn: last time I suggested TWO_PI.
+- matz: I don’t think TWO_PI satisfies TAU fans.
 - matz: I want to leave it rejected.
 
-- [[Feature #12721]](https://bugs.ruby-lang.org/issues/12721) public\_module\_function
+- [[Feature #12721]](https://bugs.ruby-lang.org/issues/12721) public_module_function
 
 - nurse: わかる
 - matz: I’m not sure what benefits are there.
@@ -247,7 +247,7 @@ Issues
 - [[Feature #12752]](https://bugs.ruby-lang.org/issues/12752) Unpacking a value from a binary requires additional '.first'
 
 - matz: I would prefer keyword arguments but index:0 doesn’t much differ from .first
-- naruse: write”(‘C’)\[0\]” and let the interpreter optimize.
+- naruse: write”(‘C’)[0]” and let the interpreter optimize.
 - ko1: possibilities are:
 
 - new method
@@ -268,10 +268,10 @@ Issues
 
 - matz: reject. I can’t but read this being a String, not Symbol.
 
-- [[Feature #12770]](https://bugs.ruby-lang.org/issues/12770) Hash#left\_merge
+- [[Feature #12770]](https://bugs.ruby-lang.org/issues/12770) Hash#left_merge
 
-- akira: Rails has reverse\_merge.
-- naruse: the proposed functionality is not the identical to reverse\_merge.
+- akira: Rails has reverse_merge.
+- naruse: the proposed functionality is not the identical to reverse_merge.
 - ko1: chechk if hash entry is nil, is something new (not orignal behaviour of merge)
 
 - [[Feature #12760]](https://bugs.ruby-lang.org/issues/12760) Optional block argument for itself
@@ -305,7 +305,7 @@ Issues
 - ko1: maybe akr is interested in it.
 - shyouhei: introducing incompatibility only because it is inefficient is kind of weak.
 
-- [[Bug #9244]](https://bugs.ruby-lang.org/issues/9244) unexpected behaviour of 'require' when $LOAD\_PATH gets changed
+- [[Bug #9244]](https://bugs.ruby-lang.org/issues/9244) unexpected behaviour of 'require' when $LOAD_PATH gets changed
 
 - matz: I don’t immediately think it’s a bug.
 
@@ -329,7 +329,7 @@ Issues
 
 - [[Feature #12780]](https://bugs.ruby-lang.org/issues/12780) BigDecimal#round returns different types depending on argument
 
-- [[Feature #12813]](https://bugs.ruby-lang.org/issues/12813) Calling chunk\_while, slice\_after, slice\_before, slice\_when with no block
+- [[Feature #12813]](https://bugs.ruby-lang.org/issues/12813) Calling chunk_while, slice_after, slice_before, slice_when with no block
 
 - matz will think about it.
 

@@ -188,7 +188,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - nobu: then we should automatically assume text mode when newline: is specified.
 - matz: make it so,
 
-## [[Feature #13389]](https://bugs.ruby-lang.org/issues/13389) \[PATCH\] POP3 support timeout for TLS handshake
+## [[Feature #13389]](https://bugs.ruby-lang.org/issues/13389) [PATCH] POP3 support timeout for TLS handshake
 
 
 - hsbt: pop3 has no maintainer.
@@ -214,10 +214,10 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 
 - shyouhei: doc issue?
-- akr: we take negative signal or negative pids.  signal.c:rb\_f\_kill() has special codes for negative signals but not for negative pids.
+- akr: we take negative signal or negative pids.  signal.c:rb_f_kill() has special codes for negative signals but not for negative pids.
 - akr: what happens both signal and pid are negative?
 
-## [[Bug #13521]](https://bugs.ruby-lang.org/issues/13521) \[PATCH\] Add fallback for DNS resolver registry key on Wine
+## [[Bug #13521]](https://bugs.ruby-lang.org/issues/13521) [PATCH] Add fallback for DNS resolver registry key on Wine
 
 
 - nobu: 3rd party issue?
@@ -239,7 +239,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Bug #13556]](https://bugs.ruby-lang.org/issues/13556) MinGW readline Alt / Meta keys
 
-## [[Bug #13569]](https://bugs.ruby-lang.org/issues/13569) Windows - TestRubyOptions#test\_search - append to paths instead of replacing
+## [[Bug #13569]](https://bugs.ruby-lang.org/issues/13569) Windows - TestRubyOptions#test_search - append to paths instead of replacing
 
 ---
 - nobu: I cannot reproduce these problems.
@@ -249,7 +249,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 ## [[Bug #13564]](https://bugs.ruby-lang.org/issues/13564) Exception message management
 
 
-- matz I understand that it breaks encapsulation \_by theory\_, but in practice is it worth, for instance, duplicate every time?
+- matz I understand that it breaks encapsulation _by theory_, but in practice is it worth, for instance, duplicate every time?
 
 ## From attendees
 
@@ -257,14 +257,14 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 
 - should what happen for tainted string?
-- ko1: it seems there is string.c:fstring\_cmp.  Can’t we change this function?
+- ko1: it seems there is string.c:fstring_cmp.  Can’t we change this function?
 
-## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
+## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) [PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (shyouhei)
 
 
 - akr: Socket to DB would normally be pooled / shared among threads in normal web applications.  There shall be some locking mechanism to do so.
 
-## [[Feature #13583]](https://bugs.ruby-lang.org/issues/13583) Adding Hash#transform\_keys method (shyouhei)
+## [[Feature #13583]](https://bugs.ruby-lang.org/issues/13583) Adding Hash#transform_keys method (shyouhei)
 
 
 - matz: seems OK.
@@ -277,12 +277,12 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - ko1: I think scheme compilers tends to transpile into C.
 - matz: I like this idea itself.
 
-## [[Feature #13676]](https://bugs.ruby-lang.org/issues/13676) to\_s method is not overriden for Set (shyouhei)
+## [[Feature #13676]](https://bugs.ruby-lang.org/issues/13676) to_s method is not overriden for Set (shyouhei)
 
 
 - assign knu
 - shyouhei: what is wanted?
-- akr: seems the intension is to call to\_a internally
+- akr: seems the intension is to call to_a internally
 - knu: is it OK to call inspect?
 - matz: OK.
 
@@ -301,7 +301,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - bugs that are not assigned (shyouhei)
 
 
-## [[Bug #13586]](https://bugs.ruby-lang.org/issues/13586) Ruby hangs when accessing array which is modified in instance\_eval after Coverage.start
+## [[Bug #13586]](https://bugs.ruby-lang.org/issues/13586) Ruby hangs when accessing array which is modified in instance_eval after Coverage.start
 
 
 - assign nobu
@@ -349,7 +349,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - naruse: doc issue.
 
-## [[Bug #13660]](https://bugs.ruby-lang.org/issues/13660) rb\_str\_hash\_m discards bits from the hash
+## [[Bug #13660]](https://bugs.ruby-lang.org/issues/13660) rb_str_hash_m discards bits from the hash
 
 
 - akr: it’s intentional.
@@ -381,13 +381,13 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - Martin: Okay to me.
 - nobu: nobody disallows to write specs at the first place, do they?
 
-## [[Feature #13665]](https://bugs.ruby-lang.org/issues/13665) Before I added String#delete\_prefix. For symmetry, is it okay to commit String#delete\_suffix? (sonots)
+## [[Feature #13665]](https://bugs.ruby-lang.org/issues/13665) Before I added String#delete_prefix. For symmetry, is it okay to commit String#delete_suffix? (sonots)
 
 
 - shyouhei: should we add it?
 - matz: no objection.
 
-## [[Feature #13743]](https://bugs.ruby-lang.org/issues/13743) Support linking of files opened with O\_TMPFILE (mmasaki)
+## [[Feature #13743]](https://bugs.ruby-lang.org/issues/13743) Support linking of files opened with O_TMPFILE (mmasaki)
 
 
 - nobu: File.link or File#link?

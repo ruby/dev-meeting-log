@@ -110,10 +110,10 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 ## Carry-over from previous meeting(s)
 
-- [[Feature #10098]](https://bugs.ruby-lang.org/issues/10098) \[PATCH\] Timing-safe string comparison for OpenSSL::HMAC (shyouhei) status?
+- [[Feature #10098]](https://bugs.ruby-lang.org/issues/10098) [PATCH] Timing-safe string comparison for OpenSSL::HMAC (shyouhei) status?
 
 - naruse: I don’t feel comfortable to its naming.
-- naruse: I think CRYPTO\_memcmp() is a bad interface so I don’t want to introduce it.
+- naruse: I think CRYPTO_memcmp() is a bad interface so I don’t want to introduce it.
 
 - [[Feature #12591]](https://bugs.ruby-lang.org/issues/12591) Allow ruby to either catch misspelled "ailas" statements or, possibly more accurately, be more specific in what it reports as an error to the end-user (shyouhei)
 
@@ -123,7 +123,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 - shugo: matz please respond.
 
-- [[Feature #8643]](https://bugs.ruby-lang.org/issues/8643) Add Binding.from\_hash (shyouhei) conclusion?
+- [[Feature #8643]](https://bugs.ruby-lang.org/issues/8643) Add Binding.from_hash (shyouhei) conclusion?
 
 - ko1: I’ll ask seki-san.
 
@@ -144,15 +144,15 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 ## From attendees
 
-- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform\_values and its destructive version from ActiveSupport (eregon): we should discuss the name and maybe other methods like #map\_keys, #map\_pairs.
+- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform_values and its destructive version from ActiveSupport (eregon): we should discuss the name and maybe other methods like #map_keys, #map_pairs.
 
-- matz: I have a plan to have similar methods also on Enumerable.  In doing so, map\_pairs is problematic because “pairs” does not always fit (they might not be key-value pairs).  This prevents me to introduce map\_keys/values/pairs.
-- matz: OK, I accept #transform\_values.
+- matz: I have a plan to have similar methods also on Enumerable.  In doing so, map_pairs is problematic because “pairs” does not always fit (they might not be key-value pairs).  This prevents me to introduce map_keys/values/pairs.
+- matz: OK, I accept #transform_values.
 - naruse: Is this behavior is same as ActiveSupports’s?
 - mrkn: Yes.
-- eregon: #map\_values, keys, pairs is intuitive on Hash and has been asked many times. The Enumerable method to create a Hash is a different issue: the input might aready be key-value pairs in which case #to\_h is enough or it might not, in which case we might want a new method (build\_hash, associate ?).
+- eregon: #map_values, keys, pairs is intuitive on Hash and has been asked many times. The Enumerable method to create a Hash is a different issue: the input might aready be key-value pairs in which case #to_h is enough or it might not, in which case we might want a new method (build_hash, associate ?).
 
-- [[Bug #12689]](https://bugs.ruby-lang.org/issues/12689) Thread isolation of $~ and $\_ (eregon): Who can describe the semantics? Is the current sharing expected?
+- [[Bug #12689]](https://bugs.ruby-lang.org/issues/12689) Thread isolation of $~ and $_ (eregon): Who can describe the semantics? Is the current sharing expected?
 
 - ko1: I intentioanlly made VM this way, to behave simiarly with 1.8.x.
 - ko1: Toplevel $-variables are thread local, others like variables inside of methods are not. They are normal (local) variables, subject to be shared among threads.
@@ -197,33 +197,33 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - akr: Maybe we should allow http->https by default.
 - akr: Ideally it should be configurable wether redirections are allowed or not but that’s a bit too big.
 - Strawman proposal from Carsten Bormann: make configurable, e.g. as follows:
-    ALLOW\_REDIRECTS = { ["http:ftp"](http://ftp/) => true, "ftp:http" => true, ["http:https"](http://https/)
+    ALLOW_REDIRECTS = { ["http:ftp"](http://ftp/) => true, "ftp:http" => true, ["http:https"](http://https/)
     \=> true }
     s1 = uri1.scheme.downcase
     s2 = uri2.scheme.downcase
-    s1 == s2 || ALLOW\_REDIRECTS\["#{s1}:#{s2}"\]
+    s1 == s2 || ALLOW_REDIRECTS["#{s1}:#{s2}"]
 
-- [[Feature #7418]](https://bugs.ruby-lang.org/issues/7418) Kernel#used\_refinements (shugo)
+- [[Feature #7418]](https://bugs.ruby-lang.org/issues/7418) Kernel#used_refinements (shugo)
 
 - shyouhei: what is returned from this method?
 - shugo: list of refinements (modules).
 - shyouhei: is that useful?  What use case?
 - shugo: maybe for debugging purpose.
 - nobu: or from pry.
-- nobu: I don’t think it’s strange, given there are #included\_modules.
+- nobu: I don’t think it’s strange, given there are #included_modules.
 - akr: is its behaviour well-defined?
 - shugo: I think yes.
 - matz: Should this belong Kernel# or Module. ?
 - akr: I don’t think it should be a global function unless this is very frequently used.
-- matz: accept Module.used\_refinements
+- matz: accept Module.used_refinements
 
-- [[Feature #9451]](https://bugs.ruby-lang.org/issues/9451) Refinements and unary & (to\_proc) (shugo)
+- [[Feature #9451]](https://bugs.ruby-lang.org/issues/9451) Refinements and unary & (to_proc) (shugo)
 
 - matz: I started thinking this can be okay.
 - nobu: I doubt if we can do this.
-- akr: what about adding a primitive method Proc#to\_refined or something?
+- akr: what about adding a primitive method Proc#to_refined or something?
 - akr: is that possible?
-- matz: Object#method\_with\_refinements or something can be possible.
+- matz: Object#method_with_refinements or something can be possible.
 - matz: for &(proc), it is a good-to-have. if possible.
 
 - [[Bug #10103]](https://bugs.ruby-lang.org/issues/10103) Unable to refine class with CONSTANT (shugo)
@@ -233,7 +233,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - [[Bug #11182]](https://bugs.ruby-lang.org/issues/11182) Refinement with alias causes strange behavior (shugo)
 - [[Feature #11476]](https://bugs.ruby-lang.org/issues/11476) Methods defined in Refinements cannot be called via send (shugo)
 
-- matz: either add Object#refined\_send method or Object#method\_with\_refinements.
+- matz: either add Object#refined_send method or Object#method_with_refinements.
 - nobu: or to have a send-like operator.
 - ko1: what’s wrong with send being refinements-aware?
 - matz: how is it difficult to modify send?  I want that way.
@@ -251,7 +251,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 - duplicated.
 
-- [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance\_eval etc. (shugo)
+- [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance_eval etc. (shugo)
 
 - waiting for JRuby guys.
 - shugo: please nudge.
@@ -282,7 +282,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 - ko1: accept.
 
-- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set (nobu)
+- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand_path should resolve ~/ using /etc/passwd when HOME is not set (nobu)
 - [[Feature #12700]](https://bugs.ruby-lang.org/issues/12700) regexg heredoc support (nobu)
 
 - matz: rejected

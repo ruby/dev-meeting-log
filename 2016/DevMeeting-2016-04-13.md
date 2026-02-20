@@ -90,7 +90,7 @@ venue: TBD
 - example: [http://www.atdot.net/~ko1/diary/201502.html#d16](http://www.atdot.net/~ko1/diary/201502.html#d16)
 
 - naruse: I doubt the reporter’s true working code is
-    a, b = some\_method\_returning\_array\_or\_nil
+    a, b = some_method_returning_array_or_nil
     if a || b
     \# method returned an array (possibly empty)
     else
@@ -114,9 +114,9 @@ venue: TBD
 - assign to knu-san
 - naruse: mentioned to knu
 
-## [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged, Thread#report\_on\_exception= (eregon) Can we agree on the feature?
+## [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged, Thread#report_on_exception= (eregon) Can we agree on the feature?
 
-Matz is positive to provide Thread#report\_on\_exception, but negative to turning it on by default.
+Matz is positive to provide Thread#report_on_exception, but negative to turning it on by default.
 
 ## [[Feature #12026]](https://bugs.ruby-lang.org/issues/12026) Support warning processor
 
@@ -132,10 +132,10 @@ Matz is positive to provide Thread#report\_on\_exception, but negative to turnin
 - matz: Adding Array#sum is ok
 - Revert r54237 and optimization for Float
 
-## [[Bug #12271]](https://bugs.ruby-lang.org/issues/12271) Time#to\_time removes timezone information
+## [[Bug #12271]](https://bugs.ruby-lang.org/issues/12271) Time#to_time removes timezone information
 
 - nobu: It is a bug, so I commited
-- yui\_knk: ActiveSupport was testing this behavior (FYI)
+- yui_knk: ActiveSupport was testing this behavior (FYI)
 
 ## [[Feature #12157]](https://bugs.ruby-lang.org/issues/12157) Is the option hash necessary for future Rubys?
 
@@ -154,7 +154,7 @@ Matz is positive to provide Thread#report\_on\_exception, but negative to turnin
 
 - Assigned to appropriate maintainer.
 
-## [[Bug #12184]](https://bugs.ruby-lang.org/issues/12184) Cygwin LANG=ja\_JP.SJIS 環境でコマンドライン引数に日本語が渡せない
+## [[Bug #12184]](https://bugs.ruby-lang.org/issues/12184) Cygwin LANG=ja_JP.SJIS 環境でコマンドライン引数に日本語が渡せない
 
 - nobu: Cygwin only supports UTF-8
 - nobu(?) will reply something
@@ -181,6 +181,6 @@ Matz is positive to provide Thread#report\_on\_exception, but negative to turnin
 - note that @sorah is also a w.r-l.o editorial.
 - next action: @sorah will continue setting up.
 
-\[FYI\] Cookpad’s styleguide of the number of characters in a line:
+[FYI] Cookpad’s styleguide of the number of characters in a line:
 
 [https://github.com/cookpad/styleguide/blob/master/ruby.ja.md#line-columns](https://github.com/cookpad/styleguide/blob/master/ruby.ja.md#line-columns)

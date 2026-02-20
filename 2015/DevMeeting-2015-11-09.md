@@ -44,7 +44,7 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 2015/12/07 Mon 14:00 JST at SFDC
 
-## [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze\_string directive
+## [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze_string directive
 
 ## freeze dynamic string literal or not?
 
@@ -72,9 +72,9 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 - current implementation:
 
 - $ ./ruby --enable-frozen-string-literal -e 'p "" << "a"'
-    \-e:1:in \`<main>': can't modify frozen String (RuntimeError)
+    \-e:1:in `<main>': can't modify frozen String (RuntimeError)
 - $ ./ruby --enable-frozen-string-literal --enable-frozen-string-literal-debug -e 'p "" << "a"'
-    \-e:1:in \`<main>': can't modify frozen String, created at -e:1 (RuntimeError)
+    \-e:1:in `<main>': can't modify frozen String, created at -e:1 (RuntimeError)
 
 - How about enabling it by deafult? (ko1)
 
@@ -244,8 +244,8 @@ Matz: acceptable, but name is problem.
 Candidates:
 
 - dig
-- fetch\_in
-- assoc\_in (from Clojure): https://clojuredocs.org/clojure.core/assoc-in
+- fetch_in
+- assoc_in (from Clojure): https://clojuredocs.org/clojure.core/assoc-in
 
 Example:
 
@@ -253,11 +253,11 @@ h = {a: {b: {c: 1}}}
 
 h.dig(:a, :b, :c) #=> 1
 
-h.fetch\_in(:a, :b, :c) #=> 1
+h.fetch_in(:a, :b, :c) #=> 1
 
-Note that Matz doesn’t like &.\[\] (safe navigation operator with \[\]).
+Note that Matz doesn’t like &.[] (safe navigation operator with []).
 
-Nishijima-san mentioned past rejected proposals in Rails [\[1\]](https://groups.google.com/d/topic/rubyonrails-core/hww2nP8Zx4w/discussion) [\[2\]](https://twitter.com/a_matsuda/status/592849107762475009), they were rejected because such object in use cases should be wrapped with proper objects.
+Nishijima-san mentioned past rejected proposals in Rails [[1]](https://groups.google.com/d/topic/rubyonrails-core/hww2nP8Zx4w/discussion) [[2]](https://twitter.com/a_matsuda/status/592849107762475009), they were rejected because such object in use cases should be wrapped with proper objects.
 
 - pros
 
@@ -333,7 +333,7 @@ Matz accepted this feature. Pass to knu -san (maintainer).
 - ex) disabling future incompatibility warning is useful for production system.
 
 - disabling/catching warning in test is desireble
-- Rails has assert\_deprecated
+- Rails has assert_deprecated
 
 - cons
 
@@ -344,13 +344,13 @@ Matz accepted this feature. Pass to knu -san (maintainer).
 
 - no conclusion.
 
-## [[Feature #11653]](https://bugs.ruby-lang.org/issues/11653) Add to\_proc on Hash
+## [[Feature #11653]](https://bugs.ruby-lang.org/issues/11653) Add to_proc on Hash
 
 class Hash
 
- def to\_proc
+ def to_proc
 
- proc{|key| self\[key\]}
+ proc{|key| self[key]}
 
  end
 
@@ -362,11 +362,11 @@ h = {1 => 10,
 
  3 => 30}
 
-p \[1, 2, 3\].map(&h) #=> \[10, 20, 30\]
+p [1, 2, 3].map(&h) #=> [10, 20, 30]
 
 Matz: acceptable
 
-Matz: to\_proc is intended for & argument operator. So it is reasonable to add.
+Matz: to_proc is intended for & argument operator. So it is reasonable to add.
 
 ## [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? to check whether hash contains other hash
 
@@ -380,9 +380,9 @@ Method name candidates:
 
 - sorah: Set class?
 
-- actual\_hash\_include?
-- hash\_include?
-- super\_hash?
+- actual_hash_include?
+- hash_include?
+- super_hash?
 - \=~
 - sub === h
 - h > sub, sub < h Perl6 way
@@ -397,11 +397,11 @@ Current status: naming issue, select and reject are acceptable for Matz.
 
 - select and reject return Enumerator when no block is given
 
-- so args = \[\]; {...}.select(\*args) returns an Enumerator object
+- so args = []; {...}.select(\*args) returns an Enumerator object
 
-- Akr proposed the methods that accept only one Array arg for this case, not va\_arg.
+- Akr proposed the methods that accept only one Array arg for this case, not va_arg.
 
-- {...}.select(\[:k1, :k2, :k3\])
-- Hash accepts Array as a key, we can’t distingush Array keys and argument for the method. So we can’t support both form (accepting va\_arg and Array argument)
+- {...}.select([:k1, :k2, :k3])
+- Hash accepts Array as a key, we can’t distingush Array keys and argument for the method. So we can’t support both form (accepting va_arg and Array argument)
 
 no conclusion yet

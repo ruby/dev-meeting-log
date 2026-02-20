@@ -160,13 +160,13 @@ log: TBD
 - naruse: that is byteoffset here.
 - akr: byteindex may have problem for inter-codepoint index.
 
-- [[Bug #13105]](https://bugs.ruby-lang.org/issues/13105) String#to\_f and String#to\_r don't stop successive underscores (nobu)
+- [[Bug #13105]](https://bugs.ruby-lang.org/issues/13105) String#to_f and String#to_r don't stop successive underscores (nobu)
 
 - nobu: is this intentional?
 - ko1: ignore all underscores?
 - shyouhei: all? at the beginning?
-- ko1: \_ generates zero for to\_i.
-- akr: to\_i once allowed multiple underscores but prohibits now.
+- ko1: _ generates zero for to_i.
+- akr: to_i once allowed multiple underscores but prohibits now.
 - tal: ruby’s parser does not allow multiple undersocres as literals.
 - matz: these days other languages follow us like java, python.
 
@@ -185,7 +185,7 @@ log: TBD
 - ko1: we introduced ad-hoc change to lambda creation but that turned out to be a mistake, and observed here.
 - ko1: to be fixed in 2.5.
 
-- [[Feature #13095]](https://bugs.ruby-lang.org/issues/13095) \[PATCH\] io.c (rb\_f\_syscall): remove deprecation notice (shyouhei)
+- [[Feature #13095]](https://bugs.ruby-lang.org/issues/13095) [PATCH] io.c (rb_f_syscall): remove deprecation notice (shyouhei)
 
 - shyouhei: do we want to remove system calls?
 - akr: yes.
@@ -195,7 +195,7 @@ log: TBD
 - akr: current situation is too difficult to use properly, too easy to get used.
 - akr: my suggestion is to move it to ext/syscall.
 
-- [[Feature #13122]](https://bugs.ruby-lang.org/issues/13122) Special syntax for Hash#default\_proc (shyouhei)
+- [[Feature #13122]](https://bugs.ruby-lang.org/issues/13122) Special syntax for Hash#default_proc (shyouhei)
 
 - tal: not only default proc, but also there are default values.
 - matz: reject
@@ -240,7 +240,7 @@ log: TBD
 - naruse: use case?
 - tal: rsplit(...,2) can be generally written using regexp. ohter cases when we cant do this using regexp?
 
-- [[Feature #4532]](https://bugs.ruby-lang.org/issues/4532) \[PATCH\] add IO#pread and IO#pwrite methods (shyouhei)
+- [[Feature #4532]](https://bugs.ruby-lang.org/issues/4532) [PATCH] add IO#pread and IO#pwrite methods (shyouhei)
 
 - akr: portability concern? This is POSIX but added recently.
 - shyouhei: POSIX issue 5
@@ -258,12 +258,12 @@ log: TBD
 
 ## From attendees
 
-- \[Bug #13304\] public function rb\_thread\_fd\_close is removed at r57422 (naruse)
+- \[Bug #13304\] public function rb_thread_fd_close is removed at r57422 (naruse)
 
 - naruse: there are usages for this function.
 - akr: why do you want to remove this?
-- nobu: this is not a function to close a fd (bad naming). rb\_io\_close shall be used instead.
-- ko1: then why not just let it an alias of rb\_io\_close?
+- nobu: this is not a function to close a fd (bad naming). rb_io_close shall be used instead.
+- ko1: then why not just let it an alias of rb_io_close?
 - nobu: shuld we deprecate?
 - naruse: no. you can’t deprecate without transition path.
 - conclusion: delete DEPRECATE
@@ -277,8 +277,8 @@ log: TBD
 - this week's "assign whom?" section (shyouhei)
 
 - [[Bug #13271]](https://bugs.ruby-lang.org/issues/13271) Clarifications on refinement spec
-- [[Bug #13269]](https://bugs.ruby-lang.org/issues/13269) test/readline/test\_readline.rb and mingw
-- [[Bug #13298]](https://bugs.ruby-lang.org/issues/13298) mingw SEGV TestEnumerable#test\_callcc
+- [[Bug #13269]](https://bugs.ruby-lang.org/issues/13269) test/readline/test_readline.rb and mingw
+- [[Bug #13298]](https://bugs.ruby-lang.org/issues/13298) mingw SEGV TestEnumerable#test_callcc
 - [[Bug #13280]](https://bugs.ruby-lang.org/issues/13280) net/ftp: Putbinaryfile (on Windows) requires blocksize equal to file size
 - [[Bug #13276]](https://bugs.ruby-lang.org/issues/13276) Dir.glob returns empty array when OS has no more file handles (expected exception)
 
@@ -286,18 +286,18 @@ log: TBD
 - matz: I don’t think so.
 
 - [[Bug #13284]](https://bugs.ruby-lang.org/issues/13284) IA64 ruby 2.4 miniruby segfault
-- [[Bug #13286]](https://bugs.ruby-lang.org/issues/13286) Segfault when using rb\_debug\_inspector\_open / rb\_debug\_inspector\_frame\_binding\_get with Fiddle, but not when directly from C extension
+- [[Bug #13286]](https://bugs.ruby-lang.org/issues/13286) Segfault when using rb_debug_inspector_open / rb_debug_inspector_frame_binding_get with Fiddle, but not when directly from C extension
 - [[Bug #13305]](https://bugs.ruby-lang.org/issues/13305) Occasional segfaults after defining methods while running coverage
 - [[Bug #13307]](https://bugs.ruby-lang.org/issues/13307) Changing scheme from http to https for the URI does not change the port number
 
-- [[Bug #13282]](https://bugs.ruby-lang.org/issues/13282) opt\_str\_freeze does not always dedupe (shyouhei)
+- [[Bug #13282]](https://bugs.ruby-lang.org/issues/13282) opt_str_freeze does not always dedupe (shyouhei)
 
-- shyouhei: this is about power\_assert
+- shyouhei: this is about power_assert
 - akr: what’s wrong with it?
 - shyouhei: seems tracepoint?
 - ko1: don’t know the exact reason.
 
-- [[Feature #13295]](https://bugs.ruby-lang.org/issues/13295) \[PATCH\] compile.c: apply opt\_str\_freeze to String#-@ (uminus) (shyohei) seems OK to me as well
+- [[Feature #13295]](https://bugs.ruby-lang.org/issues/13295) [PATCH] compile.c: apply opt_str_freeze to String#-@ (uminus) (shyohei) seems OK to me as well
 
 - ko1: this is buggy.  Can’t redefine \-@ in this patch.
 
@@ -305,9 +305,9 @@ log: TBD
 
 - nobu: #bury has already been rejected, no update since then.
 
-- [[Misc #13283]](https://bugs.ruby-lang.org/issues/13283) Disable \`&' interpreted as argument prefix warning when passing symbol to Enumerable#map (duerst)
+- [[Misc #13283]](https://bugs.ruby-lang.org/issues/13283) Disable `&' interpreted as argument prefix warning when passing symbol to Enumerable#map (duerst)
 
-- duerst: the warning is older than Symbol#to\_proc
+- duerst: the warning is older than Symbol#to_proc
 - shyouhei: why not suppress the warning for symbol literals, not for variables
 - nobu: lexer / parser gets complicated that case.
 - nobu: is this a warning shown everywhere? -> only when \-w
@@ -318,7 +318,7 @@ log: TBD
 
 - matz: I don’t understand the usage.  Let me ask the OP.
 
-- [[Feature #13077]](https://bugs.ruby-lang.org/issues/13077) \[PATCH\] introduce String#fstring method (ko1) some discussions on twitter they don't like \-'str' notation.
+- [[Feature #13077]](https://bugs.ruby-lang.org/issues/13077) [PATCH] introduce String#fstring method (ko1) some discussions on twitter they don't like \-'str' notation.
 
 - shyouhei: we can add other stylish names later. \-@ is “for the time being”.
 - matz: if you have opinions, have a separate issue.

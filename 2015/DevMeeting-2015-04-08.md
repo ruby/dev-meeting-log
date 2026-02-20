@@ -80,7 +80,7 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 - (3) cache directory content before (make file list file)
 - (4) zip (or other format) archive
 
-- Compatibility problem (\_\_FILE\_\_, open(\_\_FILE\_\_))
+- Compatibility problem (__FILE__, open(__FILE__))
 
 - AOT compile
 
@@ -95,7 +95,7 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - grep -v (sora) -> make a ticket
 
-- grep\_v(re)
+- grep_v(re)
 - grep!(re) (naruse)
 - grep(-/re/) (Regexp#-@, Regexp#~@) (nobu)
 - Regexp#~@(nobu)
@@ -104,7 +104,7 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - [https://bugs.ruby-lang.org/issues/8579](https://bugs.ruby-lang.org/issues/8579)
 - https://bugs.ruby-lang.org/issues/8976
-- rdoc uses force\_encoding where the string is not created
+- rdoc uses force_encoding where the string is not created
 - matz don’t like pragma
 
 - gemify
@@ -158,7 +158,7 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 (ko1) no problem except the name and “include ObjectSpace”.
 
-## [GitHub #858](https://github.com/ruby/ruby/pull/858) Add a RUBY\_ENGINE\_VERSION constant (tenderlove)
+## [GitHub #858](https://github.com/ruby/ruby/pull/858) Add a RUBY_ENGINE_VERSION constant (tenderlove)
 
 (matz) approved.
 

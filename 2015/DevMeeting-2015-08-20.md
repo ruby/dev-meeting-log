@@ -40,11 +40,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 Attendee: akr, ayumin, hsbt, ko1, matz, naruse, nobu, kosaki, usa, yuki, amatsuda
 
-# did\_you\_mean gem (Yuki Nishijima)
+# did_you_mean gem (Yuki Nishijima)
 
-- Naming: did\_you\_mean or correctable?
+- Naming: did_you_mean or correctable?
 
-- did\_you\_mean is acceptable, but it’s determined by what feature set is bundled.
+- did_you_mean is acceptable, but it’s determined by what feature set is bundled.
 
 - Bundled gem or stdlib? It's going to be reuiqred in prelude (Yuki still doesn't know what it is)
 
@@ -58,14 +58,14 @@ Attendee: akr, ayumin, hsbt, ko1, matz, naruse, nobu, kosaki, usa, yuki, amatsud
 - Why want to disable in production? -> Because it makes rails slow.
 - Why slow? -> Rails parses the message of NameError exception for rails’ autoload feature.
 
-- \`time ruby --disable-gem -e1\`: 0.061s
-- \`time ruby -e1\`: 0.083s
-- \`time ruby -rdid\_you\_mean -e1\`: 0.109s
-- (ruby 2.2.2p95 (2015-04-13 revision 50295) \[x86\_64-darwin14\])
-- Like --disable-gem, we can extend --disable-did\_you\_mean
+- `time ruby --disable-gem -e1`: 0.061s
+- `time ruby -e1`: 0.083s
+- `time ruby -rdid_you_mean -e1`: 0.109s
+- (ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14])
+- Like --disable-gem, we can extend --disable-did_you_mean
 
 - \-> We should change Rails, and we should offer a new API to take the qualified name of the Class/Module.
-- Current Rails parses error message like “NameError: undefined local variable or method \`foo' for main:Object”
+- Current Rails parses error message like “NameError: undefined local variable or method `foo' for main:Object”
 
 - Use NameError#name
 - NameError#name doesn’t include parent modeule names which is included in the error message. We need a new API including this.
@@ -73,18 +73,18 @@ Attendee: akr, ayumin, hsbt, ko1, matz, naruse, nobu, kosaki, usa, yuki, amatsud
 
 - More succinct message.  Delete two empty line and indent.
 
-% ruby -rdid\_you\_mean -e '
+% ruby -rdid_you_mean -e '
 class C
  def bar
  end
 end
 C.new.baz
 '
-\-e:6:in \`<main>': undefined method \`baz' for #<C:0x007f790863e880> (NoMethodError)
+\-e:6:in `<main>': undefined method `baz' for #<C:0x007f790863e880> (NoMethodError)
 
    Did you mean? #bar
 
-zsh: exit 1     /home/akr/alias/ruby -rdid\_you\_mean -e
+zsh: exit 1     /home/akr/alias/ruby -rdid_you_mean -e
 
 % ocaml
        OCaml version 4.01.0
@@ -113,7 +113,7 @@ empty line is not needed because lines of display is essential resource. indent 
 
 - How to disable this?
 
-- Use \`--disable=’ commandline option.
+- Use `--disable=’ commandline option.
 - Need to implement API in ruby level to take what features are disabled.
 
 - global method? global variable? constant?
@@ -162,7 +162,7 @@ Default of the status of String Literal will be frozen from Ruby 3.0.
 - it has been rejected before 2.2 by matz
 - it has been rejected again early 2.3 development by matz
 - amatsuda: tired of seeing pull requests adding “..”.freeze here and there. This is ugly.
-- amatsuda: please reconsider akr’s magic comment solution \[[https://bugs.ruby-lang.org/issues/8976](https://bugs.ruby-lang.org/issues/8976)\]
+- amatsuda: please reconsider akr’s magic comment solution [[https://bugs.ruby-lang.org/issues/8976](https://bugs.ruby-lang.org/issues/8976)]
 - matz: accepted. As a migration path, magic comment is reasonable. naming is still problem.
 
 - command line option to frozen string literal by default
@@ -175,12 +175,12 @@ Default of the status of String Literal will be frozen from Ruby 3.0.
 - String.new(“...”) is preferred over “...”.dup.
 - magic comment candidates
 
-- freeze\_string: true \[[https://bugs.ruby-lang.org/issues/8976](https://bugs.ruby-lang.org/issues/8976)\]
-- freeze\_string\_literal: true
-- frozen\_string\_literal: true \[prefered by matz\]
-- freezing\_string\_literal: true
-- mutable\_string\_literal: false
-- immutable: string \[[https://github.com/ruby/ruby/pull/487](https://github.com/ruby/ruby/pull/487)\]
+- freeze_string: true [[https://bugs.ruby-lang.org/issues/8976](https://bugs.ruby-lang.org/issues/8976)]
+- freeze_string_literal: true
+- frozen_string_literal: true [prefered by matz]
+- freezing_string_literal: true
+- mutable_string_literal: false
+- immutable: string [[https://github.com/ruby/ruby/pull/487](https://github.com/ruby/ruby/pull/487)]
 
 - command line option candidates
 

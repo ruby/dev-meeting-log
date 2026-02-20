@@ -88,38 +88,38 @@ Nothing.
 
 ## Topics
 
-- [\[Misc #14632\]](https://bugs.ruby-lang.org/issues/14632) [git.ruby-lang.org](http://git.ruby-lang.org/) (k0kubun)
+- [[Misc #14632]](https://bugs.ruby-lang.org/issues/14632) [git.ruby-lang.org](http://git.ruby-lang.org/) (k0kubun)
 
-- RUBY\_REVISION should be full-length hash value
+- RUBY_REVISION should be full-length hash value
 
-- [\[Bug #15745\]](https://bugs.ruby-lang.org/issues/15745) There is no symmetry in the beginless range and the endless range using Range#inspect (koic)(1..).inspect      #=> "1.."
+- [[Bug #15745]](https://bugs.ruby-lang.org/issues/15745) There is no symmetry in the beginless range and the endless range using Range#inspect (koic)(1..).inspect      #=> "1.."
 - (..5).inspect      #=> "..5"
 - (nil..nil).inspect #=> "nil..nil"
 
-- [\[Feature #14915\]](https://bugs.ruby-lang.org/issues/14915) Deprecate String#crypt (jeremyevans0)
+- [[Feature #14915]](https://bugs.ruby-lang.org/issues/14915) Deprecate String#crypt (jeremyevans0)
 
 - There are a few committers against the removal. They will reply into the ticket.
 - Jeremy Evans committer? -> “Go ahead” by matz ([https://bugs.ruby-lang.org/issues/15853#change-78060](https://bugs.ruby-lang.org/issues/15853#change-78060), [https://bugs.ruby-lang.org/issues/15839#change-78087](https://bugs.ruby-lang.org/issues/15839#change-78087))
 
-- [\[Feature #15765\]](https://bugs.ruby-lang.org/issues/15765) \[PATCH\] Module#name without global constant search (alanwu)
+- [[Feature #15765]](https://bugs.ruby-lang.org/issues/15765) [PATCH] Module#name without global constant search (alanwu)
 
 - Matz: leaf to nobu.
 - Nobu: Will check and merge.
 
-- [\[Feature #15772\]](https://bugs.ruby-lang.org/issues/15772) Proposal: Add Time#ceil (osyo)
+- [[Feature #15772]](https://bugs.ruby-lang.org/issues/15772) Proposal: Add Time#ceil (osyo)
 
 - Shyouhei: Use case?
 - Matz: Okay!
 
-- [\[Feature #13645\]](https://bugs.ruby-lang.org/issues/13645) Syntactic sugar for indexing when using the safe navigation operator (osyo)
+- [[Feature #13645]](https://bugs.ruby-lang.org/issues/13645) Syntactic sugar for indexing when using the safe navigation operator (osyo)
 
 - Matz: the use case looks artificial. Reject once.
 
-- [\[Misc #15802\]](https://bugs.ruby-lang.org/issues/15802) \[PATCH\] Reduce the minimum string buffer size from 127 to 63 bytes (methodmissing)
+- [[Misc #15802]](https://bugs.ruby-lang.org/issues/15802) [PATCH] Reduce the minimum string buffer size from 127 to 63 bytes (methodmissing)
 
 - ko1 will check.
 
-- [\[Feature #14736\]](https://bugs.ruby-lang.org/issues/14736) Thread selector for flexible cooperative fiber based concurrency (ioquatix)
+- [[Feature #14736]](https://bugs.ruby-lang.org/issues/14736) Thread selector for flexible cooperative fiber based concurrency (ioquatix)
 
 - (ko1, nobu, and matz talks)
 - Matz: I’m worry about the performance, it would be difficult to accept the patch as is. I’m not positive to add a hook to IO because it will bring a big overhead when buffered. I prefer auto-fiber to using traditional IOs with a hook.
@@ -127,44 +127,44 @@ Nothing.
 - Matz: Will reject.
 - Ko1: I’m unsure what design is best, but I think eregon wrote [a good comment](https://bugs.ruby-lang.org/issues/14736#change-77879). It would be good that the proposal is much simpler than autofiber.
 
-- [\[Feature #15323\]](https://bugs.ruby-lang.org/issues/15323) \[PATCH\] Proposal: Add Enumerable#filter\_map (greggzst)
+- [[Feature #15323]](https://bugs.ruby-lang.org/issues/15323) [PATCH] Proposal: Add Enumerable#filter_map (greggzst)
 
 - Matz will reply.
 
-- [\[Misc #15843\]](https://bugs.ruby-lang.org/issues/15843) Make “trunk” a symbolic-ref of “master” on [git.ruby-lang.org](http://git.ruby-lang.org/) (k0kubun)
+- [[Misc #15843]](https://bugs.ruby-lang.org/issues/15843) Make “trunk” a symbolic-ref of “master” on [git.ruby-lang.org](http://git.ruby-lang.org/) (k0kubun)
 
 - Go ahead?
 - Nobu: Why “master” is primary and “trunk” is secondary.
 - Akr: “Out of scope (for a short term)” is a trap! “accept” may mean accept for long term?
 
-- [\[Feature #15778\]](https://bugs.ruby-lang.org/issues/15778) Expose an API to pry-open the stack frames in Ruby (eregon)
+- [[Feature #15778]](https://bugs.ruby-lang.org/issues/15778) Expose an API to pry-open the stack frames in Ruby (eregon)
 
-- Ko1: I hate Binding.of\_caller.
+- Ko1: I hate Binding.of_caller.
 - Shyouhei: How about requiring require "something" to communicate “should only be used for debugging”?
 
-- [\[Bug #7300\]](https://bugs.ruby-lang.org/issues/7300) Hash#\[\] の挙動が 1.9.3 と異なっている (hsbt)
+- [[Bug #7300]](https://bugs.ruby-lang.org/issues/7300) Hash#[] の挙動が 1.9.3 と異なっている (hsbt)
 
 - Mame: I’d like to merge it.
 
-- [\[Feature #14844\]](https://bugs.ruby-lang.org/issues/14844) Future of RubyVM::AST?
+- [[Feature #14844]](https://bugs.ruby-lang.org/issues/14844) Future of RubyVM::AST?
 
 - What can we do about this? The current situation is confusing for everyone, the API sounds “blessed” by being in core but it’s actually experimental and unstable. Can we document it as clearly as possible when this API should be used? Could we improve the API so it’s less fragile to parser changes and could be reasonably implemented on other Ruby implementations?
 - “Add a document to warn the result of this API may (easily) change in future”
 
-- [\[Feature #15863\]](https://bugs.ruby-lang.org/issues/15863) Add Hash#slice! and ENV.slice!(bogdanvlviv)
-- [\[Feature #15831\]](https://bugs.ruby-lang.org/issues/15831) Add Array#extract, Hash#extract, and ENV.extract (bogdanvlviv)
+- [[Feature #15863]](https://bugs.ruby-lang.org/issues/15863) Add Hash#slice! and ENV.slice!(bogdanvlviv)
+- [[Feature #15831]](https://bugs.ruby-lang.org/issues/15831) Add Array#extract, Hash#extract, and ENV.extract (bogdanvlviv)
 
 - Matz: negative. (Sorry I missed to log)
 
-- [\[Feature #15864\]](https://bugs.ruby-lang.org/issues/15864) Proposal: Add methods to determine if it is an infinite range
+- [[Feature #15864]](https://bugs.ruby-lang.org/issues/15864) Proposal: Add methods to determine if it is an infinite range
     (osyo)
 
 - Matz: negative.
 
-- [\[Feature #15865\]](https://bugs.ruby-lang.org/issues/15865) <expr> in <pattern> expression (mame)
+- [[Feature #15865]](https://bugs.ruby-lang.org/issues/15865) <expr> in <pattern> expression (mame)
 
 - Matz: positive.
 
-- [\[Feature #15281\]](https://bugs.ruby-lang.org/issues/15281) Speed up Set#intersect with size check. (tenderlove)
+- [[Feature #15281]](https://bugs.ruby-lang.org/issues/15281) Speed up Set#intersect with size check. (tenderlove)
 
 - Knu will check.

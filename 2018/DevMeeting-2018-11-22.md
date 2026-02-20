@@ -135,7 +135,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - Matz: why not Enumerable#chain ?
 - Knu: definitely agreed!
 
-## \[[Bug #14127](https://bugs.ruby-lang.org/issues/14127)\] generating UTF-16LE encoded file without BOM (nobu)
+## [[Bug #14127](https://bugs.ruby-lang.org/issues/14127)] generating UTF-16LE encoded file without BOM (nobu)
 
 
 - Although this is not a bug of csv.rb, I'd suggest to enable "bom|" flag when writing instead. [https://github.com/nobu/ruby/tree/bug/14127-bom-header](https://github.com/nobu/ruby/tree/bug/14127-bom-header)
@@ -147,7 +147,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - Knu: We need a concrete specification first as to when a BOM is written.
 - Ko1: file a new ticket for this.
 
-## [[Feature #15230]](https://bugs.ruby-lang.org/issues/15230) RubyVM.resolve\_feature\_path (mame)
+## [[Feature #15230]](https://bugs.ruby-lang.org/issues/15230) RubyVM.resolve_feature_path (mame)
 
 
 - I'd like this feature to investigate what will be loaded by require(feature).
@@ -285,27 +285,27 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - Usa: for 3x3?
 - Matz: may not make it 3x faster.
 
-## [[Feature #15327]](https://bugs.ruby-lang.org/issues/15327) Proposal: Enable refinements to #respond\_to? (osyo)
+## [[Feature #15327]](https://bugs.ruby-lang.org/issues/15327) Proposal: Enable refinements to #respond_to? (osyo)
 
 
 - Matz: Mmm.
-- Ko1: when respond\_to says false, we can send that method anyways?
+- Ko1: when respond_to says false, we can send that method anyways?
 - Usa: yes.
-- Knu: there are implicit and explicit respond\_to. Is it for explicit one?
+- Knu: there are implicit and explicit respond_to. Is it for explicit one?
 - Usa: yes.
-- Matz: respond\_to does not interact with refinements right now is/was intentional because refinements are file-scope; it should be immediately obvious what method is callable or not at looking at the source code.
-- Ko1: what about respond\_to\_missing?
-- Matz: redefining respond\_to\_missing at a refinements should be against local rebinding.
+- Matz: respond_to does not interact with refinements right now is/was intentional because refinements are file-scope; it should be immediately obvious what method is callable or not at looking at the source code.
+- Ko1: what about respond_to_missing?
+- Matz: redefining respond_to_missing at a refinements should be against local rebinding.
 - Shyouhei: but I think we can undef a method inside of a refinement.
 - (everybody started thinking...)
 - Ko1: OK, let’s not think about it for a while.
 
-## [[Feature #15326]](https://bugs.ruby-lang.org/issues/15326) Proposal: Enable refinements to #public\_send (osyo)
+## [[Feature #15326]](https://bugs.ruby-lang.org/issues/15326) Proposal: Enable refinements to #public_send (osyo)
 
 
 - Matz: this one makes sense. Accepted.
 
-## [[Feature #15114]](https://bugs.ruby-lang.org/issues/15114) Symbol#to\_proc does not work with refinements? (osyo)
+## [[Feature #15114]](https://bugs.ruby-lang.org/issues/15114) Symbol#to_proc does not work with refinements? (osyo)
 
 
 - I want to more refinements!
@@ -313,13 +313,13 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - Matz: sounds like a bug?
 - assign nobu
 
-## [[Feature #15330]](https://bugs.ruby-lang.org/issues/15330) Proposal: autoload\_relative (marcandre)
+## [[Feature #15330]](https://bugs.ruby-lang.org/issues/15330) Proposal: autoload_relative (marcandre)
 
 
 - This feature is actually more useful than autoload and should be added to 2.6
 
 - Matz: why people love autoload, why…?
 - Naruse: What is new in this issue is not why, but how much people love autoloads.
-- Ko1: Marc-Andre recently changed requires in stdlib to require\_relative.  I guess it is natural for him to think about autoloads next.
-- Shyouhei: why not make a new method called autoload\_relative, which is an alias of require\_relative? :trollface:
+- Ko1: Marc-Andre recently changed requires in stdlib to require_relative.  I guess it is natural for him to think about autoloads next.
+- Shyouhei: why not make a new method called autoload_relative, which is an alias of require_relative? :trollface:
 - Knu: It is understandable to me that this may cover most popular use cases of autoload.

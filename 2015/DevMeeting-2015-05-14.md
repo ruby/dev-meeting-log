@@ -47,7 +47,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 # Log
 
-Attendee: ko1,ayumin,akr,hsbt,naruse; matz,sora\_h
+Attendee: ko1,ayumin,akr,hsbt,naruse; matz,sora_h
 
 ## [[Feature #11084]](https://bugs.ruby-lang.org/issues/11084) Use rb-readline instead of ext/readline
 
@@ -97,7 +97,7 @@ hsbt: Not sure.
 
 Matz: I accept bundled gem.
 
-## [[Feature #11082]](https://bugs.ruby-lang.org/issues/11082) Remove condition of RUBY\_VERSION < 1.9 (hsbt)
+## [[Feature #11082]](https://bugs.ruby-lang.org/issues/11082) Remove condition of RUBY_VERSION < 1.9 (hsbt)
 
 hsbt: Title is wrong. Not < 1.9, but <= 1.9.
 
@@ -123,11 +123,11 @@ ayumin: Positive because using newer features helps to evaluate such features.
 
 ko1: Use newer features with keeping compatibility.
 
-## [[Feature #11049]](https://bugs.ruby-lang.org/issues/11049) Enumerable#grep\_v (inversed grep) (sorah)
+## [[Feature #11049]](https://bugs.ruby-lang.org/issues/11049) Enumerable#grep_v (inversed grep) (sorah)
 
-matz: are you okay to use the name “grep\_v”
+matz: are you okay to use the name “grep_v”
 
-sora\_h: Personally, grep\_v is acceptable.
+sora_h: Personally, grep_v is acceptable.
 
 matz: Other languages?
 
@@ -137,13 +137,13 @@ ayumin: keyword parameter ?
 
 matz: grep(pattern, inverse: true) ?
 
-matz: but grep\_v() is okay. -> accept on ticket.
+matz: but grep_v() is okay. -> accept on ticket.
 
 naruse: How about reject(pattern) ?
 
 ## [[Bug #10967]](https://bugs.ruby-lang.org/issues/10967) Remove "private attribute?" warning (zzak)
 
-akr: self.private\_something\_method is accepted recently.
+akr: self.private_something_method is accepted recently.
 
 naruse: test can find problem, so warning is not needed.
 
@@ -240,35 +240,35 @@ end
 
 Matz: positive
 
-# \[ruby-list:50135\] \[ANN\] Enumerator::Parallel v0.1.1
+# [ruby-list:50135] [ANN] Enumerator::Parallel v0.1.1
 
 Matz: how about to introduce it as bundled gem?
 
 ---
 
-# \[ruby-list:50120\] \[ANN\] Kasen(下線) v0.1.1
+# [ruby-list:50120] [ANN] Kasen(下線) v0.1.1
 
 Matz: I like this idea.
 
 Which is favorite?
 
-\[1, 2, 3\].map { |n| (n + 1).to\_s }
+[1, 2, 3].map { |n| (n + 1).to_s }
 
-\[1, 2, 3\].map &(\_ + 1).to\_s     # Kasen enables
+[1, 2, 3].map &(_ + 1).to_s     # Kasen enables
 
-\[1, 2, 3\].map { ($1 + 1).to\_s } # use #11141
+[1, 2, 3].map { ($1 + 1).to_s } # use #11141
 
-\[1, 2, 3\].map { (@1 + 1).to\_s } # use #11141
+[1, 2, 3].map { (@1 + 1).to_s } # use #11141
 
-\[1, 2, 3\].map { (\_ + 1).to\_s }  # use #11141
+[1, 2, 3].map { (_ + 1).to_s }  # use #11141
 
-\[1, 2, 3\].map (\_ + 1).to\_s
+[1, 2, 3].map (_ + 1).to_s
 
-\[1, 2, 3\].map &:+.curry{1}
+[1, 2, 3].map &:+.curry{1}
 
-\[1, 2, 3\].map &(+ 1)
+[1, 2, 3].map &(+ 1)
 
-(\[1, 2, 3\].map + 1).to\_s.to\_a
+([1, 2, 3].map + 1).to_s.to_a
 
 Next action: ko1 will add discussion into 11141.
 
@@ -291,19 +291,19 @@ other idea is providing feature of binding. However, it needs long strokes.
 
 a = b = 1
 
-local\_variables #=> \[:a, :b\]
+local_variables #=> [:a, :b]
 
-local\_variables #=> {:a => 1, :b => 1}
+local_variables #=> {:a => 1, :b => 1}
 
-local\_variables\_set #=> {:a => 1, :b => 1}
+local_variables_set #=> {:a => 1, :b => 1}
 
-local\_variables\_get(%i(a b)) #=> {:a => 1, :b => 1}
+local_variables_get(%i(a b)) #=> {:a => 1, :b => 1}
 
-Binding#local\_variable\_set(:a, 1)
+Binding#local_variable_set(:a, 1)
 
 {a, b, c}
 
-binding.local\_variables(%i(a b c))
+binding.local_variables(%i(a b c))
 
 ## Next meeting
 

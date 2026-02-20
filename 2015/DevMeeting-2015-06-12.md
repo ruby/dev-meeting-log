@@ -55,7 +55,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 Attendee: akr, hsbt, ko1, matz, naruse, nobu
 
-## [[Feature #7148]](https://bugs.ruby-lang.org/issues/7148) Improved Tempfile w/o DelegateClass (glass\_saga)
+## [[Feature #7148]](https://bugs.ruby-lang.org/issues/7148) Improved Tempfile w/o DelegateClass (glass_saga)
 
 matz: I have some issue on this proposal. Tempfile should not be a subclass of File. It is different concept from File. I’m okay to implement Tempfile without delegator. However, I’m not sure it implemeted with subclass of File.
 
@@ -63,7 +63,7 @@ File is a wrapper of fd. Tempfile is not only a wrapper but handle other informa
 
 Action: Matz will reply this issue.
 
-## [[Feature #11218]](https://bugs.ruby-lang.org/issues/11218) File.open FILE\_SHARE\_DELETE (naruse)
+## [[Feature #11218]](https://bugs.ruby-lang.org/issues/11218) File.open FILE_SHARE_DELETE (naruse)
 
 naruse: (explain about this proposal). This proposal is only for Windows.
 
@@ -77,15 +77,15 @@ matz: How about providing Interger constant?
 
 akr: How about larger than 32bit integer
 
-akr: use O\_SHARE\_DELETE
+akr: use O_SHARE_DELETE
 
 matz: integer is preferrable, symbol is also ok
 
-naruse: I need modestr2modeint for add the new integer flag (rb\_io\_modestr\_oflags)
+naruse: I need modestr2modeint for add the new integer flag (rb_io_modestr_oflags)
 
 Action: Discuss on ticket
 
-## [[Feature #11251]](https://bugs.ruby-lang.org/issues/11251) pthread\_set\_name\_np (naruse)
+## [[Feature #11251]](https://bugs.ruby-lang.org/issues/11251) pthread_set_name_np (naruse)
 
 ko1: Interface?
 
@@ -109,15 +109,15 @@ matz: $2 and $3 can be removed.
 
 Action: Matz will reply on ticket. hsbt-san will try implent.
 
-## [[Feature #10730]](https://bugs.ruby-lang.org/issues/10730) Implement Array#bsearch\_index(hsbt)
+## [[Feature #10730]](https://bugs.ruby-lang.org/issues/10730) Implement Array#bsearch_index(hsbt)
 
 matz: go ahead.
 
 Action: Matz will reply. nobu will merge.
 
-## [[Feature #10017]](https://bugs.ruby-lang.org/issues/10017) Add Hash#values\_at!(hsbt)
+## [[Feature #10017]](https://bugs.ruby-lang.org/issues/10017) Add Hash#values_at!(hsbt)
 
-matz: approved (Hash#fetch\_values).
+matz: approved (Hash#fetch_values).
 
 Action: Matz will reply. Nobu will merge it.
 
@@ -129,17 +129,17 @@ Action: Matz will reply.
 
 Action: continue to discuss how to implement (nobu)
 
-## \[Feature #11215\] pack/unpack for (u)intptr\_t
+## \[Feature #11215\] pack/unpack for (u)intptr_t
 
 Action: Matz will approve it.
 
-## \[Feature #10769\] Negative counterpart to Enumerable#slice\_when
+## \[Feature #10769\] Negative counterpart to Enumerable#slice_when
 
-## \[Feature #11253\] rb\_io\_modestr\_oflags for Ruby API
+## \[Feature #11253\] rb_io_modestr_oflags for Ruby API
 
 matz: add keyword argument “flags”, which is OR-ed with 2nd argument mode.
 
-\[Feature #11158\] Introduce a Symbol.count API as a more efficient alternative to Symbol.all\_symbols.size
+\[Feature #11158\] Introduce a Symbol.count API as a more efficient alternative to Symbol.all_symbols.size
 
 naruse: If they use this for metrics, it should show 3 different count for each symbol types
 

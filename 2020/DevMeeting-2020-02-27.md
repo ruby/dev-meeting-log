@@ -201,7 +201,7 @@ bar.case? # => false
 shyouhei: Want to see actual use cases
 nobu: no-argument case should raise an exception
 mame: I like the feature, though its name is very arguable
-akr: code search of ‘\]\.include\?’ finds many example
+akr: code search of ‘]\.include\?’ finds many example
 Discussion:
 matz: I understand the idea and it is a bit helpful, but don’t understand how useful it is
 mame: I like the word order like in?

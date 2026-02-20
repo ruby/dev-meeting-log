@@ -140,7 +140,7 @@ Place: Speee Inc. Headquarter
 
 Sign-up: https://ruby.connpass.com/event/55487/
 
-log edit: [https://docs.google.com/document/d/1XolSYFFvBOj\_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit](https://docs.google.com/document/d/1XolSYFFvBOj_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit)
+log edit: [https://docs.google.com/document/d/1XolSYFFvBOj_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit](https://docs.google.com/document/d/1XolSYFFvBOj_EwtLeYrg8QMadKZpUDE3b2EHcXoklYA/edit)
 
 log: TBD
 
@@ -181,7 +181,7 @@ log: TBD
 - [[Bug #13320]](https://bugs.ruby-lang.org/issues/13320) rescue blocks get an entry in backtrace locations
 
 - shyouhei: can you look at it? > nobu
-- ko1: there are other corner cases in backtraces where \_unexpected\_-ish backtrace situation.
+- ko1: there are other corner cases in backtraces where _unexpected_-ish backtrace situation.
 - mrkn: does it cause any problems? is it worth deleting?
 - ko1: I tried this and the “bar” line seems indicating the method bar, not raise.
 
@@ -239,7 +239,7 @@ log: TBD
 - shyouhei: it ends with “nobu: seems fine”.
 - nobu: will look at it again.
 
-- [[Feature #13389]](https://bugs.ruby-lang.org/issues/13389) \[PATCH\] POP3 support timeout for TLS handshake
+- [[Feature #13389]](https://bugs.ruby-lang.org/issues/13389) [PATCH] POP3 support timeout for TLS handshake
 
 - assign who?
 - seems no one is active.
@@ -266,21 +266,21 @@ log: TBD
 
 - matz: OK.
 
-- [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def\_instance\_delegator nil (shyouhei)
+- [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def_instance_delegator nil (shyouhei)
 - [[Feature #13333]](https://bugs.ruby-lang.org/issues/13333) block to yield (shyouhei)
 
 - nobu: because we can.
 - ko1: I’m afraid there can be places where this breaks something in-core.
 
 - [[Feature #13378]](https://bugs.ruby-lang.org/issues/13378) Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
-- [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) \[PATCH\] Expose rb\_fstring and its family to C extensions (shyouhei)
+- [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) [PATCH] Expose rb_fstring and its family to C extensions (shyouhei)
 - [[Bug #13315]](https://bugs.ruby-lang.org/issues/13315) Single "%" at the end of printf format string appears in the result (shyouhei)
-- [[Feature #13385]](https://bugs.ruby-lang.org/issues/13385) \[PATCH\] Make Resolv::DNS::Name validation similar to host and dig commands (shyouhei)
-- [[Feature #13383]](https://bugs.ruby-lang.org/issues/13383) \[PATCH\] Module#source\_location (shyouhei)
+- [[Feature #13385]](https://bugs.ruby-lang.org/issues/13385) [PATCH] Make Resolv::DNS::Name validation similar to host and dig commands (shyouhei)
+- [[Feature #13383]](https://bugs.ruby-lang.org/issues/13383) [PATCH] Module#source_location (shyouhei)
 - [[Feature #12063]](https://bugs.ruby-lang.org/issues/12063) KeyError#receiver and KeyError#name (shyouhei) status?
-- [[Bug #13397]](https://bugs.ruby-lang.org/issues/13397) #object\_id should not be signed (shyouhei)
+- [[Bug #13397]](https://bugs.ruby-lang.org/issues/13397) #object_id should not be signed (shyouhei)
 - [[Feature #13396]](https://bugs.ruby-lang.org/issues/13396) Net::HTTP has no write timeout (shyouhei)
-- [[Bug #13407]](https://bugs.ruby-lang.org/issues/13407) We have recv\_nonblock but not send\_nonblock... can we add it? (shyouhei)
+- [[Bug #13407]](https://bugs.ruby-lang.org/issues/13407) We have recv_nonblock but not send_nonblock... can we add it? (shyouhei)
 - [[Feature #13395]](https://bugs.ruby-lang.org/issues/13395) Add a method to check for not nil (shyouhei)
 
 ## From attendees
@@ -298,10 +298,10 @@ log: TBD
 - watson continues to request pulling his ideas
 
 - [[Bug #13436]](https://bugs.ruby-lang.org/issues/13436) Improve performance of Array#<=> with Fixnum/Float/String elements
-- [[Bug #13437]](https://bugs.ruby-lang.org/issues/13437) Improve performance of Enumerable#{sort\_by,min\_by,max\_by,minmax\_by}
+- [[Bug #13437]](https://bugs.ruby-lang.org/issues/13437) Improve performance of Enumerable#{sort_by,min_by,max_by,minmax_by}
 - [[Bug #13443]](https://bugs.ruby-lang.org/issues/13443) Improve performance of Range#{min,max}
 - [[Bug #13482]](https://bugs.ruby-lang.org/issues/13482) Improve performance of "set instance variable"
-- [[Bug #13447]](https://bugs.ruby-lang.org/issues/13447) Improve performance of rb\_eql()
+- [[Bug #13447]](https://bugs.ruby-lang.org/issues/13447) Improve performance of rb_eql()
 - [[Bug #13503]](https://bugs.ruby-lang.org/issues/13503) Improve performance of some Time & Rational methods
 - [[Bug #13506]](https://bugs.ruby-lang.org/issues/13506) Improve performance of Complex#{+,-,,/,\*,abs2}
 - [[Bug #13519]](https://bugs.ruby-lang.org/issues/13519) Improve performance of some Time methods
@@ -310,25 +310,25 @@ log: TBD
 
 - assign who? corner (shyouhei)
 
-- [[Bug #13432]](https://bugs.ruby-lang.org/issues/13432) set\_trace\_funcにproc->is\_from\_method = TRUEのオブジェクトを渡し、SystemStackErrorを発生させるとRubyVMが停止する
+- [[Bug #13432]](https://bugs.ruby-lang.org/issues/13432) set_trace_funcにproc->is_from_method = TRUEのオブジェクトを渡し、SystemStackErrorを発生させるとRubyVMが停止する
 - [[Bug #13446]](https://bugs.ruby-lang.org/issues/13446) refinements with prepend for module has strange behavior
 - [[Bug #13492]](https://bugs.ruby-lang.org/issues/13492) Integer#prime? and Prime.each might produce false positives
 
 - akr: the patch seems ok.
 
-- [[Bug #13498]](https://bugs.ruby-lang.org/issues/13498) Weakref, Weakmap and define\_finalizer don't work on frozen objects
+- [[Bug #13498]](https://bugs.ruby-lang.org/issues/13498) Weakref, Weakmap and define_finalizer don't work on frozen objects
 - [[Bug #13513]](https://bugs.ruby-lang.org/issues/13513) Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
 - [[Bug #13501]](https://bugs.ruby-lang.org/issues/13501) Process.kill behaviour for negative pid is not documented and may be wrong
 - [[Bug #13515]](https://bugs.ruby-lang.org/issues/13515) Pathname#join doesn't add separator on UNC paths
-- [[Bug #13521]](https://bugs.ruby-lang.org/issues/13521) \[PATCH\] Add fallback for DNS resolver registry key on Wine
-- [[Bug #13537]](https://bugs.ruby-lang.org/issues/13537) ruby crash in rb\_gc\_mark
+- [[Bug #13521]](https://bugs.ruby-lang.org/issues/13521) [PATCH] Add fallback for DNS resolver registry key on Wine
+- [[Bug #13537]](https://bugs.ruby-lang.org/issues/13537) ruby crash in rb_gc_mark
 - [[Bug #13545]](https://bugs.ruby-lang.org/issues/13545) Ruby built by clang 4.0.0 parses Float literal wrongly
 
 - naruse: OK but I think this is a day-to-day fix.
 
-- [[Bug #13548]](https://bugs.ruby-lang.org/issues/13548) miniruby SEGV while building with non-default CFLAGS (caused by \_\_builtin\_setjmp)
-- [[Bug #13555]](https://bugs.ruby-lang.org/issues/13555) Disable TestTrace#test\_trace\_stackoverflow
-- [[Bug #13524]](https://bugs.ruby-lang.org/issues/13524) miniruby: \[BUG\] Segmentation fault at 0x0055e487e00230 ruby 2.4.1p111 (2017-03-22 revision 58053) \[x86\_64-li
+- [[Bug #13548]](https://bugs.ruby-lang.org/issues/13548) miniruby SEGV while building with non-default CFLAGS (caused by __builtin_setjmp)
+- [[Bug #13555]](https://bugs.ruby-lang.org/issues/13555) Disable TestTrace#test_trace_stackoverflow
+- [[Bug #13524]](https://bugs.ruby-lang.org/issues/13524) miniruby: [BUG] Segmentation fault at 0x0055e487e00230 ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-li
 - [[Bug #13557]](https://bugs.ruby-lang.org/issues/13557) there's no way to pass backtrace locations as a massaged backtrace
 - [[Bug #10290]](https://bugs.ruby-lang.org/issues/10290) segfault when calling a lambda recursively after rescuing SystemStackError
 
@@ -339,11 +339,11 @@ log: TBD
 
 - [[Bug #13549]](https://bugs.ruby-lang.org/issues/13549) MinGW / Windows encoding - Two issues
 - [[Bug #13556]](https://bugs.ruby-lang.org/issues/13556) MinGW readline Alt / Meta keys
-- [[Bug #13569]](https://bugs.ruby-lang.org/issues/13569) Windows - TestRubyOptions#test\_search - append to paths instead of replacing
+- [[Bug #13569]](https://bugs.ruby-lang.org/issues/13569) Windows - TestRubyOptions#test_search - append to paths instead of replacing
 
 - [[Bug #13564]](https://bugs.ruby-lang.org/issues/13564) Exception message management
 
-- [[Feature #13383]](https://bugs.ruby-lang.org/issues/13383) \[PATCH\] Module#source\_location (shyouhei)
+- [[Feature #13383]](https://bugs.ruby-lang.org/issues/13383) [PATCH] Module#source_location (shyouhei)
 - [[Feature #13434]](https://bugs.ruby-lang.org/issues/13434) better method definition in C API (shyouhei)
 - [[Feature #13512]](https://bugs.ruby-lang.org/issues/13512) System Threads (shyouhei)
 - [[Feature #13518]](https://bugs.ruby-lang.org/issues/13518) Indented multiline comments (shyouhei)
@@ -354,18 +354,18 @@ log: TBD
 - akr: it’s ok to add.  Patch please.
 
 - [[Bug #13535]](https://bugs.ruby-lang.org/issues/13535) Installing Ruby2.4.1 on Solaris 10 (shyouhei) response?
-- [[Feature #13552]](https://bugs.ruby-lang.org/issues/13552) \[PATCH 0/2\] reimplement ConditionVariable, Queue, SizedQueue using ccan/list (shyouhei)
-- [[Feature #13568]](https://bugs.ruby-lang.org/issues/13568) File#path for O\_TMPFILE fds are unmeaning (sorah)
+- [[Feature #13552]](https://bugs.ruby-lang.org/issues/13552) [PATCH 0/2] reimplement ConditionVariable, Queue, SizedQueue using ccan/list (shyouhei)
+- [[Feature #13568]](https://bugs.ruby-lang.org/issues/13568) File#path for O_TMPFILE fds are unmeaning (sorah)
 
-- sorah: It makes no sense for O\_TMPFILE to have a path
+- sorah: It makes no sense for O_TMPFILE to have a path
 - nobu: but should it be nil?  There will be no way to obtain underlying filesystem then.
 - sorah: it might make sense to have a separate method that returns the “argument string passed to File.new”.
 - akr: that sounds too big.
 - akr: File#path is used as inspectation on logs. therefore it should return informational string
-- naruse: \`ls -al ll /proc/25378/fd/9\` returns “lrwx------ 1 naruse 64 May 19 17:13 9 -> /tmp/#14379824 (deleted)”
+- naruse: `ls -al ll /proc/25378/fd/9` returns “lrwx------ 1 naruse 64 May 19 17:13 9 -> /tmp/#14379824 (deleted)”
 
 - [[Feature #13563]](https://bugs.ruby-lang.org/issues/13563) Implement Hash#choice method. (shyouhei)
-- [[Feature #13562]](https://bugs.ruby-lang.org/issues/13562) Use a sized enumerator with #yield\_self (shyouhei) needs?
+- [[Feature #13562]](https://bugs.ruby-lang.org/issues/13562) Use a sized enumerator with #yield_self (shyouhei) needs?
 
 - [[Feature #13056]](https://bugs.ruby-lang.org/issues/13056) base option to Dir.glob (nobu)
 

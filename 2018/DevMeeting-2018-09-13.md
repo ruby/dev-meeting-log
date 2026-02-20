@@ -88,7 +88,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - I'd like to introduce a new kind of coverage to record whether each line is executed or not. It provides less but still useful information compared to the traditional line coverage, and the measurement is quite faster.
 - shyouhei: clear is not atomic, isn’t it?
-- mame: oh, yes.  maybe I should add clear: true option to peek\_result.
+- mame: oh, yes.  maybe I should add clear: true option to peek_result.
 - all: let’s go
 
 - [[Feature #8661]](https://bugs.ruby-lang.org/issues/8661) Add option to print backtrace in reverse order(stack frames first & error last)
@@ -96,7 +96,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - The current backtrace order is really annoying, and I'm not still used; is there any chance to revert?
 - ???: How about using pager?
 
-- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) \`Kernel#p\` without args shows the receiver (ko1)
+- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) `Kernel#p` without args shows the receiver (ko1)
 
 - I feel this feature is very useful and some people say :+1: so let discuss about this feature.
 - everyone except mame/ko1: not good
