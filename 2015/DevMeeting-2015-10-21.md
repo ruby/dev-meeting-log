@@ -41,7 +41,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 # Log
 
-# Decide whether -\*- should be required for frozen\_string\_literal magic comments \[Feature [#8976](https://bugs.ruby-lang.org/issues/8976)\]
+# Decide whether -\*- should be required for frozen\_string\_literal magic comments [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976)
 
 naruse: vim’s indicator is “vim: …” [http://vim.wikia.com/wiki/Modeline\_magic](http://vim.wikia.com/wiki/Modeline_magic)
 

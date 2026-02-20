@@ -68,7 +68,7 @@ Attendees: unak, mrkn, naruse, ayumin, ko1, sorah, zack, martin
 - Shibata-san
 - Usa-san
 
-## \[Feature [#11949](https://bugs.ruby-lang.org/issues/11949)\] Allow @/$ prefix in Regexp's named captures (naruse)
+## [[Feature #11949]](https://bugs.ruby-lang.org/issues/11949) Allow @/$ prefix in Regexp's named captures (naruse)
 
 /(?<[@timestamp](https://github.com/timestamp)\>\[^ \]\*): / =~
 
@@ -114,7 +114,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
 
 Conclusion: acceptable confusion or not. Matz is positive to accept this feature
 
-## \[Feature [#11987](https://bugs.ruby-lang.org/issues/11987)\] daemons can't show the backtrace of rb\_bug
+## [[Feature #11987]](https://bugs.ruby-lang.org/issues/11987) daemons can't show the backtrace of rb\_bug
 
 Process.daemon closes STDERR (or redirect to /dev/null).
 

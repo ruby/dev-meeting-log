@@ -74,7 +74,7 @@ Attendees: matz, sorah, naruse, ko1, mame, kosaki, hsbt, nobu, tarui, akr, shyou
 
 venue: TBD
 
-## \[Feature [#9969](https://bugs.ruby-lang.org/issues/9969)\] Add File.empty? as alias to File.zero? (shyouhei)
+## [[Feature #9969]](https://bugs.ruby-lang.org/issues/9969) Add File.empty? as alias to File.zero? (shyouhei)
 
 (discussing about current behavior of related methods)
 
@@ -83,7 +83,7 @@ venue: TBD
 - matz: ok
 - kosaki: do you say “zero sized file”?
 
-## \[Feature [#10617](https://bugs.ruby-lang.org/issues/10617)\] Change multiple assignment in conditional from parse error to warning (shyouhei)
+## [[Feature #10617]](https://bugs.ruby-lang.org/issues/10617) Change multiple assignment in conditional from parse error to warning (shyouhei)
 
 - ko1: counter proposal. returning array can affect performance. how about to make mltiple assignment as a void expression?
 
@@ -103,70 +103,70 @@ venue: TBD
 - ko1: i can’t understand what happen on it.
 - matz: I want to use it. accept.
 
-## \[Feature [#11547](https://bugs.ruby-lang.org/issues/11547)\] remove top-level constant lookup (shyouhei)
+## [[Feature #11547]](https://bugs.ruby-lang.org/issues/11547) remove top-level constant lookup (shyouhei)
 
 - matz: lets try this to see how much codes break with it.
 
-## \[Feature [#12020](https://bugs.ruby-lang.org/issues/12020)\] Documenting Ruby memory model (shyouhei)
+## [[Feature #12020]](https://bugs.ruby-lang.org/issues/12020) Documenting Ruby memory model (shyouhei)
 
-## \[Feature [#11210](https://bugs.ruby-lang.org/issues/11210)\] IPAddr has no public method to get the current subnet mask (eregon) Who can review this?
+## [[Feature #11210]](https://bugs.ruby-lang.org/issues/11210) IPAddr has no public method to get the current subnet mask (eregon) Who can review this?
 
 - assign to knu-san
 - naruse: mentioned to knu
 
-## \[Feature [#6647](https://bugs.ruby-lang.org/issues/6647)\] Exceptions raised in threads should be logged, Thread#report\_on\_exception= (eregon) Can we agree on the feature?
+## [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged, Thread#report\_on\_exception= (eregon) Can we agree on the feature?
 
 Matz is positive to provide Thread#report\_on\_exception, but negative to turning it on by default.
 
-## \[Feature [#12026](https://bugs.ruby-lang.org/issues/12026)\] Support warning processor
+## [[Feature #12026]](https://bugs.ruby-lang.org/issues/12026) Support warning processor
 
 - matz: agree with customizable warning
 
 - should not use global variables
 - there are many design choise. continue to discuss
 
-## \[Feature [#12092](https://bugs.ruby-lang.org/issues/12092)\] Allow Object#clone to yield cloned object before freezing (jeremyevans0)
+## [[Feature #12092]](https://bugs.ruby-lang.org/issues/12092) Allow Object#clone to yield cloned object before freezing (jeremyevans0)
 
 ## \[Feature #[12217](https://bugs.ruby-lang.org/issues/12217)\] Introducing Enumerable#sum for precision compensated summation and revert r54237 (mrkn)
 
 - matz: Adding Array#sum is ok
 - Revert r54237 and optimization for Float
 
-## \[Bug [#12271](https://bugs.ruby-lang.org/issues/12271)\] Time#to\_time removes timezone information
+## [[Bug #12271]](https://bugs.ruby-lang.org/issues/12271) Time#to\_time removes timezone information
 
 - nobu: It is a bug, so I commited
 - yui\_knk: ActiveSupport was testing this behavior (FYI)
 
-## \[Feature [#12157](https://bugs.ruby-lang.org/issues/12157)\] Is the option hash necessary for future Rubys?
+## [[Feature #12157]](https://bugs.ruby-lang.org/issues/12157) Is the option hash necessary for future Rubys?
 
 - We have no matz for time when discussed this issue, so pend until next meeting.
 
-## \[Bug [#12181](https://bugs.ruby-lang.org/issues/12181)\] ブロックがたくさんあるファイルを編集するとruby-modeが重い
+## [[Bug #12181]](https://bugs.ruby-lang.org/issues/12181) ブロックがたくさんあるファイルを編集するとruby-modeが重い
 
 - Who can look this issue? Nobu?
 - nobu will investigate and make some action.
 
-## \[Bug [#12179](https://bugs.ruby-lang.org/issues/12179)\] Build failure due to VPATH expansion
+## [[Bug #12179]](https://bugs.ruby-lang.org/issues/12179) Build failure due to VPATH expansion
 
 - Weird. Nobu will investigate.
 
-## \[Bug [#12183](https://bugs.ruby-lang.org/issues/12183)\] require "win32ole" すると終了ステータスが必ず 0 になる
+## [[Bug #12183]](https://bugs.ruby-lang.org/issues/12183) require "win32ole" すると終了ステータスが必ず 0 になる
 
 - Assigned to appropriate maintainer.
 
-## \[Bug [#12184](https://bugs.ruby-lang.org/issues/12184)\] Cygwin LANG=ja\_JP.SJIS 環境でコマンドライン引数に日本語が渡せない
+## [[Bug #12184]](https://bugs.ruby-lang.org/issues/12184) Cygwin LANG=ja\_JP.SJIS 環境でコマンドライン引数に日本語が渡せない
 
 - nobu: Cygwin only supports UTF-8
 - nobu(?) will reply something
 
-## \[Feature [#7361](https://bugs.ruby-lang.org/issues/7361)\] Adding Pathname#touch
+## [[Feature #7361]](https://bugs.ruby-lang.org/issues/7361) Adding Pathname#touch
 
 - actually touch(1) does lot of thing. What ticket author wanted?
 - Encourage author to make feature request more solid.
 
-## \[Feature [#12236](https://bugs.ruby-lang.org/issues/12236)\] Introduce mmap managed heap (ko1)
+## [[Feature #12236]](https://bugs.ruby-lang.org/issues/12236) Introduce mmap managed heap (ko1)
 
-## \[Feature [#11925](https://bugs.ruby-lang.org/issues/11925)\] Struct construction with kwargs (ko1)
+## [[Feature #11925]](https://bugs.ruby-lang.org/issues/11925) Struct construction with kwargs (ko1)
 
 - Understood and +1 for this feature, but maybe naming is a problem
 - We also have to wait a Matz.

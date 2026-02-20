@@ -45,7 +45,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/13742
 - attendee: ko1, sora\_h, akr, naruse, ayumin, a\_matsuda
 - on-line: matz, nobu
 
-## \[Feature [#10199](https://bugs.ruby-lang.org/issues/10199)\] Drop to support Symbian (hsbt)
+## [[Feature #10199]](https://bugs.ruby-lang.org/issues/10199) Drop to support Symbian (hsbt)
 
 Matz: agreed.
 
@@ -55,7 +55,7 @@ akr: no need to think about it now.
 
 hsbt: I will remove.
 
-## \[Feature [#10200](https://bugs.ruby-lang.org/issues/10200)\] Symbol API (static count, dynamic count, all\_symbols and so on) (ko1)
+## [[Feature #10200]](https://bugs.ruby-lang.org/issues/10200) Symbol API (static count, dynamic count, all\_symbols and so on) (ko1)
 
 Symbol.all\_symbols:
 
@@ -73,7 +73,7 @@ matz: remove it and ask people
 
 Couting immortal symbols is not solved. ko1 will make prototype of such methods.
 
-## \[Feature [#9880](https://bugs.ruby-lang.org/issues/9880)\] Dir#fileno (akr)
+## [[Feature #9880]](https://bugs.ruby-lang.org/issues/9880) Dir#fileno (akr)
 
 matz: portability?
 
@@ -83,7 +83,7 @@ akr: For windows and so on, not implemented error can be acceptable.
 
 matz: ok. write document for compatibility.
 
-## \[Feature [#10201](https://bugs.ruby-lang.org/issues/10201)\] Dynamically changing GC tuning parameters (ko1)
+## [[Feature #10201]](https://bugs.ruby-lang.org/issues/10201) Dynamically changing GC tuning parameters (ko1)
 
 ko1 will try.
 

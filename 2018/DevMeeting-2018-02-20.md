@@ -163,12 +163,12 @@ Next Developper Meetings
 
 ## From attendees
 
-## \[Feature [#14223](https://bugs.ruby-lang.org/issues/14223)\] Enable #to\_proc by Refinements at &hoge (nobu)
+## [[Feature #14223]](https://bugs.ruby-lang.org/issues/14223) Enable #to\_proc by Refinements at &hoge (nobu)
 
 
 - Matz: LGTM.
 
-## \[Feature [#14371](https://bugs.ruby-lang.org/issues/14371)\] New option "recursive: true" for Hash#transform\_keys! (nobu)
+## [[Feature #14371]](https://bugs.ruby-lang.org/issues/14371) New option "recursive: true" for Hash#transform\_keys! (nobu)
 
 
 - Mrkn: This is deep\_stringify\_keys!
@@ -185,14 +185,14 @@ Next Developper Meetings
 - Mrkn: we can fix it by preserving entries that conflict.
 - Matz: I have strong opinion on this.  Isn’t the current behaviour acceptable in sake of space efficiency?
 
-## \[Bug [#14374](https://bugs.ruby-lang.org/issues/14374)\] for does not splat elements (nobu)
+## [[Bug #14374]](https://bugs.ruby-lang.org/issues/14374) for does not splat elements (nobu)
 
 
 - Ko1: is it me?
 - Nobu: because it’s since 1.9
 - Matz: please fix.
 
-## \[Feature [#14313](https://bugs.ruby-lang.org/issues/14313)\] Support creating KeyError with receiver and key from Ruby (mrkn/kou)
+## [[Feature #14313]](https://bugs.ruby-lang.org/issues/14313) Support creating KeyError with receiver and key from Ruby (mrkn/kou)
 
 
 - Mrkn: I was asked to bring this.
@@ -206,15 +206,15 @@ Next Developper Meetings
 - Mrkn: But he doesn’t have the repo access bit, nor gem release right.
 - Mame: He’s active on twitter etc.  You should ask his current status.
 
-## \[Feature [#4831](https://bugs.ruby-lang.org/issues/4831)\] Integer#prime\_factors (mrkn)
+## [[Feature #4831]](https://bugs.ruby-lang.org/issues/4831) Integer#prime\_factors (mrkn)
 
 
 - Mrkn: name?
 - Shyouhei: yugui is on the ticket.
 
-## \[Feature [#14235](https://bugs.ruby-lang.org/issues/14235)\] Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
+## [[Feature #14235]](https://bugs.ruby-lang.org/issues/14235) Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
 
-## \[Feature [#14386](https://bugs.ruby-lang.org/issues/14386)\] Add option to let Kernel.#system raise error instead of returning false (k0kubun)
+## [[Feature #14386]](https://bugs.ruby-lang.org/issues/14386) Add option to let Kernel.#system raise error instead of returning false (k0kubun)
 
 
 - Nobu: is this request to raise error when spawn fails, or when the spawned process fails?
@@ -223,7 +223,7 @@ Next Developper Meetings
 - Mrkn: I see similarity for discussion on Integer(). \[ruby-core:77171\] \[Feature#12732\]
 - Akr: There are \`exception: true\`
 
-## \[Bug [#14353](https://bugs.ruby-lang.org/issues/14353)\] $SAFE should stay at least thread-local for compatibility (ko1)
+## [[Bug #14353]](https://bugs.ruby-lang.org/issues/14353) $SAFE should stay at least thread-local for compatibility (ko1)
 
 
 - Matz: This feature is something to extinct in future.
@@ -249,7 +249,7 @@ Next Developper Meetings
 
 ## From non-attendees
 
-## \[Feature [#14382](https://bugs.ruby-lang.org/issues/14382)\] Make public access of a private constant call const\_missing (jeremyevans0)
+## [[Feature #14382]](https://bugs.ruby-lang.org/issues/14382) Make public access of a private constant call const\_missing (jeremyevans0)
 
 
 - Nobu: sounds like a bug to me
@@ -257,7 +257,7 @@ Next Developper Meetings
 - Matz: Let’s try.
 - Nobu: I’d like to review the patch.
 
-## \[Feature [#14385](https://bugs.ruby-lang.org/issues/14385)\] Deprecate back-tick for Ruby 3 (hsbt)
+## [[Feature #14385]](https://bugs.ruby-lang.org/issues/14385) Deprecate back-tick for Ruby 3 (hsbt)
 
 
 - Matz: I see several objections are there.
@@ -269,7 +269,7 @@ Next Developper Meetings
 - Mame: should we also deprecate def \`; end; self.\` ? If so, warning on parsing is dangerous.
 - Matz: I think we don’t necessarily warn this as soon as 2.6.
 
-## \[Feature [#13969](https://bugs.ruby-lang.org/issues/13969)\] Dir#each\_child (znz)
+## [[Feature #13969]](https://bugs.ruby-lang.org/issues/13969) Dir#each\_child (znz)
 
 
 - Matz: OK.

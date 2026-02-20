@@ -39,7 +39,7 @@ Remote participation: Google hangout?
 
 # Log
 
-# \[Bug [#10416](https://bugs.ruby-lang.org/issues/10416)\] Create mechanism for updating of Unicode data files downstreams when we want (duerst
+# [[Bug #10416]](https://bugs.ruby-lang.org/issues/10416) Create mechanism for updating of Unicode data files downstreams when we want (duerst
 
 summary:
 
@@ -64,7 +64,7 @@ akr: ディレクトリ構造にバージョンを入れれば反映出来るだ
 
 ダウンロードおよび置き場に関してはnobuが実装するので、どうしたいかだけ伝えればOK
 
-# \[Feature [#5458](https://bugs.ruby-lang.org/issues/5458)\] DL should be removed (hsbt)
+# [[Feature #5458]](https://bugs.ruby-lang.org/issues/5458) DL should be removed (hsbt)
 
 akr: dlを消す時にlibffiのソースを添付するという話だった。（libffiをWindowsでビルドするのは大変なので、CRubyにバンドルし、ビルド時に一緒にビルドして欲しい）
 
@@ -80,7 +80,7 @@ akr: libffiソースバンドルチケットを作って、remove dlの依存先
 
 hsbt が関係者(tenderloveとunak)に remove 作業の詳細をもう一度確認して、どこまでやるかのラインを決めてもらう
 
-# \[Bug [#10314](https://bugs.ruby-lang.org/issues/10314)\] Default argument lookup fails in Ruby 2.2 for circular shadowed variable names (hsbt)
+# [[Bug #10314]](https://bugs.ruby-lang.org/issues/10314) Default argument lookup fails in Ruby 2.2 for circular shadowed variable names (hsbt)
 
 matz: ローカル変数代入と同じように見えるから、挙動もあわせるべき
 
@@ -88,7 +88,7 @@ akr: （foo = fooでnilが代入されるというのは）役に立つ挙動で
 
 matzがこれに関しては一貫性を取る（このリグレッションは諦めてもらう）と決定
 
-# \[Feature [#9612](https://bugs.ruby-lang.org/issues/9612)\] Gemify OpenSSL(hsbt)
+# [[Feature #9612]](https://bugs.ruby-lang.org/issues/9612) Gemify OpenSSL(hsbt)
 
 akr: experimental 実装について gemのバージョンは、OpenSSL (OpenSSL::OPENSSL\_VERSION)そのものではなく、OpenSSL拡張ライブラリのバージョン (OpenSSL::VERSION) にするべき（※libsslランタイムのバージョンはOpenSSL::OPENSSL\_LIBRARY\_VERSION）
 
@@ -108,7 +108,7 @@ akr: 「議論はしましたがいい名前が浮かばない」
 
 ko1: matz にふっておきましょう
 
-# \[Feature [#8976](https://bugs.ruby-lang.org/issues/8976)\] file-scope freeze\_string directive (akr)
+# [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze\_string directive (akr)
 
 matz: 遠い未来には賛成
 
@@ -141,7 +141,7 @@ matz: 嫌な予感がするので2.2では（実験的実装も含めて）や�
 
 2.3（以降）に照準を合わせる
 
-# \[Feature [#10344](https://bugs.ruby-lang.org/issues/10344)\] \[PATCH\] Implement Fiber#raise (ko1)
+# [[Feature #10344]](https://bugs.ruby-lang.org/issues/10344) \[PATCH\] Implement Fiber#raise (ko1)
 
 ko1: Thread#raiseは危険なのでなくした経緯
 
@@ -152,7 +152,7 @@ ko1: セミコルーチンの親子・裏表関係からして気持ち悪さが
 反対はなし
 matzは賛成
 
-# \[Feature [#10440](https://bugs.ruby-lang.org/issues/10440)\] Optimize keyword and splat argument (ko1)
+# [[Feature #10440]](https://bugs.ruby-lang.org/issues/10440) Optimize keyword and splat argument (ko1)
 
 ko1: 99%は互換
 

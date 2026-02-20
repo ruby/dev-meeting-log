@@ -44,7 +44,7 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 2015/12/07 Mon 14:00 JST at SFDC
 
-## \[Feature [#8976](https://bugs.ruby-lang.org/issues/8976)\] file-scope freeze\_string directive
+## [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze\_string directive
 
 ## freeze dynamic string literal or not?
 
@@ -91,7 +91,7 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 - We don’t need an option name if it is always enabled.
 
-## \[Feature [#4840](https://bugs.ruby-lang.org/issues/4840)\] Allow returning from require
+## [[Feature #4840]](https://bugs.ruby-lang.org/issues/4840) Allow returning from require
 
 \### Before
 
@@ -204,7 +204,7 @@ def foo
 
 end
 
-## \[Feature [#9098](https://bugs.ruby-lang.org/issues/9098)\] Indent heredoc against the left margin by default when "indented closing identifier" is turned on.
+## [[Feature #9098]](https://bugs.ruby-lang.org/issues/9098) Indent heredoc against the left margin by default when "indented closing identifier" is turned on.
 
 \# 2 spaces
 
@@ -237,7 +237,7 @@ Matz: acecptable, but there could be a problem if hard tabs and spaces are both 
 
 Nishijima-san suggested another way to write strings like DATA for each files. It will be proposed as another ticket.
 
-## \[Feature [#11643](https://bugs.ruby-lang.org/issues/11643)\] A new method on Hash to grab values out of nested hashes, failing gracefully
+## [[Feature #11643]](https://bugs.ruby-lang.org/issues/11643) A new method on Hash to grab values out of nested hashes, failing gracefully
 
 Matz: acceptable, but name is problem.
 
@@ -278,7 +278,7 @@ Nishijima-san mentioned past rejected proposals in Rails [\[1\]](https://groups.
 
 - e.g. {a: {b: {c: 1}}}.dig(:a, :b, :x) == nil (not {c: 1})
 
-## \[Feature [#11665](https://bugs.ruby-lang.org/issues/11665)\] Support nested functions for better code organization
+## [[Feature #11665]](https://bugs.ruby-lang.org/issues/11665) Support nested functions for better code organization
 
 class C
 
@@ -320,11 +320,11 @@ end
 
 - matz: commented at [https://bugs.ruby-lang.org/issues/11665#note-3](https://bugs.ruby-lang.org/issues/11665#note-3)
 
-## \[Feature [#11666](https://bugs.ruby-lang.org/issues/11666)\] IPAddr#private?
+## [[Feature #11666]](https://bugs.ruby-lang.org/issues/11666) IPAddr#private?
 
 Matz accepted this feature. Pass to knu -san (maintainer).
 
-## \[Feature [#11588](https://bugs.ruby-lang.org/issues/11588)\] Implement structured warnings
+## [[Feature #11588]](https://bugs.ruby-lang.org/issues/11588) Implement structured warnings
 
 - pros
 
@@ -344,7 +344,7 @@ Matz accepted this feature. Pass to knu -san (maintainer).
 
 - no conclusion.
 
-## \[Feature [#11653](https://bugs.ruby-lang.org/issues/11653)\] Add to\_proc on Hash
+## [[Feature #11653]](https://bugs.ruby-lang.org/issues/11653) Add to\_proc on Hash
 
 class Hash
 
@@ -368,7 +368,7 @@ Matz: acceptable
 
 Matz: to\_proc is intended for & argument operator. So it is reasonable to add.
 
-## \[Feature [#10984](https://bugs.ruby-lang.org/issues/10984)\] Hash#contain? to check whether hash contains other hash
+## [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? to check whether hash contains other hash
 
 Matz: Feature is acceptable. But naming issue;
 
@@ -391,7 +391,7 @@ Method name candidates:
 
 Matz: I vote for “<”, “>”, “<=” and “>=” (no “<=>” and “===”).
 
-## \[Feature [#9108](https://bugs.ruby-lang.org/issues/9108)\]\[Feature [#8499](https://bugs.ruby-lang.org/issues/8499)\] Importing Hash#slice, Hash#slice!, Hash#except, and Hash#except! from ActiveSupport
+## [[Feature #9108]](https://bugs.ruby-lang.org/issues/9108)[[Feature #8499]](https://bugs.ruby-lang.org/issues/8499) Importing Hash#slice, Hash#slice!, Hash#except, and Hash#except! from ActiveSupport
 
 Current status: naming issue, select and reject are acceptable for Matz.
 

@@ -101,34 +101,34 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 ## Carry-over from previous meeting(s)
 
-- \[Bug [#14887](https://bugs.ruby-lang.org/issues/14887)\] Array#delete\_if does not use #delete (shyouhei)
+- [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete\_if does not use #delete (shyouhei)
 
 - Is it by design, or a bug?
 - Matz: delete is memory inefficient.
 - Mame: if you can override #delete, why not also #delete\_if.
 
-- \[Feature [#13050](https://bugs.ruby-lang.org/issues/13050)\] Readline: expose rl\_completion\_quote\_character variable (nobu)
+- [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl\_completion\_quote\_character variable (nobu)
 
 - Go!!!
 
 ## From Attendees
 
-- \[Feature [#5446](https://bugs.ruby-lang.org/issues/5446)\] at\_fork callback API (eregon) Can we get approval for introducing this? It is solving a real-world issue, in a more reliable way than the various hacks in most Ruby servers.
+- [[Feature #5446]](https://bugs.ruby-lang.org/issues/5446) at\_fork callback API (eregon) Can we get approval for introducing this? It is solving a real-world issue, in a more reliable way than the various hacks in most Ruby servers.
 
 - Mrkn: I wanted to use this in pycall to call PyOS\_AfterFork\_Child, and so on from C-layer, but I noticed that I can use pthread\_atfork directly.
 - Naruse: Ruby’s fork is unsafe operation. Application programmers should understand the fact and carefully handle related operations (for example freeing resources).
 - Akr: I guess at\_fork hook would be problematic with multi-thread and/or multi-guild.  But making it Ruby’s standard feature impress this feature usable universally including multi-thread/guild. So, I’m negative for this proposal.
 - usa: Furthermore, I consider that fork must be destroyed.
 
-- \[Feature [#11258](https://bugs.ruby-lang.org/issues/11258)\] add 'x' mode character for O\_EXCL (kazu)
+- [[Feature #11258]](https://bugs.ruby-lang.org/issues/11258) add 'x' mode character for O\_EXCL (kazu)
 
 - Matz accepted already.
 
-- \[Misc [#14907](https://bugs.ruby-lang.org/issues/14907)\] io.c: do not close inherited FDs by default (akr)
+- [[Misc #14907]](https://bugs.ruby-lang.org/issues/14907) io.c: do not close inherited FDs by default (akr)
 
 - Nobody is against changing defaults
 
-- \[Feature [#14850](https://bugs.ruby-lang.org/issues/14850)\] Add official API for setting timezone on Time (nobu)
+- [[Feature #14850]](https://bugs.ruby-lang.org/issues/14850) Add official API for setting timezone on Time (nobu)
 
 - Akr: localtime/timelocal analogous variant methods should suffice
 
@@ -137,19 +137,19 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 - Matz: is there any reason we need this?
 - Matz: What is actual API?
 
-- \[Feature [#14869](https://bugs.ruby-lang.org/issues/14869)\] Proposal to add Hash#=== (nobu)
+- [[Feature #14869]](https://bugs.ruby-lang.org/issues/14869) Proposal to add Hash#=== (nobu)
 
 - After \[Feature #14912\]
 
-- \[Feature [#14877](https://bugs.ruby-lang.org/issues/14877)\] Calculate age in Date class (nobu)
+- [[Feature #14877]](https://bugs.ruby-lang.org/issues/14877) Calculate age in Date class (nobu)
 
 - Matz: I don’t like the idea to implicitly use today.
 
-- \[Feature [#14973](https://bugs.ruby-lang.org/issues/14973)\] Proposal of percent literal to expand Hash (aycabta)
+- [[Feature #14973]](https://bugs.ruby-lang.org/issues/14973) Proposal of percent literal to expand Hash (aycabta)
 
 - Matz: percent literal...
 
-- \[Feature [#13618](https://bugs.ruby-lang.org/issues/13618)\] \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (ko1)
+- [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (ko1)
 
 - Naming.
 
@@ -170,11 +170,11 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 ## From non-attendees
 
-- \[Feature [#14717](https://bugs.ruby-lang.org/issues/14717)\] thread: allow disabling preempt (normalperson)
+- [[Feature #14717]](https://bugs.ruby-lang.org/issues/14717) thread: allow disabling preempt (normalperson)
 
 - Closed already
 
-- \[Feature [#11076](https://bugs.ruby-lang.org/issues/11076)\] Enumerable method count\_by (baweaver)
+- [[Feature #11076]](https://bugs.ruby-lang.org/issues/11076) Enumerable method count\_by (baweaver)
     As mentioned in the discussion, Nobu was kind enough to update this to work with current master for Ruby: [https://github.com/ruby/ruby/compare/trunk...nobu:feature/11076-Enumerable%23count\_by](https://github.com/ruby/ruby/compare/trunk...nobu:feature/11076-Enumerable%23count_by)
     As the code is already written I believe it would be an ideal target for 2.6 as a quick win on an often requested feature.
 
@@ -184,7 +184,7 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 - Matz: I’m not against the feature itself.  Also, do we need a block-less counterpart?
 - Naruse: It looks similar to [Presto’s histogram function](https://prestodb.io/docs/current/functions/aggregate.html#histogram)
 
-- \[Feature [#14954](https://bugs.ruby-lang.org/issues/14954)\] Add :wait option to RubyVM::MJIT.pause (k0kubun)
+- [[Feature #14954]](https://bugs.ruby-lang.org/issues/14954) Add :wait option to RubyVM::MJIT.pause (k0kubun)
 
 - Since it's not released even in preview2 yet, is it okay to change the behavior?
 - Is there any objection for having the option or the option name?
@@ -195,21 +195,21 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 - (baweaver)
 
-- \[Feature [#14869](https://bugs.ruby-lang.org/issues/14869)\] Proposal to add Hash#=== (nobu)
-- \[Feature [#14916](https://bugs.ruby-lang.org/issues/14916)\] Proposal to add Array#=== (aycabta)
-- \[Feature [#14912](https://bugs.ruby-lang.org/issues/14912)\] Introduce pattern matching syntax
-    I believe that these three items are related, and personally I could do a lot of very interesting things with Array#=== and Hash#=== that would get us exceptionally close to features discussed in \[Feature [#14709](https://bugs.ruby-lang.org/issues/14709)\]
+- [[Feature #14869]](https://bugs.ruby-lang.org/issues/14869) Proposal to add Hash#=== (nobu)
+- [[Feature #14916]](https://bugs.ruby-lang.org/issues/14916) Proposal to add Array#=== (aycabta)
+- [[Feature #14912]](https://bugs.ruby-lang.org/issues/14912) Introduce pattern matching syntax
+    I believe that these three items are related, and personally I could do a lot of very interesting things with Array#=== and Hash#=== that would get us exceptionally close to features discussed in [[Feature #14709]](https://bugs.ruby-lang.org/issues/14709)
     This to say I would second the inclusion of the first two items as they relate to the third and fourth. It would give Ruby an exceptional amount of power.
 - Matz: we should discuss these after pattern match is introduced.
 
-- \[Feature [#14759](https://bugs.ruby-lang.org/issues/14759)\] \[PATCH\] set M\_ARENA\_MAX for glibc malloc (sam.saffron)
+- [[Feature #14759]](https://bugs.ruby-lang.org/issues/14759) \[PATCH\] set M\_ARENA\_MAX for glibc malloc (sam.saffron)
     I would also very much like to see it backported 2.4 and 2.5. It is of enormous value to the ecosystem
 
 - Usa: The decision should be made by Linux port maintainer
 - Naruse: up to kosaki.
 - Mame: Once kosaki said “If we merge this, we should decide when we remove this”.
 
-- \[Feature [#14944](https://bugs.ruby-lang.org/issues/14944)\] Support optional inherit argument for Module#method\_defined? (jeremyevans0)
+- [[Feature #14944]](https://bugs.ruby-lang.org/issues/14944) Support optional inherit argument for Module#method\_defined? (jeremyevans0)
 
 - Usa: I want this too.
 - Mame: why?
@@ -224,11 +224,11 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 Carry over:
 
-- \[Bug [#14908](https://bugs.ruby-lang.org/issues/14908)\] Enumerator::Lazy creates unnecessary Array objects. (nobu)
-- \[Feature [#14736](https://bugs.ruby-lang.org/issues/14736)\] Thread selector for flexible cooperative fiber based concurrency (ioquatix)
-- \[Feature [#14739](https://bugs.ruby-lang.org/issues/14739)\] Improve fiber yield/resume performance (ioquatix)
+- [[Bug #14908]](https://bugs.ruby-lang.org/issues/14908) Enumerator::Lazy creates unnecessary Array objects. (nobu)
+- [[Feature #14736]](https://bugs.ruby-lang.org/issues/14736) Thread selector for flexible cooperative fiber based concurrency (ioquatix)
+- [[Feature #14739]](https://bugs.ruby-lang.org/issues/14739) Improve fiber yield/resume performance (ioquatix)
 
 - Ko1: will discuss them in person
 
-- \[Bug [#14968](https://bugs.ruby-lang.org/issues/14968)\] io.c: make all pipes nonblocking by default (normalperson)
-- \[Misc [#14937](https://bugs.ruby-lang.org/issues/14937)\] timer-thread elimination depends on [Bug #14968](https://bugs.ruby-lang.org/issues/normalperson)
+- [[Bug #14968]](https://bugs.ruby-lang.org/issues/14968) io.c: make all pipes nonblocking by default (normalperson)
+- [[Misc #14937]](https://bugs.ruby-lang.org/issues/14937) timer-thread elimination depends on [Bug #14968](https://bugs.ruby-lang.org/issues/normalperson)

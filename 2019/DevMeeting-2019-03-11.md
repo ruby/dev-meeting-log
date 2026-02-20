@@ -87,7 +87,7 @@ done
 
 ## Carry-over from previous meeting(s)
 
-- \[Feature [#14609](https://bugs.ruby-lang.org/issues/14609)\] Kernel#p without args shows the receiver (aycabta)
+- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) Kernel#p without args shows the receiver (aycabta)
 
 - the name of the method is not determined yet.
 
@@ -97,19 +97,19 @@ done
 
 ## Non-attendees
 
-- \[Feature [#14799](https://bugs.ruby-lang.org/issues/14799)\] Startless range
+- [[Feature #14799]](https://bugs.ruby-lang.org/issues/14799) Startless range
 
 - mame: I’ve forgotten to commit.  just a moment.
 
-- \[Bug [#15620](https://bugs.ruby-lang.org/issues/15620)\] Block argument usage affects lambda semantic
+- [[Bug #15620]](https://bugs.ruby-lang.org/issues/15620) Block argument usage affects lambda semantic
 
 - nobu: yes, it’s a bug.
 
-- \[Misc [#15617](https://bugs.ruby-lang.org/issues/15617)\] Release 2.5.4? (blowmage)
+- [[Misc #15617]](https://bugs.ruby-lang.org/issues/15617) Release 2.5.4? (blowmage)
 
 - usa: nagachika-san is planning to release in this month.
 
-- \[Feature [#15323](https://bugs.ruby-lang.org/issues/15323)\] Proposal: Add Enumerable#filter\_map
+- [[Feature #15323]](https://bugs.ruby-lang.org/issues/15323) Proposal: Add Enumerable#filter\_map
 
 - naruse: Sequel uses \`select\_filter\` as another meaning
 - usa: also need \`select\_map\` as alias?
@@ -119,7 +119,7 @@ done
 - matz: filter\_map is not simply combination of filter and map.  so mame’s concern is needless fears.
 - matz: ok, accepted \`filter\_map\`.
 
-- \[Feature [#14145](https://bugs.ruby-lang.org/issues/14145)\] Proposal: Better Method#inspect
+- [[Feature #14145]](https://bugs.ruby-lang.org/issues/14145) Proposal: Better Method#inspect
 
 - ko1: I’m against to show the name of parameters.  we only need line no.  doesn’t it?
 - matz: ask the original author.
@@ -131,7 +131,7 @@ done
 - naruse: path name is already long.
 - ko1: ah, may be so.  but source location is useful than parameters.
 
-- \[Feature [#15653](https://bugs.ruby-lang.org/issues/15653)\] Proposal: Add Time#floor
+- [[Feature #15653]](https://bugs.ruby-lang.org/issues/15653) Proposal: Add Time#floor
 
 - naruse: isn’t it \`trunc\`?  see SQL.
 - akr: truncate means rounding to zero.  conceptually, zero is the first time, but we often assume the zero time as UNIX epoch.
@@ -141,43 +141,43 @@ done
 
 ## From Attendees
 
-- \[Misc [#15615](https://bugs.ruby-lang.org/issues/15615)\] File.birthtimeがLinux環境で有効なファイル作成時刻を得られなかった場合の挙動について
+- [[Misc #15615]](https://bugs.ruby-lang.org/issues/15615) File.birthtimeがLinux環境で有効なファイル作成時刻を得られなかった場合の挙動について
 
 - should raises \`NotImplementedError\` both \`File.birthtime\` and \`File::Stat#birthtime\` if birthtime is not available.
 - akr: \`respond\_to?\` should always return \`true\`.
 - akr: we also have to implement \`birthtime\` to \`Pathname\`, don’t it?
 - usa: yes
 
-- \[Feature [#15195](https://bugs.ruby-lang.org/issues/15195)\] How to deal with new Japanese era
+- [[Feature #15195]](https://bugs.ruby-lang.org/issues/15195) How to deal with new Japanese era
 
 - martin: just a reminder.
 - naruse: I’m planning to release 2.6.2 sooner.  and 2.6.3 will be released at Apr.
 - martin: ok
 
-- \[Bug [#15598](https://bugs.ruby-lang.org/issues/15598)\] Deadlock on mutual reference of autoloaded constants
+- [[Bug #15598]](https://bugs.ruby-lang.org/issues/15598) Deadlock on mutual reference of autoloaded constants
 
 - (see next)
 
-- \[Bug [#15599](https://bugs.ruby-lang.org/issues/15599)\] Mixing autoload and require causes deadlock and incomplete definition.
+- [[Bug #15599]](https://bugs.ruby-lang.org/issues/15599) Mixing autoload and require causes deadlock and incomplete definition.
 
 - akr: IMO, these are bugs.  I propose that autoload should use one global lock instead of locks per constants.
 
-- \[Feature [#15618](https://bugs.ruby-lang.org/issues/15618)\] Implement Enumerator::Yielder#to\_proc
+- [[Feature #15618]](https://bugs.ruby-lang.org/issues/15618) Implement Enumerator::Yielder#to\_proc
 
 - matz: ok, accepted.
 
-- \[Feature [#15553](https://bugs.ruby-lang.org/issues/15553)\] Addrinfo.getaddrinfo supports timeout
+- [[Feature #15553]](https://bugs.ruby-lang.org/issues/15553) Addrinfo.getaddrinfo supports timeout
 
 - akr: this implementation is not acceptable, but the feature is ok.
 - glass\_saga: I see.  BTW, is using Resolv acceptable?
 - akr: yes.
 - Even if it doesn’t support getaddrinfo with timeout (non glibc), it should ignore because we want to use the same code on macOS and Linux.
 
-- \[Bug [#15652](https://bugs.ruby-lang.org/issues/15652)\] Profiler\_\_ is not working correctly (ruby 2.6)
+- [[Bug #15652]](https://bugs.ruby-lang.org/issues/15652) Profiler\_\_ is not working correctly (ruby 2.6)
 
 - usa, naruse: kill it
 
-- \[Feature [#15626](https://bugs.ruby-lang.org/issues/15626)\] Manual Compaction for MRI’s GC (\`GC.compact\`)
+- [[Feature #15626]](https://bugs.ruby-lang.org/issues/15626) Manual Compaction for MRI’s GC (\`GC.compact\`)
 
 - matz: current status?
 - ko1: I think this is mergeable.  But one incompatibility exists.   if an C extension keeps pointers without mark (expecting to mark via Ruby code), GC cannot change the pointers.

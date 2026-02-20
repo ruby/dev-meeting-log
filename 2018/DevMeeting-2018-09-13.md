@@ -84,19 +84,19 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 ## From Attendees
 
-- \[Feature [#15022](https://bugs.ruby-lang.org/issues/15022)\] Oneshot coverage
+- [[Feature #15022]](https://bugs.ruby-lang.org/issues/15022) Oneshot coverage
 
 - I'd like to introduce a new kind of coverage to record whether each line is executed or not. It provides less but still useful information compared to the traditional line coverage, and the measurement is quite faster.
 - shyouhei: clear is not atomic, isn’t it?
 - mame: oh, yes.  maybe I should add clear: true option to peek\_result.
 - all: let’s go
 
-- \[Feature [#8661](https://bugs.ruby-lang.org/issues/8661)\] Add option to print backtrace in reverse order(stack frames first & error last)
+- [[Feature #8661]](https://bugs.ruby-lang.org/issues/8661) Add option to print backtrace in reverse order(stack frames first & error last)
 
 - The current backtrace order is really annoying, and I'm not still used; is there any chance to revert?
 - ???: How about using pager?
 
-- \[Feature [#14609](https://bugs.ruby-lang.org/issues/14609)\] \`Kernel#p\` without args shows the receiver (ko1)
+- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) \`Kernel#p\` without args shows the receiver (ko1)
 
 - I feel this feature is very useful and some people say :+1: so let discuss about this feature.
 - everyone except mame/ko1: not good
@@ -104,55 +104,55 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - nobu: how about Kernel#P ?
 - knu: There’s a gem: [https://github.com/esminc/tapp](https://github.com/esminc/tapp)
 
-- \[Misc [#14956](https://bugs.ruby-lang.org/issues/14956)\] Remove stale branches in svn repository (hsbt)
+- [[Misc #14956]](https://bugs.ruby-lang.org/issues/14956) Remove stale branches in svn repository (hsbt)
 
 - go ahead.  not remove, but mv to tag
 
-- \[Feature [#6823](https://bugs.ruby-lang.org/issues/6823)\] Where/how should ruby-mode issues be reported? (kazu)
+- [[Feature #6823]](https://bugs.ruby-lang.org/issues/6823) Where/how should ruby-mode issues be reported? (kazu)
 
 - Remove ruby-mode.el from trunk, use emacs’s instead.
 - Other \*.el’s upstream moves to github.
 
-- \[Feature [#14183](https://bugs.ruby-lang.org/issues/14183)\] "Real" keyword argument
+- [[Feature #14183]](https://bugs.ruby-lang.org/issues/14183) "Real" keyword argument
 
 - I'd like to hear matz's current opinion and other committers' ones.
 
-- \[Feature [#14850](https://bugs.ruby-lang.org/issues/14850)\] Add official API for setting timezone on Time (nobu)
+- [[Feature #14850]](https://bugs.ruby-lang.org/issues/14850) Add official API for setting timezone on Time (nobu)
 
 - nobu: a patch posted.
 - akr: it’s not good to use Time object as a container.  But, we can define the official interface as a Struct which has :year, :month, … members.  then, Time objects suit the interface accidentally :)
 
 ## From non-attendees
 
-- \[Feature [#14975](https://bugs.ruby-lang.org/issues/14975)\] String#append without changing receiver's encoding (ioquatix)
+- [[Feature #14975]](https://bugs.ruby-lang.org/issues/14975) String#append without changing receiver's encoding (ioquatix)
 
 - Can we review this PR? We need to decide functionality (i.e. not changing receivers encoding, rejecting encoding if it's not same, unless receiver is binary).
 - Longer term, we should consider if << and concat should be modified. Changing receiver's encoding seems like a mistake.
 
-- \[Feature [#14739](https://bugs.ruby-lang.org/issues/14739)\] Improve fiber yield/resume performance (ioquatix)
+- [[Feature #14739]](https://bugs.ruby-lang.org/issues/14739) Improve fiber yield/resume performance (ioquatix)
 
 - Can I get commit access and can we agree to merge this change?
 
-- \[Feature [#14888](https://bugs.ruby-lang.org/issues/14888)\] Add trace point for eval (and related functions) (ioquatix)
+- [[Feature #14888]](https://bugs.ruby-lang.org/issues/14888) Add trace point for eval (and related functions) (ioquatix)
 
 - Can we decide if this is acceptable so I can make PR?
 
-- \[Feature [#14097](https://bugs.ruby-lang.org/issues/14097)\] Add union and difference methods to Array ([ana06 (Ana Maria Martinez Gomez)](https://bugs.ruby-lang.org/users/13437))
+- [[Feature #14097]](https://bugs.ruby-lang.org/issues/14097) Add union and difference methods to Array ([ana06 (Ana Maria Martinez Gomez)](https://bugs.ruby-lang.org/users/13437))
 
 - Addition of two new methods in aim of readability, ease of use, efficiency and consistency. There are already PR for both methods.
 - [matz (Yukihiro Matsumoto)](https://bugs.ruby-lang.org/users/13) told me to add this here ;) After my talk in EuRuKo and the feedback from the standing voting I hope it is clearer and easy to decide if this is wanted
 
-- \[Bug [#14908](https://bugs.ruby-lang.org/issues/14908)\] Enumerator::Lazy creates unnecessary Array objects
+- [[Bug #14908]](https://bugs.ruby-lang.org/issues/14908) Enumerator::Lazy creates unnecessary Array objects
 
 - Proposed solution is to change arity of Enumerator::Yielder#<< to 1 from -1 and use it internally for lazy enum instead of Enumerator::Yielder#yield. Generally, method << is used with only one parameter changing arity to 1 also makes it consistent with other classes (String, Array)
 - Since, proposed solution involves spec changes (Enumerator::Yielder#<<'s arity) a discussion is requested before the provided patch can proceed.
 
-- \[Feature [#13167](https://bugs.ruby-lang.org/issues/13167)\] Dir.glob is 25x slower since Ruby 2.2 (ahorek)
+- [[Feature #13167]](https://bugs.ruby-lang.org/issues/13167) Dir.glob is 25x slower since Ruby 2.2 (ahorek)
 
 - improves performance of a glob pattern with braces, especially on windows but also on other platforms
 - the idea was already approved by [matz (Yukihiro Matsumoto)](https://bugs.ruby-lang.org/users/13) [#13873](https://bugs.ruby-lang.org/issues/13873) but later revered (incompatibility of the order)
 - attached patch don't have the same problem
 
-- \[Feature [#13618](https://bugs.ruby-lang.org/issues/13618)\] auto-fiber name, is "Thread::Coro" OK? How should Mutex work between coroutines? Queue/SizedQueue works, now (not sure about signal handler).
+- [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) auto-fiber name, is "Thread::Coro" OK? How should Mutex work between coroutines? Queue/SizedQueue works, now (not sure about signal handler).
 
-\[Feature [#5825](https://bugs.ruby-lang.org/issues/5825)\] Sweet instance var assignment in the object initializer
+[[Feature #5825]](https://bugs.ruby-lang.org/issues/5825) Sweet instance var assignment in the object initializer

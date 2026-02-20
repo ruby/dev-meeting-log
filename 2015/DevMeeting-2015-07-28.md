@@ -101,7 +101,7 @@ Also, additional TracePoint will be introduced.
 
 Resolved.
 
-## \[Feature [#8919](https://bugs.ruby-lang.org/issues/8919)\] Queue as embedded class: please determine whether or not it should be introduced. (glass\_saga)
+## [[Feature #8919]](https://bugs.ruby-lang.org/issues/8919) Queue as embedded class: please determine whether or not it should be introduced. (glass\_saga)
 
 Matz: seems good.
 
@@ -117,6 +117,6 @@ akr: What happens on pushing/popping closed Queue?
 
 ko1: there are discussions on ticket. I’ll take it.
 
-## \[Feature [#11297](https://bugs.ruby-lang.org/issues/11297)\] Allow private method of self to be called (a\_matsuda)
+## [[Feature #11297]](https://bugs.ruby-lang.org/issues/11297) Allow private method of self to be called (a\_matsuda)
 
 Matz: seems good

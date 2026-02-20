@@ -191,12 +191,12 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## Carry-over from previous meeting(s)
 
-## \[Feature [#13396](https://bugs.ruby-lang.org/issues/13396)\] Net::HTTP has no write timeout (shyouhei) Sorry, what was the conclusion of it?
+## [[Feature #13396]](https://bugs.ruby-lang.org/issues/13396) Net::HTTP has no write timeout (shyouhei) Sorry, what was the conclusion of it?
 
 
 - naruse: I’ll implement this.
 
-## \[Bug [#13438](https://bugs.ruby-lang.org/issues/13438)\] Fix heap overflow due to configure.in not being updated for HEAP\_\* -> HEAP\_PAGE\_\* variable renaming (shyouhei) Sorry, what was the conclusion of it?
+## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP\_\* -> HEAP\_PAGE\_\* variable renaming (shyouhei) Sorry, what was the conclusion of it?
 
 
 - mrkn: I remember we should not support old OpenBSD.
@@ -204,39 +204,39 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - shyouhei: then should we accept this?
 - nobu: yes.
 
-## \[Feature [#13608](https://bugs.ruby-lang.org/issues/13608)\] Add TracePoint#thread (shyouhei)
+## [[Feature #13608]](https://bugs.ruby-lang.org/issues/13608) Add TracePoint#thread (shyouhei)
 
 
 - ko1: I think we don’t need this.
 - naruse: I wanted this when I created a tracer.
 - ko1: the tracer shall run on the thread. Thread.current should suffice
 
-## \[Feature [#13602](https://bugs.ruby-lang.org/issues/13602)\] Optimize instance variable access if $VERBOSE is not true when compiling (shyouhei)
+## [[Feature #13602]](https://bugs.ruby-lang.org/issues/13602) Optimize instance variable access if $VERBOSE is not true when compiling (shyouhei)
 
 
 - ko1: is it worth for a 5-6% speedup?
 - mame: this should affect optcarrot...
 
-## \[Feature [#13613](https://bugs.ruby-lang.org/issues/13613)\] Prefer that require/require\_relative/load to tell us permission error if the target file is unreadable (shyouhei)
+## [[Feature #13613]](https://bugs.ruby-lang.org/issues/13613) Prefer that require/require\_relative/load to tell us permission error if the target file is unreadable (shyouhei)
 
 
 - akr: we should define errors that are “fatal” and those aren’t.  For instance, ENOENT is not fatal but EPERM is.
 - shyouhei: it sounds reasonable for someone want to know when there \_are\_ some nasty files.
 - mame: should we raise exceptions for errors other than ENOENT? or to warn only?
 
-## \[Feature [#13620](https://bugs.ruby-lang.org/issues/13620)\] Simplifying MRI's build system: always install (shyouhei)
+## [[Feature #13620]](https://bugs.ruby-lang.org/issues/13620) Simplifying MRI's build system: always install (shyouhei)
 
 
 - the thread is going on.
 
-## \[Feature [#13630](https://bugs.ruby-lang.org/issues/13630)\] :\[\] method should accept block in nice syntax (shyouhei) OK to close?
+## [[Feature #13630]](https://bugs.ruby-lang.org/issues/13630) :\[\] method should accept block in nice syntax (shyouhei) OK to close?
 
 
 - matz: I think it should be accepted.
 - nobu: mruby doesn’t work this way, BTW.
 - shyouhei: OK, lets close.
 
-- \[Feature [#11484](https://bugs.ruby-lang.org/issues/11484)\] add output offset for readpartial/read\_nonblock/etc (shyouhei)
+- [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read\_nonblock/etc (shyouhei)
 
 - akr: sounds OK to me.
 - shyouhei: seems nobody is against the feature itself but the API?
@@ -245,14 +245,14 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - nobu: what about buffer\_offset?
 - knu: seems IO.write has optional 3rd argument, offset, which is used to seek the file.
 
-## \[Feature [#9001](https://bugs.ruby-lang.org/issues/9001)\] Please package better standard library (shyouhe)
+## [[Feature #9001]](https://bugs.ruby-lang.org/issues/9001) Please package better standard library (shyouhe)
 
 
 - duerst: This particular ticket seems no feature but for long term, what should we do for standard libraries?
 - mrkn: I think current goal is to bundle things that are only needed for installing rubygems
 - akira: close this and let people individually name replacemets.
 
-## \[Feature [#12533](https://bugs.ruby-lang.org/issues/12533)\] Refinements: allow modules inclusion, in which the module can call internal methods which it defines. (shyouhei)
+## [[Feature #12533]](https://bugs.ruby-lang.org/issues/12533) Refinements: allow modules inclusion, in which the module can call internal methods which it defines. (shyouhei)
 
 
 - matz: this sounds like a bug instead of local rebinding?
@@ -289,24 +289,24 @@ end
 
 puts "tomatoe".vegetables
 
-## \[Feature [#13653](https://bugs.ruby-lang.org/issues/13653)\] Bundled zlib helper (shyouhei)
+## [[Feature #13653]](https://bugs.ruby-lang.org/issues/13653) Bundled zlib helper (shyouhei)
 
 
 - shyouhei: postpone because hsbt is absent.
 
-## \[Feature [#13626](https://bugs.ruby-lang.org/issues/13626)\] Add String#byteslice! (shyouhei)
+## [[Feature #13626]](https://bugs.ruby-lang.org/issues/13626) Add String#byteslice! (shyouhei)
 
 
 - mame: sounds reasonable because we have both slice and slice!
 - matz: agreed.
 
-## \[Feature [#13551](https://bugs.ruby-lang.org/issues/13551)\] Add a method to alias class methods (shyouhei)
+## [[Feature #13551]](https://bugs.ruby-lang.org/issues/13551) Add a method to alias class methods (shyouhei)
 
 
 - shyouhei: ah, I want this feature.
 - matz: I prefer opening singleton class.
 
-## \[Feature [#13332](https://bugs.ruby-lang.org/issues/13332)\] Forwardable#def\_instance\_delegator nil (shyouhei)
+## [[Feature #13332]](https://bugs.ruby-lang.org/issues/13332) Forwardable#def\_instance\_delegator nil (shyouhei)
 
 
 - nobu: I don’t think this is much meaningful.
@@ -314,30 +314,30 @@ puts "tomatoe".vegetables
 - knu: ActiveSupport::Delegate also doesn’t support this comples feature (but only allow\_nil)
 - matz: I’d like to hear use cases.
 
-## \[Feature [#13378](https://bugs.ruby-lang.org/issues/13378)\] Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
+## [[Feature #13378]](https://bugs.ruby-lang.org/issues/13378) Eliminate 4 of 8 syscalls when requiring file by absolute path (shyouhei)
 
 
 - nobu: I’m handlig this. WIP.
 
-## \[Feature [#13381](https://bugs.ruby-lang.org/issues/13381)\] \[PATCH\] Expose rb\_fstring and its family to C extensions (shyouhei)
+## [[Feature #13381]](https://bugs.ruby-lang.org/issues/13381) \[PATCH\] Expose rb\_fstring and its family to C extensions (shyouhei)
 
 
 - matz: postpone because ko1 is absent.
 
-## \[Feature [#13677](https://bugs.ruby-lang.org/issues/13677)\] Add more details to error "Name or service not known (SocketError)" (shyouhei)
+## [[Feature #13677]](https://bugs.ruby-lang.org/issues/13677) Add more details to error "Name or service not known (SocketError)" (shyouhei)
 
 
 - akr: we currenly only show the return value of gai\_strerror(). Seems OK to extend though.
 - akr: patch is welcomed.
 
-## \[Feature [#9323](https://bugs.ruby-lang.org/issues/9323)\] IO#writev (shyouhei)
+## [[Feature #9323]](https://bugs.ruby-lang.org/issues/9323) IO#writev (shyouhei)
 
 
 - akr: do we call syscalls many times, or should we buffer?
 - mame: I want to know how this speeds things up.
 - knu: maybe atomic write is the point.
 
-## \[Feature [#13693](https://bugs.ruby-lang.org/issues/13693)\] Allow String#to\_i and / or Kernel::Integer to parse e-notation (shyouhei)
+## [[Feature #13693]](https://bugs.ruby-lang.org/issues/13693) Allow String#to\_i and / or Kernel::Integer to parse e-notation (shyouhei)
 
 
 - mame: haha
@@ -349,18 +349,18 @@ puts "tomatoe".vegetables
 - mrkn: yes.
 - mrkn: it seems the behaviour of #to\_i comes with atoi().
 
-## \[Feature [#13434](https://bugs.ruby-lang.org/issues/13434)\] better method definition in C API (shyouhei)
+## [[Feature #13434]](https://bugs.ruby-lang.org/issues/13434) better method definition in C API (shyouhei)
 
 
 - shyouhei: postpone because ko1 is absent now.
 
-## \[Feature [#13696](https://bugs.ruby-lang.org/issues/13696)\] Add exchange and noreplace options to File.rename (shyouhei)
+## [[Feature #13696]](https://bugs.ruby-lang.org/issues/13696) Add exchange and noreplace options to File.rename (shyouhei)
 
 
 - akr: This should definitely not be an extension to #rename.
 - nobu: It’s hard to introduce in-core.
 
-## \[Feature [#13683](https://bugs.ruby-lang.org/issues/13683)\] Add strict Enumerable#single (shyouhei)
+## [[Feature #13683]](https://bugs.ruby-lang.org/issues/13683) Add strict Enumerable#single (shyouhei)
 
 
 - shyouhei: わかる
@@ -371,7 +371,7 @@ puts "tomatoe".vegetables
 - mame: what about the feature itself?
 - matz: think we need more use case.
 
-## \[Feature [#13618](https://bugs.ruby-lang.org/issues/13618)\] \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
+## [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) \[PATCH\] auto fiber schedule for rb\_wait\_for\_single\_fd and rb\_waitpid (shyouhei)
 
 
 - matz: async { File.read }
@@ -380,12 +380,12 @@ puts "tomatoe".vegetables
 - ko1: what if a library author did this, its user can never be aware of this async call.
 - ko1: If a Fiber body is small, it may have no problem.  However when someone write a framework that wraps existing external library, that should result in a problematic situation.
 
-## \[Feature [#13821](https://bugs.ruby-lang.org/issues/13821)\] Allow fibers to be resumed across threads (shyouhei)
+## [[Feature #13821]](https://bugs.ruby-lang.org/issues/13821) Allow fibers to be resumed across threads (shyouhei)
 
 
 - ko1: it’s technically impossible.
 
-## \[Bug [#13931](https://bugs.ruby-lang.org/issues/13931)\] correct install\_name of libruby on macOS (libruby.2.5.0.dylib -> libruby.2.5.dylib) (naruse)
+## [[Bug #13931]](https://bugs.ruby-lang.org/issues/13931) correct install\_name of libruby on macOS (libruby.2.5.0.dylib -> libruby.2.5.dylib) (naruse)
 
 
 - nobu: compatibility version shall be, and is, “2.4.0” ATM.  But we had bugs before.  I don’t want to change the AS-IS behaviour.
@@ -393,24 +393,24 @@ puts "tomatoe".vegetables
 - naruse: compatibility version shall be “2.4.0” or “2.4”, and linked libray should be libruby.2.4.dylib
 
 
-- \[Bug [#13917](https://bugs.ruby-lang.org/issues/13917)\] Comparable#clamp is slower than using Array#min,max. (naruse)
+- [[Bug #13917]](https://bugs.ruby-lang.org/issues/13917) Comparable#clamp is slower than using Array#min,max. (naruse)
 
 - nobu: the prposed patch seems roughly okay
 - mame: we don’t optimize Comparable#clamp for literals, because no practical usage can be thought for such thing. NEWS shall be consulted.
 - naruse: I’ll respond as such. nobu will merge the pull request.
 
-## \[Feature [#13893](https://bugs.ruby-lang.org/issues/13893)\] Add Fiber#\[\] and Fiber#\[\]= and restore Thread#\[\] and Thread#\[\]= to their original behavior (shyouhei)
+## [[Feature #13893]](https://bugs.ruby-lang.org/issues/13893) Add Fiber#\[\] and Fiber#\[\]= and restore Thread#\[\] and Thread#\[\]= to their original behavior (shyouhei)
 
 
 - akr: This is clear, but too late.
 
-## \[Feature [#10344](https://bugs.ruby-lang.org/issues/10344)\] \[PATCH\] Implement Fiber#raise (shyouhei)
+## [[Feature #10344]](https://bugs.ruby-lang.org/issues/10344) \[PATCH\] Implement Fiber#raise (shyouhei)
 
 
 - ko1: if we allow Fiber#raise, auto fiber shall introduce weired behaviour.
 - akr: I don’t think auto fiber should transfar exceptions.
 
-## \[Feature [#13923](https://bugs.ruby-lang.org/issues/13923)\] Idiom to release resources safely, with less indentations (shyouhei)
+## [[Feature #13923]](https://bugs.ruby-lang.org/issues/13923) Idiom to release resources safely, with less indentations (shyouhei)
 
 
 - shyouhei: This is what C++ resolves using RAII
@@ -441,7 +441,7 @@ puts "tomatoe".vegetables
 - matz: returning to the issue, let’s hear what the OP thinks about the nobu’s library.
 
 
-## \[Feature [#13919](https://bugs.ruby-lang.org/issues/13919)\] Add a new method to create Time instances from unix time and nsec (shyouhei)
+## [[Feature #13919]](https://bugs.ruby-lang.org/issues/13919) Add a new method to create Time instances from unix time and nsec (shyouhei)
 
 
 - naruse: I want it.
@@ -459,7 +459,7 @@ puts "tomatoe".vegetables
 - naruse: I think no practical usage are there for specifying both msec and nsec.
 - matz: OK, accepted.  But specifying nil shall raise exceptions.
 
-## \[Bug [#13887](https://bugs.ruby-lang.org/issues/13887)\] test/ruby/test\_io.rb may get stuck with FIBER\_USE\_NATIVE=0 on Linux
+## [[Bug #13887]](https://bugs.ruby-lang.org/issues/13887) test/ruby/test\_io.rb may get stuck with FIBER\_USE\_NATIVE=0 on Linux
 
 
 - ko1: this is a bug that should be fixed. I’ll do.

@@ -110,41 +110,41 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 
 ## Carry-over from previous meeting(s)
 
-- \[Feature [#10098](https://bugs.ruby-lang.org/issues/10098)\] \[PATCH\] Timing-safe string comparison for OpenSSL::HMAC (shyouhei) status?
+- [[Feature #10098]](https://bugs.ruby-lang.org/issues/10098) \[PATCH\] Timing-safe string comparison for OpenSSL::HMAC (shyouhei) status?
 
 - naruse: I don’t feel comfortable to its naming.
 - naruse: I think CRYPTO\_memcmp() is a bad interface so I don’t want to introduce it.
 
-- \[Feature [#12591](https://bugs.ruby-lang.org/issues/12591)\] Allow ruby to either catch misspelled "ailas" statements or, possibly more accurately, be more specific in what it reports as an error to the end-user (shyouhei)
+- [[Feature #12591]](https://bugs.ruby-lang.org/issues/12591) Allow ruby to either catch misspelled "ailas" statements or, possibly more accurately, be more specific in what it reports as an error to the end-user (shyouhei)
 
 - matz: use an editor that supports ruby syntax.
 
-- \[Feature [#9704](https://bugs.ruby-lang.org/issues/9704)\] Refinements as files instead of modules (shyouhei) conclusion?
+- [[Feature #9704]](https://bugs.ruby-lang.org/issues/9704) Refinements as files instead of modules (shyouhei) conclusion?
 
 - shugo: matz please respond.
 
-- \[Feature [#8643](https://bugs.ruby-lang.org/issues/8643)\] Add Binding.from\_hash (shyouhei) conclusion?
+- [[Feature #8643]](https://bugs.ruby-lang.org/issues/8643) Add Binding.from\_hash (shyouhei) conclusion?
 
 - ko1: I’ll ask seki-san.
 
-- \[Feature [#12650](https://bugs.ruby-lang.org/issues/12650)\] Use UTF-8 encoding for ENV on Windows (shyouhei)
+- [[Feature #12650]](https://bugs.ruby-lang.org/issues/12650) Use UTF-8 encoding for ENV on Windows (shyouhei)
 
 - duerst: is it just we dont want to touch this, or we have agreements we would move to UTF-8 later?
 - naruse: I’ll ask usa-san
 
-- \[Bug [#9569](https://bugs.ruby-lang.org/issues/9569)\] SecureRandom should try /dev/urandom first (shyouhei) I'd like to hear other opinions.
+- [[Bug #9569]](https://bugs.ruby-lang.org/issues/9569) SecureRandom should try /dev/urandom first (shyouhei) I'd like to hear other opinions.
 
 - akr: we can’t but neglect this issue as-is.
 - shyouhei: we have no critical security issue right now.
 
-- \[Misc [#12283](https://bugs.ruby-lang.org/issues/12283)\] Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
+- [[Misc #12283]](https://bugs.ruby-lang.org/issues/12283) Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
 
 - naruse: no move
 - duerst: PLEASE!
 
 ## From attendees
 
-- \[Feature [#12512](https://bugs.ruby-lang.org/issues/12512)\] Import Hash#transform\_values and its destructive version from ActiveSupport (eregon): we should discuss the name and maybe other methods like #map\_keys, #map\_pairs.
+- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform\_values and its destructive version from ActiveSupport (eregon): we should discuss the name and maybe other methods like #map\_keys, #map\_pairs.
 
 - matz: I have a plan to have similar methods also on Enumerable.  In doing so, map\_pairs is problematic because “pairs” does not always fit (they might not be key-value pairs).  This prevents me to introduce map\_keys/values/pairs.
 - matz: OK, I accept #transform\_values.
@@ -152,7 +152,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - mrkn: Yes.
 - eregon: #map\_values, keys, pairs is intuitive on Hash and has been asked many times. The Enumerable method to create a Hash is a different issue: the input might aready be key-value pairs in which case #to\_h is enough or it might not, in which case we might want a new method (build\_hash, associate ?).
 
-- \[Bug [#12689](https://bugs.ruby-lang.org/issues/12689)\] Thread isolation of $~ and $\_ (eregon): Who can describe the semantics? Is the current sharing expected?
+- [[Bug #12689]](https://bugs.ruby-lang.org/issues/12689) Thread isolation of $~ and $\_ (eregon): Who can describe the semantics? Is the current sharing expected?
 
 - ko1: I intentioanlly made VM this way, to behave simiarly with 1.8.x.
 - ko1: Toplevel $-variables are thread local, others like variables inside of methods are not. They are normal (local) variables, subject to be shared among threads.
@@ -180,7 +180,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
     nil
     #<MatchData "foo">
 
-- \[Feature [#6842](https://bugs.ruby-lang.org/issues/6842)\] Add Optional Arguments to String#strip (sonots): I am currently working on implementing this, but am wondering about specification for regular expression argument, and arguments for strip
+- [[Feature #6842]](https://bugs.ruby-lang.org/issues/6842) Add Optional Arguments to String#strip (sonots): I am currently working on implementing this, but am wondering about specification for regular expression argument, and arguments for strip
 
 - sonots: I want this when I write fluentd’s routing engine.
 - nobu: I think we can have this sort of thing, but #strip is not the right place to add it.
@@ -190,7 +190,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - mrkn: it seems python does not have things like this.
 - matz: please re-submit this with proposing new name.
 
-- \[Feature [#859](https://bugs.ruby-lang.org/issues/859)\] open-uri doesn't allow redirection to https (duerst): This seems overdue
+- [[Feature #859]](https://bugs.ruby-lang.org/issues/859) open-uri doesn't allow redirection to https (duerst): This seems overdue
 
 - duerst: these days http->https redirects happen more often than before.
 - naruse: I don’t remember where exactly is the specification inside of HTML5 where HTTPS redirection is defined
@@ -203,7 +203,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
     s2 = uri2.scheme.downcase
     s1 == s2 || ALLOW\_REDIRECTS\["#{s1}:#{s2}"\]
 
-- \[Feature [#7418](https://bugs.ruby-lang.org/issues/7418)\] Kernel#used\_refinements (shugo)
+- [[Feature #7418]](https://bugs.ruby-lang.org/issues/7418) Kernel#used\_refinements (shugo)
 
 - shyouhei: what is returned from this method?
 - shugo: list of refinements (modules).
@@ -217,7 +217,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - akr: I don’t think it should be a global function unless this is very frequently used.
 - matz: accept Module.used\_refinements
 
-- \[Feature [#9451](https://bugs.ruby-lang.org/issues/9451)\] Refinements and unary & (to\_proc) (shugo)
+- [[Feature #9451]](https://bugs.ruby-lang.org/issues/9451) Refinements and unary & (to\_proc) (shugo)
 
 - matz: I started thinking this can be okay.
 - nobu: I doubt if we can do this.
@@ -226,65 +226,65 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - matz: Object#method\_with\_refinements or something can be possible.
 - matz: for &(proc), it is a good-to-have. if possible.
 
-- \[Bug [#10103](https://bugs.ruby-lang.org/issues/10103)\] Unable to refine class with CONSTANT (shugo)
+- [[Bug #10103]](https://bugs.ruby-lang.org/issues/10103) Unable to refine class with CONSTANT (shugo)
 
 - shugo: is it okay to close?
 
-- \[Bug [#11182](https://bugs.ruby-lang.org/issues/11182)\] Refinement with alias causes strange behavior (shugo)
-- \[Feature [#11476](https://bugs.ruby-lang.org/issues/11476)\] Methods defined in Refinements cannot be called via send (shugo)
+- [[Bug #11182]](https://bugs.ruby-lang.org/issues/11182) Refinement with alias causes strange behavior (shugo)
+- [[Feature #11476]](https://bugs.ruby-lang.org/issues/11476) Methods defined in Refinements cannot be called via send (shugo)
 
 - matz: either add Object#refined\_send method or Object#method\_with\_refinements.
 - nobu: or to have a send-like operator.
 - ko1: what’s wrong with send being refinements-aware?
 - matz: how is it difficult to modify send?  I want that way.
 
-- \[Feature [#11525](https://bugs.ruby-lang.org/issues/11525)\] Add Module#used (refinement hook) (shugo)
+- [[Feature #11525]](https://bugs.ruby-lang.org/issues/11525) Add Module#used (refinement hook) (shugo)
 
 - matz: reject because it is too dynamic.
 
-- \[Bug [#11704](https://bugs.ruby-lang.org/issues/11704)\] Refinements only get "used" once in loop (shugo)
+- [[Bug #11704]](https://bugs.ruby-lang.org/issues/11704) Refinements only get "used" once in loop (shugo)
 
 - akr: this is a problem of benchmark
 - shyouhei: I understand what OP wanted to do
 
-- \[Feature [#12079](https://bugs.ruby-lang.org/issues/12079)\] Loosening the condition for refinement (shugo)
+- [[Feature #12079]](https://bugs.ruby-lang.org/issues/12079) Loosening the condition for refinement (shugo)
 
 - duplicated.
 
-- \[Feature [#12086](https://bugs.ruby-lang.org/issues/12086)\] using: option for instance\_eval etc. (shugo)
+- [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance\_eval etc. (shugo)
 
 - waiting for JRuby guys.
 - shugo: please nudge.
 
-- \[Feature [#12533](https://bugs.ruby-lang.org/issues/12533)\] Refinements: allow modules inclusion, in which the module can call internal methods which it defines. (shugo)
-- \[Feature [#12534](https://bugs.ruby-lang.org/issues/12534)\] Refinements: refine modules as well (shugo)
+- [[Feature #12533]](https://bugs.ruby-lang.org/issues/12533) Refinements: allow modules inclusion, in which the module can call internal methods which it defines. (shugo)
+- [[Feature #12534]](https://bugs.ruby-lang.org/issues/12534) Refinements: refine modules as well (shugo)
 
 - nobu: why we can’t?
 - shugo: it’s difficult because when “super” is called, module’s method have to seek for proper ICLASS.
 - matz: maybe we can restrict calling super from inside of a refined module?
 
-- \[Feature [#11650](https://bugs.ruby-lang.org/issues/11650)\] Add custom error message arg to Timeout.timeout (nobu)
+- [[Feature #11650]](https://bugs.ruby-lang.org/issues/11650) Add custom error message arg to Timeout.timeout (nobu)
 
 - nobu: I have no reason to reject this.
 - shugo: does this mean Timeout.timeout to pass its arguments to #new?
 - akr: It is considered an idiom to have message right after exception class.
 - matz: accepted.
 
-- \[Bug [#12548](https://bugs.ruby-lang.org/issues/12548)\] Rounding modes inconsistency between round versus sprintf (nobu)
+- [[Bug #12548]](https://bugs.ruby-lang.org/issues/12548) Rounding modes inconsistency between round versus sprintf (nobu)
 
 - add optional second argument, like BigDecimal, to take symbol.
 
-- \[Bug [#12588](https://bugs.ruby-lang.org/issues/12588)\] When an exception is re-raised in the "rescue" clause, the back trace does not contain the line in that clause (nobu)
+- [[Bug #12588]](https://bugs.ruby-lang.org/issues/12588) When an exception is re-raised in the "rescue" clause, the back trace does not contain the line in that clause (nobu)
 
 - matz: backtrace can be obtained if raised manually.
 
-- \[Feature [#12690](https://bugs.ruby-lang.org/issues/12690)\] Improve GC with external library that may use large memory (nobu)
+- [[Feature #12690]](https://bugs.ruby-lang.org/issues/12690) Improve GC with external library that may use large memory (nobu)
 
 - ko1: accept.
 
-- \[Feature [#12695](https://bugs.ruby-lang.org/issues/12695)\] File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set (nobu)
-- \[Feature [#12700](https://bugs.ruby-lang.org/issues/12700)\] regexg heredoc support (nobu)
+- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set (nobu)
+- [[Feature #12700]](https://bugs.ruby-lang.org/issues/12700) regexg heredoc support (nobu)
 
 - matz: rejected
 
-- \[Bug [#12709](https://bugs.ruby-lang.org/issues/12709)\] POSIX-noncompliant setenv (nobu)
+- [[Bug #12709]](https://bugs.ruby-lang.org/issues/12709) POSIX-noncompliant setenv (nobu)
