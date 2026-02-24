@@ -121,7 +121,7 @@ Milestones
 - (Martin) I support it.
 - next action?
 
-- Matz needs a ChangeLog because he wants to look at commit log in file, not by svn log (because \`svn log\` needs internet).  But it’s OK for him to auto-generate.
+- Matz needs a ChangeLog because he wants to look at commit log in file, not by svn log (because `svn log` needs internet).  But it’s OK for him to auto-generate.
 - ChangeLog is needed as long as we stick to svn.
 - (conclusion) lets auto-generate ChangeLog, like we do in version.h.
 - nobu and naruse will look at it.
@@ -132,7 +132,7 @@ Milestones
 
 ## [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged (shyouhei) what was the reason against defaulting true?
 
-- Thread\[.#\]report\_on\_exception= is accepted
+- Thread[.#]report_on_exception= is accepted
 - Matz does not want this default true, because it breaks current situations where programmer expects dead threads to silently exit.
 - what happens on join?
 
@@ -180,7 +180,7 @@ Milestones
 
 - matz: example seems illustrative.  any real-world use-case?
 
-## [[Bug #4388]](https://bugs.ruby-lang.org/issues/4388) open-uriで環境変数http\_proxyを使うときに認証付きのProxyが使えません
+## [[Bug #4388]](https://bugs.ruby-lang.org/issues/4388) open-uriで環境変数http_proxyを使うときに認証付きのProxyが使えません
 
 - akr: hsbt already introduced this at r54432.
 - lets ask if trunk is ok.
@@ -207,7 +207,7 @@ Milestones
 
 - convenient, but is #create an appropriate name?
 - no one is against? (except naming)
-- nobu: Hash#to\_struct(klass)
+- nobu: Hash#to_struct(klass)
 - create! doesnt follow naming convention.
 
 ## [[Feature #6739]](https://bugs.ruby-lang.org/issues/6739) One-line rescue statement should support specifying an exception class
@@ -280,10 +280,10 @@ Milestones
 
 ## [[Feature #12357]](https://bugs.ruby-lang.org/issues/12357) Random#initialize with a String (nobu)
 
-- akr: you can pass bignum to Random.new\_seed
+- akr: you can pass bignum to Random.new_seed
 - naruse: bignum is not useful when people port code from different languages e.g. python
 - akr: array of integers must be more “appropriate” than binary string.
-- nobu: I want to pass Random.raw\_seed to it
+- nobu: I want to pass Random.raw_seed to it
 - akr: why? no need seems there be. 128 bits should be sufficient.
 - naruse: Linux’s urandom (or getrandom) manual says that.
 
@@ -301,6 +301,6 @@ Milestones
 - mrkn: difficult to use in SQL becasue it breaks spaces inside string literals.
 - ko1: can be useful than #rjust.
 - akr: this can be as strange as Unicode-aware strip
-- nobu: how about extending #tr\_s so that it accepts arbitrary character class?
+- nobu: how about extending #tr_s so that it accepts arbitrary character class?
 - shyouhei: how about #strip that accepts regexp? -> NG, squish is not a strip.
 - akr: is this worth providing in-core?

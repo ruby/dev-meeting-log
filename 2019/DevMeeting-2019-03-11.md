@@ -73,12 +73,12 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 - 2.6.3 (Apr)
 - 2.7.0-preview1u89
 
-- waiting introducing \`@1\`. maybe at RubyKaigi
+- waiting introducing `@1`. maybe at RubyKaigi
 
 - [https://bugs.ruby-lang.org/issues/4475](https://bugs.ruby-lang.org/issues/4475)
-- matz: I deny \`@0\`, and also deny assignment to \`@1\`
+- matz: I deny `@0`, and also deny assignment to `@1`
 
-- \[\[1,2,3\]\].each {|a,| p a }
+- [[1,2,3]].each {|a,| p a }
 - →→ [https://hackmd.io/eb38KJgKQEeGEgsbSACUWg](https://hackmd.io/eb38KJgKQEeGEgsbSACUWg)
 
 ## Check security tickets (confidencial)
@@ -109,15 +109,15 @@ done
 
 - usa: nagachika-san is planning to release in this month.
 
-- [[Feature #15323]](https://bugs.ruby-lang.org/issues/15323) Proposal: Add Enumerable#filter\_map
+- [[Feature #15323]](https://bugs.ruby-lang.org/issues/15323) Proposal: Add Enumerable#filter_map
 
-- naruse: Sequel uses \`select\_filter\` as another meaning
-- usa: also need \`select\_map\` as alias?
-- matz: so, \`select\_collect\`? :)
+- naruse: Sequel uses `select_filter` as another meaning
+- usa: also need `select_map` as alias?
+- matz: so, `select_collect`? :)
 - mame: is lazy not enough?
 - mame: if this method is accepted, other methods with map will be also requested.
-- matz: filter\_map is not simply combination of filter and map.  so mame’s concern is needless fears.
-- matz: ok, accepted \`filter\_map\`.
+- matz: filter_map is not simply combination of filter and map.  so mame’s concern is needless fears.
+- matz: ok, accepted `filter_map`.
 
 - [[Feature #14145]](https://bugs.ruby-lang.org/issues/14145) Proposal: Better Method#inspect
 
@@ -133,19 +133,19 @@ done
 
 - [[Feature #15653]](https://bugs.ruby-lang.org/issues/15653) Proposal: Add Time#floor
 
-- naruse: isn’t it \`trunc\`?  see SQL.
+- naruse: isn’t it `trunc`?  see SQL.
 - akr: truncate means rounding to zero.  conceptually, zero is the first time, but we often assume the zero time as UNIX epoch.
 - naruse: I see.
-- mrkn, knu: There’s a typical use case in test code in Rails.  Sub-second fragment often gets lost through serialization/deserialization for DB and we often do Time.at(time.to\_i) in test code as a workaround.
+- mrkn, knu: There’s a typical use case in test code in Rails.  Sub-second fragment often gets lost through serialization/deserialization for DB and we often do Time.at(time.to_i) in test code as a workaround.
 - matz: ok, accepted.
 
 ## From Attendees
 
 - [[Misc #15615]](https://bugs.ruby-lang.org/issues/15615) File.birthtimeがLinux環境で有効なファイル作成時刻を得られなかった場合の挙動について
 
-- should raises \`NotImplementedError\` both \`File.birthtime\` and \`File::Stat#birthtime\` if birthtime is not available.
-- akr: \`respond\_to?\` should always return \`true\`.
-- akr: we also have to implement \`birthtime\` to \`Pathname\`, don’t it?
+- should raises `NotImplementedError` both `File.birthtime` and `File::Stat#birthtime` if birthtime is not available.
+- akr: `respond_to?` should always return `true`.
+- akr: we also have to implement `birthtime` to `Pathname`, don’t it?
 - usa: yes
 
 - [[Feature #15195]](https://bugs.ruby-lang.org/issues/15195) How to deal with new Japanese era
@@ -162,22 +162,22 @@ done
 
 - akr: IMO, these are bugs.  I propose that autoload should use one global lock instead of locks per constants.
 
-- [[Feature #15618]](https://bugs.ruby-lang.org/issues/15618) Implement Enumerator::Yielder#to\_proc
+- [[Feature #15618]](https://bugs.ruby-lang.org/issues/15618) Implement Enumerator::Yielder#to_proc
 
 - matz: ok, accepted.
 
 - [[Feature #15553]](https://bugs.ruby-lang.org/issues/15553) Addrinfo.getaddrinfo supports timeout
 
 - akr: this implementation is not acceptable, but the feature is ok.
-- glass\_saga: I see.  BTW, is using Resolv acceptable?
+- glass_saga: I see.  BTW, is using Resolv acceptable?
 - akr: yes.
 - Even if it doesn’t support getaddrinfo with timeout (non glibc), it should ignore because we want to use the same code on macOS and Linux.
 
-- [[Bug #15652]](https://bugs.ruby-lang.org/issues/15652) Profiler\_\_ is not working correctly (ruby 2.6)
+- [[Bug #15652]](https://bugs.ruby-lang.org/issues/15652) Profiler__ is not working correctly (ruby 2.6)
 
 - usa, naruse: kill it
 
-- [[Feature #15626]](https://bugs.ruby-lang.org/issues/15626) Manual Compaction for MRI’s GC (\`GC.compact\`)
+- [[Feature #15626]](https://bugs.ruby-lang.org/issues/15626) Manual Compaction for MRI’s GC (`GC.compact`)
 
 - matz: current status?
 - ko1: I think this is mergeable.  But one incompatibility exists.   if an C extension keeps pointers without mark (expecting to mark via Ruby code), GC cannot change the pointers.

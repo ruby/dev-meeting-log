@@ -416,7 +416,7 @@ s = Set[1, 2] # works without require
 ```
 
 ```shell
-ko1@aluminium:~$ gem-codesearch '\bSet\[' | wc -l
+ko1@aluminium:~$ gem-codesearch '\bSet[' | wc -l
 8464
 
 $ gem-codesearch '\bSet\.new' | wc -l

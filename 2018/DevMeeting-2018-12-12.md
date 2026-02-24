@@ -104,8 +104,8 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - [[Feature #15287]](https://bugs.ruby-lang.org/issues/15287) New TracePoint events to support loading features (ko1)
 
 - Ruby 2.6
-- I already introduced script\_compiled TracePoint event. We need to decide related methods.
-- Matz: remove “compiled\_” prefix.
+- I already introduced script_compiled TracePoint event. We need to decide related methods.
+- Matz: remove “compiled_” prefix.
 
 - Should hash separation be prohibited? (mame)
 
@@ -113,7 +113,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 def foo(h = {}, \*\*kw)
 
- p \[h, kw\]
+ p [h, kw]
 
 end
 
@@ -123,7 +123,7 @@ foo("str" => 1, :sym => 2)
 - Akr: open3.rb has problem
     % ./ruby -ropen3 -e 'p Open3.capture2("echo foo", :in => IO::NULL, 3 => IO::NULL)'
     Traceback (most recent call last):
-    \-e:1:in \`<main>': non-symbol key in keyword arguments: 3 (ArgumentError)
+    \-e:1:in `<main>': non-symbol key in keyword arguments: 3 (ArgumentError)
 - Akr: open3.rb will be changed to avoid \*\*.  r66352
 
 
@@ -135,7 +135,7 @@ foo("str" => 1, :sym => 2)
 
 ## Non-attendees
 
-- [[Feature #15230]](https://bugs.ruby-lang.org/issues/15230) RubyVM.resolve\_feature\_path
+- [[Feature #15230]](https://bugs.ruby-lang.org/issues/15230) RubyVM.resolve_feature_path
 
 - 2.6 issue
 - Mame: no fix on 2.6. Consider on next version.
@@ -151,19 +151,19 @@ foo("str" => 1, :sym => 2)
 - 2.7 or later
 - Matz: OK, but wait for 2.7.
 
-- [[Feature #15373]](https://bugs.ruby-lang.org/issues/15373) Proposal: Enable refinements to #method and #instance\_method
+- [[Feature #15373]](https://bugs.ruby-lang.org/issues/15373) Proposal: Enable refinements to #method and #instance_method
 
 - 2.7 or later
 - Matz: ok to introduce.
 
-- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method\_missing
+- [[Feature #15374]](https://bugs.ruby-lang.org/issues/15374) Proposal: Enable refinements to #method_missing
 
 - 2.7 or later
 - Matz: let me think about it for a while.
 
 - [[Feature #15007]](https://bugs.ruby-lang.org/issues/15007) Proposal: Introduce support for cold function attributes (clang and GCC)
 
-- reduced scope PR [https://github.com/ruby/ruby/pull/2005](https://github.com/ruby/ruby/pull/2005) (rb\_memerror, rb\_bug, rb\_warn)
+- reduced scope PR [https://github.com/ruby/ruby/pull/2005](https://github.com/ruby/ruby/pull/2005) (rb_memerror, rb_bug, rb_warn)
 - Already  merged.
 
 - [[Bug #15394]](https://bugs.ruby-lang.org/issues/15394) Ruby adds unexpected HTTP header value when using symbol key

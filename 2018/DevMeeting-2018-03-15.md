@@ -138,25 +138,25 @@ Maintainers starting Apr 2018:
 - Resolved
 - Mrkn will file the conclusion.
 
-- [[Feature #14476]](https://bugs.ruby-lang.org/issues/14476) Adding same\_all? for checking whether all items in an Array are same (mrkn)
+- [[Feature #14476]](https://bugs.ruby-lang.org/issues/14476) Adding same_all? for checking whether all items in an Array are same (mrkn)
 
-- Definition of “same”? -> \`\==\`, for mrkn’s case
-- Empty array? -> true, \[\].all?{} #=> true
-- same\_all? -> bad name: unnatural English
-- all\_same? Or all\_equal? -> natural, but it seems to use Object#equal? (assert\_same uses Object#equal?)
+- Definition of “same”? -> `\==`, for mrkn’s case
+- Empty array? -> true, [].all?{} #=> true
+- same_all? -> bad name: unnatural English
+- all_same? Or all_equal? -> natural, but it seems to use Object#equal? (assert_same uses Object#equal?)
 - uniform? -> “uniform array” means an array contains same type values
 - constant? -> easy to misunderstand
-- uniform\_values? -> verbose
+- uniform_values? -> verbose
 - Usage examples:
 
-- ary.all\_equal?
-- ary.all\_equal?{|e| e.foo}
-- ary.all\_same?
-- ary.all\_same?{|e| e.foo}
+- ary.all_equal?
+- ary.all_equal?{|e| e.foo}
+- ary.all_same?
+- ary.all_same?{|e| e.foo}
 - ary.uniform?
 - ary.uniform?{|e| e.foo}
-- ary.uniform\_values?
-- ary.uniform\_values?{|e| e.foo}
+- ary.uniform_values?
+- ary.uniform_values?{|e| e.foo}
 
 - [[Feature #14362]](https://bugs.ruby-lang.org/issues/14362) use BigDecimal instead of Float by default (mrkn)
 
@@ -205,14 +205,14 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 - Will be SyntaxError in 2.6-preview2
 - All of begin/do/def (experimental)
 
-- [[Feature #14594]](https://bugs.ruby-lang.org/issues/14594) Rethink yield\_self's name
+- [[Feature #14594]](https://bugs.ruby-lang.org/issues/14594) Rethink yield_self's name
 
 - “then”?
 - (1) Possible to use this method name by other libraries (like promise)
 - (2) No built-in methods like this …
 - Comitters objected the suggestion but matz accepted it
 
-- [[Feature #14324]](https://bugs.ruby-lang.org/issues/14324) Should Exception#full\_message include escape sequences?
+- [[Feature #14324]](https://bugs.ruby-lang.org/issues/14324) Should Exception#full_message include escape sequences?
 
 - Keyword arguments
 
@@ -221,7 +221,7 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 
 - [[Feature #12745]](https://bugs.ruby-lang.org/issues/12745) String#(g)sub(!) should pass a MatchData to the block, not a String
 
-- akr: how about gsubm, \`m\` means MatchData
+- akr: how about gsubm, `m` means MatchData
 
 ### From non-attendees
 
@@ -290,7 +290,7 @@ B.show
 
 - Matz approved NameError
 
-- \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform\_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
+- \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
 
 - It’s considered bug. amatsuda says ActiveSupport will follow Ruby 2.6.
 

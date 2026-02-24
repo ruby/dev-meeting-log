@@ -168,10 +168,10 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - akr: this one is preferrable over [#12092](https://bugs.ruby-lang.org/issues/12092)
 - matz: sounds reasonable.
 
-- [[Feature #11090]](https://bugs.ruby-lang.org/issues/11090) Enumerable#each\_uniq and #each\_uniq\_by (shyouhei)
+- [[Feature #11090]](https://bugs.ruby-lang.org/issues/11090) Enumerable#each_uniq and #each_uniq_by (shyouhei)
 
 - akr: the definition of uniq is not clear here.
-- Martin: where is the difference between each\_uniq and each.uniq ?
+- Martin: where is the difference between each_uniq and each.uniq ?
 - mrkn: Enumerable has no #uniq now.  Isn’t this a problem?
 - matz: Enumerable#uniq sounds reasonable, also Lasy#uniq.
 
@@ -187,7 +187,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - shyouhei: is this a bug?
 - matz: yes.
 
-- [[Feature #12138]](https://bugs.ruby-lang.org/issues/12138) Support Kernel#load\_with\_env (shyouhei)
+- [[Feature #12138]](https://bugs.ruby-lang.org/issues/12138) Support Kernel#load_with_env (shyouhei)
 
 - shyouhei: I understand the needs of such feature, but not this name.
 - ko1: maybe the OP wants C’s #include<...> like token pasting?
@@ -226,7 +226,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 
 - [[Feature #3187]](https://bugs.ruby-lang.org/issues/3187) Allow dynamic Fiber stack size (shyouhei)
 
-- ko1: it seems they implemented Thread.new(stack\_size: nnn)
+- ko1: it seems they implemented Thread.new(stack_size: nnn)
 - matz: but it’s Fiber.
 - ko1: yes but Fiber and Thread are API-compatible now.  Should we break it?
 - matz: I prefer Rubinius way (Fiber.new to eat the kwarg).
@@ -241,7 +241,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - matz: I can accept tail call as transparent optimization but should we encourage such thing?
 - Martin: is there any language where one have to explicitly state “this is a tail call”?
 
-- [[Feature #11813]](https://bugs.ruby-lang.org/issues/11813) Extend safe navigation operator for \[\] and \[\]= with syntax sugar (shyouhei)
+- [[Feature #11813]](https://bugs.ruby-lang.org/issues/11813) Extend safe navigation operator for [] and []= with syntax sugar (shyouhei)
 
 - rejected
 
@@ -253,7 +253,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - [[Feature #12481]](https://bugs.ruby-lang.org/issues/12481) Add Array#view to allow opt-in copy-on-write sharing of Array contents (shyouhei)
 
 - matz: why Array.new(0) then view?  Why not ary1.view…
-- nurse: possible use case might be Array#each\_cons(3) and such.
+- nurse: possible use case might be Array#each_cons(3) and such.
 - akr: one can implement this on top of #replace
 - matz: what use case?
 - nobu: should this be mutatable?
@@ -262,11 +262,11 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - [[Feature #12057]](https://bugs.ruby-lang.org/issues/12057) Allow methods with yield to be called without a block (shyouhei)
 
 - akr: we already have Enumerator.
-- akr: maybe this is automation of enum\_for(\_\_method\_\_) unless block\_given?
+- akr: maybe this is automation of enum_for(__method__) unless block_given?
 
 - [[Feature #12297]](https://bugs.ruby-lang.org/issues/12297) Ruby stdlib date can parse non-existent date with year 0 (shyouhei)
 
-- Wasn't this intentional? cf [https://en.wikipedia.org/wiki/0\_(year)](https://en.wikipedia.org/wiki/0_(year))
+- Wasn't this intentional? cf [https://en.wikipedia.org/wiki/0_(year)](https://en.wikipedia.org/wiki/0_(year))
 - [http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-dev/10241](http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-dev/10241)
 
 - [[Feature #12461]](https://bugs.ruby-lang.org/issues/12461) Hash & keys to make subset. (shyouhei)
@@ -278,21 +278,21 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - hmm…
 - akr: what’s useful with this?
 
-- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform\_values and its destructive version from ActiveSupport (shyouhei, mrkn)
+- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform_values and its destructive version from ActiveSupport (shyouhei, mrkn)
 
 - shyouhei: no one is against the feature itself but name.
 - akr: should this yield what? → it seems values only.
 - mrkn: I’d like to have both key and value
-- akr: it seems the usage being hash.transform\_values(&:to\_s) or such, on such assumption value-only usage seems reasonable.
+- akr: it seems the usage being hash.transform_values(&:to_s) or such, on such assumption value-only usage seems reasonable.
 - matz: the naming doesn’t charm me.
-- akr: what about #map\_v?
+- akr: what about #map_v?
 
-- [[Feature #10208]](https://bugs.ruby-lang.org/issues/10208) Passing block to Enumerable#to\_h (shyouhei)
+- [[Feature #10208]](https://bugs.ruby-lang.org/issues/10208) Passing block to Enumerable#to_h (shyouhei)
 
 - matz: I don’t like the name.
-- shyouhei: knu proposes #to\_h again.
-- nobu: there is no other to\_\* method that takes a block.
-- ko1: what about collect\_\*?
+- shyouhei: knu proposes #to_h again.
+- nobu: there is no other to_\* method that takes a block.
+- ko1: what about collect_\*?
 - matz: collect implies Array because it collects something.
 
 - [[Feature #11741]](https://bugs.ruby-lang.org/issues/11741) Migrate Ruby to Git from Subversion (shyouhei) Situation?
@@ -315,17 +315,17 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - Matz: we can do nothing to it.  This is a matter of Unicode consortium versus POSIX group.
 - cf: [http://pubs.opengroup.org/onlinepubs/9699919799/functions/ispunct.html](http://pubs.opengroup.org/onlinepubs/9699919799/functions/ispunct.html)
 
-- [[Feature #12546]](https://bugs.ruby-lang.org/issues/12546) Remove UnicodeNormalize::UNICODE\_VERSION (duerst)
+- [[Feature #12546]](https://bugs.ruby-lang.org/issues/12546) Remove UnicodeNormalize::UNICODE_VERSION (duerst)
 
 - Matz: OK.
 
-- [[Bug #12547]](https://bugs.ruby-lang.org/issues/12547) Remove ONIG\_UNICODE\_VERSION\_... in enc/unicode/case-folding.rb, casefold.h (duerst)
+- [[Bug #12547]](https://bugs.ruby-lang.org/issues/12547) Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h (duerst)
 
 - Martin: why is it?
 - nobu: I’d like to check unicode version of each generated file.
 - akr: I don’t understand.
 - Martin: why the C constant everywhere?
-- nobu: we should check in-core Unicode version in enc/unicode.o and lib/unicode\_normalize propagated from common.mk (or command line) each other.
+- nobu: we should check in-core Unicode version in enc/unicode.o and lib/unicode_normalize propagated from common.mk (or command line) each other.
 
 - [[Bug #12597]](https://bugs.ruby-lang.org/issues/12597) Produce test failure if some tests cannot be executed due to lacking data (duerst)
 
@@ -333,7 +333,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - akr: skip is silently discarded so not helpful.
 - nobu: false. skip says something when it has message argument.
 
-- [[Feature #12386]](https://bugs.ruby-lang.org/issues/12386) Move definition of ONIG\_CASE\_MAPPING compilation switch outside onigumo files (duerst)
+- [[Feature #12386]](https://bugs.ruby-lang.org/issues/12386) Move definition of ONIG_CASE_MAPPING compilation switch outside onigumo files (duerst)
 
 - Martin: I’d like to ask nobu where is a proper place to define this macro.
 - naruse: you can simply delete this #ifdef.  This part is ruby-specitic.
@@ -350,7 +350,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 
 ## From non-attendees
 
-- [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance\_eval etc. (shugo)
+- [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance_eval etc. (shugo)
 
 - Can I commit it?
 - matz: Charles Nutter must be consulted before committing this.
@@ -358,5 +358,5 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 ## Rope progress (ko1)
 
 - merged to String
-- [https://github.com/spinute/ruby/commits/implement\_ropestring](https://github.com/spinute/ruby/commits/implement_ropestring)
+- [https://github.com/spinute/ruby/commits/implement_ropestring](https://github.com/spinute/ruby/commits/implement_ropestring)
 - better than String#+, comparable to String#concat

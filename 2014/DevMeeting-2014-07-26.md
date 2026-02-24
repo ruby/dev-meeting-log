@@ -30,7 +30,7 @@ log: https://docs.google.com/document/d/1g2mu2qngyxw3ge-EbDGLsDDZR-Uj_6fWaVb0YPw
 
 # Log
 
-- attendee: ko1, sora\_h, akr, naruse, knu, duerst
+- attendee: ko1, sora_h, akr, naruse, knu, duerst
 - on-line: matz, zzak, nobu, kosaki
 
 # [[Feature #7797]](https://bugs.ruby-lang.org/issues/7797) Hash should be renamed to StrictHash and a new Hash should be created to behave like AS HashWithIndifferentAccess
@@ -41,9 +41,9 @@ matz: I have to reject, since it breaks compatibility
 
 # [[Feature #9980]](https://bugs.ruby-lang.org/issues/9980) Create HashWithIndiferentAccess using new syntax {a: 1}i
 
-matz: Suffix \`i\` is used for complex (imaginary) numbers. It's bit confusing.
+matz: Suffix `i` is used for complex (imaginary) numbers. It's bit confusing.
 
-Maybe what you want can be gained by shorter/nicer name for Hash#compare\_by\_identity.
+Maybe what you want can be gained by shorter/nicer name for Hash#compare_by_identity.
 
 → reject
 
@@ -55,15 +55,15 @@ Action: Matz  to write a few questions back to the proposer
 
 Now it can be implemnted with Pure Ruby.
 
-If hash is given, what will be \`self\` of ERB?
+If hash is given, what will be `self` of ERB?
 
-# [[Bug #8543]](https://bugs.ruby-lang.org/issues/8543) rb\_iseq\_load
+# [[Bug #8543]](https://bugs.ruby-lang.org/issues/8543) rb_iseq_load
 
 Modify it (best effort).
 
 # [[Feature #10084]](https://bugs.ruby-lang.org/issues/10084) Add Unicode String Normalization to String class
 
-Proposed method names by Matz: unicode\_normalize or normalize\_kd,... (not too short)
+Proposed method names by Matz: unicode_normalize or normalize_kd,... (not too short)
 
 How to deal with non-Unicode encodings: Matz: raise Exception
 
@@ -71,9 +71,9 @@ Other than UTF-8: UTF8-Mac: return type should be UTF-8, or deal with it as lega
 
 Todo (for eprun): measure load time, compare with unf, avoid Module Normalize
 
-require “unicode\_normalize”
+require “unicode_normalize”
 
-method name: String#unicode\_normalize(form)
+method name: String#unicode_normalize(form)
 
 form: :nfc, :nfd, :nfkc, :nfkd
 
@@ -93,11 +93,11 @@ no objection.
 
 approval.
 
-# [[Feature #9781]](https://bugs.ruby-lang.org/issues/9781) Feature Proposal: Method#super\_method
+# [[Feature #9781]](https://bugs.ruby-lang.org/issues/9781) Feature Proposal: Method#super_method
 
 super: ambiguous which is calling method or getting method object of super.
 
-\-> “super\_method”
+\-> “super_method”
 
 # [[Feature #10095]](https://bugs.ruby-lang.org/issues/10095) Object#as
 
@@ -113,7 +113,7 @@ bike shed discussion
 
 (1 + 2 + 3 + 4).with{|x| x \*\* 2}
 
-alias as instance\_exec
+alias as instance_exec
 
 with(1 + 2 + 3 + 4){|x| x \*\* 2}
 
@@ -139,9 +139,9 @@ continue
 
 (1 + 2 + 3 + 4).then{|x| x \*\* 2}
 
-reverse\_call
+reverse_call
 
-(1 + 2 + 3 + 4).\_{|x| x \*\* 2}
+(1 + 2 + 3 + 4)._{|x| x \*\* 2}
 
 (1 + 2 + 3 + 4) -> {|x| x \*\* 2}
 

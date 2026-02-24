@@ -39,7 +39,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 * [Misc #12283] Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
 * [Feature #12695] File.expand_path should resolve ~/ using /etc/passwd when HOME is not set (shyouhei) conclusion?
 * [Feature #12733] Bundle bundler to ruby core (shyouhei)
-* [Feature #6647] Exceptions raised in threads should be logged (shyouhei) Look at [\[ruby-core:77259\\]](http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/77259)
+* [Feature #6647] Exceptions raised in threads should be logged (shyouhei) Look at [[ruby-core:77259]](http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/77259)
 * [Feature #12744] Add str.reverse_each_char and str.reverse_chars (shyouhei) conclusion?
 * [Bug #11195] Add "no_proxy" parameter to Net::HTTP.new (shyouhei) Roman Bigler volunteers.
 * [Feature #12700] regexg heredoc support (shyouhei) the OP _might_ perhaps have real use case.
@@ -143,7 +143,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - no showstopper
 - what about the Rational renovation?
 
-- please nudge \_tad\_
+- please nudge _tad_
 
 ## (From RubyKaigi admin) for Keynote speakers
 
@@ -161,7 +161,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - Martin: the problem is not commit log, but to auto-generate ChanegLog.
 - naruse: I’ll do this on camp.
 
-- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand\_path should resolve ~/ using /etc/passwd when HOME is not set (shyouhei) conclusion?
+- [[Feature #12695]](https://bugs.ruby-lang.org/issues/12695) File.expand_path should resolve ~/ using /etc/passwd when HOME is not set (shyouhei) conclusion?
 
 - waiting for matz.
 
@@ -172,18 +172,18 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - nobu: it will be merged when rubygems side is OK.
 - hsbt: carefully watching rubygems’ progress.
 
-- [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged (shyouhei) Look at [\[ruby-core:77259\]](http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/77259)
+- [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged (shyouhei) Look at [[ruby-core:77259]](http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/77259)
 
 - akr: the proposal can be okay, but we currently do not implemnt thread GC mode.
 
-- [[Feature #12744]](https://bugs.ruby-lang.org/issues/12744) Add str.reverse\_each\_char and str.reverse\_chars (shyouhei) conclusion?
+- [[Feature #12744]](https://bugs.ruby-lang.org/issues/12744) Add str.reverse_each_char and str.reverse_chars (shyouhei) conclusion?
 
 - naruse: I agree this makes things faster a bit, but will it really be needed?
-- Martin: array allocation is avoided in the patch, but each\_char generates lots of strings anyways.
+- Martin: array allocation is avoided in the patch, but each_char generates lots of strings anyways.
 
-- [[Bug #11195]](https://bugs.ruby-lang.org/issues/11195) Add "no\_proxy" parameter to Net::HTTP.new (shyouhei) Roman Bigler volunteers.
+- [[Bug #11195]](https://bugs.ruby-lang.org/issues/11195) Add "no_proxy" parameter to Net::HTTP.new (shyouhei) Roman Bigler volunteers.
 
-- akr: +1 to refacor find\_proxy, then use it from Net::HTTP.
+- akr: +1 to refacor find_proxy, then use it from Net::HTTP.
 - let’s request a patch, then mentor by naruse.
 
 - [[Bug #12594]](https://bugs.ruby-lang.org/issues/12594) The class does not inherit from a module the modules that were included after the inclusion (shyouhei)
@@ -200,23 +200,23 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - assign naruse
 
-- [[Bug #12509]](https://bugs.ruby-lang.org/issues/12509) Using qsort\_s in mingw-w64 causes failures (shyouhei) who to handle this?
+- [[Bug #12509]](https://bugs.ruby-lang.org/issues/12509) Using qsort_s in mingw-w64 causes failures (shyouhei) who to handle this?
 
 - assign nobu
 
-- [[Bug #8996]](https://bugs.ruby-lang.org/issues/8996) pthread\_mutex\_lock EINVAL (shyouhei) seems like a real bug?
+- [[Bug #8996]](https://bugs.ruby-lang.org/issues/8996) pthread_mutex_lock EINVAL (shyouhei) seems like a real bug?
 
 - assign ko1
 
-- [[Bug #12776]](https://bugs.ruby-lang.org/issues/12776) Flaky test case: TestThread#test\_thread\_name (shyouhei) seems like a real bug, or....?
+- [[Bug #12776]](https://bugs.ruby-lang.org/issues/12776) Flaky test case: TestThread#test_thread_name (shyouhei) seems like a real bug, or....?
 
 - closed, lets backport.
 
-- [[Feature #12656]](https://bugs.ruby-lang.org/issues/12656) Expand short paths with File.expand\_path (shyouhei)
+- [[Feature #12656]](https://bugs.ruby-lang.org/issues/12656) Expand short paths with File.expand_path (shyouhei)
 
 - assign cruby-windows
 
-- [[Bug #7877]](https://bugs.ruby-lang.org/issues/7877) E::Lazy#with\_index should be lazy (shyouhei)
+- [[Bug #7877]](https://bugs.ruby-lang.org/issues/7877) E::Lazy#with_index should be lazy (shyouhei)
 
 - assign nobu
 
@@ -227,10 +227,10 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - [[Feature #4897]](https://bugs.ruby-lang.org/issues/4897) Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2\*Pi. See [http://tauday.com/](http://tauday.com/) (shyouhei)
 
 - mrkn: I suggest Math::TWOPI
-- akr: C has PI\_2, but this means π/2
+- akr: C has PI_2, but this means π/2
 - wating for matz (or time?)
 
-- [[Bug #12674]](https://bugs.ruby-lang.org/issues/12674) io/wait: not handling the case when the socket is closed before doing wait\_readable/writable with timeout (shyouhei) might be a design issue?
+- [[Bug #12674]](https://bugs.ruby-lang.org/issues/12674) io/wait: not handling the case when the socket is closed before doing wait_readable/writable with timeout (shyouhei) might be a design issue?
 
 - assign nobu
 
@@ -238,15 +238,15 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - assign shugo
 
-- [[Bug #6783]](https://bugs.ruby-lang.org/issues/6783) Infinite loop in inspect, not overriding inspect, to\_s, and no known circular references. Stepping into inspect in debugger locks it up with 100% CPU. (shyouhei)
+- [[Bug #6783]](https://bugs.ruby-lang.org/issues/6783) Infinite loop in inspect, not overriding inspect, to_s, and no known circular references. Stepping into inspect in debugger locks it up with 100% CPU. (shyouhei)
 
 - akr: I have a conception of ritcher inspection framework that passes-around contexts, but have not implemented yet.
 
-- [[Bug #10222]](https://bugs.ruby-lang.org/issues/10222) require\_relative and require should be compatible with each other (shyouhei)
+- [[Bug #10222]](https://bugs.ruby-lang.org/issues/10222) require_relative and require should be compatible with each other (shyouhei)
 
-- akr: require\_relative expands real path, while require doesn’t.
+- akr: require_relative expands real path, while require doesn’t.
 - naruse: if we expand realpath on require, we need disk access every time we call require (even when the library is already loaded).
-- naruse: what about adding both real path and expanded path to $LOADED\_FEATURES at once for require?
+- naruse: what about adding both real path and expanded path to $LOADED_FEATURES at once for require?
 - shyouhei: I think for this shown use case b.rb shall not be called twice.
 
 - [[Bug #12705]](https://bugs.ruby-lang.org/issues/12705) yielding args to a lambda uses block/proc rather than lambda/method semantics (shyouhei)
@@ -255,19 +255,19 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - akr: someone broke here at 2.2.
 - ko1: maybe me.
 
-- [[Bug #4537]](https://bugs.ruby-lang.org/issues/4537) Incorrectly creating private method via attr\_accessor (shyouhei) cf. [[Bug #9005]](https://bugs.ruby-lang.org/issues/9005)
+- [[Bug #4537]](https://bugs.ruby-lang.org/issues/4537) Incorrectly creating private method via attr_accessor (shyouhei) cf. [[Bug #9005]](https://bugs.ruby-lang.org/issues/9005)
 
 - shyouhei: is this fixed already?
 - nobu: seems not.
 - shyouhei: updated ruby -v field.
 
-- [[Feature #12721]](https://bugs.ruby-lang.org/issues/12721) public\_module\_function (shyouhei)
+- [[Feature #12721]](https://bugs.ruby-lang.org/issues/12721) public_module_function (shyouhei)
 
 - waiting for matz.
 
 - [[Feature #12732]](https://bugs.ruby-lang.org/issues/12732) An option to pass to Integer, Float, to return nil instead of raise an exception (shyouhei)
 
-- akr: it seems there are needs of other conversion methods than to\_i or Integer
+- akr: it seems there are needs of other conversion methods than to_i or Integer
 - nobu: they just want to detect validity, not exceptions.
 - Martin: what about Integer?()
 - Martin: but Upcase?() is a new concept.
@@ -280,11 +280,11 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - akr: it breaks compatibility.
 - akira: what about passing extra second argument to the block, which happen to be a copy of $~
 - akr: that is possible.
-- nobu: what about defineing MatchData#to\_str ?
+- nobu: what about defineing MatchData#to_str ?
 - shyouhei: it might be possible to extend the passed string to define method that returns $~.
 - akr: adding a new method is the most clean way if we can find good method name.
 
-- [[Feature #12747]](https://bugs.ruby-lang.org/issues/12747) Add TracePoint#callee\_id (shyouhei)
+- [[Feature #12747]](https://bugs.ruby-lang.org/issues/12747) Add TracePoint#callee_id (shyouhei)
 
 - assign ko1.
 
@@ -301,16 +301,16 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - akr: I can’t read the output.
 - mrkn: yes.  I’ll fix this.  But it’s not that simple.
 
-- \[Feature #12005\] define rb\_cFixnum and rb\_Bignum again? (akr)
+- \[Feature #12005\] define rb_cFixnum and rb_Bignum again? (akr)
 
 - dependency hell
 
 - situation: we “tried” to delete them.  Main difficulty is “gem ‘json’, ‘~> 1.8.0’”
 - hsbt: I pushed this change (remove JSON’s version) to Rails 4
 
-- C-level constants: rb\_cFixnum and rb\_cBignum
+- C-level constants: rb_cFixnum and rb_cBignum
 
-- akr: resurrection of these constants does \_not\_ solve the issue.
+- akr: resurrection of these constants does _not_ solve the issue.
 
 - warnigs for Ruby-level constants: Fixnum and Bignum
 

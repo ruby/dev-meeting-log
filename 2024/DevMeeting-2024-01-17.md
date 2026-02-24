@@ -368,7 +368,7 @@ NameError: name 'foo' is not defined
 ```
 
 ```
-$ git grep "\`.+'"
+$ git grep "`.+'"
 spec/ruby/core/exception/backtrace_spec.rb:46:      line.should =~ /^.+:\d+:in `[^`]+'$/
 ```
 

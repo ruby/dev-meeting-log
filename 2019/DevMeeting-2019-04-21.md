@@ -73,7 +73,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 ### Agenda
 
-- 13:30-14:00 (1) keyword arguments progress report \[[#14183](https://bugs.ruby-lang.org/issues/14183)\] (mame)
+- 13:30-14:00 (1) keyword arguments progress report [[#14183](https://bugs.ruby-lang.org/issues/14183)] (mame)
 
 - Mame: Presentation of problems and issues. Testing of strict implementation shows many incompatibilities.
 - Jeremy Evans: More compatible proposal, same as mame, but backwards compatible for methods that don’t accept keyword arguments.
@@ -95,7 +95,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 - Agreed it’s very complex logic to handle them (eregon)
 
-- 14:00-14:30 (2) static checking progress report \[#?????\] (mame)
+- 14:00-14:30 (2) static checking progress report [#?????] (mame)
 
 - Mame: Add side-car file for type annotations (.rbi)
 
@@ -116,11 +116,11 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 - Can you handle “Integer | String”
 
-- Mame: Yes it’s possible \[demo from slides\].
+- Mame: Yes it’s possible [demo from slides].
 
 - How should we use type profiler?
 
-- Mame: By using type profiler you can find more errors than testing alone \[e.g. typo in untested branch\].
+- Mame: By using type profiler you can find more errors than testing alone [e.g. typo in untested branch].
 
 - Can we test refinements? What other limitations are there?
 
@@ -128,7 +128,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 - What about anonymous classes and e.g., Struct subclasses? (eregon)
 
-- 14:30-15:00 (3) pattern matching \[[#14912](https://bugs.ruby-lang.org/issues/14912)\] (k\_tsj)
+- 14:30-15:00 (3) pattern matching [[#14912](https://bugs.ruby-lang.org/issues/14912)] (k_tsj)
 
 - Kazuki: Presentation of general idea and implementation.
 
@@ -157,7 +157,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 - The names are manually defined right now but perhaps it can be defined by “comment” in C source code.
 
 - Eregon: If we have more of the core written in Ruby, we can share more of it between implementations.
-- Eregon: a nice improvement over current \_\_foo methods in prelude.rb :)
+- Eregon: a nice improvement over current __foo methods in prelude.rb :)
 - Do we need to be concerned about MRI specific code being used in an unorthodox way?
 
 - Koichi: We can add a warning comment at the top of the file?
@@ -178,12 +178,12 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 - Matz: It is not for the VM implementation but for the users.
 
 - 16:30-17:00 break
-- 17:00-18:00 (6) RubyVM \[[#15752](https://bugs.ruby-lang.org/issues/15752)\] + numbered parameters \[[#15708](https://bugs.ruby-lang.org/issues/15708)\] (eregon)
+- 17:00-18:00 (6) RubyVM [[#15752](https://bugs.ruby-lang.org/issues/15752)] + numbered parameters [[#15708](https://bugs.ruby-lang.org/issues/15708)] (eregon)
 
 - Presentation about RubyVM namespace issues. How to handle experimental features.
 - Many new methods are implemented directly. What should go under proposed “ExperimentalFeatures”?
 
-- Where should we put \`RubyVM.resolve\_feature\_path(path)\`?
+- Where should we put `RubyVM.resolve_feature_path(path)`?
 
 - Should a.map{|e| e.sum} behave the same as a.map{@1.sum}?
 

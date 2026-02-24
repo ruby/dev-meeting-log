@@ -78,7 +78,7 @@ Attendees: Matz, ko1, nobu, akr, naruse, mrkn, shyouhei, sorah, martin, hsbt
 
 2016/04/13 13:00 @ Money Forward
 
-## \[[#10098](https://bugs.ruby-lang.org/issues/10098)\] Timing-safe string comparison for OpenSSL::HMAC (naruse)
+## [[#10098](https://bugs.ruby-lang.org/issues/10098)] Timing-safe string comparison for OpenSSL::HMAC (naruse)
 
 - (n0kada) name not fixed.
 - Rack implements this in pure-ruby
@@ -93,10 +93,10 @@ Attendees: Matz, ko1, nobu, akr, naruse, mrkn, shyouhei, sorah, martin, hsbt
 
 - Does OpenSSL has this feature?
 
-- Yes.  There is CRYPTO\_memcmp.
+- Yes.  There is CRYPTO_memcmp.
 - Why not just export this to ruby?
 
-- naruse: How about OpenSSL.foo\_bar() ?
+- naruse: How about OpenSSL.foo_bar() ?
 
 - OpenSSL.memcmp() ?
 
@@ -145,7 +145,7 @@ github.com/k-takata/Onigmo
 
 - Titlecase and String#swapcase
 
-- In unicode there is a special case called titlecase cf [http://unicode.org/faq/casemap\_charprop.html#4](http://unicode.org/faq/casemap_charprop.html#4)
+- In unicode there is a special case called titlecase cf [http://unicode.org/faq/casemap_charprop.html#4](http://unicode.org/faq/casemap_charprop.html#4)
 - How should swapcase behave?
 - Or, how should swapcase behave in general?
 - Other languages:
@@ -224,7 +224,7 @@ github.com/k-takata/Onigmo
 - (usa): Will C API be changed?
 
 1. Expected to keep compatibility as far as we can.
-2. For example rb\_fix\_hoge, and LONG2FIX.
+2. For example rb_fix_hoge, and LONG2FIX.
 
 - Proposed migration process
 
@@ -238,7 +238,7 @@ github.com/k-takata/Onigmo
 - Codesearch is done using rubygems-mirror
 - 500GB storage, memory unknown
 
-## \[ruby-core:74355\] Ruby+OMR: how should we proceed?
+## [ruby-core:74355] Ruby+OMR: how should we proceed?
 
 - Thanks a lot for contacting us.
 - Normal pull-request is the ideal way.
@@ -263,15 +263,15 @@ github.com/k-takata/Onigmo
 ## [[Feature #12172]](https://bugs.ruby-lang.org/issues/12172) Array#max and Array#min (mame)
 
 - Nobody is against Array#max
-- (shyouhei): Why only opt\_newarray\_max?
+- (shyouhei): Why only opt_newarray_max?
 
 - (mame) When Array include another module which redefines max/min, current implementation can’t detect it.
-- (mame) opt\_newarray\_max is only for literal.
+- (mame) opt_newarray_max is only for literal.
 
-- Nobody except ko1 is against opt\_newarray\_max
+- Nobody except ko1 is against opt_newarray_max
 
 - Koichi afraids that increase VM complexity and other people want to add other methods.
-- However, \[...\].min or .max are used CPU intensive cases. So that it is acceptable. If other techniques are invented, then Koichi will remove them.
+- However, [...].min or .max are used CPU intensive cases. So that it is acceptable. If other techniques are invented, then Koichi will remove them.
 
 ## [[Feature #9969]](https://bugs.ruby-lang.org/issues/9969) Add File.empty? as alias to File.zero? (shyouhei)
 
@@ -280,7 +280,7 @@ github.com/k-takata/Onigmo
 
 ## [[Bug #12121]](https://bugs.ruby-lang.org/issues/12121)異なる名前空間にある同名の定数により Module.constants の結果の並びが変わる (shyouhei)
 
-- The reason behind this is we introduced id\_table, which does not preserve order.
+- The reason behind this is we introduced id_table, which does not preserve order.
 - We did not, and do not want to, warrant such thing.
 - This is a doc issue.
 
@@ -296,7 +296,7 @@ github.com/k-takata/Onigmo
 
 - Assign to knu
 
-## [[Bug #12126]](https://bugs.ruby-lang.org/issues/12126) \[PATCH\] openssl: accept moving write buffer for write\_nonblock (shyouhei)
+## [[Bug #12126]](https://bugs.ruby-lang.org/issues/12126) [PATCH] openssl: accept moving write buffer for write_nonblock (shyouhei)
 
 - Seems ok
 
@@ -310,7 +310,7 @@ github.com/k-takata/Onigmo
 
 ## [[Feature #12096]](https://bugs.ruby-lang.org/issues/12096) New notation for instance variables and class variables (shyouhei)
 
-- This is metaprogramming.  And having a metaprogramming in syntax is \`\`wrong’’.
+- This is metaprogramming.  And having a metaprogramming in syntax is ``wrong’’.
 - Being able to write identical variable in different form is problematic (both for users and editors)
 
 ## [[Bug #12104]](https://bugs.ruby-lang.org/issues/12104) Procs keyword arguments affect value of previous argument (shyouhei)
@@ -329,7 +329,7 @@ github.com/k-takata/Onigmo
 
 Good example.
 
-## [[Feature #12119]](https://bugs.ruby-lang.org/issues/12119) next\_prime for lib/prime.rb (shyouhei)
+## [[Feature #12119]](https://bugs.ruby-lang.org/issues/12119) next_prime for lib/prime.rb (shyouhei)
 
 - Assign to yugui.
 
@@ -347,7 +347,7 @@ Good example.
 - (naruse) Current patch fails CI.
 - Generally ok, but it must works with nmake.
 
-## [[Bug #12139]](https://bugs.ruby-lang.org/issues/12139) return OpenSSL::Random.random\_bytes(n) call takes to long. OpenSSL:: bug on windows. (naruse)
+## [[Bug #12139]](https://bugs.ruby-lang.org/issues/12139) return OpenSSL::Random.random_bytes(n) call takes to long. OpenSSL:: bug on windows. (naruse)
 
-- (naruse) How about using Random.naw\_seed on Windows
+- (naruse) How about using Random.naw_seed on Windows
 - (akr) ok while it doesn’t cost too much entropy.

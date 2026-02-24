@@ -155,7 +155,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 - nobu: it is interpreted as “(var1 = Date.parse var1) rescue nil”
 - mrkn: in which way should we fix this, if we consider this as a bug?
 - Matz: Smells like a bug to me.
-- nobu: What happens when you combine rescue\_mod with massign?
+- nobu: What happens when you combine rescue_mod with massign?
 - assigning to nobu.
 
 - [[Bug #12489]](https://bugs.ruby-lang.org/issues/12489) hppa problems on Debian GNU/Linux (shyouhei) who to look at it?
@@ -173,13 +173,13 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 - naruse: negative.  shadowing itself is a bad idea and should be warned.
 - Matz: reject.
 
-- [[Feature #3511]](https://bugs.ruby-lang.org/issues/3511) rb\_path\_to\_class should call custom const\_defined? methods (shyouhei)
+- [[Feature #3511]](https://bugs.ruby-lang.org/issues/3511) rb_path_to_class should call custom const_defined? methods (shyouhei)
 
 - akr: this is dangerous to implement.
 - ko1: is this backward compatible? akr: it seems.
 - Matz: It seems it hurts than it gains.
 
-- [[Feature #12508]](https://bugs.ruby-lang.org/issues/12508) Integer#mod\_pow(shyouhei)
+- [[Feature #12508]](https://bugs.ruby-lang.org/issues/12508) Integer#mod_pow(shyouhei)
 
 - Matz: 2-argument version of pow is seen in other language (e.g. python)
 - akr: there is no pow method in Ruby sadly
@@ -195,7 +195,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
 - Matz: what’s good with it?  compared to taking everything with \*\*arg.
 
-- [[Feature #11195]](https://bugs.ruby-lang.org/issues/11195) Add "no\_proxy" parameter to Net::HTTP.new (shyouhei)
+- [[Feature #11195]](https://bugs.ruby-lang.org/issues/11195) Add "no_proxy" parameter to Net::HTTP.new (shyouhei)
 
 - shyouhei: would like to assign this to someone.
 - akr: what about requesting a patch
@@ -207,8 +207,8 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 - [[Feature #12586]](https://bugs.ruby-lang.org/issues/12586) Hash#sample (shyouhei)
 
 - mrkn: use case?
-- naruse: doesn’t hash\[hash.keys.sample\] make sense?
-- mrkn: I want to see a real-world use case.  Is there a need of to\_h?
+- naruse: doesn’t hash[hash.keys.sample] make sense?
+- mrkn: I want to see a real-world use case.  Is there a need of to_h?
 
 - [[Feature #12553]](https://bugs.ruby-lang.org/issues/12553) IO.readlines(filename, chomp: true) (shyouhei)
 
@@ -216,7 +216,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 - mrkn: readlines itself takes argument to reflect $/
 - naruse: chomp should work the same way like #chomp
 - Matz: which methods are affected?
-- naruse: IO.readlines, IO.foreach, IO#each\_line
+- naruse: IO.readlines, IO.foreach, IO#each_line
 - Matz: accept for those three
 
 - [[Bug #12548]](https://bugs.ruby-lang.org/issues/12548) Rounding modes inconsistency between round versus sprintf (shyouhei) maybe round(mode: "even") or something like that?
@@ -243,8 +243,8 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
 - Matz: accept.
 
-- [[Feature #3511]](https://bugs.ruby-lang.org/issues/3511) rb\_path\_to\_class should call custom const\_defined? methods (shyouhei)
-- [[Feature #10098]](https://bugs.ruby-lang.org/issues/10098) \[PATCH\] Timing-safe string comparison for OpenSSL::HMAC (shyouhei) status?
+- [[Feature #3511]](https://bugs.ruby-lang.org/issues/3511) rb_path_to_class should call custom const_defined? methods (shyouhei)
+- [[Feature #10098]](https://bugs.ruby-lang.org/issues/10098) [PATCH] Timing-safe string comparison for OpenSSL::HMAC (shyouhei) status?
 - [[Feature #12591]](https://bugs.ruby-lang.org/issues/12591) Allow ruby to either catch misspelled "ailas" statements or, possibly more accurately, be more specific in what it reports as an error to the end-user (shyouhei)
 - [[Feature #12594]](https://bugs.ruby-lang.org/issues/12594) The class does not inherit from a module the modules that were included after the inclusion (shyouhei)
 - [[Feature #12596]](https://bugs.ruby-lang.org/issues/12596) Add Pathname#empty? to be consistent with Dir.empty? and File.empty? (shyouhei)
@@ -252,7 +252,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
 - matz wil respond
 
-- [[Feature #12602]](https://bugs.ruby-lang.org/issues/12602) Add NilClass#to\_d (shyouhei)
+- [[Feature #12602]](https://bugs.ruby-lang.org/issues/12602) Add NilClass#to_d (shyouhei)
 - [[Feature #12607]](https://bugs.ruby-lang.org/issues/12607) Ruby needs an atomic integer (shyouhei)
 - [[Feature #12608]](https://bugs.ruby-lang.org/issues/12608) Proposal to replace unless in Ruby (shyouhei)
 
@@ -276,32 +276,32 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 - [[Feature #12374]](https://bugs.ruby-lang.org/issues/12374) SingletonClass (sawa)
 
 - ko1: this is GoF’s singleton pattern.
-- sawa: I want to have a reverse of Object#singleton\_class
+- sawa: I want to have a reverse of Object#singleton_class
 - akr: what use case?
-- Matz: this is technically possible, but what poupose?  There is singleton\_class?
+- Matz: this is technically possible, but what poupose?  There is singleton_class?
 
 - [[Feature #9704]](https://bugs.ruby-lang.org/issues/9704) Refinements as files instead of modules (shyouhei)
 - [[Feature #12637]](https://bugs.ruby-lang.org/issues/12637) Unified and consistent method naming for safe and dangerous methods (shyouhei)
-- [[Feature #8643]](https://bugs.ruby-lang.org/issues/8643) Add Binding.from\_hash (shyouhei)
+- [[Feature #8643]](https://bugs.ruby-lang.org/issues/8643) Add Binding.from_hash (shyouhei)
 - [[Feature #12650]](https://bugs.ruby-lang.org/issues/12650) Use UTF-8 encoding for ENV on Windows (shyouhei)
-- [[Feature #12648]](https://bugs.ruby-lang.org/issues/12648) Enumerable#sort\_by with descending option (shyouhei)
+- [[Feature #12648]](https://bugs.ruby-lang.org/issues/12648) Enumerable#sort_by with descending option (shyouhei)
 
-- akr: sort\_by with multiple arguments is odd.
+- akr: sort_by with multiple arguments is odd.
 - shyouhei: I sometimes need secondary sort key
 - Matz: I think such complex sort shall be another method.
-- akr: I think sort\_by with descending option is okay
-- naruse: isn’t reverse\_sort\_by OK?
+- akr: I think sort_by with descending option is okay
+- naruse: isn’t reverse_sort_by OK?
 - Matz: I understand the needs of reverse sort.
-- sawa: I can settle with sort\_by.reverse
+- sawa: I can settle with sort_by.reverse
 
 - [[Feature #12574]](https://bugs.ruby-lang.org/issues/12574) Remove TRUE, FALSE, and NIL (shyouhei)
 - [[Feature #12655]](https://bugs.ruby-lang.org/issues/12655) accessing a method visibility (shyouhei)
 - [[Feature #9612]](https://bugs.ruby-lang.org/issues/9612) Gemify OpenSSL (hsbt)
 - [[Feature #8539]](https://bugs.ruby-lang.org/issues/8539) Unbundle ext/tk (hsbt)
-- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform\_values and its destructive version from ActiveSupport
+- [[Feature #12512]](https://bugs.ruby-lang.org/issues/12512) Import Hash#transform_values and its destructive version from ActiveSupport
 
-- Matz: accept Enumerable#map\_v
-- Matz: not now for map\_k, map\_kv
+- Matz: accept Enumerable#map_v
+- Matz: not now for map_k, map_kv
 
 ## From non-attendees
 
@@ -313,7 +313,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
 - shyouhei: shoudl this be a method of Comparable?
 - nobu: can be a method of Range
-- akr: what about exclude\_end
+- akr: what about exclude_end
 - naruse: how about providing two:
 
 - Comparable#clamp(range)

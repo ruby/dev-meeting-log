@@ -70,7 +70,7 @@ Attendees: unak, mrkn, naruse, ayumin, ko1, sorah, zack, martin
 
 ## [[Feature #11949]](https://bugs.ruby-lang.org/issues/11949) Allow @/$ prefix in Regexp's named captures (naruse)
 
-/(?<[@timestamp](https://github.com/timestamp)\>\[^ \]\*): / =~
+/(?<[@timestamp](https://github.com/timestamp)\>[^ ]\*): / =~
 
 \>> /(?<@a>.)/ =~ 'x'
 
@@ -88,7 +88,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
 
  /(?<a@$b>.)/ =~ 'x'
 
- p \[$~.names, binding.local\_variables\] #=> \[\["a@$b"\], \[\]\]
+ p [$~.names, binding.local_variables] #=> [["a@$b"], []]
 
 }
 
@@ -96,7 +96,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
 
  /(?<ab>.)/ =~ 'x'
 
- p \[$~.names, binding.local\_variables\] #=> \[\["a@$b"\], \[:ab\]\]
+ p [$~.names, binding.local_variables] #=> [["a@$b"], [:ab]]
 
 }
 
@@ -114,7 +114,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
 
 Conclusion: acceptable confusion or not. Matz is positive to accept this feature
 
-## [[Feature #11987]](https://bugs.ruby-lang.org/issues/11987) daemons can't show the backtrace of rb\_bug
+## [[Feature #11987]](https://bugs.ruby-lang.org/issues/11987) daemons can't show the backtrace of rb_bug
 
 Process.daemon closes STDERR (or redirect to /dev/null).
 
@@ -253,21 +253,21 @@ Current: Don't download at all
 
 Ideal: Always check for updates (with If-Modified-Since); don't actually download data if nothing new
 
-Currently, there's a flag (ALWAYS\_UPDATE\_UNICODE = yes at common.mk: 1002) that needs to be manually changed to do 2) but has a comment suggesting 1). If that flag isn't activated, what happens is 5), but we need at least 4), and a reload when we change the version.
+Currently, there's a flag (ALWAYS_UPDATE_UNICODE = yes at common.mk: 1002) that needs to be manually changed to do 2) but has a comment suggesting 1). If that flag isn't activated, what happens is 5), but we need at least 4), and a reload when we change the version.
 
 Conclusion: Change to update whenever ‘make up’ is activated
 
 ## List each Unicode Data file only once
 
-Currently, each file is listed twice (UNICODE\_FILES at common.mk:1004 and ./.unicode-$(UNICODE\_VERSION).time at common.mk:1021); it would be great if this could be reduced to list each file only once.
+Currently, each file is listed twice (UNICODE_FILES at common.mk:1004 and ./.unicode-$(UNICODE_VERSION).time at common.mk:1021); it would be great if this could be reduced to list each file only once.
 
 Conclusion: Nobu to try to find a solution to avoid duplication, but not make it too complicated, please!
 
 # Use of Unicode in Source Files
 
-C source shouldn’t include non ASCII, because there may be some old compilers that bark on it (e.g. working in Shift\_JIS and thus barking on UTF-8 input).
+C source shouldn’t include non ASCII, because there may be some old compilers that bark on it (e.g. working in Shift_JIS and thus barking on UTF-8 input).
 
-lib/unicode\_normalize/tables.rb: is auto generated code; raw Unicode character is acceptable.
+lib/unicode_normalize/tables.rb: is auto generated code; raw Unicode character is acceptable.
 
 raw Unicode characters are also acceptable in test files
 
