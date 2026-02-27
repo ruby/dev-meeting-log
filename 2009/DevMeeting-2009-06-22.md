@@ -26,7 +26,7 @@ tags: Ruby, ruby-dev-meeting
 * 今開発中の機能を確認 (yugui)
   * → クリスマスに1.9.2を出せそうかどうか (yugui)
 
-Please write your name at the end of your topics such as -&gt; (ko1).
+Please write your name at the end of your topics such as -> (ko1).
 
 # Log
 

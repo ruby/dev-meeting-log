@@ -9,7 +9,7 @@ tags: Ruby, ruby-dev-meeting
 
 This meeting will be held on [2013-09-20 at 23:00 UTC](http://everytimezone.com/#2013-9-20,660,6bj) at irc://chat.freenode.net/#ruby-implementers.
 
-EN &lt;=&gt; JA translations will be done on demand in #ruby-ja on ircnet
+EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 

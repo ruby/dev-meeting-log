@@ -25,14 +25,14 @@ tags: Ruby, ruby-dev-meeting
 
 # Agenda
 
-Please write your name at the end of your topics such as -&gt; (ko1).
+Please write your name at the end of your topics such as -> (ko1).
 
 * [[ruby-core:24113]] (shyouhei)
   * なんか頑張る
 * [[ruby-dev:30954]] (nobu)
   * 中田さんがメンテナだったら，trunk に突っ込んでいいよ
 * [[ruby-dev:38785]] (shugo)
-  * to_a -&gt; to_ary (ko1)
+  * to_a -> to_ary (ko1)
 * [[tracing]] (rocky)
   * Note: I won't be at this meeting, but I am hoping that ko1 will lead the discussion.
   * なんか頑張る
