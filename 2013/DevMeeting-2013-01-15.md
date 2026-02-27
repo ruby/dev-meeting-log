@@ -72,7 +72,7 @@ We'll keep this meeting to one hour long.
 ### Conclusion
 
 * Wiki and tests are updated with latest spec
-  <pre>https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/RefinementsSpec</pre>
+  https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/RefinementsSpec
 * The goal for "non-experimental" status is by Ruby 2.1
 
 ### Open Questions
@@ -117,7 +117,7 @@ More than just "isolated" binding is desired
 ## Open Floor
 
 * New "Common Ruby" project
-  <pre>https://bugs.ruby-lang.org/projects/common-ruby</pre>
+  https://bugs.ruby-lang.org/projects/common-ruby
   * Should we actively put new features there?
   * We need to publicize it as "where new language features go"
 * Issue #7564 needs review from matz
@@ -125,7 +125,8 @@ More than just "isolated" binding is desired
 
 ## IRC Log
 
-<pre>15:00 ferrous26: tenderlove: you did?
+```
+15:00 ferrous26: tenderlove: you did?
 15:01 tenderlove: I did!
 15:01 drbrain: If you don't have voice and are a ruby
       implementer please /msg me or tenderlove
@@ -732,4 +733,5 @@ More than just "isolated" binding is desired
       meeting on weekend
 15:59 tenderlove: seems good
 15:59 drbrain: ok
-15:59 drbrain: this meeting is now closed</pre>
+15:59 drbrain: this meeting is now closed
+```
