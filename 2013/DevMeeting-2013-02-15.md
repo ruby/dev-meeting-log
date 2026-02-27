@@ -62,17 +62,18 @@ We'll keep this meeting to one hour long.
 * Ruby 2 versioning scheme, like 1.x (no number &gt; 9)? Will 2.0.10 or 2.10.0 be allowed?
   * new version number of trunk (2.0.1dev or 2.1.0dev?)
 * [Ruby Symbol issues](https://bugs.ruby-lang.org/issues/7839) (tenderlove)
-* Should <kbd>YAML.load</kbd> be the safe version by default? (marcandre)
+* Should `YAML.load` be the safe version by default? (marcandre)
 * [Digest::HMAC? Abandon it or make it non-experimental?](https://github.com/ruby/ruby/blob/eb4ae6bc542cdec0ade408c2f5ddfebba227d30f/ext/digest/lib/digest/hmac.rb#L13) (emboss)
 * [Get impressions on how to implement "erasing a password from memory"](https://bugs.ruby-lang.org/issues/5741) (emboss)
-* <kbd>prepend</kbd> and ancestors, instance_method, etc... (#7836, #7842, #7844)
+* `prepend` and ancestors, instance_method, etc... (#7836, #7842, #7844)
 * invite security ML members, especially non-MRI implementers
 * Open Floor
 * Wrap Up
 
 ## IRC Log
 
-<pre>15:06 zenspider: ok. we start... tenderlove ... intro
+```
+15:06 zenspider: ok. we start... tenderlove ... intro
       please
 15:06 enebo: agreed
 15:06 tenderlove: okay
@@ -647,11 +648,12 @@ We'll keep this meeting to one hour long.
 16:06 _ko1: zenspider: thanks
 16:06 zenspider: thanks everyone
 16:07 marcandre: thanks
-16:07 mame0: thanks</pre>
-
+16:07 mame0: thanks
+```
 ## Post Meeting Discussion
 
-<pre>16:07 _ko1: matz_: do you think about next version number? /
+```
+16:07 _ko1: matz_: do you think about next version number? /
       release date?
 16:07 matz_: Even though in Ruby "!" means "dangerous", bang
       methods in standard library uses it to show side
@@ -777,4 +779,5 @@ We'll keep this meeting to one hour long.
 16:48 matz_: I have leave (in reality)
 16:48 matz_: I leave my xchat logged in
 16:49 _ko1: thanks matz
-16:50 mame0: thank you!</pre>
+16:50 mame0: thank you!
+```

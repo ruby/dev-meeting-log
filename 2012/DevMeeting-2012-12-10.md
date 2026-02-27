@@ -104,16 +104,15 @@ We'll keep this meeting to one hour long.
 
 * Rigid process is not great
 * Having an executable spec that can be gradually translated to RubySpec is good
-* "And I want to make sure as long as I live on this mortal
-  <pre>state, you need my approval before adding something as official
-  Ruby" -- matz</pre>
+* "And I want to make sure as long as I live on this mortal state, you need my approval before adding something as official Ruby" -- matz
 * We should try having more meetings among implementers
 * Maybe we should maintain a flag to identify official "Ruby" features?
 * Matz wants to remain dictator, but still have participation from implemeters.
 
 ## IRC Log
 
-<pre>[15:00:27] @ drbrain set topic "Introduction"
+```
+[15:00:27] @ drbrain set topic "Introduction"
 [15:00:32] <drbrain> It's meeting time
 [15:00:34] <lrz> headius: hi!
 [15:00:43] <headius> lrz: hello! ltns!
@@ -754,4 +753,5 @@ We'll keep this meeting to one hour long.
 [16:24:59] <dbussink> drbrain: thanks for moderating :)
 [16:24:59] <drbrain> brixen: I will post meeting logs to the wiki...
 [16:25:02] <headius> maybe tenderlove could summarize in a ruby-core email
-[16:25:08] @ drbrain set topic "last meeting: http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210"</pre>
+[16:25:08] @ drbrain set topic "last meeting: http://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20121210"
+```

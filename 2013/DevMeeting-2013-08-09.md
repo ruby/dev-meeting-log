@@ -51,12 +51,14 @@ We'll keep this meeting to one hour long.
 
 ## IRC Log
 
-<pre>17:04 tenderlove: here's the wiki:
-      https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20130809</pre>
-
+```
+17:04 tenderlove: here's the wiki:
+      https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20130809
+```
 ### Frozen string syntax (#8579)
 
-<pre>17:04 drbrain: I guess we start with "frozen string syntax"
+```
+17:04 drbrain: I guess we start with "frozen string syntax"
       from charliesome
 17:04 tenderlove: yep
 17:04 drbrain: if anyone else needs voice please /msg
@@ -159,11 +161,12 @@ We'll keep this meeting to one hour long.
 17:24 matz: so if no better idea comes, I will accept
       them
 17:24 tenderlove: heh, okay
-17:24 charliesome: :)</pre>
-
+17:24 charliesome: :)
+```
 ### Hash#+ (#6225)
 
-<pre>17:24 tenderlove: Hash#+
+```
+17:24 tenderlove: Hash#+
 17:25 tenderlove: I think that was charliesome too?
 17:25 charliesome: it was me on behalf of zzak
 17:25 matz: why not use Hash#merge ?
@@ -182,11 +185,12 @@ We'll keep this meeting to one hour long.
 17:29 charliesome: Should we move on?
 17:29 matz: I still concern about merge is not a mere
       addition
-17:30 drbrain: ok</pre>
-
+17:30 drbrain: ok
+```
 ### Deprecate :: for method calls (#8377)
 
-<pre>17:30 drbrain: next is "deprecate :: for method calls" like o
+```
+17:30 drbrain: next is "deprecate :: for method calls" like o
       = Object::new
 17:30 tenderlove: we should have the original reporter submit
       a slide for decision
@@ -238,11 +242,12 @@ We'll keep this meeting to one hour long.
       For example, test-all passes without test changes or
       not?
 17:37 matz: I declare rejection over removing :: for method
-      calls</pre>
-
+      calls
+```
 ### Process.clock_gettime (#8658) (tenderlove)
 
-<pre>17:38 drbrain: the last topic is "Process.clock_gettime" by
+```
+17:38 drbrain: the last topic is "Process.clock_gettime" by
       tenderlove
 17:38 tenderlove: huh
 17:38 tenderlove: I think I already discussed this with
@@ -296,4 +301,5 @@ We'll keep this meeting to one hour long.
       Maybe I can help somehow
 17:48 matz: so other implementation of Ruby may not provide
       it
-17:49 drbrain: that is the end of the agenda</pre>
+17:49 drbrain: that is the end of the agenda
+```

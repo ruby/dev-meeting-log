@@ -66,7 +66,8 @@ ADD ITEMS HERE (with redmine links)
 
 ## IRC Log
 
-<pre>16:05 tenderlove: I'll start.
+```
+16:05 tenderlove: I'll start.
 16:05 drbrain: I think we have done this enough that I don't
       need to watch time
 16:05 tenderlove: I have to apologize for a couple things
@@ -79,11 +80,12 @@ ADD ITEMS HERE (with redmine links)
       schedule since he is doing the 2.1 management
 16:06 tenderlove: so next time I think it would be nice if we
       can get naruse to join
-16:06 tenderlove: anyway</pre>
-
+16:06 tenderlove: anyway
+```
 ### Documentation hosted on ruby-lang.org (zzak)
 
-<pre>16:06 tenderlove: zzak: your turn!
+```
+16:06 tenderlove: zzak: your turn!
 16:06 tenderlove: ruby-lang.org docs
 16:06 mame3: thank you for arranging the meeting!
 16:06 zzak: thank you
@@ -173,11 +175,12 @@ ADD ITEMS HERE (with redmine links)
       feedback
 16:15 drbrain: tenderlove: yes, I suppose zzak should file
       it
-16:15 zzak: can do</pre>
-
+16:15 zzak: can do
+```
 ### Separating "documentation only commits"
 
-<pre>16:16 drbrain: on to "documentation commits" then
+```
+16:16 drbrain: on to "documentation commits" then
 16:16 zzak: re: doc commits, i was going to ask about using a
       separate repo for doc only commits, eg
       http://github.com/documenting-ruby/ruby which will be
@@ -275,11 +278,12 @@ ADD ITEMS HERE (with redmine links)
       around this
 16:25 enebo: :)
 16:25 tenderlove: enebo: /zombocom/
-16:25 tenderlove: zzak: sounds good</pre>
-
+16:25 tenderlove: zzak: sounds good
+```
 ### Internationalized Documentation
 
-<pre>16:25 drbrain: ok, shall we move on to "internationalized
+```
+16:25 drbrain: ok, shall we move on to "internationalized
       documentation"?
 16:25 zzak: ok
 16:26 zzak: so i want to add support for embedded
@@ -369,11 +373,12 @@ ADD ITEMS HERE (with redmine links)
 16:33 zzak: that's it for me, thank you so much for your time
       everyone <3<3<3
 16:33 drbrain: I believe the next topic is up to
-      tenderlove</pre>
-
+      tenderlove
+```
 ### Non-blocking reads without exceptions. Feature #5138
 
-<pre>16:33 drbrain: non blocking reads without exceptions.
+```
+16:33 drbrain: non blocking reads without exceptions.
 16:33 tenderlove: yay
 16:33 tenderlove: yes
 16:33 drbrain: https://bugs.ruby-lang.org/issues/5138
@@ -514,11 +519,12 @@ ADD ITEMS HERE (with redmine links)
 16:44 drbrain: since knu is not here we should move on to
       zenspider
 16:44 mame3: akr might have an opinion... but I cannot
-      remember right now</pre>
-
+      remember right now
+```
 ### minitest and test/unit relationship
 
-<pre>16:44 drbrain: minitest 4.7.x and test/unit
+```
+16:44 drbrain: minitest 4.7.x and test/unit
 16:44 tenderlove: mame3: I will ask him :-)
 16:45 drbrain: akr_ is here but idle
 16:45 zenspider: can we wake him?
@@ -647,11 +653,12 @@ ADD ITEMS HERE (with redmine links)
 17:01 zenspider: mame3: using gems in stdlib has been
       propesed 20 times. afaik, it has been approved but
       nobody has made it work to approval
-17:01 akr_: Not proposal, though.</pre>
-
+17:01 akr_: Not proposal, though.
+```
 ### Official Ruby FAQ
 
-<pre>17:01 zzak: re: knu "official ruby FAQ"
+```
+17:01 zzak: re: knu "official ruby FAQ"
       https://twitter.com/knu/status/350245444259033088
 17:01 tenderlove: zenspider: no, he means to rebundle
       test/unit
@@ -693,11 +700,12 @@ ADD ITEMS HERE (with redmine links)
       about the "1.9.1 directory" is actually a good thing to
       put in a FAQ
 17:06 zzak: ok, i will import this and work on revising and
-      updating to current behavior</pre>
-
+      updating to current behavior
+```
 ### Ruby developer meeting
 
-<pre>17:06 tenderlove: I guess there is a dev meeting on the 27th
+```
+17:06 tenderlove: I guess there is a dev meeting on the 27th
       JST?
 17:06 zzak: just call me tenderdoclove
 17:07 yorickpeterse: zzak: if you need any help just ping,
@@ -728,4 +736,5 @@ ADD ITEMS HERE (with redmine links)
 17:09 tenderlove: headius: thanks!
 17:09 zzak: headius: thank you
 17:09 headius has left ()
-17:09 tenderlove: official time is over</pre>
+17:09 tenderlove: official time is over
+```

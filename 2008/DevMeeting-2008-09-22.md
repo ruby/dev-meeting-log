@@ -19,9 +19,9 @@ tags: Ruby, ruby-dev-meeting
 
 # Agenda
 
-* ABI fixの前に<code>struct RArray</code>の埋め込みはやらないのか? (yugui) -&gt; 公開したくない構造体を別のファイルにする
-* <kbd>include/ruby/</kbd>から<kbd>node.h</kbd>を移動させたい (yugui) -&gt; ripper 問題がなければいいのでは
-* class of class of class is <kbd>Class</kbd>は仕様かバグか? (yugui) -&gt; yugui さんががんばる
+* ABI fixの前に`struct RArray`の埋め込みはやらないのか? (yugui) -&gt; 公開したくない構造体を別のファイルにする
+* `include/ruby/`から`node.h`を移動させたい (yugui) -&gt; ripper 問題がなければいいのでは
+* class of class of class is `Class`は仕様かバグか? (yugui) -&gt; yugui さんががんばる
 * DelegateClass#class を1.8仕様にするか否かの結論を (unak) -&gt; 1.8 に戻す，その他のメソッドについては未定
 * Regexp#to_s を Regexp#inspect の alias に (nurse) -&gt; rejected by akr
 * Method#parameters, Proc#parameters (ko1) -&gt; rejected (wait for named parameter)
