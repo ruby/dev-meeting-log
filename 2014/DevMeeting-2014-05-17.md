@@ -224,71 +224,71 @@ pLinux が何なのかよくわからないので RubyCI のサーバー名を�
 
 # Summary
 
-## Attendance[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Attendance)
+## Attendance
 
 - in person: sora_h, shyouhei, akr, naruse, ko1, hsbt, tarui
 - online: matz, n0kada
 
-## \[Feature [#9772](https://bugs.ruby-lang.org/issues/9772 "Feature: IO#statfs and File::Statfs (Rejected)")\] IO#statfs and File::Statfs[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9772-IOstatfs-and-FileStatfs)
+## \[Feature [#9772](https://bugs.ruby-lang.org/issues/9772 "Feature: IO#statfs and File::Statfs (Rejected)")\] IO#statfs and File::Statfs
 
 not accepted. A gem should be made first.
 
-## \[Feature [#9647](https://bugs.ruby-lang.org/issues/9647 "Feature: File::Stat#birthtimeの追加 (Closed)")\] File::Stat#birthtime[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9647-FileStatbirthtime)
+## \[Feature [#9647](https://bugs.ruby-lang.org/issues/9647 "Feature: File::Stat#birthtimeの追加 (Closed)")\] File::Stat#birthtime
 
 accepted
 
-## \[Feature [#9816](https://bugs.ruby-lang.org/issues/9816 "Feature: 文字列内の数字を数値として比較するメソッド (Assigned)")\] 文字列内の数字を数値として比較するメソッド[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9816-%E6%96%87%E5%AD%97%E5%88%97%E5%86%85%E3%81%AE%E6%95%B0%E5%AD%97%E3%82%92%E6%95%B0%E5%80%A4%E3%81%A8%E3%81%97%E3%81%A6%E6%AF%94%E8%BC%83%E3%81%99%E3%82%8B%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89)
+## \[Feature [#9816](https://bugs.ruby-lang.org/issues/9816 "Feature: 文字列内の数字を数値として比較するメソッド (Assigned)")\] 文字列内の数字を数値として比較するメソッド
 
 This feature is about comparing characters as numbers, like for Gem versions. For instance, 11 > 9 #=> true
 
 - still need more discussion
 - also need a good name
 
-## date[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#date)
+## date
 
 going separate it into a bundled gem
 
-## \[Feature [#9513](https://bugs.ruby-lang.org/issues/9513 "Feature: Hide Rational internal (Closed)")\] Hide Rational internal (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9513-Hide-Rational-internal-akr)
+## \[Feature [#9513](https://bugs.ruby-lang.org/issues/9513 "Feature: Hide Rational internal (Closed)")\] Hide Rational internal (akr)
 
 accepted
 
-## \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826 "Feature: Enumerable#slice_between (Closed)")\] Enumerable#slice_between (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9826-Enumerableslice_between-akr)
+## \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826 "Feature: Enumerable#slice_between (Closed)")\] Enumerable#slice_between (akr)
 
 Matz likes the idea, but it needs a better name. There is already Array#slice.
 
-## \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071 "Feature: Enumerable#slice_after (Closed)")\] Enumerable#slice_after (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9071-Enumerableslice_after-akr)
+## \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071 "Feature: Enumerable#slice_after (Closed)")\] Enumerable#slice_after (akr)
 
 accepted
 
-## \[Feature [#9770](https://bugs.ruby-lang.org/issues/9770 "Feature: Etc.uname (Closed)")\] Etc.uname (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9770-Etcuname-akr)
+## \[Feature [#9770](https://bugs.ruby-lang.org/issues/9770 "Feature: Etc.uname (Closed)")\] Etc.uname (akr)
 
 accepted
 
-## \[Feature [#9842](https://bugs.ruby-lang.org/issues/9842 "Feature: system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (Closed)")\] system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9842-system-configuration-variables-sysconf-confstr-pathconf-and-fpathconf-akr)
+## \[Feature [#9842](https://bugs.ruby-lang.org/issues/9842 "Feature: system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (Closed)")\] system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
 
 accepted
 
-## \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834 "Feature: Float#{next_float,prev_float} (Closed)")\] Float#{next_float,prev_float} (akr)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9834-Floatnext_floatprev_float-akr)
+## \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834 "Feature: Float#{next_float,prev_float} (Closed)")\] Float#{next_float,prev_float} (akr)
 
 accepted
 
-## \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632 "Feature: [PATCH 0/2] speedup IO#close with linked-list from ccan (Closed)")\] [offtopic] remove doxygen?[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9632-offtopic-remove-doxygen)
+## \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632 "Feature: [PATCH 0/2] speedup IO#close with linked-list from ccan (Closed)")\] [offtopic] remove doxygen?
 
 dropping support for doxygen
 
-## \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Feature-9711-Remove-test-unit-and-minitest-from-stdlib-Can-I-remove-test-unit-cc-sora_h-hsbt)
+## \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)
 
 continuing to discuss about bundling test libraries test-unit/minitest.
 
-## remove rubyforge url(hsbt)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#remove-rubyforge-urlhsbt)
+## remove rubyforge url(hsbt)
 
 accepted
 
-## give up callcc (tarui)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#give-up-callcc-tarui)
+## give up callcc (tarui)
 
 accepted: going to fade out callcc support
 
-## Hash#comprized? (hone02)[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Hashcomprized-hone02)
+## Hash#comprized? (hone02)
 
 [http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/](http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/)
 
@@ -296,11 +296,11 @@ accepted: going to fade out callcc support
 - unclear what the usecase is
 - continue to discuss on redmine
 
-## [ANN] chkbuildXXX.hsbt.org[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#ANN-chkbuildXXXhsbtorg)
+## [ANN] chkbuildXXX.hsbt.org
 
 Using Ruby Association's funds, 4 machines have been prepared for chkbuild. chkbuild is the Ruby CI platform powering [http://rubyci.org](http://rubyci.org/). We also want something besides Intel like running ARM on top of QEMU.
 
-## Next Meetings[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingSummary20140517Japan#Next-Meetings)
+## Next Meetings
 
 - 6/18, 18:30 JST: discussing [Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")], [doorkeeper](http://cruby.doorkeeper.jp/events/11795?utm_campaign=event_11795_7773&utm_medium=email&utm_source=not_replied_message)
 - 7/26: big features for 2.2

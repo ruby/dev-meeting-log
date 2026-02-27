@@ -80,11 +80,11 @@ Although we didn't have a video recording from the meeting on Friday, werecorded
 
 Below I have summarized the meetings for each day and organized them intoagenda items. Each agenda item should have an associated ticket on our [bugtracker](http://bugs.ruby-lang.org/) that you can follow for more information.I will be updating these tickets with our conclusion shortly!
 
-## 2013-12-05[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#2013-12-05)
+## 2013-12-05
 
 Last Thursday several ruby-core committers, including Matz, met to discuss thefuture of Ruby. Here's the summary by topic:
 
-### 2.1.0 Release Schedule[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#210-Release-Schedule)
+### 2.1.0 Release Schedule
 
 [Version 27 on bug tracker](http://bugs.ruby-lang.org/versions/27)
 
@@ -94,14 +94,14 @@ Last Thursday several ruby-core committers, including Matz, met to discuss thefu
 - All bug fixes must be approved by the release manager ([@nalsh](https://twitter.com/nalsh))
 - 2.1.0 will be released on christmas 2013 (2013-12-25)
 
-### 2.1.0 Maintainer[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#210-Maintainer)
+### 2.1.0 Maintainer
 
 [misc. #9215](http://bugs.ruby-lang.org/issues/9215)
 
 - Undecided
 - [@nalsh](https://twitter.com/nalsh) will maintain 2.1.0 for 2 months after release
 
-### Semantic Versioning[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Semantic-Versioning)
+### Semantic Versioning
 
 [misc. #8835](http://bugs.ruby-lang.org/issues/8835)
 
@@ -115,7 +115,7 @@ To summarize:
 - We accept proposal of [@hsbt](https://twitter.com/hsbt)
 - The following proposal will begin with 2.1.0
 
-#### Version Schema `ruby-{MAJOR}.{MINOR}.{TEENY}`[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Version-Schema-ruby-MAJORMINORTEENY)
+#### Version Schema `ruby-{MAJOR}.{MINOR}.{TEENY}`
 
 - `MAJOR`: increased when incompatible change which can't be released in MINOR
 - "MAJOR is for party", reserved for special events
@@ -127,7 +127,7 @@ To summarize:
 
 Matz and other attendees were concerned about `TEENY >= 10`.
 
-#### Branches[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Branches)
+#### Branches
 
 We will maintain the following branches:
 
@@ -136,13 +136,13 @@ We will maintain the following branches:
 - `ruby_{MAJOR}_{MINOR}` across `TEENY` releases
 - tags will be used for each release
 
-#### API Compatibility[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#API-Compatibility)
+#### API Compatibility
 
 - Removing API is an incompatible change
 - such as (`STDIO_READ_DATA_PENDING`, etc.) must wait for 2.2.0
 - an incompatible change must increase `MINOR`
 
-#### ABI Compatibility[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#ABI-Compatibility)
+#### ABI Compatibility
 
 - Scheme of `{MAJOR}.{MINOR}.0`
 - Keep ABI compatibility with same `MINOR` release, so `TEENY` is fixed at 0
@@ -153,11 +153,11 @@ We are concerned with changes required for existing tools, such as:
 - svn
 - backport / merger
 
-#### Documentation[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Documentation)
+#### Documentation
 
 We need to announce our plans for removing patch level semantics, in order touse `{MAJOR}.{MINOR}.{TEENY}`.
 
-### Maintenance Policy for 1.8.7 and 1.9.2[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-187-and-192)
+### Maintenance Policy for 1.8.7 and 1.9.2
 
 [misc. #9216](http://bugs.ruby-lang.org/issues/9216)
 
@@ -175,7 +175,7 @@ We were given permission from Matz to release backport versions of Ruby forsecur
 
 We made an important decision on this policy on Friday, please read the summaryfor that day in the next major section.
 
-### Maintenance Policy for 1.9.3[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-193)
+### Maintenance Policy for 1.9.3
 
 [misc. #9217](http://bugs.ruby-lang.org/issues/9217)
 
@@ -183,7 +183,7 @@ We made an important decision on this policy on Friday, please read the summaryf
 - It will receive security fixes until March 2014
 - Additional 3 month security maintenance period may be supported by [@unak](https://twitter.com/unak)
 
-### Maintenance Policy for Future Versions of Ruby[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-Future-Versions-of-Ruby)
+### Maintenance Policy for Future Versions of Ruby
 
 [misc. #9215](http://bugs.ruby-lang.org/issues/9215)
 
@@ -194,7 +194,7 @@ We want to encourage a more routine process to improve user expectation andexper
 
 It's encouraged that each release manager decide on a roadmap for theirversion, although an absolute schedule and maintenance plan is difficult.
 
-### Policy Announcements[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Policy-Announcements)
+### Policy Announcements
 
 [misc. #9219](http://bugs.ruby-lang.org/issues/9219)
 
@@ -204,7 +204,7 @@ We will offer a conclusive policy document for all versions during the announceo
 
 I will publish this document shortly!
 
-### Maintainer Appointment and Discharge[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintainer-Appointment-and-Discharge)
+### Maintainer Appointment and Discharge
 
 [misc. #9218](http://bugs.ruby-lang.org/issues/9218)
 
@@ -232,7 +232,7 @@ for 2.0.0.
 
 It was suggested that [@unak](https://twitter.com/unak) may begin maintenance of2.0.0 in March 2014.
 
-### GC Merits and Documentation[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#GC-Merits-and-Documentation)
+### GC Merits and Documentation
 
 [misc. #8962](http://bugs.ruby-lang.org/issues/8962)
 
@@ -250,7 +250,7 @@ Koichi adds, "its ok to be shady".
 
 I will help with authoring this document.
 
-### Error Hiding[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Error-Hiding)
+### Error Hiding
 
 [Feature #7688](http://bugs.ruby-lang.org/issues/7688)
 
@@ -260,7 +260,7 @@ We discussed this ticket, and concluded the following statements:
 - Matz is undecided on the best way to improve performance
 - Okay to experiment after 2.1.0 is released
 
-### Various other discussion and events during Thursday[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Various-other-discussion-and-events-during-Thursday)
+### Various other discussion and events during Thursday
 
 After watching the video I wrote a [roughsummary](https://gist.github.com/zzak/7821769), since most of thediscussion was in English. The following other events took place during themeeting:
 

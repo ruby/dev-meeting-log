@@ -54,11 +54,11 @@ Please follow the [[DevelopersMeetingIRCGuidelines]] for irc
 
 # Summary
 
-## 2013-12-06[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#2013-12-06)
+## 2013-12-06
 
 On Friday, several committers met to discuss the events that took place duringthe previous meeting. We made important decisions on the maintenance policy forbackport versions and commercial support.
 
-### Branch Schema for Semantic Versioning `ruby_MAJOR_MINOR`[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Branch-Schema-for-Semantic-Versioning-ruby_MAJOR_MINOR)
+### Branch Schema for Semantic Versioning `ruby_MAJOR_MINOR`
 
 [misc. #8835](http://bugs.ruby-lang.org/issues/8835)
 
@@ -72,7 +72,7 @@ The previous solution was to create a new branch (`ruby_1_8_6`) and beginmaintai
 
 We are concerned because security versions may occur more frequently betweenMINOR branch changes.
 
-#### SemVer[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#SemVer)
+#### SemVer
 
 After reviewing the discussion from the previous meeting we discussed theconcern of `TEENY >= 10`.
 
@@ -81,11 +81,11 @@ After reviewing the discussion from the previous meeting we discussed theconcern
 - The version number can be anything that acts like String
 - We will postpone this situation
 
-#### Tooling support[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Tooling-support)
+#### Tooling support
 
 Most maintainers use tools from trunk, so they need to remain compatible withbackport branches. Any change in this policy should be documented.
 
-### Maintenance Policy for 1.8.7 and 1.9.2[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-187-and-192-2)
+### Maintenance Policy for 1.8.7 and 1.9.2
 
 [misc. #9216](http://bugs.ruby-lang.org/issues/9216)
 
@@ -99,7 +99,7 @@ Reason being, we don't want any new tickets, as an official release will resulti
 
 We need to write documentation for upgrading to supported versions, this isstrongly needed regardless of any policy changes.
 
-### Maintenance Policy for 1.9.3[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-193-2)
+### Maintenance Policy for 1.9.3
 
 [misc. #9217](http://bugs.ruby-lang.org/issues/9217)
 
@@ -107,18 +107,18 @@ We strongly agree on one major point:
 
 - An official announcement on this issue is critical
 
-### Maintenance Policy for Future Versions of Ruby[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Maintenance-Policy-for-Future-Versions-of-Ruby-2)
+### Maintenance Policy for Future Versions of Ruby
 
 [misc. #9215](http://bugs.ruby-lang.org/issues/9215)
 
 We had an extended conversation about the maintenance policy of all Rubyversions.
 
-#### Priority[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Priority)
+#### Priority
 
 - Security fixes become priority
 - Its maintainer's decision for priority of bug fix and security fix
 
-#### Duration[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Duration)
+#### Duration
 
 We decided the following conclusion:
 
@@ -137,7 +137,7 @@ Our maintenance period should be:
 
 Our goal is to avoid a sudden death.
 
-#### On commercial support[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#On-commercial-support)
+#### On commercial support
 
 [@ayumin](https://twitter.com/ayumin) offered the following statement:
 
@@ -150,7 +150,7 @@ It's the responsibility of the business party involved to maintain backwardscomp
 
 We should encourage commercial support for EOL rubies, such documentation wouldbe beneficial.
 
-### Wrap-up[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeetingDecember2013Japan#Wrap-up)
+### Wrap-up
 
 That about wraps up the summary of both meetings, thank you to everyone who could attend!
 
