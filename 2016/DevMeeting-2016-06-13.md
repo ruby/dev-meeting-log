@@ -142,7 +142,7 @@ nobu: this patch requires some tests, and fixes.
 
 - see https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowto
 
-## \[Feature #12247\] accept multiple arguments at Array#delete
+## [[Feature #12247]](https://bugs.ruby-lang.org/issues/12247) accept multiple arguments at Array#delete
 
 What’s happen?
 
@@ -173,7 +173,7 @@ Assigned to Minero Aoki.
 
 Assigned to shugo.
 
-## \[Feature #12086\] using: option for instance_eval etc.
+## [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance_eval etc.
 
 Motivation is replace self and using context.
 

@@ -121,7 +121,7 @@ matz: approved (Hash#fetch_values).
 
 Action: Matz will reply. Nobu will merge it.
 
-## \[Feature #9108\] Hash sub-selections
+## [[Feature #9108]](https://bugs.ruby-lang.org/issues/9108) Hash sub-selections
 
 Action: Matz will reply.
 
@@ -129,13 +129,13 @@ Action: Matz will reply.
 
 Action: continue to discuss how to implement (nobu)
 
-## \[Feature #11215\] pack/unpack for (u)intptr_t
+## [[Feature #11215]](https://bugs.ruby-lang.org/issues/11215) pack/unpack for (u)intptr_t
 
 Action: Matz will approve it.
 
-## \[Feature #10769\] Negative counterpart to Enumerable#slice_when
+## [[Feature #10769]](https://bugs.ruby-lang.org/issues/10769) Negative counterpart to Enumerable#slice_when
 
-## \[Feature #11253\] rb_io_modestr_oflags for Ruby API
+## [[Feature #11253]](https://bugs.ruby-lang.org/issues/11253) rb_io_modestr_oflags for Ruby API
 
 matz: add keyword argument “flags”, which is OR-ed with 2nd argument mode.
 

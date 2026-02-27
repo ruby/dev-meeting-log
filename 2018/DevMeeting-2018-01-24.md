@@ -177,7 +177,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Knu: This method changes values as well as keys, which seems wrong.
 - Matz: This particular API seems NG to me.
 
-## \[Bug #14380\] Expected transform_keys! to work just as transform_keys, but it doesn't (mame)
+## [[Bug #14380]](https://bugs.ruby-lang.org/issues/14380) Expected transform_keys! to work just as transform_keys, but it doesn't (mame)
 
 
 - Shyouhei: This behaviour was inherited from ActiveSupport.

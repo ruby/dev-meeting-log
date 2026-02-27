@@ -253,7 +253,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## From attendees
 
-## \[Bug #13737\] "can't modify frozen String" when installing bundled gems (ko1)
+## [[Bug #13737]](https://bugs.ruby-lang.org/issues/13737) "can't modify frozen String" when installing bundled gems (ko1)
 
 
 - should what happen for tainted string?

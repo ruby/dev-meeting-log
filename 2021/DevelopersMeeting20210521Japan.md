@@ -475,7 +475,7 @@ Conclusion:
 https://github.com/ruby/dev-meeting-log/blob/master/DevelopersMeeting20210416Japan.md
 
 
-### [Bug #16983] RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval (jeremyevans0)
+### [[Bug #16983]](https://bugs.ruby-lang.org/issues/16983) RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval (jeremyevans0)
 
 * ko1: Will do.
 
