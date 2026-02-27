@@ -97,11 +97,11 @@ Preview 1 (9/13 freeze)
 
 Need to apply:
 
-\- Incremental GC
+- Incremental GC
 
-\- RubyGems / Rake / RDoc
+- RubyGems / Rake / RDoc
 
-\- vfork
+- vfork
 
 Preview 2 (11/?)
 

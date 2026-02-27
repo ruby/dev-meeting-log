@@ -146,13 +146,15 @@ nobu: this patch requires some tests, and fixes.
 
 What’s happen?
 
+```ruby
 ary = [:a, :b, :c, :d, :e]
 
 ary.delete(:a, :f, :c) #=> ???
 
-\# (1) [:a, :c]
+# (1) [:a, :c]
 
-\# (2) [:a, nil, :c]
+# (2) [:a, nil, :c]
+```
 
 - ko1: who requires return value (array)?
 - sora_h: With (2), we can use a return value with multiple assignment

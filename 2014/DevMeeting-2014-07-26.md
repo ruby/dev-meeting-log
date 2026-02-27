@@ -97,7 +97,7 @@ approval.
 
 super: ambiguous which is calling method or getting method object of super.
 
-\-> “super_method”
+-> “super_method”
 
 # [[Feature #10095]](https://bugs.ruby-lang.org/issues/10095) Object#as
 

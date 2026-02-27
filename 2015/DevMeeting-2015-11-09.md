@@ -93,29 +93,26 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 ## [[Feature #4840]](https://bugs.ruby-lang.org/issues/4840) Allow returning from require
 
-\### Before
+```ruby
+### Before
 
 unless cond
-
  class C
-
  end
-
 end
 
-\# … or …
+# … or …
 
 class C
-
 end unless cond
 
-\### After
+### After
 
 return if cond
 
 class C
-
 end
+```
 
 - pros
 
@@ -150,63 +147,48 @@ end
 
 ### Discussed use cases, examples
 
-\# OK
+```ruby
+# OK
 
 if xxx
-
  return
-
 end
 
 while xxx
-
  return
-
 end
 
 begin
-
  raise
-
 rescue
-
  return
-
 ensure
-
  return
-
 end
 
-\# NG
+# NG
 
 1.times{
-
  return
-
 }
 
 Class.new do
-
  return
-
 end
 
 pr = Proc.new{
-
  return
-
 }
 
 def foo
-
  return
-
 end
+```
 
 ## [[Feature #9098]](https://bugs.ruby-lang.org/issues/9098) Indent heredoc against the left margin by default when "indented closing identifier" is turned on.
 
-\# 2 spaces
+```ruby
+# 2 spaces
 
  str =<<~EOS
 
@@ -215,6 +197,7 @@ end
  EOS
 
 #=>”\\nhello\\n”
+```
 
 Matz: acecptable, but there could be a problem if hard tabs and spaces are both used in one heredoc.
 
