@@ -100,7 +100,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 - when 7 Sept., 14:00 〜
 - At @tagomoris house?
 
-## Doorkeeperhq account upgrade[¶](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20160809Japan#Doorkeeperhq-account-upgrade)
+## Doorkeeperhq account upgrade
 
 We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
