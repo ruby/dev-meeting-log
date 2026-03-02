@@ -165,21 +165,22 @@ Maintainers starting Apr 2018:
 
 - [[Feature #14044]](https://bugs.ruby-lang.org/issues/14044) Introduce a new attribute step in Range (mrkn)
 
-\# current
+```ruby
+# current
 
 p 1.step(10, by: 2) #=> #<Enumerator: 1:step(10, {:by=>2})>
 
-p 1.step(by: 2)         #=> #<Enumerator: 1:step({:by=>2})>
+p 1.step(by: 2)         #=> #<Enumerator: 1:step({:by=>2})>
 
-\# extend
+# extend
 
 class Enumerator::ArithmeticSequence < Enumerator
 
  def first; end # already in Enumerator
 
- def last; end  # new
+ def last; end  # new
 
- def step; end  # new
+ def step; end  # new
 
  def inspect
 
@@ -189,13 +190,14 @@ class Enumerator::ArithmeticSequence < Enumerator
 
 end
 
-p 1.step                #=> (1.step)
+p 1.step                #=> (1.step)
 
-p 1.step(10)            #=> (1.step(10))
+p 1.step(10)            #=> (1.step(10))
 
 p 1.step(10, by: 2) #=> (1.step(10, by:2))
 
-p 1.step(by: 2)         #=> (1.step(by:2))
+p 1.step(by: 2)         #=> (1.step(by:2))
+```
 
 - do-else-end
 
@@ -253,14 +255,15 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 
 Example of “toplevel” and “overtaken”  warning; note that “overtaken” is only shown with -w.
 
+```
 % ruby -w -e '
 class A
- @@v = :A
- def self.show() p @@v end
+ @@v = :A
+ def self.show() p @@v end
 end
 class B
- @@v = :B
- def self.show() p @@v end
+ @@v = :B
+ def self.show() p @@v end
 end
 A.show
 B.show
@@ -270,11 +273,12 @@ B.show
 '
 :A
 :B
-\-e:12: warning: class variable access from toplevel
-\-e:4: warning: class variable @@v of A is overtaken by Object
+-e:12: warning: class variable access from toplevel
+-e:4: warning: class variable @@v of A is overtaken by Object
 :TOP
-\-e:8: warning: class variable @@v of B is overtaken by Object
+-e:8: warning: class variable @@v of B is overtaken by Object
 :TOP
+```
 
 - Matz likes changing warnings to error
 

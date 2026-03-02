@@ -73,37 +73,39 @@ Attendee: akr, ayumin, hsbt, ko1, matz, naruse, nobu, kosaki, usa, yuki, amatsud
 
 - More succinct message.  Delete two empty line and indent.
 
+```
 % ruby -rdid_you_mean -e '
 class C
- def bar
- end
+ def bar
+ end
 end
 C.new.baz
 '
-\-e:6:in `<main>': undefined method `baz' for #<C:0x007f790863e880> (NoMethodError)
+-e:6:in `<main>': undefined method `baz' for #<C:0x007f790863e880> (NoMethodError)
 
-   Did you mean? #bar
+   Did you mean? #bar
 
-zsh: exit 1     /home/akr/alias/ruby -rdid_you_mean -e
+zsh: exit 1     /home/akr/alias/ruby -rdid_you_mean -e
 
 % ocaml
-       OCaml version 4.01.0
+       OCaml version 4.01.0
 
-\# let bar = 1;;
+# let bar = 1;;
 val bar : int = 1
-\# baz;;
+# baz;;
 Error: Unbound value baz
 Did you mean bar?
-\# let bas = 2;;
+# let bas = 2;;
 val bas : int = 2
-\# baz;;
+# baz;;
 Error: Unbound value baz
 Did you mean bas or bar?
-\# let bat = 3;;
+# let bat = 3;;
 val bat : int = 3
-\# baz;;
+# baz;;
 Error: Unbound value baz
 Did you mean bas, bat or bar?
+```
 
 #
 

@@ -171,15 +171,17 @@ matz: It should raise TypeError.
 
 ## Allow kwargs to return/next/break
 
+```
 $ ruby -e 'def foo;return :a=>1; end'
 
 $ ruby -e 'def foo;return a: 1; end'
 
-\-e:1: syntax error, unexpected ':', expecting keyword_end
+-e:1: syntax error, unexpected ':', expecting keyword_end
 
 def foo;return a: 1; end
 
  ^
+```
 
 matz rejected it because return is not a method call.  Matz wants to split kwargs versus trailing-hash-arg in a long term.  He wants to distinguish them mentally.  Rocket notation is not always related to kwargs while colon notation is tightly-connected, even though it is also used in hash literals.  When it comes to a method, calling a method with keyword-argument does not always create hashes.
 
