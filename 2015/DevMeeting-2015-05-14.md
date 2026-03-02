@@ -217,7 +217,7 @@ Nobu: Impement Range specializes String and try it.
 
 New syntax proposals
 
-# Feature #11141:  new syntax suggestion for abbreviate definition on block parameters in order
+# [[Feature #11141]](https://bugs.ruby-lang.org/issues/11141)  new syntax suggestion for abbreviate definition on block parameters in order
 [https://bugs.ruby-lang.org/issues/11141](https://bugs.ruby-lang.org/issues/11141)
 
 Matz: negative
@@ -272,7 +272,7 @@ Which is favorite?
 
 Next action: ko1 will add discussion into 11141.
 
-# Feature #11105: ES6-like hash literals
+# [[Feature #11105]](https://bugs.ruby-lang.org/issues/11105) ES6-like hash literals
 [https://bugs.ruby-lang.org/issues/11105#change-52447](https://bugs.ruby-lang.org/issues/11105#change-52447)
 
 Problem 1: It seems “Set”

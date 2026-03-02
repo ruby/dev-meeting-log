@@ -241,7 +241,7 @@ Milestones
 - Duerst: oniguruma has updates.
 - naruse: I hadn’t know Oniguruma is on GitHub now [https://github.com/kkos/oniguruma](https://github.com/kkos/oniguruma). I’ll check it.
 
-## \[Bug #12368\] default encoding of Integer#chr
+## [[Bug #12368]](https://bugs.ruby-lang.org/issues/12368) default encoding of Integer#chr
 
 - As usa says script encoding doesn’t exist run time.
 - defaults to utf-8?

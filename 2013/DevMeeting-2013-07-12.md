@@ -371,7 +371,7 @@ ADD ITEMS HERE (with redmine links)
 16:33 drbrain: I believe the next topic is up to
       tenderlove</pre>
 
-### Non-blocking reads without exceptions. Feature #5138
+### [[Feature #5138]](https://bugs.ruby-lang.org/issues/5138) Non-blocking reads without exceptions.
 
 <pre>16:33 drbrain: non blocking reads without exceptions.
 16:33 tenderlove: yay
