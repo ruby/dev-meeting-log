@@ -7,7 +7,7 @@ tags: Ruby, ruby-dev-meeting
 
 This meeting will be held on [2013-01-15 at 15:00 Pacific Time](http://timeanddate.com/worldclock/meetingdetails.html?year=2013&month=1&day=15&hour=23&min=0&sec=0&p1=234&p2=248&p3=48&p4=64/) at irc://chat.freenode.net/#ruby-implementers.
 
-EN &lt;=&gt; JA translations will be done on demand in #ruby-ja on ircnet
+EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 

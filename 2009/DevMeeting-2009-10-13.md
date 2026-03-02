@@ -35,7 +35,7 @@ tags: Ruby, ruby-dev-meeting
   * either way, rubyspec will probably be a bottleneck
 * everyone should run rubyspec more often, and report any problems found (problems with ruby or rubspec are welcome)
 
-### The next preview &amp; feature freeze
+### The next preview & feature freeze
 
 * release preview 2 around end of October (motion passed)
 * Aim for December feature freeze  (motion passed)

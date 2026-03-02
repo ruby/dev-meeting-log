@@ -133,7 +133,7 @@ mame-san presented summary of Ruby 2.0.0.
 
 ## After Ruby 2.0.0
 
-* Who manage? -&gt; mame (matz's approved)
+* Who manage? -> mame (matz's approved)
 
 ### Version number
 

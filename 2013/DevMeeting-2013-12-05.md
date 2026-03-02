@@ -40,7 +40,7 @@ tags: Ruby, ruby-dev-meeting
 
 * 2.1 roadmap and schedule
 * 2.1.0 branch maintainer
-* &gt;= 2.1 maintenance policy #9215
+* \>= 2.1 maintenance policy #9215
 * Versioning Policy after Ruby 2.1
   * #8835
   * http://d.hatena.ne.jp/nurse/20131111#1384136384

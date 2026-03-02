@@ -9,7 +9,7 @@ tags: Ruby, ruby-dev-meeting
 
 This meeting will be held on [2013-02-15 at 15:00 Pacific Time](http://www.timeanddate.com/worldclock/meetingdetails.html?year=2013&month=2&day=15&hour=23&min=0&sec=0&p1=234&p2=248&p3=48&p4=64)) at ((<URL:irc://chat.freenode.net/#ruby-implementers).
 
-EN &lt;=&gt; JA translations will be done on demand in #ruby-ja on ircnet
+EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 
@@ -59,7 +59,7 @@ EN &lt;=&gt; JA translations will be done on demand in #ruby-ja on ircnet
 We'll keep this meeting to one hour long.
 
 * Introduction (tenderlove)
-* Ruby 2 versioning scheme, like 1.x (no number &gt; 9)? Will 2.0.10 or 2.10.0 be allowed?
+* Ruby 2 versioning scheme, like 1.x (no number > 9)? Will 2.0.10 or 2.10.0 be allowed?
   * new version number of trunk (2.0.1dev or 2.1.0dev?)
 * [Ruby Symbol issues](https://bugs.ruby-lang.org/issues/7839) (tenderlove)
 * Should <kbd>YAML.load</kbd> be the safe version by default? (marcandre)

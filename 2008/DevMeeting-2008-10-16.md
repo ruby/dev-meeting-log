@@ -22,7 +22,7 @@ tags: Ruby, ruby-dev-meeting
 
 # Agenda
 
-Please write your name at the end of your topics such as -&gt; (ko1).
+Please write your name at the end of your topics such as -> (ko1).
 
 * ABI fix (ko1)
 * What default_internal caused?

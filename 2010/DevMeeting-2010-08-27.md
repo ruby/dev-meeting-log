@@ -34,7 +34,7 @@ tags: Ruby, ruby-dev-meeting
 
 If you need a bento (lunch), please write it.  Expense will be collected.
 
-'''Bento order deadline is 8/24''' &lt;- Order is closed.  We prepare 17 bentos (RubyKaigi staffs have own bento).
+'''Bento order deadline is 8/24''' <- Order is closed.  We prepare 17 bentos (RubyKaigi staffs have own bento).
 
 # Agenda
 
@@ -44,7 +44,7 @@ If you need a bento (lunch), please write it.  Expense will be collected.
     * No deadline, no code
   * Features
     * classbox?
-    * MVM &lt;- impossible
+    * MVM <- impossible
     * debug features
     * keyword argument (2.0?)
     * tuning (ko1)
@@ -66,7 +66,7 @@ If you need a bento (lunch), please write it.  Expense will be collected.
     * traits
     * keyword arguments
     * compatibility?
-    * -&gt; matz: 100% compatible
+    * -> matz: 100% compatible
       * crap
   * yugui: 1.9 should include 2.0 features, gradually
   * yugui: 1.9 branch should not be made
@@ -80,9 +80,9 @@ If you need a bento (lunch), please write it.  Expense will be collected.
   * akr: Should 1.8.8 include 1.9.2 methods which 1.9.1 doesn't have?
   * knu: We can ignore 1.9.1.
   * knu: NEWS document is really important.
-  * akr: How to maintain NEWS file? -&gt; flush
+  * akr: How to maintain NEWS file? -> flush
 * The license of Ruby (by naruse)
-  * naruse: GPL3 incompatible. OK: BSD -&gt; Ruby, NG: Ruby -&gt; BSD
+  * naruse: GPL3 incompatible. OK: BSD -> Ruby, NG: Ruby -> BSD
   * naruse: How about to change license Ruby's and BSD?
   * ..some lawyers discussion...
   * matz: i'm thinking to change only GPL2 or later.  However, not enough consideration.  plus BSD seems OK.  We need more law knowledge.
@@ -113,9 +113,9 @@ If you need a bento (lunch), please write it.  Expense will be collected.
 * Specification of dynamic loading (see [ruby-dev:41774]) and Virtual File System Interface (if we have some time (low priority), by nagai)
 * Bug ticket squash (everyone)
 * #3675
-  * String#prepend =&gt; OK
-  * String#append, String#&gt;&gt; =&gt; pending
-  * Array#prepend, Array#append =&gt; pending
+  * String#prepend => OK
+  * String#append, String#>> => pending
+  * Array#prepend, Array#append => pending
 * proposal for Standard C API
   * based on Rubinius's
   * will be porting 1.9.
