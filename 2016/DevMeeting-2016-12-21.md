@@ -303,6 +303,6 @@ Issues
 
 - [[Feature #5481]](https://bugs.ruby-lang.org/issues/5481) [https://bugs.ruby-lang.org/issues/5481](https://bugs.ruby-lang.org/issues/5481)
 
-- \[Bug [#12998](https://bugs.ruby-lang.org/issues/12998)[\] paragraph mode inconsistency between](https://bugs.ruby-lang.org/issues/5481) [IO#each_line](https://bugs.ruby-lang.org/issues/5481) [and](https://bugs.ruby-lang.org/issues/5481) [String#each_line](https://bugs.ruby-lang.org/issues/5481)[(nobu)](https://bugs.ruby-lang.org/issues/5481)
+- [[Bug #12998]](https://bugs.ruby-lang.org/issues/12998) paragraph mode inconsistency between `IO#each_line` and `String#each_line` (nobu)
 
 - akr: String#each_line should be fixed in 2.5.
