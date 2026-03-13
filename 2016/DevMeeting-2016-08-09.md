@@ -183,7 +183,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
 - Matz: 2-argument version of pow is seen in other language (e.g. python)
 - akr: there is no pow method in Ruby sadly
-- nobu: pattern match \*\* and % to unify instructions?
+- nobu: pattern match `**` and `%` to unify instructions?
 - nobu: why not a separate gem?
 - akr: it can even be faster in pure-ruby so gem can be a way
 - mrkn: optimized algorithm is described in Wikipedia.
@@ -193,7 +193,7 @@ We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
 - [[Feature #12521]](https://bugs.ruby-lang.org/issues/12521) Syntax for retrieving argument without removing it from double-splat catch-all(shyouhei)
 
-- Matz: what’s good with it?  compared to taking everything with \*\*arg.
+- Matz: what’s good with it?  compared to taking everything with `**arg`.
 
 - [[Feature #11195]](https://bugs.ruby-lang.org/issues/11195) Add "no_proxy" parameter to Net::HTTP.new (shyouhei)
 

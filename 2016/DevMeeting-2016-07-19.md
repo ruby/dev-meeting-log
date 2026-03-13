@@ -291,8 +291,8 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 
 - matz: I don’t like the name.
 - shyouhei: knu proposes #to_h again.
-- nobu: there is no other to_\* method that takes a block.
-- ko1: what about collect_\*?
+- nobu: there is no other `to_*` method that takes a block.
+- ko1: what about `collect_*`?
 - matz: collect implies Array because it collects something.
 
 - [[Feature #11741]](https://bugs.ruby-lang.org/issues/11741) Migrate Ruby to Git from Subversion (shyouhei) Situation?

@@ -193,7 +193,7 @@ github.com/k-takata/Onigmo
 - 32bit by default?
 
 - Is 4G entry hash a real thing today?  Can we wait for this a few more years?
-- 4G entry requires 6word \* 4G = 100GB
+- 4G entry requires 6word * 4G = 100GB
 
 - Compile-time switch using configure?
 

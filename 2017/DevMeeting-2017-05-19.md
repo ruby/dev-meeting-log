@@ -303,7 +303,7 @@ log: TBD
 - [[Bug #13482]](https://bugs.ruby-lang.org/issues/13482) Improve performance of "set instance variable"
 - [[Bug #13447]](https://bugs.ruby-lang.org/issues/13447) Improve performance of rb_eql()
 - [[Bug #13503]](https://bugs.ruby-lang.org/issues/13503) Improve performance of some Time & Rational methods
-- [[Bug #13506]](https://bugs.ruby-lang.org/issues/13506) Improve performance of Complex#{+,-,,/,\*,abs2}
+- [[Bug #13506]](https://bugs.ruby-lang.org/issues/13506) Improve performance of `Complex#{+,-,*,/,**,abs2}`
 - [[Bug #13519]](https://bugs.ruby-lang.org/issues/13519) Improve performance of some Time methods
 - [[Bug #13507]](https://bugs.ruby-lang.org/issues/13507) Improve performance of some Complex methods where call Numeric#real? internally
 - [[Bug #13553]](https://bugs.ruby-lang.org/issues/13553) Improve performance in where push the element into non shared Array object

@@ -111,7 +111,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - [[Feature #6823]](https://bugs.ruby-lang.org/issues/6823) Where/how should ruby-mode issues be reported? (kazu)
 
 - Remove ruby-mode.el from trunk, use emacs’s instead.
-- Other \*.el’s upstream moves to github.
+- Other `*.el`’s upstream moves to github.
 
 - [[Feature #14183]](https://bugs.ruby-lang.org/issues/14183) "Real" keyword argument
 

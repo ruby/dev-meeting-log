@@ -178,7 +178,7 @@ We don't guarantee to put tickets in agenda if the comment violate the format (b
 - knu: Autoloading itself is a feature that you can't miss in application development.  Especially in Rails, it takes a very long time to load all ActiveRecord model files eagerly because each one of them accesses the database to load the table schema, and it'd be painful to have to load everything just to run, for example, a single unit test.
 - Matz: OK, I give up. Autoload will stay, at least until before Ruby 4.x.
 
-- [[Feature #15581]](https://bugs.ruby-lang.org/issues/15581) Split tool/\* files to tool and script directories
+- [[Feature #15581]](https://bugs.ruby-lang.org/issues/15581) Split `tool/*` files to tool and script directories
 
 - What's a concern about this?
 

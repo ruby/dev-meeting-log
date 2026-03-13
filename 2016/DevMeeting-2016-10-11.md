@@ -224,7 +224,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - nudge akr
 
-- [[Feature #4897]](https://bugs.ruby-lang.org/issues/4897) Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2\*Pi. See [http://tauday.com/](http://tauday.com/) (shyouhei)
+- [[Feature #4897]](https://bugs.ruby-lang.org/issues/4897) Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2*Pi. See [http://tauday.com/](http://tauday.com/) (shyouhei)
 
 - mrkn: I suggest Math::TWOPI
 - akr: C has PI_2, but this means π/2

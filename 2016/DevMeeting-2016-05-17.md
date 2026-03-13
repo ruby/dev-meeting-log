@@ -234,7 +234,7 @@ Milestones
 - This is a side-effect of optional hash argument treatment.
 - akr: this should be fixed by abondoning optional hash.
 
-- this could be one of a migration path to force \*\*kwargs.
+- this could be one of a migration path to force `**kwargs`.
 
 ## Oniguruma and/or Onigumo situations? (duerst)
 
@@ -274,7 +274,7 @@ Milestones
 - akr: I want Range#sum
 - mrkn: I can think of useful case of Hash#sum
 
-- e.g. { 1 => 0.2, 2 => 0.3, 4 => 0.1, 5 => 0.4 }.sum {|k, v| k \* v } #=> 3.2
+- e.g. `{ 1 => 0.2, 2 => 0.3, 4 => 0.1, 5 => 0.4 }.sum {|k, v| k * v } #=> 3.2`
 
 - matz: OK.
 

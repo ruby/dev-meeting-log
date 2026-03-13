@@ -70,19 +70,20 @@ Attendees: unak, mrkn, naruse, ayumin, ko1, sorah, zack, martin
 
 ## [[Feature #11949]](https://bugs.ruby-lang.org/issues/11949) Allow @/$ prefix in Regexp's named captures (naruse)
 
-/(?<[@timestamp](https://github.com/timestamp)\>[^ ]\*): / =~
+```
+/(?<@timestamp>[^ ]*): / =~
 
-\>> /(?<@a>.)/ =~ 'x'
+>> /(?<@a>.)/ =~ 'x'
 
 SyntaxError: (irb):9: invalid char in group name <@a>: /(?<@a>.)/
 
-\>> /(?<a@b>.)/ =~ 'x'
+>> /(?<a@b>.)/ =~ 'x'
 
-\=> 0
+=> 0
 
 valid: > /(?<a@-あfoo>a)/.match("a")
 
-\=> #<MatchData "a" a@-あfoo:"a">
+=> #<MatchData "a" a@-あfoo:"a">
 
 1.times{
 
@@ -91,6 +92,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
  p [$~.names, binding.local_variables] #=> [["a@$b"], []]
 
 }
+```
 
 1.times{
 

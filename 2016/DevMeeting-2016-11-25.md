@@ -202,7 +202,7 @@ Issues
 
 - matz: OK
 
-- [[Feature #4897]](https://bugs.ruby-lang.org/issues/4897) Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2\*Pi. See [http://tauday.com/](http://tauday.com/)
+- [[Feature #4897]](https://bugs.ruby-lang.org/issues/4897) Define Math::TAU and BigMath.TAU. The "true" circle constant, Tau=2*Pi. See [http://tauday.com/](http://tauday.com/)
 
 - mrkn: last time I suggested TWO_PI.
 - matz: I don’t think TWO_PI satisfies TAU fans.

@@ -217,7 +217,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - naming issue.
 
-## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP_\* -> HEAP_PAGE_\* variable renaming (shyouhei)
+## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for `HEAP_*` -> `HEAP_PAGE_*` variable renaming (shyouhei)
 
 ## [[Misc #12529]](https://bugs.ruby-lang.org/issues/12529) LEGAL file covering all the license information within Ruby (shyouhei)
 
@@ -266,7 +266,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ## [[Feature #9323]](https://bugs.ruby-lang.org/issues/9323) IO#writev (shyouhei)
 
-## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_\* (shyouhei)
+## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and `Ripper::Filter#on_*` (shyouhei)
 
 ## [[Feature #13693]](https://bugs.ruby-lang.org/issues/13693) Allow String#to_i and / or Kernel::Integer to parse e-notation (shyouhei)
 
@@ -428,7 +428,7 @@ We couldn’t investigate it because there is not enough reproduction instructio
 
 ## From non-attendees
 
-## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_\* (aycabta)
+## [[Feature #13686]](https://bugs.ruby-lang.org/issues/13686) Add states of scanner to tokens from Ripper.lex and `Ripper::Filter#on_*` (aycabta)
 
 
 ## Write your name and your interest (what do you want to ask and to whom?) please.
