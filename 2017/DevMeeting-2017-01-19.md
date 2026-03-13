@@ -276,7 +276,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 - shyouhei: what about opossite side ...1?
 - mrkn: I think what is requested is about sequence, not range.
 - akr: Range is defined over #succ, so 1.. is possible.
-- nobu: 1..\*
+- nobu: `1..*`
 - akr: 1.step works. isn’t it enough?
 - shyouhei: is iteration the only usage?
 - naruse: array index.

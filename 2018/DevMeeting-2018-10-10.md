@@ -157,9 +157,9 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - “ruby -ep” prints “main” (when we run ‘ruby -we0’,it shows warning so we want to use ‘-ep’)
 - For compatibility, Special logic to detect “p” or “obj.p” calling style to detect p #=> error or obj.p
 
-- What happen? on: obj.send(:p, \*args)
+- What happen? on: `obj.send(:p, *args)`
 
-- It feels strange: p(\*[]) #=> nil
+- It feels strange: `p(*[]) #=> nil`
 - It should be fancy to detect by eyes (.p is easy to hide) -> different name
 
 - knu: What if Object#display returned self? It does not emit a trailing LF.

@@ -179,7 +179,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - Matz: the concept is not if a method is “visible” or not, but if a method is “callable” or not.  So I feel a bit NG to call it visibility.
 
-## [[Feature #15286]](https://bugs.ruby-lang.org/issues/15286) Proposal: Add Kernel.#expand(\*args) (aycabta)
+## [[Feature #15286]](https://bugs.ruby-lang.org/issues/15286) Proposal: Add `Kernel.#expand(*args)` (aycabta)
 
 
 - Matz: I don’t like the name.

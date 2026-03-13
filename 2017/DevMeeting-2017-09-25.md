@@ -196,7 +196,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - naruse: I’ll implement this.
 
-## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for HEAP_\* -> HEAP_PAGE_\* variable renaming (shyouhei) Sorry, what was the conclusion of it?
+## [[Bug #13438]](https://bugs.ruby-lang.org/issues/13438) Fix heap overflow due to configure.in not being updated for `HEAP_*` -> `HEAP_PAGE_*` variable renaming (shyouhei) Sorry, what was the conclusion of it?
 
 
 - mrkn: I remember we should not support old OpenBSD.

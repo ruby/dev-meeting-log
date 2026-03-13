@@ -295,7 +295,7 @@ end
 - cons
 - other
 
-- matz: (different from this proposal, mentioned about) new visibility to realize \*true\* private
+- matz: (different from this proposal, mentioned about) new visibility to realize *true* private
 - ?: Lambda like but can’t refer outside scope? And use it with local variable to complete this use case
 - matz: Obsoleting nested def?
 
@@ -380,7 +380,7 @@ Current status: naming issue, select and reject are acceptable for Matz.
 
 - select and reject return Enumerator when no block is given
 
-- so args = []; {...}.select(\*args) returns an Enumerator object
+- so `args = []; {...}.select(*args)` returns an Enumerator object
 
 - Akr proposed the methods that accept only one Array arg for this case, not va_arg.
 

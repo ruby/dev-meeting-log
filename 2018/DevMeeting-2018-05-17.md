@@ -170,7 +170,7 @@ Functional programming: (zverok)
 
 - [[Feature #6284]](https://bugs.ruby-lang.org/issues/6284) Add composition for procs
 
-- 6-year-old proposal. Matz: "Positive about adding function composition. But we need method name consensus before adding it? Is #\* OK for everyone?"
+- 6-year-old proposal. Matz: "Positive about adding function composition. But we need method name consensus before adding it? Is `#*` OK for everyone?"
 - (ko1 is describing the Ruby Hack Challenge results)
 - Usa: is it OK to add #compose at the first place? Apart from the operators?
 - Shyouhei: I think it’s OK to have the feature itself but for the operators?

@@ -159,29 +159,27 @@ akr: do we really use? we need concrete examples.
 
 ## [[Bug #10856]](https://bugs.ruby-lang.org/issues/10856) Splat with empty keyword args
 
+```ruby
 def foo
-
 end
 
-foo(\*\*{}) #=> error
+foo(**{}) #=> error
 
 def foo k1: 1
-
 end
 
-foo(\*\*{}) #=> okay
+foo(**{}) #=> okay
 
-def foo(\*\*)
-
+def foo(**)
 end
 
-foo(\*\*{}) #=> okay
+foo(**{}) #=> okay
 
 def foo(h)
-
 end
 
-foo(\*\*{}) #=> okay
+foo(**{}) #=> okay
+```
 
 The first one seems wrong code, so an error is reasonable.
 

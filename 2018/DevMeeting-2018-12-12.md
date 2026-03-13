@@ -111,20 +111,20 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 - Ruby 2.6
 
-def foo(h = {}, \*\*kw)
-
+```ruby
+def foo(h = {}, **kw)
  p [h, kw]
-
 end
 
 foo("str" => 1, :sym => 2)
+```
 
 - Was prohibited in 2.6.  Is it really okay?
 - Akr: open3.rb has problem
     % ./ruby -ropen3 -e 'p Open3.capture2("echo foo", :in => IO::NULL, 3 => IO::NULL)'
     Traceback (most recent call last):
     \-e:1:in `<main>': non-symbol key in keyword arguments: 3 (ArgumentError)
-- Akr: open3.rb will be changed to avoid \*\*.  r66352
+- Akr: open3.rb will be changed to avoid `**`.  r66352
 
 
 - Obsolete taint flags (naruse)
