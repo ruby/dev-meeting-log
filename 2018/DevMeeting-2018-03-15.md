@@ -294,7 +294,7 @@ B.show
 
 - Matz approved NameError
 
-- \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
+### \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
 
 - It’s considered bug. amatsuda says ActiveSupport will follow Ruby 2.6.
 
