@@ -99,7 +99,9 @@ We'll keep this meeting to one hour long.
 15:08 tenderlove: I guess Ruby 2 version scheme is
       first
 15:08 tenderlove: I don't know who added that though...
-15:08 zenspider: topic: Ruby 2 versioning scheme, like 1.x
+```
+### 15:08 zenspider: topic: Ruby 2 versioning scheme, like 1.x
+```
       (no number > 9)? Will 2.0.10 or 2.10.0 be
       allowed?
 15:09 tenderlove: _ko1: ?
@@ -118,7 +120,9 @@ We'll keep this meeting to one hour long.
 15:10 mame0: just ask matz!
 15:10 enebo: yes
 15:10 zenspider: we'll wait for matz and put that later
-15:10 zenspider: topic: Ruby Symbol issues (tenderlove)
+```
+### 15:10 zenspider: topic: Ruby Symbol issues (tenderlove)
+```
       http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/52165
 15:10 tenderlove: alright, so I asked about a thing to freeze
       / thaw symbol creation
@@ -171,7 +175,9 @@ We'll keep this meeting to one hour long.
 15:16 zenspider: lisp has (unintern sym) seems like we could
       benefit from that
 15:16 zenspider: we need to move on
-15:16 zenspider: topic: Should YAML.load be the safe version
+```
+### 15:16 zenspider: topic: Should YAML.load be the safe version
+```
       by default? (marcandre)
 15:16 marcandre: The quesiton on my mind is: should the
       default deserialization method YAML.load be safe? The
@@ -259,7 +265,9 @@ We'll keep this meeting to one hour long.
       can revisit
 15:23 tenderlove: JSON.load is dangerous
 15:23 marcandre: IMO, that's even more troubling.
-15:23 zenspider: topic: Digest::HMAC? Abandon it or make it
+```
+### 15:23 zenspider: topic: Digest::HMAC? Abandon it or make it
+```
       non-experimental? (emboss)
 15:23 zenspider:
       https://github.com/ruby/ruby/blob/eb4ae6bc542cdec0ade408c2f5ddfebba227d30f/ext/digest/lib/digest/hmac.rb#L13
@@ -284,7 +292,9 @@ We'll keep this meeting to one hour long.
 15:25 tenderlove: emboss: probably should just ping knu
 15:25 tenderlove: he's pretty responsive
 15:25 emboss: ok, will do!
-15:26 zenspider: topic: Get impressions on how to implement
+```
+### 15:26 zenspider: topic: Get impressions on how to implement
+```
       "erasing a password from memory" (emboss)
 15:26 tenderlove: emboss: he's @knu on twitter
 15:26 zenspider: https://bugs.ruby-lang.org/issues/5741
@@ -363,7 +373,9 @@ We'll keep this meeting to one hour long.
 15:32 mame0: ah i see
 15:32 zenspider: time... we'll take it to the ticket url
       above
-15:32 zenspider: topic: prepend and ancestors,
+```
+### 15:32 zenspider: topic: prepend and ancestors,
+```
       instance_method, etc... (#7836, #7842, #7844)
 15:33 marcandre: I'm worried by the current behavior of
       Module.prepend (#7836, #7842, #7844)
@@ -459,7 +471,9 @@ We'll keep this meeting to one hour long.
 15:42 zenspider: I think the problem is that there is no
       clearly defined specification.
 15:42 zenspider: ok. we should move on
-15:42 zenspider: topic: invite security ML members,
+```
+### 15:42 zenspider: topic: invite security ML members,
+```
       especially non-MRI implementers
 15:42 zenspider: I don't know who's topic this is
 15:43 zenspider: I for one welcome my new security
@@ -495,7 +509,9 @@ We'll keep this meeting to one hour long.
 15:46 tenderlove: very smart move
 15:46 zenspider: haha
 15:46 zenspider: ok. 
-15:46 zenspider: should we revisit any topics? or open to
+```
+### 15:46 zenspider: should we revisit any topics? or open to
+```
       questions?
 15:46 zenspider: sorry I went so fast... sorta
 15:47 marcandre: I propose that Matz be here next time

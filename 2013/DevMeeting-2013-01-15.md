@@ -174,7 +174,9 @@ More than just "isolated" binding is desired
 15:07 tenderlove: I'll add the nicks to the wiki, and use
       your email for a survey afterword
 15:07 tenderlove: so we'll stick to 1 hour
-15:07 tenderlove: So first on the agenda is refinements
+```
+### 15:07 tenderlove: So first on the agenda is refinements
+```
 15:08 tenderlove: AFAIK, they are now experimental?
 15:08 tenderlove: what are the details of this?
 15:08 tenderlove: end
@@ -342,7 +344,9 @@ More than just "isolated" binding is desired
 15:23 zenspider: I vote 2.1 ... sooooo christmas :P
 15:23 headius: matz_: ok, acceptable answer
 15:23 zenspider: end :P
-15:23 tenderlove: OK!  Keyword arguments
+```
+### 15:23 tenderlove: OK!  Keyword arguments
+```
 15:23 headius: yay kwargs
 15:24 tenderlove: I mainly put these on the agenda because
       wycats_ had issues, but I believe he was happy with
@@ -451,7 +455,9 @@ More than just "isolated" binding is desired
       the feature request
 15:32 drbrain: tenderlove: next topic please
 15:32 tenderlove: k
-15:33 tenderlove: next up is isolated binding specifier
+```
+### 15:33 tenderlove: next up is isolated binding specifier
+```
 15:33 tenderlove: which I think _ko1 proposed
 15:33 wycats_: tenderlove: I was happy with the responses I
       got on my tickets, yes
@@ -619,7 +625,9 @@ More than just "isolated" binding is desired
 15:49 headius: +1
 15:49 jballanc: will do!
 15:49 jballanc: end
-15:49 drbrain: ok, now it is open floor time until the end of
+```
+### 15:49 drbrain: ok, now it is open floor time until the end of
+```
       the hour
 15:49 zenspider: !
 15:49 headius: I want to point out there's a new "Common

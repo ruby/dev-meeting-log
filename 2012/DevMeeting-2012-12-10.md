@@ -174,7 +174,9 @@ We'll keep this meeting to one hour long.
            current communication process
 [15:07:42] <tenderlove> we have many Ruby implementations
 
-[15:07:54] @ drbrain set topic "Improving the Ruby design process"
+```
+### [15:07:54] @ drbrain set topic "Improving the Ruby design process"
+```
 
 [15:08:09] <tenderlove> but the important thing is that we're all
            implementing the same language, Ruby
