@@ -108,6 +108,7 @@ matz: Okay revert the decision.
 knu, usa: It brings burden for brain. Especially when the use case is unclear and it’d be rare you’d see it.
 matz: Umm…
 akr: "abcdefgh"[1, -3] #=> "ab" and "abcdefgh"[0, -3] #=> "fgh" looks confusing
+```
 a = list(range(0,10))
 # 7番目から始点までの要素を-2個ごとに取り出す
 a[7::-2] # [7, 5, 3, 1]
@@ -117,6 +118,7 @@ a[:4:-2] # [9, 7, 5]
 a[8:2:-2] # [8, 6, 4]
 # -2番目から-7番目までの要素を-3個ごとに取り出す
 a[-2:-8:-3] # [8, 5]
+```
 
 
 https://qiita.com/okkn/items/54e81346d8f35733ab5e

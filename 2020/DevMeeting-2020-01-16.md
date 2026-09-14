@@ -132,6 +132,7 @@ Migration from 3.X to 4.0 (when ruby2_keywords flag is deprecated):
 ruby2_keywords is considered “a mark” for whete to fix (when ruby2_keywords flag is deprecated)
 However, it turned out that it is not mandatory:
 if a warning is displayed when a flagged Hash is passed as keywords, the migration is possible
+```
 # in 3.X with eregon's proposal
 def bar(key: 1); end
 # in the current approach, `ruby2_keywords` mark is required for this method; in eregon's, it is automatically added
@@ -147,16 +148,19 @@ def foo(*args, **opt)
   bar(*args, **opt) # no warning
 end
 foo(key: 42)
+```
 
 pitfalls
 A call foo(**{}) to def foo(*a) will pass a = [{}] (the Hash is flagged)
 If a Hash is flagged unintentionally, it may cause a difficult-to-debug issue:
 The following code is valid in 3.0, but will break under eregon’s proposal
+```
 # Code that Jeremy wrote
 def a(h, **opts) [h, opts] end
 # assumption: This method is designed not to accept keywords, and relies on Jeremy's compatibility layer
 def b(meth, *vs) vs.map{|v| args = [meth, v]; send(*args)} end
 p b(:a, 1, "2", c: 3)
+```
 
 concerns:
 Changing the semantics after 2.7.1 may bring a big confusion to users
@@ -182,6 +186,7 @@ in short:
 
 
 
+```
 $ ruby -e '[{foo: 42}].each {|foo:| p foo }'
 -e:1: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
 -e:1: warning: The called method is defined here
@@ -200,6 +205,7 @@ define_method(:foo) {|key:| p key }
 foo(key: 42)     #=> OK (42)
 foo({foo: 42})   #=> NG (warn on 2.7, error on 3.0)
 foo(**{foo: 42}) #=> OK (42)
+```
 
 mame: will reply
 eregon: this would mix data hashes with keyword arguments, seems opposite of separation
@@ -382,6 +388,7 @@ Discussion:
 in short:
 We should focus on String#partition; String#scan and #split should not change just for consistency reason.
 Since 71afefd5d1f, no change.
+```
 p "foo\n\bar\n".partition(/^/)     #=> ["foo\n\bar\n", "", ""]
 p "foo".partition(/^=*/)           #=> ["foo", "", ""]
 p "foo".partition(/^=+/)           #=> ["foo", "", ""]
@@ -397,6 +404,7 @@ p 'foo'.partition(/x/) #=> ["foo", "", ""]
 ('f', 'o', 'o')
 >>> "foo".partition("x")
 ('foo', '', '')
+```
 
 Conclusion:
 matz: A bug. Fix it.
@@ -425,6 +433,7 @@ Issue: we can’t see _1 variables from debugging reason.
 allow Binding#local_variable_get("_1") for this purpose? How to get uplevel binding?
 Same semantics without eval.
 issue: we can’t write numbered parameters in this kind of context.
+```
 # 2.7.0 behavior
 1.times{p _1
   eval('p _1')            #=> OK (0)
@@ -465,6 +474,7 @@ irb> [:a].each{p _1}
 # 2.7.0 OK, but confusing (0)
 # 1. OK (:a)
 # 2. SyntaxError
+```
 
 matz: vote for 1
 Conclusion:
@@ -489,9 +499,11 @@ epilogue
 DOC
 str.each_line(chomp: true).drop_while { _1 != '<<' }.chunk_while { _1 != '>>' }.first #=> ["<<", "1", "2", "3", ">>"]
 
+```
 # Using Enumerable#slice_after
 array.slice_after {|n| n < 3 }.first
 array.lazy.slice_after {|n| n < 3 }.first
+```
 
 Conclusion:
 Reject.
@@ -499,6 +511,7 @@ Reject.
 Make map(&[:foo]) it just a shortcut for map { |hash| hash[:foo] }. Ambitious, but justified. Two alternative approaches proposed (dig and just [])
 Discussion:
 in short:
+```
 # in perspective of the proposer
 data.map {|x| x[:name]}  # too long
 data.map{_1[:name]}      # using _1
@@ -507,6 +520,7 @@ data.map(&[:name])       # better?
 data.map {|x| x.dig(:foo, :bar)}  # too long
 data.map{_1.dig(:foo, :bar)}      # using _1
 data.map(&[:foo, :bar])           # better?
+```
 
 Note that pluck is unusable for this purpose
 ko1: Array#to_proc seems more general feature. But this proposal is too specific usage IMO.
@@ -655,6 +669,7 @@ Conclusion:
 Backport
 [Bug #11878] Comparison of prepended modules
 Inconsistent with ancestors order.
+```
 module A; end
 
 module I
@@ -671,6 +686,7 @@ end
 # current: same as include
 p A < P #=> false
 p A > P #=> true
+```
 
 call-seq:
    mod < other   ->  true, false, or nil

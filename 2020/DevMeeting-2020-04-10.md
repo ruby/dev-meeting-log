@@ -253,6 +253,7 @@ p fib(10) #=> 55
 
 
 matz: Python has an extention language named “Coconut” which has similar oneliner method definition. I want to have similar one for Ruby.
+```
 def fib(x) = (
   stmt
   stmt
@@ -297,6 +298,7 @@ def foo(@x) = @x
 
 def foo=nil
 def foo=(x)=@x=(x)=foo
+```
 
 
 Conclusion:

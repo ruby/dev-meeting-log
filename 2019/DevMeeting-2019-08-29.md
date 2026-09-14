@@ -115,10 +115,12 @@ in short: “A feature to take every n chars”
 matz: It seem good to have this feature. I don’t like all names proposed so far (chunk* and slice*).
 shyouhei: I don’t see any use case. Without it, we cannot propose alternative names.
 matz: Indeed, use case is needed too.
+```
 # usa: just idea, a use case for static length records
 str.each_slice(7, 10, 20) do |zip, tel, name|
   ...
 end
+```
 
 
 [Feature #15553] Addrinfo.getaddrinfo supports timeout (Glass_saga)

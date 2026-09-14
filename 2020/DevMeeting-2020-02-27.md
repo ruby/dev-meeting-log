@@ -85,6 +85,7 @@ mame: I’m afraid about the compatibility
 nobu: Even if we fix the issue, we will another contradiction (say, cyclic “include” relation)
 ko1: There are some known issues about Module#include/prepend. Fixing only this issue can introduce further confusion.
 Discussion:
+```
 module Mod1
 end
 
@@ -98,6 +99,7 @@ Class1.include Mod1
 Mod1.include Mod2
 p Class1.ancestors #=> [Class1, Mod1, Object, Kernel, BasicObject]
 # No Mod2!
+```
 
 ko1: matz wants that Module#include does not allow duplicated inclusion, but that Module#prepend allows duplication
 matz: Right. To be honest, I want both to allow, but if Module#include’d modules are allowed, super call is broken, ko1 said
@@ -105,6 +107,7 @@ ko1: The issue is already fixed, so now we can allow duplication of Module#inclu
 akr: It will break diamond inheritance: a method may be called twice (for each include) in super() call chain
 
 
+```
 module Mod1
 end
 
@@ -139,6 +142,7 @@ end
 
 p B.ancestors
 #=> [B, M, A, M, Object, Kernel, BasicObject]
+```
 
 matz: Duplication of module inclusion has been already theoretically possible (by using inheritance), so Jeremy’s patch is acceptable
 akr: The problem looks to me that it is not well-defined for module-inclusion at non-initialization phase

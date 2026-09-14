@@ -227,10 +227,12 @@ Add Encoding#unicode? and IO#skip_bom
 The method is really useful, even with ActiveSupport-less codebases I constantly tend to redefine it with core ext or refinements. Hash#slice was merged in 2.5; it was initially discussed in #8499 alongside the except, but from the discussion, it is not obvious why #except was “lost” :(
 Discussion:
 ActiveSupport: https://api.rubyonrails.org/classes/Hash.html#method-i-except
+```
 # File activesupport/lib/active_support/core_ext/hash/except.rb, line 12
 def except(*keys)
   slice(*self.keys - keys)
 end
+```
 
 
 knu: Use cases: super(**options.expect(:foo)), json.except("metadata"), params.except(:id), etc.

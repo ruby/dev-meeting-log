@@ -178,6 +178,7 @@ end
 eregon: @matz is it OK to add Kernel.resolve_feature_path (only class method)? I think RubyVM is not a good place for resolve_feature_path which is not MRI-specific. Moving the method is necessary for other Ruby implementations to implement it, and keep the clean separation that RubyVM is only defined on MRI.
 nobu: How about $LOAD_PATH.resolve_feature_path?
 [Feature #15799] pipeline operator (nobu)
+```
 # pipeline operator examples
 
 foo|>bar|>baz
@@ -219,6 +220,7 @@ $ ./ruby -v -e 'p(1|>succ|>succ)'
 ruby 2.7.0dev (2019-06-13T08:41:29Z feature/pipeline-i.. 66f9256db6) [x86_64-darwin18]
 last_commit=Pipeline operator in arg
 3
+```
 
 other |> ideas
 one-line block

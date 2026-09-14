@@ -132,6 +132,7 @@ ko1: warn for def _1; end is okay?
 naruse: it sounds the strength of the warning is the same as “shadowing outer variable”
 usa: to define _1 method should be warn as non-default warning, IMO`
 matz: I want to warn this pattern, but…
+```
 # OK: default on
 _1 = 1 # warning: '_1' is reserved as numbered parameter
 
@@ -143,9 +144,11 @@ def _1; end #=> warning: '_1' is reserved as numbered parameter
 1.times{
   _1
 }
+```
 
 
 Reviewing a warning for keyword parameter change:
+```
 def foo(**kw)
 end
 
@@ -171,6 +174,7 @@ foo({})
 #=> t.rb:1: warning: non-nil $; will be deprecated
 =>
 #=> t.rb:1: warning: `$;' is deprecated
+```
 
 
 Conclusion:
@@ -178,6 +182,7 @@ warn for def _1; end as default warning
 “used” should be “reserved”
 [Bug #15267] File.basename + File.extname does not restore the original name (usa)
 Please remove the special check of Windows
+```
 # 2.6
 File.extname("file.") #=> ""
 
@@ -186,6 +191,7 @@ File.extname("file.") #=> ""
 File.extname("file.") #=> "." in non-windows
 File.extname("file.") #=> ""  in windows. should be "."
 File.extname("file.rb.") #=> "." is OK on windows?
+```
 
 
 Discussion:
@@ -226,6 +232,7 @@ I find the current behaviour unreasonably confusing and would like to see improv
 I have a pull request which restores the behaviour found in Ruby 2.4.x and warns about it, based off of matz’s comment in [ruby-core:94054].
 Could someone confirm that is the desired fix? If it is the fix we want, could someone review the PR?
 Discussion:
+```
 # OK
 def pass_after_use(&block)
   b = block
@@ -243,6 +250,7 @@ end
 
 
 direct_pass {|_arg| }
+```
 
 
 matz: the issue should be fixed, but minor. I leave ko1 when it should be merged
@@ -254,6 +262,7 @@ Will merge now (for 2.7)
 Easily rename hash keys that do not follow a rule
 Proposal to extend Hash#transform_keys to accept Hash to define the translation
 Discussion:
+```
 hash = {created: 2019-10-23 17:54:46 +0900, updated: 2019-10-23 17:59:18 +0900, author: "foo"}
 hash.transform_keys({created: :created_at, updated: :update_time})
 #=> {created_at: 2019-10-23 17:54:46 +0900, update_time: 2019-10-23 17:59:18 +0900, author: "foo"}
@@ -265,6 +274,7 @@ hash.transform_keys {|k| TABLE.fetch(k, k) }
 
 
 "foo".gsub(/./, { "f" => "F", "o" => "O" }) #=> "FOO"
+```
 
 
 Same as String#gsub

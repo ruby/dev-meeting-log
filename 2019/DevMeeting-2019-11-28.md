@@ -140,6 +140,7 @@ ko1: anyone use it? isn’t it good enough to return nil?
 matz: ok, nil
 samuel: Is it indicating a semantic error by programmer? If it’s not exceptional situation, we should be careful because in the past raising exceptions introduce difficult to fix performance issues (e.g. IO#read_nonblock).
 aycabta: pattern matching in Ruby 2.7 is experimental, so we are talking about grammer. discussion of performance of pattern matching is for Ruby 3.0.
+```
 p((return))          #=> SyntaxError: void expression
 p((expr in pattern)) #=> SyntaxError: void expression?
 
@@ -174,6 +175,7 @@ in pattern
 else
   ...
 end
+```
 
 
 Conclusion:
@@ -350,10 +352,12 @@ samuel: This is an issue which I’ve run into when instrumenting Ruby code (e.g
 samuel: Here is what pry has to do, to get source code for ruby method: https://github.com/pry/pry/blob/c123bce66116c2bb050ad47d0006e9df215ff3be/lib/pry/method.rb#L577-L592
 matz: I agree that we should have a feature to get the end position of the range. I don’t like the name code_range. Dedicated class looks too rich for this feature.
 samuel: How to handle methods that are defined dynamically?
+```
 define_method(:x) {puts foo}
 path, lineno = method(:x).source_location
 # ["(irb)", 1]
 File.read(path) => # ???
+```
 
 
 If the source code is already loaded by the interpreter, is there any reason to read it from disk?
@@ -363,6 +367,7 @@ method(:p).source_location => nil
 mame: The source code does not remain after it is parsed in the current MRI implementation (how about JRuby/CRuby?) dunno JRuby
 samuel: Good point, but maybe it’s implementation detail. If source is not available, can we reconstruct from AST? in the case of define_method can we save the string (if used) or the source that defined the method in the first place?
 How to handle more complex examples:
+```
 def foo(arg); end; def bar(arg); end
 _, lineno = method(:bar).source_location
 
@@ -381,6 +386,7 @@ expr = proc {
 # Return [path, beg_pos.lineno, beg_pos.column, end_pos.lineno, end_pos.column]
 p expr.code_location
 # => ["./test.rb", 2, 12, 6, 1]
+```
 
 
 aycabta: I was thinking about implementing the feature to RDoc to take source code on IRB because IRB’s showing doc from RDoc feature is adjacent and I think it’s only one use-case.

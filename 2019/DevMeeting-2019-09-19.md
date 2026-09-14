@@ -131,6 +131,7 @@ matz: I’m a bit afraid about incompatibility, but try Jeremy’s patch.
 I would like to make it so Module#include does not prepend modules before the receiver using the patch.
 Discussion:
 in short: difficult to understand Module#include result
+```
 A.ancestors # => [P, A, Object, Kernel, BasicObject]
 S.ancestors # => [S, Q, P, R]
 A.include S
@@ -138,6 +139,7 @@ A.ancestors #=> [P, R, A, S, Q, Object, Kernel, BasicObject]
 
 
 # expected:     [P, A, S, Q, R, Object, Kernel, BasicObject]
+```
 
 
 matz: I expect [P, A, S, Q, P, R, Object, Kernel, BasicObject]
@@ -198,6 +200,7 @@ matz: accepted
 [Bug #11636] super in instance_eval in a method defined in a module is invoked with a wrong receiver (jeremyevans0)
 I would like to raise an exception instead, similar to super in instance_eval in method defined in class using the patch.
 Discussion:
+```
 # current behavior (can cause SEGV)
 class Foo
   def foo
@@ -243,6 +246,7 @@ end
 
 
 Bar.new.foo
+```
 
 
 matz: Bug. Need to fix. But I’m a bit afraid if the patch adds a new field. I accept if adding a field is really needed. nobu, could you review Jeremy’s patch?
@@ -263,10 +267,12 @@ matz: Let’s try.
 Module#pass_positional_hash for disabling false positive warnings in delegation. This is just for 2.7 migration path. Can we commit this?
 The latest proposal is Module#pass_keywords which is for a migration path for Ruby 2.6 to 3.0.
 Discussion:
+```
 # perfectly (syntactically) compatible delegation between 2.6 to 3.0
 pass_keywords def foo(*args, &block)
   bar(*args, &block)
 end
+```
 
 
 akr: I’m not positive. A Hash flag seems better approach.
