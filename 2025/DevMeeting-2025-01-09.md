@@ -423,11 +423,11 @@ https://black.vercel.app/?version=stable&state=_Td6WFoAAATm1rRGAgAhARYAAAB0L-Wj4
 
 ---
 
-https://bugs.ruby-lang.org/issues/21009 Removed old archives from top-level of cache.ruby-lang.org.
+### https://bugs.ruby-lang.org/issues/21009 Removed old archives from top-level of cache.ruby-lang.org.
 
 * matz: accepted
 
-https://bugs.ruby-lang.org/issues/20920 When loading a file, `__FILE__` gets relative paths expanded only when they start with "./"
+### https://bugs.ruby-lang.org/issues/20920 When loading a file, `__FILE__` gets relative paths expanded only when they start with "./"
 
 ```
 $ ruby foo.rb
@@ -445,16 +445,16 @@ $ ruby -e 'load "./foo.rb"'
 
 * matz: Let's try it
 
-https://bugs.ruby-lang.org/issues/20953 `Array#fetch_values` vs `#values_at` protocols
+### https://bugs.ruby-lang.org/issues/20953 `Array#fetch_values` vs `#values_at` protocols
 
 * matz: `Array#fetch_values` should expand a Range (as `Array#values_at`)
 
-https://bugs.ruby-lang.org/issues/20968 `Array#fetch_values` unexpected method name in stack trace
+### https://bugs.ruby-lang.org/issues/20968 `Array#fetch_values` unexpected method name in stack trace
 
 * matz: I like koic's expetation if possible
 
-https://bugs.ruby-lang.org/issues/20205 Enable `frozen_string_literal` by default
-https://bugs.ruby-lang.org/issues/20974 Required and optional anonymous parameter show differently in `Proc#parameters`
+### https://bugs.ruby-lang.org/issues/20205 Enable `frozen_string_literal` by default
+### https://bugs.ruby-lang.org/issues/20974 Required and optional anonymous parameter show differently in `Proc#parameters`
 
 * matz: `p(proc { |(_a)| }.parameters)` should return `[[:opt]]` instead of `[[:opt, nil]]`
 
@@ -466,12 +466,12 @@ proc {|a, b| }.parameters
 #=> [[:opt, :a], [:opt, :b]]
 ```
 
-https://bugs.ruby-lang.org/issues/20971 Deprecate `rb_path_check`
-https://bugs.ruby-lang.org/issues/20564 Switch default parser to Prism
-https://bugs.ruby-lang.org/issues/20980 `Range#size` new TypeError vs semi-open ranges
-https://bugs.ruby-lang.org/issues/20498 Negated method calls
-https://bugs.ruby-lang.org/issues/20884 reserve "Ruby" toplevel module for Ruby language
-https://bugs.ruby-lang.org/issues/20899 Reconsider adding Array#find_map
+### https://bugs.ruby-lang.org/issues/20971 Deprecate `rb_path_check`
+### https://bugs.ruby-lang.org/issues/20564 Switch default parser to Prism
+### https://bugs.ruby-lang.org/issues/20980 `Range#size` new TypeError vs semi-open ranges
+### https://bugs.ruby-lang.org/issues/20498 Negated method calls
+### https://bugs.ruby-lang.org/issues/20884 reserve "Ruby" toplevel module for Ruby language
+### https://bugs.ruby-lang.org/issues/20899 Reconsider adding Array#find_map
 
 ```ruby
 [1, 2, 3].find_map { it * 2 if it.even? }   #=> 4
@@ -479,7 +479,7 @@ https://bugs.ruby-lang.org/issues/20899 Reconsider adding Array#find_map
 [1, 2, 3].find { it.even? }&.then { it * 2 }
 ```
 
-https://bugs.ruby-lang.org/issues/21015 [DRAFT] Add in a `-g` flag, like `-s` but with a few more quality of life features
+### https://bugs.ruby-lang.org/issues/21015 [DRAFT] Add in a `-g` flag, like `-s` but with a few more quality of life features
 
 ```
 $ ruby -s -e '' -- -$
@@ -489,4 +489,4 @@ $ ruby -s -e '' -- -あ
 ruby: invalid name for global variable - -あ (NameError)
 ```
 
-https://bugs.ruby-lang.org/issues/21018 Show invalid command line option more properly
+### https://bugs.ruby-lang.org/issues/21018 Show invalid command line option more properly

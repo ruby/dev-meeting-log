@@ -397,7 +397,7 @@ or
 
 * https://bugs.ruby-lang.org/issues/20409 Missing reporting some invalid breaks
 * https://github.com/ruby/ruby/pull/15189 Array#rfind, ok to merge? > matz
-* https://bugs.ruby-lang.org/issues/21520 Feature Proposal: Enumerator::Lazy#tee
+### https://bugs.ruby-lang.org/issues/21520 Feature Proposal: Enumerator::Lazy#tee
 
 ```ruby
 module Enumerable
@@ -450,22 +450,22 @@ Which behavior is preferable?
   * `a b do end.call()` prism: OK, parse.y: OK
   * matz: It should parse
 
-### misc.
+## misc.
 
-* https://bugs.ruby-lang.org/issues/20959 Add a way to get codepage of console. `Encoding.find("console")`
-* https://bugs.ruby-lang.org/issues/21684 Does `IO#pos` clear the buffer?
-* https://bugs.ruby-lang.org/issues/21686 In combination with `IO#ungetbyte`, the write position may become unpredictable.
-* https://bugs.ruby-lang.org/issues/21690 Inconsistent `rb_popcount64()` definition
-* https://bugs.ruby-lang.org/issues/21693 Allow calling any callable object as a method
-* https://bugs.ruby-lang.org/issues/21374 `FrozenError` message is inconsistent when a singleton method is defined on a frozen object
-* https://bugs.ruby-lang.org/issues/21706 Add SIMD optimizations for string comparison operations
-* https://bugs.ruby-lang.org/issues/21715 Miscompilation on x86-64-v2 due to undefined behavior in search_nonascii in string.c
-* https://bugs.ruby-lang.org/issues/21709 `Regexp` interpolation is inconsistent with `String` interpolation
-  * `/#{ '\p{Hiragana}'.encode("US-ASCII") }\u1234/ #=> encoding mismatch in dynamic regexp : US-ASCII and UTF-8`
-  * `/#{ 'p{Hiragana}'.encode("US-ASCII") }\u1234/` #=> no error
-* https://bugs.ruby-lang.org/issues/21723 `binding.irb` raises a LoadError under `bundle exec`
-* https://bugs.ruby-lang.org/issues/21721 Allow `Queue` and `SizedQueue` to be used as LIFO queues
-* https://bugs.ruby-lang.org/issues/21005 Update the source location method to include line start/stop and column start/stop details
+### https://bugs.ruby-lang.org/issues/20959 Add a way to get codepage of console. `Encoding.find("console")`
+### https://bugs.ruby-lang.org/issues/21684 Does `IO#pos` clear the buffer?
+### https://bugs.ruby-lang.org/issues/21686 In combination with `IO#ungetbyte`, the write position may become unpredictable.
+### https://bugs.ruby-lang.org/issues/21690 Inconsistent `rb_popcount64()` definition
+### https://bugs.ruby-lang.org/issues/21693 Allow calling any callable object as a method
+### https://bugs.ruby-lang.org/issues/21374 `FrozenError` message is inconsistent when a singleton method is defined on a frozen object
+### https://bugs.ruby-lang.org/issues/21706 Add SIMD optimizations for string comparison operations
+### https://bugs.ruby-lang.org/issues/21715 Miscompilation on x86-64-v2 due to undefined behavior in search_nonascii in string.c
+### https://bugs.ruby-lang.org/issues/21709 `Regexp` interpolation is inconsistent with `String` interpolation
+* `/#{ '\p{Hiragana}'.encode("US-ASCII") }\u1234/ #=> encoding mismatch in dynamic regexp : US-ASCII and UTF-8`
+* `/#{ 'p{Hiragana}'.encode("US-ASCII") }\u1234/` #=> no error
+### https://bugs.ruby-lang.org/issues/21723 `binding.irb` raises a LoadError under `bundle exec`
+### https://bugs.ruby-lang.org/issues/21721 Allow `Queue` and `SizedQueue` to be used as LIFO queues
+### https://bugs.ruby-lang.org/issues/21005 Update the source location method to include line start/stop and column start/stop details
 
 ```
 irb(main):001> def foo = nil; method(:foo).source_location
@@ -485,8 +485,8 @@ irb(main):005> b.source_location
 ```
 
 
-* https://bugs.ruby-lang.org/issues/21767 Consider procs which `self` is Ractor-shareable as Ractor shareable
-* https://bugs.ruby-lang.org/issues/21720 Add a native Binary Heap / Priority Queue to Ruby's Standard Library (heapify, heappush, heappop)
+### https://bugs.ruby-lang.org/issues/21767 Consider procs which `self` is Ractor-shareable as Ractor shareable
+### https://bugs.ruby-lang.org/issues/21720 Add a native Binary Heap / Priority Queue to Ruby's Standard Library (heapify, heappush, heappop)
 
 ### box
 

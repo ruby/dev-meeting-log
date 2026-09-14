@@ -130,7 +130,7 @@ Ractor local GC
 
 ----
 
-https://bugs.ruby-lang.org/issues/21616 date ライブラリを deprecated させたい
+### https://bugs.ruby-lang.org/issues/21616 date ライブラリを deprecated させたい
 
 * akr: localtime, fixoff, utcの3モードがある。
     * RDBからtimezoneのない、DateやTime型が返ってくる
@@ -143,7 +143,7 @@ https://bugs.ruby-lang.org/issues/21616 date ライブラリを deprecated さ�
 * https://www.rfc-editor.org/rfc/rfc9557#section-2.2
 * matsuda: いったんはRailsは気にせず進めて頂ければ
 
-https://bugs.ruby-lang.org/issues/21573 Simpler syntax errors
+### https://bugs.ruby-lang.org/issues/21573 Simpler syntax errors
 
 current:
 
@@ -181,11 +181,11 @@ $ echo -e "1 +x 2 do\ndo" | SIMPLE_ERROR=1 ./miniruby -wc
 -:2:0: unexpected 'do', ignoring it
 ```
 
-https://bugs.ruby-lang.org/issues/21168 `a[cmd 1, 2 do end]` and `a[cmd 1, 2 do end] = 3`
+### https://bugs.ruby-lang.org/issues/21168 `a[cmd 1, 2 do end]` and `a[cmd 1, 2 do end] = 3`
 
 (timeout)
 
-https://bugs.ruby-lang.org/issues/21552 allow `String.strip` and similar to take a parameter similar to `String.delete`
+### https://bugs.ruby-lang.org/issues/21552 allow `String.strip` and similar to take a parameter similar to `String.delete`
 ```ruby
 "fooab".chomp("ab") #=> "foo"
 "fooba".chomp("ab") #=> "fooba"
@@ -194,16 +194,16 @@ https://bugs.ruby-lang.org/issues/21552 allow `String.strip` and similar to take
 "fooba".strip("ab") #=> "foo"
 ```
 
-https://bugs.ruby-lang.org/issues/7845 Strip doesn't handle unicode space characters in ruby 1.9.2 & 1.9.3 (does in 1.9.1)
-https://bugs.ruby-lang.org/issues/21554 Which `make` should be supported?
-https://bugs.ruby-lang.org/issues/20437 Could the licensing conditions be made less ambiguous?
-https://bugs.ruby-lang.org/issues/21625 Allow IO#wait_readable together with IO#ungetc
-https://bugs.ruby-lang.org/issues/21634 Combining read(1) with eof? causes dropout of results unexpectedly on Windows
-https://bugs.ruby-lang.org/issues/21619 logger: Context API
-https://bugs.ruby-lang.org/issues/21617 Add Internationalized Domain Name (IDN) support to URI
+### https://bugs.ruby-lang.org/issues/7845 Strip doesn't handle unicode space characters in ruby 1.9.2 & 1.9.3 (does in 1.9.1)
+### https://bugs.ruby-lang.org/issues/21554 Which `make` should be supported?
+### https://bugs.ruby-lang.org/issues/20437 Could the licensing conditions be made less ambiguous?
+### https://bugs.ruby-lang.org/issues/21625 Allow IO#wait_readable together with IO#ungetc
+### https://bugs.ruby-lang.org/issues/21634 Combining read(1) with eof? causes dropout of results unexpectedly on Windows
+### https://bugs.ruby-lang.org/issues/21619 logger: Context API
+### https://bugs.ruby-lang.org/issues/21617 Add Internationalized Domain Name (IDN) support to URI
 
-https://bugs.ruby-lang.org/issues/21520 Feature Proposal: Enumerator::Lazy#tee
-https://bugs.ruby-lang.org/issues/17316 On memoization
+### https://bugs.ruby-lang.org/issues/21520 Feature Proposal: Enumerator::Lazy#tee
+### https://bugs.ruby-lang.org/issues/17316 On memoization
 
 ```ruby
 instance_variable_set_unless_defined(:@foo) do
@@ -216,10 +216,10 @@ end
 
 akr: now because of object shape, "assign if absent" pattern is not a fast style.
 
-https://bugs.ruby-lang.org/issues/12282 `Hash#dig!` for repeated applications of Hash#fetch
-https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if it cannot dig deeper
-https://bugs.ruby-lang.org/issues/21551 Ractor isolation error points to the wrong place
-https://bugs.ruby-lang.org/issues/21564 Extend `permutation`, `repeated_permutation`, `combination` and `repeated_combination` arguments
+### https://bugs.ruby-lang.org/issues/12282 `Hash#dig!` for repeated applications of Hash#fetch
+### https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if it cannot dig deeper
+### https://bugs.ruby-lang.org/issues/21551 Ractor isolation error points to the wrong place
+### https://bugs.ruby-lang.org/issues/21564 Extend `permutation`, `repeated_permutation`, `combination` and `repeated_combination` arguments
 
 ```ruby
 # find right combination of letters
@@ -242,12 +242,12 @@ end
 
 ---
 
-https://bugs.ruby-lang.org/issues/21622 Prism wrongly accepts command call to be a key of keyword argument
-https://bugs.ruby-lang.org/issues/21618 Allow to use the build-in prism version to parse code
-https://bugs.ruby-lang.org/issues/21630 Suggest @Earlopain for core contributor
-https://bugs.ruby-lang.org/issues/15590 Add dups to Array to find duplicates
-http://bugs.ruby-lang.org/issues/21446 StackOverflow when changing visibility in reopened refinement
-https://bugs.ruby-lang.org/issues/21637 Tracing global variable assignment
-https://bugs.ruby-lang.org/issues/21646 Propose Luke Gruber as a Ruby committer
-https://bugs.ruby-lang.org/issues/21642 Introduce `IO::ConnectionResetError` and `IO::BrokenPipeError` as standardized IO-level exceptions
-https://bugs.ruby-lang.org/issues/19017 Net::HTTP may block when attempting to reuse a persistent connection
+### https://bugs.ruby-lang.org/issues/21622 Prism wrongly accepts command call to be a key of keyword argument
+### https://bugs.ruby-lang.org/issues/21618 Allow to use the build-in prism version to parse code
+### https://bugs.ruby-lang.org/issues/21630 Suggest @Earlopain for core contributor
+### https://bugs.ruby-lang.org/issues/15590 Add dups to Array to find duplicates
+### http://bugs.ruby-lang.org/issues/21446 StackOverflow when changing visibility in reopened refinement
+### https://bugs.ruby-lang.org/issues/21637 Tracing global variable assignment
+### https://bugs.ruby-lang.org/issues/21646 Propose Luke Gruber as a Ruby committer
+### https://bugs.ruby-lang.org/issues/21642 Introduce `IO::ConnectionResetError` and `IO::BrokenPipeError` as standardized IO-level exceptions
+### https://bugs.ruby-lang.org/issues/19017 Net::HTTP may block when attempting to reuse a persistent connection

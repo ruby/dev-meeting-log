@@ -503,7 +503,7 @@ p RubyVM::AbstractSyntaxTree.parse("foo", keep_script_lines: true).script_lines
 
 ## other topics
 
-* https://bugs.ruby-lang.org/issues/14479
+### https://bugs.ruby-lang.org/issues/14479
 
 ```ruby=
 def foo

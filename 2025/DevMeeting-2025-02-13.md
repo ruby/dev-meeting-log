@@ -170,11 +170,11 @@ Conclusion:
 
 ---
 
-https://bugs.ruby-lang.org/issues/21082 Alias it to its
+### https://bugs.ruby-lang.org/issues/21082 Alias it to its
 
 * matz: Objection. I will reject
 
-https://bugs.ruby-lang.org/issues/21029 Prism behavior for `defined? (;x)` differs
+### https://bugs.ruby-lang.org/issues/21029 Prism behavior for `defined? (;x)` differs
 
 ```
 $ ruby --parser=prism -e 'p defined? ( ;x)'
@@ -189,7 +189,7 @@ $ ruby --parser=prism -e 'def f(*);end; p defined? f(x)'
 nil
 ```
 
-https://bugs.ruby-lang.org/issues/21094 `Module#set_temporary_name` does not affect a name of a nested module
+### https://bugs.ruby-lang.org/issues/21094 `Module#set_temporary_name` does not affect a name of a nested module
 
 ```ruby
 # similar code but it shows correct name
@@ -208,7 +208,7 @@ p A::B.name #=> A::B
 
 * matz: it should be fixed
 
-https://bugs.ruby-lang.org/issues/21035 Clarify or redefine Module#autoload? and Module#const_defined?
+### https://bugs.ruby-lang.org/issues/21035 Clarify or redefine Module#autoload? and Module#const_defined?
 ```
 # 1.rb
 module M
@@ -231,8 +231,8 @@ module M
   end
 end
 ```
-https://bugs.ruby-lang.org/issues/21105 Improve Ruby Stack Trace to Include Exact Error Position (Column Number)
-https://bugs.ruby-lang.org/issues/20957 RangeError on Array#values_at with negative ranges
+### https://bugs.ruby-lang.org/issues/21105 Improve Ruby Stack Trace to Include Exact Error Position (Column Number)
+### https://bugs.ruby-lang.org/issues/20957 RangeError on Array#values_at with negative ranges
 ```
 [0, 1, 2, 3].values_at(10)       #=> [nil]
 [0, 1, 2, 3].values_at(10..10)   #=> [nil]
@@ -271,7 +271,7 @@ puts
 []   []   []   []    []      []        []   []    []      []        []            []                [nil] 
 ```
 
-https://bugs.ruby-lang.org/issues/20953 Array#fetch_values vs #values_at protocols
+### https://bugs.ruby-lang.org/issues/20953 Array#fetch_values vs #values_at protocols
 
 * matz: if beginless range or endless range is passed, fetch_values should raise a RangeError consistently
 
@@ -301,8 +301,8 @@ https://bugs.ruby-lang.org/issues/20953 Array#fetch_values vs #values_at protoco
 [1, 2, 3].fetch(2)  #=> 3
 [1, 2, 3].fetch(3)  #=> IndexError
 ```
-https://bugs.ruby-lang.org/issues/21015 Add in a `-g` flag, like `-s` but with a few more quality of life features
-https://bugs.ruby-lang.org/issues/21110 Should Marshal.dump always use object links for repeated Float values?
+### https://bugs.ruby-lang.org/issues/21015 Add in a `-g` flag, like `-s` but with a few more quality of life features
+### https://bugs.ruby-lang.org/issues/21110 Should Marshal.dump always use object links for repeated Float values?
 
 ```
 s = "str"
@@ -312,13 +312,13 @@ Marshal.old_dump([s, 1.0, 1.0, s]) #=> ["str", 1.0, 1.0, "otherstr", object-link
 Marshal.new_load(s) #=> 0:[], 1:"str", 2:1.0, 3:1.0, 4:"otherstr", object-link 4
 ```
 
-https://bugs.ruby-lang.org/issues/19555 Allow passing default options to `Data.define`
-https://bugs.ruby-lang.org/issues/21097 `x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
-https://bugs.ruby-lang.org/issues/20682 Slave PTY output is lost after a child process exits in macOS
+### https://bugs.ruby-lang.org/issues/19555 Allow passing default options to `Data.define`
+### https://bugs.ruby-lang.org/issues/21097 `x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
+### https://bugs.ruby-lang.org/issues/20682 Slave PTY output is lost after a child process exits in macOS
 
 ---
 
-https://bugs.ruby-lang.org/issues/21033 Allow lambdas that don't access `self` to be Ractor shareable
+### https://bugs.ruby-lang.org/issues/21033 Allow lambdas that don't access `self` to be Ractor shareable
 
 ```ruby
 x = 1
@@ -334,29 +334,29 @@ Proc.new{ ... }.isolate
 
 matz: I prefer the idea but it may have escape hatches
 
-https://bugs.ruby-lang.org/issues/21028 Method for finding why an object isn't Ractor shareable
+### https://bugs.ruby-lang.org/issues/21028 Method for finding why an object isn't Ractor shareable
 
-https://bugs.ruby-lang.org/issues/20971 Deprecate `rb_path_check`
+### https://bugs.ruby-lang.org/issues/20971 Deprecate `rb_path_check`
 
-https://bugs.ruby-lang.org/issues/20996 Embed Ruby 3.4 Failure
-https://bugs.ruby-lang.org/issues/21111 RbConfig::CONFIG['CXX'] quietly set to "false" when Ruby cannot build C++ programs
+### https://bugs.ruby-lang.org/issues/20996 Embed Ruby 3.4 Failure
+### https://bugs.ruby-lang.org/issues/21111 RbConfig::CONFIG['CXX'] quietly set to "false" when Ruby cannot build C++ programs
 
 katei: I'll check other languages.
 
-https://bugs.ruby-lang.org/issues/21104 Net::HTTP connections failing in Ruby >= 3.4.0 on macOS with Happy Eyeballs enabled
+### https://bugs.ruby-lang.org/issues/21104 Net::HTTP connections failing in Ruby >= 3.4.0 on macOS with Happy Eyeballs enabled
 
 good luck shioi-san
 
-https://bugs.ruby-lang.org/issues/21119 Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
+### https://bugs.ruby-lang.org/issues/21119 Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
 
-https://bugs.ruby-lang.org/issues/20919 IO#seek and IO#pos= do not clear the character buffer in some cases while transcoding
+### https://bugs.ruby-lang.org/issues/20919 IO#seek and IO#pos= do not clear the character buffer in some cases while transcoding
 
 ask akr, nobu to review the PR.
 
-https://bugs.ruby-lang.org/issues/21121 Ractor channels
+### https://bugs.ruby-lang.org/issues/21121 Ractor channels
 
 ko1: I also want it.
 
 ---
 
-https://bugs.ruby-lang.org/issues/21100 DevMeeting before or after RubyKaigi2025
+### https://bugs.ruby-lang.org/issues/21100 DevMeeting before or after RubyKaigi2025

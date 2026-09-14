@@ -451,14 +451,14 @@ String.percent_escape("...")
 
 ---
 
-https://bugs.ruby-lang.org/issues/21142 Enumerator::Lazy#take(0) has something wrong
+### https://bugs.ruby-lang.org/issues/21142 Enumerator::Lazy#take(0) has something wrong
 
 ```
 class Numbers; def each; 100.times { yield _1 }; end; include Enumerable; end
 Numbers.new.lazy.take(0).each_with_index.map { _1 }.to_a #=> actual: [0, 1, ..., 99], expected: []
 ```
 
-https://bugs.ruby-lang.org/issues/21168
+### https://bugs.ruby-lang.org/issues/21168
 
 ```
 # Prism accepts, parse.y rejects. Which is correct?
@@ -474,7 +474,7 @@ foo(
 ]
 ```
 
-https://bugs.ruby-lang.org/issues/21205 File.stat should use statx(2)? @akr
+### https://bugs.ruby-lang.org/issues/21205 File.stat should use statx(2)? @akr
 
 ```
 ST_FIELD(s, mask) //=> s.st_mask or s.stx_mask
@@ -487,26 +487,26 @@ ST_FIELD(s, mask) //=> s.st_mask or s.stx_mask
 s.ST_MASK
 ```
 
-https://bugs.ruby-lang.org/issues/21219 inspect_instance_variables 
+### https://bugs.ruby-lang.org/issues/21219 inspect_instance_variables 
 
 matz: `#instance_variables_to_inspect`?
 mame: will reply
 
-https://bugs.ruby-lang.org/issues/21263 eval-after-require hook
-https://bugs.ruby-lang.org/issues/21279 Bare "rescue" should not rescue NameError
-https://bugs.ruby-lang.org/issues/21284 Array#pad
-https://bugs.ruby-lang.org/issues/21300 Array#size=
-https://bugs.ruby-lang.org/issues/21313 it in rescue
+### https://bugs.ruby-lang.org/issues/21263 eval-after-require hook
+### https://bugs.ruby-lang.org/issues/21279 Bare "rescue" should not rescue NameError
+### https://bugs.ruby-lang.org/issues/21284 Array#pad
+### https://bugs.ruby-lang.org/issues/21300 Array#size=
+### https://bugs.ruby-lang.org/issues/21313 it in rescue
 
-https://bugs.ruby-lang.org/issues/21171 @ko1 
-https://bugs.ruby-lang.org/issues/21206 @mame
-https://bugs.ruby-lang.org/issues/21201 @ko1
+### https://bugs.ruby-lang.org/issues/21171 @ko1 
+### https://bugs.ruby-lang.org/issues/21206 @mame
+### https://bugs.ruby-lang.org/issues/21201 @ko1
 
-https://bugs.ruby-lang.org/issues/21194
+### https://bugs.ruby-lang.org/issues/21194
 
 ----
 
-https://bugs.ruby-lang.org/issues/21154
+### https://bugs.ruby-lang.org/issues/21154
 
 ```ruby
 # my_gem.rb

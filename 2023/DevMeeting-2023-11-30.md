@@ -538,9 +538,9 @@ Conclusion:
     * It should be removed if prism becomes default
 * matz: no warnings
 
-### Random topics
+## Random topics
 
-https://bugs.ruby-lang.org/issues/8444
+### https://bugs.ruby-lang.org/issues/8444
 
 ```ruby=
 def foo
@@ -558,7 +558,7 @@ end
 foo
 ```
 
-https://bugs.ruby-lang.org/issues/17037
+### https://bugs.ruby-lang.org/issues/17037
 
 ```ruby=
 def foo

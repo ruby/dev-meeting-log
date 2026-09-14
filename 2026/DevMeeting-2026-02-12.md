@@ -269,7 +269,7 @@ Conclusion:
 
 ---
 
-matz reminder
+### matz reminder
 
 * [[Feature #6012]](https://bugs.ruby-lang.org/issues/6012) Proc#source_location also return the column
   * mame: we need revert for now?
@@ -278,7 +278,7 @@ matz reminder
 
 ---
 
-[[Bug #21844]](https://bugs.ruby-lang.org/issues/21844) Inconsistent ArgumentError message for Data::define.new
+### [[Bug #21844]](https://bugs.ruby-lang.org/issues/21844) Inconsistent ArgumentError message for Data::define.new
 
 ```ruby
 C = Data.define(:a, :b)
@@ -296,19 +296,19 @@ o = C.new(0 => 1, -2 => 2); o #=> #<data C a=2, b=nil>
 
 ---
 
-[[Feature #21768]](https://bugs.ruby-lang.org/issues/21768) Remove deprecated functions
+### [[Feature #21768]](https://bugs.ruby-lang.org/issues/21768) Remove deprecated functions
 
 * https://github.com/ruby/ruby/pull/15447
 * https://github.com/nobu/ruby/tree/deprecate-rdata
 
-[[Feature #19979]](https://bugs.ruby-lang.org/issues/19979) Allow methods to declare that they don't accept a block via `&nil`
-[[Feature #21773]](https://bugs.ruby-lang.org/issues/21773) Support for setting encoding when a block is passed to `Net::HTTPResponse.read_body`
+### [[Feature #19979]](https://bugs.ruby-lang.org/issues/19979) Allow methods to declare that they don't accept a block via `&nil`
+### [[Feature #21773]](https://bugs.ruby-lang.org/issues/21773) Support for setting encoding when a block is passed to `Net::HTTPResponse.read_body`
 * Please send a PR
 
-[[Feature #21781]](https://bugs.ruby-lang.org/issues/21781) Add `fetch_values` method on `ENV`
+### [[Feature #21781]](https://bugs.ruby-lang.org/issues/21781) Add `fetch_values` method on `ENV`
 * matz: go ahead
 
-[[Bug #21808]](https://bugs.ruby-lang.org/issues/21808) Inconsistency in support of additional newlines with boolean logical operators on new line
+### [[Bug #21808]](https://bugs.ruby-lang.org/issues/21808) Inconsistency in support of additional newlines with boolean logical operators on new line
 
 ```ruby
 1
@@ -318,8 +318,8 @@ o = C.new(0 => 1, -2 => 2); o #=> #<data C a=2, b=nil>
 
 * matz: It is by design
 
-https://bugs.ruby-lang.org/issues/21797 Make `Etc.nprocessors` cgroup-aware on Linux
-https://bugs.ruby-lang.org/issues/21813 Add `[:forward, :...]` symbol tuple to indicate forwarding arguments when calling `Method#parameters`
+### https://bugs.ruby-lang.org/issues/21797 Make `Etc.nprocessors` cgroup-aware on Linux
+### https://bugs.ruby-lang.org/issues/21813 Add `[:forward, :...]` symbol tuple to indicate forwarding arguments when calling `Method#parameters`
 
 ```ruby
 def foo(*, **, &)
@@ -344,7 +344,7 @@ bar
 ```
 * matz: I will reject
 
-https://bugs.ruby-lang.org/issues/21822 Expose Return Value in the ensure Block
+### https://bugs.ruby-lang.org/issues/21822 Expose Return Value in the ensure Block
 similar ticket: https://bugs.ruby-lang.org/issues/18083
 
 ```ruby
@@ -370,15 +370,15 @@ end
 ```
 * matz: I will reject
 
-https://bugs.ruby-lang.org/issues/21825 Status of the universal parser implementing the Prism API
-https://bugs.ruby-lang.org/issues/21767 Consider procs which `self` is Ractor-shareable as Ractor shareable
+### https://bugs.ruby-lang.org/issues/21825 Status of the universal parser implementing the Prism API
+### https://bugs.ruby-lang.org/issues/21767 Consider procs which `self` is Ractor-shareable as Ractor shareable
 
 matz: no objection.
 
 ---
 
-https://bugs.ruby-lang.org/issues/21833 Switch default hash from SipHash13 to XXH3?
-https://bugs.ruby-lang.org/issues/21851 Performance difference between / operator and fdiv
+### https://bugs.ruby-lang.org/issues/21833 Switch default hash from SipHash13 to XXH3?
+### https://bugs.ruby-lang.org/issues/21851 Performance difference between / operator and fdiv
 
 ```ruby
 3 / 0x20_0000_0000_0001.to_f #=> 3.3306690738754696e-16
@@ -387,7 +387,7 @@ https://bugs.ruby-lang.org/issues/21851 Performance difference between / operato
 0x20_0000_0000_0001.to_f == 0x20_0000_0000_0000.to_f #=> true
 ```
 
-https://bugs.ruby-lang.org/issues/21858 `Kernel#Hash` considers `to_h` too
+### https://bugs.ruby-lang.org/issues/21858 `Kernel#Hash` considers `to_h` too
 
 ```ruby
 # current
@@ -408,7 +408,7 @@ Hash(obj) #=> {a: 1, b: 2}
 
 * matz: I will reply
 
-https://bugs.ruby-lang.org/issues/21272 Class.new doesn't trigger :class TracePoint
+### https://bugs.ruby-lang.org/issues/21272 Class.new doesn't trigger :class TracePoint
 
 ```
 $ ruby -e 'TracePoint.new { p it }.enable { 1 + 2 }'
@@ -419,7 +419,7 @@ $ ruby -e 'TracePoint.new { p it }.enable { 1 + 2 }'
 #<TracePoint:b_return -e:1>
 ```
 
-https://bugs.ruby-lang.org/issues/21870 Regexp: Warnings when using slightly overlapping \p{...} classes
+### https://bugs.ruby-lang.org/issues/21870 Regexp: Warnings when using slightly overlapping \p{...} classes
 ```ruby
 $VERBOSE = true
 /[\p{Word}||\p{S}]/ #=> warning: character class has duplicated range: /[\p{Word}||\p{S}]/

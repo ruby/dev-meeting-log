@@ -410,15 +410,15 @@ end
 
 ---
 
-https://bugs.ruby-lang.org/issues/22139 Prohibit `END{}`/`Kernel#at_exit` in non-main Ractor
+### https://bugs.ruby-lang.org/issues/22139 Prohibit `END{}`/`Kernel#at_exit` in non-main Ractor
 
 * matz: Go ahead
 
-https://bugs.ruby-lang.org/issues/18995 IO#set_encoding sometimes set an IO's internal encoding to the default external encoding
-https://bugs.ruby-lang.org/issues/22174 Set operations (&, ^, collect!, flatten, classify, divide) do not preserve compare_by_identity
+### https://bugs.ruby-lang.org/issues/18995 IO#set_encoding sometimes set an IO's internal encoding to the default external encoding
+### https://bugs.ruby-lang.org/issues/22174 Set operations (&, ^, collect!, flatten, classify, divide) do not preserve compare_by_identity
 
-https://bugs.ruby-lang.org/issues/22108 Computed hash keys with (expr): syntax
-https://bugs.ruby-lang.org/issues/22111 Non-symbolic hash keys with `expr : value` syntax
+### https://bugs.ruby-lang.org/issues/22108 Computed hash keys with (expr): syntax
+### https://bugs.ruby-lang.org/issues/22111 Non-symbolic hash keys with `expr : value` syntax
 * matz: I will reject the two
 
-https://bugs.ruby-lang.org/issues/22182 Optimize method chains by destructively updating intermediate objects
+### https://bugs.ruby-lang.org/issues/22182 Optimize method chains by destructively updating intermediate objects

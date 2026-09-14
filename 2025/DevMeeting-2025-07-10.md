@@ -434,23 +434,23 @@ Conclusion:
 ---
 
 Confirmation: frozen-string-literal by default for Ruby 4.0?
-https://bugs.ruby-lang.org/issues/20205
+### https://bugs.ruby-lang.org/issues/20205
 
 * matz: At least, the version we will release this year should not change the default. Keep it off by default. I will reply.
 
 ---
 
 matz: please close them
-https://bugs.ruby-lang.org/issues/4539 Array#zip_with
-https://bugs.ruby-lang.org/issues/21386 Enumerable#join_map
+### https://bugs.ruby-lang.org/issues/4539 Array#zip_with
+### https://bugs.ruby-lang.org/issues/21386 Enumerable#join_map
 
 ---
 
-https://bugs.ruby-lang.org/issues/21455 Add a block argument to Array#join
+### https://bugs.ruby-lang.org/issues/21455 Add a block argument to Array#join
 
 * matz: I will reject
 
-https://bugs.ruby-lang.org/issues/21402 ruby2_keywords affects methods/procs with post arguments
+### https://bugs.ruby-lang.org/issues/21402 ruby2_keywords affects methods/procs with post arguments
 
 * matz: nobu, could you review the patch? If you are ok, it's ok
 
@@ -466,21 +466,21 @@ p b({foo: 1}, bar: 1) #=> [[{foo: 1}, {bar: 1}], {}]
 # warning: Skipping set of ruby2_keywords flag for b (method accepts keywords or post arguments or method does not accept argument splat)
 ```
 
-https://bugs.ruby-lang.org/issues/21435 Kernel#then_try as a conditional #then
+### https://bugs.ruby-lang.org/issues/21435 Kernel#then_try as a conditional #then
 
 * matz: No need. I will reject
 
-https://bugs.ruby-lang.org/issues/21452 ARGS_SPLAT bytecode regression between 3.3 and 3.4
+### https://bugs.ruby-lang.org/issues/21452 ARGS_SPLAT bytecode regression between 3.3 and 3.4
 
 * matz: The current status is acceptable. Not a regression
 
-https://bugs.ruby-lang.org/issues/21454 "undefined method 'break' for an instance of Binding"
+### https://bugs.ruby-lang.org/issues/21454 "undefined method 'break' for an instance of Binding"
 
 * akr: no-op behavior could be useful. When we want to run code on and not on a debugger, we may want to ignore `binding.break`
 * mame: But if it is no-op by default, people may unintentionally commit `binding.break`to the production code. If a gem that my app uses contains the break, and if I use debug gem for my app, it will break, which is never expected
 * ko1: I will reject
 
-https://bugs.ruby-lang.org/issues/21456 IO.close does not work in a rescue IO::TimeoutError block.
+### https://bugs.ruby-lang.org/issues/21456 IO.close does not work in a rescue IO::TimeoutError block.
 
 ```ruby
 execArg = 'echo testwrite; sleep 10'
@@ -496,14 +496,14 @@ rescue IO::TimeoutError
         puts 'process closed'
 end
 ```
-https://bugs.ruby-lang.org/issues/21385 Namespace: Suggesting a rename
+### https://bugs.ruby-lang.org/issues/21385 Namespace: Suggesting a rename
 
 * matz: I will reply
 
-https://bugs.ruby-lang.org/issues/21503 \p{Word} does not match on \p{Join_Control} while docs say it does
+### https://bugs.ruby-lang.org/issues/21503 \p{Word} does not match on \p{Join_Control} while docs say it does
 
 * naruse: I will take a look
 
-https://bugs.ruby-lang.org/issues/21501 Include native filenames in backtraces as sources for native methods
+### https://bugs.ruby-lang.org/issues/21501 Include native filenames in backtraces as sources for native methods
 
 * matz: I will reply

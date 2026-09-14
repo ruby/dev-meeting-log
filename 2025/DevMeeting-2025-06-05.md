@@ -337,17 +337,17 @@ Conclusion:
 
 ----
 
-https://bugs.ruby-lang.org/issues/21219 `Object#inspect` accept a list of instance variables to display
+### https://bugs.ruby-lang.org/issues/21219 `Object#inspect` accept a list of instance variables to display
 
 * matz suggested `instance_variables_to_inspect`
 * pp can respect not only `pretty_print_instance_variables` but also the new method
 
-https://bugs.ruby-lang.org/issues/21279 Bare "rescue" should not rescue NameError
+### https://bugs.ruby-lang.org/issues/21279 Bare "rescue" should not rescue NameError
 
 * matz: I will close
 
-https://bugs.ruby-lang.org/issues/4539 Array#zip_with
-https://bugs.ruby-lang.org/issues/21386 Introduce `Enumerable#join_map`
+### https://bugs.ruby-lang.org/issues/4539 Array#zip_with
+### https://bugs.ruby-lang.org/issues/21386 Introduce `Enumerable#join_map`
 
 ```ruby
 ary1.zip(ary2).map {|a, b| a + b }
@@ -356,30 +356,30 @@ ary1.zip_map(ary2) {|a, b| a + b }
 
 * matz: I will reject them
 
-https://bugs.ruby-lang.org/issues/21206 Segmentation fault on ISeq#to_binary
+### https://bugs.ruby-lang.org/issues/21206 Segmentation fault on ISeq#to_binary
 
-https://bugs.ruby-lang.org/issues/14916 Proposal to add Array#===
+### https://bugs.ruby-lang.org/issues/14916 Proposal to add Array#===
 
-https://bugs.ruby-lang.org/issues/21325 make ruby more middle-aged man friendly
+### https://bugs.ruby-lang.org/issues/21325 make ruby more middle-aged man friendly
 
-https://bugs.ruby-lang.org/issues/21358 Advanced filtering support for #dig
+### https://bugs.ruby-lang.org/issues/21358 Advanced filtering support for #dig
 
-https://bugs.ruby-lang.org/issues/21360 Inconsistent Support for `Exception#cause` in `Fiber#raise` and `Thread#raise`
+### https://bugs.ruby-lang.org/issues/21360 Inconsistent Support for `Exception#cause` in `Fiber#raise` and `Thread#raise`
 
 * matz: Looks good
 
-https://bugs.ruby-lang.org/issues/21359 Introduce `Exception#cause=` for Post-Initialization Assignment
+### https://bugs.ruby-lang.org/issues/21359 Introduce `Exception#cause=` for Post-Initialization Assignment
 
 * shyouhei: I don't get why `raise ..., cause:` is insufficient
 * matz: negative
 
-https://bugs.ruby-lang.org/issues/21361 Set execution file and line
+### https://bugs.ruby-lang.org/issues/21361 Set execution file and line
 
-https://bugs.ruby-lang.org/issues/21374 FrozenError message is inconsistent when a singleton method is defined on a frozen object
+### https://bugs.ruby-lang.org/issues/21374 FrozenError message is inconsistent when a singleton method is defined on a frozen object
 
 * matz: `can't modify frozen object` → `can't modify frozen Array` 
 
-https://bugs.ruby-lang.org/issues/21337 Using `not` on the RHS of a logical operator becomes valid syntax with Prism
+### https://bugs.ruby-lang.org/issues/21337 Using `not` on the RHS of a logical operator becomes valid syntax with Prism
 
 * matz: I prefer parse.y's behavior
 * matz: `p(not 1)` should be rejected too
@@ -402,11 +402,11 @@ ruby: compile error (SyntaxError)
 
 * matz: Prism must be fixed and the fix should be backported
 
-https://bugs.ruby-lang.org/issues/21378 variable pinning does not look for method arguments
+### https://bugs.ruby-lang.org/issues/21378 variable pinning does not look for method arguments
 
-https://bugs.ruby-lang.org/issues/21381 Different error messages when mixing `it` and `_1` in block for Prism and parse.y
+### https://bugs.ruby-lang.org/issues/21381 Different error messages when mixing `it` and `_1` in block for Prism and parse.y
 
-https://bugs.ruby-lang.org/issues/21382 Syntax for arguments in || is more strict than arguments in ()
+### https://bugs.ruby-lang.org/issues/21382 Syntax for arguments in || is more strict than arguments in ()
 
 ```
 p lambda { | x, y = x + 1 | x + y }.call(1)
@@ -414,9 +414,9 @@ p lambda { | x, y = x + 1 | x + y }.call(1)
 
 * matz: will reject
 
-https://bugs.ruby-lang.org/issues/21384 const_added is triggered twice when using autoload
+### https://bugs.ruby-lang.org/issues/21384 const_added is triggered twice when using autoload
 
-https://bugs.ruby-lang.org/issues/21391 Inconsistent trailing slash behavior of File.join and Pathname#join with empty strings
+### https://bugs.ruby-lang.org/issues/21391 Inconsistent trailing slash behavior of File.join and Pathname#join with empty strings
 
 ```
 $ ls ruby
@@ -427,9 +427,9 @@ $ ls ""
 ls: cannot access '': No such file or directory
 ```
 
-### namespace issues
+## namespace issues
 
-https://bugs.ruby-lang.org/issues/21318
+### https://bugs.ruby-lang.org/issues/21318
 
 ```ruby
 # main.rb
@@ -442,7 +442,7 @@ p Module.nesting #=> expected: [], actual: [#<Namespace:24,user,optional>]
 
 * matz: It should return `[]`
 
-https://bugs.ruby-lang.org/issues/21320
+### https://bugs.ruby-lang.org/issues/21320
 
 ```ruby
 # lib.rb
@@ -464,12 +464,12 @@ require "./lib" #=> :top
 
 * matz: Both should show :super
 
-https://bugs.ruby-lang.org/issues/21339
+### https://bugs.ruby-lang.org/issues/21339
 
 * `load_iseq` is defined in the main namespace
 * `Kernel#require` searches `load_iseq` hook in the root namespace, so it fails to find the definitoion
 
-https://bugs.ruby-lang.org/issues/21343
+### https://bugs.ruby-lang.org/issues/21343
 
 ```ruby
 # main.rb
@@ -486,8 +486,8 @@ String.singleton_class.singleton_class::Bar = 456
 ```
 
 
-https://bugs.ruby-lang.org/issues/21364
-https://bugs.ruby-lang.org/issues/21363
+### https://bugs.ruby-lang.org/issues/21364
+### https://bugs.ruby-lang.org/issues/21363
 
 ```ruby
 # main.rb

@@ -659,7 +659,7 @@ from nobu
 
 from ko1
 
-* https://bugs.ruby-lang.org/issues/15554#note-12 warn/error passing a block to a method which never use a block
-    * matz: if it could be detected implicitly it would be nice.  But not always possible.
-    * matz: some abuse like intentionally ignoring blocks are prohibited by this.
-    * matz: it could be difficult to write "don't bother" methods like passing anything to super.
+### https://bugs.ruby-lang.org/issues/15554#note-12 warn/error passing a block to a method which never use a block
+  * matz: if it could be detected implicitly it would be nice.  But not always possible.
+  * matz: some abuse like intentionally ignoring blocks are prohibited by this.
+  * matz: it could be difficult to write "don't bother" methods like passing anything to super.
