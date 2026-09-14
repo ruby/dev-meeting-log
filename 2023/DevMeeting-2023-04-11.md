@@ -392,7 +392,7 @@ Conclusion:
 
 *
 
-## [[Bug #19246]](https://bugs.ruby-lang.org/issues/19246) Rebuilding the loaded feature index much slower in Ruby 3.1 (matz/jeremyevans0)
+### [[Bug #19246]](https://bugs.ruby-lang.org/issues/19246) Rebuilding the loaded feature index much slower in Ruby 3.1 (matz/jeremyevans0)
 
 * mame: nobu, could you review Jeremy's PR?
 * nobu: At a glance, it looks good
@@ -401,7 +401,7 @@ Conclusion:
 
 * nobu: Will leave a github review.
 
-## [[Feature #19591]](https://bugs.ruby-lang.org/issues/19591) Add `symbolize_keys` to `MatchData#named_captures` (palkan)
+### [[Feature #19591]](https://bugs.ruby-lang.org/issues/19591) Add `symbolize_keys` to `MatchData#named_captures` (palkan)
 
 Discussion:
 
@@ -429,6 +429,6 @@ Conclusion:
 
 * matz: accept as `MatchData#named_captures(symbolize_names: true | false)`
 
-## [[Feature #19588]](https://bugs.ruby-lang.org/issues/19588) Allow Comparable#clamp(min, max) to accept nil as a specification
+### [[Feature #19588]](https://bugs.ruby-lang.org/issues/19588) Allow Comparable#clamp(min, max) to accept nil as a specification
 
 * matz: accepted

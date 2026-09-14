@@ -10,7 +10,7 @@ Time: 18:30 -
 Place: DeNA.com headquaters http://qwik.jp/asakusarb/HowToPassHikarieEntrance.html
 Attendees: sign up required: http://cruby.doorkeeper.jp/events/11795
 
-# Agenda
+## Agenda
 
 * [Feature #9711] Remove test-unit and minitest from stdlib. (sorah & kou & hsbt)
  * [Feature #9852] How to bundle test-unit2 and minitest5
@@ -28,7 +28,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/11795
 * [Feature #9857] Pathname#birthtime (znz)
 * [Feature #9179] MatchData#values_at should support named capture
 
-# Log
+## Log
 
 DevelopersMeeting20140618Japan
 attendee: shyouhei, hsbt, ko1, sora_h, akr, ktou, naruse, duerst

@@ -627,7 +627,7 @@ Conclusion:
 
 * matz: let's try to freeze all Range and ask users.
 
-## 3.0.0-preview1 showstopper
+### 3.0.0-preview1 showstopper
 
 * All Ranges frozen
 * A method defined by `define_method` must not be callable from Ractor

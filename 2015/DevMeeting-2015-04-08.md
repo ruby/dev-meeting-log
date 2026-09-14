@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -39,7 +39,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 * [Feature #10932] Enable allocation tracing ASAP (tenderlove)
 * [GitHub #858](https://github.com/ruby/ruby/pull/858) Add a RUBY_ENGINE_VERSION constant (tenderlove)
 
-# Log
+## Log
 
 [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20150408Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20150408Japan)
 
@@ -47,7 +47,7 @@ Attendee:
 
 matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
-## Ruby 2.3
+### Ruby 2.3
 
 - Schedule: similar to Ruby 2.2 (nurse)
 
@@ -150,19 +150,19 @@ matz, akr, hsbt, nurse, nobu, ayumin, sora, ko1
 
 - Methods to certify packages (chatting)
 
-## [[Feature #8259]](https://bugs.ruby-lang.org/issues/8259) atomic attribute accessors (tenderlove)
+### [[Feature #8259]](https://bugs.ruby-lang.org/issues/8259) atomic attribute accessors (tenderlove)
 
 (matz) Let me survy more about it.
 
-## [[Feature #10932]](https://bugs.ruby-lang.org/issues/10932) Enable allocation tracing ASAP (tenderlove)
+### [[Feature #10932]](https://bugs.ruby-lang.org/issues/10932) Enable allocation tracing ASAP (tenderlove)
 
 (ko1) no problem except the name and “include ObjectSpace”.
 
-## [GitHub #858](https://github.com/ruby/ruby/pull/858) Add a RUBY_ENGINE_VERSION constant (tenderlove)
+### [GitHub #858](https://github.com/ruby/ruby/pull/858) Add a RUBY_ENGINE_VERSION constant (tenderlove)
 
 (matz) approved.
 
-## [[Feature #10728]](https://bugs.ruby-lang.org/issues/10728) Warning for Fixnum#size to use RbConfig::SIZEOF 'long' (akr)
+### [[Feature #10728]](https://bugs.ruby-lang.org/issues/10728) Warning for Fixnum#size to use RbConfig::SIZEOF 'long' (akr)
 
 (matz) reject.
 

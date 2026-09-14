@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -78,19 +78,19 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
 Attendees: Matz (remote), Koichi Sasada, Nobu(yoshi) Nakada, Shyouhei Urabe (host), Hiroshi Shibata, Akira Tanaka, Yui Naruse, Kenta Murata, Satoru Horie (guest), Martin Dürst, sorah (from 15:00), Shugo  Maeda (remote)
 
 ## Next meeting: 7/19 (Tue) 14:00-@Pivotal Lab.
 
-## GSoC achievements report (ko1, Horie-san)
+### GSoC achievements report (ko1, Horie-san)
 
 Link to [project description](https://summerofcode.withgoogle.com/organizations/5749695703941120/#4576418910437376) ([Automatic-selection mechanism for data structures in MRI](https://summerofcode.withgoogle.com/projects/#4576418910437376)). Koichi is a mentor. Report: Started to implement String using Rope. Showing some performance results of initial experiments.
 
 Discussion of suitable application benchmarks, possible problems with implementation,...
 
-# The meeting for Preview 1.
+### The meeting for Preview 1.
 
 Release management of 2.4: When release 2.4 preview1?
 
@@ -106,7 +106,7 @@ This release doesn’t prevent further big changes for Ruby 2.4.
 
 (This release is different from an usual preview1 (even more ‘previewy’))
 
-## [[Misc #12283]](https://bugs.ruby-lang.org/issues/12283) Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
+### [[Misc #12283]](https://bugs.ruby-lang.org/issues/12283) Obsolete ChangeLog and commit message in Git-style (shyouhei) situation and progress?
 
 Any progress? → Nothing
 
@@ -116,7 +116,7 @@ Q: How should I do when I miss the reference and so on.
 
 A: Use empty commit.
 
-# How to handle security issues (shugo)
+### How to handle security issues (shugo)
 
 - Pros./Cons. about using GitHub, Slack, HackerOne and etc.
 - Aaron proposed [HackerOne](https://hackerone.com/) which is a specialized Web site to discuss security issues. In particular, it doesn’t include actual contents in email notifications, …, and also has a system for bounties.
@@ -129,7 +129,7 @@ A: Use empty commit.
 - Try this service.
 - Should we decide whether reports are eligible for bounty?
 
-## [[Feature #12333]](https://bugs.ruby-lang.org/issues/12333) String#concat, Array#concat, String#prepend to take multiple arguments (shyouhei)
+### [[Feature #12333]](https://bugs.ruby-lang.org/issues/12333) String#concat, Array#concat, String#prepend to take multiple arguments (shyouhei)
 
 matz: acceptable
 
@@ -142,7 +142,7 @@ nobu: this patch requires some tests, and fixes.
 
 - see https://bugs.ruby-lang.org/projects/ruby/wiki/DeveloperHowto
 
-## [[Feature #12247]](https://bugs.ruby-lang.org/issues/12247) accept multiple arguments at Array#delete
+### [[Feature #12247]](https://bugs.ruby-lang.org/issues/12247) accept multiple arguments at Array#delete
 
 What’s happen?
 
@@ -162,20 +162,20 @@ ary.delete(:a, :f, :c) #=> ???
 - x, y, z = ary.delete(:a, :f, :c)
 - Especially for Hash#delete (this is out of scope, but we should consier consistency)
 
-## [[Bug #12295]](https://bugs.ruby-lang.org/issues/12295) Ripper not emitting on_parse_error for global variable name syntax errors (shyouhei) is this the right design?
+### [[Bug #12295]](https://bugs.ruby-lang.org/issues/12295) Ripper not emitting on_parse_error for global variable name syntax errors (shyouhei) is this the right design?
 
 Assigned to Minero Aoki.
 
-## [[Feature #12484]](https://bugs.ruby-lang.org/issues/12484) Optimizing Rational (hsbt, mrkn)
+### [[Feature #12484]](https://bugs.ruby-lang.org/issues/12484) Optimizing Rational (hsbt, mrkn)
 
 - matz approved to add commit permission to Tadashi-san.
 - mrkn will reivew the proposed patch
 
-## [[Feature #12281]](https://bugs.ruby-lang.org/issues/12281) Allow lexically scoped use of refinements with using {} block syntax (shyouhei)
+### [[Feature #12281]](https://bugs.ruby-lang.org/issues/12281) Allow lexically scoped use of refinements with using {} block syntax (shyouhei)
 
 Assigned to shugo.
 
-## [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance_eval etc.
+### [[Feature #12086]](https://bugs.ruby-lang.org/issues/12086) using: option for instance_eval etc.
 
 Motivation is replace self and using context.
 
@@ -183,7 +183,7 @@ Motivation is replace self and using context.
 
 Matz will comment it.
 
-## [[Feature #12447]](https://bugs.ruby-lang.org/issues/12447) Integer#digits for extracting digits of place-value notation in any base (mrkn)
+### [[Feature #12447]](https://bugs.ruby-lang.org/issues/12447) Integer#digits for extracting digits of place-value notation in any base (mrkn)
 
 - Q. Endian? #=> Little endian
 - Q. how about negative integers? #=> Math::DomainError
@@ -191,25 +191,25 @@ Matz will comment it.
 
 matz: i’m not sure how it is convinience. but ok.
 
-## [[Feature #12299]](https://bugs.ruby-lang.org/issues/12299) Add Warning module for customized warning handling (jeremyevans)
+### [[Feature #12299]](https://bugs.ruby-lang.org/issues/12299) Add Warning module for customized warning handling (jeremyevans)
 
 naruse: it sounds useful with Gem.loaded_specs[ gem_name ].full_gem_path.
 
 matz: ok (except naming).
 
-# Supported Platforms (duerst)
+### Supported Platforms (duerst)
 
 h[ttps://bugs.ruby-lang.org/projects/ruby-trunk/wiki/SupportedPlatforms](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/SupportedPlatforms) says it’s for Ruby 1.9; needs some updating.
 
-## [[Feature #12460]](https://bugs.ruby-lang.org/issues/12460) Make Unicode Version directly available in Ruby (duerst)
+### [[Feature #12460]](https://bugs.ruby-lang.org/issues/12460) Make Unicode Version directly available in Ruby (duerst)
 
 Approved; name as proposed by Nobu: RbConfig::CONFIG['UNICODE_VERSION']; implementation: Nobu or Martin.
 
-# Non-ASCII in rdoc comments in C source (duerst)
+### Non-ASCII in rdoc comments in C source (duerst)
 
 See [https://github.com/rdoc/rdoc/issues/409](https://github.com/rdoc/rdoc/issues/409). Intent is understandable. May work by just using &#(x)... HTML/XML convention; needs to be checked further.
 
-## [[Bug #12427]](https://bugs.ruby-lang.org/issues/12427) the way that extension libraries know if Integer is integrated (nobu)
+### [[Bug #12427]](https://bugs.ruby-lang.org/issues/12427) the way that extension libraries know if Integer is integrated (nobu)
 
 Nobu prepared a patch to show warning for rb_cFixnum and rb_cBignum, so developers can recognize this change. However, there are risks to compile broken code (assume passed parameters are Fixnum, but passed BIgnums. In this case, it is difficult to check Fixnum asusmed methods because Bignum may be rare to use, in general).
 

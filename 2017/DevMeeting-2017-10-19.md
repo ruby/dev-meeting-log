@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -132,7 +132,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 * [Feature #12882] Add caller/file/line information to internal Kernel#warn calls (jeremyevans0)
 * example: [Feature #13686] Add states of scanner to tokens from Ripper.lex and Ripper::Filter#on_* (aycabta)
 
-# Log
+## Log
 
 Date: 2017/10/19 (Mon)
 Time: 14:00- 18:00 (JST)

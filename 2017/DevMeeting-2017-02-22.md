@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2017-02-22
 
-# DevelopersMeeting20170222Japan
+## DevelopersMeeting20170222Japan
 
 Date: 2017/02/22 (Wed)
 Time: 14:00- 19:00 (JST)
@@ -23,7 +23,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -86,7 +86,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 * example: [Feature #10917] Add `GC.stat[:total_time]` when GC profiling enabled (ko1)
 * [Feature #13110] Byte-based operations for String (shugo)
 
-# Log
+## Log
 
 Date: 2017/02/22 (Wed)
 Time: 14:00- 19:00 (JST)

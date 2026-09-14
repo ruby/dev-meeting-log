@@ -14,7 +14,7 @@ Please comment on your favorite ticket numbers you want to ask to discuss with y
 Date: 2019/12/20 13:00-17:00
 Place, Sign-up, and Log: https://docs.google.com/document/d/18v0UWXwwKaSvOFp1UQbEnt_4p0BMTdoGgcNfjyAWTKs
 
-# NOTES
+## NOTES
 
 - Dev meeting *IS NOT* a decision-making place. All decisions should be done at the bug tracker.
 - Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -23,7 +23,7 @@ Place, Sign-up, and Log: https://docs.google.com/document/d/18v0UWXwwKaSvOFp1UQb
 - All activities are best-effort (keep in mind that most of us are volunteer developers).
 - The date, time and place are scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -56,7 +56,7 @@ Example:
 **A short summary of a ticket is strongly recommended. We cannot read all discussion of the ticket in a limited time.**
 A proposal is often changed during the discussion, so it is very helpful to summarize the latest/current proposal, post it as a comment in the ticket, and write a link to the comment.
 
-# Log
+## Log
 
 https://bugs.ruby-lang.org/issues/16393
 Venue

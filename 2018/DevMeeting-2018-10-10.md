@@ -18,7 +18,7 @@ Place: pixiv Inc. (Tokyo, Japan)
 Sign-up: https://ruby.connpass.com/event/101832/
 Past meetings: https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
 
-# NOTES
+## NOTES
 
 - Dev meeting *IS NOT* a decision making place. All decisions should be done at the bug tracker.
 - Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -27,7 +27,7 @@ Past meetings: https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
 - All activities are best-effort (keep in mind that most of us are volunteer developers).
 - The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -51,7 +51,7 @@ Past meetings: https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
     - It simplifies working with large and small collections so one doesn't have to remember that can't use #compact when enumerator is returned and have to fall back to #reject(:nil?).
 - [Feature #15112] Introduce the new singleton method STDERR.p (shevegen)
     - I am mostly curious what the ruby core team thinks about Kenta Murata's proposal; it probably will not take too much time away discussing it briefly, since the scope is small.
-# Comment format
+## Comment format
 - [Feature #11505] Module#=== should call #kind_of? on the object rather than rb_obj_is_kind_of which only searches the ancestor heirarchy (rafaelfranca)
     - This would allow patterns as Decorator and Proxy to work with case statements.
 - [Feature #14912] Introduce pattern matching syntax (greggzst)
@@ -87,7 +87,7 @@ Example:
 
 I don't guarantee to put tickets in agenda if the comment violate the format (because it is hard to copy&paste).
 
-# Log
+## Log
 
 ## Next dev-meeting
 
@@ -104,7 +104,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 ## From Attendees
 
-## [[Feature #14839]](https://bugs.ruby-lang.org/issues/14839) How to deal with capitalizing Georgian in Unicode 11.0.0 (duerst)
+### [[Feature #14839]](https://bugs.ruby-lang.org/issues/14839) How to deal with capitalizing Georgian in Unicode 11.0.0 (duerst)
 
 
 - I need feedback on this to be able to implement in in time for the Ruby 2.6 release.
@@ -112,7 +112,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - usa: What about keep things as is, to make Georgian people aware of the issue
 - duerst: Georgian characters can be detectable so theoretically it’s possible to have complete mapping of characters.
 
-## [[Feature #15195]](https://bugs.ruby-lang.org/issues/15195) How to deal with new Japanese era (duerst)
+### [[Feature #15195]](https://bugs.ruby-lang.org/issues/15195) How to deal with new Japanese era (duerst)
 
 
 - We should prepare early (even if it's just to check that we need to do nothing)
@@ -175,7 +175,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 
 ## From non-attendees
 
-## [[Feature #15123]](https://bugs.ruby-lang.org/issues/15123) Enumerable#compact proposal (greggzst)
+### [[Feature #15123]](https://bugs.ruby-lang.org/issues/15123) Enumerable#compact proposal (greggzst)
 
 
 - It simplifies working with large and small collections so one doesn't have to remember that can't use #compact when enumerator is returned and have to fall back to #reject(:nil?).
@@ -184,7 +184,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - mrkn: Returns another enumerator.
 - matz: Use case not very clear to me.
 
-## [[Feature #15112]](https://bugs.ruby-lang.org/issues/15112) Introduce the new singleton method STDERR.p (shevegen)
+### [[Feature #15112]](https://bugs.ruby-lang.org/issues/15112) Introduce the new singleton method STDERR.p (shevegen)
 
 
 - I am mostly curious what the ruby core team thinks about Kenta Murata's proposal; it probably will not take too much time away discussing it briefly, since the scope is small.
@@ -204,7 +204,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - akr: I think STDERR.p is acceptable but IO#p is too short.
 - mame: same feeling.
 
-## [[Feature #11505]](https://bugs.ruby-lang.org/issues/11505) Module#=== should call #kind_of? on the object rather than rb_obj_is_kind_of which only searches the ancestor hierarchy (rafaelfranca)
+### [[Feature #11505]](https://bugs.ruby-lang.org/issues/11505) Module#=== should call #kind_of? on the object rather than rb_obj_is_kind_of which only searches the ancestor hierarchy (rafaelfranca)
 
 
 - This would allow patterns as Decorator and Proxy to work with case statements.
@@ -250,7 +250,7 @@ when Array
 
 end
 
-## [[Feature #14912]](https://bugs.ruby-lang.org/issues/14912) Introduce pattern matching syntax (greggzst)
+### [[Feature #14912]](https://bugs.ruby-lang.org/issues/14912) Introduce pattern matching syntax (greggzst)
 
 
 - Many modern languages have introduced pattern matching. I used it in scala and found it very easy to utilize and understand especially in recursion. It makes extracting data easier as well.
@@ -258,7 +258,7 @@ end
 - shyouhei: Any updates?
 - mame: We should ask the status for @k-tsj
 
-## [[Feature #15144]](https://bugs.ruby-lang.org/issues/15144) Enumerator#chain (zverok)
+### [[Feature #15144]](https://bugs.ruby-lang.org/issues/15144) Enumerator#chain (zverok)
 
 
 - knu: Understand the needs. Name?
@@ -276,9 +276,9 @@ end
 
 ## [zverok (Victor Shepelev)](https://bugs.ruby-lang.org/users/710) wants to hear about stale issues:
 
-## I am not sure if it is appropriate, but I'd also be very glad to hear about some "stale" discussions. They were typically reacted on developer meetings as "in general, good proposal (but not sure when it would be implemented/not sure about the name)", or something like that, and I'd like to know maybe we should do something to push them further? List of tickets:
+I am not sure if it is appropriate, but I'd also be very glad to hear about some "stale" discussions. They were typically reacted on developer meetings as "in general, good proposal (but not sure when it would be implemented/not sure about the name)", or something like that, and I'd like to know maybe we should do something to push them further? List of tickets:
 
-## [[Feature #14799]](https://bugs.ruby-lang.org/issues/14799) Startless range: usefulness discussed, patch provided by mame (Yusuke Endoh), waits for Matz's decision (?)
+### [[Feature #14799]](https://bugs.ruby-lang.org/issues/14799) Startless range: usefulness discussed, patch provided by mame (Yusuke Endoh), waits for Matz's decision (?)
 
 
 - mame: I can have 2.5 without it.
@@ -286,18 +286,18 @@ end
 - mame: What about right after when?
 - matz: Mmm…. That’s difficult.
 
-## [[Feature #14784]](https://bugs.ruby-lang.org/issues/14784) Comparable#clamp accepting range: comment for akr (Akira Tanaka) about "needlessly big" proposal, I answered it, is it makes the proposal more likely to be accepted?
+### [[Feature #14784]](https://bugs.ruby-lang.org/issues/14784) Comparable#clamp accepting range: comment for akr (Akira Tanaka) about "needlessly big" proposal, I answered it, is it makes the proposal more likely to be accepted?
 
 
 - Nobody is against #clamp accepting ranges.  The issue did not seem requesting that, rather it was for one-sided clamp.
 
-## [[Feature #6284]](https://bugs.ruby-lang.org/issues/6284) Composition for procs: the last thing Matz has said is the operators are chosen (<< and \>>), and "We need more discussion if we would add combination methods to the Symbol class." Is there a chance proc composition would make it way in the 2.6?
+### [[Feature #6284]](https://bugs.ruby-lang.org/issues/6284) Composition for procs: the last thing Matz has said is the operators are chosen (<< and \>>), and "We need more discussion if we would add combination methods to the Symbol class." Is there a chance proc composition would make it way in the 2.6?
 
 
 - usa: This has been accepted. (at [https://bugs.ruby-lang.org/issues/6284#note-55](https://bugs.ruby-lang.org/issues/6284#note-55))
 - ko1: @nobu is assigned.  Waiting for him to implement.
 
-## [[Feature #13581]](https://bugs.ruby-lang.org/issues/13581) Syntax sugar for method reference. The last thing Matz have said is: ".: looks best to me (followed by :::). Let me consider it for a while." Are there any choices made? Could we expect this for 2.6?
+### [[Feature #13581]](https://bugs.ruby-lang.org/issues/13581) Syntax sugar for method reference. The last thing Matz have said is: ".: looks best to me (followed by :::). Let me consider it for a while." Are there any choices made? Could we expect this for 2.6?
 
 
 - matz: Honestly I still don’t find the right name.
@@ -308,7 +308,7 @@ end
 - ko1: It might matter you, but not for the OP.
 - shyouhei: Maybe.
 
-## [[Feature #14781]](https://bugs.ruby-lang.org/issues/14781) Enumerator#generate It seems like people feel cautious enthusiasm about it, but not sure about the name. What should be done here? Voting on the name? Providing the patch with some name, and then voting for the name?
+### [[Feature #14781]](https://bugs.ruby-lang.org/issues/14781) Enumerator#generate It seems like people feel cautious enthusiasm about it, but not sure about the name. What should be done here? Voting on the name? Providing the patch with some name, and then voting for the name?
 
 
 - Everybody is against #generate.

@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 

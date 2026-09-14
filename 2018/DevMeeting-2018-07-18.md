@@ -17,7 +17,7 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 Past meetings: <https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings>
 
-# NOTE
+## NOTE
 
 Dev meeting *IS NOT* a decision making place. All decisions should be done at the bug tracker.
 Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -26,7 +26,7 @@ We will write a log about discussion to a file or to each ticket in English.
 All activities are best-effort (keep in mind that most of us are volunteer developers).
 The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -78,7 +78,7 @@ The date, time and place is scheduled according to when/where we can reserve Mat
 - [Feature #14914] Add BasicObject#instance_exec_with_block (jeremyevans0)
 - [Feature #14915] Deprecate String#crypt, move implementation to string/crypt (jeremyevans0)
 
-# Log
+## Log
 
 optDate: 2018/07/18 (Thu)
 

@@ -11,7 +11,7 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 
-### MRI
+#### MRI
 
 * tenderlove (Aaron Patterson)
 * matz
@@ -23,22 +23,22 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 * shugo
 * emboss (Martin Boßlet)
 
-### Rubinius
+#### Rubinius
 
 * evan
 * dbussink
 * brixen
 
-### JRuby
+#### JRuby
 
 * headius
 * enebo
 
-### MagLev
+#### MagLev
 
 * phlebas (Tim Felgentreff)
 
-### MacRuby
+#### MacRuby
 
 * jballanc (Joshua Ballanco)
 
@@ -62,38 +62,38 @@ We'll keep this meeting to one hour long.
 
 ## Summary
 
-## Refinements
+### Refinements
 
 * They are officially an experimental feature (no other impl needs them)
 * JRuby's current implementation is an earlier form of the spec
 * Currently refinements can be used without a require
 * Using refinements will cause a warning (even without -w)
 
-### Conclusion
+#### Conclusion
 
 * Wiki and tests are updated with latest spec
   https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/RefinementsSpec
 * The goal for "non-experimental" status is by Ruby 2.1
 
-### Open Questions
+#### Open Questions
 
 * Can we have a dummy require that enables refinements?
 
-## Keyword Arguments
+### Keyword Arguments
 
 * Should be documented in doc/syntax (but needs review)
 * People want non-optional keyword arguments
 
-### Conclusion
+#### Conclusion
 
 No issues on current kw args from implementers, but people want non-optional args.
 
-### Action Items
+#### Action Items
 
 * headius opened a ticket for non-optional args, #7701
 * Add examples of non-optional args "in the wild" to his ticket
 
-### Isolated Binding Specifier
+#### Isolated Binding Specifier
 
 * A new binding specifier defined here: #6710
 * Binding semantics are not well defined
@@ -106,15 +106,15 @@ No issues on current kw args from implementers, but people want non-optional arg
 * Isolated binding could be used for moving Procs between processes
   * No binding means we could marshal a proc
 
-### Conclusion
+#### Conclusion
 
 More than just "isolated" binding is desired
 
-### Action
+#### Action
 
 * Move discussion for more features to "isolated" redmine ticket
 
-## Open Floor
+### Open Floor
 
 * New "Common Ruby" project
   https://bugs.ruby-lang.org/projects/common-ruby

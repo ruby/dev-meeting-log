@@ -21,7 +21,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -130,7 +130,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 * [Feature #8661] Backstrace in reverse order. The OP asked for an option but this is currently always the case for the toplevel exception handler. Is this OK for compatibility? It is surprising for the least (See comment 6). Can we have matz's opinion? (eregon)
 
-# Log
+## Log
 
 Date: 2017/05/19 (Mon)
 
@@ -152,7 +152,7 @@ log: TBD
 
 ## About 2.5 timeframe
 
-## [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25)
+[https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25)
 
 - Previrew 1 in June?
 
@@ -162,7 +162,7 @@ log: TBD
 - anything big that is worth releasing a preview
 - 合宿
 
-## Watson-san
+### Watson-san
 
 - shyouhei: I’d recommend him to be a committer.
 - ko1: he needs review before commit.

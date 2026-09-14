@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2013-02-15
 
-# DevelopersMeeting20130215
+## DevelopersMeeting20130215
 
 This meeting will be held on [2013-02-15 at 15:00 Pacific Time](http://www.timeanddate.com/worldclock/meetingdetails.html?year=2013&month=2&day=15&hour=23&min=0&sec=0&p1=234&p2=248&p3=48&p4=64)) at ((<URL:irc://chat.freenode.net/#ruby-implementers).
 
@@ -13,7 +13,7 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 
-### MRI
+#### MRI
 
 * tenderlove (Aaron Patterson)
 * matz
@@ -25,28 +25,28 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 * eregon (Benoit Daloze)
 * kosaki
 
-### Rubinius
+#### Rubinius
 
 * dbussink (Dirkjan Bussink)
 
-### JRuby
+#### JRuby
 
 * headius (Charles Oliver Nutter)
 * enebo (Thomas E. Enebo)
 
-### MagLev
+#### MagLev
 
 * phlebas (Tim Felgentreff)
 
-### MacRuby
+#### MacRuby
 
 * jballanc (Josh Ballanco)
 
-### Topaz
+#### Topaz
 
 * Alex_Gaynor
 
-### mruby
+#### mruby
 
 * bovi (Daniel Bovensiepen)
 

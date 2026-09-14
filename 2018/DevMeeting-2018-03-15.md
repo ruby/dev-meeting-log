@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -96,31 +96,31 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * [Bug #4157] test_pty で、たまに出る Failure
   * [Feature #4483] PStoreをデフォルトで複数のスレッドから扱えるようにしたい
 
-# Log
+## Log
 
-## Date: 2018/03/15 (Thu)
+Date: 2018/03/15 (Thu)
 
-## Time: 14:00- 18:00 (JST)
+Time: 14:00- 18:00 (JST)
 
-## Place: Cookpad Inc.
+Place: Cookpad Inc.
 
-## Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
+Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
 
-## log edit: https://docs.google.com/document/d/1RT0ijSo8uJ4Awn3CEvuYkjH0TVeXSYgeAFNmVGYC3ak/edit#
+log edit: https://docs.google.com/document/d/1RT0ijSo8uJ4Awn3CEvuYkjH0TVeXSYgeAFNmVGYC3ak/edit#
 
-## log: TBD
+log: TBD
 
 ## Agenda
 
-### Next Developper Meetings
+## Next Developper Meetings
 
 2018/04/19 (Thu) @ Speee
 
-### About 2.6 timeframe
+## About 2.6 timeframe
 
 - Preview 1 has been released with MJIT.
 
-### Stable versions
+## Stable versions
 
 Hopefully, there will be a release in March.
 
@@ -131,7 +131,7 @@ Maintainers starting Apr 2018:
 - 2.4: usa
 - 2.5: nagachika
 
-### From attendees
+## From attendees
 
 - [[Feature #12732]](https://bugs.ruby-lang.org/issues/12732) An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
 
@@ -225,7 +225,7 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 
 - akr: how about gsubm, `m` means MatchData
 
-### From non-attendees
+## From non-attendees
 
 - [[Feature #14245]](https://bugs.ruby-lang.org/issues/14245) Add File.read etc. (shugo)
 

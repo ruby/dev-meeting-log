@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2020-03-16
 
-# The next dev meeting
+## The next dev meeting
 
 **Date: 2020/03/16 13:00-17:00**
 
@@ -17,7 +17,7 @@ tags: Ruby, ruby-dev-meeting
 - The date, time and place are scheduled according to when/where we can reserve Matz's time.
 - *DO NOT* discuss then on this ticket, please.
 
-# Call for agenda items
+## Call for agenda items
 
 If you have a ticket that you want matz and committers to discuss, please post it into this ticket in the following format:
 
@@ -37,7 +37,7 @@ Example:
 - The format is strict.  We'll use [this script to automatically create an markdown-style agenda](https://gist.github.com/mame/b0390509ce1491b43610b9ebb665eb86).  We may ignore a comment that does not follow the format.
 - Your comment is mandatory.  We cannot read all discussion of the ticket in a limited time.
 
-# Log
+## Log
 
 https://bugs.ruby-lang.org/issues/16661
 Venue

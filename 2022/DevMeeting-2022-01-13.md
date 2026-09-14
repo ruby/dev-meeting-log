@@ -863,6 +863,6 @@ Conclusion:
 
 * matz: Will reply
 
-## [[Feature #18490]](https://bugs.ruby-lang.org/issues/18490) `MakeMakefile.pkg_config` should accept multiple options
+### [[Feature #18490]](https://bugs.ruby-lang.org/issues/18490) `MakeMakefile.pkg_config` should accept multiple options
 
 * matz: Will accept

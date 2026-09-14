@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -51,11 +51,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * To resolve these problems, we should make Tempfile a subclass of File.
   * Tempfile#dup should copy the temporary file.
 
-# Log
+## Log
 
 Attendee: akr, hsbt, ko1, matz, naruse, nobu
 
-## [[Feature #7148]](https://bugs.ruby-lang.org/issues/7148) Improved Tempfile w/o DelegateClass (glass_saga)
+### [[Feature #7148]](https://bugs.ruby-lang.org/issues/7148) Improved Tempfile w/o DelegateClass (glass_saga)
 
 matz: I have some issue on this proposal. Tempfile should not be a subclass of File. It is different concept from File. I’m okay to implement Tempfile without delegator. However, I’m not sure it implemeted with subclass of File.
 
@@ -63,7 +63,7 @@ File is a wrapper of fd. Tempfile is not only a wrapper but handle other informa
 
 Action: Matz will reply this issue.
 
-## [[Feature #11218]](https://bugs.ruby-lang.org/issues/11218) File.open FILE_SHARE_DELETE (naruse)
+### [[Feature #11218]](https://bugs.ruby-lang.org/issues/11218) File.open FILE_SHARE_DELETE (naruse)
 
 naruse: (explain about this proposal). This proposal is only for Windows.
 
@@ -85,7 +85,7 @@ naruse: I need modestr2modeint for add the new integer flag (rb_io_modestr_oflag
 
 Action: Discuss on ticket
 
-## [[Feature #11251]](https://bugs.ruby-lang.org/issues/11251) pthread_set_name_np (naruse)
+### [[Feature #11251]](https://bugs.ruby-lang.org/issues/11251) pthread_set_name_np (naruse)
 
 ko1: Interface?
 
@@ -99,43 +99,43 @@ akr: show it in inspect
 
 Action: naruse will implement it
 
-# Fix String#+ when subclassed #920 (hsbt)
+### Fix String#+ when subclassed #920 (hsbt)
 
 Action: reply on issue.
 
-## [[Feature #5455]](https://bugs.ruby-lang.org/issues/5455) $SAFE should be removed(hsbt)
+### [[Feature #5455]](https://bugs.ruby-lang.org/issues/5455) $SAFE should be removed(hsbt)
 
 matz: $2 and $3 can be removed.
 
 Action: Matz will reply on ticket. hsbt-san will try implent.
 
-## [[Feature #10730]](https://bugs.ruby-lang.org/issues/10730) Implement Array#bsearch_index(hsbt)
+### [[Feature #10730]](https://bugs.ruby-lang.org/issues/10730) Implement Array#bsearch_index(hsbt)
 
 matz: go ahead.
 
 Action: Matz will reply. nobu will merge.
 
-## [[Feature #10017]](https://bugs.ruby-lang.org/issues/10017) Add Hash#values_at!(hsbt)
+### [[Feature #10017]](https://bugs.ruby-lang.org/issues/10017) Add Hash#values_at!(hsbt)
 
 matz: approved (Hash#fetch_values).
 
 Action: Matz will reply. Nobu will merge it.
 
-## [[Feature #9108]](https://bugs.ruby-lang.org/issues/9108) Hash sub-selections
+### [[Feature #9108]](https://bugs.ruby-lang.org/issues/9108) Hash sub-selections
 
 Action: Matz will reply.
 
-# Did you mean gem -> #11252
+### Did you mean gem -> #11252
 
 Action: continue to discuss how to implement (nobu)
 
-## [[Feature #11215]](https://bugs.ruby-lang.org/issues/11215) pack/unpack for (u)intptr_t
+### [[Feature #11215]](https://bugs.ruby-lang.org/issues/11215) pack/unpack for (u)intptr_t
 
 Action: Matz will approve it.
 
-## [[Feature #10769]](https://bugs.ruby-lang.org/issues/10769) Negative counterpart to Enumerable#slice_when
+### [[Feature #10769]](https://bugs.ruby-lang.org/issues/10769) Negative counterpart to Enumerable#slice_when
 
-## [[Feature #11253]](https://bugs.ruby-lang.org/issues/11253) rb_io_modestr_oflags for Ruby API
+### [[Feature #11253]](https://bugs.ruby-lang.org/issues/11253) rb_io_modestr_oflags for Ruby API
 
 matz: add keyword argument “flags”, which is OR-ed with 2nd argument mode.
 

@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2013-10-01
 
-# DevelopersMeeting20131001Japan
+## DevelopersMeeting20131001Japan
 
 * Date: 2013-10-01
 * Time: 13:00-18:00

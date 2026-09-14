@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -49,23 +49,23 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
 Attendee: akr, hsbt, ko1, matz, naruse, nobu
 
-# deprecated constants
+### deprecated constants
 
 Matz: OK
 
-# open flags
+### open flags
 
 matz: ok
 
-# “x” for open
+### “x” for open
 
 matz: ok
 
-## [https://bugs.ruby-lang.org/issues/11339](https://bugs.ruby-lang.org/issues/11339)
+### [https://bugs.ruby-lang.org/issues/11339](https://bugs.ruby-lang.org/issues/11339)
 
 Introducing IDL will
 
@@ -91,17 +91,17 @@ this code can leak `fd’ if some exception is occur before making IO object (IO
 
 Also, additional TracePoint will be introduced.
 
-# status of RubyCI and the expectation of its restoration (usa)
+### status of RubyCI and the expectation of its restoration (usa)
 
 - our storage account is expired from about 2-3 week ago.
 - we will replace following azure backends to s3.
 - [https://github.com/akr/chkbuild/blob/master/chkbuild/upload.rb#L75](https://github.com/akr/chkbuild/blob/master/chkbuild/upload.rb#L75)
 
-## about the necessity of r51384 (it takes toooooo looooong time to run test-all) (usa)
+### about the necessity of r51384 (it takes toooooo looooong time to run test-all) (usa)
 
 Resolved.
 
-## [[Feature #8919]](https://bugs.ruby-lang.org/issues/8919) Queue as embedded class: please determine whether or not it should be introduced. (glass_saga)
+### [[Feature #8919]](https://bugs.ruby-lang.org/issues/8919) Queue as embedded class: please determine whether or not it should be introduced. (glass_saga)
 
 Matz: seems good.
 
@@ -109,7 +109,7 @@ Nobu: how is SizedQueue? They share same codes.
 
 … no conclusion. Koichi will try.
 
-# Feature #10600: [PATCH] Queue#close [https://bugs.ruby-lang.org/issues/10600](https://bugs.ruby-lang.org/issues/10600)
+### Feature #10600: [PATCH] Queue#close [https://bugs.ruby-lang.org/issues/10600](https://bugs.ruby-lang.org/issues/10600)
 
 Matz: seems good.
 
@@ -117,6 +117,6 @@ akr: What happens on pushing/popping closed Queue?
 
 ko1: there are discussions on ticket. I’ll take it.
 
-## [[Feature #11297]](https://bugs.ruby-lang.org/issues/11297) Allow private method of self to be called (a_matsuda)
+### [[Feature #11297]](https://bugs.ruby-lang.org/issues/11297) Allow private method of self to be called (a_matsuda)
 
 Matz: seems good

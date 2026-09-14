@@ -1008,7 +1008,7 @@ Conclusion:
 * matz: call detailed_message before thread termination
 * matz: I leave it to @nobu and @mame to print the message before or after thread termination
 
-## Random topic: LINQ in Ruby
+### Random topic: LINQ in Ruby
 
 ```ruby!
 passed_students = students.select {|s| s.score > 200 }.map {|s| s.name }
@@ -1034,7 +1034,7 @@ select name from students where score > 200
 [Zyacc Homepage](http://www.cs.binghamton.edu/~zdu/zyacc/) 
 
 
-## Implement cache optimization for regexp matching
+### Implement cache optimization for regexp matching
 
 https://fservant.github.io/papers/DavisServantLee-SelectiveMemo-IEEE-SP21.pdf
 https://github.com/ruby/ruby/pull/6486

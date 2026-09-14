@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2018-04-19
 
-# DevelopersMeeting20180419Japan
+## DevelopersMeeting20180419Japan
 
 Date: 2018/04/19 (Thu)
 Time: 14:00-18:00 (JST)
@@ -24,7 +24,7 @@ Please add your favorite ticket numbers you want to ask to discuss.  If you have
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -54,36 +54,36 @@ Please add your favorite ticket numbers you want to ask to discuss.  If you have
 
 ## Carry-over from previous meeting(s)
 
-# Log
+## Log
 
-## Date: 2018/04/19 (Thu)
+Date: 2018/04/19 (Thu)
 
-## Time: 14:00- 18:00 (JST)
+Time: 14:00- 18:00 (JST)
 
-## Place: Speee Inc.
+Place: Speee Inc.
 
-## Sign-up:
+Sign-up:
 
-## log edit:
+log edit:
 
-## log: TBD
+log: TBD
 
 wiki: [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20180419Japan)
 
 ## Agenda
 
-### Next Developper Meetings
+## Next Developper Meetings
 
 2018/05/17 (Thu) @ Cookpad
 
-### About 2.6 timeframe
+## About 2.6 timeframe
 
 - Naruse : would like to release PR2 next month.
 - Mame: what’s new?
 - Naruse: Exception#cause, JIT update, etc.  Maybe also IRB with ripper?
 - Hsbt: also rubygems 3, perhaps.
 
-### From attendees
+## From attendees
 
 [[Bug #14345]](https://bugs.ruby-lang.org/issues/14345) http_proxy setting should respect both parent domain and subdomain (hsbt)
 

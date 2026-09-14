@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -36,11 +36,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
 Attendee: akr, ayumin, hsbt, ko1, matz, naruse, nobu, kosaki, usa, yuki, amatsuda
 
-# did_you_mean gem (Yuki Nishijima)
+### did_you_mean gem (Yuki Nishijima)
 
 - Naming: did_you_mean or correctable?
 
@@ -129,11 +129,11 @@ empty line is not needed because lines of display is essential resource. indent 
 - failed to refernce B -> needs A and the name :B.
 - failed to refrence C -> needs B and the name :C.
 
-# Release Schedule
+### Release Schedule
 
 [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23)
 
-# Subversion Repository Migration
+### Subversion Repository Migration
 
 current machine is old debian.
 
@@ -157,7 +157,7 @@ Options:
 
 Problem: If we migrate to git, we need to migrate SVN related tools (auto date update, etc)
 
-# Magic Comment for Frozen String Literal by default
+### Magic Comment for Frozen String Literal by default
 
 Default of the status of String Literal will be frozen from Ruby 3.0.
 

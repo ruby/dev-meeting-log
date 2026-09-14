@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -39,9 +39,9 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
-# Decide whether `-*-` should be required for frozen_string_literal magic comments [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976)
+### Decide whether `-*-` should be required for frozen_string_literal magic comments [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976)
 
 naruse: vim’s indicator is “vim: …” [http://vim.wikia.com/wiki/Modeline_magic](http://vim.wikia.com/wiki/Modeline_magic)
 
@@ -139,7 +139,7 @@ inspect に引数を渡したい
 
 naruse: On 1.9 I tried to implement such logic, but I gave  up and use Encoding.default_internal/Encoding.default_external
 
-# .?
+### .?
 
 nobu: syntax fixed? there are 3 possibilities.
 
@@ -161,7 +161,7 @@ matz: i can accept original proposal.
 
 [ruby-core:70854] [Ruby trunk - Feature #11537]
 
-# Misc
+## Misc
 
 C# Design Notes for Sep 8, 2015
 
@@ -248,13 +248,13 @@ str = ?’foo’
 
 str = !’foo’ -> bad idea (ex: str = !’foo’.start_with(‘f’))
 
-# [https://twitter.com/sferik/status/642063693304451072](https://twitter.com/sferik/status/642063693304451072)
+### [https://twitter.com/sferik/status/642063693304451072](https://twitter.com/sferik/status/642063693304451072)
 
 matz; how about to warn for “initialise”?
 
 akr: found 3 cases and 1 case uses “initialise” intentionaly.
 
-# Next
+## Next
 
 11/9 (mon) 14:00 (JST)-
 

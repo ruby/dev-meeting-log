@@ -216,20 +216,20 @@ Conclusion:
 
 ---
 
-## Thread#native_thread_id is incorrectly cached across fork on Linux
+### Thread#native_thread_id is incorrectly cached across fork on Linux
 
 https://bugs.ruby-lang.org/issues/19873
 
 * ko1: seems nice.
 * naruse: will take a look.
 
-## Unicode line and paragraph separator are not stripped
+### Unicode line and paragraph separator are not stripped
 
 https://bugs.ruby-lang.org/issues/19867
 
 by design? -> Yes
 
-## Update license phrases to SPDX BSD-2-Clause
+### Update license phrases to SPDX BSD-2-Clause
 
 https://bugs.ruby-lang.org/issues/19860
 
@@ -240,7 +240,7 @@ https://bugs.ruby-lang.org/issues/19860
 * naruse: but Ruby's license is not machine-detectable at the beginning (we are combining lots of differently licensed source codes)
 * hsbt: ok
 
-## Start & Finish, Begin & End
+### Start & Finish, Begin & End
 
 https://bugs.ruby-lang.org/issues/19859
 
@@ -248,7 +248,7 @@ https://bugs.ruby-lang.org/issues/19859
 * mame: Python and JS also uses startsWith/endsWith
 * rejected
 
-## Get thread creation time
+### Get thread creation time
 
 https://bugs.ruby-lang.org/issues/19850
 
@@ -259,13 +259,13 @@ https://bugs.ruby-lang.org/issues/19850
 * naruse: modify the thread's name accordingly.
 * mame: or assign an instance variable.
 
-## Requiring file with autoload results in confusing error if file doesn't exist
+### Requiring file with autoload results in confusing error if file doesn't exist
 
 https://bugs.ruby-lang.org/issues/19849
 
 * usa: we can show autolaod line in LoadError message.
 
-## Need a method to check if two ranges overlap
+### Need a method to check if two ranges overlap
 
 https://bugs.ruby-lang.org/issues/19839
 
@@ -281,13 +281,13 @@ p (4..6).overlap?((2..8) % 3) #=> TypeError (okay?)
 p (3..4).overlap?((2..8) % 3) #=> TypeError (okay?)
 ```
 
-## Method#destructive?, UnboundMethod#destructive?
+### Method#destructive?, UnboundMethod#destructive?
 
 https://bugs.ruby-lang.org/issues/19832
 
 * matz: I will reject
 
-## Allow `Array#transpose` to take an optional size argument
+### Allow `Array#transpose` to take an optional size argument
 
 https://bugs.ruby-lang.org/issues/19830
 
@@ -311,19 +311,19 @@ ary.transpose.transpose == ary
 * matz: I cannot determine if this is needed
 * knu: `.fill(0, 2) { [] }`
 
-## Add Enumerable#uniq_map, Enumerable::Lazy#uniq_map, Array#uniq_map and Array#uniq_map!
+### Add Enumerable#uniq_map, Enumerable::Lazy#uniq_map, Array#uniq_map and Array#uniq_map!
 
 https://bugs.ruby-lang.org/issues/19787
 
-## Remove tailcall_optimization support
+### Remove tailcall_optimization support
 
 https://bugs.ruby-lang.org/issues/19780
 
-## Introduce defp keyword for defining overloadable, pattern matched methods
+### Introduce defp keyword for defining overloadable, pattern matched methods
 
 https://bugs.ruby-lang.org/issues/19764
 
-## URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will.
+### URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will.
 
 https://bugs.ruby-lang.org/issues/19756
 
@@ -344,13 +344,13 @@ irb(main):002> URI::HTTP.build(host: "_gateway")
 
 * If there are real people who are in a trouble of this, we may think about it later
 
-## Add support for UUID version 7
+### Add support for UUID version 7
 
 https://bugs.ruby-lang.org/issues/19735
 
 UUIDv7 contains of not just a random value, but also a timestamp. Is it okay to provide it in random/formatter? It will not be idempotent
 
-## Warning for non-linear Regexps
+### Warning for non-linear Regexps
 
 https://bugs.ruby-lang.org/issues/19720
 

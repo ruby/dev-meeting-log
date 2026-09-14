@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -86,7 +86,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
 Next meeting:
 
@@ -105,7 +105,7 @@ Milestones
 - previrew 1 maybe?  Then we can call for slides.
 - conclusion: Next meeting will confirm to release preview1
 
-## [[Feature #12324]](https://bugs.ruby-lang.org/issues/12324) Support OpenSSL 1.1.0 (and drop support for 0.9.6/0.9.7) (hsbt) We need to get aproval of Matz
+### [[Feature #12324]](https://bugs.ruby-lang.org/issues/12324) Support OpenSSL 1.1.0 (and drop support for 0.9.6/0.9.7) (hsbt) We need to get aproval of Matz
 
 - matz: OK to give him a commit grant.
 - compatibility? is it OK to drop OpenSSL < 1.0?
@@ -115,7 +115,7 @@ Milestones
 
 - introduce ruby/openssl subproject goal and status.
 
-## [[Misc #12283]](https://bugs.ruby-lang.org/issues/12283) Obsolete ChangeLog and commit message in Git-style (shyouhei)
+### [[Misc #12283]](https://bugs.ruby-lang.org/issues/12283) Obsolete ChangeLog and commit message in Git-style (shyouhei)
 
 - (shyouhei) seems nobody is against.
 - (Martin) I support it.
@@ -126,11 +126,11 @@ Milestones
 - (conclusion) lets auto-generate ChangeLog, like we do in version.h.
 - nobu and naruse will look at it.
 
-## [[Feature #12352]](https://bugs.ruby-lang.org/issues/12352) New hash syntax broken for numeric keys (shyouhei)
+### [[Feature #12352]](https://bugs.ruby-lang.org/issues/12352) New hash syntax broken for numeric keys (shyouhei)
 
 - matz: reject.  If this syntax is allowed { 1: 2 } should be considered { :’1’ => 2 }.
 
-## [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged (shyouhei) what was the reason against defaulting true?
+### [[Feature #6647]](https://bugs.ruby-lang.org/issues/6647) Exceptions raised in threads should be logged (shyouhei) what was the reason against defaulting true?
 
 - Thread[.#]report_on_exception= is accepted
 - Matz does not want this default true, because it breaks current situations where programmer expects dead threads to silently exit.
@@ -138,7 +138,7 @@ Milestones
 
 - Threads dead before join shall report exceptions.  If that is not a desired behaviour, explicitly set false.
 
-## [[Feature #12244]](https://bugs.ruby-lang.org/issues/12244) Add a way to integer - integer % num (shyouhei)
+### [[Feature #12244]](https://bugs.ruby-lang.org/issues/12244) Add a way to integer - integer % num (shyouhei)
 
 - shyouhei: it’s slow.
 - ko1: you can speed this up by dispatch in Ruby, say, in prelude.
@@ -146,7 +146,7 @@ Milestones
 - matz: API OK, speed concern.
 - ko1: @naruse please show us speed comparison.
 
-## [[Feature #12005]](https://bugs.ruby-lang.org/issues/12005) Unify Fixnum and Bignum into Integer (naruse,mrkn,akr)
+### [[Feature #12005]](https://bugs.ruby-lang.org/issues/12005) Unify Fixnum and Bignum into Integer (naruse,mrkn,akr)
 
 - akr: there is only one problem for this: do this now, or don’t.
 - pros/cons:
@@ -156,18 +156,18 @@ Milestones
 
 - matz: let’s try.
 
-## [[Bug #12337]](https://bugs.ruby-lang.org/issues/12337) inconsistency between Fixnum#coerce and Bignum#coerce (akr)
+### [[Bug #12337]](https://bugs.ruby-lang.org/issues/12337) inconsistency between Fixnum#coerce and Bignum#coerce (akr)
 
 - Matz: TypeError was an intended behavior, to prevent data loss.  So no need to backport this behaviour to previous releases.
 - But as we try Fixnunm/Bignum unification, things gets much simpler.
 
-## [[Feature #10548]](https://bugs.ruby-lang.org/issues/10548) remove callcc (hsbt)
+### [[Feature #10548]](https://bugs.ruby-lang.org/issues/10548) remove callcc (hsbt)
 
 - hsbt: current status?
 - ko1: we historically tried callcc but was not successful.  The intension of this issue is we wish to treat callcc-related issues to be 3rd-party issue.
 - We will not remove callcc, but we cannot guarantee that it works correctly (we suspect there might be quite some undiscovered bugs), and we don’t have any manpower to support it
 
-## bugs.ruby-lang.org Assignee: ruby-core confusion (duerst)
+### bugs.ruby-lang.org Assignee: ruby-core confusion (duerst)
 
 - when we look at the “my page” from the top page of redmine, there are lots of issues that are not farmiliar at all.
 - the reason for this is “ruby-core” assignment, which dupes assignment to each subscribers of it.
@@ -176,16 +176,16 @@ Milestones
 - hsbt: will look for a way to prevent assignment.
 - Yui changed all “Assignee: ruby-core” to “Assignee: nobody” with a global operation. Thanks! But this doesn’t yet prevent future assignments.
 
-## [[Feature #12263]](https://bugs.ruby-lang.org/issues/12263) Feature request: &&. operator (shorthand for foo && foo.method) (shyouhei)
+### [[Feature #12263]](https://bugs.ruby-lang.org/issues/12263) Feature request: &&. operator (shorthand for foo && foo.method) (shyouhei)
 
 - matz: example seems illustrative.  any real-world use-case?
 
-## [[Bug #4388]](https://bugs.ruby-lang.org/issues/4388) open-uriで環境変数http_proxyを使うときに認証付きのProxyが使えません
+### [[Bug #4388]](https://bugs.ruby-lang.org/issues/4388) open-uriで環境変数http_proxyを使うときに認証付きのProxyが使えません
 
 - akr: hsbt already introduced this at r54432.
 - lets ask if trunk is ok.
 
-## [[Feature #5899]](https://bugs.ruby-lang.org/issues/5899) chaining comparisons
+### [[Feature #5899]](https://bugs.ruby-lang.org/issues/5899) chaining comparisons
 
 - Hmm.
 - This is about language design.  Matz should decide.
@@ -196,21 +196,21 @@ Milestones
 
 - Matz: doesn’t sould yummy.
 
-## [[Feature #12157]](https://bugs.ruby-lang.org/issues/12157) Is the option hash necessary for future Rubys? (shyouhei)
+### [[Feature #12157]](https://bugs.ruby-lang.org/issues/12157) Is the option hash necessary for future Rubys? (shyouhei)
 
 - Matz: positive.  It is good in long term
 - akr: migration path?
 
 - warning when a kwargs-called method receives that in option hash.
 
-## [[Feature #11925]](https://bugs.ruby-lang.org/issues/11925) Struct construction with kwargs (ko1)
+### [[Feature #11925]](https://bugs.ruby-lang.org/issues/11925) Struct construction with kwargs (ko1)
 
 - convenient, but is #create an appropriate name?
 - no one is against? (except naming)
 - nobu: Hash#to_struct(klass)
 - create! doesnt follow naming convention.
 
-## [[Feature #6739]](https://bugs.ruby-lang.org/issues/6739) One-line rescue statement should support specifying an exception class
+### [[Feature #6739]](https://bugs.ruby-lang.org/issues/6739) One-line rescue statement should support specifying an exception class
 
 - no good syntax so far.
 - nobu: all the proposed syntax, except for rescue when, generated syntx conflicts.
@@ -218,37 +218,37 @@ Milestones
 - naruse: practical use case is io.close rescue nil
 - mrkn: another real world application is if expr resuce false
 
-## [[Feature #7314]](https://bugs.ruby-lang.org/issues/7314) Convert Proc to Lambda doesn't work in MRI
+### [[Feature #7314]](https://bugs.ruby-lang.org/issues/7314) Convert Proc to Lambda doesn't work in MRI
 
 - The current behaviour is not “unpredictable” in a sense.
 
-## [[Feature #8895]](https://bugs.ruby-lang.org/issues/8895) Destructuring Assignment for Hash
+### [[Feature #8895]](https://bugs.ruby-lang.org/issues/8895) Destructuring Assignment for Hash
 
 - ko1: elixir does this.
 - shyouhei: maybe 99% use case of hash destruction was already solved by kwargs?
 - akr: the OP propses use case with MatchData.
 - matz: reject this specific one
 
-## [[Bug #10708]](https://bugs.ruby-lang.org/issues/10708) In a function call, double splat of an empty hash still calls the function with an argument
+### [[Bug #10708]](https://bugs.ruby-lang.org/issues/10708) In a function call, double splat of an empty hash still calls the function with an argument
 
 - This is a side-effect of optional hash argument treatment.
 - akr: this should be fixed by abondoning optional hash.
 
 - this could be one of a migration path to force `**kwargs`.
 
-## Oniguruma and/or Onigumo situations? (duerst)
+### Oniguruma and/or Onigumo situations? (duerst)
 
 - Duerst: oniguruma has updates.
 - naruse: I hadn’t know Oniguruma is on GitHub now [https://github.com/kkos/oniguruma](https://github.com/kkos/oniguruma). I’ll check it.
 
-## [[Bug #12368]](https://bugs.ruby-lang.org/issues/12368) default encoding of Integer#chr
+### [[Bug #12368]](https://bugs.ruby-lang.org/issues/12368) default encoding of Integer#chr
 
 - As usa says script encoding doesn’t exist run time.
 - defaults to utf-8?
 - naruse: script encoding doesn’t work well if the code uses variables.
 - naruse will think about it a bit more.
 
-## [[Feature #12306]](https://bugs.ruby-lang.org/issues/12306) Object/String#blank (duerst)
+### [[Feature #12306]](https://bugs.ruby-lang.org/issues/12306) Object/String#blank (duerst)
 
 - akr: regexp match without object allocation can be an alternative. (see #[8110](https://bugs.ruby-lang.org/issues/8110))
 - akr: How about the name Regexp#match?(str)
@@ -256,20 +256,20 @@ Milestones
 - naruse will write an implementation
 - matz isn’t very positive, but may be okay for String only (for other classes, this will remain the responsibility of Rails)
 
-## [[Feature #8110]](https://bugs.ruby-lang.org/issues/8110) Regex methods not changing global variables (akr)
+### [[Feature #8110]](https://bugs.ruby-lang.org/issues/8110) Regex methods not changing global variables (akr)
 
 - matz: approved.
 - implementation is very easy
 - name: “match?” ?
 
-## [[Feature #12075]](https://bugs.ruby-lang.org/issues/12075) some container#nonempty? (naruse)
+### [[Feature #12075]](https://bugs.ruby-lang.org/issues/12075) some container#nonempty? (naruse)
 
 - matz: I want this in ActiveSupport.
 - matz: Enumerable#any? seems useful.
 - naruse: Yeah, it works for me.
 - naruse: Feedback until someone find the case any? doesn’t work.
 
-## Enumerable#sum (akr)
+### Enumerable#sum (akr)
 
 - akr: I want Range#sum
 - mrkn: I can think of useful case of Hash#sum
@@ -278,7 +278,7 @@ Milestones
 
 - matz: OK.
 
-## [[Feature #12357]](https://bugs.ruby-lang.org/issues/12357) Random#initialize with a String (nobu)
+### [[Feature #12357]](https://bugs.ruby-lang.org/issues/12357) Random#initialize with a String (nobu)
 
 - akr: you can pass bignum to Random.new_seed
 - naruse: bignum is not useful when people port code from different languages e.g. python
@@ -287,14 +287,14 @@ Milestones
 - akr: why? no need seems there be. 128 bits should be sufficient.
 - naruse: Linux’s urandom (or getrandom) manual says that.
 
-## Random::XXX new class for different RNG (nobu)
+### Random::XXX new class for different RNG (nobu)
 
 - nobu: I want some different RNG that share some part of default one.
 - naruse: I object the idea to unify Random and SecureRandom
 - nobu: I intend MT and
 - akr: how about split utility methods into a module
 
-## [[Feature #11735]](https://bugs.ruby-lang.org/issues/11735) String#squish and String#squish!
+### [[Feature #11735]](https://bugs.ruby-lang.org/issues/11735) String#squish and String#squish!
 
 - shyouhei: useful when writing a long SQL
 - nobu: is this unicode aware?

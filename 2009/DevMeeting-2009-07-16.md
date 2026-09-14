@@ -23,7 +23,7 @@ tags: Ruby, ruby-dev-meeting
   * 1.9.2 release plan
   * Toward RubyKaigi2009
 
-# Agenda
+## Agenda
 
 Please write your name at the end of your topics such as -> (ko1).
 

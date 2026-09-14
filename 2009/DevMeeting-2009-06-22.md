@@ -20,7 +20,7 @@ tags: Ruby, ruby-dev-meeting
   * 1.9.2 release plan
   * Toward RubyKaigi2009
 
-# Agenda
+## Agenda
 
 * 残っている大きなバグを確認 (yugui)
 * 今開発中の機能を確認 (yugui)
@@ -28,7 +28,7 @@ tags: Ruby, ruby-dev-meeting
 
 Please write your name at the end of your topics such as -> (ko1).
 
-# Log
+## Log
 
 Matz, ko1, shyouhei, akr, nobu, naruse and I held a meeting yesterday.
 We decided a plan for Ruby 1.9.2.

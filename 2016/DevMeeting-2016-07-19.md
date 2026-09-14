@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -106,7 +106,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
   * https://sorah.jp/packaging/debian/
   * Should we do it?(hsbt)
 
-# Log
+## Log
 
 attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 
@@ -115,7 +115,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - 8/9 (Tue)
 - At MoneyForward, Inc.
 
-## Non-support package distribution for debian/centos (sorah)
+### Non-support package distribution for debian/centos (sorah)
 
 - sorah:
 
@@ -355,7 +355,7 @@ attendees: shyouhei, hsbt, matz, yuki24, nobu, mrkn, akr, ko1
 - Can I commit it?
 - matz: Charles Nutter must be consulted before committing this.
 
-## Rope progress (ko1)
+### Rope progress (ko1)
 
 - merged to String
 - [https://github.com/spinute/ruby/commits/implement_ropestring](https://github.com/spinute/ruby/commits/implement_ropestring)

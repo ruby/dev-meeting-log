@@ -17,7 +17,7 @@ Time: 14:00-17:30 (JST)
 Place and Sign-up: https://ruby.connpass.com/event/132888/
 log: https://docs.google.com/document/d/1XP_e-3utXlCaxZLJrov6c428ZNaMPmxa3eh9MASrzkI/edit#
 
-# NOTES
+## NOTES
 
 - Dev meeting *IS NOT* a decision making place. All decisions should be done at the bug tracker.
 - Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -26,7 +26,7 @@ log: https://docs.google.com/document/d/1XP_e-3utXlCaxZLJrov6c428ZNaMPmxa3eh9MAS
 - All activities are best-effort (keep in mind that most of us are volunteer developers).
 - The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -62,7 +62,7 @@ Example:
 
 We don't guarantee to put tickets in agenda if the comment violate the format (because it is hard to copy&paste).
 
-# Log
+## Log
 
 DevelopersMeeting20190613Japan
 https://bugs.ruby-lang.org/issues/15874

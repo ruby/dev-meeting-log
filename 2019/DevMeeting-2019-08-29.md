@@ -17,7 +17,7 @@ Time: 13:00-17:00 (JST)
 Place and Sign-up: https://connpass.com/event/139231/
 log: https://docs.google.com/document/d/1XypDO1crRV9uNg1_ajxkljVdN8Vdyl5hnz462bDQw34/edit
 
-# NOTES
+## NOTES
 
 - Dev meeting *IS NOT* a decision-making place. All decisions should be done at the bug tracker.
 - Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -26,7 +26,7 @@ log: https://docs.google.com/document/d/1XypDO1crRV9uNg1_ajxkljVdN8Vdyl5hnz462bD
 - All activities are best-effort (keep in mind that most of us are volunteer developers).
 - The date, time and place are scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -59,7 +59,7 @@ We don't guarantee to put tickets in the agenda if the comment violates the form
 **A short summary of a ticket is strongly recommended.  We cannot read all discussion of the ticket in a limited time.**
 A proposal is often changed during the discussion, so it is very helpful to summarize the latest/current proposal, post it as a comment in the ticket, and write a link to the comment.
 
-# Log
+## Log
 
 Next Date
 9/19 (Fri) 13:00-17:00 @ moneyforward

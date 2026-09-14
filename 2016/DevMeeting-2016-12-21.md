@@ -21,11 +21,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
-## I want to clear my assigned tickets (shyouhei)
+### I want to clear my assigned tickets (shyouhei)
 * Can who close outdated issues? https://bugs.ruby-lang.org/issues?set_filter=1&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=assigned_to_id&op%5Bassigned_to_id%5D=%3D&v%5Bassigned_to_id%5D%5B%5D=10
 
 ## About 2.4 timeframe
@@ -121,7 +121,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 * example: [Feature #10917] Add `GC.stat[:total_time]` when GC profiling enabled (ko1)
 
-# Log
+## Log
 
 Date: 2016/12/21 (Wed)
 

@@ -65,13 +65,13 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 [https://bugs.ruby-lang.org/issues/15459](https://bugs.ruby-lang.org/issues/15459)
 
-# Logs
+## Logs
 
 ## Next dev-meeting
 
 ## About 2.7 timeframe
 
-### Agenda
+## Agenda
 
 - 13:30-14:00 (1) keyword arguments progress report [[#14183](https://bugs.ruby-lang.org/issues/14183)] (mame)
 

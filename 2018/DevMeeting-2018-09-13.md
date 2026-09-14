@@ -18,7 +18,7 @@ Place: Cookpad Inc. (Tokyo, Japan)
 Sign-up: https://ruby.connpass.com/event/97843/
 Past meetings: https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
 
-# NOTES
+## NOTES
 
 - Dev meeting *IS NOT* a decision making place. All decisions should be done at the bug tracker.
 - Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -27,7 +27,7 @@ Past meetings: https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
 - All activities are best-effort (keep in mind that most of us are volunteer developers).
 - The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -48,7 +48,7 @@ Past meetings: https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
 (will be edited later)
 (if you have a write access, please list directly)
 
-# Comment format
+## Comment format
 
 Please comment your favorite ticket we need to discuss with *the following format*.
 
@@ -68,7 +68,7 @@ Example:
 
 I don't guarantee to put tickets in agenda if the comment violate the format (because it is hard to copy&paste).
 
-# Log
+## Log
 
 ## Next dev-meeting
 

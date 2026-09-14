@@ -249,7 +249,7 @@ p defined?(String === 1) #=> truthy
 
 no conclusion
 
-## [[Bug #20965]](https://bugs.ruby-lang.org/issues/20965) `it` vs `binding.local_variables`
+### [[Bug #20965]](https://bugs.ruby-lang.org/issues/20965) `it` vs `binding.local_variables`
 
 * matz: the following behavior is a bug. It should be fixed
 
@@ -353,7 +353,7 @@ Did you mean?  _
         from -e:2:in `<main>'
 ```
 
-## [[Feature #20925]](https://bugs.ruby-lang.org/issues/20925) Allow boolean operators at beginning of line to continue previous line
+### [[Feature #20925]](https://bugs.ruby-lang.org/issues/20925) Allow boolean operators at beginning of line to continue previous line
 
 nobu: is it ok to treat only `&&`, `||`, `and` and 'or'?
 matz: good
@@ -414,7 +414,7 @@ https://prettier.io/playground/#N4Igxg9gdgLgprEAuEAdKA3AhgJwARaFHEmlnkWVVF4C8eAj
 
 https://black.vercel.app/?version=stable&state=_Td6WFoAAATm1rRGAgAhARYAAAB0L-Wj4AKZAN9dAD2IimZxl1N_Wg0-ASLt-SiE2GGPCZO80tmeTKdHumDx3f9ojdj2Qt0JgnxRgXJP05ZNnFsVT020HOAocYfhvfkjUEm1HGWYXeqrfaMXuz0AMNnenC9lXcqDzRQBBONcdDwnC7rJ5J9bRQoWqd98SxtftzmtTVLwz_KsVw-Vx93f8IKpKvsehB0zyfhQAbOFquSQgffSOqfRSTBMHiZ1q3lGqTvUnqqkGU7L_mnbahSjL8vhRdJmICsbHrJ4KY1tk62BdS8slIfikU8MAzI6XOA3elgs5q61pV2VG9ysUQAAAPNkxz5qQIfqAAH7AZoFAACc11ZVscRn-wIAAAAABFla
 
-## [[Feature #20987]](https://bugs.ruby-lang.org/issues/20987) Add dbg - minimal debugging helper
+### [[Feature #20987]](https://bugs.ruby-lang.org/issues/20987) Add dbg - minimal debugging helper
 
 * `P=1` envval
 * `ruby -d` (check `$DEBUG`)

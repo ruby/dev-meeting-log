@@ -153,6 +153,6 @@ Conclusion:
 
 * matz: This is the current situation, I have not made a final decision yet.
 
-## Statements from Matz
+### Statements from Matz
 
 Please continue pushing me on the bug tracker, I am open to having my mind changed.

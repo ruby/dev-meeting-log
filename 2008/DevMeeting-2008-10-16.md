@@ -20,7 +20,7 @@ tags: Ruby, ruby-dev-meeting
 * Purpose
   * Discuss 1.9.1 spec before feature freeze (freeze!)
 
-# Agenda
+## Agenda
 
 Please write your name at the end of your topics such as -> (ko1).
 

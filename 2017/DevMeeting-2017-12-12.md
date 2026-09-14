@@ -23,7 +23,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -117,7 +117,7 @@ The tickets below are old tickets whose status is open or assigned (and mame can
 * [Feature #11816] Partial safe navigation operator (marcandre)
 * [Feature #14015] Enumerable & Hash yielding arity (marcandre)
 
-# Log
+## Log
 
 Date: 2017/12/12 (Tue)
 Time: 14:00- 18:00 (JST)

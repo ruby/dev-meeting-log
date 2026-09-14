@@ -26,7 +26,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -35,7 +35,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 * https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering24
 * preview 2?
 
-## About "ruby committers vs. the world"
+### About "ruby committers vs. the world"
 
 (shyouhei) we have "ruby committers vs the world" panel discussion on Sept. 10th, what should we do?
 
@@ -81,7 +81,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 
 * example: [Feature #10917] Add `GC.stat[:total_time]` when GC profiling enabled (ko1)
 
-# Log
+## Log
 
 Attendees: akr, naruse, mrkn, sonots, hsbt, ko1, eregon, zzak, sorah, ktsj, nobu, tenderlove, duerst, shyouhei, shugo, matz
 
@@ -101,7 +101,7 @@ Venue: TKP Kyoto Shijo-karasuma Conference Center
 - [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering24](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering24)
 - preview 2 in two days
 
-## About "ruby committers vs. the world"
+### About "ruby committers vs. the world"
 
 (shyouhei) we have "ruby committers vs the world" panel discussion on Sept. 10th, what should we do?
 

@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2014-09-04
 
-# DevelopersMeeting20140904Japan
+## DevelopersMeeting20140904Japan
 
 Date: 2014/09/04
 Time: 19:00 -
@@ -40,12 +40,12 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/13742
 - meeting process
 - Check http://rubykaigi.org/2014/ama entries
 
-# Log
+## Log
 
 - attendee: ko1, sora_h, akr, naruse, ayumin, a_matsuda
 - on-line: matz, nobu
 
-## [[Feature #10199]](https://bugs.ruby-lang.org/issues/10199) Drop to support Symbian (hsbt)
+### [[Feature #10199]](https://bugs.ruby-lang.org/issues/10199) Drop to support Symbian (hsbt)
 
 Matz: agreed.
 
@@ -55,7 +55,7 @@ akr: no need to think about it now.
 
 hsbt: I will remove.
 
-## [[Feature #10200]](https://bugs.ruby-lang.org/issues/10200) Symbol API (static count, dynamic count, all_symbols and so on) (ko1)
+### [[Feature #10200]](https://bugs.ruby-lang.org/issues/10200) Symbol API (static count, dynamic count, all_symbols and so on) (ko1)
 
 Symbol.all_symbols:
 
@@ -73,7 +73,7 @@ matz: remove it and ask people
 
 Couting immortal symbols is not solved. ko1 will make prototype of such methods.
 
-## [[Feature #9880]](https://bugs.ruby-lang.org/issues/9880) Dir#fileno (akr)
+### [[Feature #9880]](https://bugs.ruby-lang.org/issues/9880) Dir#fileno (akr)
 
 matz: portability?
 
@@ -83,15 +83,15 @@ akr: For windows and so on, not implemented error can be acceptable.
 
 matz: ok. write document for compatibility.
 
-## [[Feature #10201]](https://bugs.ruby-lang.org/issues/10201) Dynamically changing GC tuning parameters (ko1)
+### [[Feature #10201]](https://bugs.ruby-lang.org/issues/10201) Dynamically changing GC tuning parameters (ko1)
 
 ko1 will try.
 
-## vfork()
+### vfork()
 
 akr: Now trunk uses vfork() to optimize making process. However, now it can be vulnerability because of vfork().
 
-## Ruby 2.2 release plan
+### Ruby 2.2 release plan
 
 Preview 1 (9/13 freeze)
 

@@ -36,7 +36,7 @@ If you need a bento (lunch), please write it.  Expense will be collected.
 
 '''Bento order deadline is 8/24''' <- Order is closed.  We prepare 17 bentos (RubyKaigi staffs have own bento).
 
-# Agenda
+## Agenda
 
 * Ruby 1.9.3 release plan (by yugui/mame)
   * Before Jul, 2011 (RubyKaigi? RubyConf?)

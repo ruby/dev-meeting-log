@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -30,7 +30,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 * https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering24
 
-## (From RubyKaigi admin) for Keynote speakers
+### (From RubyKaigi admin) for Keynote speakers
 
 * Please send us keynote speaker's Shinkansen receipt (shyouhei)
 
@@ -100,7 +100,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 * example: [Feature #10917] Add `GC.stat[:total_time]` when GC profiling enabled (ko1)
 * [Feature #12760] Optional block argument for `itself` (Victor Shepelev)
 
-# Log
+## Log
 
 Date: 2016/10/11 (Tue)
 
@@ -145,7 +145,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 - please nudge _tad_
 
-## (From RubyKaigi admin) for Keynote speakers
+### (From RubyKaigi admin) for Keynote speakers
 
 - Please send us keynote speaker's Shinkansen receipt (shyouhei)
 

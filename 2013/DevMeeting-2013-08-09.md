@@ -11,7 +11,7 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 
-### MRI
+#### MRI
 
 * tenderlove (Aaron Patterson)
 * matz
@@ -20,19 +20,19 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 * ko1 (if I can wakeup)
 * emboss (Martin Boßlet)
 
-### Rubinius
+#### Rubinius
 
-### JRuby
+#### JRuby
 
 * headius (Charles Oliver Nutter)
 
-### MagLev
+#### MagLev
 
-### MacRuby
+#### MacRuby
 
-### Topaz
+#### Topaz
 
-### mruby
+#### mruby
 
 ## Moderator
 

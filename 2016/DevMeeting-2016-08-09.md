@@ -23,11 +23,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
-## Doorkeeperhq account upgrade
+### Doorkeeperhq account upgrade
 
 We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 
@@ -94,13 +94,13 @@ Write your name and your interest (what do you want to ask and to whom?) please.
 * [Feature #12299] Add Warning module for customized warning handling (jeremyevans)
 * [Feature #10594] `Comparable#clamp` (nerdinand)
 
-# Log
+## Log
 ## Next meeting:
 
 - when 7 Sept., 14:00 〜
 - At @tagomoris house?
 
-## Doorkeeperhq account upgrade
+### Doorkeeperhq account upgrade
 
 We need a paypal account to connect to cruby.doorkeeper.jp (shyouhei)
 

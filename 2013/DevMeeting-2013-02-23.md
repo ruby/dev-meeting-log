@@ -14,7 +14,7 @@ This is lunch meeting. So enjoy lunch with discussion.
 
 You need a registration on this site: http://www.atdot.net/~ko1/file/ruby/200lunch/ to prepare place and lunch. Please register before 2/10 (Sun).
 
-# Agenda
+## Agenda
 
 ## Ruby 2.0.0 retrospective
 
@@ -106,7 +106,7 @@ mame-san presented summary of Ruby 2.0.0.
   * Someone who can help when some issue is raised on the platform
   * サポートされなければ、後で変える
 
-## Maintenance policy of Ruby 2.0.0 and before
+### Maintenance policy of Ruby 2.0.0 and before
 
 * 1.9.3: [ruby-core:47927]
   * How long does it last?
