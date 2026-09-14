@@ -613,7 +613,7 @@ Conclusion:
 
 ## other topic
 
-#### https://bugs.ruby-lang.org/issues/19036
+### https://bugs.ruby-lang.org/issues/19036
 
 * samuel: I support `IO.new(..., path: ...)` / `IO.for_fd(..., path: ...)` since this is how Ruby's IO model is implemented and it makes sense to expose this.
 

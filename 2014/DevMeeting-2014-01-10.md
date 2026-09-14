@@ -10,7 +10,7 @@ Time: 17:00-18:30
 Place: Cookpad
 Attendees: sign up required: http://cruby.doorkeeper.jp/events/8003
 
-Agenda
+## Agenda
 agenda page copied to here, due to redmine maintenance.
 =begin
 = DevelopersMeeting20140110Japan
@@ -50,11 +50,11 @@ agenda page copied to here, due to redmine maintenance.
 
 (ログは次ページ)
 
-ログ
+## ログ
 
-* Security Release Process(hsbt)
-  * private issue tracking
-    * salesforce will support
+### Security Release Process(hsbt)
+* private issue tracking
+  * salesforce will support
 
 hsbt: ticket 管理する方法が無いのでなんとかしたい
 ayumin: force.com を提供できる
@@ -73,7 +73,7 @@ ko1: RA に専任担当者をつけるように働きかけると良いか
 hsbt: お見積もりを笹田に送る
 
 
-* Official Announce Policy
+### Official Announce Policy
 
 hsbt: 前回のアナウンスでごちゃごちゃしてしまったので、どうすれば良いか
 akr: 外から見た意思決定者がわかりづらいのでは
@@ -88,7 +88,7 @@ nurse: watcherに勝手に加えればいいじゃん
 sorah: ruby-core/dev購読してたら問答無用で来るんだから気付くわけない
 
 
-* 2.1.0 retrospective (ko1)
+### 2.1.0 retrospective (ko1)
 
 nurse: 遠藤さんが報道で使いやすい文言をアナウンスするというのをやってくれたのに継承できなかったのは残念 (文言がコピペできた)
 nurse: 2.2 ではちゃんと
@@ -99,14 +99,14 @@ ko1: チケット棚卸し会議をやる必要があったなあ
 
 hsbt: 互換性高くスピードアップした 2.2 すばらしいなと思います。ささださんお疲れさまでした
 
-* 2.2 release schedule
+### 2.2 release schedule
 
 nurse: クリスマス。matz による決定事項 [要出典]
 nurse: リリースマネージャーを引き継ぎたいという方がいなければわたしが
 
-* who will maintain 2.1.0?
-  * semantic version number
-* 2.1.1 release schedule
+### who will maintain 2.1.0?
+* semantic version number
+### 2.1.1 release schedule
 
 nurse: 誰かがだす
 amatsuda: stable branch で若干のパフォーマンス修正を入れるのはありなのか
@@ -116,8 +116,8 @@ nurse: 基本バグ修正というのは既定路線、例外はあります。(
 amatsuda: 深刻な performance regression はバグなんですよね。
 
 
-* What is the ideal development environment? (ko1)
-  * what services do you want? (ko1)
+### What is the ideal development environment? (ko1)
+* what services do you want? (ko1)
 ko1: wishlist が必要?
 nurse: CI はコミット毎に実行したい
 ???: プラットフォーム増やしたい
@@ -126,7 +126,7 @@ hsbt: OS X Server, Windows がほしい
 akr: 開発用マシンといえば wake on SSH がほしい
 ayumin: ruby コア開発に関する事をカンファレンス等で発表する際に旅費に困らないようにしたい (日本 Ruby の会が支援とか)
 
-お金があったらやりたいこと（開発編）
+#### お金があったらやりたいこと（開発編）
 (1) 開発マシン
 ビルド、テストラン
 手でビルド
@@ -184,7 +184,7 @@ NetBSD
 ↓以下のOSはニーズ少なめ
 DragonFly BSD
 
-お金があったらやりたいこと（ruby-lang まわり編）
+#### お金があったらやりたいこと（ruby-lang まわり編）
 
  * stable, snapshot のバイナリ配布(rpm, deb, rvm)、s3 とほぼ同一
  * 災害対策に s3 にパッケージを配置したい
@@ -193,7 +193,7 @@ DragonFly BSD
  * 監視サービスの利用
  * 翻訳
 
-お金があったらやりたいこと（コミュニティ活動編）
+#### お金があったらやりたいこと（コミュニティ活動編）
 (1) カンファレンスへの出席補助
 旅費全額は厳しいけどコミッター全員のRubyConfの本体参加費くらいは出せませんかね、とRubyの会には提案してみてある(卜部)
 

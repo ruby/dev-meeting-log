@@ -17,7 +17,7 @@ tags: Ruby, ruby-dev-meeting
 * Purpose
   * Discuss 1.9.1 spec before feature freeze
 
-# Agenda
+## Agenda
 
 * ABI fixの前に`struct RArray`の埋め込みはやらないのか? (yugui) -> 公開したくない構造体を別のファイルにする
 * `include/ruby/`から`node.h`を移動させたい (yugui) -> ripper 問題がなければいいのでは

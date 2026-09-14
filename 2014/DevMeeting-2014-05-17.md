@@ -29,7 +29,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/10778
 * [`Hash#comprized?`] (https://gist.github.com/nobu/dfe8ba14a48fc949f2ed) , http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/ (hone02)
 * [ANN] chkbuildXXX.hsbt.org
 
-# Log
+## Log
 
 attendee: sora_h, shyouhei, akr, naruse, ko1, hsbt, tarui
 
@@ -37,7 +37,7 @@ online: matz, n0kada,
 
 [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20140517Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20140517Japan)
 
-## [[Feature #9772]](https://bugs.ruby-lang.org/issues/9772) IO#statfs and File::Statfs
+### [[Feature #9772]](https://bugs.ruby-lang.org/issues/9772) IO#statfs and File::Statfs
 
 本当に必要なのか？(rubygem でいいんでないのという議論)
 
@@ -49,7 +49,7 @@ statvfsという名前で入れる
 
 Matz: 色々込み入ってるので core には入れないで test 配下へ. 欲しいということがあったら gem にしてください.
 
-## [[Feature #9647]](https://bugs.ruby-lang.org/issues/9647) File::Stat#birthtime
+### [[Feature #9647]](https://bugs.ruby-lang.org/issues/9647) File::Stat#birthtime
 
 何に使うのこれ
 
@@ -75,7 +75,7 @@ python にもあるが、stat() を直接返すらしく、対応していない
 
 ないときはNotImplementedError
 
-## [[Feature #9816]](https://bugs.ruby-lang.org/issues/9816) 文字列内の数字を数値として比較するメソッド
+### [[Feature #9816]](https://bugs.ruby-lang.org/issues/9816) 文字列内の数字を数値として比較するメソッド
 
 numericcmpという名前はない
 
@@ -99,17 +99,17 @@ RubyとGemのバージョンぐらい
 
 numericcmpとかではなくバージョンを比較するものであるとわかりやすい名前にする必要もある
 
-## date
+### date
 
 bundle gem にして、time が依存する箇所だけ ext に持っていく. 切り離す準備だけしておくのはどうか. いつやるかは未定.
 
-## [[Feature #9513]](https://bugs.ruby-lang.org/issues/9513) Hide Rational internal (akr)
+### [[Feature #9513]](https://bugs.ruby-lang.org/issues/9513) Hide Rational internal (akr)
 
 これはOKなのでは
 
 →matzがOKと返信する
 
-## [[Feature #9826]](https://bugs.ruby-lang.org/issues/9826) Enumerable#slice_between (akr)
+### [[Feature #9826]](https://bugs.ruby-lang.org/issues/9826) Enumerable#slice_between (akr)
 
 ニーズはある
 
@@ -117,7 +117,7 @@ matz: 機能としては採用してあげたいけど、この名前では採�
 
 #slice? → Array#slice があるのでNG
 
-## [[Feature #9071]](https://bugs.ruby-lang.org/issues/9071) Enumerable#slice_after (akr)
+### [[Feature #9071]](https://bugs.ruby-lang.org/issues/9071) Enumerable#slice_after (akr)
 
 対称性
 
@@ -125,7 +125,7 @@ matz: 機能としては採用してあげたいけど、この名前では採�
 
 →accept
 
-## [[Feature #9770]](https://bugs.ruby-lang.org/issues/9770) Etc.uname (akr)
+### [[Feature #9770]](https://bugs.ruby-lang.org/issues/9770) Etc.uname (akr)
 
 test の中で uname -r を叩いているのを見かけるので組み込みで用意してもよさそう.
 
@@ -139,17 +139,17 @@ test の中で uname -r を叩いているのを見かけるので組み込み�
 
 →accept
 
-## [[Feature #9842]](https://bugs.ruby-lang.org/issues/9842) system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
+### [[Feature #9842]](https://bugs.ruby-lang.org/issues/9842) system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
 
 Matz: sysconf と confstr で同じ機能だけど、数値と文字列を返すかで違う、何とかマージできないかなあ
 
 Windows でどうしよう →NotImplementedError
 
-## [[Feature #9834]](https://bugs.ruby-lang.org/issues/9834) Float#{next_float,prev_float} (akr)
+### [[Feature #9834]](https://bugs.ruby-lang.org/issues/9834) Float#{next_float,prev_float} (akr)
 
 これは用途があまり明らかでない→テストで便利(printfのテストとか)。
 
-## [[Feature #9632]](https://bugs.ruby-lang.org/issues/9632) [offtopic] remove doxygen?
+### [[Feature #9632]](https://bugs.ruby-lang.org/issues/9632) [offtopic] remove doxygen?
 
 ccan フォルダの追加に伴って doxygen の警告が凄いでてきた、そもそも使ってないなら消したい
 
@@ -157,7 +157,7 @@ ko1: 消すのではなくて、デフォルトで動くのはやめて make dox
 
 Matz: デフォルトでは動かさないようにして、何かレポートきたら誰か頑張る.
 
-## [[Feature #9711]](https://bugs.ruby-lang.org/issues/9711) Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)
+### [[Feature #9711]](https://bugs.ruby-lang.org/issues/9711) Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)
 
 lib/test, lib/minitest を使うのはもうやめている.
 
@@ -175,11 +175,11 @@ sorah: とりあえず lib/test は消してみました。悲鳴が上がるの
 
 結論はでないので、2.2 以降でバンドルするテストライブラリを模索する. 須藤さん、ryan に ping する issue を作る(hsbt)
 
-## remove rubyforge url(hsbt)
+### remove rubyforge url(hsbt)
 
 Changelog に残っているものはそのままにして rake.1 ruby.1 のようなやつに残っているものは適切そうなやつに置きかえ作業をする.
 
-## give up callcc (tarui)
+### give up callcc (tarui)
 
 matz: 2.2 で外すにしても移行パスが必要
 
@@ -189,7 +189,7 @@ ko1: gem にしてメンテナンスサイクルを分けよう
 
 方針としては無くしていく。
 
-## [Hash#comprized?](https://gist.github.com/nobu/dfe8ba14a48fc949f2ed) , [http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/](http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/) (hone02)
+### [Hash#comprized?](https://gist.github.com/nobu/dfe8ba14a48fc949f2ed) , [http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/](http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/) (hone02)
 
 これは何か: あるハッシュがハッシュの一部にあるかを調べる
 
@@ -199,7 +199,7 @@ ko1: gem にしてメンテナンスサイクルを分けよう
 
 Matz: 名前がイマイチ
 
-## [ANN] chkbuildXXX.hsbt.org
+### [ANN] chkbuildXXX.hsbt.org
 
 Ruby Association の資金で4台マシンを用意しました. 必要に応じてアカウント作るのでご連絡ください.
 
@@ -222,73 +222,73 @@ pLinux が何なのかよくわからないので RubyCI のサーバー名を�
 
 - 主な議題: プレゼン大会(募集開始はいつやる?)
 
-# Summary
+## Summary
 
 ## Attendance
 
 - in person: sora_h, shyouhei, akr, naruse, ko1, hsbt, tarui
 - online: matz, n0kada
 
-## \[Feature [#9772](https://bugs.ruby-lang.org/issues/9772 "Feature: IO#statfs and File::Statfs (Rejected)")\] IO#statfs and File::Statfs
+### \[Feature [#9772](https://bugs.ruby-lang.org/issues/9772 "Feature: IO#statfs and File::Statfs (Rejected)")\] IO#statfs and File::Statfs
 
 not accepted. A gem should be made first.
 
-## \[Feature [#9647](https://bugs.ruby-lang.org/issues/9647 "Feature: File::Stat#birthtimeの追加 (Closed)")\] File::Stat#birthtime
+### \[Feature [#9647](https://bugs.ruby-lang.org/issues/9647 "Feature: File::Stat#birthtimeの追加 (Closed)")\] File::Stat#birthtime
 
 accepted
 
-## \[Feature [#9816](https://bugs.ruby-lang.org/issues/9816 "Feature: 文字列内の数字を数値として比較するメソッド (Assigned)")\] 文字列内の数字を数値として比較するメソッド
+### \[Feature [#9816](https://bugs.ruby-lang.org/issues/9816 "Feature: 文字列内の数字を数値として比較するメソッド (Assigned)")\] 文字列内の数字を数値として比較するメソッド
 
 This feature is about comparing characters as numbers, like for Gem versions. For instance, 11 > 9 #=> true
 
 - still need more discussion
 - also need a good name
 
-## date
+### date
 
 going separate it into a bundled gem
 
-## \[Feature [#9513](https://bugs.ruby-lang.org/issues/9513 "Feature: Hide Rational internal (Closed)")\] Hide Rational internal (akr)
+### \[Feature [#9513](https://bugs.ruby-lang.org/issues/9513 "Feature: Hide Rational internal (Closed)")\] Hide Rational internal (akr)
 
 accepted
 
-## \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826 "Feature: Enumerable#slice_between (Closed)")\] Enumerable#slice_between (akr)
+### \[Feature [#9826](https://bugs.ruby-lang.org/issues/9826 "Feature: Enumerable#slice_between (Closed)")\] Enumerable#slice_between (akr)
 
 Matz likes the idea, but it needs a better name. There is already Array#slice.
 
-## \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071 "Feature: Enumerable#slice_after (Closed)")\] Enumerable#slice_after (akr)
+### \[Feature [#9071](https://bugs.ruby-lang.org/issues/9071 "Feature: Enumerable#slice_after (Closed)")\] Enumerable#slice_after (akr)
 
 accepted
 
-## \[Feature [#9770](https://bugs.ruby-lang.org/issues/9770 "Feature: Etc.uname (Closed)")\] Etc.uname (akr)
+### \[Feature [#9770](https://bugs.ruby-lang.org/issues/9770 "Feature: Etc.uname (Closed)")\] Etc.uname (akr)
 
 accepted
 
-## \[Feature [#9842](https://bugs.ruby-lang.org/issues/9842 "Feature: system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (Closed)")\] system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
+### \[Feature [#9842](https://bugs.ruby-lang.org/issues/9842 "Feature: system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (Closed)")\] system configuration variables (sysconf(), confstr(), pathconf() and fpathconf()) (akr)
 
 accepted
 
-## \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834 "Feature: Float#{next_float,prev_float} (Closed)")\] Float#{next_float,prev_float} (akr)
+### \[Feature [#9834](https://bugs.ruby-lang.org/issues/9834 "Feature: Float#{next_float,prev_float} (Closed)")\] Float#{next_float,prev_float} (akr)
 
 accepted
 
-## \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632 "Feature: [PATCH 0/2] speedup IO#close with linked-list from ccan (Closed)")\] [offtopic] remove doxygen?
+### \[Feature [#9632](https://bugs.ruby-lang.org/issues/9632 "Feature: [PATCH 0/2] speedup IO#close with linked-list from ccan (Closed)")\] [offtopic] remove doxygen?
 
 dropping support for doxygen
 
-## \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)
+### \[Feature [#9711](https://bugs.ruby-lang.org/issues/9711 "Feature: Remove test-unit and minitest from stdlib. (Closed)")\] Remove test-unit and minitest from stdlib. Can I remove test-unit? /cc sora_h (hsbt)
 
 continuing to discuss about bundling test libraries test-unit/minitest.
 
-## remove rubyforge url(hsbt)
+### remove rubyforge url(hsbt)
 
 accepted
 
-## give up callcc (tarui)
+### give up callcc (tarui)
 
 accepted: going to fade out callcc support
 
-## Hash#comprized? (hone02)
+### Hash#comprized? (hone02)
 
 [http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/](http://olivierlacan.com/posts/proposal-for-a-better-ruby-hash-include/)
 
@@ -296,7 +296,7 @@ accepted: going to fade out callcc support
 - unclear what the usecase is
 - continue to discuss on redmine
 
-## [ANN] chkbuildXXX.hsbt.org
+### [ANN] chkbuildXXX.hsbt.org
 
 Using Ruby Association's funds, 4 machines have been prepared for chkbuild. chkbuild is the Ruby CI platform powering [http://rubyci.org](http://rubyci.org/). We also want something besides Intel like running ARM on top of QEMU.
 

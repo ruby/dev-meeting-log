@@ -372,14 +372,14 @@ Conclusion:
 
 prism issues
 
-https://bugs.ruby-lang.org/issues/20925 Allow boolean operators at beginning of line to continue previous line
-https://bugs.ruby-lang.org/issues/21528 SyntaxError#message may have broken encoding with multibyte source under Prism
-https://bugs.ruby-lang.org/issues/21540 prism allows foo && return bar when parse.y doesn't
+### https://bugs.ruby-lang.org/issues/20925 Allow boolean operators at beginning of line to continue previous line
+### https://bugs.ruby-lang.org/issues/21528 SyntaxError#message may have broken encoding with multibyte source under Prism
+### https://bugs.ruby-lang.org/issues/21540 prism allows foo && return bar when parse.y doesn't
 
 ---
 
-https://bugs.ruby-lang.org/issues/21520 Feature Proposal: Enumerator::Lazy#tee
-https://bugs.ruby-lang.org/issues/17316 On memoization
+### https://bugs.ruby-lang.org/issues/21520 Feature Proposal: Enumerator::Lazy#tee
+### https://bugs.ruby-lang.org/issues/17316 On memoization
 
 ```ruby
 instance_variable_set_unless_defined(:@foo) do
@@ -394,11 +394,11 @@ akr: now because of object shape, "assign if absent" pattern is not a fast style
 
 (There was no time to discuss the following)
 
-https://bugs.ruby-lang.org/issues/12282 `Hash#dig!` for repeated applications of Hash#fetch
-https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if it cannot dig deeper
-https://bugs.ruby-lang.org/issues/21551 Ractor isolation error points to the wrong place
-https://bugs.ruby-lang.org/issues/21552 allow `String.strip` and similar to take a parameter similar to `String.delete`
-https://bugs.ruby-lang.org/issues/21554 Which `make` should be supported?
-https://bugs.ruby-lang.org/issues/20163 Introduce `#bit_count` method on Integer
-https://bugs.ruby-lang.org/issues/20437 Could the licensing conditions be made less ambiguous?
-https://bugs.ruby-lang.org/issues/21564 Extend `permutation`, `repeated_permutation`, `combination` and `repeated_combination` arguments
+### https://bugs.ruby-lang.org/issues/12282 `Hash#dig!` for repeated applications of Hash#fetch
+### https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if it cannot dig deeper
+### https://bugs.ruby-lang.org/issues/21551 Ractor isolation error points to the wrong place
+### https://bugs.ruby-lang.org/issues/21552 allow `String.strip` and similar to take a parameter similar to `String.delete`
+### https://bugs.ruby-lang.org/issues/21554 Which `make` should be supported?
+### https://bugs.ruby-lang.org/issues/20163 Introduce `#bit_count` method on Integer
+### https://bugs.ruby-lang.org/issues/20437 Could the licensing conditions be made less ambiguous?
+### https://bugs.ruby-lang.org/issues/21564 Extend `permutation`, `repeated_permutation`, `combination` and `repeated_combination` arguments

@@ -472,10 +472,10 @@ eregon: PR at https://github.com/ruby/ruby/pull/18209 I will check the review.
 
 ---
 
-https://bugs.ruby-lang.org/issues/17056 `Array#index`: Allow specifying the position to start search as in `String#index`
-https://bugs.ruby-lang.org/issues/22105 Cannot initialize a `WeakRef` in a `Ractor`
-https://bugs.ruby-lang.org/issues/21795 Methods for retrieving ASTs
-https://bugs.ruby-lang.org/issues/22229 Allow `GCI.escapeHTML` to take a custom escape table
+### https://bugs.ruby-lang.org/issues/17056 `Array#index`: Allow specifying the position to start search as in `String#index`
+### https://bugs.ruby-lang.org/issues/22105 Cannot initialize a `WeakRef` in a `Ractor`
+### https://bugs.ruby-lang.org/issues/21795 Methods for retrieving ASTs
+### https://bugs.ruby-lang.org/issues/22229 Allow `GCI.escapeHTML` to take a custom escape table
 
 * matz: I don't want to make `CGI.escapeHTML` to support this feature because it says "CGI"
 

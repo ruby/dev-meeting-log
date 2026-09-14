@@ -168,7 +168,7 @@ irb(main):022:0> Time.new(1888)
 => 1888-01-01 00:00:00 +0900
 ```
 
-## special variables
+### special variables
 
 ```ruby
 $, # Array#join($,)
@@ -180,6 +180,6 @@ ary.join      # == ary.join($,)
 ary.join(nil) # == current: ary.join($,), desire: ary.join("")
 ```
 
-## Review of all logs of dev-meeting 2022
+### Review of all logs of dev-meeting 2022
 
 https://github.com/ruby/dev-meeting-log

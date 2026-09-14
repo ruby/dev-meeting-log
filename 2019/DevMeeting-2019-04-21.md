@@ -65,15 +65,15 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 [https://bugs.ruby-lang.org/issues/15459](https://bugs.ruby-lang.org/issues/15459)
 
-# Logs
+## Logs
 
 ## Next dev-meeting
 
 ## About 2.7 timeframe
 
-### Agenda
+## Agenda
 
-- 13:30-14:00 (1) keyword arguments progress report [[#14183](https://bugs.ruby-lang.org/issues/14183)] (mame)
+### 13:30-14:00 (1) keyword arguments progress report [[#14183](https://bugs.ruby-lang.org/issues/14183)] (mame)
 
 - Mame: Presentation of problems and issues. Testing of strict implementation shows many incompatibilities.
 - Jeremy Evans: More compatible proposal, same as mame, but backwards compatible for methods that don’t accept keyword arguments.
@@ -95,7 +95,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 - Agreed it’s very complex logic to handle them (eregon)
 
-- 14:00-14:30 (2) static checking progress report [#?????] (mame)
+### 14:00-14:30 (2) static checking progress report [#?????] (mame)
 
 - Mame: Add side-car file for type annotations (.rbi)
 
@@ -128,7 +128,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 
 - What about anonymous classes and e.g., Struct subclasses? (eregon)
 
-- 14:30-15:00 (3) pattern matching [[#14912](https://bugs.ruby-lang.org/issues/14912)] (k_tsj)
+### 14:30-15:00 (3) pattern matching [[#14912](https://bugs.ruby-lang.org/issues/14912)] (k_tsj)
 
 - Kazuki: Presentation of general idea and implementation.
 
@@ -146,7 +146,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 - headius: There are too many side effects by method execution.
 
 - 15:00-15:30 break
-- 15:30-16:00 (4) new built-in class/method definition (ko1)
+### 15:30-16:00 (4) new built-in class/method definition (ko1)
 
 - Koichi: Presentation of problems and implementation. Introduction of new FFI features to call C functions, including “invokecfunc” opcode. Discussion of optimisation strategies. Startup time overhead mitigated by improved lazy loading of compiled Ruby code.
 
@@ -165,7 +165,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 - NOTE (eregon): TruffleRuby already does presizing of method tables by require-ing all core library Ruby files ahead-of-time, and serializing the (Java) heap in the produced binary.
 - Re adding context to C API, is it an occasion to clean up the API? (eregon)
 
-- 16:00-16:30 (5) concurrency (matz)
+### 16:00-16:30 (5) concurrency (matz)
 
 - Matz: Presentation about CPU bottleneck and I/O bottleneck. JIT address CPU bottleneck.
 - What about providing a lower level construct such as “Thread.selector” rather than a high level implementation (AutoFiber). Trade-off between proposing unified high-level model and flexibility of multiple ways to do IO concurrency (eregon, TODO: comment on the issue tracker).
@@ -178,7 +178,7 @@ Place: Fukuoka Ruby Content Industry Promotion Center (Fukuoka, Japan)
 - Matz: It is not for the VM implementation but for the users.
 
 - 16:30-17:00 break
-- 17:00-18:00 (6) RubyVM [[#15752](https://bugs.ruby-lang.org/issues/15752)] + numbered parameters [[#15708](https://bugs.ruby-lang.org/issues/15708)] (eregon)
+### 17:00-18:00 (6) RubyVM [[#15752](https://bugs.ruby-lang.org/issues/15752)] + numbered parameters [[#15708](https://bugs.ruby-lang.org/issues/15708)] (eregon)
 
 - Presentation about RubyVM namespace issues. How to handle experimental features.
 - Many new methods are implemented directly. What should go under proposed “ExperimentalFeatures”?

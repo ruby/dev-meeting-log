@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -96,31 +96,31 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * [Bug #4157] test_pty で、たまに出る Failure
   * [Feature #4483] PStoreをデフォルトで複数のスレッドから扱えるようにしたい
 
-# Log
+## Log
 
-## Date: 2018/03/15 (Thu)
+Date: 2018/03/15 (Thu)
 
-## Time: 14:00- 18:00 (JST)
+Time: 14:00- 18:00 (JST)
 
-## Place: Cookpad Inc.
+Place: Cookpad Inc.
 
-## Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
+Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
 
-## log edit: https://docs.google.com/document/d/1RT0ijSo8uJ4Awn3CEvuYkjH0TVeXSYgeAFNmVGYC3ak/edit#
+log edit: https://docs.google.com/document/d/1RT0ijSo8uJ4Awn3CEvuYkjH0TVeXSYgeAFNmVGYC3ak/edit#
 
-## log: TBD
+log: TBD
 
 ## Agenda
 
-### Next Developper Meetings
+## Next Developper Meetings
 
 2018/04/19 (Thu) @ Speee
 
-### About 2.6 timeframe
+## About 2.6 timeframe
 
 - Preview 1 has been released with MJIT.
 
-### Stable versions
+## Stable versions
 
 Hopefully, there will be a release in March.
 
@@ -131,14 +131,14 @@ Maintainers starting Apr 2018:
 - 2.4: usa
 - 2.5: nagachika
 
-### From attendees
+## From attendees
 
-- [[Feature #12732]](https://bugs.ruby-lang.org/issues/12732) An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
+### [[Feature #12732]](https://bugs.ruby-lang.org/issues/12732) An option to pass to Integer, Float, to return nil instead of raise an exception (mrkn)
 
 - Resolved
 - Mrkn will file the conclusion.
 
-- [[Feature #14476]](https://bugs.ruby-lang.org/issues/14476) Adding same_all? for checking whether all items in an Array are same (mrkn)
+### [[Feature #14476]](https://bugs.ruby-lang.org/issues/14476) Adding same_all? for checking whether all items in an Array are same (mrkn)
 
 - Definition of “same”? -> `\==`, for mrkn’s case
 - Empty array? -> true, [].all?{} #=> true
@@ -158,12 +158,12 @@ Maintainers starting Apr 2018:
 - ary.uniform_values?
 - ary.uniform_values?{|e| e.foo}
 
-- [[Feature #14362]](https://bugs.ruby-lang.org/issues/14362) use BigDecimal instead of Float by default (mrkn)
+### [[Feature #14362]](https://bugs.ruby-lang.org/issues/14362) use BigDecimal instead of Float by default (mrkn)
 
 - Reject; Unacceptable performance & too incompatible
 - Matz will respond.
 
-- [[Feature #14044]](https://bugs.ruby-lang.org/issues/14044) Introduce a new attribute step in Range (mrkn)
+### [[Feature #14044]](https://bugs.ruby-lang.org/issues/14044) Introduce a new attribute step in Range (mrkn)
 
 ```ruby
 # current
@@ -207,36 +207,36 @@ p 1.step(by: 2)         #=> (1.step(by:2))
 - Will be SyntaxError in 2.6-preview2
 - All of begin/do/def (experimental)
 
-- [[Feature #14594]](https://bugs.ruby-lang.org/issues/14594) Rethink yield_self's name
+### [[Feature #14594]](https://bugs.ruby-lang.org/issues/14594) Rethink yield_self's name
 
 - “then”?
 - (1) Possible to use this method name by other libraries (like promise)
 - (2) No built-in methods like this …
 - Comitters objected the suggestion but matz accepted it
 
-- [[Feature #14324]](https://bugs.ruby-lang.org/issues/14324) Should Exception#full_message include escape sequences?
+### [[Feature #14324]](https://bugs.ruby-lang.org/issues/14324) Should Exception#full_message include escape sequences?
 
 - Keyword arguments
 
 - order: :top/:bottom
 - highlight: true/false
 
-- [[Feature #12745]](https://bugs.ruby-lang.org/issues/12745) String#(g)sub(!) should pass a MatchData to the block, not a String
+### [[Feature #12745]](https://bugs.ruby-lang.org/issues/12745) String#(g)sub(!) should pass a MatchData to the block, not a String
 
 - akr: how about gsubm, `m` means MatchData
 
-### From non-attendees
+## From non-attendees
 
-- [[Feature #14245]](https://bugs.ruby-lang.org/issues/14245) Add File.read etc. (shugo)
+### [[Feature #14245]](https://bugs.ruby-lang.org/issues/14245) Add File.read etc. (shugo)
 
 - Accepted
 - FYI: On 2.5, deprecation warning is added for this feature. We’ll remove this feature on 2.6.
 
-- [[Feature #14579]](https://bugs.ruby-lang.org/issues/14579) Hash value omission (shugo)
+### [[Feature #14579]](https://bugs.ruby-lang.org/issues/14579) Hash value omission (shugo)
 
 - Reject because matz doesn’t like it.
 
-- [[Bug #14541]](https://bugs.ruby-lang.org/issues/14541) Class variables have broken semantics, let's fix them (eregon). I'd like more opinions and thoughts on whether we can change them.
+### [[Bug #14541]](https://bugs.ruby-lang.org/issues/14541) Class variables have broken semantics, let's fix them (eregon). I'd like more opinions and thoughts on whether we can change them.
 
 - usa: I use class variables in a correct way when I love class variables
 - ideas:
@@ -294,8 +294,8 @@ B.show
 
 - Matz approved NameError
 
-- \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
+### \[Bugs [#14380](https://bugs.ruby-lang.org/issues/14380)\] Change Hash#transform_keys! and break compatibility with Ruby 2.5 and ActiveSupport, or not?
 
 - It’s considered bug. amatsuda says ActiveSupport will follow Ruby 2.6.
 
-- [[Feature #11473]](https://bugs.ruby-lang.org/issues/11473) Immutable String literal in Ruby 3 (hsbt): Do you really want to change it at Ruby 3? If It's yes, We should add a warning with destructive action on Ruby 2.6.
+### [[Feature #11473]](https://bugs.ruby-lang.org/issues/11473) Immutable String literal in Ruby 3 (hsbt): Do you really want to change it at Ruby 3? If It's yes, We should add a warning with destructive action on Ruby 2.6.

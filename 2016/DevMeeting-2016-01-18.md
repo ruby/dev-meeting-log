@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -38,11 +38,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
 Attendees: unak, mrkn, naruse, ayumin, ko1, sorah, zack, martin
 
-# Windows CI
+### Windows CI
 
 - Section
 
@@ -68,7 +68,7 @@ Attendees: unak, mrkn, naruse, ayumin, ko1, sorah, zack, martin
 - Shibata-san
 - Usa-san
 
-## [[Feature #11949]](https://bugs.ruby-lang.org/issues/11949) Allow @/$ prefix in Regexp's named captures (naruse)
+### [[Feature #11949]](https://bugs.ruby-lang.org/issues/11949) Allow @/$ prefix in Regexp's named captures (naruse)
 
 ```
 /(?<@timestamp>[^ ]*): / =~
@@ -116,7 +116,7 @@ valid: > /(?<a@-あfoo>a)/.match("a")
 
 Conclusion: acceptable confusion or not. Matz is positive to accept this feature
 
-## [[Feature #11987]](https://bugs.ruby-lang.org/issues/11987) daemons can't show the backtrace of rb_bug
+### [[Feature #11987]](https://bugs.ruby-lang.org/issues/11987) daemons can't show the backtrace of rb_bug
 
 Process.daemon closes STDERR (or redirect to /dev/null).
 
@@ -124,7 +124,7 @@ There’s no easy and foundamental way.
 
 Conclusion: Use wrapper process to intercept stderr.
 
-# Planning about maintenance branches (usa)
+### Planning about maintenance branches (usa)
 
 - Maintainance policy
 
@@ -148,7 +148,7 @@ Conclusion: Use wrapper process to intercept stderr.
 - ask chikanaga-san to confirm his preference: -> he want to maintain younger branch.
 - \-> will slide maintainers
 
-# 2.3 Retrospective
+### 2.3 Retrospective
 
 - [https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20151109Japan](https://bugs.ruby-lang.org/projects/ruby/wiki/DevelopersMeeting20151109Japan)
 - [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering23)
@@ -175,7 +175,7 @@ Conclusion: Use wrapper process to intercept stderr.
 
 - Try: We should follow the announced schedule more strictly
 
-# 2.4 Release Engineering
+### 2.4 Release Engineering
 
 - 8 Jun: Call for feature proposal
 - 8 Sep (RubyKaigi): Preview 1
@@ -191,7 +191,7 @@ Conclusion: Use wrapper process to intercept stderr.
 
 [https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/CallForFeatureProposalTemplate](https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/CallForFeatureProposalTemplate)
 
-## Announcement channel
+#### Announcement channel
 
 We have only mailing lists and [www.ruby-lang.org](http://www.ruby-lang.org) to annouce news. However, it is difficult to catch up latest news by such channels. Any other ideas?
 
@@ -200,7 +200,7 @@ We have only mailing lists and [www.ruby-lang.org](http://www.ruby-lang.org) to 
 - [https://twitter.com/rubylangorg](https://twitter.com/rubylangorg)
 - something RSS bot
 
-# Next release
+## Next release
 
 - 2.4 or 3.0?
 - 3.0 should contain:
@@ -211,25 +211,25 @@ We have only mailing lists and [www.ruby-lang.org](http://www.ruby-lang.org) to 
 
 naruse’s note [https://gist.github.com/nurse/4324519](https://gist.github.com/nurse/4324519)
 
-## Remove Fixnum and Bignum
+### Remove Fixnum and Bignum
 
 Matz: Try it on 2.4
 
-## 1 / 2 is Rational
+### 1 / 2 is Rational
 
 Matz: Difficult to change later.
 
-## 0.1 is Rational
+### 0.1 is Rational
 
 naruse: use 0.1r
 
 mrkn; 0.1f is required.
 
-## timezone name on Windows
+### timezone name on Windows
 
 naruse: It would be good if we can use IANA time zone name on Windows
 
-## rubypath
+### rubypath
 
 Path to executing ruby executable
 
@@ -241,13 +241,13 @@ naruse: On OS X, people make a bundle
 
 nobu: To load libraries from relative path, --enable-load-relative
 
-## Threads dump on SEGV
+### Threads dump on SEGV
 
 ko1: i agree.
 
-# Unicode Data File Update
+### Unicode Data File Update
 
-## Files don’t get downloaded on a new install (or version update)
+#### Files don’t get downloaded on a new install (or version update)
 
 Various levels of downloading "urgency" (triggered by 'make up' or some subtarget):
 
@@ -259,13 +259,13 @@ Currently, there's a flag (ALWAYS_UPDATE_UNICODE = yes at common.mk: 1002) that 
 
 Conclusion: Change to update whenever ‘make up’ is activated
 
-## List each Unicode Data file only once
+#### List each Unicode Data file only once
 
 Currently, each file is listed twice (UNICODE_FILES at common.mk:1004 and ./.unicode-$(UNICODE_VERSION).time at common.mk:1021); it would be great if this could be reduced to list each file only once.
 
 Conclusion: Nobu to try to find a solution to avoid duplication, but not make it too complicated, please!
 
-# Use of Unicode in Source Files
+### Use of Unicode in Source Files
 
 C source shouldn’t include non ASCII, because there may be some old compilers that bark on it (e.g. working in Shift_JIS and thus barking on UTF-8 input).
 
@@ -273,6 +273,6 @@ lib/unicode_normalize/tables.rb: is auto generated code; raw Unicode character i
 
 raw Unicode characters are also acceptable in test files
 
-# Next
+## Next
 
 2015/02/16 (Tue) 14:00-

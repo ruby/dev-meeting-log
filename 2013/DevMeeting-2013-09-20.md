@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2013-09-20
 
-# DevelopersMeeting20130920
+## DevelopersMeeting20130920
 
 This meeting will be held on [2013-09-20 at 23:00 UTC](http://everytimezone.com/#2013-9-20,660,6bj) at irc://chat.freenode.net/#ruby-implementers.
 
@@ -13,25 +13,25 @@ EN <=> JA translations will be done on demand in #ruby-ja on ircnet
 
 ## Attendees
 
-### MRI
+#### MRI
 
 * tenderlove (Aaron Patterson)
 * matz
 * emboss (Martin Bosslet)
 
-### Rubinius
+#### Rubinius
 
-### JRuby
+#### JRuby
 
 * enebo (Thomas E. Enebo)
 
-### MagLev
+#### MagLev
 
-### MacRuby
+#### MacRuby
 
-### Topaz
+#### Topaz
 
-### mruby
+#### mruby
 
 ## Moderator
 

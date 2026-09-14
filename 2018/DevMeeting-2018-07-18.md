@@ -17,7 +17,7 @@ Please comment your favorite ticket numbers you want to ask to discuss with your
 
 Past meetings: <https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings>
 
-# NOTE
+## NOTE
 
 Dev meeting *IS NOT* a decision making place. All decisions should be done at the bug tracker.
 Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -26,7 +26,7 @@ We will write a log about discussion to a file or to each ticket in English.
 All activities are best-effort (keep in mind that most of us are volunteer developers).
 The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -78,7 +78,7 @@ The date, time and place is scheduled according to when/where we can reserve Mat
 - [Feature #14914] Add BasicObject#instance_exec_with_block (jeremyevans0)
 - [Feature #14915] Deprecate String#crypt, move implementation to string/crypt (jeremyevans0)
 
-# Log
+## Log
 
 optDate: 2018/07/18 (Thu)
 
@@ -104,19 +104,19 @@ Place: MoneyForward HQ (Tokyo, Japan)
 
 ## Carry-over from previous meeting(s)
 
-- [[Feature #14784]](https://bugs.ruby-lang.org/issues/14784) One-sided Comparable#clamp (with endless/startless ranges) (zverok)
+### [[Feature #14784]](https://bugs.ruby-lang.org/issues/14784) One-sided Comparable#clamp (with endless/startless ranges) (zverok)
 
 - more reasonable version of Object#enumerate proposed for the previous meeting.
 - isn’t it enough with accepting nil ? (e.g. .clamp(from, nil) )
 
-- [[Feature #14859]](https://bugs.ruby-lang.org/issues/14859) Timeout in VM (normalperson)
+### [[Feature #14859]](https://bugs.ruby-lang.org/issues/14859) Timeout in VM (normalperson)
 
 - Still needs some work, mainly wondering if the idea of moving this part of stdlib into core VM is acceptable or not. No semantic changes except speed improvement.
 - Ko1 will check the patch and will comment in Aug.
 
 ## From Attendees
 
-- [[Feature #14473]](https://bugs.ruby-lang.org/issues/14473) Add Range#subrange? (tarui)
+### [[Feature #14473]](https://bugs.ruby-lang.org/issues/14473) Add Range#subrange? (tarui)
 
 - subrange?
 -  is ambiguous
@@ -127,7 +127,7 @@ Place: MoneyForward HQ (Tokyo, Japan)
 - include? is already used as it’s an element or not
 - cover? is acceptable, let it go (matz)
 
-- [[Feature #14912]](https://bugs.ruby-lang.org/issues/14912) Introduce pattern matching syntax (mame)
+### [[Feature #14912]](https://bugs.ruby-lang.org/issues/14912) Introduce pattern matching syntax (mame)
 
 - pattern matching
 - Matz: positive for the proposal itself, though we need to discuss many details
@@ -167,7 +167,7 @@ In Maybe(nil)
 In Maybe(foo)
 End
 
-- opt_to_s (nobu)
+### opt_to_s (nobu)
 
 - Naruse: Is it fast?
 - Nobu: not measured yet.
@@ -175,33 +175,33 @@ End
 
 ## From non-attendees
 
-- [[Feature #14111]](https://bugs.ruby-lang.org/issues/14111) ArgumentErrorが発生した時メソッドのプロトタイプをメッセージに含む (esjee)
+### [[Feature #14111]](https://bugs.ruby-lang.org/issues/14111) ArgumentErrorが発生した時メソッドのプロトタイプをメッセージに含む (esjee)
 
 - Suggestion: include method parameters when generating an ArgumentError message. Nobu's patch in the issue provides functionality to make writing a ruby gem to provide this functionality possible.
 - `method_name` is true method name, not `callee`.
 - current implementation by nobu returns callee, so, change the implement to return true name.  after then, discuss about the necessity of callee.
 
-- [[Bug #14878]](https://bugs.ruby-lang.org/issues/14878) Add command line argument to deactivate JIT (k0kubun)
+### [[Bug #14878]](https://bugs.ruby-lang.org/issues/14878) Add command line argument to deactivate JIT (k0kubun)
 
 - Please discuss the necessity of the flag and its name in the proposal.
 - Use \--disable-jit and \--disable=jit, because we can already use \--disable=gems and \--disable-gems
 
-- [[Feature #12306]](https://bugs.ruby-lang.org/issues/12306) Implement String #blank? #present? and improve #strip and family to handle unicode (sam.saffron)
+### [[Feature #12306]](https://bugs.ruby-lang.org/issues/12306) Implement String #blank? #present? and improve #strip and family to handle unicode (sam.saffron)
 
 - blank? Is not the best name, but acceptable (space_only? or something might be better)
 - present? Is not acceptable at all
 - matz will accept the feature itself of blank?, but hope another good name
 - TBW
 
-- [[Feature #14913]](https://bugs.ruby-lang.org/issues/14913) Extend case to match several values at once (zverok)
+### [[Feature #14913]](https://bugs.ruby-lang.org/issues/14913) Extend case to match several values at once (zverok)
 
 - some steps towards better pattern matching
 
-- [[Feature #14914]](https://bugs.ruby-lang.org/issues/14914) Add BasicObject#instance_exec_with_block (jeremyevans0)
+### [[Feature #14914]](https://bugs.ruby-lang.org/issues/14914) Add BasicObject#instance_exec_with_block (jeremyevans0)
 
 - Real use case, please
 
-- [[Feature #14915]](https://bugs.ruby-lang.org/issues/14915) Deprecate String#crypt, move implementation to string/crypt (jeremyevans0)
+### [[Feature #14915]](https://bugs.ruby-lang.org/issues/14915) Deprecate String#crypt, move implementation to string/crypt (jeremyevans0)
 
 - To remove String#crypt, we first need to remove the dependency to String#crypt of WEBrick.  We first listen Eric Wong (WEBrick maintainer)’s opinion.
 - If Eric agrees with the removal in future, we then ask Jeremy to release compatibility-layer gem by 2.6.  If the release is succeeded, we can deprecate the core method.
@@ -211,12 +211,12 @@ End
 
 Carry over:
 
-- [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete_if does not use #delete (shyouhei)
+### [[Bug #14887]](https://bugs.ruby-lang.org/issues/14887) Array#delete_if does not use #delete (shyouhei)
 
 - Is it by design, or a bug?
 
-- [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl_completion_quote_character variable (nobu)
-- [[Feature #14850]](https://bugs.ruby-lang.org/issues/14850) Add official API for setting timezone on Time (nobu)
-- [[Feature #14869]](https://bugs.ruby-lang.org/issues/14869) Proposal to add Hash#=== (nobu)
-- [[Feature #14877]](https://bugs.ruby-lang.org/issues/14877) Calculate age in Date class (nobu)
-- [[Bug #14908]](https://bugs.ruby-lang.org/issues/14908) Enumerator::Lazy creates unnecessary Array objects. (nobu)
+### [[Feature #13050]](https://bugs.ruby-lang.org/issues/13050) Readline: expose rl_completion_quote_character variable (nobu)
+### [[Feature #14850]](https://bugs.ruby-lang.org/issues/14850) Add official API for setting timezone on Time (nobu)
+### [[Feature #14869]](https://bugs.ruby-lang.org/issues/14869) Proposal to add Hash#=== (nobu)
+### [[Feature #14877]](https://bugs.ruby-lang.org/issues/14877) Calculate age in Date class (nobu)
+### [[Bug #14908]](https://bugs.ruby-lang.org/issues/14908) Enumerator::Lazy creates unnecessary Array objects. (nobu)

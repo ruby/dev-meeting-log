@@ -31,9 +31,9 @@ https://bugs.ruby-lang.org/issues/17041
 
 [secret]
 
-## Docker usage in our CI (shyouhei)
+### Docker usage in our CI (shyouhei)
 
-### Preliminary discussion:
+#### Preliminary discussion:
 
 Docker (Docker Inc) announced recently that they will charge for `docker pull`s, starting this November.  Our GitHub Actions are affected by this.
 
@@ -47,13 +47,13 @@ I guess there might be several things we can do:
 
 Thoughts?
 
-### Discussion:
+#### Discussion:
 
 * mame: GH package for public repository seems free.
 * hsbt: The CI image is not for Ruby users, only ruby core team. We try to use GitHub Registory by https://github.com/ruby/ruby-ci-image
 * shyouhei: old one is here: https://hub.docker.com/r/shyouhei/c-compilers/tags
 
-### Conclusion:
+#### Conclusion:
 
 * Try to use GH package.
 

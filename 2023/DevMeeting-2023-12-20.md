@@ -166,39 +166,39 @@ ns2.require("foo", "2.0.0")
 foo2 = ns2::Foo.new
 ```
 
-### random topics
+## random topics
 
-* should we remove ABI version?
-  * https://github.com/ruby/ruby/pull/8867
+### should we remove ABI version?
+* https://github.com/ruby/ruby/pull/8867
 
-* https://bugs.ruby-lang.org/issues/20069 Buffer class in stdlib
+### https://bugs.ruby-lang.org/issues/20069 Buffer class in stdlib
 
-* https://bugs.ruby-lang.org/issues/20063 Inconsistent behavior with required vs optional parameters
-  * matz: I don't care which. I don't want any overhead to make it consistent
+### https://bugs.ruby-lang.org/issues/20063 Inconsistent behavior with required vs optional parameters
+* matz: I don't care which. I don't want any overhead to make it consistent
 
-* https://bugs.ruby-lang.org/issues/20041 Array destructuring and default values in parameters
-  * matz: The same as above
+### https://bugs.ruby-lang.org/issues/20041 Array destructuring and default values in parameters
+* matz: The same as above
 
-* https://bugs.ruby-lang.org/issues/20064 Inconsistent behavior between array splat *nil and hash splat **nil
-  * matz: The use case example convinced me. Accepted.
+### https://bugs.ruby-lang.org/issues/20064 Inconsistent behavior between array splat *nil and hash splat **nil
+* matz: The use case example convinced me. Accepted.
 
-* https://bugs.ruby-lang.org/issues/20054 Replace the use of `def` in endless method definitions with a new sigil
-  * matz: Rejected
+### https://bugs.ruby-lang.org/issues/20054 Replace the use of `def` in endless method definitions with a new sigil
+* matz: Rejected
 
-* https://bugs.ruby-lang.org/issues/20049 Destructive drop_while for Array and Hash
-  * matz: The use case is not clear to me, especially for Hash
-  * matz: It is possible to add Array#drop_while!
-  * mame: Should we also add Array#take_while!
-  * matz: ... I don't think so
-  * mame: Will we introduce it for Ruby 3.3?
-  * matz: It is too late for Ruby 3.3.
-  * matz: Anyway I want to ask the use case before I accept it
+### https://bugs.ruby-lang.org/issues/20049 Destructive drop_while for Array and Hash
+* matz: The use case is not clear to me, especially for Hash
+* matz: It is possible to add Array#drop_while!
+* mame: Should we also add Array#take_while!
+* matz: ... I don't think so
+* mame: Will we introduce it for Ruby 3.3?
+* matz: It is too late for Ruby 3.3.
+* matz: Anyway I want to ask the use case before I accept it
 
-* https://bugs.ruby-lang.org/issues/20038 Strings with mixed escapes not detected around interpolation
+### https://bugs.ruby-lang.org/issues/20038 Strings with mixed escapes not detected around interpolation
 
-* https://bugs.ruby-lang.org/issues/20031 Regexp using greedy quantifier and unions on a big string uses a lot of memory
-  * mame: If anyone create a patch to optimize it, we may consider. I will set the ticket as Feedback
-  * naruse: there is an algorithm to search multple pattern search https://github.com/unruledboy/WuManber
+### https://bugs.ruby-lang.org/issues/20031 Regexp using greedy quantifier and unions on a big string uses a lot of memory
+* mame: If anyone create a patch to optimize it, we may consider. I will set the ticket as Feedback
+* naruse: there is an algorithm to search multple pattern search https://github.com/unruledboy/WuManber
 
 ```ruby!
 str = "foo" + "x" * 100000000
@@ -214,9 +214,9 @@ user    0m1.335s
 sys     0m1.587s
 ```
 
-* https://bugs.ruby-lang.org/issues/20029 coroutine/arm64/Context.S does not support PAC/BTI
+### https://bugs.ruby-lang.org/issues/20029 coroutine/arm64/Context.S does not support PAC/BTI
 
-* https://bugs.ruby-lang.org/issues/20027 Add Range Deconstruction
-  * matz: Rejected
+### https://bugs.ruby-lang.org/issues/20027 Add Range Deconstruction
+* matz: Rejected
 
-* https://bugs.ruby-lang.org/issues/18576 Rename `ASCII-8BIT` encoding to `BINARY`
+### https://bugs.ruby-lang.org/issues/18576 Rename `ASCII-8BIT` encoding to `BINARY`

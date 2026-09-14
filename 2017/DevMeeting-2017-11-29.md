@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -159,7 +159,7 @@ Write your name and your interest (what do you want to ask and to whom?) please.
   * [Feature #1586] Allow module to be included correctly  (marcandre)
   * Patches for StringScanner, adding #size, #captures and #values_at
 
-# Log
+## Log
 
 Date: 2017/11/29 (Mon)
 Time: 14:00- 18:00 (JST)
@@ -167,8 +167,8 @@ Place: MoneyForward, Inc.
 Sign-up: https://ruby.connpass.com/event/70066/
 log edit: https://docs.google.com/document/d/1XTTzUINO2Fegt-eFgGTY8oGF3uTy5Bz4ZXJdKzyFp34/edit#heading=h.ujsctc6nvlk
 log: TBD
-Agenda
-About 2.5 timeframe
+## Agenda
+## About 2.5 timeframe
 https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25
 preview1 released
 

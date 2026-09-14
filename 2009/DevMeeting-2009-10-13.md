@@ -19,13 +19,13 @@ tags: Ruby, ruby-dev-meeting
   * usa (via Skype)
   * naruse
 
-# Agenda
+## Agenda
 
-# Log
+## Log
 
-## Release Schedule
+### Release Schedule
 
-### When will 1.9.2 be released?
+#### When will 1.9.2 be released?
 
 * The planned Christmas release date is cancelled [ruby-core:25707]
 * "Passing rubyspec" has been added to the requirements for releasing 1.9.2
@@ -35,12 +35,12 @@ tags: Ruby, ruby-dev-meeting
   * either way, rubyspec will probably be a bottleneck
 * everyone should run rubyspec more often, and report any problems found (problems with ruby or rubspec are welcome)
 
-### The next preview & feature freeze
+#### The next preview & feature freeze
 
 * release preview 2 around end of October (motion passed)
 * Aim for December feature freeze  (motion passed)
 
-## prime.rb
+### prime.rb
 
 * timeout issue [ruby-dev:39465]
 * Timeout is possible in a multitude of places
@@ -51,12 +51,12 @@ tags: Ruby, ruby-dev-meeting
   * perhaps explicitly specify what to delay/suppress?
   * will continue to explore possible solutions.
 
-## Big5
+### Big5
 
 * Big5-HKSCS is done
 * Big5-UAO is being worked on by Martin, should be done in a few weeks
 
-## Regarding maintainers
+### Regarding maintainers
 
 * Process for discharging maintainers [ruby-core:25764] [ruby-dev:39372]
 * Some people volunteering to become maintainers: [ruby-core:26066]
@@ -70,7 +70,7 @@ tags: Ruby, ruby-dev-meeting
   * for the moment, add them as contributors to Redmine, and have them close/reject tickets, and see how it turns out (motion passed)
   * the final to decision to accept them as committers will be made by matz
 
-## Regarding inclusion of 'ffi' in the stdlib
+### Regarding inclusion of 'ffi' in the stdlib
 
 * what will be using as 'ffi'?
   * libffi
@@ -90,7 +90,7 @@ tags: Ruby, ruby-dev-meeting
     * someone needs to work on supporting it, or else need to get rid of VC
   * Once issues on Windows are solved, it will be possible to add to stdlib if a maintainer is found
 
-### The dl2 problem
+#### The dl2 problem
 
 * it assumes that the types of arguments are consistent, but on ia64, x86_64 etc, doubles/floats can mix so this assumption doesn't hold
 * even if the argument type issue is resolved, it's just a bunch of bits in memory when we call, so we can't tell what types are expected at CFunc#call
@@ -98,7 +98,7 @@ tags: Ruby, ruby-dev-meeting
 * in dl1, although there is a precondition that they are on the stack, arguments come in still holding onto type information, so it's doable with some hard work
 * ff. gets around the issue with inline assembly
 
-## Filepath related changes  win32-unicode-test
+### Filepath related changes  win32-unicode-test
 
 * In the work up till kow, found out that there are major difficulties handling UTF-16LE in ruby itself, so well plan to work via UTF-8
 * This means that we need path translation functionality [ruby-dev:39156]

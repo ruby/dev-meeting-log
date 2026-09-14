@@ -417,7 +417,7 @@ Conclusion:
 * knu: We need to prepare APIs for dead_end to remove "require" redefinition hack. "at_exit" or something are nor preferable.
 * Not much time for Ruby 3.1, but e.g. include it in master in January to have time to try it out and include it in Ruby 3.2.
 
-## shyouhei (free-format topic)
+### shyouhei (free-format topic)
 
 * Ruby 2.6.8's fileutils is out of sync of its gem https://github.com/ruby/fileutils/issues/59 (shyouhei (Shyouhei Urabe))
   * headius (Charles Nutter) found this glitch. It seems to be due to https://bugs.ruby-lang.org/issues/16979.
@@ -434,7 +434,7 @@ Conclusion
 * The default gems maintainers include hsbt should(?)/will release them with ruby/* repos.
 * They are best effort.
 
-## hsbt 1 (free-format topic)
+### hsbt 1 (free-format topic)
 
 * How about these proposals? Does anyone have an objections for them?
   * [[Feature #17297]](https://bugs.ruby-lang.org/issues/17297): Feature: Introduce `Pathname.mktmpdir`
@@ -448,7 +448,7 @@ Conclusion
 * akr: Pathname already has methods that call FileUtils methods, and the new proposal mktmpdir would require the tmpdir library.  Do we want to build them in as well?
 * knu: If we built in Pathname, builtin parts should only include aready builtin features, such as path name manipulation, FileTest/FileStat/File/Dir's builtin methods.
 
-## hsbt 2 (free-format topic)
+### hsbt 2 (free-format topic)
 
 * Organization level funding configuration for Ruby account of GitHub
   * https://efcl.info/2021/09/04/github-meta-repository/
@@ -456,7 +456,7 @@ Conclusion
   * https://bugs.ruby-lang.org/projects/ruby/wiki/Donation
 * Matz: Agreed, let's RA receive the donation via GitHub sponsors. I leave administrative minutiae to hsbt-san and shugo-san
 
-## mame/ko1 (free-format topic)
+### mame/ko1 (free-format topic)
 
 * May we introduce `RubyVM::ISeq.keep_script_lines=` as an internal API?
 * It makes all ISeqs keep the original source code.
@@ -503,7 +503,7 @@ p RubyVM::AbstractSyntaxTree.parse("foo", keep_script_lines: true).script_lines
 
 ## other topics
 
-* https://bugs.ruby-lang.org/issues/14479
+### https://bugs.ruby-lang.org/issues/14479
 
 ```ruby=
 def foo

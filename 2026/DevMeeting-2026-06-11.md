@@ -221,14 +221,14 @@ Conclusion:
 
 ---
 
-https://bugs.ruby-lang.org/issues/13677 Add more details to error "Name or service not known (SocketError)"
+### https://bugs.ruby-lang.org/issues/13677 Add more details to error "Name or service not known (SocketError)"
   * in the previous meeting, akr said he would reply
 
-https://bugs.ruby-lang.org/issues/21973 Smile argument
+### https://bugs.ruby-lang.org/issues/21973 Smile argument
 
-https://bugs.ruby-lang.org/issues/21972 Add Date.birthday and Date.age to track Ruby's milestones
+### https://bugs.ruby-lang.org/issues/21972 Add Date.birthday and Date.age to track Ruby's milestones
 
-https://bugs.ruby-lang.org/issues/21994 If there is a local variable `foo`, calls to a method `foo` with a regexp literal as first argument is always a SyntaxError without parentheses
+### https://bugs.ruby-lang.org/issues/21994 If there is a local variable `foo`, calls to a method `foo` with a regexp literal as first argument is always a SyntaxError without parentheses
   * matz: I would like to confirm this at the next dev meeting before changing it.
   * nobu: all operators including + and -?
 
@@ -256,7 +256,7 @@ $ ruby -We 'x = 1; x &2'
 
 ---
 
-https://bugs.ruby-lang.org/issues/22080 `Integer(obj, exception: false)` raises when `to_str` doesn't return String
+### https://bugs.ruby-lang.org/issues/22080 `Integer(obj, exception: false)` raises when `to_str` doesn't return String
 
 ```ruby
 obj = Object.new
@@ -265,11 +265,11 @@ def obj.to_int = "1"
 #=> in 'String#[]': can't convert Object into Integer (Object#to_int gives String) (TypeError)
 ```
 
-https://bugs.ruby-lang.org/issues/21720 Add a native Binary Heap / Priority Queue to Ruby's Standard Library (heapify, heappush, heappop)
+### https://bugs.ruby-lang.org/issues/21720 Add a native Binary Heap / Priority Queue to Ruby's Standard Library (heapify, heappush, heappop)
 
 * matz: I think gem is good enough for this
 
-https://bugs.ruby-lang.org/issues/17944 Remove Socket.gethostbyaddr and Socket.gethostbyname
+### https://bugs.ruby-lang.org/issues/17944 Remove Socket.gethostbyaddr and Socket.gethostbyname
 
 * akr: ok
 * matz: ok. I will reply

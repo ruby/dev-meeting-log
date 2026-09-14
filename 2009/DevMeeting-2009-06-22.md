@@ -20,7 +20,7 @@ tags: Ruby, ruby-dev-meeting
   * 1.9.2 release plan
   * Toward RubyKaigi2009
 
-# Agenda
+## Agenda
 
 * 残っている大きなバグを確認 (yugui)
 * 今開発中の機能を確認 (yugui)
@@ -28,12 +28,12 @@ tags: Ruby, ruby-dev-meeting
 
 Please write your name at the end of your topics such as -> (ko1).
 
-# Log
+## Log
 
 Matz, ko1, shyouhei, akr, nobu, naruse and I held a meeting yesterday.
 We decided a plan for Ruby 1.9.2.
 
-== Schedule
+### Schedule
 17 Jul (RubyKaigi2009)
   * releases a patch level release of the 1.9.1.
   * releases 1.9.2 preview release 1.
@@ -50,7 +50,7 @@ We decided a plan for Ruby 1.9.2.
 25 Dec
   * 1.9.2
 
-== New/Changed Features
+### New/Changed Features
 Some libraries were improved/reimplemented.
 * Socket
 * Time
@@ -58,7 +58,7 @@ Some libraries were improved/reimplemented.
 
 see http://svn.ruby-lang.org/repos/ruby/trunk/NEWS for more detail.
 
-=== TODO
+#### TODO
 Some features need more discussions. We must decide detail of the
 features by 25 Sep.
 * Enumerable#gather
@@ -77,7 +77,7 @@ features by 25 Sep.
   * [ruby-dev:36750]
   * assigned to shyouhei and matz.
 
-=== If possible
+#### If possible
 I hope to include the following features into the 1.9.2. But they might
 take too many time for deciding their specs and implementing them.
 * SQLite as a standard library

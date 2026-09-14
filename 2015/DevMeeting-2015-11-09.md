@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -36,7 +36,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 (Additional explanation is welcome because we can't ask about it immediately)
 
-# Log
+## Log
 
 Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
@@ -44,9 +44,9 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 2015/12/07 Mon 14:00 JST at SFDC
 
-## [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze_string directive
+### [[Feature #8976]](https://bugs.ruby-lang.org/issues/8976) file-scope freeze_string directive
 
-## freeze dynamic string literal or not?
+#### freeze dynamic string literal or not?
 
 - pros (利点)
     (freeze string object allocated by “...#{...}...”)
@@ -67,7 +67,7 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 - matz: freeze it. simplicity matters here.
 
-## debugging option implemeted by ko1
+#### debugging option implemeted by ko1
 
 - current implementation:
 
@@ -91,7 +91,7 @@ Attendees: matz, nobu, hsbt, akr, naruse, sorah, yuki, ko1
 
 - We don’t need an option name if it is always enabled.
 
-## [[Feature #4840]](https://bugs.ruby-lang.org/issues/4840) Allow returning from require
+### [[Feature #4840]](https://bugs.ruby-lang.org/issues/4840) Allow returning from require
 
 ```ruby
 ### Before
@@ -145,7 +145,7 @@ end
 - block
 - lambda (already used)
 
-### Discussed use cases, examples
+#### Discussed use cases, examples
 
 ```ruby
 # OK
@@ -185,7 +185,7 @@ def foo
 end
 ```
 
-## [[Feature #9098]](https://bugs.ruby-lang.org/issues/9098) Indent heredoc against the left margin by default when "indented closing identifier" is turned on.
+### [[Feature #9098]](https://bugs.ruby-lang.org/issues/9098) Indent heredoc against the left margin by default when "indented closing identifier" is turned on.
 
 ```ruby
 # 2 spaces
@@ -220,7 +220,7 @@ Matz: acecptable, but there could be a problem if hard tabs and spaces are both 
 
 Nishijima-san suggested another way to write strings like DATA for each files. It will be proposed as another ticket.
 
-## [[Feature #11643]](https://bugs.ruby-lang.org/issues/11643) A new method on Hash to grab values out of nested hashes, failing gracefully
+### [[Feature #11643]](https://bugs.ruby-lang.org/issues/11643) A new method on Hash to grab values out of nested hashes, failing gracefully
 
 Matz: acceptable, but name is problem.
 
@@ -261,13 +261,13 @@ Nishijima-san mentioned past rejected proposals in Rails [[1]](https://groups.go
 
 - e.g. {a: {b: {c: 1}}}.dig(:a, :b, :x) == nil (not {c: 1})
 
-## [[Feature #11665]](https://bugs.ruby-lang.org/issues/11665) Support nested functions for better code organization
+### [[Feature #11665]](https://bugs.ruby-lang.org/issues/11665) Support nested functions for better code organization
 
 class C
 
  def foo
 
- # current
+ #### current
 
  x = 1
 
@@ -277,7 +277,7 @@ class C
 
  p x #=> 10
 
- # proposed
+ #### proposed
 
  x = 1
 
@@ -303,11 +303,11 @@ end
 
 - matz: commented at [https://bugs.ruby-lang.org/issues/11665#note-3](https://bugs.ruby-lang.org/issues/11665#note-3)
 
-## [[Feature #11666]](https://bugs.ruby-lang.org/issues/11666) IPAddr#private?
+### [[Feature #11666]](https://bugs.ruby-lang.org/issues/11666) IPAddr#private?
 
 Matz accepted this feature. Pass to knu -san (maintainer).
 
-## [[Feature #11588]](https://bugs.ruby-lang.org/issues/11588) Implement structured warnings
+### [[Feature #11588]](https://bugs.ruby-lang.org/issues/11588) Implement structured warnings
 
 - pros
 
@@ -327,7 +327,7 @@ Matz accepted this feature. Pass to knu -san (maintainer).
 
 - no conclusion.
 
-## [[Feature #11653]](https://bugs.ruby-lang.org/issues/11653) Add to_proc on Hash
+### [[Feature #11653]](https://bugs.ruby-lang.org/issues/11653) Add to_proc on Hash
 
 class Hash
 
@@ -351,7 +351,7 @@ Matz: acceptable
 
 Matz: to_proc is intended for & argument operator. So it is reasonable to add.
 
-## [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? to check whether hash contains other hash
+### [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? to check whether hash contains other hash
 
 Matz: Feature is acceptable. But naming issue;
 
@@ -374,7 +374,7 @@ Method name candidates:
 
 Matz: I vote for “<”, “>”, “<=” and “>=” (no “<=>” and “===”).
 
-## [[Feature #9108]](https://bugs.ruby-lang.org/issues/9108)[[Feature #8499]](https://bugs.ruby-lang.org/issues/8499) Importing Hash#slice, Hash#slice!, Hash#except, and Hash#except! from ActiveSupport
+### [[Feature #9108]](https://bugs.ruby-lang.org/issues/9108)[[Feature #8499]](https://bugs.ruby-lang.org/issues/8499) Importing Hash#slice, Hash#slice!, Hash#except, and Hash#except! from ActiveSupport
 
 Current status: naming issue, select and reject are acceptable for Matz.
 

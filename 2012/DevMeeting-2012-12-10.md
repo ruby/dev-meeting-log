@@ -9,7 +9,7 @@ This meeting was held on 2012-12-10 at 15:00 Pacific Time at irc://chat.freenode
 
 ## Attendees
 
-### MRI
+#### MRI
 
 * Eric Hodel - drbrain (moderator)
 * shugo
@@ -31,22 +31,22 @@ This meeting was held on 2012-12-10 at 15:00 Pacific Time at irc://chat.freenode
 * wycats
 * tarui (tal)
 
-### Rubinius
+#### Rubinius
 
 * brixen (Brian Ford)
 * dbussink (Dirkjan Bussink)
 * evan (Evan Phoenix)
 
-### JRuby
+#### JRuby
 
 * headius (Charles Nutter)
 * enebo (Tom Enebo)
 
-### MagLev
+#### MagLev
 
 * phlebas (Tim Felgentreff)
 
-### MacRuby
+#### MacRuby
 
 * lrz (Laurent)
 * ferrous26 (Mark Rada)
@@ -59,7 +59,7 @@ We'll keep this meeting to one hour long.
 * Introduction
 * How to improve current process (tenderlove)
 
-### Not covered
+#### Not covered
 
 * Refinements
   * Experimental feature?
@@ -72,9 +72,9 @@ We'll keep this meeting to one hour long.
   * How often?
   * How long?
 
-## Proposal of "Ruby Language Team"
+### Proposal of "Ruby Language Team"
 
-### Details
+#### Details
 
 * There are many implementations of Ruby
 * Only one Ruby language
@@ -91,7 +91,7 @@ We'll keep this meeting to one hour long.
 * Brixen will ensure smooth entry of feature in to RubySpec
 * Specs will be in a central repository
 
-### Concerns
+#### Concerns
 
 * The person proposing the feature should write documentation to
 * Brixen shouldn't be single point of failure
@@ -100,7 +100,7 @@ We'll keep this meeting to one hour long.
 * What about stdlib?
 * Is it OK that we communicate in English?
 
-### Results
+#### Results
 
 * Rigid process is not great
 * Having an executable spec that can be gradually translated to RubySpec is good
@@ -174,7 +174,9 @@ We'll keep this meeting to one hour long.
            current communication process
 [15:07:42] <tenderlove> we have many Ruby implementations
 
-[15:07:54] @ drbrain set topic "Improving the Ruby design process"
+```
+### [15:07:54] @ drbrain set topic "Improving the Ruby design process"
+```
 
 [15:08:09] <tenderlove> but the important thing is that we're all
            implementing the same language, Ruby

@@ -21,11 +21,11 @@ tags: Ruby, ruby-dev-meeting
 
 Since all attendees are Japanese, following contents are written in Japanese.
 
-# Broadcast (ustream.tv)
+## Broadcast (ustream.tv)
 
 [http://www.ustream.tv/channel/yugui](http://www.ustream.tv/channel/yugui)
 
-# Events
+## Events
 
 - 8/11
     - 粛々と開発等
@@ -40,11 +40,11 @@ Since all attendees are Japanese, following contents are written in Japanese.
 - 8/13
     - 粛々と開発等
 
-# Agenda / Issues
+## Agenda / Issues
 
 合宿で議論したい内容，議論して欲しい内容を追記してください．
 
-## trunk
+### trunk
 
 - トレース命令のポリシ（ささだ）
     - 入れる
@@ -68,12 +68,12 @@ Since all attendees are Japanese, following contents are written in Japanese.
     - 話し合った
 - 1.9.1から削除するライブラリを確認する (okkez)
 
-## Redmine (yugui)
+### Redmine (yugui)
 
 - 寄せられているバグを修正
 - RESTful API実装
 
-## リファレンス
+### リファレンス
 
 - 島根大プロジェクト関連
 - ライセンス変更
@@ -81,12 +81,12 @@ Since all attendees are Japanese, following contents are written in Japanese.
 - リファレンス自体は原則書かない (あまり時間がなさそうなので)
 - リファレンスを書く (okkez)
 
-## リリース関連 (shyouhei)
+### リリース関連 (shyouhei)
 
 - ポリシーについて
     - 議論中
 
-## 島根大関連
+### 島根大関連
 
 今回は、島根大学の特定研究プロジェクト「オープンソース・ソフトウェアの安定化とビジネスモデルの構築に関する研究」（7/25 プレスリリース）
 

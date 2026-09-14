@@ -560,17 +560,17 @@ matz: we need to help community to migrate away from Ripper first
 
 ---
 
-https://bugs.ruby-lang.org/issues/21768 Remove deprecated functions
+### https://bugs.ruby-lang.org/issues/21768 Remove deprecated functions
 
 * https://github.com/ruby/ruby/pull/15447
 * https://github.com/nobu/ruby/tree/deprecate-rdata
 
-https://bugs.ruby-lang.org/issues/19979 Allow methods to declare that they don't accept a block via `&nil`
-https://bugs.ruby-lang.org/issues/21773 Support for setting encoding when a block is passed to `Net::HTTPResponse.read_body`
-https://bugs.ruby-lang.org/issues/21781 Add `fetch_values` method on `ENV`
-https://bugs.ruby-lang.org/issues/21808 Inconsistency in support of additional newlines with boolean logical operators on new line
-https://bugs.ruby-lang.org/issues/21797 Make `Etc.nprocessors` cgroup-aware on Linux
-https://bugs.ruby-lang.org/issues/21813 Add `[:forward, :...]` symbol tuple to indicate forwarding arguments when calling `Method#parameters`
+### https://bugs.ruby-lang.org/issues/19979 Allow methods to declare that they don't accept a block via `&nil`
+### https://bugs.ruby-lang.org/issues/21773 Support for setting encoding when a block is passed to `Net::HTTPResponse.read_body`
+### https://bugs.ruby-lang.org/issues/21781 Add `fetch_values` method on `ENV`
+### https://bugs.ruby-lang.org/issues/21808 Inconsistency in support of additional newlines with boolean logical operators on new line
+### https://bugs.ruby-lang.org/issues/21797 Make `Etc.nprocessors` cgroup-aware on Linux
+### https://bugs.ruby-lang.org/issues/21813 Add `[:forward, :...]` symbol tuple to indicate forwarding arguments when calling `Method#parameters`
 
 ```ruby
 def foo(*, **, &)
@@ -594,7 +594,7 @@ end
 bar
 ```
 
-https://bugs.ruby-lang.org/issues/21822 Expose Return Value in the ensure Block
+### https://bugs.ruby-lang.org/issues/21822 Expose Return Value in the ensure Block
 similar ticket: https://bugs.ruby-lang.org/issues/18083
 
 ```ruby
@@ -605,5 +605,5 @@ ensure => ret, err
 end
 ```
 
-https://bugs.ruby-lang.org/issues/21825 Status of the universal parser implementing the Prism API
-https://bugs.ruby-lang.org/issues/21767 Consider procs which `self` is Ractor-shareable as Ractor shareable
+### https://bugs.ruby-lang.org/issues/21825 Status of the universal parser implementing the Prism API
+### https://bugs.ruby-lang.org/issues/21767 Consider procs which `self` is Ractor-shareable as Ractor shareable

@@ -214,21 +214,21 @@ Conclusion:
 
 ---
 
-https://bugs.ruby-lang.org/issues/21973 Smile argument
+### https://bugs.ruby-lang.org/issues/21973 Smile argument
 
 ```
 def foo(x, :)
 ```
-https://bugs.ruby-lang.org/issues/21972 Add Date.birthday and Date.age to track Ruby's milestones
-https://bugs.ruby-lang.org/issues/21976 Add `$SECONDS`, `$RANDOM`, and other bashisms
+### https://bugs.ruby-lang.org/issues/21972 Add Date.birthday and Date.age to track Ruby's milestones
+### https://bugs.ruby-lang.org/issues/21976 Add `$SECONDS`, `$RANDOM`, and other bashisms
 
-https://bugs.ruby-lang.org/issues/21640 Core Pathname is missing 3 methods / is partially-defined
-https://bugs.ruby-lang.org/issues/21982 Add `Decimal` as a core numeric class
-https://bugs.ruby-lang.org/issues/21987 Assume `chdir(2)` isn't called and cache `rb_dir_getwd_ospath()`
+### https://bugs.ruby-lang.org/issues/21640 Core Pathname is missing 3 methods / is partially-defined
+### https://bugs.ruby-lang.org/issues/21982 Add `Decimal` as a core numeric class
+### https://bugs.ruby-lang.org/issues/21987 Assume `chdir(2)` isn't called and cache `rb_dir_getwd_ospath()`
 
 * akr: How about introducing `Dir.pwd(cached: true)`, and `Dir.chdir` should invalidate the cache
 
-https://bugs.ruby-lang.org/issues/21994 If there is a local variable `foo`, calls to a method `foo` with a regexp literal as first argument is always a SyntaxError without parentheses
+### https://bugs.ruby-lang.org/issues/21994 If there is a local variable `foo`, calls to a method `foo` with a regexp literal as first argument is always a SyntaxError without parentheses
 ```
 # FYI: vscode's highlight
 rule /foo      # div X
@@ -241,7 +241,7 @@ range.right-1
 range.left -1
 ```
 
-https://bugs.ruby-lang.org/issues/22007 Inconsistent type checking on rescue
-https://bugs.ruby-lang.org/issues/22012 Data class should respond to #dig
-https://bugs.ruby-lang.org/issues/22011 Hash tables with swiss table
-https://bugs.ruby-lang.org/issues/21943 Add StringScanner#get_int to extract capture group as Integer without intermediate String
+### https://bugs.ruby-lang.org/issues/22007 Inconsistent type checking on rescue
+### https://bugs.ruby-lang.org/issues/22012 Data class should respond to #dig
+### https://bugs.ruby-lang.org/issues/22011 Hash tables with swiss table
+### https://bugs.ruby-lang.org/issues/21943 Add StringScanner#get_int to extract capture group as Integer without intermediate String

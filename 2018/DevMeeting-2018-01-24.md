@@ -22,7 +22,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All activities are best-effort (keep in mind that most of us are volunteer developers).
   * The date, time and place is scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name (see example below). Explain details on the ticket. If you cannot attend the meeting, we appreciate a short summary because we can understand it more easily (long discussion is difficult to read, especially in a non-native language). Your motivation is also welcome.
 
@@ -30,7 +30,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 * [[ReleaseEngineering26]]
 
-## toolchain versioning (shyouhei)
+### toolchain versioning (shyouhei)
 
 Revisions r61785, r61786, r61787 were introduced by the request from @naruse.  However @shyouhei thinks the request was somewhat vague.
 Do we have to support such old toolchains? For instance, is it unable for us to update autoconf? What about gperf?
@@ -117,38 +117,38 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
   * [Bug #4157] test_pty で、たまに出る Failure
   * [Feature #4483] PStoreをデフォルトで複数のスレッドから扱えるようにしたい
 
-# Log
+## Log
 
-## Date: 2018/01/24 (Wed)
+Date: 2018/01/24 (Wed)
 
-## Time: 14:00- 18:00 (JST)
+Time: 14:00- 18:00 (JST)
 
-## Place: Speee Inc.
+Place: Speee Inc.
 
-## Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
+Sign-up: [https://ruby.connpass.com/event/73509/](https://ruby.connpass.com/event/73509/)
 
-## log edit: [https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit](https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit)
+log edit: [https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit](https://docs.google.com/document/d/1XbUbch8_eTqh21FOwj9a_X-ZyJyCBjxkq8rWwfpf5BM/edit)
 
-## log: TBD
+log: TBD
 
-# Agenda
+## Agenda
 
 ## About 2.6 timeframe
 
 - Preview 1 will be released after MJIT is merged.
 
-## About 2.5.1
+### About 2.5.1
 
 - mame: 2.5.0’s pow is broken
 - naruse: 2.5.1 will be released before April (maybe ealier)
 
-## About 2.2 and 2.3
+### About 2.2 and 2.3
 
 - Usa: expected do as before
 
-## toolchain versioning
+### toolchain versioning
 
-## Revisions r61785, r61786, r61787 were introduced by the request from @naruse. However [shyouhei](https://bugs.ruby-lang.org/users/10) thinks the request was somewhat vague.
+Revisions r61785, r61786, r61787 were introduced by the request from @naruse. However [shyouhei](https://bugs.ruby-lang.org/users/10) thinks the request was somewhat vague.
 
 - Do we have to support such old toolchains? (shyouhei)
 
@@ -162,12 +162,12 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 
 ## From attendees
 
-## [[Feature #14223]](https://bugs.ruby-lang.org/issues/14223) Enable #to_proc by Refinements at &hoge (nobu)
+### [[Feature #14223]](https://bugs.ruby-lang.org/issues/14223) Enable #to_proc by Refinements at &hoge (nobu)
 
 
 - Matz: LGTM.
 
-## [[Feature #14371]](https://bugs.ruby-lang.org/issues/14371) New option "recursive: true" for Hash#transform_keys! (nobu)
+### [[Feature #14371]](https://bugs.ruby-lang.org/issues/14371) New option "recursive: true" for Hash#transform_keys! (nobu)
 
 
 - Mrkn: This is deep_stringify_keys!
@@ -177,43 +177,43 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Knu: This method changes values as well as keys, which seems wrong.
 - Matz: This particular API seems NG to me.
 
-## [[Bug #14380]](https://bugs.ruby-lang.org/issues/14380) Expected transform_keys! to work just as transform_keys, but it doesn't (mame)
+### [[Bug #14380]](https://bugs.ruby-lang.org/issues/14380) Expected transform_keys! to work just as transform_keys, but it doesn't (mame)
 
 
 - Shyouhei: This behaviour was inherited from ActiveSupport.
 - Mrkn: we can fix it by preserving entries that conflict.
 - Matz: I have strong opinion on this.  Isn’t the current behaviour acceptable in sake of space efficiency?
 
-## [[Bug #14374]](https://bugs.ruby-lang.org/issues/14374) for does not splat elements (nobu)
+### [[Bug #14374]](https://bugs.ruby-lang.org/issues/14374) for does not splat elements (nobu)
 
 
 - Ko1: is it me?
 - Nobu: because it’s since 1.9
 - Matz: please fix.
 
-## [[Feature #14313]](https://bugs.ruby-lang.org/issues/14313) Support creating KeyError with receiver and key from Ruby (mrkn/kou)
+### [[Feature #14313]](https://bugs.ruby-lang.org/issues/14313) Support creating KeyError with receiver and key from Ruby (mrkn/kou)
 
 
 - Mrkn: I was asked to bring this.
 - Matz: Understand the needs.
 - Shyouhei: Should it be keyword arguments?
 
-- Maintainers of csv (mrkn/kou)
+### Maintainers of csv (mrkn/kou)
 
 
 - Mame: JEG2.
 - Mrkn: But he doesn’t have the repo access bit, nor gem release right.
 - Mame: He’s active on twitter etc.  You should ask his current status.
 
-## [[Feature #4831]](https://bugs.ruby-lang.org/issues/4831) Integer#prime_factors (mrkn)
+### [[Feature #4831]](https://bugs.ruby-lang.org/issues/4831) Integer#prime_factors (mrkn)
 
 
 - Mrkn: name?
 - Shyouhei: yugui is on the ticket.
 
-## [[Feature #14235]](https://bugs.ruby-lang.org/issues/14235) Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
+### [[Feature #14235]](https://bugs.ruby-lang.org/issues/14235) Merge MJIT infrastructure with conservative JIT compiler (k0kubun)
 
-## [[Feature #14386]](https://bugs.ruby-lang.org/issues/14386) Add option to let Kernel.#system raise error instead of returning false (k0kubun)
+### [[Feature #14386]](https://bugs.ruby-lang.org/issues/14386) Add option to let Kernel.#system raise error instead of returning false (k0kubun)
 
 
 - Nobu: is this request to raise error when spawn fails, or when the spawned process fails?
@@ -222,25 +222,25 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Mrkn: I see similarity for discussion on Integer(). [ruby-core:77171] [Feature#12732]
 - Akr: There are `exception: true`
 
-## [[Bug #14353]](https://bugs.ruby-lang.org/issues/14353) $SAFE should stay at least thread-local for compatibility (ko1)
+### [[Bug #14353]](https://bugs.ruby-lang.org/issues/14353) $SAFE should stay at least thread-local for compatibility (ko1)
 
 
 - Matz: This feature is something to extinct in future.
 - Naruse: Is there actual use case other than tests?
 
-- \[Bug #4443\] odd evaluation order in a multiple assignment (mame)
+### \[Bug #4443\] odd evaluation order in a multiple assignment (mame)
 
 - Matz: I would like to fix it if possible, but no idea how.
 
-- \[Feature #4475\] default variable name for parameter (mame)
+### \[Feature #4475\] default variable name for parameter (mame)
 
 - Matz:rejected
 
-- \[Feature #4830\] Provide Default Variables for Array#each and other iterators (mame)
+### \[Feature #4830\] Provide Default Variables for Array#each and other iterators (mame)
 
 - Matz:ditto.
 
-- \[Feature #4513\] allow whitespace following EOL continuation backslash (mame)
+### \[Feature #4513\] allow whitespace following EOL continuation backslash (mame)
 
 - Usa: nobody uses ancient editor without detection of such spaces.
 - Shyouhei: the example is about IRB and that’s a different story than the core.
@@ -248,7 +248,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 
 ## From non-attendees
 
-## [[Feature #14382]](https://bugs.ruby-lang.org/issues/14382) Make public access of a private constant call const_missing (jeremyevans0)
+### [[Feature #14382]](https://bugs.ruby-lang.org/issues/14382) Make public access of a private constant call const_missing (jeremyevans0)
 
 
 - Nobu: sounds like a bug to me
@@ -256,7 +256,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Matz: Let’s try.
 - Nobu: I’d like to review the patch.
 
-## [[Feature #14385]](https://bugs.ruby-lang.org/issues/14385) Deprecate back-tick for Ruby 3 (hsbt)
+### [[Feature #14385]](https://bugs.ruby-lang.org/issues/14385) Deprecate back-tick for Ruby 3 (hsbt)
 
 
 - Matz: I see several objections are there.
@@ -268,7 +268,7 @@ Do we have to support such old toolchains? For instance, is it unable for us to 
 - Mame: should we also deprecate def `; end; self.` ? If so, warning on parsing is dangerous.
 - Matz: I think we don’t necessarily warn this as soon as 2.6.
 
-## [[Feature #13969]](https://bugs.ruby-lang.org/issues/13969) Dir#each_child (znz)
+### [[Feature #13969]](https://bugs.ruby-lang.org/issues/13969) Dir#each_child (znz)
 
 
 - Matz: OK.

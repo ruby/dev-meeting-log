@@ -14,7 +14,7 @@ Please comment on your favorite ticket numbers you want to ask to discuss with y
 Date: 2019/11/28 13:00-17:00
 Place, Sign-up, and Log: https://docs.google.com/document/d/1AZ74HXEedKksJwhEUPIlnRxAUgchndZPZYAKjGPMsFI/edit#
 
-# NOTES
+## NOTES
 
 - Dev meeting *IS NOT* a decision-making place. All decisions should be done at the bug tracker.
 - Dev meeting is a place we can ask Matz, nobu, nurse and other developers directly.
@@ -23,7 +23,7 @@ Place, Sign-up, and Log: https://docs.google.com/document/d/1AZ74HXEedKksJwhEUPI
 - All activities are best-effort (keep in mind that most of us are volunteer developers).
 - The date, time and place are scheduled according to when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 ## Next dev-meeting
 
@@ -56,14 +56,14 @@ We don't guarantee to put tickets in the agenda if the comment violates the form
 **A short summary of a ticket is strongly recommended. We cannot read all discussion of the ticket in a limited time.**
 A proposal is often changed during the discussion, so it is very helpful to summarize the latest/current proposal, post it as a comment in the ticket, and write a link to the comment.
 
-# Log
+## Log
 
 https://bugs.ruby-lang.org/issues/16262
-Venue
+## Venue
 11/28 (Thu) 13:00-17:00 @ pixiv Inc. (6F)
 up to 6F, and ask someone to call usa-san in Studio
 come after 12:45, or you cannot enter pixiv office
-Attendees
+## Attendees
 Add your name (or ask a committer to invite you)
 matz
 mame
@@ -78,19 +78,19 @@ hsbt (remote)
 ko1 (remote)
 znz (remote)
 nobu (remote)
-Absent:
+## Absent:
 Martin Dürst (sorry, I have to cancel because of an urgent family matter)
-Next Date
+## Next Date
 12/20 (Fri) @ pixiv 6F
-Announce
-About 2.7 timeframe
+## Announce
+## About 2.7 timeframe
 preview 3 done
 rc1 -> the 2nd week of December?
-Next Stable releases timeframe
+## Next Stable releases timeframe
 usa: maybe the 2nd week of December?
-Check security tickets
-Topics
-[Feature #15323] Enumerable#filter_map (jonathanhefner)
+## Check security tickets
+## Topics
+### [Feature #15323] Enumerable#filter_map (jonathanhefner)
 This feature has already been merged, but there may have been some confusion regarding the implementation.
 It currently selects only truthy values, but should it select all non-nil values, like Array#compact? (See https://bugs.ruby-lang.org/issues/15323#note-17)
 If so, is the name filter_map still a good choice? Or should it be changed to something like compact_map?
@@ -103,11 +103,11 @@ mame: then, there is not necessary to change.
 samuel: [nil, false, true, 1].compact => [false, true, 1]
 samuel: [nil, false, true, 1].filter{|x| x}.to_a => [true, 1]
 samuel: naming should be consistent with above? If you write map_compact it reads like “map” then “compact”. But if you write compact_map it reads like “compact” then “map”.
-[Feature #16293] Numbered parameter confirmation in Ruby 2.7 (osyo)
+### [Feature #16293] Numbered parameter confirmation in Ruby 2.7 (osyo)
 Numbered parameter confirmation in Ruby 2.7
 Discussion:
 in short: all issues have been resolved? @nobu
-[Feature #16364] Top-level ruby2_keywords (mame)
+### [Feature #16364] Top-level ruby2_keywords (mame)
 Currently, there is no top-level ruby2_keywords, which would be unuseful for some simple cases.
 Discussion:
 #!/usr/bin/env ruby
@@ -128,7 +128,7 @@ bar(k:1) #=> {:k=>1} with no warnings in 2.7
 
 Discussion:
 matz: of course, it’s necessary. accepted.
-[Feature #16355] Raise NoMatchingPatternError when expr in pat doesn’t match (ktsj)
+### [Feature #16355] Raise NoMatchingPatternError when expr in pat doesn’t match (ktsj)
 I’d like to fix this specification before 2.7 release.
 Discussion:
 in short: 1 in 2 #=> NoMatchingPatternError
@@ -140,6 +140,7 @@ ko1: anyone use it? isn’t it good enough to return nil?
 matz: ok, nil
 samuel: Is it indicating a semantic error by programmer? If it’s not exceptional situation, we should be careful because in the past raising exceptions introduce difficult to fix performance issues (e.g. IO#read_nonblock).
 aycabta: pattern matching in Ruby 2.7 is experimental, so we are talking about grammer. discussion of performance of pattern matching is for Ruby 3.0.
+```
 p((return))          #=> SyntaxError: void expression
 p((expr in pattern)) #=> SyntaxError: void expression?
 
@@ -174,12 +175,13 @@ in pattern
 else
   ...
 end
+```
 
 
 Conclusion:
 expr in pattern should raise NoMatchingError when unmatched
 expr in pattern should return nil when matched. (this is unspecified, but this feature is experimental, at all)
-[Misc #16188] The performance overhead of ruby2_keywords (eregon)
+### [Misc #16188] The performance overhead of ruby2_keywords (eregon)
 It’s about 10% for foo(*args) calls where foo has little code, both for MRI and TruffleRuby. That’s quite significant.
 I would like to see a plan to avoid that significant overhead in Ruby 3+.
 I propose to either remove ruby2_keywords in 3.0, or make ruby2_keywords explicit with send_keyword_hash (removes the overhead), or use another way (e.g., ...) to delegate in 2.7+.
@@ -242,7 +244,7 @@ sys	0m0.020s
 
 Conclusion:
 10% slowdown is unpreferable, but acceptable
-[Feature #16378] Support leading arguments together with … (eregon)
+### [Feature #16378] Support leading arguments together with … (eregon)
 Otherwise … cannot be used in many cases.
 I think it’s what most people expect.
 Could be a nice way to do delegation for lexical cases.
@@ -254,7 +256,7 @@ end
 
 
 matz: already rejected, at least now. wait 2.8 or 3.0
-[Feature #16345] Don’t emit deprecation warnings by default. (mame)
+### [Feature #16345] Don’t emit deprecation warnings by default. (mame)
 The discussion seems to be agreeing with deduplicated warnings [Feature #16289]. We must decide.
 Background:
 There are two groups of warning messages
@@ -290,10 +292,10 @@ This “deprecation warning” means deprecation warning emitted by rb_warn. We�
 We don’t modify rb_warning invocations now. They may contain unmaintained warnings. We should examine later.
 $VERBOSE = nil also disables deprecation warnings.
 Warning.enable(:deprecated) will print warning messages generated through rb_warn.
-[Feature #16289] (removing duplication) is also accepted.
+### [Feature #16289] (removing duplication) is also accepted.
 The flag is global, not thread local nor fiber local.
 
-[Feature #16363] Promote did_you_mean to default gem (yuki24)
+### [Feature #16363] Promote did_you_mean to default gem (yuki24)
 Currently there are two problems with the gem being a bundled gem, one with the availability of the lib and the other about bundler.
 mame: wanted to use did_you_mean from optparse but it is a bundled gem, which may be absent (uninstalled)
 usa: bundler also reported a problem
@@ -301,7 +303,7 @@ Discussion:
 usa: is it a promotion? not demotion?
 Conslusion:
 OK
-[Feature #15605] json library needs more frequent releases
+### [Feature #15605] json library needs more frequent releases
 Should we bump the json version to 2.2.1?
 Discussion:
 Conclusion:
@@ -309,7 +311,7 @@ Will release 2.3 from ruby/ruby
 naruse-san will ask flori to release new gem version
 Charles can release the gem for the case no reply from flori
 
-[Bug #15912] Allow some reentrancy during TracePoint events (alanwu)
+### [Bug #15912] Allow some reentrancy during TracePoint events (alanwu)
 I have seen quite a few people confused about Byebug’s REPL not working as they would expect due to this issue. I think it’s important to come up with some solution for this in two seven.
 Discussion:
 ko1 is involved in the discussion, so listen an explanation from him
@@ -342,7 +344,7 @@ p Hotel
 autoload is only usable after a parent module is defined.
 But Zeitwerk want to use autoload before loading hotel.rb.
 We may need autoload "Hotel::Pricing", "hotel/pricing".
-[Feature #16142] Implement code_range in Proc and Method - Ruby master - Ruby Issue Tracking System (osyo)
+### [Feature #16142] Implement code_range in Proc and Method - Ruby master - Ruby Issue Tracking System (osyo)
 Propose an API to get code position of Proc and Method so that we can get body of them (especially of a Proc).
 I want to discuss method names and return values
 Discussion:
@@ -350,10 +352,12 @@ samuel: This is an issue which I’ve run into when instrumenting Ruby code (e.g
 samuel: Here is what pry has to do, to get source code for ruby method: https://github.com/pry/pry/blob/c123bce66116c2bb050ad47d0006e9df215ff3be/lib/pry/method.rb#L577-L592
 matz: I agree that we should have a feature to get the end position of the range. I don’t like the name code_range. Dedicated class looks too rich for this feature.
 samuel: How to handle methods that are defined dynamically?
+```
 define_method(:x) {puts foo}
 path, lineno = method(:x).source_location
 # ["(irb)", 1]
 File.read(path) => # ???
+```
 
 
 If the source code is already loaded by the interpreter, is there any reason to read it from disk?
@@ -363,6 +367,7 @@ method(:p).source_location => nil
 mame: The source code does not remain after it is parsed in the current MRI implementation (how about JRuby/CRuby?) dunno JRuby
 samuel: Good point, but maybe it’s implementation detail. If source is not available, can we reconstruct from AST? in the case of define_method can we save the string (if used) or the source that defined the method in the first place?
 How to handle more complex examples:
+```
 def foo(arg); end; def bar(arg); end
 _, lineno = method(:bar).source_location
 
@@ -381,12 +386,13 @@ expr = proc {
 # Return [path, beg_pos.lineno, beg_pos.column, end_pos.lineno, end_pos.column]
 p expr.code_location
 # => ["./test.rb", 2, 12, 6, 1]
+```
 
 
 aycabta: I was thinking about implementing the feature to RDoc to take source code on IRB because IRB’s showing doc from RDoc feature is adjacent and I think it’s only one use-case.
 Conclusion:
 matz: commented. Let’s postpone after 2.7
-[Feature #16129] Call initialize_clone with freeze: false if clone called with freeze: false (jeremyevans0)
+### [Feature #16129] Call initialize_clone with freeze: false if clone called with freeze: false (jeremyevans0)
 Without this, use of clone(freeze: false) on objects not expecting it leads to unexpected state.
 Allows fixing problems in delegate and set.
 Discussion:
@@ -401,17 +407,17 @@ https://gist.github.com/535a60dce53e3a9a826240b915767bad
 Incompatibility on initialize_clone method signature
 Conclusion:
 Try it in 2.8
-[Bug #16242] Refinements method call to failed (jeremyevans0)
+### [Bug #16242] Refinements method call to failed (jeremyevans0)
 OK to fix modules that are refined and prepended by creating an iclass for the module (and not just the module’s origin)?
 Discussion:
 in short: prepend + refine
 matz: It’s a bug
 mame: nobu, please review the patch
-[Bug #13446] refinements with prepend for module has strange behavior (jeremyevans0)
+### [Bug #13446] refinements with prepend for module has strange behavior (jeremyevans0)
 OK to fix case where prepend is used on a refined module after the module is included by creating an origin iclass during inclusion?
 Discussion:
 in short: prepend + refine
-[Feature #16261] Enumerable#each_tuple (duerst) (zverok)
+### [Feature #16261] Enumerable#each_tuple (duerst) (zverok)
 This proposal would make sense only if .: would not be reverted (which, to the best of my understaning, is now doubtful) (zverok)
 Discussion:
 in short: “each”'s yield *elem variant instead of yield elem
@@ -423,7 +429,7 @@ in short: “each”'s yield *elem variant instead of yield elem
 [1, 2, 3].zip([4, 5, 6]).map{|x, y| x + y }
 
 
-[Feature #4539] Array#zip_with (duerst)
+### [Feature #4539] Array#zip_with (duerst)
 zip_with really comes in handy on occasion, and is available in many programming languages, in particular functional programming languages.
 Discussion:
 in short
@@ -438,7 +444,7 @@ in short
 
 Haskell: zipWith
 OCaml: List.map2
-[Feature #16122] Struct::Value: simple immutable value object (zverok)
+### [Feature #16122] Struct::Value: simple immutable value object (zverok)
 First version of the proposal was not clear enough, I am sorry for it. Clarified the descrition, added links and answered some possible questions.
 Discussion:
 in short: non-Enumerable, Immutable, non-Hashish Struct
@@ -457,12 +463,12 @@ Conclusion:
 Association between names and feature set are not clear enough.
 Having helper methods to define that kind of variations sounds good. (Hash.Value(...))
 Anyway, after 2.7.
-[Feature #15822] Add Hash#except (zverok)
+### [Feature #15822] Add Hash#except (zverok)
 Matz: “We didn’t see the need for Hash#except yet. Any (real world use-case)? I don’t think the name except is the best name for the behavior.” Added real-life examples and name justifications.
 Discussion:
 in short: Hash#except :-)
 Matz: I’d like to spend time to consider it later
-[Feature #16166] Remove exceptional treatment of *foo when it is the sole block parameter (sawa)
+### [Feature #16166] Remove exceptional treatment of *foo when it is the sole block parameter (sawa)
 Unintended arity. This must be fixed in an earlier stage before Ruby 3.
 Discussion:
 in short: matz decided the solution, but it brings incompatibility. Should it be changed in 2.7 or wait for 3.0?
@@ -470,24 +476,24 @@ Matz: I hope it in 2.7.  Go ahead.
 
 time up
 
-[Feature #16264] Real “callable instance method” object. .:method to be a first-class thing, instead of Symbol#to_proc trick (zverok)
+### [Feature #16264] Real “callable instance method” object. .:method to be a first-class thing, instead of Symbol#to_proc trick (zverok)
 This proposal would make sense only if .: would not be reverted (which, to the best of my understaning, is now doubtful)
 Discussion:
 in short: [1, 2, 3].map(&.:to_s) ?
-[Misc #16291] Introduce support for resize in rb_ary_freeze and prefer internal use of rb_ary_freeze and rb_str_freeze for String and Array types (lourens)
+### [Misc #16291] Introduce support for resize in rb_ary_freeze and prefer internal use of rb_ary_freeze and rb_str_freeze for String and Array types (lourens)
 Builds onto the capacity shrinking feature introduced by rb_str_freeze, targeting Array
 Many internal uses that froze String types did not use the rb_str_freeze variation and could not benefit from resizing capacity on freeze
 Implemented the same for Array
 Let Array#freeze call rb_ary_freeze to expose the shrinking capability to user code too (as recommended by Shyouhei) for parity with String#freeze already doing the same
 Discussion:
 in short: shrink an array when it is frozen? @shyouhei
-[Bug #15620] Block argument usage affects lambda semantic (alanwu)
+### [Bug #15620] Block argument usage affects lambda semantic (alanwu)
 I find the current behaviour unreasonably confusing and would like to see improvement, even though the bug doesn’t really show up in the real world often.
 I have a pull request which restores the behaviour found in Ruby 2.4.x and warns about it, based off of matz’s comment in [ruby-core:94054].
 Could someone confirm that is the desired fix? If it is the fix we want, could someone review the PR?
 Discussion:
 in short: lambda(&block).call
-[Feature #16274] Transform hash keys by a hash (sawa)
+### [Feature #16274] Transform hash keys by a hash (sawa)
 Easily rename hash keys that do not follow a rule
 Discussion:
 hash = {created: 2019-10-23 17:54:46 +0900, updated: 2019-10-23 17:59:18 +0900, author: "foo"}
@@ -495,15 +501,15 @@ hash.transform_keys({created: :created_at, updated: :update_time})
 #=> {created_at: 2019-10-23 17:54:46 +0900, update_time: 2019-10-23 17:59:18 +0900, author: "foo"}
 
 
-[Misc #16375] Right size regular expression compile buffers for literal regexes and on Regexp#freeze (lourens)
+### [Misc #16375] Right size regular expression compile buffers for literal regexes and on Regexp#freeze (lourens)
 Builds on Misc #16291 , I think there’s potential to apply this pattern to other types at hooks outlined at the end of the issue
 A large set of literal regular expressions are quite common in Rails applications (mostly framework, but also application and dependencies)
 In my Redmine boot test was able to shave 300kb off just excess regex buffer capacity
 Discussion:
-[Misc #16260] Symbol#to_proc behaves like lambda, but doesn’t aknowledge it (zverok)
+### [Misc #16260] Symbol#to_proc behaves like lambda, but doesn’t aknowledge it (zverok)
 Discussion:
 f = :+.to_proc
 f.lambda? # => false (should be true?)
 
 
-[Feature #16348] Proposal: Symbol#start_with?, Symbol#end_with?, and Symbol#include? (naruse)
+### [Feature #16348] Proposal: Symbol#start_with?, Symbol#end_with?, and Symbol#include? (naruse)

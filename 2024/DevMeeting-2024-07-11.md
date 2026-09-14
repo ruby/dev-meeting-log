@@ -411,7 +411,7 @@ Conclusion:
 
 ## misc
 
-https://bugs.ruby-lang.org/issues/20614 Integer#size returns incorrect values on 64-bit Windows
+### https://bugs.ruby-lang.org/issues/20614 Integer#size returns incorrect values on 64-bit Windows
 
 ```
 # search <integer_type>.size

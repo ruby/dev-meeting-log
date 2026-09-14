@@ -10,7 +10,7 @@ Time: 18:30 -
 Place: DeNA.com headquaters http://qwik.jp/asakusarb/HowToPassHikarieEntrance.html
 Attendees: sign up required: http://cruby.doorkeeper.jp/events/11795
 
-# Agenda
+## Agenda
 
 * [Feature #9711] Remove test-unit and minitest from stdlib. (sorah & kou & hsbt)
  * [Feature #9852] How to bundle test-unit2 and minitest5
@@ -28,14 +28,14 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/11795
 * [Feature #9857] Pathname#birthtime (znz)
 * [Feature #9179] MatchData#values_at should support named capture
 
-# Log
+## Log
 
 DevelopersMeeting20140618Japan
 attendee: shyouhei, hsbt, ko1, sora_h, akr, ktou, naruse, duerst
 on-line: matz, tal, nobu,
 
 
-[Feature #9711] Remove test-unit and minitest from stdlib. (sorah)
+### [Feature #9711] Remove test-unit and minitest from stdlib. (sorah)
 https://github.com/ruby/ruby/pull/626/files
 hsbt: Ryan removed lib/minitest, but he want to bundle minitest.gem instead in Ruby 2.2
 sorah: lib/test/unit in Ruby 2.1 is a wrapper of minitest 4, which is blocker for minitest 5, due to incompatibility
@@ -77,24 +77,24 @@ kou: I can’t decide yet, for now
 [TODO: hsbt] make bundle_gems installer working on Windows and BSDs
 
 
-[Feature #9179] MatchData#values_at should support named capture
-Call for feature proposal 2014(hsbt)
+### [Feature #9179] MatchData#values_at should support named capture
+### Call for feature proposal 2014(hsbt)
 announce: Yui Naruse will announce it on ruby-core/ruby-dev/twitter/www.ruby-lang.org and so on until 6/24
 dead line: 7/24
 Next developers meeting: 7/26, ~13:00-
 venue: cookpad (tentative)
 sorah: I guess I can host in our office, please remind me later
-Edit wiki homepage https://bugs.ruby-lang.org/
+### Edit wiki homepage https://bugs.ruby-lang.org/
 how to edit / gain access to edit?
 
 sorah: By the way, I want to design bugs.ruby-lang.org wiki as page for committers. we should move documentation page such as maintenance policy to www.ruby-lang.org to separate.
 naruse: Redmine admin bit is required to edit wiki
-[Feature #9880] Dir#fileno (akr)
-[Feature #9863] Hide Float internal (shyouhei)
-[Feature #9888] Hide Complex internal (shyouhei)
-[Feature #9889] Hide Hash internal (shyouhei)
-[Feature #9916] Hide Struct internal (shyouhei)
+### [Feature #9880] Dir#fileno (akr)
+### [Feature #9863] Hide Float internal (shyouhei)
+### [Feature #9888] Hide Complex internal (shyouhei)
+### [Feature #9889] Hide Hash internal (shyouhei)
+### [Feature #9916] Hide Struct internal (shyouhei)
 Try them!! Check compatibility.
-[Feature #9857] Pathname#birthtime (znz)
+### [Feature #9857] Pathname#birthtime (znz)
 Basically OK. Continue to discuss to improve implementation.
 

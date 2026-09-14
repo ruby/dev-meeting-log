@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2020-04-10
 
-# The next dev meeting
+## The next dev meeting
 
 **Date: 2020/04/10 13:00-17:00**
 Place/Sign-up/Agenda/Log: https://docs.google.com/document/d/1Gcs38tvI6_dQ5sgy8CNUIVZbt0c_y_Z2GrCAoDwh5wg/edit#
@@ -18,7 +18,7 @@ Place/Sign-up/Agenda/Log: https://docs.google.com/document/d/1Gcs38tvI6_dQ5sgy8C
 - The date, time and place are scheduled according to when/where we can reserve Matz's time.
 - *DO NOT* discuss then on this ticket, please.
 
-# Call for agenda items
+## Call for agenda items
 
 If you have a ticket that you want matz and committers to discuss, please post it into this ticket in the following format:
 
@@ -38,28 +38,28 @@ Example:
 - The format is strict.  We'll use [this script to automatically create an markdown-style agenda](https://gist.github.com/mame/b0390509ce1491b43610b9ebb665eb86).  We may ignore a comment that does not follow the format.
 - Your comment is mandatory.  We cannot read all discussion of the ticket in a limited time.
 
-# Log
+## Log
 
 https://bugs.ruby-lang.org/issues/16693
-Venue
+## Venue
 4/10 (Fri) 13:00-17:00 @ online
-Next Date
+## Next Date
 2020/05/14 (Thu) @ 13:00-17:00 @ online
-Announce
-Ruby 2.7 timeframe
+## Announce
+## Ruby 2.7 timeframe
 branch maintainer slide
 2.7: nagachika
 2.6: usa
 2.5: usa
 2.4: EOL
 need to announce 2.4 EOL on www.r-l.o
-About 2.8/3.0 timeframe
+## About 2.8/3.0 timeframe
 No topic
 To move to 3.0, anything new is wanted
 Should be fixed: https://github.com/ruby/ruby/pull/3010
-Check security tickets
+## Check security tickets
 [secret]
-[Feature #16428] Add Array#uniq?, Enumerable#uniq? (greggzst)
+### [Feature #16428] Add Array#uniq?, Enumerable#uniq? (greggzst)
 it seems to be an easier solution to check directly if an enumerable is uniq instead of using uniq with other means
 Preliminary discussion:
 [1, 3, 2].uniq? #=> true
@@ -69,7 +69,7 @@ matz: use case?
 mame: found 50 lines by gem-codesearch: uniq.size\ ==.*.size
 Conclusion:
 matz: I’ll ask use case
-[Feature #15166] 2.5 times faster implementation than current gcd implmentation (greggzst)
+### [Feature #15166] 2.5 times faster implementation than current gcd implmentation (greggzst)
 Preliminary discussion:
 ko1: assigned to mrkn
 Discussion:
@@ -77,7 +77,7 @@ Discussion:
 
 Conclusion:
 As mrkn is absent, postponed to the next meeting
-[Feature #13436] Improve performance of Array#<=> with Fixnum/Float/String elements (greggzst)
+### [Feature #13436] Improve performance of Array#<=> with Fixnum/Float/String elements (greggzst)
 performance in general
 Preliminary discussion:
 mame: watson should handle by himself
@@ -87,7 +87,7 @@ ko1: Some similar (non-safe) optimizations have been introduced already
 nobu: no, they check redefinition
 Conclusion:
 ko1: Will pass the ball to watson as he is a committer
-[Feature #15921] R-assign (rightward-assignment) operator (alanwu)
+### [Feature #15921] R-assign (rightward-assignment) operator (alanwu)
 Curious to hear from matz about this. I think this feature is convenient in the REPL and can improve readability in real code if used well.
 Preliminary discussion:
 ko1: matz should answer
@@ -118,7 +118,7 @@ nobu: R-assign for Rocket
 znz: => is used in rescue => e syntax. It is already R-assignment.
 Conclusion:
 matz: accept. matz will write a comment to the ticket soon
-[Bug #16660] Struct#deconstruct_keys inconsistent behavior (palkan)
+### [Bug #16660] Struct#deconstruct_keys inconsistent behavior (palkan)
 Any feedback on the proposed behaviour in the first comment
 Discussion:
 klass = Struct.new(:a, :b)
@@ -133,14 +133,14 @@ ko1: The API is sufficient for pattern matching. The method should not guarantee
 mame: Agreed.
 Conclusion:
 matz: Will reply soon
-[Bug #14541] Class variables have broken semantics, let’s fix them (jeremyevans0)
+### [Bug #14541] Class variables have broken semantics, let’s fix them (jeremyevans0)
 Is it OK to commit pull request to turn class variable warnings into RuntimeErrors?
 Preliminary discussion:
 Matz is positive because it shows warning (#8).
 toplevel @@cvar shows warning without -w, but overtaken @@cvar is warned with -w
 Conclusion:
 matz: go ahead
-[Feature #16742] RbConfig.windows? and RbConfig.host_os (eregon)
+### [Feature #16742] RbConfig.windows? and RbConfig.host_os (eregon)
 Thoughts? Should we add them?
 Preliminary discussion:
 mame: cygwin is a windows? WSL is a windows?
@@ -156,14 +156,14 @@ nobu: How about introducing RbConfig.platform that returns RUBY_PLATFORM in MRI.
 usa: RbConfig.running_platform ?
 Conclusion:
 matz: Reject .windows?. I’m okay for RbConfig.host_os. Will reply.
-[Feature #16688] Allow #to_path object as argument to system() (Dan0042)
+### [Feature #16688] Allow #to_path object as argument to system() (Dan0042)
 system/exec should be compatible with Pathname objects
 Discussion:
 matz: Looks good
 akr: went though the spec of spawn and system, and almost all string arguments can accept Pathname (except open mode string).
 Conclusion:
 akr: Positive. Will reply
-[Feature #16740] Deprecating and removing the broken Process.clock_getres (jeremyevans0)
+### [Feature #16740] Deprecating and removing the broken Process.clock_getres (jeremyevans0)
 Is it OK to deprecate Process.clock_getres in 3.0 and remove it in 3.1?
 Preliminary discussion:
 mame: I personally like to remove just the spec
@@ -172,7 +172,7 @@ Discussion:
 akr: We don’t want to remove the method. (1) removing a method is incompatible and (2) OS implementation of clock_getres may be improved in future.
 Conclusion:
 akr: will reply
-[Bug #6087] How should inherited methods deal with return values of their own subclass? (greggzst)
+### [Bug #6087] How should inherited methods deal with return values of their own subclass? (greggzst)
 It’s been a long time and matz said it was to be fixed in 3.0
 Preliminary discussion:
 mame: We recently discussed informally this ticket, and matz withdrawed the old conclusion.
@@ -192,7 +192,7 @@ irb(main):006:0> x.class
 
 Conclusion:
 matz: I want to see the impact of the incompatibility. Contribution is welcome.
-[Bug #14413] -n and -p flags break when stdout is closed (nobu)
+### [Bug #14413] -n and -p flags break when stdout is closed (nobu)
 only in the loop / always signal on EPIPE
 STDOUT only / + STDERR / generic for IO
 Preliminary discussion:
@@ -206,11 +206,11 @@ a
 
 Conclusion:
 (mame: didn’t listen the discussion)
-[Feature #16684] Use the word “to” instead of “from” in backtrace (sawa)
+### [Feature #16684] Use the word “to” instead of “from” in backtrace (sawa)
 Be free of wondering about the printed backtrace direction by using the word “to” in most-recent–call-last situation.
 Conclusion:
 matz: “to” is unacceptable. Removal of “from” may be acceptable
-[Feature #16769] Struct.new(…, immutable: true) (k0kubun)
+### [Feature #16769] Struct.new(…, immutable: true) (k0kubun)
 I wanted it today, and found the discussion of [Feature #16122] stuck with designing helpers to set a combination of attributes. Is there any objection to introduce immutable: true attribute alone first?
 Preliminary discussion:
 ko1: I prefer freeze: true because it is easy to explain the behavior (documentation).
@@ -221,7 +221,7 @@ irb(main):001:0> Struct.new("Value", :a, :b)
 
 Conclusion:
 matz: I prefer #16122 to this proposal. Rejected.
-[Feature #16746] Endless method definition
+### [Feature #16746] Endless method definition
 https://github.com/ruby/ruby/pull/2996
 def hello(name) =
   puts("Hello, #{ name }")
@@ -253,6 +253,7 @@ p fib(10) #=> 55
 
 
 matz: Python has an extention language named “Coconut” which has similar oneliner method definition. I want to have similar one for Ruby.
+```
 def fib(x) = (
   stmt
   stmt
@@ -297,9 +298,10 @@ def foo(@x) = @x
 
 def foo=nil
 def foo=(x)=@x=(x)=foo
+```
 
 
 Conclusion:
 matz: Let’s give it a try
-[Feature #16754] Pager for --help
+### [Feature #16754] Pager for --help
 matz: Looks good

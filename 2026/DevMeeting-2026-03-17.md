@@ -179,7 +179,7 @@ https://bugs.ruby-lang.org/issues/21877
 
 ---
 
-matz reminder
+### matz reminder
 
 * [[Feature #6012]](https://bugs.ruby-lang.org/issues/6012) Proc#source_location also return the column
   * mame: we need revert for now?
@@ -188,26 +188,26 @@ matz reminder
 
 ---
 
-[[Feature #21822]](https://bugs.ruby-lang.org/issues/21822) Expose Return Value in the ensure Block
+### [[Feature #21822]](https://bugs.ruby-lang.org/issues/21822) Expose Return Value in the ensure Block
 
 * Matz said "I will reject" in the previous meeting
 
-[[Feature#21858]](https://bugs.ruby-lang.org/issues/21858) `Kernel#Hash` considers `to_h` too
+### [[Feature#21858]](https://bugs.ruby-lang.org/issues/21858) `Kernel#Hash` considers `to_h` too
 
 * Matz said "I will reply" in the previous meeting
 
-[[Feature #21520]](https://bugs.ruby-lang.org/issues/21520) Feature Proposal: `Enumerator::Lazy#tee`
+### [[Feature #21520]](https://bugs.ruby-lang.org/issues/21520) Feature Proposal: `Enumerator::Lazy#tee`
 
-[[Feature #17056]](https://bugs.ruby-lang.org/issues/17056) `Array#index`: Allow specifying the position to start search as in `String#index`
+### [[Feature #17056]](https://bugs.ruby-lang.org/issues/17056) `Array#index`: Allow specifying the position to start search as in `String#index`
 
 * matz: I accept it.
 * nobu: How about `Array#rindex`?
 * matz: I accept it too. I will reply.
 
-[[Feature #21921]](https://bugs.ruby-lang.org/issues/21921) Hash inconsistent ==, >=, <= behavior
+### [[Feature #21921]](https://bugs.ruby-lang.org/issues/21921) Hash inconsistent ==, >=, <= behavior
 
-[[Feature #21932]](https://bugs.ruby-lang.org/issues/21932) `MatchData#get_int`
-[[Feature #21943]](https://bugs.ruby-lang.org/issues/21943) Add `StringScanner#get_int` to extract capture group as `Integer` without intermediate `String`
+### [[Feature #21932]](https://bugs.ruby-lang.org/issues/21932) `MatchData#get_int`
+### [[Feature #21943]](https://bugs.ruby-lang.org/issues/21943) Add `StringScanner#get_int` to extract capture group as `Integer` without intermediate `String`
 ```
 scanner = StringScanner.new("2024-06-15")
 scanner.scan(/(\d{4})-(\d{2})-(\d{2})/)
@@ -251,8 +251,8 @@ $~.integer_at(0, 0) #=> 15 (== "0xF".to_i(0))
 
 * matz: I like `get_int` but `MatchData#integer_at` is acceptable. Okay, let's choose `integer_at`
 
-[[Feature #21951]](https://bugs.ruby-lang.org/issues/21951) Lazy load error enhancer gems to speed up boot time
+### [[Feature #21951]](https://bugs.ruby-lang.org/issues/21951) Lazy load error enhancer gems to speed up boot time
 
-[[Feature #21950]](https://bugs.ruby-lang.org/issues/21950) Add a built-in CPU-time profiler
+### [[Feature #21950]](https://bugs.ruby-lang.org/issues/21950) Add a built-in CPU-time profiler
 
-[net-http#279](https://github.com/ruby/net-http/pull/279) Add RBS signatures from ruby/rbs repo
+### [net-http#279](https://github.com/ruby/net-http/pull/279) Add RBS signatures from ruby/rbs repo

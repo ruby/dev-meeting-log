@@ -486,13 +486,13 @@ Conclusion:
 
 ---
 
-https://bugs.ruby-lang.org/issues/20750 Allow rb_thread_call_with_gvl to work when thread already has GVL
+### https://bugs.ruby-lang.org/issues/20750 Allow rb_thread_call_with_gvl to work when thread already has GVL
 
 * mame: now ruby_thread_has_gvl_p is exposed
 * nobu: even we change the behavior, a gem author cannot depend on it unless they drop Ruby 3.3 support
 * ko1: should we expose a macro to distinguish between the old behavior and the new one?
 
-https://bugs.ruby-lang.org/issues/20785 Should `a in b, and c` `a in b, or c` `a in b, rescue c` be syntax ok?
+### https://bugs.ruby-lang.org/issues/20785 Should `a in b, and c` `a in b, or c` `a in b, rescue c` be syntax ok?
 
 * matz: as a general rule, a trailing comma should be allowed in one-line pattern match
 ```ruby
@@ -508,11 +508,11 @@ and c
 # matz: If possible, it should be a syntax error. a newline after a comma should end the sentence
 ```
 
-https://bugs.ruby-lang.org/issues/20786 Flow chaining with "then" keyword
+### https://bugs.ruby-lang.org/issues/20786 Flow chaining with "then" keyword
 
 * matz: rejected
 
-https://bugs.ruby-lang.org/issues/20790 Syntax acceptance of `*x = p rescue p 1` is different between parse.y and prism
+### https://bugs.ruby-lang.org/issues/20790 Syntax acceptance of `*x = p rescue p 1` is different between parse.y and prism
 
 ```ruby
                     # current parse.y behavior   # matz
@@ -524,11 +524,11 @@ x = p rescue p 1    # x = (p rescue p) 1 (ERROR) # x = (p rescue p 1)
 x = p 1 rescue p 1  # x = ((p 1) rescue (p 1))
 ```
 
-https://bugs.ruby-lang.org/issues/20793 Allow Multiple Arguments for the .is_a? Method
+### https://bugs.ruby-lang.org/issues/20793 Allow Multiple Arguments for the .is_a? Method
 
 * matz: rejected
 
-https://bugs.ruby-lang.org/issues/20795 Timeout method doesn't check for negative time values
+### https://bugs.ruby-lang.org/issues/20795 Timeout method doesn't check for negative time values
 
 ```ruby
 # Currently, timeout 0 does not restrict the execution time
@@ -540,7 +540,7 @@ end
 * matz: I like early failure. Let's raise an ArgumentError against negative value
 * matz: zero should also be raised, but I am concerned about the incompatibility. I am not sure
 
-https://bugs.ruby-lang.org/issues/18242 Parser makes multiple assignment sad in confusing way
+### https://bugs.ruby-lang.org/issues/18242 Parser makes multiple assignment sad in confusing way
 
 ```ruby
 # both should be allowed
@@ -548,7 +548,7 @@ https://bugs.ruby-lang.org/issues/18242 Parser makes multiple assignment sad in 
 1 < 2 and a = 1, 2
 ```
 
-https://bugs.ruby-lang.org/issues/20802 It is possible to set the encoding of an IO instance to one that requires binmode when binmode is not set
+### https://bugs.ruby-lang.org/issues/20802 It is possible to set the encoding of an IO instance to one that requires binmode when binmode is not set
 ```ruby
 f1 = File.open('/dev/null')
 f1.set_encoding('utf-16le') #=> ASCII incompatible encoding needs binmode (ArgumentError)
@@ -567,11 +567,11 @@ f1.external_encoding   # <= Encoding::UTF_16LE
 * akr, nobu: I guess we should copy the encoding in IO#reopen
 * tompng: I am a bit afraid about the incompatibility
 
-https://bugs.ruby-lang.org/issues/20792 String#forcible_encoding?
+### https://bugs.ruby-lang.org/issues/20792 String#forcible_encoding?
 
 * matz: I think `.dup.force_encoding` is good enough
 
-https://bugs.ruby-lang.org/issues/20808 Data#pretty_print doesn't handle private or remove attribute readers
+### https://bugs.ruby-lang.org/issues/20808 Data#pretty_print doesn't handle private or remove attribute readers
 
 * akr: an exception is not good in any way
 
@@ -593,16 +593,16 @@ pp D.new(10)
 
 * akr: It should use `__send__` instead of `public_send`
 
-https://bugs.ruby-lang.org/issues/20807 String#gsub fails when called from string subclass with a block passed
-https://bugs.ruby-lang.org/issues/20852 Anonymous HEREDOC blocks
+### https://bugs.ruby-lang.org/issues/20807 String#gsub fails when called from string subclass with a block passed
+### https://bugs.ruby-lang.org/issues/20852 Anonymous HEREDOC blocks
 
 * matz: we should not touch heredoc anymore
 
-https://bugs.ruby-lang.org/issues/20858 multiple parallel assignments are inconsistent
+### https://bugs.ruby-lang.org/issues/20858 multiple parallel assignments are inconsistent
 
 * matz: rejected
 
-https://bugs.ruby-lang.org/issues/20861 Add an environment variable for tuning the default thread quantum
+### https://bugs.ruby-lang.org/issues/20861 Add an environment variable for tuning the default thread quantum
 ```ruby
 def fib(n)
   n < 2 ? 0 : fib(n - 1) + fib(n - 2)

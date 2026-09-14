@@ -248,18 +248,18 @@ Conclusion:
 
 ---
 
-https://bugs.ruby-lang.org/issues/20858 please reject > matz
+### https://bugs.ruby-lang.org/issues/20858 please reject > matz
 
-https://bugs.ruby-lang.org/issues/20817 Ruby 3.4.0dev emits `warning: possibly useless use of + in void context` while Ruby 3.3.5 does not
+### https://bugs.ruby-lang.org/issues/20817 Ruby 3.4.0dev emits `warning: possibly useless use of + in void context` while Ruby 3.3.5 does not
 
 * akr: we should accept such a minor behavior change, regardless of prism
 * mame: I will close
 
-https://bugs.ruby-lang.org/issues/20757 Make rb_tracearg_(parameters|eval_script|instruction_sequence) public C-API
+### https://bugs.ruby-lang.org/issues/20757 Make rb_tracearg_(parameters|eval_script|instruction_sequence) public C-API
 
 ---
 
-https://bugs.ruby-lang.org/issues/20882 Provide `Boolean(...)`
+### https://bugs.ruby-lang.org/issues/20882 Provide `Boolean(...)`
 ```
 # ENV["SOME_FEATURE"] is unset
 Boolean(ENV["SOME_FEATURE"]) # => false
@@ -277,7 +277,7 @@ Boolean(ENV["SOME_FEATURE"]) # => true
 ```
 * matz: rejected
 
-https://bugs.ruby-lang.org/issues/20885 `String#gsub?`
+### https://bugs.ruby-lang.org/issues/20885 `String#gsub?`
 ```
 str.gsub?(...) == str.dup.gsub!(...)
 ```
@@ -298,7 +298,7 @@ https://blade.ruby-lang.org/ruby-dev/33553
 
 * matz: I will reject
 
-https://bugs.ruby-lang.org/issues/20899 Reconsider adding `Array#find_map`
+### https://bugs.ruby-lang.org/issues/20899 Reconsider adding `Array#find_map`
 ```
 (1..9).find_map {|i| i * 2 if i.even? } #=> 4
 
@@ -357,7 +357,7 @@ filter_map(first: true)
 * matz: I don't understand the need very much, but the name `find_map` is acceptable. I will reply
 * nobu: Should we try it in Ruby 3.5, not 3.4?
 
-https://bugs.ruby-lang.org/issues/13820 Add a nil coalescing operator
+### https://bugs.ruby-lang.org/issues/13820 Add a nil coalescing operator
 ```
 ??: ATS, C#, JavaScript, PHP, PowerShell, Swift
 No operator: Python, Ruby, Rust, SQL
@@ -383,7 +383,7 @@ def cached_foo(...)
 end
 ```
 
-https://bugs.ruby-lang.org/issues/20925 Allow boolean operators at beginning of line to continue previous line
+### https://bugs.ruby-lang.org/issues/20925 Allow boolean operators at beginning of line to continue previous line
 ```
 if cond1
   && cond2
@@ -414,7 +414,7 @@ if cond1 & # concat & and &
 end
 ```
 
-https://bugs.ruby-lang.org/issues/20922 Should not we omit parentheses in assert calls?
+### https://bugs.ruby-lang.org/issues/20922 Should not we omit parentheses in assert calls?
 ```
 p -1    # user may expect "p - 1"
 p -1, 2 # user cannot expect "p - 1, 2", no misleading
@@ -439,17 +439,17 @@ assert_match  /foo/, str
 
 ---
 
-https://bugs.ruby-lang.org/issues/17566 Tune thread QoS / efficiency on macOS
-https://bugs.ruby-lang.org/issues/20917 `redo`/`next` in nested `begin` block causes wrong order of execution
+### https://bugs.ruby-lang.org/issues/17566 Tune thread QoS / efficiency on macOS
+### https://bugs.ruby-lang.org/issues/20917 `redo`/`next` in nested `begin` block causes wrong order of execution
 
-https://bugs.ruby-lang.org/issues/20938 Percent String literal delimiter impacts string contents with parse.y
-https://bugs.ruby-lang.org/issues/11177 DATAでEOF文字以降が読めない
-https://bugs.ruby-lang.org/issues/19191 Implicit console input transcoding is more desirable
+### https://bugs.ruby-lang.org/issues/20938 Percent String literal delimiter impacts string contents with parse.y
+### https://bugs.ruby-lang.org/issues/11177 DATAでEOF文字以降が読めない
+### https://bugs.ruby-lang.org/issues/19191 Implicit console input transcoding is more desirable
 
-https://bugs.ruby-lang.org/issues/20889 `IO#ungetc` and `IO#ungetbyte` should not cause `IO#pos` to report an inaccurate position
-https://bugs.ruby-lang.org/issues/20919 `IO#seek` and `IO#pos=` do not clear the character buffer in some cases while transcoding
-~https://bugs.ruby-lang.org/issues/20924 `IO#readline` ignores the limit argument when the encoding is UTF-32LE and the limit would split a character~
-https://bugs.ruby-lang.org/issues/20943 Constant defined in `Data.define` block
+### https://bugs.ruby-lang.org/issues/20889 `IO#ungetc` and `IO#ungetbyte` should not cause `IO#pos` to report an inaccurate position
+### https://bugs.ruby-lang.org/issues/20919 `IO#seek` and `IO#pos=` do not clear the character buffer in some cases while transcoding
+### ~https://bugs.ruby-lang.org/issues/20924 `IO#readline` ignores the limit argument when the encoding is UTF-32LE and the limit would split a character~
+### https://bugs.ruby-lang.org/issues/20943 Constant defined in `Data.define` block
 
 ```
 module (expr)::Foo

@@ -44,7 +44,7 @@ skype: matz, nobu
 
 attendee: hone, naruse, ko1, taru, martin, hsbt, zzak, shyouhei, aaron
 
-Release Engineering of patch release
+### Release Engineering of patch release
 Conclusion
 hsbt will talk to nagachika (current Ruby 2.1 maintainer) about Heroku and hsbt’s request for a Ruby 2.1 bugfix release
 hsbt has requested to be a submaintainer of 2.1 and needs nagachika’s approval
@@ -101,7 +101,7 @@ matz: agree with two digit teeny (with complaint)
 
 matz: no need to distinct hotfix and stable releases
 
-[Feature #9711] Remove test-unit and minitest from stdlib [hsbt]
+### [Feature #9711] Remove test-unit and minitest from stdlib [hsbt]
 Conclusion
 - hsbt will separate test library for test-all and copy it to test/
 
@@ -115,11 +115,11 @@ Conclusion
 
 - minitest4 conflicts with minitest5/minitest.gem
 
-[Feature #9612] Gemify OpenSSL [zzak]
+### [Feature #9612] Gemify OpenSSL [zzak]
 Conclusion
 - ko1 will finish this in 1 month. zzak will check if it’s not done. (June/2014)
 
-[Bug #9613] Warn about unsafe ossl ciphers [zzak]
+### [Bug #9613] Warn about unsafe ossl ciphers [zzak]
 Conclusion
 - it breaks backward compatibility
 
@@ -127,11 +127,11 @@ Conclusion
 
 - it needs to warn and not raise.
 
-[Bug #9671] 2.1 Backport Request #9592 OpenSSL Regression 2.1.0 [hone]
+### [Bug #9671] 2.1 Backport Request #9592 OpenSSL Regression 2.1.0 [hone]
 Conclusion
 This depends on the result of “Release Engineering of patch release”
 hsbt will discuss this issue with nagachika (maintainer of 2.1)
-[Misc #9741] Policy for posting security and general announcements [hone]
+### [Misc #9741] Policy for posting security and general announcements [hone]
 Conclusion
 There was a policy decided.
 
@@ -154,11 +154,11 @@ hsbt: unknown issues: get consensus on ruby-core/security@ members + branch main
 
 other issues: get consensus on https://github.com/ruby/www.ruby-lang.org
 
-Status of Branch Maintainer for 2.0.0? [hone]
+### Status of Branch Maintainer for 2.0.0? [hone]
 Conclusion
 - see [ruby-core:62051]
 
-When is the next release of maintained Rubies: [hone]
+### When is the next release of maintained Rubies: [hone]
 Conclusion
 depends on the result of “Release Engineering of patch release.”
 

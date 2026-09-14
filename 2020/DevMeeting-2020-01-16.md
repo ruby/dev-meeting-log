@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2020-01-16
 
-# The next dev meeting
+## The next dev meeting
 
 **Date: 2020/01/16 13:00-17:00**
 Place/Sign-up/Agenda/Log: https://docs.google.com/document/d/1NxNMc7tlt-olPRyRQDhAjZWw30Atr6a-rfQxQ9BRXfY
@@ -18,7 +18,7 @@ Place/Sign-up/Agenda/Log: https://docs.google.com/document/d/1NxNMc7tlt-olPRyRQD
 - The date, time and place are scheduled according to when/where we can reserve Matz's time.
 - *DO NOT* discuss then on this ticket, please.
 
-# Call for agenda items
+## Call for agenda items
 
 If you have a ticket that you want matz and committers to discuss, please post it into this ticket in the following format:
 
@@ -38,12 +38,12 @@ Example:
 - The format is strict.  We'll use [this script to automatically create an markdown-style agenda](https://gist.github.com/mame/b0390509ce1491b43610b9ebb665eb86).  We may ignore a comment that does not follow the format.
 - Your comment is mandatory.  We cannot read all discussion of the ticket in a limited time.
 
-# Log
+## Log
 
 https://bugs.ruby-lang.org/issues/16454
-Venue
+## Venue
 1/16 (Thu) 13:00-17:00 @ MoneyForward (21F)
-Attendees
+## Attendees
 Add your name (or ask a committer to invite you)
 matz (remote)
 mame (remote)
@@ -51,20 +51,20 @@ usa (remote) will join at 14:30 or a little later
 soutaro
 Akr
 hsbt
-Absent:
+## Absent:
 Martin Dürst
-Next Date
+## Next Date
 2/27 13:00-17:00 @ Cookpad Tokyo office MTG1 (12F)
-Announce
-Ruby 2.7 timeframe
+## Announce
+## Ruby 2.7 timeframe
 release 2.7.1 soon if it is needed.
 if we don’t have to hurry, release 2.7.1 in March.
-About 2.8/3.0 timeframe
-Next Stable releases timeframe
-Check security tickets
+## About 2.8/3.0 timeframe
+## Next Stable releases timeframe
+## Check security tickets
 [secret]
-2.7.1 issues (keyword argument separation)
-[Bug #16486] Hash.ruby2_keywords?(hash) and Hash.ruby2_keywords!(hash) (mame)
+## 2.7.1 issues (keyword argument separation)
+### [Bug #16486] Hash.ruby2_keywords?(hash) and Hash.ruby2_keywords!(hash) (mame)
 It turned out that we sometimes need to deal with ruby2_keywords flag explicitly. I’d like to add the feature as class methods. (@naruse says that backport to 2.7.1 is okay)
 Background jobs used in Rails (ActiveJob, Resque, Sidekiq, …) need it. It passes method call arguments between processes using their own serializer.
 Serialization of arguments needs it too in general
@@ -111,7 +111,7 @@ matz: I like non-mutating version; frozen Hash does not make sense then
 matz: method name: Hash.ruby2_keywords_hash(hash) (non-mutating) and Hash.ruby2_keywords_hash?(hash)
 Hash.ruby2_keywords_hash(hash) returns new ruby2 keywords hash.
 Hash.ruby2_keyword_hash?(hash) returns true if hash is ruby2 keywords.
-[Feature #16463] Fixing *args-delegation in Ruby 2.7: ruby2_keywords semantics by default in 2.7.1 (eregon)
+### [Feature #16463] Fixing *args-delegation in Ruby 2.7: ruby2_keywords semantics by default in 2.7.1 (eregon)
 This would be a way to make transition to Ruby 2.7 a lot simpler. Advantages are: easier migration (no explicit ruby2_keywords, no confusing warnings, better warnings when migrating), better debugging, more compatible.
 Right now it’s confusing warnings, forcing most gems to use ruby2_keywords which is just a workaround and the code will need to change again.
 What do you think?
@@ -132,6 +132,7 @@ Migration from 3.X to 4.0 (when ruby2_keywords flag is deprecated):
 ruby2_keywords is considered “a mark” for whete to fix (when ruby2_keywords flag is deprecated)
 However, it turned out that it is not mandatory:
 if a warning is displayed when a flagged Hash is passed as keywords, the migration is possible
+```
 # in 3.X with eregon's proposal
 def bar(key: 1); end
 # in the current approach, `ruby2_keywords` mark is required for this method; in eregon's, it is automatically added
@@ -147,16 +148,19 @@ def foo(*args, **opt)
   bar(*args, **opt) # no warning
 end
 foo(key: 42)
+```
 
 pitfalls
 A call foo(**{}) to def foo(*a) will pass a = [{}] (the Hash is flagged)
 If a Hash is flagged unintentionally, it may cause a difficult-to-debug issue:
 The following code is valid in 3.0, but will break under eregon’s proposal
+```
 # Code that Jeremy wrote
 def a(h, **opts) [h, opts] end
 # assumption: This method is designed not to accept keywords, and relies on Jeremy's compatibility layer
 def b(meth, *vs) vs.map{|v| args = [meth, v]; send(*args)} end
 p b(:a, 1, "2", c: 3)
+```
 
 concerns:
 Changing the semantics after 2.7.1 may bring a big confusion to users
@@ -174,7 +178,7 @@ naruse: if this proposal is better we need to consider. we need to understand pr
 matz: I understand. I will consider about it. I want to know other examples which is diffilt to solve.
 naruse: we need to decide before March to release ruby 2.7.1.
 matz: I will make decision by the end of January
-[Feature #16494] Allow hash unpacking in non-lambda Proc (zverok)
+### [Feature #16494] Allow hash unpacking in non-lambda Proc (zverok)
 allow map { |foo:, bar:| ... } just like array unpacking to map { |foo, bar| ... } is allowed. The ticket contains pragmatic examples.
 Discussion:
 in short:
@@ -182,6 +186,7 @@ in short:
 
 
 
+```
 $ ruby -e '[{foo: 42}].each {|foo:| p foo }'
 -e:1: warning: Using the last argument as keyword parameters is deprecated; maybe ** should be added to the call
 -e:1: warning: The called method is defined here
@@ -200,17 +205,18 @@ define_method(:foo) {|key:| p key }
 foo(key: 42)     #=> OK (42)
 foo({foo: 42})   #=> NG (warn on 2.7, error on 3.0)
 foo(**{foo: 42}) #=> OK (42)
+```
 
 mame: will reply
 eregon: this would mix data hashes with keyword arguments, seems opposite of separation
-[Feature #16501] Support marshaling of ruby2_keywords flag (mame)
+### [Feature #16501] Support marshaling of ruby2_keywords flag (mame)
 Marshal.dump and load do not support ruby2_keywords flag, so serializing and deserializing a flagged Hash drops the flag.
 This is not critical because AFAIK there is no real application that requires this feature. It would be helpful to make drb support the separation, but if #16486 is accepted, drb can work around the issue.
 But if we introduce it, it should be into 2.7.1.
 Discussion:
 in short:
 matz: go ahead
-[Feature #16466] *args -> *args delegation should be warned when the last hash has a ruby2_keywords flag (mame)
+### [Feature #16466] *args -> *args delegation should be warned when the last hash has a ruby2_keywords flag (mame)
 In 2.7.0, no warnings are displayed at second and later stages of multi-stage delegation. It looks a bug.
 I think it is not critical, but in principle, it should be warned. I’d like to determine it before 2.7.1.
 Discussion:
@@ -233,8 +239,8 @@ end
 
 foo(k: 1)
 
-Topics
-[Feature #8709] Dir.glob should return sorted file list (eregon)
+## Topics
+### [Feature #8709] Dir.glob should return sorted file list (eregon)
 It causes non-determinism on e.g., Linux, which causes complex bugs (which are not worth investigating)
 Many other languages seem to sort by default (C’s glob(3), bash, perl, gmake, …)
 TruffleRuby already sorts Dir.glob to avoid this issue
@@ -274,7 +280,7 @@ Make Dir.glob(pattern, sort: true) sort the result.
 sort: true is the default.
 sort: false to make the result unsorted.
 Dir.foreach, Dir.entries, or anything else don’t sort at this time. (Out of scope.)
-[Bug #8841] Module#included_modules and prepended modules (mame)
+### [Bug #8841] Module#included_modules and prepended modules (mame)
 Module#include? and Module#included_modules regard prepended modules as included (not well documented); Module#included is not called when the module is prepended. Is this right?
 IMO, changing the behavior is no longer acceptable (without any actual trouble). How about just changing the document?
 Discussion:
@@ -311,7 +317,7 @@ Reject.
 matz: Intended behaviour.
 matz: A module is not prepended form the view of its subclass even if prepended in its superclass. But, it want to detect it is mixed in.
 eregon: Module#included_modules is “all modules (non-class) included in mod.ancestors”
-[Feature #8026] Need Module#prepended_modules (mame)
+### [Feature #8026] Need Module#prepended_modules (mame)
 It is accepted six years ago, but not implemented yet. I’ve never heard any actual trouble, but should we still add the feature?
 Discussion:
 module Mixin
@@ -331,14 +337,14 @@ znz: For compatibility, adding new keyword argument to exclude prepended modules
 Conclusion:
 Add Module#prepended_modules which returns array of directly prepended modules.
 No true | false option.
-[Bug #9815] attr_reader doesn’t warn on a uninitialized instance variable (mame)
+### [Bug #9815] attr_reader doesn’t warn on a uninitialized instance variable (mame)
 A reader method defined by attr_reader :foo is not warned as “instance variable @foo not initialized”. Is it intentional?
 Discussion:
 in short:
 nobu: intentional spec. -> closed.
 Conclusion:
 Close
-[Bug #10388] Operator precedence problem in multiple assignment (massign) (mame)
+### [Bug #10388] Operator precedence problem in multiple assignment (massign) (mame)
 "a, b = c = 1, 2 is currently taken as a, b = (c = 1), 2; I’d expect it to be taken as a, b = (c = 1, 2)." Jeremy gave a try to implement but seemed difficult due to the limitation of LALR(1) parser. Let’s give up.
 Discussion:
 in short:
@@ -347,7 +353,7 @@ matz: I’m open to add warnings with -W.
 Conclusion:
 Reject. Won’t change the syntax definition.
 Open to add warnings.
-[Bug #10475] Array#flatten should not accept a nil argument (mame)
+### [Bug #10475] Array#flatten should not accept a nil argument (mame)
 Should we add a document that Array#flatten accepts nil? Negative argument too?
 Discussion:
 in short:
@@ -372,16 +378,17 @@ Conclusion:
 Update the RDoc for nil.
 The case with negative numbers is hidden/undocumented feature.
 No change in implementation. (array.flatten(-1) continues working.)
-[Bug #10929] NilClass#to_proc and & don’t mix? (mame)
+### [Bug #10929] NilClass#to_proc and & don’t mix? (mame)
 I think it is not worth adding.
 Discussion:
 in short: (rejected)
-[Bug #11014] String#partition doesn’t return correct result on zero-width match (mame)
+### [Bug #11014] String#partition doesn’t return correct result on zero-width match (mame)
 I’d like to confirm if the current behavior is inteneded.
 Discussion:
 in short:
 We should focus on String#partition; String#scan and #split should not change just for consistency reason.
 Since 71afefd5d1f, no change.
+```
 p "foo\n\bar\n".partition(/^/)     #=> ["foo\n\bar\n", "", ""]
 p "foo".partition(/^=*/)           #=> ["foo", "", ""]
 p "foo".partition(/^=+/)           #=> ["foo", "", ""]
@@ -397,6 +404,7 @@ p 'foo'.partition(/x/) #=> ["foo", "", ""]
 ('f', 'o', 'o')
 >>> "foo".partition("x")
 ('foo', '', '')
+```
 
 Conclusion:
 matz: A bug. Fix it.
@@ -406,7 +414,7 @@ p "foo\n\bar\n".partition(/^/)     #=> cur: ["foo\n\bar\n", "", ""]
 p "foo".partition(/^=*/)           #=> cur: ["foo", "", ""]
                                    #=> fix: ["", "", foo"]
 
-[Feature #16432] Using _1 inside binding.irb will cause unintended behavior (osyo)
+### [Feature #16432] Using _1 inside binding.irb will cause unintended behavior (osyo)
 Calling binding.irb in a block that uses _1 and using _1 in irb will cause unintended behavior.
 Should it be a runtime error?
 Discussion:
@@ -425,6 +433,7 @@ Issue: we can’t see _1 variables from debugging reason.
 allow Binding#local_variable_get("_1") for this purpose? How to get uplevel binding?
 Same semantics without eval.
 issue: we can’t write numbered parameters in this kind of context.
+```
 # 2.7.0 behavior
 1.times{p _1
   eval('p _1')            #=> OK (0)
@@ -465,12 +474,13 @@ irb> [:a].each{p _1}
 # 2.7.0 OK, but confusing (0)
 # 1. OK (:a)
 # 2. SyntaxError
+```
 
 matz: vote for 1
 Conclusion:
 Solution 1. Nobu will fix parse.y
 hopefully backport to 2.7.1 (March 2020)
-[Feature #16441] Enumerable#take_while_after (zverok)
+### [Feature #16441] Enumerable#take_while_after (zverok)
 Just like take_while, but also returns the matched element; practical examples are shown
 Discussion:
 in short:
@@ -489,16 +499,19 @@ epilogue
 DOC
 str.each_line(chomp: true).drop_while { _1 != '<<' }.chunk_while { _1 != '>>' }.first #=> ["<<", "1", "2", "3", ">>"]
 
+```
 # Using Enumerable#slice_after
 array.slice_after {|n| n < 3 }.first
 array.lazy.slice_after {|n| n < 3 }.first
+```
 
 Conclusion:
 Reject.
-[Feature #16435] Array#to_proc (zverok)
+### [Feature #16435] Array#to_proc (zverok)
 Make map(&[:foo]) it just a shortcut for map { |hash| hash[:foo] }. Ambitious, but justified. Two alternative approaches proposed (dig and just [])
 Discussion:
 in short:
+```
 # in perspective of the proposer
 data.map {|x| x[:name]}  # too long
 data.map{_1[:name]}      # using _1
@@ -507,6 +520,7 @@ data.map(&[:name])       # better?
 data.map {|x| x.dig(:foo, :bar)}  # too long
 data.map{_1.dig(:foo, :bar)}      # using _1
 data.map(&[:foo, :bar])           # better?
+```
 
 Note that pluck is unusable for this purpose
 ko1: Array#to_proc seems more general feature. But this proposal is too specific usage IMO.
@@ -514,7 +528,7 @@ Conclusion:
 matz: Reject
 Too specific for the name.
 Array#to_proc, if any, should be a projection.
-[Bug #16383] TracePoint does not report calls to attribute reader methods (jeremyevans0)
+### [Bug #16383] TracePoint does not report calls to attribute reader methods (jeremyevans0)
 Do we want to support this?
 Discussion:
 in short:
@@ -522,7 +536,7 @@ ko1: I’m afraid about the performance degeradation of the proposed patch. I’
 ko1: +30% execution time even without enabling TracePoint. (too bad)
 Conclusion:
 matz: good to have, but not a showstopper
-[Feature #5321] Introducing Numeric#exact? and Numeric#inexact? (jeremyevans0)
+### [Feature #5321] Introducing Numeric#exact? and Numeric#inexact? (jeremyevans0)
 Can we add Numeric#exact? ? This is necessary to fix Bug #5179.
 Discussion:
 How about Numeric.new.exact? => raise an error.
@@ -532,7 +546,7 @@ Scheme does not define exact? by the type of values. It’s orthogonal attribute
 naruse: Does #5179 need to fix?
 Conclusion:
 Continue discussion with mrkn.
-[Bug #9790] Zlib::GzipReader only decompressed the first of concatenated files (jeremyevans0)
+### [Bug #9790] Zlib::GzipReader only decompressed the first of concatenated files (jeremyevans0)
 Can we implement Zlib::GzipReader.each_file using the patch?
 Discussion:
 in short:
@@ -552,14 +566,14 @@ akr: The traditional behavior should be kept
 akr: gzip(1) describes concatenation of gzip files in ADVANCED USAGE. https://www.gnu.org/software/gzip/manual/gzip.html#Advanced-usage
 Conclusion:
 matz: it should behave like zcat. Handling each member should be deleted.
-[Misc #16487] Potential for SIMD usage in ruby-core (alanwu)
+### [Misc #16487] Potential for SIMD usage in ruby-core (alanwu)
 It would be great if we can come up with a stance on this and document it. It doesn’t have to be permanent; we can revise it later, but I think the policy can be very helpful to new contributors.
 Related, I think we can put something in the Github pull request template to help guide new contributors. I think Sorbet’s repo uses this to good effects.
 Discussion:
 in short:
 Conclusion:
 https://bugs.ruby-lang.org/issues/16487#note-18 is good conclusion.
-[Feature #16461] Proc#using (alanwu)
+### [Feature #16461] Proc#using (alanwu)
 This looks like a serious change worth discussing.
 Discussion:
 in short:
@@ -567,7 +581,7 @@ Difficult to discuss it without shugo
 Conclusion:
 Suspended.
 May discuss at RubyKaigi, April 2020.
-[Feature #16495] Inconsistant Quotes in Error Messages (mame)
+### [Feature #16495] Inconsistant Quotes in Error Messages (mame)
 This is the third time that we receive a ticket about the backtick and quote in error messages: #12321 for inconvenience in Slack, #13589 for weird appearance and inconvenience in syntax highlighting, this ticket for weird appearance.
 I know that it is an old-school custom and think that it is hard to change, but I’d like just to hear matz’s feelings.
 Discussion:
@@ -579,7 +593,7 @@ Conclusion:
 Need more investigation:
 How much efforts are required to change Ruby code.
 How many tools are depending the current quotes.
-[Feature #16484] Remove xmlrpc and net-telnet from bundled gems (hsbt)
+### [Feature #16484] Remove xmlrpc and net-telnet from bundled gems (hsbt)
 Does anyone have an objection?
 Discussion:
 Embedded environments sometimes need them.
@@ -592,7 +606,7 @@ No update for three years.
 Test failures are fixed.
 Conclusion:
 Remove from bundled gems.
-[Feature #15973] Let Kernel#lambda always return a lambda (ko1)
+### [Feature #15973] Let Kernel#lambda always return a lambda (ko1)
 How about to prohibit passing Proc for lambda to solve this issue completely?
 Or how about to obsolete lambda because we already have ->?
 To prohibit passing Proc objects because of syntax definition.
@@ -611,7 +625,7 @@ Conclusion:
 lambda(&b) will be prohibited.
 Print warning at 3.0. (No compatibility layer.)
 Raises error at 3.1 (or 3.2, …)
-[Feature #16499] define_method(non_lambda) should not change the semantics of the given Proc (ko1)
+### [Feature #16499] define_method(non_lambda) should not change the semantics of the given Proc (ko1)
 I have no strong opinion, but we need to check as related issue of #15973.
 Discussion:
 define_method(name) do end: The block is treated like lambda.
@@ -649,12 +663,13 @@ end
 Conclusion:
 matz: No strong opinion.
 Reject because of compatibility.
-[Bug #16406] (lambda_proc << normal_proc).lambda? should return false
+### [Bug #16406] (lambda_proc << normal_proc).lambda? should return false
 Does this need backport to 2.7 (and 2.6)?
 Conclusion:
 Backport
-[Bug #11878] Comparison of prepended modules
+### [Bug #11878] Comparison of prepended modules
 Inconsistent with ancestors order.
+```
 module A; end
 
 module I
@@ -671,6 +686,7 @@ end
 # current: same as include
 p A < P #=> false
 p A > P #=> true
+```
 
 call-seq:
    mod < other   ->  true, false, or nil

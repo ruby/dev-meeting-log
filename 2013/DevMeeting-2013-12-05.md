@@ -15,7 +15,7 @@ tags: Ruby, ruby-dev-meeting
 
 * hsbt
 
-### Venue (in-person)
+#### Venue (in-person)
 
 * zzak
 * sorah
@@ -24,7 +24,7 @@ tags: Ruby, ruby-dev-meeting
 * ko1
 * matz
 
-### IRC-only
+#### IRC-only
 
 * Add your irc handle below if you wish to participate
 * Moderator(s) will be indicated with a (m) after their handle

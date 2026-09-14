@@ -5,7 +5,7 @@ tags: Ruby, ruby-dev-meeting
 
 # DevMeeting-2015-05-14
 
-# DevelopersMeeting20150514Japan
+## DevelopersMeeting20150514Japan
 
 Date: 2015/05/14 (Thu)
 Time: 14:00- 19:00 (JST)
@@ -24,7 +24,7 @@ Please add your favorite ticket numbers you want to ask to discuss.
   * All of activities are best-effort (please remind that most of us are volunteer developers).
   * The date, time and place is when/where we can reserve Matz's time.
 
-# Agenda
+## Agenda
 
 * NOTE: Write at least "ticket number/title/link" and your name. Explain details on the ticket. If you can not attend meeting, short summary are welcome because we can understand easily (long discussion is difficult to read, especially in non-native languages). Your motivation is also welcome.
 
@@ -45,11 +45,11 @@ Please add your favorite ticket numbers you want to ask to discuss.
 * [Feature #11140] autoload should call `Kernel.require` to give rubygems a chance to handle loading (tenderlove)
 * [Feature #11151] Numeric#positive? and Numeric#negative?
 
-# Log
+## Log
 
 Attendee: ko1,ayumin,akr,hsbt,naruse; matz,sora_h
 
-## [[Feature #11084]](https://bugs.ruby-lang.org/issues/11084) Use rb-readline instead of ext/readline
+### [[Feature #11084]](https://bugs.ruby-lang.org/issues/11084) Use rb-readline instead of ext/readline
 
 hsbt: Ruby needs readline. openssl, zlib to build. rb-readline is a pure Ruby library. Replacing current readline with rb-readline (as a bundled gem) helps build problems. Current readline will be a gem. Now windows ruby installer already use rb-readline.
 
@@ -87,7 +87,7 @@ Next action:
 
 hsbt: I continue to use rb-readline and try it.
 
-## [[Feature #11083]](https://bugs.ruby-lang.org/issues/11083) Gemify net-telnet
+### [[Feature #11083]](https://bugs.ruby-lang.org/issues/11083) Gemify net-telnet
 
 hsbt: no maintainer so it should be gemify.
 
@@ -97,15 +97,15 @@ hsbt: Not sure.
 
 Matz: I accept bundled gem.
 
-## [[Feature #11082]](https://bugs.ruby-lang.org/issues/11082) Remove condition of RUBY_VERSION < 1.9 (hsbt)
+### [[Feature #11082]](https://bugs.ruby-lang.org/issues/11082) Remove condition of RUBY_VERSION < 1.9 (hsbt)
 
 hsbt: Title is wrong. Not < 1.9, but <= 1.9.
 
-## For path name
+#### For path name
 
 akr: no problem.
 
-## Remove such condition
+#### Remove such condition
 
 hsbt: Should we remove all such conditions? Rubygems only has such code.
 
@@ -113,7 +113,7 @@ nurse: No problem.
 
 matz: No problem.
 
-## Use newer features aggressively
+#### Use newer features aggressively
 
 hsbt: For example, adding keyword parameters support for many options
 
@@ -123,7 +123,7 @@ ayumin: Positive because using newer features helps to evaluate such features.
 
 ko1: Use newer features with keeping compatibility.
 
-## [[Feature #11049]](https://bugs.ruby-lang.org/issues/11049) Enumerable#grep_v (inversed grep) (sorah)
+### [[Feature #11049]](https://bugs.ruby-lang.org/issues/11049) Enumerable#grep_v (inversed grep) (sorah)
 
 matz: are you okay to use the name “grep_v”
 
@@ -141,7 +141,7 @@ matz: but grep_v() is okay. -> accept on ticket.
 
 naruse: How about reject(pattern) ?
 
-## [[Bug #10967]](https://bugs.ruby-lang.org/issues/10967) Remove "private attribute?" warning (zzak)
+### [[Bug #10967]](https://bugs.ruby-lang.org/issues/10967) Remove "private attribute?" warning (zzak)
 
 akr: self.private_something_method is accepted recently.
 
@@ -149,7 +149,7 @@ naruse: test can find problem, so warning is not needed.
 
 matz: accept .
 
-## [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? (zzak)
+### [[Feature #10984]](https://bugs.ruby-lang.org/issues/10984) Hash#contain? (zzak)
 
 akr: “contain” is too general. “subhash”?
 
@@ -157,7 +157,7 @@ n0kada: “contain?” seems similiar to “include?”
 
 akr: do we really use? we need concrete examples.
 
-## [[Bug #10856]](https://bugs.ruby-lang.org/issues/10856) Splat with empty keyword args
+### [[Bug #10856]](https://bugs.ruby-lang.org/issues/10856) Splat with empty keyword args
 
 ```ruby
 def foo
@@ -183,13 +183,13 @@ foo(**{}) #=> okay
 
 The first one seems wrong code, so an error is reasonable.
 
-## [[Feature #11140]](https://bugs.ruby-lang.org/issues/11140) autoload should call Kernel.require to give rubygems a chance to handle loading (tenderlove)
+### [[Feature #11140]](https://bugs.ruby-lang.org/issues/11140) autoload should call Kernel.require to give rubygems a chance to handle loading (tenderlove)
 
 nobu: no problem. -r already calls replaced require().
 
 matz: accept.
 
-## [[Feature #11151]](https://bugs.ruby-lang.org/issues/11151) Numeric#positive? and Numeric#negative?
+### [[Feature #11151]](https://bugs.ruby-lang.org/issues/11151) Numeric#positive? and Numeric#negative?
 
 akr: well usecase.
 
@@ -201,7 +201,7 @@ matz: accept because it has usecase.
 
 ---
 
-# How to implement Range#include? and Range#cover?
+### How to implement Range#include? and Range#cover?
 
 nobu: [https://bugs.ruby-lang.org/issues/11113](https://bugs.ruby-lang.org/issues/11113) specialize Time object
 
@@ -215,12 +215,12 @@ Nobu: Impement Range specializes String and try it.
 
 New syntax proposals
 
-# [[Feature #11141]](https://bugs.ruby-lang.org/issues/11141)  new syntax suggestion for abbreviate definition on block parameters in order
+### [[Feature #11141]](https://bugs.ruby-lang.org/issues/11141)  new syntax suggestion for abbreviate definition on block parameters in order
 [https://bugs.ruby-lang.org/issues/11141](https://bugs.ruby-lang.org/issues/11141)
 
 Matz: negative
 
-# Passing passed block
+### Passing passed block
 
 ko1: Passing passed block without making a Proc object improves performance of block passing. How about to introduce “&” syntax?
 
@@ -238,13 +238,13 @@ end
 
 Matz: positive
 
-# [ruby-list:50135] [ANN] Enumerator::Parallel v0.1.1
+### [ruby-list:50135] [ANN] Enumerator::Parallel v0.1.1
 
 Matz: how about to introduce it as bundled gem?
 
 ---
 
-# [ruby-list:50120] [ANN] Kasen(下線) v0.1.1
+### [ruby-list:50120] [ANN] Kasen(下線) v0.1.1
 
 Matz: I like this idea.
 
@@ -270,7 +270,7 @@ Which is favorite?
 
 Next action: ko1 will add discussion into 11141.
 
-# [[Feature #11105]](https://bugs.ruby-lang.org/issues/11105) ES6-like hash literals
+### [[Feature #11105]](https://bugs.ruby-lang.org/issues/11105) ES6-like hash literals
 [https://bugs.ruby-lang.org/issues/11105#change-52447](https://bugs.ruby-lang.org/issues/11105#change-52447)
 
 Problem 1: It seems “Set”

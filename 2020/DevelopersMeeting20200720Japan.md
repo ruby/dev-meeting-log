@@ -255,7 +255,7 @@ Conclusion:
 
 * not concluded.
 
-## [[Feature #16989]](https://bugs.ruby-lang.org/issues/16989) Sets need ♥️, aka the "Set Program" (marcandre)
+### [[Feature #16989]](https://bugs.ruby-lang.org/issues/16989) Sets need ♥️, aka the "Set Program" (marcandre)
 
 * Bring Set into core
 * Insure interoperability with Array (e.g so array & set works and is efficient)
@@ -343,7 +343,7 @@ h.each{|*a|
 h[:a] #=> ??
 ```
 
-### conclusion
+#### conclusion
 
 * matz: _Positive_ to introduce Set into core.  But we need to first introduce a set literal.  `{ x, y, z }` is good, but JavaScript uses it as another meanings, so it would bring confusion.  I have no idea.
 * knu: As a set library maintainer, I'll first communicate, and try to solve the easy issues that can be sorted out in the library side.

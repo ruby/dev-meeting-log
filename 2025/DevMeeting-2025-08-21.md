@@ -117,7 +117,7 @@ akr: a gem usually at least depends libc.
 
 ---
 
-https://bugs.ruby-lang.org/issues/21039 Ractor.make_shareable breaks block semantics (seeing updated captured variables) of existing blocks
+### https://bugs.ruby-lang.org/issues/21039 Ractor.make_shareable breaks block semantics (seeing updated captured variables) of existing blocks
 
 * `Ractor.shareable_proc` 
 
@@ -247,12 +247,12 @@ end
 
 ----
 
-https://bugs.ruby-lang.org/issues/21458 Test 'make install'?
+### https://bugs.ruby-lang.org/issues/21458 Test 'make install'?
 
 * shyouhei: Great idea.  It is difficult to verify the installation is correct or not though.
 * mame: I think it is a good small start to check only if `make install` does not fail or not. We should discuss how to verify what is installed
 
-https://bugs.ruby-lang.org/issues/21518 Statistical helpers to `Enumerable`
+### https://bugs.ruby-lang.org/issues/21518 Statistical helpers to `Enumerable`
 
 * `Enumerable#average`
 * `Enumerable#median`
@@ -261,35 +261,35 @@ https://bugs.ruby-lang.org/issues/21518 Statistical helpers to `Enumerable`
 * naruse: `Enumerable#sum` can be implemented if each elements have `+` methods but `#average` also requires division.
 * shyouhei: `Enumerable#sort` needs something more than `+` though.
 
-https://bugs.ruby-lang.org/issues/21385 Namespace: Suggesting a rename
+### https://bugs.ruby-lang.org/issues/21385 Namespace: Suggesting a rename
 
 * matz: Ruby Box!
 
-https://bugs.ruby-lang.org/issues/21528 `SyntaxError#message` may have broken encoding with multibyte source under Prism
+### https://bugs.ruby-lang.org/issues/21528 `SyntaxError#message` may have broken encoding with multibyte source under Prism
 
 * nobu: It must be fixed
 
-https://bugs.ruby-lang.org/issues/21529 Deprecate the `/o` modifier and warn against using it
+### https://bugs.ruby-lang.org/issues/21529 Deprecate the `/o` modifier and warn against using it
 
 * matz: I will reject
 
-https://bugs.ruby-lang.org/issues/21520 Feature Proposal: `Enumerator::Lazy#lazy_each`
+### https://bugs.ruby-lang.org/issues/21520 Feature Proposal: `Enumerator::Lazy#lazy_each`
 
-https://bugs.ruby-lang.org/issues/21527 Proposal: `Math.log1p` and `Math.expm1`
+### https://bugs.ruby-lang.org/issues/21527 Proposal: `Math.log1p` and `Math.expm1`
 
 * matz: accepted
 
-https://bugs.ruby-lang.org/issues/21515 Add `&return` as sugar for `x=my_calculation; return x if x`
+### https://bugs.ruby-lang.org/issues/21515 Add `&return` as sugar for `x=my_calculation; return x if x`
 
-https://bugs.ruby-lang.org/issues/21538 `initialize_dup` not called when duping `class`/`module`
+### https://bugs.ruby-lang.org/issues/21538 `initialize_dup` not called when duping `class`/`module`
 
 * matz: It would be nice to have it fixed...?
 
-https://bugs.ruby-lang.org/issues/21111 `RbConfig::CONFIG['CXX']` quietly set to "false" when Ruby cannot build C++ programs
+### https://bugs.ruby-lang.org/issues/21111 `RbConfig::CONFIG['CXX']` quietly set to "false" when Ruby cannot build C++ programs
 
 * nobu: https://github.com/nobu/ruby/tree/find_cxx
 
-https://bugs.ruby-lang.org/issues/21540 prism allows `foo && return bar` when parse.y doesn't
+### https://bugs.ruby-lang.org/issues/21540 prism allows `foo && return bar` when parse.y doesn't
 
 ```
 foo && return       # OK in parse.y, OK in prism
@@ -303,15 +303,15 @@ foo && (return foo) # OK in parse.y, OK in prism
 * matz: Fix it in the prism side
 * nobu: ditto for break and next.
 
-https://bugs.ruby-lang.org/issues/17316 `@result @||= expensive_calculation`
+### https://bugs.ruby-lang.org/issues/17316 `@result @||= expensive_calculation`
 
 * matz: I am against the syntax `@||=`
 
-https://bugs.ruby-lang.org/issues/12282 `Hash#dig!` for repeated applications of `Hash#fetch`
+### https://bugs.ruby-lang.org/issues/12282 `Hash#dig!` for repeated applications of `Hash#fetch`
 
 * matz: `path` in `fetch_path` resembles a file path in Ruby
 
-https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if it cannot dig deeper
+### https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if it cannot dig deeper
 
 * matz: How about `{ a: "foo" }.dig(:a, :b, weak: true) #=> nil`?
 * akr: `{ a: "foo" }.dig(:a, :b, exception: false) #=> nil`?
@@ -319,7 +319,7 @@ https://bugs.ruby-lang.org/issues/21545 `#try_dig`, a dig that returns early if 
 * ko1: what does `weak` mean?
 * matz: Ok the name is not good
 
-https://bugs.ruby-lang.org/issues/21543 Point `ArgumentError` to the call site
+### https://bugs.ruby-lang.org/issues/21543 Point `ArgumentError` to the call site
 
 ```ruby
 class TestClass

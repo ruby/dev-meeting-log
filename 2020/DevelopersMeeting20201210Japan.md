@@ -251,7 +251,7 @@ Conclusion:
 
 * matz: go ahead as experimental (`Ractor.receive_if{ ... }`)
 
-## report: rb_ext_ractor_safe(bool flag)
+### report: rb_ext_ractor_safe(bool flag)
 
 Now all extensions are ractor unsafe.
 

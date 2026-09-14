@@ -678,62 +678,62 @@ end
 
 * matz: I don't want to enhance yield any more
 
-### Jeremy's database
+## Jeremy's database
 
 http://tagged-ruby-bugs.jeremyevans.net/#!feedback-patch
 
-* https://bugs.ruby-lang.org/issues/8445
-  * ask @akr
-  * naruse: go ahead
+### https://bugs.ruby-lang.org/issues/8445
+* ask @akr
+* naruse: go ahead
 
-* https://bugs.ruby-lang.org/issues/8973
-  * nobu: added a comment
+### https://bugs.ruby-lang.org/issues/8973
+* nobu: added a comment
 
-* https://bugs.ruby-lang.org/issues/9115
-  * Hmm
+### https://bugs.ruby-lang.org/issues/9115
+* Hmm
 
-* https://bugs.ruby-lang.org/issues/9208
-  * nobu: I think it should be fixed in conemu side
-  * mame: I wonder if
+### https://bugs.ruby-lang.org/issues/9208
+* nobu: I think it should be fixed in conemu side
+* mame: I wonder if
 
-* Content-range with no "bytes"
-  * https://bugs.ruby-lang.org/issues/11450
-  * https://bugs.ruby-lang.org/issues/12055
-  * naruse: will look later
+### Content-range with no "bytes"
+* https://bugs.ruby-lang.org/issues/11450
+* https://bugs.ruby-lang.org/issues/12055
+* naruse: will look later
 
-* https://bugs.ruby-lang.org/issues/11526
-  * ?
+### https://bugs.ruby-lang.org/issues/11526
+* ?
 
-* https://bugs.ruby-lang.org/issues/12436
-  * mame: nobu please review it
+### https://bugs.ruby-lang.org/issues/12436
+* mame: nobu please review it
 
-* https://bugs.ruby-lang.org/issues/13513
-  * akr: I should review...
+### https://bugs.ruby-lang.org/issues/13513
+* akr: I should review...
 
-* https://bugs.ruby-lang.org/issues/13864
-  * (m_seki does not attend the meeting)
+### https://bugs.ruby-lang.org/issues/13864
+* (m_seki does not attend the meeting)
 
-* https://bugs.ruby-lang.org/issues/14582
-  * ko1: the documentation patch looks good. But the maintainer is tenderlove
+### https://bugs.ruby-lang.org/issues/14582
+* ko1: the documentation patch looks good. But the maintainer is tenderlove
 
-* https://bugs.ruby-lang.org/issues/14607
-  * ko1: the patch looks good. I ask @mame to check it
-  * mame: will do
+### https://bugs.ruby-lang.org/issues/14607
+* ko1: the patch looks good. I ask @mame to check it
+* mame: will do
 
-* Eric Wong's patches
-  * https://bugs.ruby-lang.org/issues/15263
-  * https://bugs.ruby-lang.org/issues/15310
-  * https://bugs.ruby-lang.org/issues/15315
-  * https://bugs.ruby-lang.org/issues/15386
+### Eric Wong's patches
+* https://bugs.ruby-lang.org/issues/15263
+* https://bugs.ruby-lang.org/issues/15310
+* https://bugs.ruby-lang.org/issues/15315
+* https://bugs.ruby-lang.org/issues/15386
 
-* https://bugs.ruby-lang.org/issues/16288
-  * nobu: I think it is already fixed
-  * mame: will confirm
+### https://bugs.ruby-lang.org/issues/16288
+* nobu: I think it is already fixed
+* mame: will confirm
 
-* https://bugs.ruby-lang.org/issues/16836
-  * Hmm
+### https://bugs.ruby-lang.org/issues/16836
+* Hmm
 
-* https://bugs.ruby-lang.org/issues/17120
-  * nobu: `\K` is not a lookbehind, but match reset
-  * mame: will close it.
-  * nobu: doc/regexp.rdoc has a wrong description about `\K`, maybe need to update
+### https://bugs.ruby-lang.org/issues/17120
+* nobu: `\K` is not a lookbehind, but match reset
+* mame: will close it.
+* nobu: doc/regexp.rdoc has a wrong description about `\K`, maybe need to update

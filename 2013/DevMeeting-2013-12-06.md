@@ -19,7 +19,7 @@ Please follow the [[DevelopersMeetingIRCGuidelines]] for irc
 
 ## Attendees
 
-### Venue (in-person)
+#### Venue (in-person)
 
 * zzak
 * shyouhei
@@ -28,7 +28,7 @@ Please follow the [[DevelopersMeetingIRCGuidelines]] for irc
 * hsbt
 * ko1
 
-### IRC-only
+#### IRC-only
 
 * Add your irc handle below if you wish to participate
 * Moderator(s) will be indicated with a (m) after their handle
@@ -52,7 +52,7 @@ Please follow the [[DevelopersMeetingIRCGuidelines]] for irc
 
 * Brief Summary of discussion on skype/irc https://gist.github.com/zzak/7875519
 
-# Summary
+## Summary
 
 ## 2013-12-06
 
