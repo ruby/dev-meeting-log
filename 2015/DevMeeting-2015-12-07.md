@@ -44,21 +44,21 @@ Please add your favorite ticket numbers you want to ask to discuss.
 
 Attendees: matz (skype), nobu (skype), naruse, sorah, ko1, duerst, zunda
 
-Next meeting
+## Next meeting
 2016/01/18 (Mon)
 
-[Feature #11777] Change NameError#local_variables to return the list of local variables where the method is raised (Yuki Nishijima & ko1)
+### [Feature #11777] Change NameError#local_variables to return the list of local variables where the method is raised (Yuki Nishijima & ko1)
 Matz: Accepted. Please note that it should be internal use. Documents should say that.
 
-[ANN] Replace infrastructure of svn.ruby-lang.org at 2015-2016. I will build new server at AWS tokyo region using Debian Jessie. (hsbt)
+### [ANN] Replace infrastructure of svn.ruby-lang.org at 2015-2016. I will build new server at AWS tokyo region using Debian Jessie. (hsbt)
 Shared.
 
-Report about experimental ISeq loader (ko1)
+### Report about experimental ISeq loader (ko1)
 Matz: Accepted to introduce to Ruby 2.3 as experimental feature.
 
 Matz: naming is important.
 
-Dreams if we have a budget (ko1)
+### Dreams if we have a budget (ko1)
 ko1: mac mini was provided by Yasulab via Ruby no Kai. Any other ideas?
 
 nurse: VPS is welcome.
@@ -83,7 +83,7 @@ ko1: education to grow other MRI developer
 Minor: add cygruby230.def to .gitignore (martin)
 nobu: approved
 
-[Feature #9098] tabs in indented heredoc
+### [Feature #9098] tabs in indented heredoc
 matz: choose 2.
 
 check open tickets https://bugs.ruby-lang.org/projects/ruby-trunk/issues

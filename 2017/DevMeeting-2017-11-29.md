@@ -167,8 +167,8 @@ Place: MoneyForward, Inc.
 Sign-up: https://ruby.connpass.com/event/70066/
 log edit: https://docs.google.com/document/d/1XTTzUINO2Fegt-eFgGTY8oGF3uTy5Bz4ZXJdKzyFp34/edit#heading=h.ujsctc6nvlk
 log: TBD
-Agenda
-About 2.5 timeframe
+## Agenda
+## About 2.5 timeframe
 https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25
 preview1 released
 

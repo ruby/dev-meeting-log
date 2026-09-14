@@ -124,7 +124,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - duerst: What about older versions? Backport?
 - naruse: If Unicode 12 could be released until 2.6.1, I think I can release 2.6.1 with Unicode 12.
 
-- How to address increasing spam to the bug tracker. (duerst)
+### How to address increasing spam to the bug tracker. (duerst)
 
 
 - #15212/#15213 are just two examples. They get removed (return a 404), which is good. But they reach the mailing list and its subscribers, which is a problem. Prefiltering bugs with URIs in titles seems to be a good start.
@@ -132,7 +132,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - hsbt: Efforts ongoing.
 - (details omitted from the log)
 
-- [[Misc #14632]](https://bugs.ruby-lang.org/issues/14632) [ANN] git.ruby-lang.org (hsbt)
+### [[Misc #14632]](https://bugs.ruby-lang.org/issues/14632) [ANN] git.ruby-lang.org (hsbt)
 
 - hsbt: I want to switch to git in 20 Oct.
 - usa: what happens?
@@ -141,7 +141,7 @@ I don't guarantee to put tickets in agenda if the comment violate the format (be
 - mame: Any restriction on git?
 - hsbt: push --force shall be forbidden.
 
-- [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) `Kernel#p` without args shows the receiver (ko1)
+### [[Feature #14609]](https://bugs.ruby-lang.org/issues/14609) `Kernel#p` without args shows the receiver (ko1)
 
 - It will be useful.
 
@@ -315,7 +315,7 @@ I am not sure if it is appropriate, but I'd also be very glad to hear about some
 - duerst: We don’t vote. Or in other words, we have only one person who votes. That’s Matz. Everybody else is very welcome to provide ideas, opinions,...
 - knu: There are many kinds of use cases mixed in one proposal, which need to be sorted out.  How many previous elements to look back, how to define an end of a sequence, etc.          I’ll come up with an alternative concrete API proposal.
 
-- [[Feature #12490]](https://bugs.ruby-lang.org/issues/12490) Remove warning on shadowing block params
+### [[Feature #12490]](https://bugs.ruby-lang.org/issues/12490) Remove warning on shadowing block params
 
 - mame: It was introduced when backward incompatibility was involved, but it is no longer a problem, so why not remove it?
 - knu: It’s painful when you have to change this just to silence the warning: user = users.find { |user| … }

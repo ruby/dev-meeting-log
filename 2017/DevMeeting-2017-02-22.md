@@ -94,11 +94,11 @@ Place: Money Forward inc. Headquarter
 Sign-up: https://ruby.connpass.com/event/47745/
 log edit: https://docs.google.com/document/d/1fZPbRMn2zjVAflvLz1IFWs3Kdijnm2Um4uNLammqURE/edit
 log: TBD
-Next meeting
+## Next meeting
 3/13
 at MoneyForward HQ
 
-About 2.5 timeframe
+## About 2.5 timeframe
 https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering25
 合宿
 project going on
@@ -110,14 +110,14 @@ naruse: no progress.
 hsbt: I’ll nudge shugo.
 matz: 2.1 security maintenance will last until March
 
-Carry-over from previous meeting(s)
-[Feature #9992] Access Modifiers (Internal Interfaces)
+## Carry-over from previous meeting(s)
+### [Feature #9992] Access Modifiers (Internal Interfaces)
 matz: the internal visibility is visible from where?
 nobu: not obvious?
 shyouhei: there seems to be a looong discussion.
 matz: seems the OP defines a namespace is a toplevel.
 matz: not feeling nice to me.
-[Feature #12968] Allow default value via block for Integer(), Float() and Rational()
+### [Feature #12968] Allow default value via block for Integer(), Float() and Rational()
 akr: Integer(string, exception: false) || 0
 naruse: that is #12732.
 matz: seems a bit long?
@@ -125,34 +125,34 @@ akira: there already are exception: false usages.
 matz: OK to have either one of them.
 shyouhei: I’ll comment on #12968 referring #12732.
 performance?
-[Feature #12995] Conditional expression taking a receiver outside the condition
+### [Feature #12995] Conditional expression taking a receiver outside the condition
 matz: this is impossible.
-[Feature #12996] Optimize Range#===
+### [Feature #12996] Optimize Range#===
 akr: is this compatible?
 mrkn: seems like that.
 nobu: breaks old brhaviour if you redefine Range#include?
 akr: I think that’s acceptable, given you want to subclass a Range.
 matz: OK then.
-[Feature #10912] Add method(s) to IPAddr for determining whether an address is link local
+### [Feature #10912] Add method(s) to IPAddr for determining whether an address is link local
 assign knu.
-[Bug #13005] Inline rescue is inconsistent when rescuing NoMethodError
+### [Bug #13005] Inline rescue is inconsistent when rescuing NoMethodError
 Martin: I thought rescue keyword was less priotiry.
 matz: thinking of x = y rescue z, exception is much more likely to happen inside of y, not in x.  so rescue should save y.
-[Feature #13026] Public singleton methods
+### [Feature #13026] Public singleton methods
 matz: not immediately against it but I want to know the use-case.
-[Bug #13024] Confusing error message matching a non-ASCII string with ASCII-regex
+### [Bug #13024] Confusing error message matching a non-ASCII string with ASCII-regex
 akr: I wrote the message.
 matz: is it a matter of error message?
 Martin: delete the “to” word.
 matz: how about “binary regexp match against...”
-[Feature #13009] Implement fetch for Thread.current
+### [Feature #13009] Implement fetch for Thread.current
 ko1: no objection
 matz: ditto,
 ko1: what about ENV?
 nobu: ENV also has this one.
-[Feature #13045] Passing a Hash with String keys as keyword arguments
+### [Feature #13045] Passing a Hash with String keys as keyword arguments
 matz: this request is NG but I understand the needs of conversion.  Make it a new feature request.
-[Feature #9846] Regexp#to_regexp
+### [Feature #9846] Regexp#to_regexp
 ko1: is there other method that has #to_regexp?
 mrkn: Object has.
 akr: what.
@@ -161,9 +161,9 @@ akr: conversion nowadays are done by try_convert, no?
 matz: try_convert was introduced to mean interfaces to C library.
 nobu: the proposed patch is NG
 ko1: there will be no to_r?
-[Feature #13047] Use String literal instead of String#+ for multiline pretty-printing of multiline strings
+### [Feature #13047] Use String literal instead of String#+ for multiline pretty-printing of multiline strings
 akr: is that more readable?
-[Feature #8661] Add option to print backstrace in reverse order(stack frames first & error last)
+### [Feature #8661] Add option to print backstrace in reverse order(stack frames first & error last)
 akr: why not just do this?
 matz: I like the idea but… breaks something?
 shyouhei: if you want to try this, do so today.
@@ -171,25 +171,25 @@ ko1: either make it customizable, or change the VM.
 naruse: I don’t like the idea.  SEGV output (which is in reverse-order) is hard to read.
 naruse: also when you log the output it is natural to list in the current order.
 continue discussion.
-[Feature #13077] [PATCH] introduce String#fstring method
+### [Feature #13077] [PATCH] introduce String#fstring method
 ko1: I don’t want the name fstring.
 matz: -@ seems OK.
-[Feature #13083] {String|Symbol}#match{?} with nil returns falsy as Regexp#match{?}
+### [Feature #13083] {String|Symbol}#match{?} with nil returns falsy as Regexp#match{?}
 matz: it seems #match should raise instead.
-[Feature #12508] Integer#mod_pow
+### [Feature #12508] Integer#mod_pow
 matz: OK. go ahead.
-[Misc #13072] Current state of date standard library
+### [Misc #13072] Current state of date standard library
 naruse: This ticket is great.  It summarizes the current situation quite accurately.
 akr: we don’t want to merge Date with Time.
 shyouhei: independent from the future of Date, we are going to separate Date._parse. Right?
-[Feature #13097] Deprecate Socket.gethostbyaddr and Socket.gethostbyname
+### [Feature #13097] Deprecate Socket.gethostbyaddr and Socket.gethostbyname
 akr: I think we should implement gethostbyaddr on top of getaddrinfo.
-From attendees
-[Bug #13225] [DOC] expand docs for Date shifting
+## From attendees
+### [Bug #13225] [DOC] expand docs for Date shifting
 hsbt: I want him to be a committer.
 matz: OK.
 nobu: I have seen no problem on his past patches.
-[Feature #13156] In-tree copy of ruby/spec
+### [Feature #13156] In-tree copy of ruby/spec
 duerst: this way you can commit ruby and spec at once.
 shyouhei: neutral.
 duerst: +. it is easier than separate repo
@@ -200,17 +200,17 @@ mspec lacks some feature. CF [ruby-core:79088]
 I don’t think we are going to maintain both test-all and test-rubyspec.  We are either going to switch to rubyspec, or to remain test-all.  And I don’t think we are going to abondon test-all.
 nobu: somewhat negative.
 akr: I’d like to propose more use of test-all.  test-all tends to have tests for new features.  I think it’s easier to use it than to change core people.
-[Feature #13133] TracePoint: Add event type for constant access
+### [Feature #13133] TracePoint: Add event type for constant access
 hsbt: I want ko1 to look at it.
 ko1: this will introduce other trace hooks.
 ko1: trace overhead is OK when enabled but is a problem when not traced at all.  Current implementation has overhead when on such situation.
 akr: regeneration of binary is needed to reroute that I think.
-[Feature #13197] Gemify fileutils
+### [Feature #13197] Gemify fileutils
 https://bugs.ruby-lang.org/issues/13197#note-4
 hsbt: there already are gems named “fileutils” or “dbm”...
 rubygems.org blocked these namespaces from future additions, but they are there already.
 pathname depends on fileutils.
-[Feature #13240, Feature #13241] Change Unicode property implementation / Method(s) to access Unicode properties (duerst)
+### [Feature #13240, Feature #13241] Change Unicode property implementation / Method(s) to access Unicode properties (duerst)
 Martin: currently we can know if a string contains, say, Hiragana, but there is no way to say what script the given string is.
 akr: onigumo issue should be reported to their repo.
 Martin: that was not what we did for unicode-aware cases

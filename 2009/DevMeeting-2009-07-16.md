@@ -27,16 +27,16 @@ tags: Ruby, ruby-dev-meeting
 
 Please write your name at the end of your topics such as -> (ko1).
 
-* [[ruby-core:24113]] (shyouhei)
-  * なんか頑張る
-* [[ruby-dev:30954]] (nobu)
-  * 中田さんがメンテナだったら，trunk に突っ込んでいいよ
-* [[ruby-dev:38785]] (shugo)
-  * to_a -> to_ary (ko1)
-* [[tracing]] (rocky)
-  * Note: I won't be at this meeting, but I am hoping that ko1 will lead the discussion.
-  * なんか頑張る
-* vendor へのセキュリティ連絡 (yugui)
-  * vendor-sec という ML を購読して下さい
-* 1.8 のサポートレベル (yugui)
-  * いらない
+### [[ruby-core:24113]] (shyouhei)
+* なんか頑張る
+### [[ruby-dev:30954]] (nobu)
+* 中田さんがメンテナだったら，trunk に突っ込んでいいよ
+### [[ruby-dev:38785]] (shugo)
+* to_a -> to_ary (ko1)
+### [[tracing]] (rocky)
+* Note: I won't be at this meeting, but I am hoping that ko1 will lead the discussion.
+* なんか頑張る
+### vendor へのセキュリティ連絡 (yugui)
+* vendor-sec という ML を購読して下さい
+### 1.8 のサポートレベル (yugui)
+* いらない

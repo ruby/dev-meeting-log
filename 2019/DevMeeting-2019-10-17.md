@@ -60,10 +60,10 @@ A proposal is often changed during the discussion, so it is very helpful to summ
 ## Log
 
 https://bugs.ruby-lang.org/issues/16232
-Venue
+## Venue
 10/17 (Thu) 13:00-17:00 @ pixiv Inc. (6F)
 up to 6F, and ask someone to call usa-san in Studio
-Attendees
+## Attendees
 Add your name (or ask a committer to invite you)
 matz (remote)
 mame (remote)
@@ -77,26 +77,26 @@ mrkn (remote)
 akr
 Soutaro
 knu
-Absent:
+## Absent:
 Martin Dürst (trip to Unicode Conference)
 Shyouhei (is sick)
 
 
-Next Date
+## Next Date
 11/12 (Tue) 13:00-17:00 @ full remote
 Review all 2.7 new features
 11/28 (Thu) 13:00-17:00 @ pixiv 6F studio
 Monthly meeting; it would be the last change for 2.7 new features
-Announce
-About 2.7 timeframe
+## Announce
+## About 2.7 timeframe
 preview 2
 naruse: within a few days, maybe
-Next Stable releases timeframe
+## Next Stable releases timeframe
 usa: maybe the 2nd week of December?
 mame: need to ask nagachika-san
-Check security tickets
-Topics
-[Feature #16029] Expose fstring related APIs to C-extensions (byroot)
+## Check security tickets
+## Topics
+### [Feature #16029] Expose fstring related APIs to C-extensions (byroot)
 Apparently the current implementation is complicated to expose, but no details were provided.
 Is there something I or others could change to the implementation so that it could be exposed?
 Discussion:
@@ -107,7 +107,7 @@ nobu: yes
 ko1: it’s a little dangerous
 nobu: the dangerousness is not of fstring but of shared string
 ko1: exposing these APIs may introduce many bugs on corner cases, I guess
-[Feature #16038] Provide a public WeakMap that compares by equality rather than by identity (byroot)
+### [Feature #16038] Provide a public WeakMap that compares by equality rather than by identity (byroot)
 Matz asked for real world use-case, which I did provide.
 In short it’s useful for implementing value objects deduplication, just like how the fstring table works, but for user defined, more complex types.
 Discussion:
@@ -131,7 +131,7 @@ mame: I agree akr. there might be much better API
 akr: I think that this proposal expects an ideal GC. The real application may behave badly if GC is invoked too frequently or too rare.
 usa: at all, should we implement this API in 2.7 or not?
 matz: we don’t have to be rough-and-ready in this case
-[Bug #10314] Default argument lookup fails in Ruby 2.2 for circular shadowed variable names (jeremyevans)
+### [Bug #10314] Default argument lookup fails in Ruby 2.2 for circular shadowed variable names (jeremyevans)
 Do we want to change def foo(bar=bar) from warning to SyntaxError using the patch?
 Discussion:
 nobu: we can make this an error now
@@ -140,7 +140,7 @@ ko1: method body?
 mame: should be in another ticket. should warn before to be an error
 ko1: matz, is the change ok?
 matz: ok
-[Bug #11055] autoload resets private_constant (jeremyevans)
+### [Bug #11055] autoload resets private_constant (jeremyevans)
 Do we want to copy constant visibility information across the autoload using the patch?
 Discussion:
 usa: is this bug?
@@ -148,11 +148,11 @@ matz: maybe. but if a library does not recognize the constant is private, how au
 nobu?: Current implementation is to delete the constant from the entry, and add new one, then private flag is cleared
 matz: how to fix?
 nobu: I’ll look this in a few days.
-[Bug #13249] Access modifiers don’t have an effect inside class methods in Ruby >= 2.3 (jeremyevans)
+### [Bug #13249] Access modifiers don’t have an effect inside class methods in Ruby >= 2.3 (jeremyevans)
 Do we want to add a warning for misuse of method visibility methods using the patch?
 Discussion:
 already fixed.
-[Bug #15267] File.basename + File.extname does not restore the original name (jeremyevans)
+### [Bug #15267] File.basename + File.extname does not restore the original name (jeremyevans)
 Do we want to make them restore the original name using the patch?
 Discussion:
 name = 'file.'
@@ -163,7 +163,7 @@ File.extname(name) #=> ""
 usa: should fix File.extname, not File.basename, because of their usecases, if we do
 File.extname("foo.") will be "."
 matz: ok
-[Feature #16245] Add interfaces to count and measure size all IMEMO objects (Sam Saffron)
+### [Feature #16245] Add interfaces to count and measure size all IMEMO objects (Sam Saffron)
 Would love to see this included in 2.7, refined proposal does not add any new APIs.
 Discussion:
 RubyVM.stat
@@ -185,7 +185,7 @@ RubyVM.stat
 
 
 ko1: I’ve already responded.
-[Feature #13683] Add strict Enumerable#single (rafaelfranca)
+### [Feature #13683] Add strict Enumerable#single (rafaelfranca)
 Matz didn’t like the single name but we have a proposal for #only
 Discussion:
 [1].only    #=> 1
@@ -209,7 +209,7 @@ end
 #=> t.rb:3:in `<main>': [1, 2] (NoMatchingPatternError)
 
 
-[Bug #16143] BOM UTF-8 is not removed after rewind (kou)
+### [Bug #16143] BOM UTF-8 is not removed after rewind (kou)
 Can we commit this? I’ve reviewed. I think that this is ready to merge.
 Discussion:
 usa: rewind doesn’t sound like encoding aware.
@@ -223,7 +223,7 @@ naruse: If a code rewind and write BOM, this change will break such code.
 Let CSV#rewind know if it need to handle bom: test if the input is unicode and skip the bom???
 Add Encoding#unicode? and IO#skip_bom
 => rewind(skip_bom: true)
-[Feature #15822] Add Hash#except (zverok)
+### [Feature #15822] Add Hash#except (zverok)
 The method is really useful, even with ActiveSupport-less codebases I constantly tend to redefine it with core ext or refinements. Hash#slice was merged in 2.5; it was initially discussed in #8499 alongside the except, but from the discussion, it is not obvious why #except was “lost” :(
 Discussion:
 ActiveSupport: https://api.rubyonrails.org/classes/Hash.html#method-i-except
@@ -240,14 +240,14 @@ naruse: Hash#slice was introduced in the context of #13563, not #8499. In #13563
 matz: Want to see the actual use case. And I don’t like the name “except”.
 Q. What about extending select/reject to alternatively take keys instead of a block?
 A. (by knu) hash.select()/hash.reject() currently returns an Enumerator, so hash.select(*keys) wouldn’t work as intended (returning a slice of hash) when keys were empty and that’d be confusing and error prone.
-[Feature #16131] Remove $SAFE, taint and trust (jeremyevans)
+### [Feature #16131] Remove $SAFE, taint and trust (jeremyevans)
 Does anyone have time to review the patch (extensive changes, mostly code deletion)?
 How do we want to handle included libraries with separate upstreams that want to be compatible with older Ruby versions (bundler, rubygems, etc.)?
 Discussion:
 akr: Adding new mechanism to make warnings for transitions would make sense (the warnings are not printed with -v.)
 No recommendation from ruby committers to rubygems team.
 mame: Will reply.
-[Feature #16255] Make monitor.rb built-in (ko1)
+### [Feature #16255] Make monitor.rb built-in (ko1)
 maybe there is no problem.
 Should we make MonitorMixin built-in?
 Discussion:
@@ -255,7 +255,7 @@ matz: to make built-in expresses the wrong message to users to encourage to use 
 ko1: ok, make it as extention library
 ko1: is Thread::Monitor necessary?
 usa: if it’s built-in, it’s necessary. but not, no.
-[Feature #16254] MRI internal: Define built-in classes in Ruby with intrinsic syntax (ko1)
+### [Feature #16254] MRI internal: Define built-in classes in Ruby with intrinsic syntax (ko1)
 only on small start, maybe there is no problem.
 many points we need to decide.
 Discussion:
@@ -270,7 +270,7 @@ akr: How about conditional compilation? We can use #ifdef freely now but Ruby fi
 naruse: should release with 2.7.
 How will the ruby file path look like from ruby? => same as prelude internal:trace_point.rb.
 Timeline: will be merged within a few weeks, before preview 3.
-[Feature #16253] Shorthand “forward everything” syntax (mame)
+### [Feature #16253] Shorthand “forward everything” syntax (mame)
 How about introducing def foo(...); bar(...); end? It does not solve the compatibility issue of keyword argument separation, but it would provide a useful shorthand for delegation if the code doesn’t have to work on 2.6.
 Discussion:
 You are allowed to use ... as many times as you want in one method body.
@@ -331,7 +331,7 @@ Future work: lead argument handling is postponed
 lead arguments can be extracted
 lead arguments can be added
 def f(x, y, ...); g(1, 2, ...); end
-[Feature #16150] Add a way to request a frozen string from to_s (mame)
+### [Feature #16150] Add a way to request a frozen string from to_s (mame)
 Symbol#to_s started to return a frozen string in 2.7.0-preview1, and that revealed at least seven incompatibility issues. To make sure: is it okay to keep this change in 2.7.0-preview2?
 Issues reported from some gems including middleman, tested with trunk.
 More issues will be reported after preview2.
@@ -340,23 +340,23 @@ mame: Fixing the issues is not very difficult.
 amatsuda: Rails fixed.
 naruse: negative.  If unmaintained gems had a problem with this, what should one do?
 matz: Go ahead anyway.  Get them fixed.
-[Feature #16120] Omitted block argument if block starts with dot-method call (Dan0042)
+### [Feature #16120] Omitted block argument if block starts with dot-method call (Dan0042)
 last time Matz said “Give me time to consider it”; there is now a patch ready; is it ok to accept?
 Discussion:
 matz: No, I decided to reject it.  Use the _n parameter.
-[Feature #13083] {String|Symbol}#match{?} with nil returns falsy as Regexp#match{?} (znz)
+### [Feature #13083] {String|Symbol}#match{?} with nil returns falsy as Regexp#match{?} (znz)
 Matz said “Those methods (but =~) should consistently raise exceptions.” and pull request’s conflicts resolved again.
 Discussion:
 matz: go ahead
-[Misc #16258] Combine call info and cache to speed up method invocation (alanwu)
+### [Misc #16258] Combine call info and cache to speed up method invocation (alanwu)
 Looking for feedback and reviews. I think this offers a good perf boost.
 Discussion:
 ko1: will consider and reply
 — time up —
-[Bug #15912] Allow some reentrancy during TracePoint events (alanwu)
+### [Bug #15912] Allow some reentrancy during TracePoint events (alanwu)
 I have seen quite a few people confused about Byebug’s REPL not working as they would expect due to this issue. I think it’s important to come up with some solution for this in two seven.
 Discussion:
-[Feature #16142] Implement code_range in Proc and Method - Ruby master - Ruby Issue Tracking System (osyo)
+### [Feature #16142] Implement code_range in Proc and Method - Ruby master - Ruby Issue Tracking System (osyo)
 Propose an API to get code position of Proc and Method so that we can get body of them (especially of a Proc).
 I want to discuss method names and return values
 Discussion:

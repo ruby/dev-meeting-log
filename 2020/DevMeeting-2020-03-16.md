@@ -40,24 +40,24 @@ Example:
 ## Log
 
 https://bugs.ruby-lang.org/issues/16661
-Venue
+## Venue
 3/16 (Mon) 13:00-17:00 @ online
-Attendees
+## Attendees
 Add your name (or ask a committer to invite you)
 matz (remote)
 mame
 duerst (remote)
-Next Date
+## Next Date
 4/10 (Fri) 13:00-17:00 @ online
-Announce
-Ruby 2.7 timeframe
+## Announce
+## Ruby 2.7 timeframe
 Release 2.7.1 in March.
-About 2.8/3.0 timeframe
+## About 2.8/3.0 timeframe
 No topic
 To move to 3.0, anything new is wanted
-Check security tickets
+## Check security tickets
 [secret]
-[Bug #16175] Object#clone(freeze: true) is inconsistent with Object#clone(freeze: false) (jeremyevans0)
+### [Bug #16175] Object#clone(freeze: true) is inconsistent with Object#clone(freeze: false) (jeremyevans0)
 Do we want Object#clone(freeze: true) to return a frozen clone if receiver is unfrozen?
 Discussion:
 h = {}.freeze
@@ -81,7 +81,7 @@ akr: If this is accepted, clone(freeze: nil) should keep the frozen state
 matz: Don’t see an immediate reason to introduce freeze: nil
 Conclusion:
 clone(freeze: true) is accepted
-[Feature #15357] Proc#parameters returns incomplete type information (jeremyevans0)
+### [Feature #15357] Proc#parameters returns incomplete type information (jeremyevans0)
 Can we add a :lambda keyword argument to Proc#parameters using the patch, returning results as if the proc was a lambda proc?
 Discussion:
 pr = proc{|a,b=2| [a,b] }
@@ -105,7 +105,7 @@ pr.parameters(lambda: true)  # => [[:opt, :a], [:req, :b]]
 
 Conclusion:
 matz: let me consider for a while.
-[Bug #16677] Negative integer powered (**) to a float number results in a complex (alanwu)
+### [Bug #16677] Negative integer powered (**) to a float number results in a complex (alanwu)
 Currently -2 ** 2 is parsed as -(2 ** 2) but -2.itself ** 2 is parsed as ((-2).itself) ** 2 which seems inconsistent to me
 Since (-2 ** 2) == (-(2 ** 2)), I expected (-2.itself ** 2) == (-(2.itself ** 2)) but that is not the case
 The parsing rules around whether - is part of a literal or a use of the unary minus operator seems weird
@@ -114,7 +114,7 @@ Discussion:
 Already closed by matz.
 Conclusion:
 matz: no change to keep the compatibility
-[Bug #16689] [BUG] try to mark T_NONE object (byroot)
+### [Bug #16689] [BUG] try to mark T_NONE object (byroot)
 Cause Ruby to crash when the heap gets past a certain size.
 Looks like a bug in GC
 This is a total blocker for us to upgrade to 2.7.x
@@ -122,7 +122,7 @@ Discussion:
 alanwu’s patch: https://github.com/ruby/ruby/pull/2964
 Conclusion:
 ko1: merged.
-[Bug #16682] Ruby 2.7.0p0 crash on exit if there is an active RUBY_INTERNAL_EVENT_GC_EXIT tracepoint (byroot)
+### [Bug #16682] Ruby 2.7.0p0 crash on exit if there is an active RUBY_INTERNAL_EVENT_GC_EXIT tracepoint (byroot)
 Can more easily be worked around.
 alanwu has a patch for it https://github.com/ruby/ruby/pull/2959
 Discussion:
@@ -130,7 +130,7 @@ Already closed per OP’s request.
 Conclusion:
 ko1: SEGV was fixed by #16689, but there is another issue that all TracePoints are not closed before exit
 ko1: will review the patch with nobu
-[Bug #16497] StringIO#internal_encoding is broken (more severely in 2.7) (zverok)
+### [Bug #16497] StringIO#internal_encoding is broken (more severely in 2.7) (zverok)
 This bug cause a lot of backward compatibility issues for people upgrading to 2.7
 I might have a patch for it: https://github.com/ruby/ruby/pull/2960
 Discussion:
@@ -138,7 +138,7 @@ Already merged by naruse.
 Conclusion:
 nobu: there is another issue remained. I will fix it
 naruse: please reopen the ticket and set backport. I’ll backport.
-[Bug #16466] *args -> *args delegation should be warned when the last hash has a ruby2_keywords flag (eregon)
+### [Bug #16466] *args -> *args delegation should be warned when the last hash has a ruby2_keywords flag (eregon)
 Since it seems #16463 will be rejected, it’s needed to fix this to not make migration to Ruby 3 worse.
 Discussion:
 def baz(**kw)
@@ -165,38 +165,38 @@ matz: Very tough decision, but I want to keep the compatibility as-is.
 
 
 
-[Feature #12654] On Windows use UTF-8 as filesystem encoding (shyouhei)
+### [Feature #12654] On Windows use UTF-8 as filesystem encoding (shyouhei)
 shyouhei: What’s the status?
 usa: Will do at Ruby 3.0. Aim: June
-[Bug #12368] default encoding of Integer#chr (mame)
+### [Bug #12368] default encoding of Integer#chr (mame)
 naruse: see no actual use case, lets close
-[Bug #12392] configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない (mame)
+### [Bug #12392] configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない (mame)
 nobu: will do.
-[Bug #12416] struct rb_id_table lacks mark function (mame)
+### [Bug #12416] struct rb_id_table lacks mark function (mame)
 shyouhei: shiozuke
-[Bug #12436] newline argument of File.open seems not respected on Windows (mame)
+### [Bug #12436] newline argument of File.open seems not respected on Windows (mame)
 akr: on Windows, text mode ignores newline: :lf
 usa: no one will use this mode (text mode is used only on windows), so let’s raise an exception?
 nobu: will do
-[Bug #12485] Kernel.Rational raises TypeError though given denominator returns 1 by to_int (mame)
-[Bug #12540] test failures when SHARABLE_MIDDLE_SUBSTRING=1 (mame)
+### [Bug #12485] Kernel.Rational raises TypeError though given denominator returns 1 by to_int (mame)
+### [Bug #12540] test failures when SHARABLE_MIDDLE_SUBSTRING=1 (mame)
 ko1: let’s remove SHARABLE_MIDDLE_SUBSTRING
-[Bug #12547] Remove ONIG_UNICODE_VERSION_… in enc/unicode/case-folding.rb, casefold.h (mame)
+### [Bug #12547] Remove ONIG_UNICODE_VERSION_… in enc/unicode/case-folding.rb, casefold.h (mame)
 naruse: looks good
 nobu: will do
-[Bug #12548] Rounding modes inconsistency between round versus sprintf (mame)
+### [Bug #12548] Rounding modes inconsistency between round versus sprintf (mame)
 naruse: don’t want to fork BSD sprintf implementation
-[Bug #12551] Exception accessing file with long path on windows (mame)
+### [Bug #12551] Exception accessing file with long path on windows (mame)
 usa: need to research Python
-[Bug #12599] For CLang, increase inline-threshold to get 7%-10% speedup of optcarrot (mame)
+### [Bug #12599] For CLang, increase inline-threshold to get 7%-10% speedup of optcarrot (mame)
 naruse: reject?
-[Bug #12666] Fatal error: glibc detected an invalid stdio handle (mame)
+### [Bug #12666] Fatal error: glibc detected an invalid stdio handle (mame)
 shyouhei: will close
-[Bug #12671] Hash#to_proc result is not a lambda, but enforces arity (mame)
+### [Bug #12671] Hash#to_proc result is not a lambda, but enforces arity (mame)
 matz: lets make it lambda
-[Bug #12689] Thread isolation of $~ and $_ (mame)
+### [Bug #12689] Thread isolation of $~ and $_ (mame)
 ko1: will consider
-[Bug #12706] Hash#each yields inconsistent number of args
+### [Bug #12706] Hash#each yields inconsistent number of args
 (mame)
 { a: 1 }.each do |ary|
   ary == [:a, 1]
@@ -216,6 +216,6 @@ foo(&->(a,b){p [a,b]})   #=> error
 foo(&->(a,b=1){p [a,b]}) #=> [[:a, 1], 1]
 
 matz: I want to give it a try (incompatibility)
-[Bug #12780] BigDecimal#round returns different types depending on argument (mame)
+### [Bug #12780] BigDecimal#round returns different types depending on argument (mame)
 matz: I like it to return an Integer.  Will add a comment.
 

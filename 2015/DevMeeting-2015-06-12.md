@@ -139,7 +139,7 @@ Action: Matz will approve it.
 
 matz: add keyword argument “flags”, which is OR-ed with 2nd argument mode.
 
-\[Feature #11158\] Introduce a Symbol.count API as a more efficient alternative to Symbol.all_symbols.size
+### \[Feature #11158\] Introduce a Symbol.count API as a more efficient alternative to Symbol.all_symbols.size
 
 naruse: If they use this for metrics, it should show 3 different count for each symbol types
 

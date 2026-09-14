@@ -421,7 +421,7 @@ log: [https://docs.google.com/document/d/1ZKk-vxoYkq8b2H4ml2z4NhoHsi3GdZqhNXNgpB
 - try to use that from SecureRandom
 - if it fails, fallback to OpenSSL.
 
-- \[Bug #13135\] Regexp.last_match returns nil with s.rindex(//)
+### \[Bug #13135\] Regexp.last_match returns nil with s.rindex(//)
 
 - everyone: isn’t it a bug?
 - ko1: assign shugo.

@@ -213,7 +213,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ### [[Feature #13563]](https://bugs.ruby-lang.org/issues/13563) Implement Hash#choice method. (shyouhei)
 
-- Previous bugs that were not assigned (shyouhei)
+### Previous bugs that were not assigned (shyouhei)
 
 
 ### [[Bug #13196]](https://bugs.ruby-lang.org/issues/13196) Improve keyword argument errors when non-keyword arguments given
@@ -294,7 +294,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ### [[Feature #13618]](https://bugs.ruby-lang.org/issues/13618) [PATCH] auto fiber schedule for rb_wait_for_single_fd and rb_waitpid (ko1)
 
-- [[Bug #13576]](https://bugs.ruby-lang.org/issues/13576) File#to_path shall be deleted (shyouhei)
+### [[Bug #13576]](https://bugs.ruby-lang.org/issues/13576) File#to_path shall be deleted (shyouhei)
 
 - akr: did you try deleting this method?
 - shyouhei: no, but I should.

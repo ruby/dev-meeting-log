@@ -199,7 +199,7 @@ Revisions r61785, r61786, r61787 were introduced by the request from @naruse. Ho
 - Matz: Understand the needs.
 - Shyouhei: Should it be keyword arguments?
 
-- Maintainers of csv (mrkn/kou)
+### Maintainers of csv (mrkn/kou)
 
 
 - Mame: JEG2.
@@ -229,19 +229,19 @@ Revisions r61785, r61786, r61787 were introduced by the request from @naruse. Ho
 - Matz: This feature is something to extinct in future.
 - Naruse: Is there actual use case other than tests?
 
-- \[Bug #4443\] odd evaluation order in a multiple assignment (mame)
+### \[Bug #4443\] odd evaluation order in a multiple assignment (mame)
 
 - Matz: I would like to fix it if possible, but no idea how.
 
-- \[Feature #4475\] default variable name for parameter (mame)
+### \[Feature #4475\] default variable name for parameter (mame)
 
 - Matz:rejected
 
-- \[Feature #4830\] Provide Default Variables for Array#each and other iterators (mame)
+### \[Feature #4830\] Provide Default Variables for Array#each and other iterators (mame)
 
 - Matz:ditto.
 
-- \[Feature #4513\] allow whitespace following EOL continuation backslash (mame)
+### \[Feature #4513\] allow whitespace following EOL continuation backslash (mame)
 
 - Usa: nobody uses ancient editor without detection of such spaces.
 - Shyouhei: the example is about IRB and that’s a different story than the core.

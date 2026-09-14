@@ -177,7 +177,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - ko1: I don’t like this idea.  I don’t want more states over a Thread.
 - matz: I feel needs of more explainations.
 
-- Previous bugs that were not assigned (shyouhei)
+### Previous bugs that were not assigned (shyouhei)
 
 
 ### [[Bug #13350]](https://bugs.ruby-lang.org/issues/13350) File.read :newline option not respected on Linux
@@ -298,7 +298,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - akr: do we have to know that info?
 - naruse: I have wanted C level stack trace for a long time.
 
-- bugs that are not assigned (shyouhei)
+### bugs that are not assigned (shyouhei)
 
 
 ### [[Bug #13586]](https://bugs.ruby-lang.org/issues/13586) Ruby hangs when accessing array which is modified in instance_eval after Coverage.start

@@ -236,7 +236,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 - nobu: mruby doesn’t work this way, BTW.
 - shyouhei: OK, lets close.
 
-- [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read_nonblock/etc (shyouhei)
+### [[Feature #11484]](https://bugs.ruby-lang.org/issues/11484) add output offset for readpartial/read_nonblock/etc (shyouhei)
 
 - akr: sounds OK to me.
 - shyouhei: seems nobody is against the feature itself but the API?
@@ -393,7 +393,7 @@ puts "tomatoe".vegetables
 - naruse: compatibility version shall be “2.4.0” or “2.4”, and linked libray should be libruby.2.4.dylib
 
 
-- [[Bug #13917]](https://bugs.ruby-lang.org/issues/13917) Comparable#clamp is slower than using Array#min,max. (naruse)
+### [[Bug #13917]](https://bugs.ruby-lang.org/issues/13917) Comparable#clamp is slower than using Array#min,max. (naruse)
 
 - nobu: the prposed patch seems roughly okay
 - mame: we don’t optimize Comparable#clamp for literals, because no practical usage can be thought for such thing. NEWS shall be consulted.

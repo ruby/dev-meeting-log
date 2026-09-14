@@ -292,7 +292,7 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ### [[Feature #13712]](https://bugs.ruby-lang.org/issues/13712) String#start_with? with regexp (shyouhei)
 
-- bugs that are not assigned (shyouhei)
+### bugs that are not assigned (shyouhei)
 
 
 ### [[Bug #13674]](https://bugs.ruby-lang.org/issues/13674) BigDecimal comparison with Float::INFINITY is erroneous in 2.2.x and 2.3.x
@@ -374,8 +374,8 @@ Language: mostly Japanese (sorry for non native Japanese speakers)
 
 ### [[Misc #13840]](https://bugs.ruby-lang.org/issues/13840) Collection methods - stability (shyouhei, duerst (propose to reject))
 
-- [[Feature #13801]](https://bugs.ruby-lang.org/issues/13801) Implement case equality test for Set#=== (duerst)
-- bugs that are not assigned (shyouhei)
+### [[Feature #13801]](https://bugs.ruby-lang.org/issues/13801) Implement case equality test for Set#=== (duerst)
+### bugs that are not assigned (shyouhei)
 
 
 ### [[Bug #13549]](https://bugs.ruby-lang.org/issues/13549) MinGW / Windows encoding - Two issues

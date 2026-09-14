@@ -23,7 +23,7 @@ Attendees: sign up required: http://cruby.doorkeeper.jp/events/8928
 
 DevelopersMeeting20140214Japan
 
-[Feature #9502] Remove deprecated definitions: akr
+### [Feature #9502] Remove deprecated definitions: akr
 akr: deprecated をそろそろ消してよいのでは
 
 akr: 消すなら早い今がよいのでは
@@ -31,12 +31,12 @@ akr: 消すなら早い今がよいのでは
 matz: #9502ですね。消すのに賛成です
 
 
-[Feature #8887] min(n), max(n), min_by(n), max_by(n): akr slide
+### [Feature #8887] min(n), max(n), min_by(n), max_by(n): akr slide
 
 matz: 追加してもいいと思います。前に話が出た時にも反対はなくてタイミングだけの問題だったと思いました。
 
 
-[Feature #6083] Hide a Bignum definition: ko1 & akr
+### [Feature #6083] Hide a Bignum definition: ko1 & akr
 matz:
 
 Even though this breaks source compatibility, it is worth changing it (to mark dangerous operation).
@@ -59,7 +59,7 @@ security@ に来ていた bigdecimal の件
 
 mrkn の判断でセキュリティ問題ではない、ということにしたので、普通の不具合修正として対応する。
 
-GC algorithm changes for 2.1.1 (ko1)
+### GC algorithm changes for 2.1.1 (ko1)
 
 GCアルゴリズムの変更、現状がメモリ食いすぎなのでチューニングとコードの変更を行う。環境変数の追加、たぶんパラメータチューニングで収まる
 
@@ -67,7 +67,7 @@ GCアルゴリズムの変更、現状がメモリ食いすぎなのでチュー
 できれば、2.1.1に入れたいので、2/17 までに ko1 が頑張る。入れるかどうかは nulsh が判断する
 
 
-[Feature #9362] Minimize cache misshit to gain optimal speed GH-495
+### [Feature #9362] Minimize cache misshit to gain optimal speed GH-495
 struct RValueのサイズを変えるやつ
 
 いつマージするんですか
@@ -104,26 +104,26 @@ conclusion: この話はメモリが増える方向だとmatzが抵抗がある�
 メモリを減らすのをどうするかっていうのはちょっと難しいのでみんなで考えるっていう感じですかね (shyouhei)
 
 
-[misc #9215] Maintenance Policy for Future Releases (2.1.0 & beyond)
+### [misc #9215] Maintenance Policy for Future Releases (2.1.0 & beyond)
 Semantic Versioning じゃないので semantic versioning という言葉をつかうのをやめたい (nurse)
 
-[Feature #9123] Make Numeric#nonzero? behavior consistent with Numeric#zero?
+### [Feature #9123] Make Numeric#nonzero? behavior consistent with Numeric#zero?
 
-[Feature #8919] Queue as embedded class
+### [Feature #8919] Queue as embedded class
 まつもとさん待ちなのでまつもとさんに今決めてもらおう (shyouhei, ko1)
 
 まつもとさんがいない?
 
 
 
-[Feature #8850] Convert Rational to decimal String
+### [Feature #8850] Convert Rational to decimal String
 w
 
 興味がある人がパッチをかけばいいんじゃないでしょうか
 
 Status: feedback
 
-[Feature #9420] warn and puts should be atomic
+### [Feature #9420] warn and puts should be atomic
 writevがない環境でatomicにしてちょっと遅くなるのを許容するかどうか (glass)
 
 (例: Windows)
@@ -134,7 +134,7 @@ writevがない環境でatomicにしてちょっと遅くなるのを許容す�
 
 conclusion: atomic である事は保証しないがプラットフォームによっては atomic になるのを努力するかもねの方向で調整
 
-[Feature #6869] Do not treat `_` parameter
+### [Feature #6869] Do not treat `_` parameter
 2.0.0p0から_ではじまる引数は警告されないのでこの提案自体はreject状態
 
-[Feature #7148] Improved Tempfile w/o DelegateClassw
+### [Feature #7148] Improved Tempfile w/o DelegateClassw
